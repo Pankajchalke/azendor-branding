@@ -1,5 +1,4 @@
-<!-- Pankaj's code -->
-
+<!-- Bhavika's Code -->
 
 <? php ?>
 
@@ -9,14 +8,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Azendor</title>
-    <link href="scss/index.css" rel="stylesheet">
+    <link href="scss/main.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
 </head>
 
-<div class="abc">
+<div class="xyz">
     <p>Hello World</p>
 </div>
 
