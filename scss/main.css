@@ -1,3 +1,7 @@
+@import url(vendor/fullpage.css);
+@import url(vendor/slick.css);
+@import url(vendor/slick-theme.css);
+@import url(vendor/slider.css);
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +18,7 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, a, p {
   padding: 0; }
 
 .wrapper {
-  padding: 60px 150px; }
+  padding: 0px 150px; }
 
 /************************************************ Common CSS **************************************************/
 .font130 {
@@ -74,7 +78,268 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, a, p {
 .colordarkGray {
   color: #6A6A6A; }
 
-.xyz p {
-  color: aqua; }
+/****************************************************Media Queries***********************************************************/
+@media all and (max-width: 1800px) {
+  .wrapper {
+    padding: 0px 130px; }
+
+  .font130 {
+    font-size: 130px; }
+
+  .font64 {
+    font-size: 64px; }
+
+  .font48 {
+    font-size: 48px; }
+
+  .font30 {
+    font-size: 26px; }
+
+  .font24 {
+    font-size: 22px; }
+
+  .font20 {
+    font-size: 18px; } }
+@media all and (max-width: 1600px) {
+  .wrapper {
+    padding: 0px 100px; }
+
+  .font64 {
+    font-size: 54px; } }
+@media all and (max-width: 1280px) {
+  .wrapper {
+    padding: 0px 80px; } }
+@media all and (max-width: 1024px) {
+  .wrapper {
+    padding: 0px 60px; }
+
+  .font130 {
+    font-size: 130px; }
+
+  .font64 {
+    font-size: 64px; }
+
+  .font48 {
+    font-size: 48px; }
+
+  .font30 {
+    font-size: 20px; }
+
+  .font24 {
+    font-size: 17px; }
+
+  .font22 {
+    font-size: 22px; }
+
+  .font20 {
+    font-size: 14px; }
+
+  .font18 {
+    font-size: 18px; }
+
+  .font16 {
+    font-size: 16px; } }
+@media all and (max-width: 900px) {
+  .wrapper {
+    padding: 0px 40px; } }
+@media all and (max-width: 768px) {
+  .wrapper {
+    padding: 0px 20px; } }
+#fp-nav ul li a span {
+  background-color: #fff !important; }
+
+.section h1 {
+  text-align: left;
+  margin-bottom: 60px; }
+.section .servicesSec {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .section .servicesSec .servicesBox {
+    border: 1px solid rgba(177, 177, 177, 0.2);
+    border-radius: 10px;
+    padding: 54px 0px 54px 38px;
+    width: 23%; }
+    .section .servicesSec .servicesBox:hover {
+      background-color: #252525; }
+    .section .servicesSec .servicesBox h3,
+    .section .servicesSec .servicesBox p {
+      padding-top: 20px;
+      padding-bottom: 30px; }
+    .section .servicesSec .servicesBox .serviceList {
+      border-top: 1px solid rgba(242, 242, 242, 0.6);
+      margin-right: 38px; }
+      .section .servicesSec .servicesBox .serviceList .col > * {
+        list-style: none;
+        padding: 0px;
+        margin-left: 15px; }
+      .section .servicesSec .servicesBox .serviceList ul {
+        margin-left: 46px; }
+        .section .servicesSec .servicesBox .serviceList ul li {
+          margin-top: 20px;
+          position: relative;
+          list-style: none; }
+          .section .servicesSec .servicesBox .serviceList ul li::before {
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            color: #414141;
+            top: 8px;
+            left: -40px;
+            border-radius: 50%;
+            text-align: center;
+            background-color: #414141;
+            font-size: 18px; }
+      .section .servicesSec .servicesBox .serviceList ol {
+        counter-reset: item; }
+        .section .servicesSec .servicesBox .serviceList ol li {
+          counter-increment: item;
+          color: #fff;
+          padding-left: 35px;
+          position: relative;
+          margin-top: 36px; }
+          .section .servicesSec .servicesBox .serviceList ol li::before {
+            content: counter(item) "";
+            position: absolute;
+            width: 38px;
+            height: 34px;
+            color: #fff;
+            top: 0px;
+            left: -22px;
+            border-radius: 50%;
+            text-align: center;
+            background-color: #414141;
+            font-size: 18px;
+            padding-top: 5px; }
+      .section .servicesSec .servicesBox .serviceList a {
+        color: #fff;
+        text-decoration: none;
+        border: 1px solid rgba(177, 177, 177, 0.2);
+        border-radius: 40px;
+        padding: 12px 26px; }
+        .section .servicesSec .servicesBox .serviceList a:hover img {
+          margin-left: 20px;
+          transition: 0.6s all; }
+    @media all and (max-width: 1800px) {
+      .section .servicesSec .servicesBox {
+        padding: 50px 0px 50px 32px; } }
+    @media all and (max-width: 1800px) {
+      .section .servicesSec .servicesBox {
+        padding: 44px 0px 44px 20px; } }
+    @media all and (max-width: 1400px) {
+      .section .servicesSec .servicesBox {
+        width: 48%;
+        margin-top: 30px; } }
+    @media all and (max-width: 1024px) {
+      .section .servicesSec .servicesBox .serviceList ol li::before {
+        width: 27px;
+        height: 21px;
+        padding-top: 4px;
+        font-size: 12px; }
+      .section .servicesSec .servicesBox .serviceList a {
+        padding: 10px 20px; } }
+  @media all and (max-width: 1024px) {
+    .section .servicesSec {
+      display: none; } }
+.section .serviceSlider {
+  display: none; }
+  .section .serviceSlider .servicesBox {
+    border: 1px solid rgba(177, 177, 177, 0.2);
+    border-radius: 10px;
+    padding: 54px 0px 54px 38px;
+    width: 23%; }
+    .section .serviceSlider .servicesBox:hover {
+      background-color: #252525; }
+    .section .serviceSlider .servicesBox h3,
+    .section .serviceSlider .servicesBox p {
+      padding-top: 20px;
+      padding-bottom: 30px; }
+    .section .serviceSlider .servicesBox .serviceList {
+      border-top: 1px solid rgba(242, 242, 242, 0.6);
+      margin-right: 38px; }
+      .section .serviceSlider .servicesBox .serviceList .col > * {
+        list-style: none;
+        padding: 0px;
+        margin-left: 15px; }
+      .section .serviceSlider .servicesBox .serviceList ul {
+        margin-left: 46px; }
+        .section .serviceSlider .servicesBox .serviceList ul li {
+          margin-top: 20px;
+          position: relative;
+          list-style: none; }
+          .section .serviceSlider .servicesBox .serviceList ul li::before {
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            color: #414141;
+            top: 8px;
+            left: -40px;
+            border-radius: 50%;
+            text-align: center;
+            background-color: #414141;
+            font-size: 18px; }
+      .section .serviceSlider .servicesBox .serviceList ol {
+        counter-reset: item; }
+        .section .serviceSlider .servicesBox .serviceList ol li {
+          counter-increment: item;
+          color: #fff;
+          padding-left: 35px;
+          position: relative;
+          margin-top: 36px; }
+          .section .serviceSlider .servicesBox .serviceList ol li::before {
+            content: counter(item) "";
+            position: absolute;
+            width: 38px;
+            height: 34px;
+            color: #fff;
+            top: 0px;
+            left: -22px;
+            border-radius: 50%;
+            text-align: center;
+            background-color: #414141;
+            font-size: 18px;
+            padding-top: 5px; }
+      .section .serviceSlider .servicesBox .serviceList a {
+        color: #fff;
+        text-decoration: none;
+        border: 1px solid rgba(177, 177, 177, 0.2);
+        border-radius: 40px;
+        padding: 12px 26px; }
+        .section .serviceSlider .servicesBox .serviceList a:hover img {
+          margin-left: 20px;
+          transition: 0.6s all; }
+    @media all and (max-width: 1800px) {
+      .section .serviceSlider .servicesBox {
+        padding: 50px 0px 50px 32px; } }
+    @media all and (max-width: 1800px) {
+      .section .serviceSlider .servicesBox {
+        padding: 44px 0px 44px 20px; } }
+    @media all and (max-width: 1400px) {
+      .section .serviceSlider .servicesBox {
+        width: 23%;
+        margin-top: 30px;
+        margin-left: 20px; } }
+    @media all and (max-width: 1024px) {
+      .section .serviceSlider .servicesBox .serviceList ol li::before {
+        width: 27px;
+        height: 21px;
+        padding-top: 4px;
+        font-size: 12px; }
+      .section .serviceSlider .servicesBox .serviceList a {
+        padding: 10px 20px; } }
+  @media all and (max-width: 1024px) {
+    .section .serviceSlider {
+      display: block; } }
+.section .serviceSlider .slick-dots li button::before {
+  color: transparent;
+  border: 1px solid rgba(242, 242, 242, 0.4);
+  border-radius: 60px; }
+.section .serviceSlider .slick-dots li.slick-active button:before {
+  color: rgba(242, 242, 242, 0.6);
+  font-size: 57px; }
+.section .serviceSlider .slick-slide img {
+  display: inline-block; }
 
 /*# sourceMappingURL=main.css.map */

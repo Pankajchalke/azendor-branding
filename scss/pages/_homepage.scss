@@ -1,3 +1,314 @@
 // Bhavika's CSS
 
-.xyz p{color: aqua;}
+
+#fp-nav ul li a span {
+    background-color: #fff !important;
+}
+
+.section {
+    h1 {
+        text-align: left;
+        margin-bottom: 60px;
+    }
+
+    .servicesSec {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+
+        .servicesBox {
+            border: 1px solid rgba(177, 177, 177, 0.2);
+            border-radius: 10px;
+            padding: 54px 0px 54px 38px;
+            width: 23%;
+
+            &:hover {
+                background-color: #252525;
+            }
+
+            h3,
+            p {
+                padding-top: 20px;
+                padding-bottom: 30px;
+            }
+
+            .serviceList {
+                border-top: 1px solid rgba(242, 242, 242, 0.6);
+                margin-right: 38px;
+
+
+
+                .col>* {
+                    list-style: none;
+                    padding: 0px;
+                    margin-left: 15px;
+                }
+
+                ul {
+                    margin-left: 46px;
+
+                    li {
+                        margin-top: 20px;
+                        position: relative;
+                        list-style: none;
+
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            width: 10px;
+                            height: 10px;
+                            color: #414141;
+                            top: 8px;
+                            left: -40px;
+                            border-radius: 50%;
+                            text-align: center;
+                            background-color: #414141;
+                            font-size: 18px;
+
+                        }
+                    }
+                }
+
+                ol {
+                    counter-reset: item;
+
+                    li {
+                        counter-increment: item;
+                        color: #fff;
+                        padding-left: 35px;
+                        position: relative;
+                        margin-top: 36px;
+
+                        &::before {
+                            content: counter(item) '';
+                            position: absolute;
+                            width: 38px;
+                            height: 34px;
+                            color: #fff;
+                            top: 0px;
+                            left: -22px;
+                            border-radius: 50%;
+                            text-align: center;
+                            background-color: #414141;
+                            font-size: 18px;
+                            padding-top: 5px;
+                        }
+                    }
+                }
+
+                a {
+                    color: #fff;
+                    text-decoration: none;
+                    border: 1px solid rgba(177, 177, 177, 0.2);
+                    border-radius: 40px;
+                    padding: 12px 26px;
+
+                    &:hover {
+                        img {
+                            margin-left: 20px;
+                            transition: 0.6s all;
+                        }
+                    }
+                }
+            }
+
+            @media all and (max-width: 1800px) {
+                padding: 50px 0px 50px 32px;
+            }
+
+            @media all and (max-width: 1800px) {
+                padding: 44px 0px 44px 20px;
+            }
+
+            @media all and (max-width: 1400px) {
+                width: 48%;
+                margin-top: 30px;
+            }
+
+            @media all and (max-width: 1024px) {
+                .serviceList {
+                    ol li::before {
+                        width: 27px;
+                        height: 21px;
+                        padding-top: 4px;
+                        font-size: 12px;
+                    }
+
+                    a {
+                        padding: 10px 20px;
+                    }
+                }
+            }
+        }
+
+
+        @media all and (max-width: 1024px) {
+            display: none;
+        }
+
+
+    }
+
+
+
+    .serviceSlider {
+        display: none;
+
+
+        .servicesBox {
+            border: 1px solid rgba(177, 177, 177, 0.2);
+            border-radius: 10px;
+            padding: 54px 0px 54px 38px;
+            width: 23%;
+
+            &:hover {
+                background-color: #252525;
+            }
+
+            h3,
+            p {
+                padding-top: 20px;
+                padding-bottom: 30px;
+            }
+
+            .serviceList {
+                border-top: 1px solid rgba(242, 242, 242, 0.6);
+                margin-right: 38px;
+
+
+
+                .col>* {
+                    list-style: none;
+                    padding: 0px;
+                    margin-left: 15px;
+                }
+
+                ul {
+                    margin-left: 46px;
+
+                    li {
+                        margin-top: 20px;
+                        position: relative;
+                        list-style: none;
+
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            width: 10px;
+                            height: 10px;
+                            color: #414141;
+                            top: 8px;
+                            left: -40px;
+                            border-radius: 50%;
+                            text-align: center;
+                            background-color: #414141;
+                            font-size: 18px;
+
+                        }
+                    }
+                }
+
+                ol {
+                    counter-reset: item;
+
+                    li {
+                        counter-increment: item;
+                        color: #fff;
+                        padding-left: 35px;
+                        position: relative;
+                        margin-top: 36px;
+
+                        &::before {
+                            content: counter(item) '';
+                            position: absolute;
+                            width: 38px;
+                            height: 34px;
+                            color: #fff;
+                            top: 0px;
+                            left: -22px;
+                            border-radius: 50%;
+                            text-align: center;
+                            background-color: #414141;
+                            font-size: 18px;
+                            padding-top: 5px;
+                        }
+                    }
+                }
+
+                a {
+                    color: #fff;
+                    text-decoration: none;
+                    border: 1px solid rgba(177, 177, 177, 0.2);
+                    border-radius: 40px;
+                    padding: 12px 26px;
+
+                    &:hover {
+                        img {
+                            margin-left: 20px;
+                            transition: 0.6s all;
+                        }
+                    }
+                }
+            }
+
+            @media all and (max-width: 1800px) {
+                padding: 50px 0px 50px 32px;
+            }
+
+            @media all and (max-width: 1800px) {
+                padding: 44px 0px 44px 20px;
+            }
+
+            @media all and (max-width: 1400px) {
+               width: 23%;
+                margin-top: 30px;
+                margin-left: 20px;
+            }
+
+            @media all and (max-width: 1024px) {
+                .serviceList {
+                    ol li::before {
+                        width: 27px;
+                        height: 21px;
+                        padding-top: 4px;
+                        font-size: 12px;
+                    }
+
+                    a {
+                        padding: 10px 20px;
+                    }
+                }
+            }
+        }
+
+
+
+
+        
+
+
+        @media all and (max-width: 1024px) {
+            display: block;
+        }
+
+
+    }
+
+
+    .serviceSlider .slick-dots li button::before{color:transparent;border: 1px solid rgba(242, 242, 242, 0.4);
+        border-radius: 60px;}
+    .serviceSlider .slick-dots li.slick-active button:before{color: rgba(242, 242, 242, 0.6);font-size: 57px;}
+    .serviceSlider .slick-slide img{display: inline-block;}
+
+
+    
+
+
+    
+
+    
+
+
+
+}
