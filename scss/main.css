@@ -33,6 +33,9 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, a, p {
 .font48 {
   font-size: 48px; }
 
+.font36 {
+  font-size: 36px; }
+
 .font30 {
   font-size: 30px; }
 
@@ -60,6 +63,9 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, a, p {
 .fontW500 {
   font-weight: 500; }
 
+.fontW600 {
+  font-weight: 600; }
+
 .fontW700 {
   font-weight: 700; }
 
@@ -81,6 +87,9 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, a, p {
 .colordarkGray {
   color: #6A6A6A; }
 
+.textCenter {
+  text-align: center; }
+
 .slick-track {
   display: flex !important; }
 
@@ -93,13 +102,16 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, a, p {
     padding: 0px 130px; }
 
   .font130 {
-    font-size: 130px; }
+    font-size: 100px; }
 
   .font64 {
     font-size: 64px; }
 
   .font48 {
-    font-size: 48px; }
+    font-size: 40px; }
+
+  .font36 {
+    font-size: 30px; }
 
   .font30 {
     font-size: 26px; }
@@ -150,7 +162,7 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, a, p {
     font-size: 18px; } }
 @media all and (max-width: 1024px) {
   .wrapper {
-    padding: 0px 60px; }
+    padding: 0px 40px; }
 
   .font130 {
     font-size: 130px; }
@@ -178,9 +190,15 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, a, p {
 
   .font16 {
     font-size: 16px; } }
-@media all and (max-width: 900px) {
+@media all and (max-width: 920px) {
   .wrapper {
-    padding: 0px 40px; } }
+    padding: 0px 40px; }
+
+  .font22 {
+    font-size: 16px; }
+
+  .font20 {
+    font-size: 10px; } }
 @media all and (max-width: 768px) {
   .wrapper {
     padding: 0px 20px; } }

@@ -1,35 +1,36 @@
 // Pankaj's CSS
 
+//header css //
 .navbar{
-    position: fixed;
+    //position: fixed;
     width: 100%;
     height:147px;
     opacity: 0.85;
     z-index: 100;
     padding: 30px 0px;
-    @media (max-width: 768px){
+    @media (max-width: 920px){
     	opacity: 0.95;
     	padding: 0px;
     }
     input[type="checkbox"]:checked ~{ 
         .menu-items{
-    		@media (max-width: 768px){
-		        transform: translateX(0);
+    		@media (max-width: 920px){
+		        transform: translateX(160%);
 		    }
 		}
 		.hamburger-lines{
 			.line1{
-				@media (max-width: 768px){
+				@media (max-width: 920px){
 				 	transform: rotate(45deg);
 				}
 			}
 			.line2{
-				@media (max-width: 768px){
+				@media (max-width: 920px){
 				 	transform: scaleY(0);
 				}
 			} 
 			.line3{
-				@media (max-width: 768px){
+				@media (max-width: 920px){
 				 	transform: rotate(-45deg);
 				}
 			}  
@@ -69,25 +70,25 @@
 	    justify-content: space-between;
 	    height: 64px;
 	    align-items: center;
-	    @media (max-width: 768px){
+	    @media (max-width: 920px){
 	    	display: block;
 	        position: relative;
 	        height: 64px;
 		   }
 		    input[type="checkbox"], .hamburger-lines{ display: none;
-		    @media (max-width: 768px){
+		    @media (max-width: 920px){
 			    display: block;
 			    }
 		    }
 
 	    input[type="checkbox"]{
-		    @media (max-width: 768px){
+		    @media (max-width: 920px){
 		    position: absolute;
 	        display: block;
 	        height: 32px;
 	        width: 30px;
 	        top: 20px;
-	        left: 20px;
+	        right: 0px;
 	        z-index: 5;
 	        opacity: 0;
 	        cursor: pointer;
@@ -101,20 +102,20 @@
 		    }
 		}
     	.hamburger-lines{
-    	@media (max-width: 768px){
+    	@media (max-width: 920px){
 	    	display: block;
 	        height: 28px;
 	        width: 35px;
 	        position: absolute;
 	        top: 43px;
-	        left: 20px;
+	        right: 0px;
 	        z-index: 2;
 	        display: flex;
 	        flex-direction: column;
 	        justify-content: space-between;
 	    	}
 	    	.line{
-	    	@media (max-width: 768px){
+	    	@media (max-width: 920px){
 	    		display: block;
 		        height: 4px;
 		        width: 100%;
@@ -123,18 +124,18 @@
 			    }
 	    	}
 	    	.line1{
-	    	@media (max-width: 768px){
+	    	@media (max-width: 920px){
 		        transform-origin: 0% 0%;
 		        transition: transform 0.3s ease-in-out;
 		    	}
 		    }
 		    .line2{
-	    	@media (max-width: 768px){
+	    	@media (max-width: 920px){
 		        transition: transform 0.2s ease-in-out;
 		    	}
 		    }
 		    .line3{
-	    	@media (max-width: 768px){
+	    	@media (max-width: 920px){
 		        transform-origin: 0% 100%;
         		transition: transform 0.3s ease-in-out;
 		    	}
@@ -145,10 +146,10 @@
 		    display:flex;
 		    align-items: center;
 		    position:relative;
-		    @media (max-width: 768px){
+		    @media (max-width: 920px){
 		    	position: absolute;
 		        top: 10px;
-		        right: 15px;
+		        left: 0px;
 		        }
 		    span:before{
 	    	    position: absolute;
@@ -162,39 +163,36 @@
 			    border: 1px solid #F2F2F2;
 			    transform: rotate(90deg);
 			    margin: 0 auto;
+			    @media (max-width: 1024px){
+			    	left: 0px;
+			    }
 			}
 		}
 	    
 	}
-	.container{
-	    max-width: 1200px;
-	    width: 90%;
-	    margin: auto;
-	}
+	
 	.menu-items{
 	    order: 2;
 	    display: flex;
-	    @media (max-width: 768px){
+	    @media (max-width: 920px){
 		    padding-top: 100px;
 	        background: transparent;
 	        height: 100vh;
 	        max-width: 300px;
-	        transform: translate(-150%);
+	        transform: translate(360%);
 	        display: flex;
 	        flex-direction: column;
-	        margin-left: -40px;
-	        padding-left: 40px;
+	        //margin-left: -40px;
+	        //padding-left: 40px;
 	        transition: transform 0.5s ease-in-out;
 	        overflow: scroll;
 	        }
 	    li{
 	    	list-style: none;
 		    margin-left: 24px;
-		    @media (max-width: 768px){
-		    	margin-bottom: 1.8rem;
-	        	font-size: 1.1rem;
-	        	font-weight: 500;
-			    }
+		    @media (max-width: 920px){
+		    	margin-bottom: 28px;
+	        	}
 			.contact{
 				border: 1px solid rgba(242, 242, 242, 0.2);
 				border-radius: 60px;
@@ -205,9 +203,96 @@
 	}
 }
 
+//header css  end//
+//banner css
+.section h2{margin-bottom:60px;}
+.s1{
+	h1:hover{background:-webkit-linear-gradient(330deg, #F2F2F2 42.19%, #A2DFF2 73.22%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		text-fill-color: transparent;
+		}
+	p{
+	color:rgba(255, 255, 255, 0.9);
+	margin-bottom:50px;
+	}
+}
 
-
-
+//testimonials css
+.s5{
+	.testimonialsSlider{
+		.slick-slide {
+			margin: 0 26px;
+		}
+		.slick-list {
+			margin: 0 -26px;
+		}
+		.slick-prev, .slick-next{
+			top: 100%;
+			height:0;
+		}
+		
+		.slick-prev{
+			left: 525px;
+			@media (max-width: 920px){left: 300px;}
+			&:before{
+			font-size: 38px;
+			}
+		}
+		.slick-next{
+			right: 525px;
+			@media (max-width: 920px){right: 300px;}
+			&:before{
+			font-size: 38px;
+			}
+		}
+	.testimonials{
+		display:flex;
+		background: #252525;
+		border-radius: 10px;
+		padding:70px 140px;
+		@media (max-width: 1450px){
+			padding:60px 50px;
+		}
+		@media (max-width: 920px){
+			display:block;
+			padding:25px 22px;
+		}
+		.profile{
+			@media (max-width: 920px){
+				display:flex;
+				text-align: center;
+    			align-items: center;
+    			border-bottom:1px solid rgba(255,255,255,0.1);
+    			padding-bottom: 20px;
+    		}
+    		img{
+    			margin-bottom: 20px;
+    			@media (max-width: 920px){width:80px;}
+    		}
+    		.profileInfo{
+    			@media (max-width: 920px){padding: 0 15px;}
+    			h4{margin-bottom:10px;}
+    		}
+    	}
+		.description{
+			padding:0px 0px 0px 60px;
+			position:relative;
+			@media (max-width: 920px){padding: 20px 0px 0px 0px;}
+			p{}
+				img{position:absolute; top:-40px; opacity: 0.4;
+				@media (max-width: 1450px){
+					top:-25px;
+				}
+				@media (max-width: 920px){
+					top:10px;
+				}
+				}
+			}
+		}
+		}
+	}
 
 
 

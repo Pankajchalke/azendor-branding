@@ -14,6 +14,7 @@ ul,ol,li,h1,h2,h3,h4,h5,h6,a,p {margin: 0;outline: none;padding: 0;}
 .font64{font-size: 64px;}
 .font55{font-size: 55px;}
 .font48{font-size: 48px;}
+.font36{font-size: 36px;}
 .font30{font-size: 30px;}
 .font24{font-size: 24px;}
 .font22{font-size: 22px;}
@@ -23,6 +24,7 @@ ul,ol,li,h1,h2,h3,h4,h5,h6,a,p {margin: 0;outline: none;padding: 0;}
 .fontW300{font-weight:300;}
 .fontW400{font-weight:400;}
 .fontW500{font-weight:500;}
+.fontW600{font-weight:600;}
 .fontW700{font-weight:700;}
 .fontPoppins{font-family: 'Poppins', sans-serif;}
 .fontRoboto{font-family: 'Roboto', sans-serif;}
@@ -30,6 +32,7 @@ ul,ol,li,h1,h2,h3,h4,h5,h6,a,p {margin: 0;outline: none;padding: 0;}
 .coloroffW{color: #F2F2F2;}
 .colorlightGray{color: #C2C2C2;}
 .colordarkGray{color: #6A6A6A;}
+.textCenter{text-align:center;}
 
 .slick-track{display: flex !important;}
 .slick-slide{height: inherit !important;}
@@ -42,9 +45,10 @@ ul,ol,li,h1,h2,h3,h4,h5,h6,a,p {margin: 0;outline: none;padding: 0;}
 
 @media all and (max-width: 1800px){
     .wrapper{padding: 0px 130px;}
-    .font130{font-size: 130px;}
+    .font130{font-size: 100px;}
     .font64{font-size: 64px;}
-    .font48{font-size: 48px;}
+    .font48{font-size: 40px;}
+    .font36{font-size: 30px;}
     .font30{font-size: 26px;}
     .font24{font-size: 22px;}
     .font20{font-size: 18px;}
@@ -72,7 +76,7 @@ ul,ol,li,h1,h2,h3,h4,h5,h6,a,p {margin: 0;outline: none;padding: 0;}
 @media all and (max-width: 1180px){}
 @media all and (max-width: 1080px){}
 @media all and (max-width: 1024px){
-    .wrapper{padding: 0px 60px;}
+    .wrapper{padding: 0px 40px;}
     .font130{font-size: 130px;}
     .font64{font-size: 64px;}
     .font48{font-size: 24px;}
@@ -83,8 +87,10 @@ ul,ol,li,h1,h2,h3,h4,h5,h6,a,p {margin: 0;outline: none;padding: 0;}
     .font18{font-size: 18px;}
     .font16{font-size: 16px;}
 }
-@media all and (max-width: 900px){
+@media all and (max-width: 920px){
     .wrapper{padding: 0px 40px;}
+    .font22{font-size: 16px;}
+    .font20{font-size: 10px;}
 }
 @media all and (max-width: 768px){
     .wrapper{padding: 0px 20px;}
