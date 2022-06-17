@@ -205,22 +205,28 @@
 
 //header css  end//
 //banner css
-.section h2{margin-bottom:60px;}
-.s1{
-	h1:hover{background:-webkit-linear-gradient(330deg, #F2F2F2 42.19%, #A2DFF2 73.22%);
+.section{
+	margin-bottom:60px;
+	h2{margin-bottom:40px;}
+}
+.bannerSec{
+	h1{margin-bottom:30px;
+	&:hover{background:-webkit-linear-gradient(330deg, #F2F2F2 42.19%, #A2DFF2 73.22%);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		background-clip: text;
 		text-fill-color: transparent;
 		}
+		}
 	p{
 	color:rgba(255, 255, 255, 0.9);
-	margin-bottom:50px;
+	margin-bottom:25px;
+	line-height: 125%;
 	}
 }
 
 //testimonials css
-.s5{
+.testimonialsSec{
 	.testimonialsSlider{
 		.slick-slide {
 			margin: 0 26px;
@@ -269,6 +275,7 @@
     		}
     		img{
     			margin-bottom: 20px;
+    			@media (max-width: 1400px){width:150px;}
     			@media (max-width: 920px){width:80px;}
     		}
     		.profileInfo{
