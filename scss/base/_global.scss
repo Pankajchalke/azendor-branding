@@ -12,6 +12,7 @@ ul,ol,li,h1,h2,h3,h4,h5,h6,a,p {margin: 0;outline: none;padding: 0;}
 
 .font130{font-size: 130px;}
 .font64{font-size: 64px;}
+.font55{font-size: 55px;}
 .font48{font-size: 48px;}
 .font30{font-size: 30px;}
 .font24{font-size: 24px;}
@@ -30,6 +31,9 @@ ul,ol,li,h1,h2,h3,h4,h5,h6,a,p {margin: 0;outline: none;padding: 0;}
 .colorlightGray{color: #C2C2C2;}
 .colordarkGray{color: #6A6A6A;}
 
+.slick-track{display: flex !important;}
+.slick-slide{height: inherit !important;}
+
 
 
 
@@ -46,13 +50,23 @@ ul,ol,li,h1,h2,h3,h4,h5,h6,a,p {margin: 0;outline: none;padding: 0;}
     .font20{font-size: 18px;}
 }
 @media all and (max-width: 1600px){
-    .wrapper{padding: 0px 100px;}
+    .wrapper{padding: 0px 70px;}
     .font64{font-size: 54px;}
+    .font48{font-size: 38px;}
 }
 @media all and (max-width: 1400px){
+    .wrapper{padding: 0px 50px;}
+    .font48{font-size: 28px;}
+    .font30{font-size: 22px;}
+    .font24{font-size: 18px;}
+    .font20{font-size: 16px;}
+    .font22{font-size: 20px;}
 }
 @media all and (max-width: 1280px){
-    .wrapper{padding: 0px 80px;}
+    .font30{font-size: 20px;}
+    .font24{font-size: 16px;}
+    .font20{font-size: 13px;}
+    .font22{font-size: 18px;}
 }
 @media all and (max-width: 1200px){}
 @media all and (max-width: 1180px){}
@@ -61,10 +75,10 @@ ul,ol,li,h1,h2,h3,h4,h5,h6,a,p {margin: 0;outline: none;padding: 0;}
     .wrapper{padding: 0px 60px;}
     .font130{font-size: 130px;}
     .font64{font-size: 64px;}
-    .font48{font-size: 48px;}
+    .font48{font-size: 24px;}
     .font30{font-size: 20px;}
     .font24{font-size: 17px;}
-    .font22{font-size: 22px;}
+    .font22{font-size: 18px;}
     .font20{font-size: 14px;}
     .font18{font-size: 18px;}
     .font16{font-size: 16px;}

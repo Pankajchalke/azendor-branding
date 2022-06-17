@@ -3,7 +3,7 @@ $('#fullpage').fullpage({
     css3: true,
     sectionsColor: [],
     anchors: [],
-    navigation: true,
+    navigation: false,
     navigationTooltips: [],
     fadingEffect: true,
     keyboardScrolling: false,
@@ -29,25 +29,130 @@ $('#fullpage').fullpage({
 
 
 
+//service Slider 
 
 $(".serviceSlider").slick({
-    dots: true,
+    dots: false,
     infinite: true,
     arrows: false,
     speed: 300,
     autoplay: false,
     autoplaySpeed: 2000,
-    slidesToShow: 2,
-    slidesToScroll: 1,
+    slidesToShow: 4,
+    slidesToScroll: 4,
     responsive: [
       {
-        breakpoint: 680,
+        breakpoint: 1024,
         settings: {
-          slidesToShow: 1,
+          dots:true,
+          slidesToShow: 2,
+           slidesToScroll: 2,
         },
       },
+      {
+        breakpoint: 654,
+        settings: {
+          dots:true,
+          slidesToShow: 1,
+           slidesToScroll: 1,
+        },
+      }
     ],
   });
+
+
+// tabs toggle
+
+  jQuery(document).ready(function ($) {
+    tab = $('.tabs h3 a');
+  
+    tab.on('click', function (event) {
+      event.preventDefault();
+      tab.removeClass('active');
+      $(this).addClass('active');
+  
+      tab_content = $(this).attr('href');
+      $('div[id$="tab-content"]').removeClass('active');
+      $(tab_content).addClass('active');
+    });
+  });  
+
+
+  // tabs slider
+
+  $('.tabs .tabsToggle').click(function(){
+    $('.tabs .tabsToggle').removeClass('active');
+    $(this).addClass('active');
+    let indis = $('.tabs .tabsToggle').index(this);
+    $('.tabs .bg').css('left',(120 * indis).toString()+"px");
+  });
+
+
+
+  // load more 
+  $(document).ready(function(){
+    $(".content").slice(0, 8).show();
+    $("#loadMore").on("click", function(e){
+      e.preventDefault();
+      $(".content:hidden").slice(0, 8).slideDown();
+      if($(".content:hidden").length == 0) {
+        $("#loadMore").text("No Content").addClass("noContent");
+      }
+    });
+    
+  })
+
+  $(document).ready(function(){
+    $(".contentOne").slice(0, 8).show();
+    $("#loadMoretab").on("click", function(e){
+      e.preventDefault();
+      $(".contentOne:hidden").slice(0, 8).slideDown();
+      if($(".contentOne:hidden").length == 0) {
+        $("#loadMoretab").text("No Content").addClass("noContent");
+      }
+    });
+    
+  })
+
+
+  $(document).ready(function(){
+    $(".contentThree").slice(0, 8).show();
+    $("#loadMorethree").on("click", function(e){
+      e.preventDefault();
+      $(".contentThree:hidden").slice(0, 8).slideDown();
+      if($(".contentThree:hidden").length == 0) {
+        $("#loadMorethree").text("No Content").addClass("noContent");
+      }
+    });
+    
+  })
+
+
+
+
+  // Click function for show the Modal
+
+$(".ctaOne").on("click", function(){
+  $(".mask").addClass("active");
+});
+
+// Function for close the Modal
+
+function closeModal(){
+  $(".mask").removeClass("active");
+}
+
+// Call the closeModal function on the clicks/keyboard
+
+$(".close, .mask").on("click", function(){
+  closeModal();
+});
+
+$(document).keyup(function(e) {
+  if (e.keyCode == 27) {
+    closeModal();
+  }
+});
 
 
 
