@@ -9,7 +9,7 @@
   outline: none; }
 
 body {
-  background: #212121;
+  background: #212121 !important;
   scroll-behavior: smooth; }
 
 ul, ol, li, h1, h2, h3, h4, h5, h6, a, p {
@@ -400,55 +400,14 @@ h2 {
     .serviceSec .serviceSlider {
       display: block; } }
 
-.teamSec {
+.teamSection .teamSec {
   display: flex;
   justify-content: space-between; }
-  .teamSec .teamMembers {
+  .teamSection .teamSec .teamMembers {
     width: 48%;
     position: relative;
     margin-top: 20px; }
-    .teamSec .teamMembers .close {
-      position: absolute;
-      top: 0;
-      right: 300px;
-      width: 35px;
-      height: 30px;
-      background: #000;
-      color: #fff;
-      cursor: pointer;
-      border: 0; }
-    .teamSec .teamMembers .mask {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(33, 33, 33, 0.5);
-      backdrop-filter: blur(5px);
-      z-index: 50;
-      visibility: hidden;
-      opacity: 0;
-      transition: 0.7s; }
-    .teamSec .teamMembers .modal {
-      position: fixed;
-      top: 0%;
-      left: 0%;
-      width: 1619px;
-      height: 823px;
-      background: #252525;
-      z-index: 100;
-      visibility: hidden;
-      opacity: 0;
-      transition: 0.5s ease-out; }
-      .teamSec .teamMembers .modal .modalContent {
-        padding: 10px 70px; }
-    .teamSec .teamMembers .active {
-      visibility: visible;
-      opacity: 1; }
-    .teamSec .teamMembers .active + .modal {
-      visibility: visible;
-      opacity: 1; }
-    .teamSec .teamMembers a {
+    .teamSection .teamSec .teamMembers a {
       text-decoration: none;
       padding: 85px 0px;
       text-align: center;
@@ -458,16 +417,16 @@ h2 {
       right: 0;
       width: 100%;
       background: linear-gradient(180deg, rgba(13, 13, 13, 0) 8.82%, rgba(33, 33, 33, 0.88) 45.31%, #212121 91.77%); }
-      .teamSec .teamMembers a img {
+      .teamSection .teamSec .teamMembers a img {
         transition: 0.6s all; }
-      .teamSec .teamMembers a:hover img {
+      .teamSection .teamSec .teamMembers a:hover img {
         margin-left: 20px; }
-    .teamSec .teamMembers .memberImg {
+    .teamSection .teamSec .teamMembers .memberImg {
       max-width: 100%; }
   @media all and (max-width: 1024px) {
-    .teamSec {
+    .teamSection .teamSec {
       display: block; }
-      .teamSec .teamMembers {
+      .teamSection .teamSec .teamMembers {
         width: 100%; } }
 
 .clientsBox .clientSec {
@@ -515,13 +474,36 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between; }
+  .clientsBox .tabs-content .flex .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 123px;
+    font-size: 2em;
+    padding: 0.5em;
+    line-height: 1;
+    background-position: 0 0, 0 0, 100% 0, 0 100%;
+    background-size: 3px 100%, 100% 3px, 3px 100%, 100% 3px;
+    background-repeat: no-repeat; }
+  .clientsBox .tabs-content .flex img {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    transition: 0.5s;
+    max-width: 100%;
+    margin: 0 auto; }
+    .clientsBox .tabs-content .flex img:hover {
+      filter: grayscale(0%);
+      -webkit-filter: grayscale(0%); }
   .clientsBox .tabs-content .flex .content,
   .clientsBox .tabs-content .flex .contentOne {
+    --clr-border: #333;
     width: 23%;
-    border: 1px solid lightgrey;
     display: none;
-    padding: 90px;
-    margin-top: 20px; }
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(0deg, transparent 15%, var(--clr-border) 15%, var(--clr-border) 85%, transparent 85%), linear-gradient(90deg, transparent 15%, var(--clr-border) 15%, var(--clr-border) 85%, transparent 85%), linear-gradient(180deg, transparent 15%, var(--clr-border) 15%, var(--clr-border) 85%, transparent 85%), linear-gradient(270deg, transparent 15%, var(--clr-border) 15%, var(--clr-border) 85%, transparent 85%); }
     @media all and (max-width: 1400px) {
       .clientsBox .tabs-content .flex .content,
       .clientsBox .tabs-content .flex .contentOne {
@@ -542,15 +524,25 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between; }
+  .caseStudies .flex img {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    transition: 0.5s;
+    max-width: 100%;
+    margin: 0 auto; }
+    .caseStudies .flex img:hover {
+      filter: grayscale(0%);
+      -webkit-filter: grayscale(0%); }
   .caseStudies .flex .contentThree {
     width: 23%;
     border: 1px solid lightgrey;
     display: none;
-    padding: 90px;
     margin-top: 20px;
     background-color: #252525;
     border: 1px solid #1C1C1C;
-    border-radius: 10px; }
+    border-radius: 10px;
+    display: flex;
+    justify-content: center; }
     @media all and (max-width: 1400px) {
       .caseStudies .flex .contentThree {
         width: 48%; } }

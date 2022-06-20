@@ -130,11 +130,13 @@ $(".serviceSlider").slick({
 
 
 
-  // Click function for show the Modal
+  // Click function to show the Modal
 
 $(".ctaOne").on("click", function(){
   $(".mask").addClass("active");
 });
+
+
 
 // Function for close the Modal
 
@@ -153,6 +155,13 @@ $(document).keyup(function(e) {
     closeModal();
   }
 });
+
+
+
+
+
+
+
 
 
 
