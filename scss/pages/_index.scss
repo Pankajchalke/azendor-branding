@@ -17,6 +17,9 @@
     		@media (max-width: 920px){
 		        transform: translateX(160%);
 		    }
+		    @media (max-width: 575px){
+		        transform: translateX(80%);
+		    }
 		}
 		.hamburger-lines{
 			.line1{
@@ -240,15 +243,23 @@
 		}
 		
 		.slick-prev{
-			left: 525px;
+			left: 950px;
+			@media (max-width: 1950px){left: 625px;}
+			@media (max-width: 1450px){left: 525px;}
+			@media (max-width: 1050px){left: 400px;}
 			@media (max-width: 920px){left: 300px;}
+			@media (max-width: 575px){left: 125px;}
 			&:before{
 			font-size: 38px;
 			}
 		}
 		.slick-next{
-			right: 525px;
+			right: 950px;
+			@media (max-width: 1950px){right: 625px;}
+			@media (max-width: 1450px){right: 525px;}
+			@media (max-width: 1050px){right: 400px;}
 			@media (max-width: 920px){right: 300px;}
+			@media (max-width: 575px){right: 125px;}
 			&:before{
 			font-size: 38px;
 			}

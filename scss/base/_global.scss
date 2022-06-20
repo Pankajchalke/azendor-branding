@@ -62,12 +62,12 @@ ul,ol,li,h1,h2,h3,h4,h5,h6,a,p {margin: 0;outline: none;padding: 0;}
     .wrapper{padding: 0px 50px;}
     .font130{font-size: 92px;}
     .font64{font-size: 46px;}
-    .font48{font-size: 28px;}
-    .font30{font-size: 21px;}
-    .font24{font-size: 17px;}
-    .font22{font-size: 16px;}
-    .font20{font-size: 13px;}
-    .font18{font-size: 12px;}
+    .font48{font-size: 30px;}
+    .font30{font-size: 25px;}
+    .font24{font-size: 22px;}
+    .font22{font-size: 20px;}
+    .font20{font-size: 16px;}
+    .font18{font-size: 14px;}
     
 }
 @media all and (max-width: 1280px){
@@ -93,14 +93,22 @@ ul,ol,li,h1,h2,h3,h4,h5,h6,a,p {margin: 0;outline: none;padding: 0;}
 }
 @media all and (max-width: 920px){
     .wrapper{padding: 0px 40px;}
+    .font130{font-size:50px;}
+    .font64{font-size: 30px;}
+	.font48{font-size: 18px;}
+	.font30{font-size: 20px;}
+	.font30{font-size: 17px;}
     .font22{font-size: 16px;}
-    .font20{font-size: 10px;}
+    .font18{font-size: 10px;}
 }
 @media all and (max-width: 768px){
     .wrapper{padding: 0px 20px;}
 }
 @media all and (max-width: 680px){}
-@media all and (max-width: 575px){}
+@media all and (max-width: 575px){
+	.font130{font-size:40px;
+	}
+}
 @media all and (max-width: 375px){}
 
 
