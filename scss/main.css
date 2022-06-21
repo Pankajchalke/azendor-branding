@@ -99,7 +99,7 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, a, p {
 /****************************************************Media Queries***********************************************************/
 @media all and (max-width: 1800px) {
   .wrapper {
-    padding: 0px 130px; }
+    padding: 0px 120px; }
 
   .font130 {
     font-size: 100px; }
@@ -123,7 +123,7 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, a, p {
     font-size: 18px; } }
 @media all and (max-width: 1600px) {
   .wrapper {
-    padding: 0px 70px; }
+    padding: 0px 100px; }
 
   .font64 {
     font-size: 54px; }
@@ -132,7 +132,7 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, a, p {
     font-size: 38px; } }
 @media all and (max-width: 1400px) {
   .wrapper {
-    padding: 0px 50px; }
+    padding: 0px 70px; }
 
   .font130 {
     font-size: 92px; }
@@ -171,7 +171,7 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, a, p {
     font-size: 18px; } }
 @media all and (max-width: 1024px) {
   .wrapper {
-    padding: 0px 40px; }
+    padding: 0px 50px; }
 
   .font130 {
     font-size: 130px; }
@@ -239,8 +239,7 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, a, p {
   background-color: #fff !important; }
 
 h2 {
-  text-align: left;
-  margin-bottom: 60px; }
+  text-align: left; }
 
 a:focus,
 a:hover {
@@ -289,6 +288,9 @@ a:hover {
       width: 780px; }
       .modal-dialog .modal-content {
         padding: 25px; } }
+
+.section {
+  margin-bottom: 0px !important; }
 
 .serviceSec .serviceSlider {
   display: block; }
@@ -420,7 +422,7 @@ a:hover {
     position: relative;
     margin-top: 20px;
     /* use :target to look for a link to the overlay then we find our mask */ }
-    .teamSection .teamSec .teamMembers #overlay, .teamSection .teamSec .teamMembers #team2 {
+    .teamSection .teamSec .teamMembers #overlay {
       /* we set all of the properties for our overlay */
       height: 890px;
       width: 1000px;
@@ -438,20 +440,20 @@ a:hover {
       -moz-border-radius: 10px;
       -o-border-radius: 10px;
       border-radius: 10px; }
-      .teamSection .teamSec .teamMembers #overlay .teamdescHeading, .teamSection .teamSec .teamMembers #team2 .teamdescHeading {
+      .teamSection .teamSec .teamMembers #overlay .teamdescHeading {
         display: flex;
         align-items: center;
         justify-content: space-between;
         border-bottom: 1px solid #6A6A6A;
         padding-bottom: 30px;
         margin-bottom: 20px; }
-        .teamSection .teamSec .teamMembers #overlay .teamdescHeading .teamimage, .teamSection .teamSec .teamMembers #team2 .teamdescHeading .teamimage {
+        .teamSection .teamSec .teamMembers #overlay .teamdescHeading .teamimage {
           width: 20%; }
-        .teamSection .teamSec .teamMembers #overlay .teamdescHeading .teamTitle, .teamSection .teamSec .teamMembers #team2 .teamdescHeading .teamTitle {
+        .teamSection .teamSec .teamMembers #overlay .teamdescHeading .teamTitle {
           width: 78%; }
-          .teamSection .teamSec .teamMembers #overlay .teamdescHeading .teamTitle p, .teamSection .teamSec .teamMembers #team2 .teamdescHeading .teamTitle p {
+          .teamSection .teamSec .teamMembers #overlay .teamdescHeading .teamTitle p {
             margin-bottom: 18px; }
-      .teamSection .teamSec .teamMembers #overlay .infoTeam, .teamSection .teamSec .teamMembers #team2 .infoTeam {
+      .teamSection .teamSec .teamMembers #overlay .infoTeam {
         margin-bottom: 30px; }
     .teamSection .teamSec .teamMembers #mask {
       /* create are mask */
@@ -464,10 +466,6 @@ a:hover {
       display: none; }
     .teamSection .teamSec .teamMembers #overlay:target,
     .teamSection .teamSec .teamMembers #overlay:target + #mask {
-      display: block;
-      opacity: 1; }
-    .teamSection .teamSec .teamMembers #team2:target,
-    .teamSection .teamSec .teamMembers #team2:target + #mask {
       display: block;
       opacity: 1; }
     .teamSection .teamSec .teamMembers .close {

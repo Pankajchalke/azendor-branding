@@ -95,7 +95,7 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, a, p {
 /****************************************************Media Queries***********************************************************/
 @media all and (max-width: 1800px) {
   .wrapper {
-    padding: 0px 130px; }
+    padding: 0px 120px; }
 
   .font130 {
     font-size: 100px; }
@@ -119,7 +119,7 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, a, p {
     font-size: 18px; } }
 @media all and (max-width: 1600px) {
   .wrapper {
-    padding: 0px 70px; }
+    padding: 0px 100px; }
 
   .font64 {
     font-size: 54px; }
@@ -128,7 +128,7 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, a, p {
     font-size: 38px; } }
 @media all and (max-width: 1400px) {
   .wrapper {
-    padding: 0px 50px; }
+    padding: 0px 70px; }
 
   .font130 {
     font-size: 92px; }
@@ -167,7 +167,7 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, a, p {
     font-size: 18px; } }
 @media all and (max-width: 1024px) {
   .wrapper {
-    padding: 0px 40px; }
+    padding: 0px 50px; }
 
   .font130 {
     font-size: 130px; }

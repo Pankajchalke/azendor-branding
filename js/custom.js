@@ -12,17 +12,17 @@ $('#fullpage').fullpage({
   responsiveWidth: 900,
   afterResponsive: function (isResponsive) { },
   afterLoad: function (anchorLink, index) {
-      console.log(index);
-      if (index == 1) { };
-      if (index == 2) { };
+    console.log(index);
+    if (index == 1) { };
+    if (index == 2) { };
   },
   onLeave: function (index, nextIndex, direction) {
-      console.log(index, nextIndex, direction);
-      if (index == 1) { };
-      if (index == 2) { };
-      if (index == 8 && nextIndex == 7) { };
+    console.log(index, nextIndex, direction);
+    if (index == 1) { };
+    if (index == 2) { };
+    if (index == 8 && nextIndex == 7) { };
   }
-  
+
 });
 
 
@@ -44,17 +44,17 @@ $(".serviceSlider").slick({
     {
       breakpoint: 1024,
       settings: {
-        dots:true,
+        dots: true,
         slidesToShow: 2,
-         slidesToScroll: 2,
+        slidesToScroll: 2,
       },
     },
     {
       breakpoint: 654,
       settings: {
-        dots:true,
+        dots: true,
         slidesToShow: 1,
-         slidesToScroll: 1,
+        slidesToScroll: 1,
       },
     }
   ],
@@ -75,68 +75,108 @@ jQuery(document).ready(function ($) {
     $('div[id$="tab-content"]').removeClass('active');
     $(tab_content).addClass('active');
   });
-});  
+});
 
 
 // tabs slider
 
-$('.tabs .tabsToggle').click(function(){
+$('.tabs .tabsToggle').click(function () {
   $('.tabs .tabsToggle').removeClass('active');
   $(this).addClass('active');
   let indis = $('.tabs .tabsToggle').index(this);
-  $('.tabs .bg').css('left',(120 * indis).toString()+"px");
+  $('.tabs .bg').css('left', (120 * indis).toString() + "px");
 
   const mQuery = window.matchMedia('(max-width: 768px)')
-  if (mQuery.matches) { 
+  if (mQuery.matches) {
     // Print a message to the console 
-    $('.tabs .bg').css('left',(60 * indis).toString()+"px"); 
-}
+    $('.tabs .bg').css('left', (60 * indis).toString() + "px");
+  }
 });
 
 
 
 
 // load more 
-$(document).ready(function(){
+$(document).ready(function () {
   $(".content").slice(0, 8).show();
-  $("#loadMore").on("click", function(e){
+  $("#loadMore").on("click", function (e) {
     e.preventDefault();
     $(".content:hidden").slice(0, 8).slideDown();
-    if($(".content:hidden").length == 0) {
+    if ($(".content:hidden").length == 0) {
       $("#loadMore").text("No Content").addClass("noContent");
     }
   });
-  
+
 })
 
-$(document).ready(function(){
+$(document).ready(function () {
   $(".contentOne").slice(0, 8).show();
-  $("#loadMoretab").on("click", function(e){
+  $("#loadMoretab").on("click", function (e) {
     e.preventDefault();
     $(".contentOne:hidden").slice(0, 8).slideDown();
-    if($(".contentOne:hidden").length == 0) {
+    if ($(".contentOne:hidden").length == 0) {
       $("#loadMoretab").text("No Content").addClass("noContent");
     }
   });
-  
+
 })
 
 
-$(document).ready(function(){
+$(document).ready(function () {
   $(".contentThree").slice(0, 8).show();
-  $("#loadMorethree").on("click", function(e){
+  $("#loadMorethree").on("click", function (e) {
     e.preventDefault();
     $(".contentThree:hidden").slice(0, 8).slideDown();
-    if($(".contentThree:hidden").length == 0) {
+    if ($(".contentThree:hidden").length == 0) {
       $("#loadMorethree").text("No Content").addClass("noContent");
     }
   });
-  
+
 })
 
 
 
+// Header JS
 
+const menuLinks = document.querySelectorAll(".menu-items .menu-link");
+
+menuLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    menuLinks.forEach((link) => {
+      link.classList.remove("is-active");
+    });
+    link.classList.add("is-active");
+  });
+});
+
+
+// testimonial JS
+
+$('.testimonialsSlider').slick({
+  centerMode: true,
+  centerPadding: '10%',
+  slidesToShow: 1,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '10%',
+        slidesToShow: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '10%',
+        slidesToShow: 1
+      }
+    }
+  ]
+});
 
 
 

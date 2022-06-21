@@ -8,6 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Azendor</title>
+    <link href="scss/index.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -29,12 +30,39 @@
 </head>
 
 <body>
+    <nav class="navbar wrapper">
+        <div class="navbar-container">
+            <a href="#" class="logo">
+                <img src="images/logo.png"><span class="fontPoppins font22 coloroffW fontW400"> Brand Consulting</span>
+            </a>
+            <input type="checkbox" name="" id="">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
 
-    <div id="fullpage" class="wrapper">
-        <div class="section">
-            <h1>The First Section</h1>
+            <ul class="menu-items">
+                <li class="fontPoppins font18 coloroffW fontW400"><a class="menu-link is-active" href="#">Home</a></li>
+                <li class="fontPoppins font18 coloroffW fontW400"><a class="menu-link" href="#serviceSec">Services</a></li>
+                <li class="fontPoppins font18 coloroffW fontW400"><a class="menu-link" href="#teamSection">Team</a></li>
+                <li class="fontPoppins font18 coloroffW fontW400"><a class="menu-link" href="#clientsBox">Clients </a></li>
+                <li class="fontPoppins font18 coloroffW fontW400"><a class="menu-link" href="#testimonialsSec">Testimonials</a></li>
+                <li class="fontPoppins font18 coloroffW fontW400"><a class="menu-link" href="#caseStudies">Case studies</a></li>
+                <li class="fontPoppins font18 coloroffW fontW400"><a class="contact" href="#contactSec">Contact</a></li>
+            </ul>
+            
         </div>
-        <div class="serviceSec section">
+    </nav>
+    <div id="fullpage" class="wrapper">
+        <div class="bannerSec section">
+            <h1 class="fontRoboto font130 coloroffW fontW700">Looking at making your brands work harder for your business?</h1>
+            <h4 class="fontRoboto fontW400 font36 colordarkGray">What we offer</h4>
+            <p class="fontPoppins font48 fontW300"><span class="fontW600 colorW">Azendor Brand Consulting</span> works with you to create powerful brand propositions for your business and products. With highly experienced professionals on board, it offers customised brand strategy and marketing communications solutions for your business needs.</p>
+            <h4 class="fontRoboto fontW400 font36 colordarkGray">Azendor</h4>
+            <p class="fontPoppins font48 fontW300">A name inspired by <span class="fontW600 colorW">‘ascender’</span>, which is a mountaineering device that keeps climbers safe as they climb up steep terrains.</p>
+        </div>
+        <div class="serviceSec section" id="serviceSec">
             <h2 class="fontRoboto font64 fontW700 colorW">Services</h2>
             <div class="serviceSlider">
                 <div class="servicesBox">
@@ -158,12 +186,12 @@
 
             </div>
         </div>
-        <div class="teamSection section">
+        <div class="teamSection section" id="teamSection">
             <h2 class="fontRoboto font64 fontW700 colorW">Team</h2>
             <div class="teamSec">
                 <div class="teamMembers">
                     <img src="images/team1.png" class="memberImg">
-                    <a href="#overlay" >
+                    <a href="#overlay">
                         <h3 class="fontRoboto font48 fontW400 colorW">Sourabh Mishra</h3>
                         <p class="fontPoppins font24 fontW400 colorlightGray">Founder & Partner <img
                                 src="images/arrow.png"></p>
@@ -185,25 +213,27 @@
                                 <img src="images/linkdin.png">
                             </div>
                         </div>
-                        <p class="fontPoppins font22 fontW400 infoTeam">Sourabh was the Chief Strategy Officer at Saatchi & 
+                        <p class="fontPoppins font22 fontW400 infoTeam">Sourabh was the Chief Strategy Officer at
+                            Saatchi &
                             Saatchi India, TBWA\India, Everest and Bates CHI &
                             Partners India.</p>
-                            
-                            <p class="fontPoppins font22 fontW400 infoTeam">He also led the brand strategy 
-                            planning function at Ogilvy (Mumbai and Bangalore 
-                            offices), McCann Erickson (Bangalore office) and 
-                            Contract (Bangalore and Delhi offices). His experience 
-                            spans across categories and includes brands like 
+
+                        <p class="fontPoppins font22 fontW400 infoTeam">He also led the brand strategy
+                            planning function at Ogilvy (Mumbai and Bangalore
+                            offices), McCann Erickson (Bangalore office) and
+                            Contract (Bangalore and Delhi offices). His experience
+                            spans across categories and includes brands like
                             Parle (Monaco, Hide N Seek), Reliance Capital,
                             Cadbury (5 Star, Perk, Bournvita, Tang), Limca,
                             Sprite, Coca Cola, SET MAX, ITC Cigarettes, TVS 2
                             Wheelers, Skoda Cars, Lenovo, Titan, Kwality Wall’s,
                             BPL, OLX India, ITC Ashirvaad, Ayurvedic Concepts
                             (Himalaya), Skoda etc.</p>
-                            
-                            <p class="fontPoppins font22 fontW400 infoTeam">His views on branding topics have been published in
+
+                        <p class="fontPoppins font22 fontW400 infoTeam">His views on branding topics have been published
+                            in
                             leading industry publications. He has been a speaker
-                            at several industry events and teaches marketing 
+                            at several industry events and teaches marketing
                             communications at business schools as guest faculty.
                             He also mentors start-ups at AIC NMIMS and IEF.</p>
 
@@ -213,55 +243,17 @@
                 </div>
                 <div class="teamMembers">
                     <img src="images/team2.png" class="memberImg">
-                    <a href="#team2">
+                    <a href="#">
                         <h3 class="fontRoboto font48 fontW400 colorW">Sourabh Mishra</h3>
                         <p class="fontPoppins font24 fontW400 colorlightGray">Founder & Partner <img
                                 src="images/arrow.png"></p>
                     </a>
-                    <div id="team2">
-                        <a href="#" class="close">&times;</a>
-                        <div class="teamdescHeading">
-                            <div class="teamimage">
-                                <img src="images/small-team-img.png">
-                            </div>
-
-                            <div class="teamTitle">
-                                <h3 class="fontRoboto font55 fontW500">
-                                    Mishra
-                                </h3>
-                                <p class="fontPoppins font24 fontW400">Founder & Partner</p>
-                                <img src="images/linkdin.png">
-                            </div>
-                        </div>
-                        <p class="fontPoppins font22 fontW400 infoTeam">Sourabh was the Chief Strategy Officer at Saatchi & 
-                            Saatchi India, TBWA\India, Everest and Bates CHI &
-                            Partners India.</p>
-                            
-                            <p class="fontPoppins font22 fontW400 infoTeam">He also led the brand strategy 
-                            planning function at Ogilvy (Mumbai and Bangalore 
-                            offices), McCann Erickson (Bangalore office) and 
-                            Contract (Bangalore and Delhi offices). His experience 
-                            spans across categories and includes brands like 
-                            Parle (Monaco, Hide N Seek), Reliance Capital,
-                            Cadbury (5 Star, Perk, Bournvita, Tang), Limca,
-                            Sprite, Coca Cola, SET MAX, ITC Cigarettes, TVS 2
-                            Wheelers, Skoda Cars, Lenovo, Titan, Kwality Wall’s,
-                            BPL, OLX India, ITC Ashirvaad, Ayurvedic Concepts
-                            (Himalaya), Skoda etc.</p>
-                            
-                            <p class="fontPoppins font22 fontW400 infoTeam">His views on branding topics have been published in
-                            leading industry publications. He has been a speaker
-                            at several industry events and teaches marketing 
-                            communications at business schools as guest faculty.
-                            He also mentors start-ups at AIC NMIMS and IEF.</p>
-
-                    </div>
                 </div>
             </div>
 
         </div>
 
-        <div class="clientsBox section">
+        <div class="clientsBox section" id="clientsBox">
             <div class="clientSec">
                 <h2 class="fontRoboto font64 fontW700 colorW">Clients</h2>
 
@@ -339,7 +331,81 @@
             </div>
         </div>
 
-        <div class="caseStudies section">
+        <div class="testimonialsSec section" id="testimonialsSec">
+            <h2 class="fontRoboto font64 fontW700 colorW">Testimonials</h2>
+            <div class="testimonialsSlider">
+                <div class="testimonialsSection">
+                    <div class=" testimonials">
+                        <div class="profile">
+                            <img src="images/profile.png">
+                            <div class="profileInfo">
+                                <h4 class="fontRoboto font30 fontW500 colorW textCenter">Pearl Shah</h4>
+                                <p class="font20 fontPoppins fontW400 colordarkGray textCenter">Sr Marketing Manager</p>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p class="font22 fontPoppins fontW400 colorW">Sourabh and his team at Azendor worked for us as consultants on a new brand
+                            development project at Unilever. We liked their ability to ‘think out of the box’ while also bringing in the discipline of consumer research and market
+                            information analysis. They identified an exciting new positioning space and their work was appreciated by our entire team. I would recommend them if you are looking for a brand strategy consultant to define a powerful positioning space for your brand.</p>
+                            <img src="images/qoutes.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonialsSection">
+                    <div class=" testimonials">
+                        <div class="profile">
+                            <img src="images/profile.png">
+                            <div class="profileInfo">
+                                <h4 class="fontRoboto font30 fontW500 colorW textCenter">Pearl Shah1</h4>
+                                <p class="font20 fontPoppins fontW400 colordarkGray textCenter">Sr Marketing Manager</p>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p class="font22 fontPoppins fontW400 colorW">Sourabh and his team at Azendor worked for us as consultants on a new brand
+                            development project at Unilever. We liked their ability to ‘think out of the box’ while also bringing in the discipline of consumer research and market
+                            information analysis. They identified an exciting new positioning space and their work was appreciated by our entire team. I would recommend them if you are looking for a brand strategy consultant to define a powerful positioning space for your brand.</p>
+                            <img src="images/qoutes.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonialsSection">
+                    <div class=" testimonials">
+                        <div class="profile">
+                            <img src="images/profile.png">
+                            <div class="profileInfo">
+                                <h4 class="fontRoboto font30 fontW500 colorW textCenter">Pearl Shah2</h4>
+                                <p class="font20 fontPoppins fontW400 colordarkGray textCenter">Sr Marketing Manager</p>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p class="font22 fontPoppins fontW400 colorW">Sourabh and his team at Azendor worked for us as consultants on a new brand
+                            development project at Unilever. We liked their ability to ‘think out of the box’ while also bringing in the discipline of consumer research and market
+                            information analysis. They identified an exciting new positioning space and their work was appreciated by our entire team. I would recommend them if you are looking for a brand strategy consultant to define a powerful positioning space for your brand.</p>
+                            <img src="images/qoutes.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonialsSection">
+                    <div class=" testimonials">
+                        <div class="profile">
+                            <img src="images/profile.png">
+                            <div class="profileInfo">
+                                <h4 class="fontRoboto font30 fontW500 colorW textCenter">Pearl Shah3</h4>
+                                <p class="font20 fontPoppins fontW400 colordarkGray textCenter">Sr Marketing Manager</p>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p class="font22 fontPoppins fontW400 colorW">Sourabh and his team at Azendor worked for us as consultants on a new brand
+                            development project at Unilever. We liked their ability to ‘think out of the box’ while also bringing in the discipline of consumer research and market
+                            information analysis. They identified an exciting new positioning space and their work was appreciated by our entire team. I would recommend them if you are looking for a brand strategy consultant to define a powerful positioning space for your brand.</p>
+                            <img src="images/qoutes.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="caseStudies section" id="caseStudies">
             <h2 class="fontRoboto font64 fontW700 colorW">Case Studies</h2>
 
             <div class="flex">
@@ -362,9 +428,10 @@
             </div>
 
             <a href="#" id="loadMorethree" class="fontPoppins fontW400 font20 colordarkGray">View All Clients</a>
+            
 
         </div>
-        <div class="section contactSec">
+        <div class="section contactSec" id="contactSec">
             <h2 class="fontRoboto font64 fontW700 colorW">Contact</h2>
             <div class="contactBox">
                 <div class="contDec">
