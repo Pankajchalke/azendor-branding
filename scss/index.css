@@ -232,6 +232,7 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, a, p {
   height: inherit !important; }
 
 .navbar {
+  position: fixed;
   width: 100%;
   height: 147px;
   opacity: 0.85;
@@ -243,10 +244,10 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, a, p {
       padding: 0px; } }
   @media (max-width: 920px) {
     .navbar input[type="checkbox"]:checked ~ .menu-items {
-      transform: translateX(160%); } }
+      transform: translateX(0); } }
   @media (max-width: 575px) {
     .navbar input[type="checkbox"]:checked ~ .menu-items {
-      transform: translateX(80%); } }
+      transform: translateX(0); } }
   @media (max-width: 920px) {
     .navbar input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
       transform: rotate(45deg); } }
@@ -365,11 +366,13 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, a, p {
     display: flex; }
     @media (max-width: 920px) {
       .navbar .menu-items {
+        position: absolute;
+        right: 0;
         padding-top: 100px;
         background: transparent;
         height: 100vh;
-        max-width: 300px;
-        transform: translate(360%);
+        width: 300px;
+        transform: translate(150%);
         display: flex;
         flex-direction: column;
         transition: transform 0.5s ease-in-out;
