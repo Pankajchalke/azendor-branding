@@ -242,6 +242,54 @@ h2 {
   text-align: left;
   margin-bottom: 60px; }
 
+a:focus,
+a:hover {
+  color: #fff;
+  text-decoration: none; }
+
+.modal-backdrop {
+  position: unset !important; }
+
+.modal-dialog {
+  width: 1619px; }
+  .modal-dialog .modal-content {
+    background-color: #252525;
+    padding: 50px;
+    border: none; }
+    .modal-dialog .modal-content .modal-header {
+      border: none;
+      position: relative; }
+      .modal-dialog .modal-content .modal-header button {
+        position: absolute;
+        color: #fff;
+        float: none;
+        right: 70px;
+        font-weight: normal;
+        font-size: 45px;
+        opacity: 1; }
+    .modal-dialog .modal-content .modal-body {
+      padding: 15px 45px; }
+  @media all and (max-width: 1850px) {
+    .modal-dialog {
+      width: 1430px; }
+      .modal-dialog .modal-content {
+        padding: 36px; } }
+  @media all and (max-width: 1500px) {
+    .modal-dialog {
+      width: 1130px; }
+      .modal-dialog .modal-content {
+        padding: 30px; } }
+  @media all and (max-width: 1200px) {
+    .modal-dialog {
+      width: 1000px; }
+      .modal-dialog .modal-content {
+        padding: 25px; } }
+  @media all and (max-width: 1024px) {
+    .modal-dialog {
+      width: 780px; }
+      .modal-dialog .modal-content {
+        padding: 25px; } }
+
 .serviceSec .serviceSlider {
   display: block; }
   .serviceSec .serviceSlider .servicesBox {
@@ -250,6 +298,11 @@ h2 {
     padding: 54px 0px 54px 38px;
     width: 23%;
     margin: 0px 15px; }
+    .serviceSec .serviceSlider .servicesBox .listService {
+      display: flex;
+      justify-content: space-between; }
+      .serviceSec .serviceSlider .servicesBox .listService ul {
+        width: 48%; }
     .serviceSec .serviceSlider .servicesBox:hover {
       background-color: #252525; }
     .serviceSec .serviceSlider .servicesBox h3,
@@ -305,65 +358,24 @@ h2 {
             padding-top: 5px; }
       .serviceSec .serviceSlider .servicesBox .serviceList p {
         margin-bottom: 30px; }
-      .serviceSec .serviceSlider .servicesBox .serviceList a {
+      .serviceSec .serviceSlider .servicesBox .serviceList .btn,
+      .serviceSec .serviceSlider .servicesBox .serviceList .btn-info,
+      .serviceSec .serviceSlider .servicesBox .serviceList .btn-lg {
         color: #fff;
         text-decoration: none;
         border: 1px solid rgba(177, 177, 177, 0.2);
         border-radius: 40px;
-        padding: 12px 26px; }
-        .serviceSec .serviceSlider .servicesBox .serviceList a img {
+        padding: 12px 26px;
+        background-color: transparent;
+        outline: none; }
+        .serviceSec .serviceSlider .servicesBox .serviceList .btn img,
+        .serviceSec .serviceSlider .servicesBox .serviceList .btn-info img,
+        .serviceSec .serviceSlider .servicesBox .serviceList .btn-lg img {
           transition: 0.6s all; }
-        .serviceSec .serviceSlider .servicesBox .serviceList a:hover img {
+        .serviceSec .serviceSlider .servicesBox .serviceList .btn:hover img,
+        .serviceSec .serviceSlider .servicesBox .serviceList .btn-info:hover img,
+        .serviceSec .serviceSlider .servicesBox .serviceList .btn-lg:hover img {
           margin-left: 20px; }
-      .serviceSec .serviceSlider .servicesBox .serviceList .close {
-        position: absolute;
-        top: 0;
-        right: 300px;
-        width: 35px;
-        height: 30px;
-        background: #000;
-        color: #fff;
-        cursor: pointer;
-        border: 0; }
-      .serviceSec .serviceSlider .servicesBox .serviceList .mask {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(33, 33, 33, 0.5);
-        backdrop-filter: blur(5px);
-        z-index: 50;
-        visibility: hidden;
-        opacity: 0;
-        transition: 0.7s; }
-      .serviceSec .serviceSlider .servicesBox .serviceList .modal {
-        position: fixed;
-        top: 0%;
-        left: 0%;
-        width: 1619px;
-        height: 823px;
-        background: #252525;
-        z-index: 100;
-        visibility: hidden;
-        opacity: 0;
-        transition: 0.5s ease-out; }
-        .serviceSec .serviceSlider .servicesBox .serviceList .modal .modalContent {
-          padding: 10px 70px; }
-          .serviceSec .serviceSlider .servicesBox .serviceList .modal .modalContent .modalList {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start; }
-            .serviceSec .serviceSlider .servicesBox .serviceList .modal .modalContent .modalList ul {
-              width: 36%; }
-              .serviceSec .serviceSlider .servicesBox .serviceList .modal .modalContent .modalList ul li {
-                margin-bottom: 40px; }
-      .serviceSec .serviceSlider .servicesBox .serviceList .active {
-        visibility: visible;
-        opacity: 1; }
-      .serviceSec .serviceSlider .servicesBox .serviceList .active + .modal {
-        visibility: visible;
-        opacity: 1; }
     @media all and (max-width: 1800px) {
       .serviceSec .serviceSlider .servicesBox {
         padding: 50px 0px 50px 32px; } }
@@ -406,14 +418,81 @@ h2 {
   .teamSection .teamSec .teamMembers {
     width: 48%;
     position: relative;
-    margin-top: 20px; }
+    margin-top: 20px;
+    /* use :target to look for a link to the overlay then we find our mask */ }
+    .teamSection .teamSec .teamMembers #overlay, .teamSection .teamSec .teamMembers #team2 {
+      /* we set all of the properties for our overlay */
+      height: 890px;
+      width: 1000px;
+      margin: 0 auto;
+      background: #252525;
+      color: #fff;
+      padding: 74px;
+      position: absolute;
+      top: -20%;
+      left: 32%;
+      z-index: 1000;
+      display: none;
+      /* CSS 3 */
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -o-border-radius: 10px;
+      border-radius: 10px; }
+      .teamSection .teamSec .teamMembers #overlay .teamdescHeading, .teamSection .teamSec .teamMembers #team2 .teamdescHeading {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #6A6A6A;
+        padding-bottom: 30px;
+        margin-bottom: 20px; }
+        .teamSection .teamSec .teamMembers #overlay .teamdescHeading .teamimage, .teamSection .teamSec .teamMembers #team2 .teamdescHeading .teamimage {
+          width: 20%; }
+        .teamSection .teamSec .teamMembers #overlay .teamdescHeading .teamTitle, .teamSection .teamSec .teamMembers #team2 .teamdescHeading .teamTitle {
+          width: 78%; }
+          .teamSection .teamSec .teamMembers #overlay .teamdescHeading .teamTitle p, .teamSection .teamSec .teamMembers #team2 .teamdescHeading .teamTitle p {
+            margin-bottom: 18px; }
+      .teamSection .teamSec .teamMembers #overlay .infoTeam, .teamSection .teamSec .teamMembers #team2 .infoTeam {
+        margin-bottom: 30px; }
+    .teamSection .teamSec .teamMembers #mask {
+      /* create are mask */
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 500;
+      width: 100%;
+      height: 100%;
+      display: none; }
+    .teamSection .teamSec .teamMembers #overlay:target,
+    .teamSection .teamSec .teamMembers #overlay:target + #mask {
+      display: block;
+      opacity: 1; }
+    .teamSection .teamSec .teamMembers #team2:target,
+    .teamSection .teamSec .teamMembers #team2:target + #mask {
+      display: block;
+      opacity: 1; }
+    .teamSection .teamSec .teamMembers .close {
+      /* to make a nice looking pure CSS3 close button */
+      display: block;
+      position: absolute;
+      top: -40px;
+      right: 20px;
+      background: none;
+      color: white;
+      height: 40px;
+      width: 40px;
+      line-height: 0px;
+      font-size: 35px;
+      text-decoration: none;
+      text-align: center;
+      font-weight: normal !important;
+      opacity: 1; }
     .teamSection .teamSec .teamMembers a {
       text-decoration: none;
       padding: 85px 0px;
       text-align: center;
       position: absolute;
       bottom: -2px;
-      left: 0;
+      color: white;
       right: 0;
       width: 100%;
       background: linear-gradient(180deg, rgba(13, 13, 13, 0) 8.82%, rgba(33, 33, 33, 0.88) 45.31%, #212121 91.77%); }
@@ -466,6 +545,11 @@ h2 {
       border: 1px solid rgba(242, 242, 242, 0.2);
       border-radius: 60px;
       transition: .3s; }
+    @media all and (max-width: 768px) {
+      .clientsBox .clientSec .tabs {
+        width: 127px; }
+        .clientsBox .clientSec .tabs .bg {
+          width: 66px; } }
 .clientsBox .tabs-content div[id$="tab-content"] {
   display: none; }
 .clientsBox .tabs-content .active {
@@ -475,14 +559,6 @@ h2 {
   flex-wrap: wrap;
   justify-content: space-between; }
   .clientsBox .tabs-content .flex .box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 123px;
-    font-size: 2em;
-    padding: 0.5em;
-    line-height: 1;
     background-position: 0 0, 0 0, 100% 0, 0 100%;
     background-size: 3px 100%, 100% 3px, 3px 100%, 100% 3px;
     background-repeat: no-repeat; }
@@ -491,7 +567,10 @@ h2 {
     -webkit-filter: grayscale(100%);
     transition: 0.5s;
     max-width: 100%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px; }
     .clientsBox .tabs-content .flex img:hover {
       filter: grayscale(0%);
       -webkit-filter: grayscale(0%); }
@@ -500,10 +579,10 @@ h2 {
     --clr-border: #333;
     width: 23%;
     display: none;
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    background-image: linear-gradient(0deg, transparent 15%, var(--clr-border) 15%, var(--clr-border) 85%, transparent 85%), linear-gradient(90deg, transparent 15%, var(--clr-border) 15%, var(--clr-border) 85%, transparent 85%), linear-gradient(180deg, transparent 15%, var(--clr-border) 15%, var(--clr-border) 85%, transparent 85%), linear-gradient(270deg, transparent 15%, var(--clr-border) 15%, var(--clr-border) 85%, transparent 85%); }
+    background-image: linear-gradient(0deg, transparent 100%, var(--clr-border) 15%, var(--clr-border) 85%, transparent 85%), linear-gradient(0deg, transparent 15%, var(--clr-border) 15%, var(--clr-border) 85%, transparent 85%), linear-gradient(0, transparent 15%, var(--clr-border) 15%, var(--clr-border) 85%, transparent 85%), linear-gradient(0deg, transparent 15%, var(--clr-border) 15%, var(--clr-border) 85%, transparent 85%); }
+    .clientsBox .tabs-content .flex .content:nth-child(4n),
+    .clientsBox .tabs-content .flex .contentOne:nth-child(4n) {
+      background-image: linear-gradient(90deg, transparent 100%, var(--clr-border) 15%, var(--clr-border) 85%, transparent 85%), linear-gradient(0deg, transparent 15%, var(--clr-border) 15%, var(--clr-border) 85%, transparent 85%), linear-gradient(90deg, transparent 100%, var(--clr-border) 15%, var(--clr-border) 85%, transparent 85%), linear-gradient(0deg, transparent 15%, var(--clr-border) 15%, var(--clr-border) 85%, transparent 85%); }
     @media all and (max-width: 1400px) {
       .clientsBox .tabs-content .flex .content,
       .clientsBox .tabs-content .flex .contentOne {
@@ -529,7 +608,10 @@ h2 {
     -webkit-filter: grayscale(100%);
     transition: 0.5s;
     max-width: 100%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px; }
     .caseStudies .flex img:hover {
       filter: grayscale(0%);
       -webkit-filter: grayscale(0%); }
@@ -540,9 +622,7 @@ h2 {
     margin-top: 20px;
     background-color: #252525;
     border: 1px solid #1C1C1C;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center; }
+    border-radius: 10px; }
     @media all and (max-width: 1400px) {
       .caseStudies .flex .contentThree {
         width: 48%; } }
@@ -638,5 +718,19 @@ h2 {
   @media all and (max-width: 575px) {
     .contactSec .contactBox {
       padding: 40px 4px; } }
+
+.footerSec {
+  position: relative;
+  border-top: 1px solid rgba(242, 242, 242, 0.6); }
+  .footerSec .footer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px; }
+    .footerSec .footer a:nth-child(1) {
+      margin-right: 40px; }
 
 /*# sourceMappingURL=main.css.map */
