@@ -99,7 +99,7 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, a, p {
 /****************************************************Media Queries***********************************************************/
 @media all and (max-width: 1800px) {
   .wrapper {
-    padding: 0px 120px; }
+    padding: 0px 130px; }
 
   .font130 {
     font-size: 100px; }
@@ -123,7 +123,7 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, a, p {
     font-size: 18px; } }
 @media all and (max-width: 1600px) {
   .wrapper {
-    padding: 0px 100px; }
+    padding: 0px 70px; }
 
   .font64 {
     font-size: 54px; }
@@ -132,7 +132,7 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, a, p {
     font-size: 38px; } }
 @media all and (max-width: 1400px) {
   .wrapper {
-    padding: 0px 70px; }
+    padding: 0px 50px; }
 
   .font130 {
     font-size: 92px; }
@@ -171,7 +171,7 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, a, p {
     font-size: 18px; } }
 @media all and (max-width: 1024px) {
   .wrapper {
-    padding: 0px 50px; }
+    padding: 0px 40px; }
 
   .font130 {
     font-size: 130px; }
@@ -240,54 +240,6 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, a, p {
 
 h2 {
   text-align: left; }
-
-a:focus,
-a:hover {
-  color: #fff;
-  text-decoration: none; }
-
-.modal-backdrop {
-  position: unset !important; }
-
-.modal-dialog {
-  width: 1619px; }
-  .modal-dialog .modal-content {
-    background-color: #252525;
-    padding: 50px;
-    border: none; }
-    .modal-dialog .modal-content .modal-header {
-      border: none;
-      position: relative; }
-      .modal-dialog .modal-content .modal-header button {
-        position: absolute;
-        color: #fff;
-        float: none;
-        right: 70px;
-        font-weight: normal;
-        font-size: 45px;
-        opacity: 1; }
-    .modal-dialog .modal-content .modal-body {
-      padding: 15px 45px; }
-  @media all and (max-width: 1850px) {
-    .modal-dialog {
-      width: 1430px; }
-      .modal-dialog .modal-content {
-        padding: 36px; } }
-  @media all and (max-width: 1500px) {
-    .modal-dialog {
-      width: 1130px; }
-      .modal-dialog .modal-content {
-        padding: 30px; } }
-  @media all and (max-width: 1200px) {
-    .modal-dialog {
-      width: 1000px; }
-      .modal-dialog .modal-content {
-        padding: 25px; } }
-  @media all and (max-width: 1024px) {
-    .modal-dialog {
-      width: 780px; }
-      .modal-dialog .modal-content {
-        padding: 25px; } }
 
 .section {
   margin-bottom: 0px !important; }
@@ -360,9 +312,7 @@ a:hover {
             padding-top: 5px; }
       .serviceSec .serviceSlider .servicesBox .serviceList p {
         margin-bottom: 30px; }
-      .serviceSec .serviceSlider .servicesBox .serviceList .btn,
-      .serviceSec .serviceSlider .servicesBox .serviceList .btn-info,
-      .serviceSec .serviceSlider .servicesBox .serviceList .btn-lg {
+      .serviceSec .serviceSlider .servicesBox .serviceList .ctaOne {
         color: #fff;
         text-decoration: none;
         border: 1px solid rgba(177, 177, 177, 0.2);
@@ -370,13 +320,9 @@ a:hover {
         padding: 12px 26px;
         background-color: transparent;
         outline: none; }
-        .serviceSec .serviceSlider .servicesBox .serviceList .btn img,
-        .serviceSec .serviceSlider .servicesBox .serviceList .btn-info img,
-        .serviceSec .serviceSlider .servicesBox .serviceList .btn-lg img {
+        .serviceSec .serviceSlider .servicesBox .serviceList .ctaOne img {
           transition: 0.6s all; }
-        .serviceSec .serviceSlider .servicesBox .serviceList .btn:hover img,
-        .serviceSec .serviceSlider .servicesBox .serviceList .btn-info:hover img,
-        .serviceSec .serviceSlider .servicesBox .serviceList .btn-lg:hover img {
+        .serviceSec .serviceSlider .servicesBox .serviceList .ctaOne:hover img {
           margin-left: 20px; }
     @media all and (max-width: 1800px) {
       .serviceSec .serviceSlider .servicesBox {
@@ -388,15 +334,17 @@ a:hover {
       .serviceSec .serviceSlider .servicesBox {
         width: 23%;
         margin-top: 30px;
-        margin-left: 20px; } }
-    @media all and (max-width: 1250px) {
-      .serviceSec .serviceSlider .servicesBox .serviceList a {
-        padding: 10px 20px; }
-      .serviceSec .serviceSlider .servicesBox .serviceList ol li::before {
-        width: 27px;
-        height: 21px;
-        padding-top: 4px;
-        font-size: 12px; } }
+        margin-left: 20px; }
+        .serviceSec .serviceSlider .servicesBox .serviceList {
+          margin-right: 30px; }
+          .serviceSec .serviceSlider .servicesBox .serviceList a {
+            padding: 10px 20px; }
+          .serviceSec .serviceSlider .servicesBox .serviceList ol li::before {
+            width: 30px;
+            height: 26px;
+            padding-top: 4px;
+            font-size: 12px;
+            left: -12px; } }
     @media all and (max-width: 1024px) {
       .serviceSec .serviceSlider .servicesBox {
         height: 530px;
@@ -420,70 +368,7 @@ a:hover {
   .teamSection .teamSec .teamMembers {
     width: 48%;
     position: relative;
-    margin-top: 20px;
-    /* use :target to look for a link to the overlay then we find our mask */ }
-    .teamSection .teamSec .teamMembers #overlay {
-      /* we set all of the properties for our overlay */
-      height: 890px;
-      width: 1000px;
-      margin: 0 auto;
-      background: #252525;
-      color: #fff;
-      padding: 74px;
-      position: absolute;
-      top: -20%;
-      left: 32%;
-      z-index: 1000;
-      display: none;
-      /* CSS 3 */
-      -webkit-border-radius: 10px;
-      -moz-border-radius: 10px;
-      -o-border-radius: 10px;
-      border-radius: 10px; }
-      .teamSection .teamSec .teamMembers #overlay .teamdescHeading {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        border-bottom: 1px solid #6A6A6A;
-        padding-bottom: 30px;
-        margin-bottom: 20px; }
-        .teamSection .teamSec .teamMembers #overlay .teamdescHeading .teamimage {
-          width: 20%; }
-        .teamSection .teamSec .teamMembers #overlay .teamdescHeading .teamTitle {
-          width: 78%; }
-          .teamSection .teamSec .teamMembers #overlay .teamdescHeading .teamTitle p {
-            margin-bottom: 18px; }
-      .teamSection .teamSec .teamMembers #overlay .infoTeam {
-        margin-bottom: 30px; }
-    .teamSection .teamSec .teamMembers #mask {
-      /* create are mask */
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: 500;
-      width: 100%;
-      height: 100%;
-      display: none; }
-    .teamSection .teamSec .teamMembers #overlay:target,
-    .teamSection .teamSec .teamMembers #overlay:target + #mask {
-      display: block;
-      opacity: 1; }
-    .teamSection .teamSec .teamMembers .close {
-      /* to make a nice looking pure CSS3 close button */
-      display: block;
-      position: absolute;
-      top: -40px;
-      right: 20px;
-      background: none;
-      color: white;
-      height: 40px;
-      width: 40px;
-      line-height: 0px;
-      font-size: 35px;
-      text-decoration: none;
-      text-align: center;
-      font-weight: normal !important;
-      opacity: 1; }
+    margin-top: 20px; }
     .teamSection .teamSec .teamMembers a {
       text-decoration: none;
       padding: 85px 0px;
@@ -718,17 +603,12 @@ a:hover {
       padding: 40px 4px; } }
 
 .footerSec {
-  position: relative;
-  border-top: 1px solid rgba(242, 242, 242, 0.6); }
-  .footerSec .footer {
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 40px; }
-    .footerSec .footer a:nth-child(1) {
-      margin-right: 40px; }
+  border-top: 1px solid rgba(242, 242, 242, 0.6);
+  padding: 40px 0px;
+  text-align: right; }
+  .footerSec a {
+    text-decoration: none; }
+    .footerSec a:nth-child(1) {
+      margin-right: 20px; }
 
 /*# sourceMappingURL=main.css.map */
