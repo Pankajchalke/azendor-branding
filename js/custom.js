@@ -8,8 +8,8 @@ $('#fullpage').fullpage({
   navigationTooltips: [],
   fadingEffect: true,
   keyboardScrolling: false,
-  scrollingSpeed: 800,
-  slidesNavigation: true,
+  scrollingSpeed: 1500,
+  slidesNavigation: false,
   scrollHorizontally: true,
   licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
   responsiveWidth: 900,
@@ -25,7 +25,7 @@ $('#fullpage').fullpage({
     if (index == 2) { };
     if (index == 8 && nextIndex == 7) { };
   },
-  var : myFullpage = new fullpage('#fullpage', {
+  /*var : myFullpage = new fullpage('#fullpage', {
     scrollOverflow: true,
     onScrollOverflow: function (section, slide, position, direction) {
       var params = {
@@ -38,7 +38,7 @@ $('#fullpage').fullpage({
       console.log("--- onScrollOverflow ---");
       console.log(params);
     }
-  }),
+  }),*/
 
 });
 

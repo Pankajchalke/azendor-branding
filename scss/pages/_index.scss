@@ -200,7 +200,8 @@ header{
 	h2{margin-bottom:40px;}
 }
 .bannerSec{
-	h1{margin:50px 0px;
+	h1{
+	//margin:50px 0px;
 	&:hover{background:-webkit-linear-gradient(330deg, #F2F2F2 42.19%, #A2DFF2 73.22%);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
