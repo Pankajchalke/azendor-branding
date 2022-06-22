@@ -322,7 +322,7 @@ header {
         height: 28px;
         width: 35px;
         position: absolute;
-        top: 43px;
+        top: 20px;
         right: 0px;
         z-index: 2;
         display: flex;
@@ -351,6 +351,9 @@ header {
         position: absolute;
         top: 10px;
         left: 0px; } }
+    @media (max-width: 575px) {
+      header .header-container .logo img {
+        width: 60%; } }
   header .menu-items {
     display: flex; }
     @media (max-width: 920px) {
@@ -386,7 +389,7 @@ header {
     margin-bottom: 40px; }
 
 .bannerSec h1 {
-  margin-bottom: 30px; }
+  margin: 50px 0px; }
   .bannerSec h1:hover {
     background: -webkit-linear-gradient(330deg, #F2F2F2 42.19%, #A2DFF2 73.22%);
     -webkit-background-clip: text;
