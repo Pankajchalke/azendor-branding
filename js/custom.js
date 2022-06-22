@@ -9,6 +9,7 @@ $('#fullpage').fullpage({
   scrollingSpeed: 1500,
   slidesNavigation: false,
   scrollHorizontally: true,
+  controlArrows: true,
   licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
   // responsiveWidth: 900,
   afterResponsive: function (isResponsive) { },
@@ -181,24 +182,33 @@ menuLinks.forEach((link) => {
 
 $('.testimonialsSlider').slick({
   centerMode: true,
-  centerPadding: '10%',
+  centerPadding: '17%',
   slidesToShow: 1,
   responsive: [
     {
+      breakpoint: 1400,
+      settings: {
+        arrows: true,
+        centerMode: true,
+        centerPadding: '15%',
+        slidesToShow: 1
+      }
+    },
+    {
       breakpoint: 768,
       settings: {
-        arrows: false,
+        arrows: true,
         centerMode: true,
-        centerPadding: '10%',
+        centerPadding: '50%',
         slidesToShow: 1
       }
     },
     {
       breakpoint: 480,
       settings: {
-        arrows: false,
+        arrows: true,
         centerMode: true,
-        centerPadding: '10%',
+        centerPadding: '20%',
         slidesToShow: 1
       }
     }
