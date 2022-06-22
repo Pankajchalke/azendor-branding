@@ -1,18 +1,16 @@
 
 $('#fullpage').fullpage({
   css3: true,
-  sectionsColor: [],
   anchors: ['home', 'serviceSec', 'teamSection', 'clientsBox', 'testimonialsSec', 'caseStudies', 'contactSec'],
   menu: '#menu',
   navigation: false,
-  navigationTooltips: [],
   fadingEffect: true,
-  keyboardScrolling: false,
+  keyboardScrolling: true,
   scrollingSpeed: 1500,
   slidesNavigation: false,
   scrollHorizontally: true,
   licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
-  responsiveWidth: 900,
+  // responsiveWidth: 900,
   afterResponsive: function (isResponsive) { },
   afterLoad: function (anchorLink, index) {
     console.log(index);
