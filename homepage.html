@@ -28,10 +28,10 @@
 </head>
 
 <body>
-    <nav class="navbar wrapper">
-        <div class="navbar-container">
+    <header class="wrapper" id="header">
+        <div class="header-container">
             <a href="#" class="logo">
-                <img src="images/logo.png"><span class="fontPoppins font22 coloroffW fontW400"> Brand Consulting</span>
+                <img src="images/logo.png">
             </a>
             <input type="checkbox" name="" id="">
             <div class="hamburger-lines">
@@ -39,44 +39,36 @@
                 <span class="line line2"></span>
                 <span class="line line3"></span>
             </div>
-
-            <ul class="menu-items">
-                <li class="fontPoppins font18 coloroffW fontW400"><a class="menu-link is-active" href="#">Home</a></li>
-                <li class="fontPoppins font18 coloroffW fontW400"><a class="menu-link" href="#serviceSec">Services</a>
-                </li>
-                <li class="fontPoppins font18 coloroffW fontW400"><a class="menu-link" href="#teamSection">Team</a></li>
-                <li class="fontPoppins font18 coloroffW fontW400"><a class="menu-link" href="#clientsBox">Clients </a>
-                </li>
-                <li class="fontPoppins font18 coloroffW fontW400"><a class="menu-link"
-                        href="#testimonialsSec">Testimonials</a></li>
-                <li class="fontPoppins font18 coloroffW fontW400"><a class="menu-link" href="#caseStudies">Case
-                        studies</a></li>
-                <li class="fontPoppins font18 coloroffW fontW400"><a class="contact" href="#contactSec">Contact</a></li>
-            </ul>
-
+            
+                <ul class="menu-items" id="menu">
+                    <li class="fontPoppins font18 coloroffW fontW400"><a class="menu-link is-active" href="#home" data-scroll="home">Home</a></li>
+                    <li class="fontPoppins font18 coloroffW fontW400"><a class="menu-link" href="#serviceSec" data-scroll="serviceSec">Services</a>
+                    </li>
+                    <li class="fontPoppins font18 coloroffW fontW400"><a class="menu-link" href="#teamSection" data-scroll="teamSection">Team</a></li>
+                    <li class="fontPoppins font18 coloroffW fontW400"><a class="menu-link" href="#clientsBox">Clients </a>
+                    </li>
+                    <li class="fontPoppins font18 coloroffW fontW400"><a class="menu-link"
+                    href="#testimonialsSec">Testimonials</a></li>
+                    <li class="fontPoppins font18 coloroffW fontW400"><a class="menu-link" href="#caseStudies">Case Studies</a></li>
+                    <li class="fontPoppins font18 coloroffW fontW400"><a class="contact" href="#contactSec">Contact</a></li>
+                </ul>
         </div>
-    </nav>
+    </header>
     <div id="fullpage">
-        <section class="bannerSec section">
-            <div class="wrapper">
-                <h1 class="fontRoboto font130 coloroffW fontW700">Looking at making your brands work harder for your
-                    business?</h1>
-                <h4 class="fontRoboto fontW400 font36 colordarkGray">What we offer</h4>
-                <p class="fontPoppins font48 fontW300"><span class="fontW600 colorW">Azendor Brand Consulting</span>
-                    works
-                    with you to create powerful brand propositions for your business and products. With highly
-                    experienced
-                    professionals on board, it offers customised brand strategy and marketing communications solutions
-                    for
-                    your business needs.</p>
-                <h4 class="fontRoboto fontW400 font36 colordarkGray">Azendor</h4>
-                <p class="fontPoppins font48 fontW300">A name inspired by <span
-                        class="fontW600 colorW">‘ascender’</span>,
-                    which is a mountaineering device that keeps climbers safe as they climb up steep terrains.</p>
+        <section class="bannerSec home section wrapper fp-auto-height" id="section0" data-anchor="home">
+            <div class="slide">
+                <h1 class="fontRoboto font130 coloroffW fontW700">Looking at making your brands work harder for your business?</h1>
             </div>
-
+            <div class="slide">
+                <h4 class="fontRoboto fontW400 font36 colordarkGray">What we offer</h4>
+                <p class="fontPoppins font48 fontW300"><span class="fontW600 colorW">Azendor Brand Consulting</span> works with you to create powerful brand propositions for your business and products. With highly experienced professionals on board, it offers customised brand strategy and marketing communications solutions for your business needs.</p>  
+            </div>
+            <div class="slide">
+                <h4 class="fontRoboto fontW400 font36 colordarkGray">Azendor</h4>
+                <p class="fontPoppins font48 fontW300">A name inspired by <span class="fontW600 colorW">‘ascender’</span>, which is a mountaineering device that keeps climbers safe as they climb up steep terrains.</p>  
+            </div>
         </section>
-        <section class="serviceSec section" id="serviceSec">
+        <section class="serviceSec section" id="section4" data-anchor="serviceSec">
             <div class="wrapper">
                 <h2 class="fontRoboto font64 fontW700 colorW">Services</h2>
                 <div class="serviceSlider">
@@ -139,7 +131,7 @@
         </section>
 
 
-        <section class="teamSection section" id="teamSection">
+        <section class="teamSection section" id="section5" data-anchor="teamSection">
             <div class="wrapper">
                 <h2 class="fontRoboto font64 fontW700 colorW">Team</h2>
                 <div class="teamSec">
@@ -167,7 +159,7 @@
 
         </section>
 
-        <section class="clientsBox section" id="clientsBox">
+        <section class="clientsBox section" id="section6" data-anchor="clientsBox">
             <div class="wrapper">
                 <div class="clientSec">
                     <h2 class="fontRoboto font64 fontW700 colorW">Clients</h2>
@@ -256,8 +248,8 @@
 
         </section>
 
-        <section class="testimonialsSec section" id="testimonialsSec">
-            <h2 class="fontRoboto font64 fontW700 colorW">Testimonials</h2>
+        <section class="testimonialsSec section" id="section7" data-anchor="testimonialsSec">
+            <h2 class="fontRoboto font64 fontW700 colorW wrapper">Testimonials</h2>
             <div class="testimonialsSlider">
                 <div class="testimonialsSection">
                     <div class=" testimonials">
@@ -265,21 +257,13 @@
                             <img src="images/profile.png">
                             <div class="profileInfo">
                                 <h4 class="fontRoboto font30 fontW500 colorW textCenter">Pearl Shah</h4>
-                                <p class="font20 fontPoppins fontW400 colordarkGray textCenter">Sr Marketing Manager
-                                </p>
+                                <p class="font20 fontPoppins fontW400 colordarkGray textCenter">Sr Marketing Manager</p>
                             </div>
                         </div>
                         <div class="description">
-                            <p class="font22 fontPoppins fontW400 colorW">Sourabh and his team at Azendor worked for
-                                us
-                                as consultants on a new brand
-                                development project at Unilever. We liked their ability to ‘think out of the box’
-                                while
-                                also bringing in the discipline of consumer research and market
-                                information analysis. They identified an exciting new positioning space and their
-                                work
-                                was appreciated by our entire team. I would recommend them if you are looking for a
-                                brand strategy consultant to define a powerful positioning space for your brand.</p>
+                            <p class="font22 fontPoppins fontW400 colorW">Sourabh and his team at Azendor worked for us as consultants on a new brand
+                            development project at Unilever. We liked their ability to ‘think out of the box’ while also bringing in the discipline of consumer research and market
+                            information analysis. They identified an exciting new positioning space and their work was appreciated by our entire team. I would recommend them if you are looking for a brand strategy consultant to define a powerful positioning space for your brand.</p>
                             <img src="images/qoutes.png">
                         </div>
                     </div>
@@ -290,21 +274,13 @@
                             <img src="images/profile.png">
                             <div class="profileInfo">
                                 <h4 class="fontRoboto font30 fontW500 colorW textCenter">Pearl Shah1</h4>
-                                <p class="font20 fontPoppins fontW400 colordarkGray textCenter">Sr Marketing Manager
-                                </p>
+                                <p class="font20 fontPoppins fontW400 colordarkGray textCenter">Sr Marketing Manager</p>
                             </div>
                         </div>
                         <div class="description">
-                            <p class="font22 fontPoppins fontW400 colorW">Sourabh and his team at Azendor worked for
-                                us
-                                as consultants on a new brand
-                                development project at Unilever. We liked their ability to ‘think out of the box’
-                                while
-                                also bringing in the discipline of consumer research and market
-                                information analysis. They identified an exciting new positioning space and their
-                                work
-                                was appreciated by our entire team. I would recommend them if you are looking for a
-                                brand strategy consultant to define a powerful positioning space for your brand.</p>
+                            <p class="font22 fontPoppins fontW400 colorW">Sourabh and his team at Azendor worked for us as consultants on a new brand
+                            development project at Unilever. We liked their ability to ‘think out of the box’ while also bringing in the discipline of consumer research and market
+                            information analysis. They identified an exciting new positioning space and their work was appreciated by our entire team. I would recommend them if you are looking for a brand strategy consultant to define a powerful positioning space for your brand.</p>
                             <img src="images/qoutes.png">
                         </div>
                     </div>
@@ -315,21 +291,13 @@
                             <img src="images/profile.png">
                             <div class="profileInfo">
                                 <h4 class="fontRoboto font30 fontW500 colorW textCenter">Pearl Shah2</h4>
-                                <p class="font20 fontPoppins fontW400 colordarkGray textCenter">Sr Marketing Manager
-                                </p>
+                                <p class="font20 fontPoppins fontW400 colordarkGray textCenter">Sr Marketing Manager</p>
                             </div>
                         </div>
                         <div class="description">
-                            <p class="font22 fontPoppins fontW400 colorW">Sourabh and his team at Azendor worked for
-                                us
-                                as consultants on a new brand
-                                development project at Unilever. We liked their ability to ‘think out of the box’
-                                while
-                                also bringing in the discipline of consumer research and market
-                                information analysis. They identified an exciting new positioning space and their
-                                work
-                                was appreciated by our entire team. I would recommend them if you are looking for a
-                                brand strategy consultant to define a powerful positioning space for your brand.</p>
+                            <p class="font22 fontPoppins fontW400 colorW">Sourabh and his team at Azendor worked for us as consultants on a new brand
+                            development project at Unilever. We liked their ability to ‘think out of the box’ while also bringing in the discipline of consumer research and market
+                            information analysis. They identified an exciting new positioning space and their work was appreciated by our entire team. I would recommend them if you are looking for a brand strategy consultant to define a powerful positioning space for your brand.</p>
                             <img src="images/qoutes.png">
                         </div>
                     </div>
@@ -340,21 +308,13 @@
                             <img src="images/profile.png">
                             <div class="profileInfo">
                                 <h4 class="fontRoboto font30 fontW500 colorW textCenter">Pearl Shah3</h4>
-                                <p class="font20 fontPoppins fontW400 colordarkGray textCenter">Sr Marketing Manager
-                                </p>
+                                <p class="font20 fontPoppins fontW400 colordarkGray textCenter">Sr Marketing Manager</p>
                             </div>
                         </div>
                         <div class="description">
-                            <p class="font22 fontPoppins fontW400 colorW">Sourabh and his team at Azendor worked for
-                                us
-                                as consultants on a new brand
-                                development project at Unilever. We liked their ability to ‘think out of the box’
-                                while
-                                also bringing in the discipline of consumer research and market
-                                information analysis. They identified an exciting new positioning space and their
-                                work
-                                was appreciated by our entire team. I would recommend them if you are looking for a
-                                brand strategy consultant to define a powerful positioning space for your brand.</p>
+                            <p class="font22 fontPoppins fontW400 colorW">Sourabh and his team at Azendor worked for us as consultants on a new brand
+                            development project at Unilever. We liked their ability to ‘think out of the box’ while also bringing in the discipline of consumer research and market
+                            information analysis. They identified an exciting new positioning space and their work was appreciated by our entire team. I would recommend them if you are looking for a brand strategy consultant to define a powerful positioning space for your brand.</p>
                             <img src="images/qoutes.png">
                         </div>
                     </div>
@@ -362,7 +322,7 @@
             </div>
         </section>
 
-        <section class="caseStudies section" id="caseStudies">
+        <section class="caseStudies section" id="section8" data-anchor="caseStudies">
             <div class="wrapper">
                 <h2 class="fontRoboto font64 fontW700 colorW">Case Studies</h2>
                 <div class="vertical-scrolling">
@@ -410,7 +370,7 @@
 
             </div>
         </section>
-        <section class="section contactSec" id="contactSec">
+        <section  class="section contactSec" id="section9" data-anchor="contactSec">
             <div class="wrapper">
                 <h2 class="fontRoboto font64 fontW700 colorW">Contact</h2>
                 <div class="contactBox">
