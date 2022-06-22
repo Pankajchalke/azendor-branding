@@ -86,6 +86,9 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, a, p {
 .textCenter {
   text-align: center; }
 
+img {
+  max-width: 100%; }
+
 .slick-track {
   display: flex !important; }
 
@@ -101,13 +104,49 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, a, p {
     font-size: 100px; }
 
   .font64 {
-    font-size: 64px; }
+    font-size: 60px; }
+
+  .font55 {
+    font-size: 52px; }
+
+  .font48 {
+    font-size: 42px; }
+
+  .font36 {
+    font-size: 34px; }
+
+  .font30 {
+    font-size: 28px; }
+
+  .font24 {
+    font-size: 22px; }
+
+  .font20 {
+    font-size: 18px; }
+
+  .font18 {
+    font-size: 16px; }
+
+  .font16 {
+    font-size: 14px; } }
+@media all and (max-width: 1600px) {
+  .wrapper {
+    padding: 0px 70px; }
+
+  .font130 {
+    font-size: 92px; }
+
+  .font64 {
+    font-size: 50px; }
+
+  .font55 {
+    font-size: 48px; }
 
   .font48 {
     font-size: 40px; }
 
   .font36 {
-    font-size: 30px; }
+    font-size: 32px; }
 
   .font30 {
     font-size: 26px; }
@@ -116,16 +155,13 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, a, p {
     font-size: 22px; }
 
   .font20 {
-    font-size: 18px; } }
-@media all and (max-width: 1600px) {
-  .wrapper {
-    padding: 0px 70px; }
+    font-size: 18px; }
 
-  .font64 {
-    font-size: 54px; }
+  .font18 {
+    font-size: 16px; }
 
-  .font48 {
-    font-size: 38px; } }
+  .font16 {
+    font-size: 14px; } }
 @media all and (max-width: 1400px) {
   .wrapper {
     padding: 0px 50px; }
@@ -154,71 +190,44 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, a, p {
   .font18 {
     font-size: 14px; } }
 @media all and (max-width: 1280px) {
-  .font30 {
-    font-size: 20px; }
-
-  .font24 {
-    font-size: 16px; }
-
-  .font20 {
-    font-size: 13px; }
-
-  .font22 {
-    font-size: 18px; } }
-@media all and (max-width: 1024px) {
-  .wrapper {
-    padding: 0px 40px; }
-
   .font130 {
-    font-size: 130px; }
+    font-size: 72px; }
 
   .font64 {
-    font-size: 64px; }
+    font-size: 42px; }
+
+  .font55 {
+    font-size: 38px; }
 
   .font48 {
-    font-size: 24px; }
+    font-size: 34px; }
 
-  .font30 {
-    font-size: 20px; }
-
-  .font24 {
-    font-size: 17px; }
-
-  .font22 {
-    font-size: 18px; }
-
-  .font20 {
-    font-size: 14px; }
-
-  .font18 {
-    font-size: 18px; }
-
-  .font16 {
-    font-size: 16px; } }
-@media all and (max-width: 920px) {
-  .wrapper {
-    padding: 0px 40px; }
-
-  .font130 {
-    font-size: 50px; }
-
-  .font64 {
+  .font36 {
     font-size: 30px; }
 
-  .font48 {
-    font-size: 18px; }
-
   .font30 {
+    font-size: 24px; }
+
+  .font24 {
     font-size: 20px; }
 
-  .font30 {
-    font-size: 17px; }
-
   .font22 {
+    font-size: 18px; }
+
+  .font20 {
     font-size: 16px; }
 
   .font18 {
-    font-size: 10px; } }
+    font-size: 14px; }
+
+  .font16 {
+    font-size: 12px; } }
+@media all and (max-width: 1024px) {
+  .wrapper {
+    padding: 0px 40px; } }
+@media all and (max-width: 920px) {
+  .wrapper {
+    padding: 0px 40px; } }
 @media all and (max-width: 768px) {
   .wrapper {
     padding: 0px 20px; } }

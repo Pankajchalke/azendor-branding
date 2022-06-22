@@ -21,10 +21,36 @@ $('#fullpage').fullpage({
     if (index == 1) { };
     if (index == 2) { };
     if (index == 8 && nextIndex == 7) { };
-  }
+  },
+  var : myFullpage = new fullpage('#fullpage', {
+    scrollOverflow: true,
+    onScrollOverflow: function (section, slide, position, direction) {
+      var params = {
+        section: section,
+        slide: slide,
+        position: position,
+        direction: direction
+      };
+
+      console.log("--- onScrollOverflow ---");
+      console.log(params);
+    }
+  }),
 
 });
 
+// fullpage customization
+$('#clientsBox').fullpage({
+  sectionSelector: '.vertical-scrolling',
+  normalScrollElements: '#scrolldiv',
+  
+  
+});
+
+$('#caseStudies').fullpage({
+  sectionSelector: '.vertical-scrolling',
+  normalScrollElements: '#scrolldiv'
+});
 
 
 
