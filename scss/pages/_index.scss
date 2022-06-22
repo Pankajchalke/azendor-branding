@@ -277,6 +277,7 @@ header{
 		.slick-prev{
 			left: 1150px;
 			@media (max-width: 1950px){left: 850px;}
+			@media (max-width: 1600px){left: 725px;}
 			@media (max-width: 1450px){left: 625px;}
 			@media (max-width: 1050px){left: 450px;}
 			@media (max-width: 920px){left: 325px;}
@@ -288,6 +289,7 @@ header{
 		.slick-next{
 			right: 1150px;
 			@media (max-width: 1950px){right: 850px;}
+			@media (max-width: 1600px){right: 725px;}
 			@media (max-width: 1450px){right: 625px;}
 			@media (max-width: 1050px){right: 450px;}
 			@media (max-width: 920px){right: 325px;}
@@ -301,6 +303,9 @@ header{
 		background: #252525;
 		border-radius: 10px;
 		padding:155px 208px;
+		@media (max-width: 1600px){
+			padding:60px 100px;
+		}
 		@media (max-width: 1450px){
 			padding:60px 50px;
 		}
