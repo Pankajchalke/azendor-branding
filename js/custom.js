@@ -1,7 +1,7 @@
 
 $('#fullpage').fullpage({
   css3: true,
-  anchors: ['bannerSec', 'serviceSec', 'teamSection', 'clientsBox', 'testimonialsSec', 'caseStudies', 'contactSec'],
+  anchors: ['bannerSec', 'bannerSec1', 'bannerSec2', 'serviceSec', 'teamSection', 'clientsBox', 'testimonialsSec', 'caseStudies', 'contactSec', 'footer'],
   menu: '#menu',
   navigation: false,
   fadingEffect: true,
@@ -45,8 +45,8 @@ $('#fullpage').fullpage({
 $('#clientsBox').fullpage({
   sectionSelector: '.vertical-scrolling',
   normalScrollElements: '#scrolldiv',
-  
-  
+
+
 });
 
 $('#caseStudies').fullpage({
@@ -222,7 +222,16 @@ $('.testimonialsSlider').slick({
 
 
 
+$(window).scroll(function () {
+  var s = $(window).scrollTop(),
+        d = $(document).height(),
+        c = $(window).height();
+        scrollPercent = (s / (d-c)) * 100;
+        var position = scrollPercent;
 
+   $("#progressbar").attr('value', position);
+
+});
 
 
 
