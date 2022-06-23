@@ -284,6 +284,12 @@ img {
 @media all and (max-width: 768px) {
   .wrapper {
     padding: 0px 20px; } }
+@media all and (max-width: 575px) {
+  .font55 {
+    font-size: 22px; }
+
+  .font24 {
+    font-size: 16px; } }
 .slick-track {
   display: flex !important; }
 
