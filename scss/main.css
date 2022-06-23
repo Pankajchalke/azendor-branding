@@ -161,6 +161,9 @@ img {
   .font24 {
     font-size: 20px; }
 
+  .font22 {
+    font-size: 18px; }
+
   .font20 {
     font-size: 16px; }
 
@@ -267,16 +270,16 @@ img {
     font-size: 16px; }
 
   .font30 {
-    font-size: 20px; }
+    font-size: 18px; }
 
   .font24 {
-    font-size: 16px; }
+    font-size: 18px; }
 
   .font22 {
-    font-size: 16px; }
+    font-size: 14px; }
 
   .font20 {
-    font-size: 18px; }
+    font-size: 14px; }
 
   .font18 {
     font-size: 10px; }
@@ -285,15 +288,16 @@ img {
     font-size: 10px; } }
 @media all and (max-width: 768px) {
   .wrapper {
-    padding: 0px 20px; }
-
-  .font55 {
-    font-size: 21px; } }
+    padding: 0px 20px; } }
 .slick-track {
   display: flex !important; }
 
 .slick-slide {
   height: inherit !important; }
+
+progress {
+  position: fixed;
+  top: 15px; }
 
 .fullpage-wrapper {
   margin-top: 0px; }
@@ -315,7 +319,7 @@ h2 {
     color: #fff; }
 
 .modal.in .modal-dialog1 {
-  width: 90%;
+  width: 80%;
   margin: 0 auto; }
   .modal.in .modal-dialog1 .modal-content {
     background-color: #252525;
@@ -341,7 +345,8 @@ h2 {
       display: flex;
       justify-content: space-between; }
       .modal.in .modal-dialog1 .modal-content .serviceDesc .listService ul {
-        width: 37%; }
+        width: 40%;
+        margin-bottom: 40px; }
         .modal.in .modal-dialog1 .modal-content .serviceDesc .listService ul li {
           margin-bottom: 40px; }
     .modal.in .modal-dialog1 .modal-content .teamBox {
@@ -470,6 +475,8 @@ h2 {
           width: 70%; }
           .modal.in .modal-dialog2 .modal-content .teamBox .teamDesc p {
             margin-bottom: 12px; }
+          .modal.in .modal-dialog2 .modal-content .teamBox .teamDesc img {
+            width: 30px; }
         .modal.in .modal-dialog2 .modal-content .teamBox .memberImg {
           width: 28%; } }
   @media all and (max-width: 375px) {
@@ -535,15 +542,15 @@ h2 {
           .serviceSec .serviceSlider .servicesBox .serviceList ol li::before {
             content: counter(item) "";
             position: absolute;
-            width: 38px;
-            height: 34px;
+            width: 30px;
+            height: 30px;
             color: #fff;
             top: 0px;
             left: -22px;
             border-radius: 50%;
             text-align: center;
             background-color: #414141;
-            font-size: 18px;
+            font-size: 14px;
             padding-top: 5px; }
       .serviceSec .serviceSlider .servicesBox .serviceList p {
         margin-bottom: 30px; }
@@ -629,7 +636,7 @@ h2 {
       .teamSection .teamSec .teamMembers a img {
         transition: 0.6s all; }
       .teamSection .teamSec .teamMembers a:hover img {
-        margin-left: 20px; }
+        transform: translateX(15px); }
     .teamSection .teamSec .teamMembers .memberImg {
       max-width: 100%; }
   @media all and (max-width: 1600px) {
@@ -649,7 +656,9 @@ h2 {
       height: unset;
       display: block; }
       .teamSection .teamSec .teamMembers {
-        width: 100%; } }
+        width: 100%; }
+        .teamSection .teamSec .teamMembers .linkedinImg {
+          width: 30px; } }
 
 .clientsBox .clientSec {
   display: flex;
@@ -711,7 +720,7 @@ h2 {
     .clientsBox #scrolldiv #scrolldiv-content .tabs-content .flex {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between; }
+      margin-left: -30px; }
       .clientsBox #scrolldiv #scrolldiv-content .tabs-content .flex .box {
         background-position: 0 0, 0 0, 100% 0, 0 100%;
         background-size: 3px 100%, 100% 3px, 3px 100%, 100% 3px;
@@ -720,40 +729,51 @@ h2 {
         filter: grayscale(100%);
         -webkit-filter: grayscale(100%);
         transition: 0.5s;
-        max-width: 100%;
+        width: 225px;
         margin: 0 auto;
         display: flex;
-        justify-content: center;
-        padding: 20px 0px; }
+        justify-content: center; }
         .clientsBox #scrolldiv #scrolldiv-content .tabs-content .flex img:hover {
           filter: grayscale(0%);
           -webkit-filter: grayscale(0%); }
       .clientsBox #scrolldiv #scrolldiv-content .tabs-content .flex .content,
       .clientsBox #scrolldiv #scrolldiv-content .tabs-content .flex .contentOne {
-        width: 23%;
+        width: 25%;
+        margin-top: -1px;
         display: none; }
         .clientsBox #scrolldiv #scrolldiv-content .tabs-content .flex .content .imgBorder,
         .clientsBox #scrolldiv #scrolldiv-content .tabs-content .flex .contentOne .imgBorder {
           margin: 15px 0px;
-          border-right: 0.711479px solid rgba(255, 255, 255, 0.1); }
+          border-right: 1px solid #373737; }
         .clientsBox #scrolldiv #scrolldiv-content .tabs-content .flex .content::before,
         .clientsBox #scrolldiv #scrolldiv-content .tabs-content .flex .contentOne::before {
           content: '';
           display: block;
-          border-top: 0.711479px solid rgba(255, 255, 255, 0.1); }
+          border-top: 1px solid #373737;
+          width: 80%;
+          margin: 0 auto; }
         .clientsBox #scrolldiv #scrolldiv-content .tabs-content .flex .content::after,
         .clientsBox #scrolldiv #scrolldiv-content .tabs-content .flex .contentOne::after {
           content: '';
           display: block;
-          border-bottom: 0.711479px solid rgba(255, 255, 255, 0.1);
-          margin-top: -2px; }
+          border-bottom: 1px solid #373737;
+          width: 80%;
+          margin: 0 auto; }
         .clientsBox #scrolldiv #scrolldiv-content .tabs-content .flex .content:nth-child(4n+4) .imgBorder,
         .clientsBox #scrolldiv #scrolldiv-content .tabs-content .flex .contentOne:nth-child(4n+4) .imgBorder {
           border-right: none; }
-        @media all and (max-width: 780px) {
+      @media all and (max-width: 1200px) {
+        .clientsBox #scrolldiv #scrolldiv-content .tabs-content .flex img {
+          width: 170px; } }
+      @media all and (max-width: 780px) {
+        .clientsBox #scrolldiv #scrolldiv-content .tabs-content .flex {
+          margin-left: 0px; }
           .clientsBox #scrolldiv #scrolldiv-content .tabs-content .flex .content,
           .clientsBox #scrolldiv #scrolldiv-content .tabs-content .flex .contentOne {
-            width: 48%; } }
+            width: 48%; }
+            .clientsBox #scrolldiv #scrolldiv-content .tabs-content .flex .content:nth-child(even) .imgBorder,
+            .clientsBox #scrolldiv #scrolldiv-content .tabs-content .flex .contentOne:nth-child(even) .imgBorder {
+              border-right: none; } }
     .clientsBox #scrolldiv #scrolldiv-content .tabs-content #loadMore,
     .clientsBox #scrolldiv #scrolldiv-content .tabs-content #loadMoretab {
       text-align: center;
@@ -769,8 +789,6 @@ h2 {
     .clientsBox #scrolldiv {
       height: 780px; } }
 
-.caseStudies .vertical-scrolling {
-  margin-left: -10px; }
 .caseStudies #scrolldiv {
   background-color: transparent;
   width: unset;
@@ -785,28 +803,33 @@ h2 {
     .caseStudies #scrolldiv #scrolldiv-content .flex {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between; }
+      justify-content: space-between;
+      margin-left: -30px; }
       .caseStudies #scrolldiv #scrolldiv-content .flex img {
         filter: grayscale(100%);
         -webkit-filter: grayscale(100%);
         transition: 0.5s;
-        max-width: 100%;
         margin: 0 auto;
         display: flex;
         justify-content: center;
-        padding: 20px 0px; }
+        width: 225px; }
         .caseStudies #scrolldiv #scrolldiv-content .flex img:hover {
           filter: grayscale(0%);
           -webkit-filter: grayscale(0%); }
       .caseStudies #scrolldiv #scrolldiv-content .flex .contentThree {
         width: 23%;
-        border: 1px solid lightgrey;
         display: none;
-        margin-top: 20px;
+        margin-top: 40px;
+        padding: 10px 0px;
         background-color: #252525;
         border: 1px solid #1C1C1C;
         border-radius: 10px; }
-        @media all and (max-width: 780px) {
+      @media all and (max-width: 1200px) {
+        .caseStudies #scrolldiv #scrolldiv-content .flex img {
+          width: 170px; } }
+      @media all and (max-width: 780px) {
+        .caseStudies #scrolldiv #scrolldiv-content .flex {
+          margin-left: 0px; }
           .caseStudies #scrolldiv #scrolldiv-content .flex .contentThree {
             width: 48%; } }
     .caseStudies #scrolldiv #scrolldiv-content #loadMorethree {
@@ -836,6 +859,8 @@ h2 {
       border-left: 1px solid rgba(255, 255, 255, 0.1);
       border-right: 1px solid rgba(255, 255, 255, 0.1);
       width: 28%; }
+    .contactSec .contactBox .contDec h3 {
+      line-height: 30px; }
     .contactSec .contactBox .contDec h4 {
       padding: 42px 0px 24px 0px; }
     .contactSec .contactBox .contDec .mailDesc {
@@ -869,17 +894,40 @@ h2 {
           text-align: center;
           background-color: #414141;
           font-size: 18px;
-          padding-top: 5px; }
-    @media all and (max-width: 1800px) {
+          padding-top: 5px;
+          font-weight: normal !important; }
+  @media all and (max-width: 1800px) {
+    .contactSec .contactBox .contDec {
+      padding: 0px 70px; } }
+  @media all and (max-width: 1600px) {
+    .contactSec .contactBox {
+      padding: 40px 0px; }
       .contactSec .contactBox .contDec {
-        padding: 0px 70px; } }
-    @media all and (max-width: 1600px) {
-      .contactSec .contactBox .contDec {
-        padding: 0px 50px; } }
-    @media all and (max-width: 1280px) {
-      .contactSec .contactBox .contDec {
-        padding: 0px 20px; } }
-    @media all and (max-width: 1024px) {
+        padding: 0px 50px; }
+        .contactSec .contactBox .contDec h4 {
+          padding: 22px 0px 22px 0px; }
+        .contactSec .contactBox .contDec .icon-1 {
+          border: 1px solid #fff;
+          border-radius: 50%;
+          width: 60px;
+          height: 60px; }
+          .contactSec .contactBox .contDec .icon-1 img {
+            width: 30px; }
+        .contactSec .contactBox .contDec ol li {
+          margin-bottom: 24px; }
+          .contactSec .contactBox .contDec ol li::before {
+            width: 28px;
+            height: 28px;
+            font-size: 14px; }
+        .contactSec .contactBox .contDec .mailDesc {
+          margin-bottom: 50px; } }
+  @media all and (max-width: 1280px) {
+    .contactSec .contactBox .contDec {
+      padding: 0px 20px; } }
+  @media all and (max-width: 1024px) {
+    .contactSec .contactBox {
+      padding: 40px 30px;
+      display: block; }
       .contactSec .contactBox .contDec {
         width: 100%; }
         .contactSec .contactBox .contDec:nth-child(2) {
@@ -894,21 +942,19 @@ h2 {
           margin-bottom: 10px; }
         .contactSec .contactBox .contDec a {
           font-size: 16px; } }
-  @media all and (max-width: 1600px) {
-    .contactSec .contactBox {
-      padding: 50px 0px; } }
-  @media all and (max-width: 1024px) {
-    .contactSec .contactBox {
-      padding: 40px 30px;
-      display: block; } }
   @media all and (max-width: 575px) {
     .contactSec .contactBox {
-      padding: 40px 4px; } }
+      padding: 40px 4px; }
+      .contactSec .contactBox .contDec .icon-1 {
+        width: 35px;
+        height: 35px;
+        padding: 6px; } }
 
 .footerSec {
   border-top: 1px solid rgba(242, 242, 242, 0.6);
   padding: 40px 0px;
-  text-align: right; }
+  text-align: right;
+  margin-top: 30px; }
   .footerSec a {
     text-decoration: none; }
     .footerSec a:nth-child(1) {
