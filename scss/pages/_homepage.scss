@@ -1,6 +1,8 @@
 // Bhavika's CSS
 
-
+.fullpage-wrapper {
+    margin-top: 0px;
+}
 
 #fp-nav ul li a span {
     background-color: #fff !important;
@@ -14,7 +16,15 @@ h2 {
 
 .section {
     margin-bottom: 0px !important;
-    a:hover, a:active, a:visited, a:focus{
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    a:hover,
+    a:active,
+    a:visited,
+    a:focus {
         color: #fff;
     }
 }
@@ -97,23 +107,42 @@ h2 {
             ;
         }
 
-        .modal-footer {
-            padding: 0px;
-            border-top: none;
-        }
+        
     }
 
-    @media all and (max-width: 1280px) {
+    @media all and (max-width: 1600px){
+        width: 70%;
         .modal-content {
             padding: 50px;
 
             .modal-body {
                 .listService {
                     ul {
-                        width: 45%;
+                        width: 48%;
 
                         li {
-                            margin-bottom: 30px;
+                            margin-bottom: 15px;
+                        }
+                    }
+                }
+            }
+            .serviceDesc{
+                p{
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+
+    @media all and (max-width: 1280px) {
+        .modal-content {
+            .modal-body {
+                .listService {
+                    ul {
+                        width: 48%;
+
+                        li {
+                            margin-bottom: 20px;
                         }
                     }
                 }
@@ -127,6 +156,7 @@ h2 {
         width: 100%;
 
         .modal-content {
+            padding: 30px;
 
             .modal-body {
                 .listService {
@@ -136,7 +166,7 @@ h2 {
                         width: 100%;
 
                         li {
-                            margin-bottom: 30px;
+                            margin-bottom: 20px;
                         }
                     }
                 }
@@ -148,7 +178,8 @@ h2 {
 
         .modal-content {
             padding: 20px;
-            .close{
+
+            .close {
                 margin-top: 0px !important;
             }
 
@@ -248,12 +279,34 @@ h2 {
     }
 
     @media all and (max-width: 1600px) {
-        width: 65%;
-    }
-    @media all and (max-width: 1280px) {
-        width: 80%;
+        width: 70%;
         .modal-content {
             padding: 44px;
+
+            .teamBox {
+                padding-bottom: 15px;
+    
+                .teamDesc {
+                    width: 78%;
+    
+                    p {
+                        margin-bottom: 12px;
+                    }
+                }
+    
+                .memberImg {
+                    width: 20%;
+                }
+            }
+        }
+        
+    }
+
+    @media all and (max-width: 1280px) {
+
+        .modal-content {
+            padding: 44px;
+           
         }
 
     }
@@ -261,14 +314,31 @@ h2 {
     @media all and (max-width: 780px) {
         transform: translate(0px, 100px);
         width: 100%;
-
+        .modal-content{
+            .teamBox {
+                padding-bottom: 15px;
+    
+                .teamDesc {
+                    width: 70%;
+    
+                    p {
+                        margin-bottom: 12px;
+                    }
+                }
+    
+                .memberImg {
+                    width: 28%;
+                }
+            }
+        }
     }
 
     @media all and (max-width: 375px) {
 
         .modal-content {
             padding: 20px;
-            .close{
+
+            .close {
                 margin-top: 0px !important;
             }
 
@@ -281,7 +351,7 @@ h2 {
 
     .serviceSlider {
         display: block;
-
+        margin-left: -15px;
 
         .servicesBox {
             border: 1px solid rgba(177, 177, 177, 0.2);
@@ -400,56 +470,6 @@ h2 {
                     }
                 }
             }
-
-
-
-
-            @media all and (max-width: 1800px) {
-                padding: 50px 0px 50px 32px;
-            }
-
-            @media all and (max-width: 1600px) {
-                padding: 44px 0px 44px 20px;
-            }
-
-            @media all and (max-width: 1400px) {
-                width: 23%;
-                margin-top: 30px;
-                margin-left: 20px;
-
-                .serviceList {
-                    margin-right: 30px;
-
-                    a {
-                        padding: 10px 20px;
-                    }
-
-                    ol li::before {
-                        width: 30px;
-                        height: 26px;
-                        padding-top: 4px;
-                        font-size: 12px;
-                        left: -12px;
-                    }
-                }
-            }
-
-            @media all and (max-width: 1180px) {
-                .serviceList {
-                    margin-right: 10px;
-
-                    .ctaOne {
-                        padding: 12px 20px;
-                    }
-                }
-            }
-
-            @media all and (max-width: 1024px) {
-
-                height: 530px;
-                margin-bottom: 20px;
-
-            }
         }
 
 
@@ -472,9 +492,87 @@ h2 {
 
 
 
-        @media all and (max-width: 1024px) {
-            display: block;
+
+
+
+    }
+
+    @media all and (max-width: 1800px) {
+        .servicesBox {
+            padding: 50px 0px 50px 32px;
         }
+
+    }
+
+   
+
+    @media all and (max-width: 1600px) {
+        .serviceSlider {
+            .servicesBox {
+                width: 23%;
+                margin: 0px 10px;
+                padding: 24px 0px 24px 20px;
+
+                img {
+                    width: 40px;
+                }
+
+                h3,
+                p {
+                    padding-top: 12px;
+                    padding-bottom: 15px;
+                }
+
+                .serviceList {
+                    margin-right: 30px;
+                    padding-top: 15px;
+
+                    a {
+                        padding: 10px 20px;
+                    }
+
+                    ol li {
+                        margin-bottom: 15px;
+
+                        &::before {
+                            width: 25px;
+                            height: 25px;
+                            padding-top: 4px;
+                            font-size: 12px;
+                            left: -12px;
+                        }
+                    }
+
+                }
+            }
+        }
+
+
+    }
+
+    @media all and (max-width: 1180px) {
+        .servicesBox {
+            .serviceList {
+                margin-right: 10px;
+
+                .ctaOne {
+                    padding: 12px 20px;
+                }
+            }
+        }
+
+    }
+
+    @media all and (max-width: 1024px) {
+        .serviceSlider {
+            display: block;
+
+            .servicesBox {
+                height: 530px;
+                margin-bottom: 20px;
+            }
+        }
+
 
 
     }
@@ -525,6 +623,19 @@ h2 {
             }
         }
 
+        @media all and (max-width: 1600px) {
+            height: 420px;
+            overflow: hidden;
+
+            .teamMembers {
+                margin-bottom: 12px;
+                a{
+                    padding: 50px 0px;
+                    bottom: -40px;
+                }
+            }
+        }
+
         @media all and (max-width: 1280px) {
             .teamMembers {
                 a {
@@ -534,6 +645,7 @@ h2 {
         }
 
         @media all and (max-width: 680px) {
+            height: unset;
             display: block;
 
             .teamMembers {
@@ -668,26 +780,44 @@ h2 {
 
                     .content,
                     .contentOne {
-                        --clr-border: #333;
                         width: 23%;
+                        
 
                         display: none;
-
-                        background-image:
-                            linear-gradient(0deg, transparent 100%, var(--clr-border) 15%, var(--clr-border) 85%, transparent 85%), linear-gradient(0deg, transparent 15%, var(--clr-border) 15%, var(--clr-border) 85%, transparent 85%), linear-gradient(0, transparent 15%, var(--clr-border) 15%, var(--clr-border) 85%, transparent 85%), linear-gradient(0deg, #d00e0e00 100%, #d81515 100%, var(--clr-border) 85%, transparent 85%);
-
-                        &:nth-child(4n) {
-                            background-image:
-                                linear-gradient(90deg, transparent 100%, var(--clr-border) 15%, var(--clr-border) 85%, transparent 85%), linear-gradient(0deg, transparent 15%, var(--clr-border) 15%, var(--clr-border) 85%, transparent 85%), linear-gradient(90deg, transparent 100%, var(--clr-border) 15%, var(--clr-border) 85%, transparent 85%), linear-gradient(0deg, #d00e0e00 100%, #d81515 100%, var(--clr-border) 85%, transparent 85%);
-
+                    
+                        .imgBorder{
+                            margin: 15px 0px;
+                            border-right: 0.711479px solid rgba(255, 255, 255, 0.1);
                         }
+
+                        &::before{
+                            content: '';
+                            display: block;
+                            
+                            border-top: 0.711479px solid rgba(255, 255, 255, 0.1);
+                            
+                        }
+                        &::after{
+                            content: '';
+                            display: block;
+                           
+                            border-bottom: 0.711479px solid rgba(255, 255, 255, 0.1);
+                            margin-top: -2px;
+                           
+                        }
+
+                        &:nth-child(4n+4){
+                            .imgBorder{
+                                border-right: none;
+                            }
+                        }
+
+                        
 
                         @media all and (max-width:780px) {
                             width: 48%;
 
-                            &:nth-child(2n+2) {
-                                background-image: linear-gradient(0deg, transparent 100%, var(--clr-border) 15%, var(--clr-border) 85%, transparent 85%), linear-gradient(0deg, transparent 15%, var(--clr-border) 15%, var(--clr-border) 85%, transparent 85%), linear-gradient(0, transparent 100%, var(--clr-border) 15%, var(--clr-border) 85%, transparent 85%), linear-gradient(0deg, #d00e0e00 100%, #d81515 100%, var(--clr-border) 85%, transparent 85%);
-                            }
+                            
                         }
 
                     }
@@ -718,6 +848,9 @@ h2 {
 }
 
 .caseStudies {
+    .vertical-scrolling {
+        margin-left: -10px;
+    }
 
     #scrolldiv {
         background-color: transparent;
