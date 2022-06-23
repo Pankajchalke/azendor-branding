@@ -234,7 +234,11 @@ header{
 }
 
 //header css  end//
-
+.fullpage-wrapper{
+	margin-top:100px !important;
+	@media (max-width: 1600px){margin-top: 90px !important;}
+	@media (max-width: 1400px){margin-top: 60px !important;}
+}
 //banner css
 .section{
 	margin-bottom:60px;
@@ -294,6 +298,8 @@ header{
 			@media (max-width: 575px){left: 160px;}
 			&:before{
 			font-size: 38px;
+			opaity:0.5;
+			&:hover{opacity:1;}
 		    }
 		}
 		.slick-next{
@@ -306,6 +312,8 @@ header{
 			@media (max-width: 575px){right: 160px;}
 			&:before{
 			font-size: 38px;
+			opaity:0.5;
+			&:hover{opacity:1;}
 		    }
 		}
 	.testimonials{
@@ -365,9 +373,12 @@ header{
 				}
 				}
 			}
+
 		}
+
 		}
 	}
+	
 
 
 

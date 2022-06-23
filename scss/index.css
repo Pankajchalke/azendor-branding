@@ -487,6 +487,15 @@ header {
           border: 1px solid #fff;
           color: #fff; }
 
+.fullpage-wrapper {
+  margin-top: 100px !important; }
+  @media (max-width: 1600px) {
+    .fullpage-wrapper {
+      margin-top: 90px !important; } }
+  @media (max-width: 1400px) {
+    .fullpage-wrapper {
+      margin-top: 60px !important; } }
+
 .section {
   margin-bottom: 60px; }
   .section h2 {
@@ -545,7 +554,10 @@ header {
       .testimonialsSec .testimonialsSlider .slick-prev {
         left: 160px; } }
     .testimonialsSec .testimonialsSlider .slick-prev:before {
-      font-size: 38px; }
+      font-size: 38px;
+      opaity: 0.5; }
+      .testimonialsSec .testimonialsSlider .slick-prev:before:hover {
+        opacity: 1; }
   .testimonialsSec .testimonialsSlider .slick-next {
     right: 1150px; }
     @media (max-width: 1950px) {
@@ -567,7 +579,10 @@ header {
       .testimonialsSec .testimonialsSlider .slick-next {
         right: 160px; } }
     .testimonialsSec .testimonialsSlider .slick-next:before {
-      font-size: 38px; }
+      font-size: 38px;
+      opaity: 0.5; }
+      .testimonialsSec .testimonialsSlider .slick-next:before:hover {
+        opacity: 1; }
   .testimonialsSec .testimonialsSlider .testimonials {
     display: flex;
     background: #252525;

@@ -1,7 +1,7 @@
 
 $('#fullpage').fullpage({
   css3: true,
-  anchors: ['home', 'serviceSec', 'teamSection', 'clientsBox', 'testimonialsSec', 'caseStudies', 'contactSec'],
+  anchors: ['bannerSec', 'serviceSec', 'teamSection', 'clientsBox', 'testimonialsSec', 'caseStudies', 'contactSec'],
   menu: '#menu',
   navigation: false,
   fadingEffect: true,
