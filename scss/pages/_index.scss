@@ -74,7 +74,7 @@ header{
 		        content: "";
 		        left: -5px;
 		        right:0;
-		        top:-10px;
+		        top:-15px;
 		        bottom: 0;
 		        width: 50px;
 				height: 50px;
@@ -85,6 +85,7 @@ header{
 		        z-index:-1;
 		        margin:0 auto;
 		        @media (max-width: 1400px){
+		        	top:-10px;
 		        	width: 40px;
 					height: 40px;
 		        	}
@@ -99,7 +100,7 @@ header{
 	    justify-content: space-between;
 	    align-items: center;
 	    padding-top: 60px;
-	    @media (max-width: 1600px){}
+	    @media (max-width: 1600px){padding-top: 40px;}
 	    @media (max-width: 1400px){padding-top: 30px;}
 	    @media (max-width: 920px){
 	    	display: block;
@@ -180,6 +181,9 @@ header{
 		        top: 10px;
 		        left: 0px; }
 		        img{
+		        @media (max-width:1400px){
+		        	width:325px;
+		        }
 		        @media (max-width:1400px){
 		        	width:300px;
 		        }
