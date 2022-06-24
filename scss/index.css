@@ -488,13 +488,13 @@ header {
           color: #fff; }
 
 .fullpage-wrapper {
-  margin-top: 100px !important; }
+  margin-top: 60px !important; }
   @media (max-width: 1600px) {
     .fullpage-wrapper {
-      margin-top: 90px !important; } }
+      margin-top: 35px !important; } }
   @media (max-width: 1400px) {
     .fullpage-wrapper {
-      margin-top: 60px !important; } }
+      margin-top: 25px !important; } }
 
 .section {
   margin-bottom: 60px; }
@@ -604,7 +604,6 @@ header {
         .testimonialsSec .testimonialsSlider .testimonials .profile {
           width: 100%;
           display: flex;
-          text-align: center;
           align-items: center;
           border-bottom: 1px solid rgba(255, 255, 255, 0.1);
           padding-bottom: 20px; } }
@@ -614,10 +613,10 @@ header {
         @media (max-width: 920px) {
           .testimonialsSec .testimonialsSlider .testimonials .profile img {
             margin: 0;
-            width: 160px; } }
+            width: 150px; } }
         @media (max-width: 575px) {
           .testimonialsSec .testimonialsSlider .testimonials .profile img {
-            width: 100px; } }
+            width: 80px; } }
       .testimonialsSec .testimonialsSlider .testimonials .profile .profileInfo {
         margin-top: 20px; }
         @media (max-width: 920px) {
@@ -627,7 +626,16 @@ header {
           .testimonialsSec .testimonialsSlider .testimonials .profile .profileInfo {
             padding: 0 15px; } }
         .testimonialsSec .testimonialsSlider .testimonials .profile .profileInfo h4 {
-          margin-bottom: 10px; }
+          margin-bottom: 10px;
+          text-align: center; }
+          @media (max-width: 920px) {
+            .testimonialsSec .testimonialsSlider .testimonials .profile .profileInfo h4 {
+              text-align: left; } }
+        .testimonialsSec .testimonialsSlider .testimonials .profile .profileInfo p {
+          text-align: center; }
+          @media (max-width: 920px) {
+            .testimonialsSec .testimonialsSlider .testimonials .profile .profileInfo p {
+              text-align: left; } }
     .testimonialsSec .testimonialsSlider .testimonials .description {
       padding-left: 40px;
       position: relative;
@@ -648,5 +656,86 @@ header {
         @media (max-width: 920px) {
           .testimonialsSec .testimonialsSlider .testimonials .description img {
             top: 10px; } }
+    .testimonialsSec .testimonialsSlider .testimonials .testimonialsDesktop {
+      display: block; }
+      @media (max-width: 920px) {
+        .testimonialsSec .testimonialsSlider .testimonials .testimonialsDesktop {
+          display: none; } }
+    .testimonialsSec .testimonialsSlider .testimonials .testimonialsMobile {
+      display: none; }
+      @media (max-width: 920px) {
+        .testimonialsSec .testimonialsSlider .testimonials .testimonialsMobile {
+          display: block; } }
+      .testimonialsSec .testimonialsSlider .testimonials .testimonialsMobile a:visited, .testimonialsSec .testimonialsSlider .testimonials .testimonialsMobile a:hover, .testimonialsSec .testimonialsSlider .testimonials .testimonialsMobile a:active, .testimonialsSec .testimonialsSlider .testimonials .testimonialsMobile a:focus {
+        outline: none;
+        text-decoration: none;
+        color: #6A6A6A; }
+
+.modal.in .modal-dialog3 {
+  width: 50%;
+  margin: 0 auto; }
+  .modal.in .modal-dialog3 .modal-content {
+    background-color: #252525;
+    padding: 40px;
+    border: none;
+    border-radius: 10px 10px 0px 0pxpx; }
+    .modal.in .modal-dialog3 .modal-content .modal-header {
+      padding: 0px;
+      border-bottom: none; }
+      .modal.in .modal-dialog3 .modal-content .modal-header .close {
+        margin-top: -36px;
+        color: #f2f2f2;
+        opacity: 1;
+        font-weight: normal;
+        text-shadow: none;
+        font-size: 46px; }
+    .modal.in .modal-dialog3 .modal-content .modal-body {
+      padding: 0px; }
+    .modal.in .modal-dialog3 .modal-content .teamBox {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 20px; }
+      .modal.in .modal-dialog3 .modal-content .teamBox .teamDesc {
+        width: 76%; }
+        .modal.in .modal-dialog3 .modal-content .teamBox .teamDesc p {
+          margin-bottom: 18px; }
+      .modal.in .modal-dialog3 .modal-content .teamBox .memberImg {
+        width: 20%; }
+    .modal.in .modal-dialog3 .modal-content .teamPara {
+      padding-top: 18px;
+      border-top: 1px solid #6A6A6A; }
+      .modal.in .modal-dialog3 .modal-content .teamPara p {
+        margin-bottom: 30px;
+        font-size: 16px; }
+    .modal.in .modal-dialog3 .modal-content .modal-footer {
+      padding: 0px;
+      border-top: none; }
+  @media all and (max-width: 920px) {
+    .modal.in .modal-dialog3 {
+      transform: translate(0px, 100px);
+      width: 100%; }
+      .modal.in .modal-dialog3 .modal-content .teamBox {
+        padding-bottom: 15px; }
+        .modal.in .modal-dialog3 .modal-content .teamBox .teamDesc {
+          width: 70%;
+          padding: 20px 10px; }
+          .modal.in .modal-dialog3 .modal-content .teamBox .teamDesc h3 {
+            font-size: 20px; }
+          .modal.in .modal-dialog3 .modal-content .teamBox .teamDesc p {
+            margin-bottom: 12px;
+            font-size: 14px;
+            color: #6A6A6A; }
+          .modal.in .modal-dialog3 .modal-content .teamBox .teamDesc img {
+            width: 30px; }
+        .modal.in .modal-dialog3 .modal-content .teamBox .memberImg {
+          width: 28%; } }
+  @media all and (max-width: 575px) {
+    .modal.in .modal-dialog3 .memberImg {
+      width: 80px; } }
+  @media all and (max-width: 375px) {
+    .modal.in .modal-dialog3 .modal-content {
+      padding: 20px; }
+      .modal.in .modal-dialog3 .modal-content .close {
+        margin-top: 0px !important; } }
 
 /*# sourceMappingURL=index.css.map */

@@ -235,9 +235,9 @@ header{
 
 //header css  end//
 .fullpage-wrapper{
-	margin-top:100px !important;
-	@media (max-width: 1600px){margin-top: 90px !important;}
-	@media (max-width: 1400px){margin-top: 60px !important;}
+	margin-top:60px !important;
+	@media (max-width: 1600px){margin-top: 35px !important;}
+	@media (max-width: 1400px){margin-top: 25px !important;}
 }
 //banner css
 .section{
@@ -337,7 +337,7 @@ header{
 			@media (max-width: 920px){
 				width:100%;
 				display:flex;
-				text-align: center;
+				//text-align: center;
     			align-items: center;
     			border-bottom:1px solid rgba(255,255,255,0.1);
     			padding-bottom: 20px;
@@ -346,14 +346,23 @@ header{
     			margin: 0 auto;
     			max-width:100%;
     			//@media (max-width: 1400px){width:150px;}
-    			@media (max-width: 920px){margin: 0; width:160px;}
-    			@media (max-width: 575px){width:100px;}
+    			@media (max-width: 920px){margin: 0; width:150px;}
+    			@media (max-width: 575px){width:80px;}
     		}
     		.profileInfo{
     			margin-top:20px;
     			@media (max-width: 920px){padding: 0 35px;}
     			@media (max-width: 575px){padding: 0 15px;}
-    			h4{margin-bottom:10px;}
+    			h4{margin-bottom:10px;text-align:center;
+    				@media (max-width: 920px){
+    				text-align:left;
+    				}
+    			}
+    			p{text-align:center;
+    			@media (max-width: 920px){
+    				text-align:left;
+    				}
+    			}
     		}
     	}
 		.description{
@@ -373,13 +382,136 @@ header{
 				}
 				}
 			}
+			.testimonialsDesktop{
+			display:block;
+				@media (max-width: 920px){display:none;}
+			}
+			.testimonialsMobile{
+			display:none;
+				@media (max-width: 920px){display:block;}
+				a{
+				&:visited, &:hover, &:active, &:focus{
+				 	outline: none;
+    				text-decoration: none;
+    				color: #6A6A6A;
+				 }
+				}
+			}
 
 		}
 
 		}
 	}
-	
 
+// testimonials mobile Modal
+.modal.in .modal-dialog3 {
+    width: 50%;
+    margin: 0 auto;
+
+    .modal-content {
+        background-color: #252525;
+        padding: 40px;
+        border: none;
+        border-radius: 10px 10px 0px 0pxpx;
+
+        .modal-header {
+            padding: 0px;
+            border-bottom: none;
+
+            .close {
+                margin-top: -36px;
+                color: #f2f2f2;
+                opacity: 1;
+                font-weight: normal;
+                text-shadow: none;
+                font-size: 46px;
+            }
+        }
+
+        .modal-body {
+            padding: 0px;
+        }
+		.teamBox {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 20px;
+
+            .teamDesc {
+                width: 76%;
+
+                p {
+                    margin-bottom: 18px;
+                }
+            }
+
+            .memberImg {
+                width: 20%;
+            }
+        }
+
+        .teamPara {
+            padding-top: 18px;
+            border-top: 1px solid #6A6A6A;
+
+            p {
+                margin-bottom: 30px;
+                font-size:16px;
+            }
+        }
+		.modal-footer {
+            padding: 0px;
+            border-top: none;
+        }
+    }
+
+   @media all and (max-width: 920px) {
+        transform: translate(0px, 100px);
+        width: 100%;
+
+        .modal-content {
+            .teamBox {
+                padding-bottom: 15px;
+
+                .teamDesc {
+                    width: 70%;
+                    padding: 20px 10px;
+                    h3 {
+                        font-size:20px;
+                    }
+                    p {
+                        margin-bottom: 12px;
+                        font-size:14px;
+                        color:#6A6A6A;
+                    }
+                    img{
+                        width: 30px;
+                    }
+                }
+
+                .memberImg {
+                    width: 28%;
+                }
+            }
+        }
+    }
+    @media all and (max-width: 575px) {
+    	.memberImg {
+            width: 80px;
+        }
+    }
+
+    @media all and (max-width: 375px) {
+
+        .modal-content {
+            padding: 20px;
+
+            .close {
+                margin-top: 0px !important;
+            }
+
+        }
+    }
+}
 
 
 
