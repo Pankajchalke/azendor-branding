@@ -199,7 +199,7 @@ $('.testimonialsSlider').slick({
       settings: {
         arrows: true,
         centerMode: true,
-        centerPadding: '50%',
+        centerPadding: '15%',
         slidesToShow: 1
       }
     },
