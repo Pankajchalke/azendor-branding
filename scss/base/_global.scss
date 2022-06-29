@@ -59,8 +59,8 @@ img{max-width: 100%;}
 }
 @media all and (max-width: 1600px){
     .wrapper{padding: 0px 70px;}
-    .font130{font-size: 92px;}
-    .font64{font-size: 40px;}
+    .font130{font-size: 96px;}
+    .font64{font-size: 50px;}
     .font55{font-size: 46px;}
     .font48{font-size: 38px;}
     .font36{font-size: 32px;}
@@ -73,66 +73,63 @@ img{max-width: 100%;}
 }
 @media all and (max-width: 1400px){
     .wrapper{padding: 0px 70px;}
-    .font130{font-size: 82px;}
-    .font64{font-size: 40px;}
+    .font130{font-size: 92px;}
+    .font64{font-size: 46px;}
     .font55{font-size: 40px;}
     .font48{font-size: 34px;}
-    .font30{font-size: 22px;}
-    .font24{font-size: 18px;}
+    .font30{font-size: 21px;}
+    .font24{font-size: 17px;}
     .font22{font-size: 16px;}
     .font20{font-size: 14px;}
     .font18{font-size: 12px;}
-    .font16{font-size: 10px;}
+    .font16{font-size: 11px;}
     
 }
-@media all and (max-width: 1280px){
-    .font130{font-size: 62px;}
-    .font64{font-size: 40px;}
-    .font55{font-size: 38px;}
-    .font48{font-size: 32px;}
-    .font36{font-size: 30px;}
-    .font30{font-size: 20px;}
-    .font24{font-size: 16px;}
-    .font22{font-size: 14px;}
-    .font20{font-size: 12px;}
-    .font18{font-size: 12px;}
-    .font16{font-size: 10px;}
-}
+@media all and (max-width: 1280px){}
 @media all and (max-width: 1200px){}
 @media all and (max-width: 1180px){}
 @media all and (max-width: 1080px){}
 @media all and (max-width: 1024px){
     .wrapper{padding: 0px 40px;}
-    .font130{font-size: 52px;}
+    .font130{font-size: 70px;}
     .font64{font-size: 36px;}
     .font48{font-size: 30px;}
     
 }
 @media all and (max-width: 900px){
     .wrapper{padding: 0px 40px;}
-    .font130{font-size: 40px;}
-    .font64{font-size: 30px;}
+    .font130{font-size:55px;}
+    .font64{font-size: 32px;}
     .font55{font-size: 30px;}
-    .font48{font-size: 28px;}
-    .font36{font-size: 16px;}   
-    .font30{font-size: 18px;}
-    .font24{font-size: 18px;}
-    .font22{font-size: 14px;}
+    .font48{font-size: 24px;}
+    .font36{font-size: 18px;}   
+    .font30{font-size: 20px;}
+    .font24{font-size: 15px;}
+    .font22{font-size: 16px;}
     .font20{font-size: 14px;}
-    .font18{font-size: 10px;}
+    .font18{font-size: 12px;}
     .font16{font-size: 10px;}
     
     
 }
 @media all and (max-width: 768px){
-    .wrapper{padding: 0px 20px;}
+    .wrapper{padding: 0px 30px;}
     
     
 }
 @media all and (max-width: 680px){}
 @media all and (max-width: 575px){
+    .font130{font-size: 40px;}
+    .font64{font-size: 30px;}
     .font55{font-size: 22px;}
-    .font24{font-size: 16px;}
+    .font48{font-size: 18px;}
+    .font36{font-size: 16px;}   
+    .font30{font-size: 17px;}
+    .font24{font-size: 14px;}
+    .font22{font-size: 14px;}
+    .font20{font-size: 10px;}
+    .font18{font-size: 10px;}
+    .font16{font-size: 10px;}
 }
 @media all and (max-width: 375px){}
 

@@ -562,6 +562,13 @@ h2 {
 
     }
 
+    @media all and (max-width: 1400px) {
+        .servicesBox {
+                .iconImg {
+                    width: 30px !important;
+                }
+            }
+        }
     @media all and (max-width: 1180px) {
         .servicesBox {
             .serviceList {
@@ -588,6 +595,13 @@ h2 {
 
 
     }
+    @media all and (max-width: 575px) {
+        .servicesBox {
+                .iconImg {
+                    width: 24px !important;
+                }
+            }
+        }
 }
 
 
@@ -1098,6 +1112,17 @@ h2 {
                 } 
             }
         }
+        @media all and (max-width: 1400px) {
+            .contDec{
+                .icon-1 {
+                    width: 49px;
+                    height:49px;
+                    img{
+                    width: 21px;
+                    }
+                }
+            }
+        }
         @media all and (max-width: 1280px) {
             .contDec{
                 padding: 0px 20px;
@@ -1137,7 +1162,8 @@ h2 {
                 .icon-1{
                     width: 35px;
                     height: 35px;
-                    padding: 6px;
+                    padding: 8px;
+                    img{width: 16px;}
                 }
             }
         }

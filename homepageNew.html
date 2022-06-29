@@ -46,9 +46,13 @@
                     <li class="fontPoppins font18 coloroffW fontW400"><a class="contact" href="#contactSec" data-menuanchor="contactSec">Contact</a></li>
                 </ul>
         </div>
+        <div class="progress-container">
+            <div id="progressbar" class="progress-bar"></div>
+        </div>
     </header>
+    
     <div id="fullpage">
-       
+      
         <section class="bannerSec section wrapper" id="section0">
             <h1 class="fontRoboto font130 coloroffW fontW700">Looking at making your brands work harder for your business?</h1>
         </section>
@@ -66,7 +70,7 @@
                 <h2 class="fontRoboto font64 fontW700 colorW">Services</h2>
                 <div class="serviceSlider">
                     <div class="servicesBox">
-                        <img src="images/brand-strategy.png">
+                        <img src="images/brand-strategy.png" class="iconImg">
                         <h3 class="fontRoboto fontW700 font30 colorW">BRAND<br> STRATEGY</h3>
                         <div class="serviceList">
                             <ol>
@@ -78,7 +82,7 @@
                         </div>
                     </div>
                     <div class="servicesBox">
-                        <img src="images/brand-identity.png">
+                        <img src="images/brand-identity.png" class="iconImg">
                         <h3 class="fontRoboto fontW700 font30 colorW">BRAND<br> IDENTITY</h3>
                         <div class="serviceList">
                             <ol>
@@ -90,7 +94,7 @@
                         </div>
                     </div>
                     <div class="servicesBox">
-                        <img src="images/adv.png">
+                        <img src="images/adv.png" class="iconImg">
                         <h3 class="fontRoboto fontW700 font30 colorW">ADVERTISING & COMMUNICATIONS</h3>
                         <div class="serviceList">
                             <ol>
@@ -107,82 +111,18 @@
                         </div>
                     </div>
                     <div class="servicesBox">
-                        <img src="images/management.png">
+                        <img src="images/management.png" class="iconImg">
                         <h3 class="fontRoboto fontW700 font30 colorW">OUTSOURCED BRAND MANAGEMENT</h3>
                         <div class="serviceList">
                             <p class="font16 fontW400 colorW fontPoppins">Click Here To</p>
-                            <!-- <a href="#" class="colorW font20 fontW400 fontPoppins ctaOne btn btn-info btn-lg" type="button"
-                                data-toggle="modal" data-target="#myModal">Know More <img src="images/arrow.png"></a> -->
-
-                            <a href="#portfolio837" class="ctaOne fontPoppins fontW400 font20" data-toggle="modal">Know More <img
+                            <a href="#" class="colorW font20 fontW400 fontPoppins ctaOne btn btn-info btn-lg"
+                                data-toggle="modal" data-target="#serviceModal">Know More <img
                                     src="images/arrow.png"></a>
+
+
                         </div>
                     </div>
                 </div>
-                <!-- <div class="modal fade" id="portfolio837" tabindex="-1" role="dialog" aria-labelledby="basicModal"
-                    aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img
-                                    src="https://catamaran.in/wp-content/themes/catamaran/images/close.png"
-                                    alt=""></button>
-                            <div class="modal-body">
-                                <h3 class="fontRoboto fontW500 font55 colorW">
-                                    Outsourced Brand Management
-                                </h3>
-                                <p class="fontW400 font30 fontPoppins colorW">
-                                    Several clients have outsourced their brand management to Azendor. This
-                                    gives
-                                    them
-                                    the
-                                    advantage of getting very senior and experienced professionals to manage
-                                    their
-                                    brands at a
-                                    fraction of the cost of getting similarly qualified people as full time
-                                    employees.
-                                    This service includes:
-                                </p>
-                                <div class="listService">
-                                    <ul>
-                                        <li class="fontW300 font22 fontPoppins colorW">Defining the brand
-                                            strategy.
-                                        </li>
-                                        <li class="fontW300 font22 fontPoppins colorW">Converting the brand
-                                            strategy
-                                            into creative
-                                            briefs (Advertising, PR,
-                                            Digital & Social Media,
-                                            Event, Content etc.).</li>
-                                        <li class="fontW300 font22 fontPoppins colorW">Supervising the
-                                            execution agencies'
-                                            work to ensure that it is
-                                            aligned with the brand
-                                            strategy.</li>
-                                    </ul>
-                                    <ul>
-                                        <li class="fontW300 font22 fontPoppins colorW">
-                                            Working with clients to
-                                            choose and brief the
-                                            execution agencies
-                                            (Creative, Media, Design,
-                                            Digital, PR, Content,
-                                            Direct Marketing / CRM
-                                            etc.), including
-                                            managing the entire
-                                            'pitch' process.
-                                        </li>
-                                        <li class="fontW300 font22 fontPoppins colorW">
-                                            Helping clients set up their internal brand
-                                            management teams,
-                                            including help with
-                                            hiring and training the employees, if required.
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
             </div>
 
         </section>
@@ -192,7 +132,7 @@
                 <div class="teamSec">
                     <div class="teamMembers">
                         <img src="images/team1.png" class="memberImg">
-                        <a href="#">
+                        <a href="#" data-toggle="modal" data-target="#teamModal1">
                             <h3 class="fontRoboto font48 fontW400 colorW">Sourabh Mishra</h3>
                             <p class="fontPoppins font24 fontW400 colorlightGray">Founder & Partner <img
                                     src="images/arrow.png"></p>
@@ -200,13 +140,15 @@
                     </div>
                     <div class="teamMembers">
                         <img src="images/team2.png" class="memberImg">
-                        <a href="#">
+                        <a href="#" data-toggle="modal" data-target="#teamModal1">
                             <h3 class="fontRoboto font48 fontW400 colorW">Sourabh Mishra</h3>
                             <p class="fontPoppins font24 fontW400 colorlightGray">Founder & Partner <img
                                     src="images/arrow.png"></p>
                         </a>
                     </div>
                 </div>
+
+
             </div>
 
 
@@ -236,26 +178,59 @@
                             <div class="tabs-content">
                                 <div id="brands-tab-content" class="active">
                                     <div class="flex">
-                                        <div class="content box"><img src="images/brands/brand-1.png"></div>
-                                        <div class="content box"><img src="images/brands/brand-2.png"></div>
-                                        <div class="content box"><img src="images/brands/brand-3.png"></div>
-                                        <div class="content box"><img src="images/brands/brand-4.png"></div>
-                                        <div class="content box"><img src="images/brands/brand-5.png"></div>
-                                        <div class="content box"><img src="images/brands/brand-6.png"></div>
-                                        <div class="content box"><img src="images/brands/brand-7.png"></div>
-                                        <div class="content box"><img src="images/brands/brand-8.png"></div>
-                                        <div class="content box"><img src="images/brands/brand-1.png"></div>
-                                        <div class="content box"><img src="images/brands/brand-2.png"></div>
-                                        <div class="content box"><img src="images/brands/brand-3.png"></div>
-                                        <div class="content box"><img src="images/brands/brand-4.png"></div>
-                                        <div class="content box"><img src="images/brands/brand-5.png"></div>
-                                        <div class="content box"><img src="images/brands/brand-6.png"></div>
-                                        <div class="content box"><img src="images/brands/brand-7.png"></div>
-                                        <div class="content box"><img src="images/brands/brand-8.png"></div>
+                                        <div class="content box">
+                                            <div class="imgBorder"><img src="images/brands/brand-1.png"></div>
+                                        </div>
+                                        <div class="content box">
+                                            <div class="imgBorder"><img src="images/brands/brand-2.png"></div>
+                                        </div>
+                                        <div class="content box">
+                                            <div class="imgBorder"><img src="images/brands/brand-3.png"></div>
+                                        </div>
+                                        <div class="content box">
+                                            <div class="imgBorder"><img src="images/brands/brand-4.png"></div>
+                                        </div>
+                                        <div class="content box">
+                                            <div class="imgBorder"><img src="images/brands/brand-5.png"></div>
+                                        </div>
+                                        <div class="content box">
+                                            <div class="imgBorder"><img src="images/brands/brand-6.png"></div>
+                                        </div>
+                                        <div class="content box">
+                                            <div class="imgBorder"><img src="images/brands/brand-7.png"></div>
+                                        </div>
+                                        <div class="content box">
+                                            <div class="imgBorder"><img src="images/brands/brand-8.png"></div>
+                                        </div>
+                                        <div class="content box">
+                                            <div class="imgBorder"><img src="images/brands/brand-1.png"></div>
+                                        </div>
+                                        <div class="content box">
+                                            <div class="imgBorder"><img src="images/brands/brand-2.png"></div>
+                                        </div>
+                                        <div class="content box">
+                                            <div class="imgBorder"><img src="images/brands/brand-3.png"></div>
+                                        </div>
+                                        <div class="content box">
+                                            <div class="imgBorder"><img src="images/brands/brand-4.png"></div>
+                                        </div>
+                                        <div class="content box">
+                                            <div class="imgBorder"><img src="images/brands/brand-5.png"></div>
+                                        </div>
+                                        <div class="content box">
+                                            <div class="imgBorder"><img src="images/brands/brand-6.png"></div>
+                                        </div>
+                                        <div class="content box">
+                                            <div class="imgBorder"><img src="images/brands/brand-7.png"></div>
+                                        </div>
+                                        <div class="content box">
+                                            <div class="imgBorder"><img src="images/brands/brand-8.png"></div>
+                                        </div>
                                     </div>
 
-                                    <a href="#" id="loadMore" class="fontPoppins fontW400 font20 colordarkGray">View All
-                                        Clients</a>
+                                    <a href="#" id="loadMore">
+                                        <p class="fontPoppins fontW400 font20 colordarkGray">View All Clients</p>
+                                    </a>
 
 
 
@@ -266,27 +241,59 @@
                                 <div id="agencies-tab-content">
 
                                     <div class="flex">
-                                        <div class="contentOne box"><img src="images/brands/brand-9.png"></div>
-                                        <div class="contentOne box"><img src="images/brands/brand-10.png"></div>
-                                        <div class="contentOne box"><img src="images/brands/brand-11.png"></div>
-                                        <div class="contentOne box"><img src="images/brands/brand-9.png"></div>
-                                        <div class="contentOne box"><img src="images/brands/brand-10.png"></div>
-                                        <div class="contentOne box"><img src="images/brands/brand-11.png"></div>
-                                        <div class="contentOne box"><img src="images/brands/brand-9.png"></div>
-                                        <div class="contentOne box"><img src="images/brands/brand-10.png"></div>
-                                        <div class="contentOne box"><img src="images/brands/brand-11.png"></div>
-                                        <div class="contentOne box"><img src="images/brands/brand-9.png"></div>
-                                        <div class="contentOne box"><img src="images/brands/brand-10.png"></div>
-                                        <div class="contentOne box"><img src="images/brands/brand-11.png"></div>
-                                        <div class="contentOne box"><img src="images/brands/brand-9.png"></div>
-                                        <div class="contentOne box"><img src="images/brands/brand-10.png"></div>
-                                        <div class="contentOne box"><img src="images/brands/brand-11.png"></div>
-                                        <div class="contentOne box"><img src="images/brands/brand-9.png"></div>
+                                        <div class="contentOne box">
+                                            <div class="imgBorder"><img src="images/brands/brand-9.png"></div>
+                                        </div>
+                                        <div class="contentOne box">
+                                            <div class="imgBorder"><img src="images/brands/brand-10.png"></div>
+                                        </div>
+                                        <div class="contentOne box">
+                                            <div class="imgBorder"><img src="images/brands/brand-11.png"></div>
+                                        </div>
+                                        <div class="contentOne box">
+                                            <div class="imgBorder"><img src="images/brands/brand-9.png"></div>
+                                        </div>
+                                        <div class="contentOne box">
+                                            <div class="imgBorder"><img src="images/brands/brand-10.png"></div>
+                                        </div>
+                                        <div class="contentOne box">
+                                            <div class="imgBorder"><img src="images/brands/brand-11.png"></div>
+                                        </div>
+                                        <div class="contentOne box">
+                                            <div class="imgBorder"><img src="images/brands/brand-9.png"></div>
+                                        </div>
+                                        <div class="contentOne box">
+                                            <div class="imgBorder"><img src="images/brands/brand-10.png"></div>
+                                        </div>
+                                        <div class="contentOne box">
+                                            <div class="imgBorder"><img src="images/brands/brand-11.png"></div>
+                                        </div>
+                                        <div class="contentOne box">
+                                            <div class="imgBorder"><img src="images/brands/brand-9.png"></div>
+                                        </div>
+                                        <div class="contentOne box">
+                                            <div class="imgBorder"><img src="images/brands/brand-10.png"></div>
+                                        </div>
+                                        <div class="contentOne box">
+                                            <div class="imgBorder"><img src="images/brands/brand-11.png"></div>
+                                        </div>
+                                        <div class="contentOne box">
+                                            <div class="imgBorder"><img src="images/brands/brand-9.png"></div>
+                                        </div>
+                                        <div class="contentOne box">
+                                            <div class="imgBorder"><img src="images/brands/brand-10.png"></div>
+                                        </div>
+                                        <div class="contentOne box">
+                                            <div class="imgBorder"><img src="images/brands/brand-11.png"></div>
+                                        </div>
+                                        <div class="contentOne box">
+                                            <div class="imgBorder"><img src="images/brands/brand-9.png"></div>
+                                        </div>
                                     </div>
 
-                                    <a href="#" id="loadMoretab" class="fontPoppins fontW400 font20 colordarkGray">View
-                                        All
-                                        Clients</a>
+                                    <a href="#" id="loadMoretab">
+                                        <p class="fontPoppins fontW400 font20 colordarkGray">View All Clients</p>
+                                    </a>
 
                                 </div>
                                 <!--agencies-tab-content-->
@@ -441,8 +448,9 @@
                                 <div class="contentThree"><a href="#" data-toggle="modal"
                                         data-target="#caseStudies16"><img src="images/brands/brand-8.png"></a></div>
                             </div>
-                            <a href="#" id="loadMorethree" class="fontPoppins fontW400 font20 colordarkGray">View All
-                                Clients</a>
+                            <a href="#" id="loadMorethree">
+                                <p class="fontPoppins fontW400 font20 colordarkGray">View All Case Studies</p>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -472,7 +480,7 @@
                             <li class="fontPoppins fontW700 font22 colorW">Sourabh Mishra
                                 <p class="fontPoppins fontW400 font22 colorW">+91 98206 07601</p>
                             </li>
-                            <li class="fontPoppins font7400 font22 colorW">Shampa Maitra
+                            <li class="fontPoppins fontw700 font22 colorW">Shampa Maitra
                                 <p class="fontPoppins fontW400 font22 colorW">+91 98206 66586</p>
                             </li>
                         </ol>
@@ -493,10 +501,12 @@
         </section>
 
         <footer class="section fp-auto-height">
-            <div class="footerSec">
-                <div class="wrapper">
+            <div class="wrapper">
+                <div class="footerSec ">
+
                     <a href="#" class="fontPoppins fontW500 font20 colordarkGray">Terms Of Use </a>
                     <a href="#" class="fontPoppins fontW500 font20 colordarkGray">Privacy Policy</a>
+
                 </div>
             </div>
 
@@ -510,6 +520,8 @@
     <script src="js/plugins.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/fullpage.scrollHorizontally.limited.min.js"></script>
+
+
 
     <div class="modal " id="readMore" role="dialog" tabindex="-1" aria-labelledby="basicModal" aria-hidden="true">
         <div class="modal-dialog3 modal-lg" role="document">
@@ -538,6 +550,1003 @@
 
         </div>
     </div>
+
+
+
+<div class="modal " id="serviceModal" role="dialog" tabindex="-1" aria-labelledby="basicModal" aria-hidden="true">
+    <div class="modal-dialog1  modal-lg" role="document">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+            </div>
+            <div class="modal-body serviceDesc">
+                <h3 class="fontRoboto fontW500 font55 colorW">
+                    Outsourced Brand Management
+                </h3>
+                <p class="fontW400 font30 fontPoppins colorW">
+                    Several clients have outsourced their brand management to Azendor. This
+                    gives
+                    them
+                    the
+                    advantage of getting very senior and experienced professionals to manage
+                    their
+                    brands at a
+                    fraction of the cost of getting similarly qualified people as full time
+                    employees.
+                    This service includes:
+                </p>
+                <div class="listService">
+                    <ul>
+                        <li class="fontW300 font22 fontPoppins colorW">Defining the brand
+                            strategy.
+                        </li>
+                        <li class="fontW300 font22 fontPoppins colorW">Converting the brand
+                            strategy
+                            into creative
+                            briefs (Advertising, PR,
+                            Digital & Social Media,
+                            Event, Content etc.).</li>
+                        <li class="fontW300 font22 fontPoppins colorW">Supervising the
+                            execution agencies'
+                            work to ensure that it is
+                            aligned with the brand
+                            strategy.</li>
+                    </ul>
+                    <ul>
+                        <li class="fontW300 font22 fontPoppins colorW">
+                            Working with clients to
+                            choose and brief the
+                            execution agencies
+                            (Creative, Media, Design,
+                            Digital, PR, Content,
+                            Direct Marketing / CRM
+                            etc.), including
+                            managing the entire
+                            'pitch' process.
+                        </li>
+                        <li class="fontW300 font22 fontPoppins colorW">
+                            Helping clients set up their internal brand
+                            management teams,
+                            including help with
+                            hiring and training the employees, if required.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+<div class="modal " id="teamModal1" role="dialog" tabindex="-1" aria-labelledby="basicModal" aria-hidden="true">
+    <div class="modal-dialog2 modal-lg" role="document">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+            </div>
+            <div class="modal-body">
+                <div class="teamBox">
+                    <div class="memberImg">
+                        <img src="images/small-team-img.png">
+                    </div>
+                    <div class="teamDesc">
+                        <h3 class="fontRoboto fontW500 font55 colorW">Sourabh Mishra</h3>
+                        <p class="fontW400 font24 fontPoppins colordarkGray">Founder & Partner</p>
+                        <img src="images/linkdin.png">
+                    </div>
+                </div>
+                <div class="teamPara">
+                    <p class="fontW400 font24 fontPoppins colorW">Sourabh was the Chief Strategy Officer at Saatchi &
+                        Saatchi India, TBWA\India, Everest and Bates CHI &
+                        Partners India.</p>
+
+                    <p class="fontW400 font24 fontPoppins colorW">He also led the brand strategy
+                        planning function at Ogilvy (Mumbai and Bangalore
+                        offices), McCann Erickson (Bangalore office) and
+                        Contract (Bangalore and Delhi offices). His experience
+                        spans across categories and includes brands like
+                        Parle (Monaco, Hide N Seek), Reliance Capital,
+                        Cadbury (5 Star, Perk, Bournvita, Tang), Limca,
+                        Sprite, Coca Cola, SET MAX, ITC Cigarettes, TVS 2
+                        Wheelers, Skoda Cars, Lenovo, Titan, Kwality Wall’s,
+                        BPL, OLX India, ITC Ashirvaad, Ayurvedic Concepts
+                        (Himalaya), Skoda etc.</p>
+
+                    <p class="fontW400 font24 fontPoppins colorW"> His views on branding topics have been published in
+                        leading industry publications. He has been a speaker
+                        at several industry events and teaches marketing
+                        communications at business schools as guest faculty.
+                        He also mentors start-ups at AIC NMIMS and IEF.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<div class="modal " id="teamModal2" role="dialog" tabindex="-1" aria-labelledby="basicModal" aria-hidden="true">
+    <div class="modal-dialog2 modal-lg" role="document">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+            </div>
+            <div class="modal-body">
+                <div class="teamBox">
+                    <div class="memberImg">
+                        <img src="images/small-team-img.png">
+                    </div>
+                    <div class="teamDesc">
+                        <h3 class="fontRoboto fontW500 font55 colorW">Sourabh Mishra</h3>
+                        <p class="fontW400 font24 fontPoppins colordarkGray">Founder & Partner</p>
+                        <img src="images/linkdin.png">
+                    </div>
+                </div>
+                <div class="teamPara">
+                    <p class="fontW400 font24 fontPoppins colorW">Sourabh was the Chief Strategy Officer at Saatchi &
+                        Saatchi India, TBWA\India, Everest and Bates CHI &
+                        Partners India.</p>
+
+                    <p class="fontW400 font24 fontPoppins colorW">He also led the brand strategy
+                        planning function at Ogilvy (Mumbai and Bangalore
+                        offices), McCann Erickson (Bangalore office) and
+                        Contract (Bangalore and Delhi offices). His experience
+                        spans across categories and includes brands like
+                        Parle (Monaco, Hide N Seek), Reliance Capital,
+                        Cadbury (5 Star, Perk, Bournvita, Tang), Limca,
+                        Sprite, Coca Cola, SET MAX, ITC Cigarettes, TVS 2
+                        Wheelers, Skoda Cars, Lenovo, Titan, Kwality Wall’s,
+                        BPL, OLX India, ITC Ashirvaad, Ayurvedic Concepts
+                        (Himalaya), Skoda etc.</p>
+
+                    <p class="fontW400 font24 fontPoppins colorW"> His views on branding topics have been published in
+                        leading industry publications. He has been a speaker
+                        at several industry events and teaches marketing
+                        communications at business schools as guest faculty.
+                        He also mentors start-ups at AIC NMIMS and IEF.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+<div class="modal " id="caseStudies1" role="dialog" tabindex="-1" aria-labelledby="basicModal" aria-hidden="true">
+    <div class="modal-dialog2 modal-lg" role="document">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+            </div>
+            <div class="modal-body">
+                <div class="casestudiesPara">
+                    <div class="caseImg">
+                        <img src="images/cs-1.png">
+                    </div>
+                    <div class="caseDesc">
+                        <h3 class="fontRoboto fontW500 font55 colorW">Magic Bus</h3>
+                    </div>
+                </div>
+                <div class="casePara">
+                    <p class="fontW400 font24 fontPoppins colorW">
+                        Going into the future, Magic Bus, as a non-profit organization had identified the individual
+                        donor segment as an important source of funding, moving away from its primary dependency on
+                        corporate donor segments.</p>
+
+
+                    <p class="fontW400 font24 fontPoppins colorW"> Research by Azendor showed that the story to get
+                        individual donors interested needed to be
+                        different from the story that was being communicated to the corporate donors. It needed to be
+                        simpler, easy to comprehend and highly emotional in its appeal.</p>
+
+                    <p class="fontW400 font24 fontPoppins colorW"> The process started with further research amongst the
+                        key internal stakeholders, beneficiaries
+                        and donors. This was followed by a day long workshop with the key leadership team at Magic Bus,
+                        moderated by Azendor, to arrive at the brand idea.
+                        The output from the workshop was converted into a formal brand strategy document, which was used
+                        by the Magic Bus team to brief its creative agencies for the new communication, targeting
+                        individual donors.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<div class="modal " id="caseStudies1" role="dialog" tabindex="-1" aria-labelledby="basicModal" aria-hidden="true">
+    <div class="modal-dialog2 modal-lg" role="document">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+            </div>
+            <div class="modal-body">
+                <div class="casestudiesPara">
+                    <div class="caseImg">
+                        <img src="images/cs-1.png">
+                    </div>
+                    <div class="caseDesc">
+                        <h3 class="fontRoboto fontW500 font55 colorW">Magic Bus</h3>
+                    </div>
+                </div>
+                <div class="casePara">
+                    <p class="fontW400 font24 fontPoppins colorW">
+                        Going into the future, Magic Bus, as a non-profit organization had identified the individual
+                        donor segment as an important source of funding, moving away from its primary dependency on
+                        corporate donor segments.</p>
+
+
+                    <p class="fontW400 font24 fontPoppins colorW"> Research by Azendor showed that the story to get
+                        individual donors interested needed to be
+                        different from the story that was being communicated to the corporate donors. It needed to be
+                        simpler, easy to comprehend and highly emotional in its appeal.</p>
+
+                    <p class="fontW400 font24 fontPoppins colorW"> The process started with further research amongst the
+                        key internal stakeholders, beneficiaries
+                        and donors. This was followed by a day long workshop with the key leadership team at Magic Bus,
+                        moderated by Azendor, to arrive at the brand idea.
+                        The output from the workshop was converted into a formal brand strategy document, which was used
+                        by the Magic Bus team to brief its creative agencies for the new communication, targeting
+                        individual donors.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<div class="modal " id="caseStudies2" role="dialog" tabindex="-1" aria-labelledby="basicModal" aria-hidden="true">
+    <div class="modal-dialog2 modal-lg" role="document">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+            </div>
+            <div class="modal-body">
+                <div class="casestudiesPara">
+                    <div class="caseImg">
+                        <img src="images/cs-1.png">
+                    </div>
+                    <div class="caseDesc">
+                        <h3 class="fontRoboto fontW500 font55 colorW">Magic Bus</h3>
+                    </div>
+                </div>
+                <div class="casePara">
+                    <p class="fontW400 font24 fontPoppins colorW">
+                        Going into the future, Magic Bus, as a non-profit organization had identified the individual
+                        donor segment as an important source of funding, moving away from its primary dependency on
+                        corporate donor segments.</p>
+
+
+                    <p class="fontW400 font24 fontPoppins colorW"> Research by Azendor showed that the story to get
+                        individual donors interested needed to be
+                        different from the story that was being communicated to the corporate donors. It needed to be
+                        simpler, easy to comprehend and highly emotional in its appeal.</p>
+
+                    <p class="fontW400 font24 fontPoppins colorW"> The process started with further research amongst the
+                        key internal stakeholders, beneficiaries
+                        and donors. This was followed by a day long workshop with the key leadership team at Magic Bus,
+                        moderated by Azendor, to arrive at the brand idea.
+                        The output from the workshop was converted into a formal brand strategy document, which was used
+                        by the Magic Bus team to brief its creative agencies for the new communication, targeting
+                        individual donors.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<div class="modal " id="caseStudies3" role="dialog" tabindex="-1" aria-labelledby="basicModal" aria-hidden="true">
+    <div class="modal-dialog2 modal-lg" role="document">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+            </div>
+            <div class="modal-body">
+                <div class="casestudiesPara">
+                    <div class="caseImg">
+                        <img src="images/cs-1.png">
+                    </div>
+                    <div class="caseDesc">
+                        <h3 class="fontRoboto fontW500 font55 colorW">Magic Bus</h3>
+                    </div>
+                </div>
+                <div class="casePara">
+                    <p class="fontW400 font24 fontPoppins colorW">
+                        Going into the future, Magic Bus, as a non-profit organization had identified the individual
+                        donor segment as an important source of funding, moving away from its primary dependency on
+                        corporate donor segments.</p>
+
+
+                    <p class="fontW400 font24 fontPoppins colorW"> Research by Azendor showed that the story to get
+                        individual donors interested needed to be
+                        different from the story that was being communicated to the corporate donors. It needed to be
+                        simpler, easy to comprehend and highly emotional in its appeal.</p>
+
+                    <p class="fontW400 font24 fontPoppins colorW"> The process started with further research amongst the
+                        key internal stakeholders, beneficiaries
+                        and donors. This was followed by a day long workshop with the key leadership team at Magic Bus,
+                        moderated by Azendor, to arrive at the brand idea.
+                        The output from the workshop was converted into a formal brand strategy document, which was used
+                        by the Magic Bus team to brief its creative agencies for the new communication, targeting
+                        individual donors.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<div class="modal " id="caseStudies4" role="dialog" tabindex="-1" aria-labelledby="basicModal" aria-hidden="true">
+    <div class="modal-dialog2 modal-lg" role="document">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+            </div>
+            <div class="modal-body">
+                <div class="casestudiesPara">
+                    <div class="caseImg">
+                        <img src="images/cs-1.png">
+                    </div>
+                    <div class="caseDesc">
+                        <h3 class="fontRoboto fontW500 font55 colorW">Magic Bus</h3>
+                    </div>
+                </div>
+                <div class="casePara">
+                    <p class="fontW400 font24 fontPoppins colorW">
+                        Going into the future, Magic Bus, as a non-profit organization had identified the individual
+                        donor segment as an important source of funding, moving away from its primary dependency on
+                        corporate donor segments.</p>
+
+
+                    <p class="fontW400 font24 fontPoppins colorW"> Research by Azendor showed that the story to get
+                        individual donors interested needed to be
+                        different from the story that was being communicated to the corporate donors. It needed to be
+                        simpler, easy to comprehend and highly emotional in its appeal.</p>
+
+                    <p class="fontW400 font24 fontPoppins colorW"> The process started with further research amongst the
+                        key internal stakeholders, beneficiaries
+                        and donors. This was followed by a day long workshop with the key leadership team at Magic Bus,
+                        moderated by Azendor, to arrive at the brand idea.
+                        The output from the workshop was converted into a formal brand strategy document, which was used
+                        by the Magic Bus team to brief its creative agencies for the new communication, targeting
+                        individual donors.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+<div class="modal " id="caseStudies5" role="dialog" tabindex="-1" aria-labelledby="basicModal" aria-hidden="true">
+    <div class="modal-dialog2 modal-lg" role="document">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+            </div>
+            <div class="modal-body">
+                <div class="casestudiesPara">
+                    <div class="caseImg">
+                        <img src="images/cs-1.png">
+                    </div>
+                    <div class="caseDesc">
+                        <h3 class="fontRoboto fontW500 font55 colorW">Magic Bus</h3>
+                    </div>
+                </div>
+                <div class="casePara">
+                    <p class="fontW400 font24 fontPoppins colorW">
+                        Going into the future, Magic Bus, as a non-profit organization had identified the individual
+                        donor segment as an important source of funding, moving away from its primary dependency on
+                        corporate donor segments.</p>
+
+
+                    <p class="fontW400 font24 fontPoppins colorW"> Research by Azendor showed that the story to get
+                        individual donors interested needed to be
+                        different from the story that was being communicated to the corporate donors. It needed to be
+                        simpler, easy to comprehend and highly emotional in its appeal.</p>
+
+                    <p class="fontW400 font24 fontPoppins colorW"> The process started with further research amongst the
+                        key internal stakeholders, beneficiaries
+                        and donors. This was followed by a day long workshop with the key leadership team at Magic Bus,
+                        moderated by Azendor, to arrive at the brand idea.
+                        The output from the workshop was converted into a formal brand strategy document, which was used
+                        by the Magic Bus team to brief its creative agencies for the new communication, targeting
+                        individual donors.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+<div class="modal " id="caseStudies6" role="dialog" tabindex="-1" aria-labelledby="basicModal" aria-hidden="true">
+    <div class="modal-dialog2 modal-lg" role="document">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+            </div>
+            <div class="modal-body">
+                <div class="casestudiesPara">
+                    <div class="caseImg">
+                        <img src="images/cs-1.png">
+                    </div>
+                    <div class="caseDesc">
+                        <h3 class="fontRoboto fontW500 font55 colorW">Magic Bus</h3>
+                    </div>
+                </div>
+                <div class="casePara">
+                    <p class="fontW400 font24 fontPoppins colorW">
+                        Going into the future, Magic Bus, as a non-profit organization had identified the individual
+                        donor segment as an important source of funding, moving away from its primary dependency on
+                        corporate donor segments.</p>
+
+
+                    <p class="fontW400 font24 fontPoppins colorW"> Research by Azendor showed that the story to get
+                        individual donors interested needed to be
+                        different from the story that was being communicated to the corporate donors. It needed to be
+                        simpler, easy to comprehend and highly emotional in its appeal.</p>
+
+                    <p class="fontW400 font24 fontPoppins colorW"> The process started with further research amongst the
+                        key internal stakeholders, beneficiaries
+                        and donors. This was followed by a day long workshop with the key leadership team at Magic Bus,
+                        moderated by Azendor, to arrive at the brand idea.
+                        The output from the workshop was converted into a formal brand strategy document, which was used
+                        by the Magic Bus team to brief its creative agencies for the new communication, targeting
+                        individual donors.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+<div class="modal " id="caseStudies7" role="dialog" tabindex="-1" aria-labelledby="basicModal" aria-hidden="true">
+    <div class="modal-dialog2 modal-lg" role="document">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+            </div>
+            <div class="modal-body">
+                <div class="casestudiesPara">
+                    <div class="caseImg">
+                        <img src="images/cs-1.png">
+                    </div>
+                    <div class="caseDesc">
+                        <h3 class="fontRoboto fontW500 font55 colorW">Magic Bus</h3>
+                    </div>
+                </div>
+                <div class="casePara">
+                    <p class="fontW400 font24 fontPoppins colorW">
+                        Going into the future, Magic Bus, as a non-profit organization had identified the individual
+                        donor segment as an important source of funding, moving away from its primary dependency on
+                        corporate donor segments.</p>
+
+
+                    <p class="fontW400 font24 fontPoppins colorW"> Research by Azendor showed that the story to get
+                        individual donors interested needed to be
+                        different from the story that was being communicated to the corporate donors. It needed to be
+                        simpler, easy to comprehend and highly emotional in its appeal.</p>
+
+                    <p class="fontW400 font24 fontPoppins colorW"> The process started with further research amongst the
+                        key internal stakeholders, beneficiaries
+                        and donors. This was followed by a day long workshop with the key leadership team at Magic Bus,
+                        moderated by Azendor, to arrive at the brand idea.
+                        The output from the workshop was converted into a formal brand strategy document, which was used
+                        by the Magic Bus team to brief its creative agencies for the new communication, targeting
+                        individual donors.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<div class="modal " id="caseStudies8" role="dialog" tabindex="-1" aria-labelledby="basicModal" aria-hidden="true">
+    <div class="modal-dialog2 modal-lg" role="document">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+            </div>
+            <div class="modal-body">
+                <div class="casestudiesPara">
+                    <div class="caseImg">
+                        <img src="images/cs-1.png">
+                    </div>
+                    <div class="caseDesc">
+                        <h3 class="fontRoboto fontW500 font55 colorW">Magic Bus</h3>
+                    </div>
+                </div>
+                <div class="casePara">
+                    <p class="fontW400 font24 fontPoppins colorW">
+                        Going into the future, Magic Bus, as a non-profit organization had identified the individual
+                        donor segment as an important source of funding, moving away from its primary dependency on
+                        corporate donor segments.</p>
+
+
+                    <p class="fontW400 font24 fontPoppins colorW"> Research by Azendor showed that the story to get
+                        individual donors interested needed to be
+                        different from the story that was being communicated to the corporate donors. It needed to be
+                        simpler, easy to comprehend and highly emotional in its appeal.</p>
+
+                    <p class="fontW400 font24 fontPoppins colorW"> The process started with further research amongst the
+                        key internal stakeholders, beneficiaries
+                        and donors. This was followed by a day long workshop with the key leadership team at Magic Bus,
+                        moderated by Azendor, to arrive at the brand idea.
+                        The output from the workshop was converted into a formal brand strategy document, which was used
+                        by the Magic Bus team to brief its creative agencies for the new communication, targeting
+                        individual donors.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<div class="modal " id="caseStudies9" role="dialog" tabindex="-1" aria-labelledby="basicModal" aria-hidden="true">
+    <div class="modal-dialog2 modal-lg" role="document">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+            </div>
+            <div class="modal-body">
+                <div class="casestudiesPara">
+                    <div class="caseImg">
+                        <img src="images/cs-1.png">
+                    </div>
+                    <div class="caseDesc">
+                        <h3 class="fontRoboto fontW500 font55 colorW">Magic Bus</h3>
+                    </div>
+                </div>
+                <div class="casePara">
+                    <p class="fontW400 font24 fontPoppins colorW">
+                        Going into the future, Magic Bus, as a non-profit organization had identified the individual
+                        donor segment as an important source of funding, moving away from its primary dependency on
+                        corporate donor segments.</p>
+
+
+                    <p class="fontW400 font24 fontPoppins colorW"> Research by Azendor showed that the story to get
+                        individual donors interested needed to be
+                        different from the story that was being communicated to the corporate donors. It needed to be
+                        simpler, easy to comprehend and highly emotional in its appeal.</p>
+
+                    <p class="fontW400 font24 fontPoppins colorW"> The process started with further research amongst the
+                        key internal stakeholders, beneficiaries
+                        and donors. This was followed by a day long workshop with the key leadership team at Magic Bus,
+                        moderated by Azendor, to arrive at the brand idea.
+                        The output from the workshop was converted into a formal brand strategy document, which was used
+                        by the Magic Bus team to brief its creative agencies for the new communication, targeting
+                        individual donors.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<div class="modal " id="caseStudies10" role="dialog" tabindex="-1" aria-labelledby="basicModal" aria-hidden="true">
+    <div class="modal-dialog2 modal-lg" role="document">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+            </div>
+            <div class="modal-body">
+                <div class="casestudiesPara">
+                    <div class="caseImg">
+                        <img src="images/cs-1.png">
+                    </div>
+                    <div class="caseDesc">
+                        <h3 class="fontRoboto fontW500 font55 colorW">Magic Bus</h3>
+                    </div>
+                </div>
+                <div class="casePara">
+                    <p class="fontW400 font24 fontPoppins colorW">
+                        Going into the future, Magic Bus, as a non-profit organization had identified the individual
+                        donor segment as an important source of funding, moving away from its primary dependency on
+                        corporate donor segments.</p>
+
+
+                    <p class="fontW400 font24 fontPoppins colorW"> Research by Azendor showed that the story to get
+                        individual donors interested needed to be
+                        different from the story that was being communicated to the corporate donors. It needed to be
+                        simpler, easy to comprehend and highly emotional in its appeal.</p>
+
+                    <p class="fontW400 font24 fontPoppins colorW"> The process started with further research amongst the
+                        key internal stakeholders, beneficiaries
+                        and donors. This was followed by a day long workshop with the key leadership team at Magic Bus,
+                        moderated by Azendor, to arrive at the brand idea.
+                        The output from the workshop was converted into a formal brand strategy document, which was used
+                        by the Magic Bus team to brief its creative agencies for the new communication, targeting
+                        individual donors.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+<div class="modal " id="caseStudies11" role="dialog" tabindex="-1" aria-labelledby="basicModal" aria-hidden="true">
+    <div class="modal-dialog2 modal-lg" role="document">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+            </div>
+            <div class="modal-body">
+                <div class="casestudiesPara">
+                    <div class="caseImg">
+                        <img src="images/cs-1.png">
+                    </div>
+                    <div class="caseDesc">
+                        <h3 class="fontRoboto fontW500 font55 colorW">Magic Bus</h3>
+                    </div>
+                </div>
+                <div class="casePara">
+                    <p class="fontW400 font24 fontPoppins colorW">
+                        Going into the future, Magic Bus, as a non-profit organization had identified the individual
+                        donor segment as an important source of funding, moving away from its primary dependency on
+                        corporate donor segments.</p>
+
+
+                    <p class="fontW400 font24 fontPoppins colorW"> Research by Azendor showed that the story to get
+                        individual donors interested needed to be
+                        different from the story that was being communicated to the corporate donors. It needed to be
+                        simpler, easy to comprehend and highly emotional in its appeal.</p>
+
+                    <p class="fontW400 font24 fontPoppins colorW"> The process started with further research amongst the
+                        key internal stakeholders, beneficiaries
+                        and donors. This was followed by a day long workshop with the key leadership team at Magic Bus,
+                        moderated by Azendor, to arrive at the brand idea.
+                        The output from the workshop was converted into a formal brand strategy document, which was used
+                        by the Magic Bus team to brief its creative agencies for the new communication, targeting
+                        individual donors.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+<div class="modal " id="caseStudies12" role="dialog" tabindex="-1" aria-labelledby="basicModal" aria-hidden="true">
+    <div class="modal-dialog2 modal-lg" role="document">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+            </div>
+            <div class="modal-body">
+                <div class="casestudiesPara">
+                    <div class="caseImg">
+                        <img src="images/cs-1.png">
+                    </div>
+                    <div class="caseDesc">
+                        <h3 class="fontRoboto fontW500 font55 colorW">Magic Bus</h3>
+                    </div>
+                </div>
+                <div class="casePara">
+                    <p class="fontW400 font24 fontPoppins colorW">
+                        Going into the future, Magic Bus, as a non-profit organization had identified the individual
+                        donor segment as an important source of funding, moving away from its primary dependency on
+                        corporate donor segments.</p>
+
+
+                    <p class="fontW400 font24 fontPoppins colorW"> Research by Azendor showed that the story to get
+                        individual donors interested needed to be
+                        different from the story that was being communicated to the corporate donors. It needed to be
+                        simpler, easy to comprehend and highly emotional in its appeal.</p>
+
+                    <p class="fontW400 font24 fontPoppins colorW"> The process started with further research amongst the
+                        key internal stakeholders, beneficiaries
+                        and donors. This was followed by a day long workshop with the key leadership team at Magic Bus,
+                        moderated by Azendor, to arrive at the brand idea.
+                        The output from the workshop was converted into a formal brand strategy document, which was used
+                        by the Magic Bus team to brief its creative agencies for the new communication, targeting
+                        individual donors.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<div class="modal " id="caseStudies13" role="dialog" tabindex="-1" aria-labelledby="basicModal" aria-hidden="true">
+    <div class="modal-dialog2 modal-lg" role="document">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+            </div>
+            <div class="modal-body">
+                <div class="casestudiesPara">
+                    <div class="caseImg">
+                        <img src="images/cs-1.png">
+                    </div>
+                    <div class="caseDesc">
+                        <h3 class="fontRoboto fontW500 font55 colorW">Magic Bus</h3>
+                    </div>
+                </div>
+                <div class="casePara">
+                    <p class="fontW400 font24 fontPoppins colorW">
+                        Going into the future, Magic Bus, as a non-profit organization had identified the individual
+                        donor segment as an important source of funding, moving away from its primary dependency on
+                        corporate donor segments.</p>
+
+
+                    <p class="fontW400 font24 fontPoppins colorW"> Research by Azendor showed that the story to get
+                        individual donors interested needed to be
+                        different from the story that was being communicated to the corporate donors. It needed to be
+                        simpler, easy to comprehend and highly emotional in its appeal.</p>
+
+                    <p class="fontW400 font24 fontPoppins colorW"> The process started with further research amongst the
+                        key internal stakeholders, beneficiaries
+                        and donors. This was followed by a day long workshop with the key leadership team at Magic Bus,
+                        moderated by Azendor, to arrive at the brand idea.
+                        The output from the workshop was converted into a formal brand strategy document, which was used
+                        by the Magic Bus team to brief its creative agencies for the new communication, targeting
+                        individual donors.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<div class="modal " id="caseStudies14" role="dialog" tabindex="-1" aria-labelledby="basicModal" aria-hidden="true">
+    <div class="modal-dialog2 modal-lg" role="document">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+            </div>
+            <div class="modal-body">
+                <div class="casestudiesPara">
+                    <div class="caseImg">
+                        <img src="images/cs-1.png">
+                    </div>
+                    <div class="caseDesc">
+                        <h3 class="fontRoboto fontW500 font55 colorW">Magic Bus</h3>
+                    </div>
+                </div>
+                <div class="casePara">
+                    <p class="fontW400 font24 fontPoppins colorW">
+                        Going into the future, Magic Bus, as a non-profit organization had identified the individual
+                        donor segment as an important source of funding, moving away from its primary dependency on
+                        corporate donor segments.</p>
+
+
+                    <p class="fontW400 font24 fontPoppins colorW"> Research by Azendor showed that the story to get
+                        individual donors interested needed to be
+                        different from the story that was being communicated to the corporate donors. It needed to be
+                        simpler, easy to comprehend and highly emotional in its appeal.</p>
+
+                    <p class="fontW400 font24 fontPoppins colorW"> The process started with further research amongst the
+                        key internal stakeholders, beneficiaries
+                        and donors. This was followed by a day long workshop with the key leadership team at Magic Bus,
+                        moderated by Azendor, to arrive at the brand idea.
+                        The output from the workshop was converted into a formal brand strategy document, which was used
+                        by the Magic Bus team to brief its creative agencies for the new communication, targeting
+                        individual donors.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+<div class="modal " id="caseStudies15" role="dialog" tabindex="-1" aria-labelledby="basicModal" aria-hidden="true">
+    <div class="modal-dialog2 modal-lg" role="document">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+            </div>
+            <div class="modal-body">
+                <div class="casestudiesPara">
+                    <div class="caseImg">
+                        <img src="images/cs-1.png">
+                    </div>
+                    <div class="caseDesc">
+                        <h3 class="fontRoboto fontW500 font55 colorW">Magic Bus</h3>
+                    </div>
+                </div>
+                <div class="casePara">
+                    <p class="fontW400 font24 fontPoppins colorW">
+                        Going into the future, Magic Bus, as a non-profit organization had identified the individual
+                        donor segment as an important source of funding, moving away from its primary dependency on
+                        corporate donor segments.</p>
+
+
+                    <p class="fontW400 font24 fontPoppins colorW"> Research by Azendor showed that the story to get
+                        individual donors interested needed to be
+                        different from the story that was being communicated to the corporate donors. It needed to be
+                        simpler, easy to comprehend and highly emotional in its appeal.</p>
+
+                    <p class="fontW400 font24 fontPoppins colorW"> The process started with further research amongst the
+                        key internal stakeholders, beneficiaries
+                        and donors. This was followed by a day long workshop with the key leadership team at Magic Bus,
+                        moderated by Azendor, to arrive at the brand idea.
+                        The output from the workshop was converted into a formal brand strategy document, which was used
+                        by the Magic Bus team to brief its creative agencies for the new communication, targeting
+                        individual donors.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<div class="modal " id="caseStudies16" role="dialog" tabindex="-1" aria-labelledby="basicModal" aria-hidden="true">
+    <div class="modal-dialog2 modal-lg" role="document">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+            </div>
+            <div class="modal-body">
+                <div class="casestudiesPara">
+                    <div class="caseImg">
+                        <img src="images/cs-1.png">
+                    </div>
+                    <div class="caseDesc">
+                        <h3 class="fontRoboto fontW500 font55 colorW">Magic Bus</h3>
+                    </div>
+                </div>
+                <div class="casePara">
+                    <p class="fontW400 font24 fontPoppins colorW">
+                        Going into the future, Magic Bus, as a non-profit organization had identified the individual
+                        donor segment as an important source of funding, moving away from its primary dependency on
+                        corporate donor segments.</p>
+
+
+                    <p class="fontW400 font24 fontPoppins colorW"> Research by Azendor showed that the story to get
+                        individual donors interested needed to be
+                        different from the story that was being communicated to the corporate donors. It needed to be
+                        simpler, easy to comprehend and highly emotional in its appeal.</p>
+
+                    <p class="fontW400 font24 fontPoppins colorW"> The process started with further research amongst the
+                        key internal stakeholders, beneficiaries
+                        and donors. This was followed by a day long workshop with the key leadership team at Magic Bus,
+                        moderated by Azendor, to arrive at the brand idea.
+                        The output from the workshop was converted into a formal brand strategy document, which was used
+                        by the Magic Bus team to brief its creative agencies for the new communication, targeting
+                        individual donors.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
 </html>
 
 
