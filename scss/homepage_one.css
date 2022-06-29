@@ -309,7 +309,7 @@ h2 {
   text-align: left; }
 
 .section {
-  margin-bottom: 0px !important; }
+  margin-bottom: 30px !important; }
   .section h2 {
     margin-bottom: 20px; }
   .section a:hover,
@@ -320,21 +320,20 @@ h2 {
 
 .modal.in .modal-dialog1 {
   width: 80%;
-  margin: 0 auto; }
+  margin: 10% auto 0; }
   .modal.in .modal-dialog1 .modal-content {
     background-color: #252525;
     padding: 70px;
     border: none; }
-    .modal.in .modal-dialog1 .modal-content .modal-header {
-      padding: 0px;
-      border-bottom: none; }
-      .modal.in .modal-dialog1 .modal-content .modal-header .close {
-        margin-top: -36px;
-        color: #f2f2f2;
-        opacity: 1;
-        font-weight: normal;
-        text-shadow: none;
-        font-size: 46px; }
+    .modal.in .modal-dialog1 .modal-content .close {
+      margin-top: -10px;
+      color: #f2f2f2;
+      opacity: 1;
+      font-weight: normal;
+      text-shadow: none;
+      font-size: 46px;
+      position: relative;
+      z-index: 999; }
     .modal.in .modal-dialog1 .modal-content .modal-body {
       padding: 0px; }
     .modal.in .modal-dialog1 .modal-content .serviceDesc h3 {
@@ -345,8 +344,7 @@ h2 {
       display: flex;
       justify-content: space-between; }
       .modal.in .modal-dialog1 .modal-content .serviceDesc .listService ul {
-        width: 40%;
-        margin-bottom: 40px; }
+        width: 40%; }
         .modal.in .modal-dialog1 .modal-content .serviceDesc .listService ul li {
           margin-bottom: 40px; }
     .modal.in .modal-dialog1 .modal-content .teamBox {
@@ -364,7 +362,8 @@ h2 {
       border-top: 1px solid #6A6A6A; }
   @media all and (max-width: 1600px) {
     .modal.in .modal-dialog1 {
-      width: 70%; }
+      width: 70%;
+      margin: 10% auto 0; }
       .modal.in .modal-dialog1 .modal-content {
         padding: 50px; }
         .modal.in .modal-dialog1 .modal-content .modal-body .listService ul {
@@ -373,6 +372,9 @@ h2 {
             margin-bottom: 15px; }
         .modal.in .modal-dialog1 .modal-content .serviceDesc p {
           margin-bottom: 30px; } }
+  @media all and (max-width: 1400px) {
+    .modal.in .modal-dialog1 {
+      margin: 5% auto 0; } }
   @media all and (max-width: 1280px) {
     .modal.in .modal-dialog1 .modal-content .modal-body .listService ul {
       width: 48%; }
@@ -381,7 +383,8 @@ h2 {
   @media all and (max-width: 780px) {
     .modal.in .modal-dialog1 {
       transform: translate(0px, 100px);
-      width: 100%; }
+      width: 100%;
+      margin: 0 auto 0; }
       .modal.in .modal-dialog1 .modal-content {
         padding: 30px; }
         .modal.in .modal-dialog1 .modal-content .modal-body .listService {
@@ -398,21 +401,20 @@ h2 {
 
 .modal.in .modal-dialog2 {
   width: 50%;
-  margin: 0 auto; }
+  margin: 10% auto 0px; }
   .modal.in .modal-dialog2 .modal-content {
     background-color: #252525;
     padding: 63px;
     border: none; }
-    .modal.in .modal-dialog2 .modal-content .modal-header {
-      padding: 0px;
-      border-bottom: none; }
-      .modal.in .modal-dialog2 .modal-content .modal-header .close {
-        margin-top: -36px;
-        color: #f2f2f2;
-        opacity: 1;
-        font-weight: normal;
-        text-shadow: none;
-        font-size: 46px; }
+    .modal.in .modal-dialog2 .modal-content .close {
+      margin-top: -5px;
+      color: #f2f2f2;
+      opacity: 1;
+      font-weight: normal;
+      text-shadow: none;
+      font-size: 46px;
+      position: relative;
+      z-index: 999; }
     .modal.in .modal-dialog2 .modal-content .modal-body {
       padding: 0px; }
     .modal.in .modal-dialog2 .modal-content .teamBox {
@@ -451,7 +453,8 @@ h2 {
       border-top: none; }
   @media all and (max-width: 1600px) {
     .modal.in .modal-dialog2 {
-      width: 70%; }
+      width: 70%;
+      margin: 10% auto 0px; }
       .modal.in .modal-dialog2 .modal-content {
         padding: 44px; }
         .modal.in .modal-dialog2 .modal-content .teamBox {
@@ -462,13 +465,17 @@ h2 {
               margin-bottom: 12px; }
           .modal.in .modal-dialog2 .modal-content .teamBox .memberImg {
             width: 20%; } }
+  @media all and (max-width: 1400px) {
+    .modal.in .modal-dialog2 {
+      margin: 5% auto 0px; } }
   @media all and (max-width: 1280px) {
     .modal.in .modal-dialog2 .modal-content {
       padding: 44px; } }
   @media all and (max-width: 780px) {
     .modal.in .modal-dialog2 {
       transform: translate(0px, 100px);
-      width: 100%; }
+      width: 100%;
+      margin: 0 auto 0; }
       .modal.in .modal-dialog2 .modal-content .teamBox {
         padding-bottom: 15px; }
         .modal.in .modal-dialog2 .modal-content .teamBox .teamDesc {
@@ -626,8 +633,7 @@ h2 {
   justify-content: space-between; }
   .teamSection .teamSec .teamMembers {
     width: 48%;
-    position: relative;
-    margin-top: 20px; }
+    position: relative; }
     .teamSection .teamSec .teamMembers .modal.in .modal-dialog {
       width: auto; }
     .teamSection .teamSec .teamMembers a {
@@ -679,7 +685,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     width: 230px;
     border: 1px solid rgba(242, 242, 242, 0.2);
     border-radius: 60px; }
@@ -830,7 +836,7 @@ h2 {
       .caseStudies #scrolldiv #scrolldiv-content .flex .contentThree {
         width: 23%;
         display: none;
-        margin-top: 40px;
+        margin-bottom: 30px;
         padding: 10px 0px;
         background-color: #252525;
         border: 1px solid #1C1C1C;
@@ -848,7 +854,7 @@ h2 {
       display: block;
       margin: 0 auto;
       text-decoration: none;
-      margin-top: 40px; }
+      margin-top: 0px; }
     .caseStudies #scrolldiv #scrolldiv-content .noContent {
       color: #000 !important;
       background-color: transparent !important;
@@ -884,6 +890,9 @@ h2 {
       width: 70px;
       height: 70px;
       padding: 12px; }
+      .contactSec .contactBox .contDec .icon-1 img {
+        display: block;
+        margin: 0 auto; }
     .contactSec .contactBox .contDec ol {
       counter-reset: item;
       list-style: none; }
@@ -922,8 +931,6 @@ h2 {
           border-radius: 50%;
           width: 60px;
           height: 60px; }
-          .contactSec .contactBox .contDec .icon-1 img {
-            width: 30px; }
         .contactSec .contactBox .contDec ol li {
           margin-bottom: 24px; }
           .contactSec .contactBox .contDec ol li::before {
@@ -934,10 +941,8 @@ h2 {
           margin-bottom: 50px; } }
   @media all and (max-width: 1400px) {
     .contactSec .contactBox .contDec .icon-1 {
-      width: 49px;
-      height: 49px; }
-      .contactSec .contactBox .contDec .icon-1 img {
-        width: 21px; } }
+      width: 50px;
+      height: 50px; } }
   @media all and (max-width: 1280px) {
     .contactSec .contactBox .contDec {
       padding: 0px 20px; } }
@@ -971,9 +976,9 @@ h2 {
 
 .footerSec {
   border-top: 1px solid rgba(242, 242, 242, 0.6);
-  padding: 40px 0px;
+  padding: 30px 0px;
   text-align: right;
-  margin-top: 30px; }
+  margin-top: 0px; }
   .footerSec a {
     text-decoration: none; }
     .footerSec a:nth-child(1) {

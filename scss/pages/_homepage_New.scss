@@ -232,7 +232,7 @@ header{
 				border-radius: 60px;
 		    	padding:5px 10px;
 		    	text-decoration: none;
-		    &:hover{border: 1px solid #fff; color: #fff;}
+		    &:hover, &:focus{border: 1px solid #fff; color: #fff;}
 			}
 			
 		}
@@ -275,10 +275,7 @@ header{
 	@media (max-width: 1400px){margin-top: 25px !important;}
 }
 //banner css
-.section{
-	margin-bottom:60px;
-	h2{margin-bottom:40px;}
-}
+
 .bannerSec{
 	h1{
 	//margin:50px 0px;
@@ -299,6 +296,7 @@ header{
 	}
 }
 .bannerSec1{
+	h4{margin-bottom: 10px;}
 	p{
 	color:rgba(255, 255, 255, 0.9);
 	margin-bottom:25px;
@@ -458,19 +456,19 @@ header{
         border: none;
         border-radius: 10px 10px 0px 0px;
 
-        .modal-header {
-            padding: 0px;
-            border-bottom: none;
+        
 
             .close {
-                margin-top: -36px;
-                color: #f2f2f2;
-                opacity: 1;
-                font-weight: normal;
-                text-shadow: none;
-                font-size: 46px;
+                margin-top: -10px;
+			    color: #f2f2f2;
+			    opacity: 1;
+			    font-weight: normal;
+			    text-shadow: none;
+			    font-size: 46px;
+			    position: relative;
+			    z-index: 999;
             }
-        }
+        
 
         .modal-body {
             padding: 0px;
@@ -521,6 +519,7 @@ header{
                     padding: 70px 10px;
                     h3 {
                         font-size:20px;
+                        margin-bottom:10px;
                     }
                     p {
                         margin-bottom: 12px;

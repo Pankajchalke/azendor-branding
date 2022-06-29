@@ -21,7 +21,7 @@ h2 {
 
 
 .section {
-    margin-bottom: 0px !important;
+    margin-bottom: 30px !important;
 
     h2 {
         margin-bottom: 20px;
@@ -40,26 +40,24 @@ h2 {
 
 .modal.in .modal-dialog1 {
     width: 80%;
-    margin: 0 auto;
+    margin: 10% auto 0;
 
     .modal-content {
         background-color: #252525;
         padding: 70px;
         border: none;
 
-        .modal-header {
-            padding: 0px;
-            border-bottom: none;
-
-            .close {
-                margin-top: -36px;
-                color: #f2f2f2;
-                opacity: 1;
-                font-weight: normal;
-                text-shadow: none;
-                font-size: 46px;
+        .close {
+            margin-top: -10px;
+            color: #f2f2f2;
+            opacity: 1;
+            font-weight: normal;
+            text-shadow: none;
+            font-size: 46px;
+            position: relative;
+            z-index: 999;
             }
-        }
+        
 
         .modal-body {
             padding: 0px;
@@ -80,7 +78,7 @@ h2 {
 
                 ul {
                     width: 40%;
-                    margin-bottom: 40px;
+                    
                     li {
                         margin-bottom: 40px;
                     }
@@ -118,7 +116,7 @@ h2 {
 
     @media all and (max-width: 1600px) {
         width: 70%;
-
+        margin: 10% auto 0;
         .modal-content {
             padding: 50px;
 
@@ -141,6 +139,7 @@ h2 {
             }
         }
     }
+    @media all and (max-width: 1400px) {margin: 5% auto 0;}
 
     @media all and (max-width: 1280px) {
         .modal-content {
@@ -162,6 +161,7 @@ h2 {
     @media all and (max-width: 780px) {
         transform: translate(0px, 100px);
         width: 100%;
+        margin: 0 auto 0;
 
         .modal-content {
             padding: 30px;
@@ -197,26 +197,23 @@ h2 {
 
 .modal.in .modal-dialog2 {
     width: 50%;
-    margin: 0 auto;
+    margin: 10% auto 0px;
 
     .modal-content {
         background-color: #252525;
         padding: 63px;
         border: none;
-
-        .modal-header {
-            padding: 0px;
-            border-bottom: none;
-
             .close {
-                margin-top: -36px;
+                margin-top: -5px;
                 color: #f2f2f2;
                 opacity: 1;
                 font-weight: normal;
                 text-shadow: none;
                 font-size: 46px;
+                position: relative;
+                z-index: 999;
             }
-        }
+        
 
         .modal-body {
             padding: 0px;
@@ -288,6 +285,7 @@ h2 {
 
     @media all and (max-width: 1600px) {
         width: 70%;
+        margin: 10% auto 0px;
 
         .modal-content {
             padding: 44px;
@@ -311,6 +309,10 @@ h2 {
 
     }
 
+     @media all and (max-width: 1400px) {
+        margin: 5% auto 0px;
+     }
+
     @media all and (max-width: 1280px) {
 
         .modal-content {
@@ -323,7 +325,7 @@ h2 {
     @media all and (max-width: 780px) {
         transform: translate(0px, 100px);
         width: 100%;
-
+        margin: 0 auto 0;
         .modal-content {
             .teamBox {
                 padding-bottom: 15px;
@@ -615,7 +617,7 @@ h2 {
         .teamMembers {
             width: 48%;
             position: relative;
-            margin-top: 20px;
+            
 
             .modal.in .modal-dialog {
                 width: auto;
@@ -707,7 +709,7 @@ h2 {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            margin-bottom: 50px;
+            margin-bottom: 20px;
             width: 230px;
             border: 1px solid rgba(242, 242, 242, 0.2);
             border-radius: 60px;
@@ -951,7 +953,7 @@ h2 {
                 .contentThree {
                     width: 23%;
                     display: none;
-                    margin-top: 40px;
+                    margin-bottom: 30px;
                     padding: 10px 0px;
                     background-color: #252525;
                     border: 1px solid #1C1C1C;
@@ -980,7 +982,7 @@ h2 {
                 display: block;
                 margin: 0 auto;
                 text-decoration: none;
-                margin-top: 40px;
+                margin-top: 0px;
             }
 
             .noContent {
@@ -1037,6 +1039,7 @@ h2 {
                 width: 70px;
                 height: 70px;
                 padding: 12px;
+                img{display: block; margin: 0 auto;}
             }
 
             ol {
@@ -1095,9 +1098,7 @@ h2 {
                     width: 60px;
                     height: 60px;
                     
-                    img{
-                        width: 30px;
-                    }
+                    
                 }
                 ol li{
                     margin-bottom: 24px;
@@ -1115,11 +1116,9 @@ h2 {
         @media all and (max-width: 1400px) {
             .contDec{
                 .icon-1 {
-                    width: 49px;
-                    height:49px;
-                    img{
-                    width: 21px;
-                    }
+                    width: 50px;
+                    height:50px;
+                   
                 }
             }
         }
@@ -1174,9 +1173,9 @@ h2 {
 
 .footerSec {
     border-top: 1px solid rgba(242, 242, 242, 0.6);
-    padding: 40px 0px;
+    padding: 30px 0px;
     text-align: right;
-    margin-top: 30px;
+    margin-top: 0px;
 
     a {
         text-decoration: none;
