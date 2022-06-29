@@ -603,9 +603,6 @@ h2 {
           padding-top: 4px;
           font-size: 12px;
           left: -12px; } }
-@media all and (max-width: 1400px) {
-  .serviceSec .servicesBox .iconImg {
-    width: 30px !important; } }
 @media all and (max-width: 1180px) {
   .serviceSec .servicesBox .serviceList {
     margin-right: 10px; }
@@ -617,9 +614,6 @@ h2 {
     .serviceSec .serviceSlider .servicesBox {
       height: 530px;
       margin-bottom: 20px; } }
-@media all and (max-width: 575px) {
-  .serviceSec .servicesBox .iconImg {
-    width: 24px !important; } }
 
 .teamSection .teamSec {
   display: flex;
@@ -934,6 +928,8 @@ h2 {
           margin-bottom: 50px; } }
   @media all and (max-width: 1400px) {
     .contactSec .contactBox .contDec .icon-1 {
+      border: 1px solid #fff;
+      border-radius: 50%;
       width: 49px;
       height: 49px; }
       .contactSec .contactBox .contDec .icon-1 img {
@@ -965,9 +961,7 @@ h2 {
       .contactSec .contactBox .contDec .icon-1 {
         width: 35px;
         height: 35px;
-        padding: 8px; }
-        .contactSec .contactBox .contDec .icon-1 img {
-          width: 16px; } }
+        padding: 6px; } }
 
 .footerSec {
   border-top: 1px solid rgba(242, 242, 242, 0.6);

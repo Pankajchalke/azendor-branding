@@ -81,6 +81,7 @@ h2 {
                 ul {
                     width: 40%;
                     margin-bottom: 40px;
+
                     li {
                         margin-bottom: 40px;
                     }
@@ -334,7 +335,8 @@ h2 {
                     p {
                         margin-bottom: 8px;
                     }
-                    img{
+
+                    img {
                         width: 24px;
                     }
                 }
@@ -562,13 +564,6 @@ h2 {
 
     }
 
-    @media all and (max-width: 1400px) {
-        .servicesBox {
-                .iconImg {
-                    width: 30px !important;
-                }
-            }
-        }
     @media all and (max-width: 1180px) {
         .servicesBox {
             .serviceList {
@@ -595,13 +590,6 @@ h2 {
 
 
     }
-    @media all and (max-width: 575px) {
-        .servicesBox {
-                .iconImg {
-                    width: 24px !important;
-                }
-            }
-        }
 }
 
 
@@ -638,7 +626,7 @@ h2 {
 
                 &:hover {
                     img {
-                    transform: translateX(15px);
+                        transform: translateX(15px);
                     }
                 }
             }
@@ -670,7 +658,8 @@ h2 {
                 }
             }
         }
-        @media all and (max-width: 900px){
+
+        @media all and (max-width: 900px) {
             height: unset;
             overflow: unset;
         }
@@ -682,7 +671,7 @@ h2 {
             .teamMembers {
                 width: 100%;
 
-                .linkedinImg{
+                .linkedinImg {
                     width: 30px;
                 }
             }
@@ -857,7 +846,7 @@ h2 {
 
                     }
 
-                    @media all and (max-width:1200px){
+                    @media all and (max-width:1200px) {
                         img {
                             width: 170px;
                         }
@@ -869,7 +858,7 @@ h2 {
                         .content,
                         .contentOne {
                             width: 48%;
-                            
+
 
                             &:nth-child(even) {
                                 .imgBorder {
@@ -957,10 +946,10 @@ h2 {
                     border: 1px solid #1C1C1C;
                     border-radius: 10px;
 
-                    
+
                 }
 
-                @media all and (max-width:1200px){
+                @media all and (max-width:1200px) {
                     img {
                         width: 170px;
                     }
@@ -968,10 +957,11 @@ h2 {
 
                 @media all and (max-width: 780px) {
                     margin-left: 0px;
+
                     .contentThree {
                         width: 48%;
                     }
-                   
+
                 }
             }
 
@@ -1016,9 +1006,11 @@ h2 {
                 border-right: 1px solid rgba(255, 255, 255, 0.1);
                 width: 28%;
             }
-            h3{
+
+            h3 {
                 line-height: 30px;
             }
+
             h4 {
                 padding: 42px 0px 24px 0px;
             }
@@ -1071,60 +1063,69 @@ h2 {
                 }
             }
 
-            
 
-           
+
+
         }
+
         @media all and (max-width: 1800px) {
-            .contDec{
+            .contDec {
                 padding: 0px 70px;
             }
-            
+
         }
 
         @media all and (max-width: 1600px) {
             padding: 40px 0px;
-            .contDec{
+
+            .contDec {
                 padding: 0px 50px;
+
                 h4 {
                     padding: 22px 0px 22px 0px;
                 }
+
                 .icon-1 {
                     border: 1px solid #fff;
                     border-radius: 50%;
                     width: 60px;
                     height: 60px;
-                    
-                    img{
+
+                    img {
                         width: 30px;
                     }
                 }
-                ol li{
+
+                ol li {
                     margin-bottom: 24px;
-                    &::before{
+
+                    &::before {
                         width: 28px;
                         height: 28px;
                         font-size: 14px;
                     }
-                }  
+                }
+
                 .mailDesc {
                     margin-bottom: 50px;
-                } 
-            }
-        }
-        @media all and (max-width: 1400px) {
-            .contDec{
-                .icon-1 {
-                    width: 49px;
-                    height:49px;
-                    img{
-                    width: 21px;
-                    }
                 }
             }
         }
+
+        @media all and (max-width: 1400px) {
+            .contDec .icon-1 {
+                border: 1px solid #fff;
+                border-radius: 50%;
+                width: 49px;
+                height: 49px;
+                img{
+                    width: 21px;
+                }
+            }
+        }
+
         @media all and (max-width: 1280px) {
-            .contDec{
+            .contDec {
                 padding: 0px 20px;
             }
 
@@ -1133,7 +1134,8 @@ h2 {
         @media all and (max-width: 1024px) {
             padding: 40px 30px;
             display: block;
-            .contDec{
+
+            .contDec {
                 width: 100%;
 
                 &:nth-child(2) {
@@ -1158,12 +1160,12 @@ h2 {
 
         @media all and (max-width: 575px) {
             padding: 40px 4px;
-            .contDec{
-                .icon-1{
+
+            .contDec {
+                .icon-1 {
                     width: 35px;
                     height: 35px;
-                    padding: 8px;
-                    img{width: 16px;}
+                    padding: 6px;
                 }
             }
         }
