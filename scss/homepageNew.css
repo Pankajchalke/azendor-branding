@@ -1,19 +1,3 @@
-
-/*
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  outline: none; }
-
-
-body {
-  background: #212121 !important;
-  scroll-behavior: smooth;
-  letter-spacing: 0.03em;
-  line-height: 1.4; }
-
 * {
   margin: 0;
   padding: 0;
@@ -25,7 +9,6 @@ body {
   scroll-behavior: smooth;
   letter-spacing: 0.03em;
   line-height: 1.4; }
-
 
 ul, ol, li, h1, h2, h3, h4, h5, h6, a, p {
   margin: 0;
@@ -543,11 +526,6 @@ header {
     .fullpage-wrapper {
       margin-top: 25px !important; } }
 
-.section {
-  margin-bottom: 60px; }
-  .section h2 {
-    margin-bottom: 40px; }
-
 .bannerSec h1:hover {
   background: -webkit-linear-gradient(330deg, #F2F2F2 42.19%, #A2DFF2 73.22%);
   -webkit-background-clip: text;
@@ -560,6 +538,8 @@ header {
   margin-bottom: 25px;
   line-height: 125%; }
 
+.bannerSec1 h4 {
+  margin-bottom: 10px; }
 .bannerSec1 p {
   color: rgba(255, 255, 255, 0.9);
   margin-bottom: 25px;
@@ -751,16 +731,15 @@ header {
     padding: 40px;
     border: none;
     border-radius: 10px 10px 0px 0px; }
-    .modal.in .modal-dialog3 .modal-content .modal-header {
-      padding: 0px;
-      border-bottom: none; }
-      .modal.in .modal-dialog3 .modal-content .modal-header .close {
-        margin-top: -36px;
-        color: #f2f2f2;
-        opacity: 1;
-        font-weight: normal;
-        text-shadow: none;
-        font-size: 46px; }
+    .modal.in .modal-dialog3 .modal-content .close {
+      margin-top: -10px;
+      color: #f2f2f2;
+      opacity: 1;
+      font-weight: normal;
+      text-shadow: none;
+      font-size: 46px;
+      position: relative;
+      z-index: 999; }
     .modal.in .modal-dialog3 .modal-content .modal-body {
       padding: 0px; }
     .modal.in .modal-dialog3 .modal-content .teamBox {
@@ -792,7 +771,8 @@ header {
           width: 70%;
           padding: 70px 10px; }
           .modal.in .modal-dialog3 .modal-content .teamBox .teamDesc h3 {
-            font-size: 20px; }
+            font-size: 20px;
+            margin-bottom: 10px; }
           .modal.in .modal-dialog3 .modal-content .teamBox .teamDesc p {
             margin-bottom: 12px;
             font-size: 14px;
@@ -814,4 +794,3 @@ header {
         margin-top: 0px !important; } }
 
 /*# sourceMappingURL=homepageNew.css.map */
-
