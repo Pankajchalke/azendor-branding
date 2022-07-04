@@ -51,7 +51,7 @@ header{
             color: #fff;
             transition: all 0.35s ease;
             text-decoration: none;
-            &:before {
+            &:after {
 		        position: absolute;
 		        content: "";
 		        left: 0;

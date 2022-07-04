@@ -324,7 +324,7 @@ header {
       color: #fff;
       transition: all 0.35s ease;
       text-decoration: none; }
-      header a.is-active:before {
+      header a.is-active:after {
         position: absolute;
         content: "";
         left: 0;
