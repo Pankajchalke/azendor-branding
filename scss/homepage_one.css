@@ -1,7 +1,12 @@
 /*
 Error: Invalid CSS after "...gin: 10% auto 0": expected "{", was ";"
+<<<<<<< Updated upstream
         on line 44 of C:/xampp/htdocs/azendor-branding/scss/pages/_homepage.scss
         from line 5 of C:\xampp\htdocs\azendor-branding\scss\homepage_one.scss
+=======
+        on line 44 of C:/wamp64/www/projects/azendor_branding/scss/pages/_homepage.scss
+        from line 5 of C:\wamp64\www\projects\azendor_branding\scss\homepage_one.scss
+>>>>>>> Stashed changes
 
 39: 
 40: 
@@ -16,8 +21,13 @@ Error: Invalid CSS after "...gin: 10% auto 0": expected "{", was ";"
 49:     .modal-content {
 
 Backtrace:
+<<<<<<< Updated upstream
 C:/xampp/htdocs/azendor-branding/scss/pages/_homepage.scss:44
 C:\xampp\htdocs\azendor-branding\scss\homepage_one.scss:5
+=======
+C:/wamp64/www/projects/azendor_branding/scss/pages/_homepage.scss:44
+C:\wamp64\www\projects\azendor_branding\scss\homepage_one.scss:5
+>>>>>>> Stashed changes
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1208:in `expected'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1203:in `tok!'
@@ -70,4 +80,8 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
+<<<<<<< Updated upstream
   content: "Error: Invalid CSS after \"...gin: 10% auto 0\": expected \"{\", was \";\"\A         on line 44 of C:/xampp/htdocs/azendor-branding/scss/pages/_homepage.scss\A         from line 5 of C:\xampp\htdocs\azendor-branding\scss\homepage_one.scss\A \A 39: \A 40: \A 41: .modal.in .modal-dialog1 {\A 42:     width: 80%;\A 43: <<<<<<< Updated upstream\A 44:     margin: 10% auto 0;\A 45: =======\A 46:     margin: 0 auto;\A 47: >>>>>>> Stashed changes\A 48: \A 49:     .modal-content {"; }
+=======
+  content: "Error: Invalid CSS after \"...gin: 10% auto 0\": expected \"{\", was \";\"\A         on line 44 of C:/wamp64/www/projects/azendor_branding/scss/pages/_homepage.scss\A         from line 5 of C:\wamp64\www\projects\azendor_branding\scss\homepage_one.scss\A \A 39: \A 40: \A 41: .modal.in .modal-dialog1 {\A 42:     width: 80%;\A 43: <<<<<<< Updated upstream\A 44:     margin: 10% auto 0;\A 45: =======\A 46:     margin: 0 auto;\A 47: >>>>>>> Stashed changes\A 48: \A 49:     .modal-content {"; }
+>>>>>>> Stashed changes
