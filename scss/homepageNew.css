@@ -588,7 +588,7 @@ header {
         left: 120px; } }
     .testimonialsSec .testimonialsSlider .slick-prev:before {
       font-size: 38px;
-      opaity: 0.5; }
+      opacity: 0.5; }
       .testimonialsSec .testimonialsSlider .slick-prev:before:hover {
         opacity: 1; }
   .testimonialsSec .testimonialsSlider .slick-next {
@@ -619,7 +619,7 @@ header {
         right: 120px; } }
     .testimonialsSec .testimonialsSlider .slick-next:before {
       font-size: 38px;
-      opaity: 0.5; }
+      opacity: 0.5; }
       .testimonialsSec .testimonialsSlider .slick-next:before:hover {
         opacity: 1; }
   .testimonialsSec .testimonialsSlider .testimonials {
