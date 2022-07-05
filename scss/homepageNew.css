@@ -306,6 +306,9 @@ header {
   @media (max-width: 575px) {
     header input[type="checkbox"]:checked ~ .menu-items {
       transform: translateX(0); } }
+  header input[type="checkbox"]:checked ~ .fullpage-wrapper {
+    background: #292929;
+    opacity: 0.5; }
   @media (max-width: 920px) {
     header input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
       transform: rotate(45deg); } }
@@ -484,6 +487,8 @@ header {
       @media (max-width: 920px) {
         header .menu-items li {
           margin-bottom: 28px; } }
+      header .menu-items li:last-child a.is-active:after {
+        background: transparent; }
       header .menu-items li .contact {
         border: 1px solid rgba(242, 242, 242, 0.2);
         border-radius: 60px;
@@ -539,7 +544,10 @@ header {
   line-height: 125%; }
 
 .bannerSec1 h4 {
-  margin-bottom: 10px; }
+  margin-bottom: 15px; }
+  @media all and (max-width: 1400px) {
+    .bannerSec1 h4 {
+      margin-bottom: 10px; } }
 .bannerSec1 p {
   color: rgba(255, 255, 255, 0.9);
   margin-bottom: 25px;

@@ -22,6 +22,10 @@ header{
 		        transform: translateX(0);
 		    }
 		}
+		.fullpage-wrapper{
+			background: #292929;
+			opacity: 0.5;
+			}
 		.hamburger-lines{
 			.line1{
 				@media (max-width: 920px){
@@ -51,6 +55,7 @@ header{
             color: #fff;
             transition: all 0.35s ease;
             text-decoration: none;
+            
             &:after {
 		        position: absolute;
 		        content: "";
@@ -61,7 +66,7 @@ header{
 		        border: none;
 		        outline: none;
 		        background: #fff;
-		    }
+				}
             }
         }
 
@@ -227,6 +232,12 @@ header{
 		    @media (max-width: 920px){
 		    	margin-bottom: 28px;
 	        	}
+	        &:last-child a{
+	        	&.is-active {
+	        		&:after {background: transparent;}
+	        	}
+	        }
+
 			.contact{
 				border: 1px solid rgba(242, 242, 242, 0.2);
 				border-radius: 60px;
@@ -296,7 +307,9 @@ header{
 	}
 }
 .bannerSec1{
-	h4{margin-bottom: 10px;}
+	h4{margin-bottom: 15px;
+        @media all and (max-width: 1400px) {margin-bottom: 10px;}
+    }
 	p{
 	color:rgba(255, 255, 255, 0.9);
 	margin-bottom:25px;
