@@ -27,6 +27,7 @@ h2 {
     text-align: left;
 }
 
+
 header{
     position: fixed;
     top:0;
@@ -305,8 +306,12 @@ header{
 }
 
 
+
+
+
 .section {
     margin-bottom: 30px;
+
 
     h2 {
         margin-bottom: 40px;
@@ -325,7 +330,10 @@ header{
 
 .modal.in .modal-dialog1 {
     width: 80%;
-    margin: 0 auto;
+ 
+    margin: 10% auto 0;
+
+    
 
     .modal-content {
         background-color: #252525;
@@ -333,14 +341,14 @@ header{
         border: none;
 
         .close {
-                margin-top: -10px;
-                color: #f2f2f2;
-                opacity: 1;
-                font-weight: normal;
-                text-shadow: none;
-                font-size: 46px;
-                position: relative;
-                z-index: 999;
+            margin-top: -10px;
+            color: #f2f2f2;
+            opacity: 1;
+            font-weight: normal;
+            text-shadow: none;
+            font-size: 46px;
+            position: relative;
+            z-index: 999;
             }
         
 
@@ -363,8 +371,7 @@ header{
 
                 ul {
                     width: 40%;
-                    margin-bottom: 40px;
-
+                    
                     li {
                         margin-bottom: 40px;
                     }
@@ -447,6 +454,7 @@ header{
     @media all and (max-width: 780px) {
         transform: translate(0px, 100px);
         width: 100%;
+        margin: 0 auto 0;
 
         .modal-content {
             padding: 30px;
@@ -488,8 +496,7 @@ header{
         background-color: #252525;
         padding: 63px;
         border: none;
-
-        .close {
+            .close {
                 margin-top: -5px;
                 color: #f2f2f2;
                 opacity: 1;
@@ -572,6 +579,7 @@ header{
     @media all and (max-width: 1600px) {
         width: 70%;
         margin: 10% auto 0px;
+
         .modal-content {
             padding: 44px;
 
@@ -593,7 +601,8 @@ header{
         }
 
     }
-    @media all and (max-width: 1400px) {
+
+     @media all and (max-width: 1400px) {
         margin: 5% auto 0px;
      }
 
@@ -609,7 +618,7 @@ header{
     @media all and (max-width: 780px) {
         transform: translate(0px, 100px);
         width: 100%;
-
+        margin: 0 auto 0;
         .modal-content {
             .teamBox {
                 padding-bottom: 15px;
@@ -620,8 +629,7 @@ header{
                     p {
                         margin-bottom: 8px;
                     }
-
-                    img {
+                    img{
                         width: 24px;
                     }
                 }
@@ -654,24 +662,25 @@ header{
         background-color: #252525;
         padding: 40px;
         border: none;
-        border-radius: 10px 10px 0px 0pxpx;
+        border-radius: 10px 10px 0px 0px;
 
-        .close {
-            margin-top: -10px;
-            color: #f2f2f2;
-            opacity: 1;
-            font-weight: normal;
-            text-shadow: none;
-            font-size: 46px;
-            position: relative;
-            z-index: 999;
-        }
+        
+
+            .close {
+                margin-top: -10px;
+                color: #f2f2f2;
+                opacity: 1;
+                font-weight: normal;
+                text-shadow: none;
+                font-size: 46px;
+                position: relative;
+                z-index: 999;
+            }
         
 
         .modal-body {
             padding: 0px;
         }
-
         .teamBox {
             display: flex;
             justify-content: space-between;
@@ -696,17 +705,16 @@ header{
 
             p {
                 margin-bottom: 30px;
-                font-size: 16px;
+                font-size:16px;
             }
         }
-
         .modal-footer {
             padding: 0px;
             border-top: none;
         }
     }
 
-    @media all and (max-width: 920px) {
+   @media all and (max-width: 920px) {
         transform: translate(0px, 100px);
         width: 100%;
 
@@ -717,19 +725,16 @@ header{
                 .teamDesc {
                     width: 70%;
                     padding: 70px 10px;
-
                     h3 {
-                        font-size: 20px;
+                        font-size:20px;
                         margin-bottom:10px;
                     }
-
                     p {
                         margin-bottom: 12px;
-                        font-size: 14px;
-                        color: #6A6A6A;
+                        font-size:14px;
+                        color:#6A6A6A;
                     }
-
-                    img {
+                    img{
                         width: 30px;
                     }
                 }
@@ -740,11 +745,14 @@ header{
             }
         }
     }
-
     @media all and (max-width: 575px) {
         .memberImg {
             width: 80px;
         }
+        .teamDesc {
+            width: 70%;
+            padding: 20px 10px !important;
+            }
     }
 
     @media all and (max-width: 375px) {
@@ -785,9 +793,11 @@ header{
 }
 
 .bannerSec1 {
+
     h4{margin-bottom: 15px;
         @media all and (max-width: 1400px) {margin-bottom: 10px;}
     }
+
     p {
         color: rgba(255, 255, 255, 0.9);
         margin-bottom: 25px;
