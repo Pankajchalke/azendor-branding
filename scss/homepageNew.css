@@ -28,8 +28,8 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, a, p {
 .font55 {
   font-size: 55px; }
 
-.font48 {
-  font-size: 48px; }
+.font50 {
+  font-size: 50px; }
 
 .font36 {
   font-size: 36px; }
@@ -111,7 +111,7 @@ img {
   .font55 {
     font-size: 52px; }
 
-  .font48 {
+  .font50 {
     font-size: 42px; }
 
   .font36 {
@@ -144,7 +144,7 @@ img {
   .font55 {
     font-size: 46px; }
 
-  .font48 {
+  .font50 {
     font-size: 38px; }
 
   .font36 {
@@ -180,7 +180,7 @@ img {
   .font55 {
     font-size: 40px; }
 
-  .font48 {
+  .font50 {
     font-size: 34px; }
 
   .font30 {
@@ -210,7 +210,7 @@ img {
   .font64 {
     font-size: 36px; }
 
-  .font48 {
+  .font50 {
     font-size: 30px; } }
 @media all and (max-width: 900px) {
   .wrapper {
@@ -225,7 +225,7 @@ img {
   .font55 {
     font-size: 30px; }
 
-  .font48 {
+  .font50 {
     font-size: 24px; }
 
   .font36 {
@@ -261,7 +261,7 @@ img {
   .font55 {
     font-size: 22px; }
 
-  .font48 {
+  .font50 {
     font-size: 18px; }
 
   .font36 {
