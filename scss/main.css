@@ -303,13 +303,16 @@ progress {
   background-color: #fff !important; }
 
 .fullpage-wrapper {
-  margin-top: 60px !important; }
+  margin-top: 100px !important; }
   @media (max-width: 1600px) {
     .fullpage-wrapper {
-      margin-top: 35px !important; } }
+      margin-top: 85px !important; } }
   @media (max-width: 1400px) {
     .fullpage-wrapper {
       margin-top: 30px !important; } }
+  @media (max-width: 1050px) {
+    .fullpage-wrapper {
+      margin-top: 60px !important; } }
 
 h2 {
   text-align: left; }
@@ -348,7 +351,8 @@ header {
     transition: color 0.3s ease-in-out; }
     @media (max-width: 920px) {
       header a {
-        font-size: 16px; } }
+        font-size: 16px;
+        color: #6A6A6A; } }
     header a.is-active {
       position: relative;
       color: #fff;
@@ -560,9 +564,9 @@ header {
   margin-bottom: 30px; }
   .section h2 {
     margin-bottom: 40px; }
-    @media all and (max-width: 920px) {
+    @media all and (max-width: 1050px) {
       .section h2 {
-        margin-bottom: 30px; } }
+        margin-bottom: 20px; } }
   .section a:hover,
   .section a:active,
   .section a:visited,
@@ -1103,7 +1107,7 @@ header {
 .clientsBox #scrolldiv {
   background-color: transparent;
   width: unset;
-  height: 425px;
+  height: auto;
   overflow-y: scroll; }
   .clientsBox #scrolldiv::-webkit-scrollbar {
     display: none; }
@@ -1214,6 +1218,9 @@ header {
     @media (max-width: 1450px) {
       .testimonialsSec .testimonialsSlider .slick-prev {
         left: 625px; } }
+    @media (max-width: 1300px) {
+      .testimonialsSec .testimonialsSlider .slick-prev {
+        left: 575px; } }
     @media (max-width: 1050px) {
       .testimonialsSec .testimonialsSlider .slick-prev {
         left: 450px; } }
@@ -1245,6 +1252,9 @@ header {
     @media (max-width: 1050px) {
       .testimonialsSec .testimonialsSlider .slick-next {
         right: 450px; } }
+    @media (max-width: 1300px) {
+      .testimonialsSec .testimonialsSlider .slick-next {
+        right: 575px; } }
     @media (max-width: 920px) {
       .testimonialsSec .testimonialsSlider .slick-next {
         right: 325px; } }
@@ -1256,9 +1266,9 @@ header {
         right: 120px; } }
     .testimonialsSec .testimonialsSlider .slick-next:before {
       font-size: 38px;
-      opaity: 0.7; }
+      opacity: .7; }
       .testimonialsSec .testimonialsSlider .slick-next:before:hover {
-        opacity: 1; }
+        color: #fff; }
   .testimonialsSec .testimonialsSlider .testimonials {
     display: flex;
     background: #252525;
@@ -1352,7 +1362,7 @@ header {
 .caseStudies #scrolldiv {
   background-color: transparent;
   width: unset;
-  height: 425px;
+  height: auto;
   overflow-y: scroll; }
   .caseStudies #scrolldiv::-webkit-scrollbar {
     display: none; }
@@ -1424,156 +1434,135 @@ header {
     .caseStudies #scrolldiv {
       height: 780px; } }
 
-.contactSec {
-  margin-bottom: 0px;
-  margin-top: -40px; }
-  @media all and (max-width: 920px) {
-    .contactSec {
-      margin-bottom: 30px;
-      margin-top: 0px; } }
-  .contactSec .contactBox {
-    display: flex;
-    justify-content: space-between;
-    background-color: #252525;
-    border-radius: 10px;
-    padding: 90px 0px; }
-    .contactSec .contactBox .contDec {
-      width: 35%;
-      padding: 0px 90px; }
-      .contactSec .contactBox .contDec:nth-child(2) {
-        border-left: 1px solid rgba(255, 255, 255, 0.1);
-        border-right: 1px solid rgba(255, 255, 255, 0.1);
-        width: 28%; }
-      .contactSec .contactBox .contDec h3 {
-        line-height: 30px; }
-      .contactSec .contactBox .contDec h4 {
-        padding: 42px 0px 24px 0px; }
-      .contactSec .contactBox .contDec .mailDesc {
-        margin-bottom: 80px; }
-      .contactSec .contactBox .contDec a {
-        text-decoration: none; }
-      .contactSec .contactBox .contDec .icon-1 {
-        border: 1px solid #fff;
-        border-radius: 50%;
-        width: 70px;
-        height: 70px;
-        padding: 12px; }
-      .contactSec .contactBox .contDec ol {
-        counter-reset: item;
-        list-style: none; }
-        .contactSec .contactBox .contDec ol li {
-          counter-increment: item;
+.contactSec .contactBox {
+  display: flex;
+  justify-content: space-between;
+  background-color: #252525;
+  border-radius: 10px;
+  padding: 90px 0px; }
+  .contactSec .contactBox .contDec {
+    width: 35%;
+    padding: 0px 90px; }
+    .contactSec .contactBox .contDec:nth-child(2) {
+      border-left: 1px solid rgba(255, 255, 255, 0.1);
+      border-right: 1px solid rgba(255, 255, 255, 0.1);
+      width: 28%; }
+    .contactSec .contactBox .contDec h3 {
+      line-height: 30px; }
+    .contactSec .contactBox .contDec h4 {
+      padding: 42px 0px 24px 0px; }
+    .contactSec .contactBox .contDec .mailDesc {
+      margin-bottom: 80px; }
+    .contactSec .contactBox .contDec a {
+      text-decoration: none; }
+    .contactSec .contactBox .contDec .icon-1 {
+      border: 1px solid #fff;
+      border-radius: 50%;
+      width: 70px;
+      height: 70px;
+      padding: 12px; }
+    .contactSec .contactBox .contDec ol {
+      counter-reset: item;
+      list-style: none; }
+      .contactSec .contactBox .contDec ol li {
+        counter-increment: item;
+        color: #fff;
+        padding-left: 53px;
+        position: relative;
+        margin-bottom: 34px; }
+        .contactSec .contactBox .contDec ol li::before {
+          content: counter(item) "";
+          position: absolute;
+          width: 38px;
+          height: 34px;
           color: #fff;
-          padding-left: 53px;
-          position: relative;
-          margin-bottom: 34px; }
-          .contactSec .contactBox .contDec ol li::before {
-            content: counter(item) "";
-            position: absolute;
-            width: 38px;
-            height: 34px;
-            color: #fff;
-            top: 0px;
-            left: -4px;
-            border-radius: 50%;
-            text-align: center;
-            background-color: #414141;
-            font-size: 18px;
-            padding-top: 5px;
-            font-weight: normal !important; }
-    @media all and (max-width: 1800px) {
+          top: 0px;
+          left: -4px;
+          border-radius: 50%;
+          text-align: center;
+          background-color: #414141;
+          font-size: 18px;
+          padding-top: 5px;
+          font-weight: normal !important; }
+  @media all and (max-width: 1800px) {
+    .contactSec .contactBox .contDec {
+      padding: 0px 70px; } }
+  @media all and (max-width: 1600px) {
+    .contactSec .contactBox {
+      padding: 40px 0px; }
       .contactSec .contactBox .contDec {
-        padding: 0px 70px; } }
-    @media all and (max-width: 1600px) {
-      .contactSec .contactBox {
-        padding: 40px 0px; }
-        .contactSec .contactBox .contDec {
-          padding: 0px 50px; }
-          .contactSec .contactBox .contDec h4 {
-            padding: 22px 0px 22px 0px; }
-          .contactSec .contactBox .contDec .icon-1 {
-            border: 1px solid #fff;
-            border-radius: 50%;
-            width: 60px;
-            height: 60px; }
-            .contactSec .contactBox .contDec .icon-1 img {
-              width: 30px; }
-          .contactSec .contactBox .contDec ol li {
-            margin-bottom: 24px; }
-            .contactSec .contactBox .contDec ol li::before {
-              width: 28px;
-              height: 28px;
-              font-size: 14px; }
-          .contactSec .contactBox .contDec .mailDesc {
-            margin-bottom: 50px; } }
-    @media all and (max-width: 1280px) {
-      .contactSec .contactBox .contDec {
-        padding: 0px 20px; } }
-    @media all and (max-width: 1024px) {
-      .contactSec .contactBox {
-        padding: 40px 30px;
-        display: block; }
-        .contactSec .contactBox .contDec {
-          width: 100%; }
-          .contactSec .contactBox .contDec:nth-child(2) {
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            border-left: none;
-            border-right: none;
-            width: 100%;
-            margin: 30px 0px;
-            padding-top: 20px; }
-          .contactSec .contactBox .contDec .mailDesc {
-            margin-bottom: 10px; }
-          .contactSec .contactBox .contDec a {
-            font-size: 16px; } }
-    @media all and (max-width: 920px) {
-      .contactSec .contactBox .contDec h3, .contactSec .contactBox .contDec h4, .contactSec .contactBox .contDec ol, .contactSec .contactBox .contDec li {
-        font-size: 16px; } }
-    @media all and (max-width: 575px) {
-      .contactSec .contactBox {
-        padding: 40px 4px; }
+        padding: 0px 50px; }
+        .contactSec .contactBox .contDec h4 {
+          padding: 22px 0px 22px 0px; }
         .contactSec .contactBox .contDec .icon-1 {
-          width: 35px;
-          height: 35px;
-          padding: 6px; } }
-
-footer {
-  margin-top: -40px; }
+          border: 1px solid #fff;
+          border-radius: 50%;
+          width: 60px;
+          height: 60px; }
+          .contactSec .contactBox .contDec .icon-1 img {
+            width: 30px; }
+        .contactSec .contactBox .contDec ol li {
+          margin-bottom: 24px; }
+          .contactSec .contactBox .contDec ol li::before {
+            width: 28px;
+            height: 28px;
+            font-size: 14px; }
+        .contactSec .contactBox .contDec .mailDesc {
+          margin-bottom: 50px; } }
+  @media all and (max-width: 1280px) {
+    .contactSec .contactBox .contDec {
+      padding: 0px 20px; }
+      .contactSec .contactBox .contDec ol li {
+        padding-left: 40px; } }
   @media all and (max-width: 920px) {
-    footer {
-      margin-top: -10px; } }
-  footer .footerSec {
-    border-top: 1px solid rgba(242, 242, 242, 0.6);
-    padding: 20px 0px;
-    text-align: right;
-    margin-top: 0px; }
+    .contactSec .contactBox {
+      padding: 40px 30px;
+      display: block; }
+      .contactSec .contactBox .contDec {
+        width: 100%; }
+        .contactSec .contactBox .contDec:nth-child(2) {
+          border-top: 1px solid rgba(255, 255, 255, 0.1);
+          border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+          border-left: none;
+          border-right: none;
+          width: 100%;
+          margin: 30px 0px;
+          padding-top: 20px; }
+        .contactSec .contactBox .contDec .mailDesc {
+          margin-bottom: 10px; }
+        .contactSec .contactBox .contDec a {
+          font-size: 16px; } }
+  @media all and (max-width: 920px) {
+    .contactSec .contactBox .contDec h3, .contactSec .contactBox .contDec h4, .contactSec .contactBox .contDec ol, .contactSec .contactBox .contDec li {
+      font-size: 16px; } }
+  @media all and (max-width: 575px) {
+    .contactSec .contactBox {
+      padding: 40px 4px; }
+      .contactSec .contactBox .contDec .icon-1 {
+        width: 35px;
+        height: 35px;
+        padding: 6px; } }
+
+footer .fp-auto-height.fp-section {
+  height: 100px !important; }
+footer .footerSec {
+  border-top: 1px solid rgba(242, 242, 242, 0.6);
+  padding: 10px 0px;
+  text-align: right;
+  margin-top: 0px; }
+  @media all and (max-width: 920px) {
+    footer .footerSec {
+      padding: 15px 0px;
+      text-align: center; } }
+  footer .footerSec a {
+    text-decoration: none;
+    color: #6A6A6A !important; }
+    footer .footerSec a:hover {
+      color: #fff !important; }
+    footer .footerSec a:nth-child(1) {
+      margin-right: 20px; }
     @media all and (max-width: 920px) {
-      footer .footerSec {
-        padding: 15px 0px;
-        text-align: center; } }
-    footer .footerSec a {
-      text-decoration: none;
-      color: #6A6A6A !important; }
-      footer .footerSec a:hover {
-        color: #fff !important; }
-      footer .footerSec a:nth-child(1) {
-        margin-right: 20px; }
-      @media all and (max-width: 920px) {
-        footer .footerSec a {
-          font-size: 12px; } }
-
-#scrolldiv {
-  background-color: red;
-  width: 500px;
-  height: 100px;
-  overflow-y: auto;
-  padding: 1px;
-  margin: auto; }
-
-#scrolldiv-content {
-  background-color: green;
-  width: 100%;
-  height: 1000px; }
+      footer .footerSec a {
+        font-size: 12px; } }
 
 /*# sourceMappingURL=main.css.map */
