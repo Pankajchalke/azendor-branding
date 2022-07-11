@@ -15,7 +15,7 @@ progress {
     margin-top: 60px !important;
 
     @media (max-width: 1600px) {
-        margin-top: 35px !important;
+        margin-top: 85px !important;
     }
 
     @media (max-width: 1400px) {
@@ -446,7 +446,26 @@ header {
 
                     li {
                         margin-bottom: 40px;
+                        position: relative;
+                        list-style: none;
+
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            width: 8px;
+                            height: 8px;
+                            color: #414141;
+                            top: 8px;
+                            left: -23px;
+                            border-radius: 50%;
+                            text-align: center;
+                            background-color: #414141;
+
+
+                        }
                     }
+
+
                 }
             }
 
@@ -473,7 +492,6 @@ header {
         .teamPara {
             padding-top: 18px;
             border-top: 1px solid #6A6A6A;
-            ;
         }
 
 
@@ -538,6 +556,49 @@ header {
 
     }
 
+    @media all and (max-width: 920px) {
+        .modal-content {
+            .serviceDesc {
+                h3 {
+                    margin-bottom: 18px;
+                    line-height: 28px;
+                }
+
+                p {
+                    padding-top: 16px;
+                    border-top: 1px solid #6A6A6A;
+                    line-height: 22px;
+                }
+                .listService {
+                    ul {
+                        width: 100%;
+                        //list-style:none;
+                        padding-left: 0;
+                        list-style-position: inside;
+
+                        li {
+                            &::before {
+                                width: 5px;
+                                height: 5px;
+                                left: -17px;
+
+                            }
+                        }
+                    }
+                }
+            }
+
+            .modal-body {
+                .serviceDescInfo {
+                    height: 350px;
+                    overflow: auto;
+
+                    
+                }
+            }
+        }
+    }
+
     @media all and (max-width: 780px) {
         transform: translate(0px, 100px);
         width: 100%;
@@ -576,6 +637,9 @@ header {
         .modal-content {
             padding: 60px 38px 20px;
 
+            .close {
+                margin-top: 0px !important;
+            }
 
 
         }
@@ -1094,12 +1158,13 @@ header {
             color: transparent;
             border: 1px solid rgba(242, 242, 242, 0.4);
             border-radius: 60px;
-            line-height: 16px;
+            line-height: 20px;
         }
 
         .slick-dots li.slick-active button:before {
             color: rgba(242, 242, 242, 0.6);
-            font-size: 48px;
+            font-size: 14px;
+            padding-right: 1px;
         }
 
         .slick-slide img {
@@ -1204,6 +1269,10 @@ header {
                 height: 530px;
                 margin-bottom: 20px;
 
+                h3 {
+                    line-height: 25px;
+                }
+
                 .ctaOne {
                     img {
                         margin-left: 5px;
@@ -1305,11 +1374,13 @@ header {
                 }
             }
         }
-        @media all and (max-width: 450px){
-            .teamMembers{
+
+        @media all and (max-width: 450px) {
+            .teamMembers {
                 height: 240px;
                 overflow: hidden;
-                a{
+
+                a {
                     padding: 36px 0px;
                 }
             }
@@ -1456,7 +1527,7 @@ header {
                     .content,
                     .contentOne {
                         width: 25%;
-                        margin-top: -1px;
+                        margin-top: 0px;
 
 
                         display: none;
@@ -1832,13 +1903,21 @@ header {
                 .contentThree {
                     width: 23%;
                     display: none;
-                    margin-top: 40px;
+                    margin-top: 30px;
                     padding: 10px 0px;
                     background-color: #252525;
                     border: 1px solid #1C1C1C;
                     border-radius: 10px;
 
 
+                }
+
+                @media all and (max-width:1600px) {
+                    margin-top: 0px;
+
+                    .contentThree {
+                        margin-top: 18px;
+                    }
                 }
 
                 @media all and (max-width:1200px) {
@@ -2052,7 +2131,7 @@ header {
                 }
 
                 a {
-                    font-size: 16px;
+                    font-size: 14px;
                 }
             }
         }
@@ -2103,7 +2182,7 @@ header {
     padding: 10px;
     margin: auto;
 
-    @media all and (max-width: 780px){
+    @media all and (max-width: 780px) {
         padding: 2px;
     }
 }
