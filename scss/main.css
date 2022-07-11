@@ -1086,6 +1086,8 @@ header {
       width: 48%; }
       .clientsBox .clientSec .tabs h3.active {
         color: #fff; }
+        .clientsBox .clientSec .tabs h3.active a {
+          font-weight: 500 !important; }
       .clientsBox .clientSec .tabs h3 a {
         text-decoration: none; }
     .clientsBox .clientSec .tabs .bg {
@@ -1233,9 +1235,14 @@ header {
     @media (max-width: 350px) {
       .testimonialsSec .testimonialsSlider .slick-prev {
         left: 120px; } }
+    .testimonialsSec .testimonialsSlider .slick-prev:hover:before {
+      opacity: 1; }
+    .testimonialsSec .testimonialsSlider .slick-prev:focus:before {
+      opacity: 1; }
     .testimonialsSec .testimonialsSlider .slick-prev:before {
       font-size: 38px;
-      opaity: 0.7; }
+      font-family: "";
+      opacity: 0.5; }
       .testimonialsSec .testimonialsSlider .slick-prev:before:hover {
         opacity: 1; }
   .testimonialsSec .testimonialsSlider .slick-next {
@@ -1264,9 +1271,14 @@ header {
     @media (max-width: 350px) {
       .testimonialsSec .testimonialsSlider .slick-next {
         right: 120px; } }
+    .testimonialsSec .testimonialsSlider .slick-next:hover:before {
+      opacity: 1; }
+    .testimonialsSec .testimonialsSlider .slick-next:focus:before {
+      opacity: 1; }
     .testimonialsSec .testimonialsSlider .slick-next:before {
       font-size: 38px;
-      opacity: .7; }
+      font-family: "";
+      opacity: 0.5; }
       .testimonialsSec .testimonialsSlider .slick-next:before:hover {
         color: #fff; }
   .testimonialsSec .testimonialsSlider .testimonials {

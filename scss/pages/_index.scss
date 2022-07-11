@@ -1239,6 +1239,7 @@ header{
 
                 &.active {
                     color: #fff;
+                    a {font-weight:500 !important;}
                 }
 
                 width: 48%;
@@ -1481,13 +1482,18 @@ header{
             @media (max-width: 350px) {
                 left: 120px;
             }
+            &:hover{
+            &:before{opacity:1;}
+            }
+            &:focus{
+            &:before{opacity:1;}
+            }
 
             &:before {
                 font-size: 38px;
-
-                opaity: 0.7;
-
-
+                font-family:"";
+                opacity: 0.5;
+                
                 &:hover {
                     opacity: 1;
                 }
@@ -1525,10 +1531,17 @@ header{
             @media (max-width: 350px) {
                 right: 120px;
             }
+            &:hover{
+            &:before{opacity:1;}
+            }
+            &:focus{
+            &:before{opacity:1;}
+            }
 
             &:before {
                 font-size: 38px;
-                opacity: .7;
+                font-family:"";
+                opacity: 0.5;
                 
 
                 &:hover {
