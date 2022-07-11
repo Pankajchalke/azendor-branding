@@ -11,7 +11,8 @@ $('#fullpage').fullpage({
   scrollHorizontally: true,
   controlArrows: true,
   licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
-  // responsiveWidth: 900,
+  scrollBar : true,
+  responsiveWidth: 900,
   afterResponsive: function (isResponsive) { },
   afterLoad: function (anchorLink, index) {
     console.log(index);

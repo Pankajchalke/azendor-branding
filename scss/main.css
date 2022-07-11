@@ -14,6 +14,8 @@ body {
   scroll-behavior: smooth;
   letter-spacing: 0.03em;
   line-height: 1.4; }
+  body:webkit-scroll bar {
+    display: none; }
 
 ul, ol, li, h1, h2, h3, h4, h5, h6, a, p {
   margin: 0;
@@ -1205,6 +1207,8 @@ header {
     @media (max-width: 480px) {
       .testimonialsSec .testimonialsSlider .slick-list {
         margin: 0 -16px; } }
+  .testimonialsSec .testimonialsSlider .slick-active .testimonials {
+    opacity: 1; }
   .testimonialsSec .testimonialsSlider .slick-prev,
   .testimonialsSec .testimonialsSlider .slick-next {
     top: 100%;
@@ -1284,6 +1288,7 @@ header {
   .testimonialsSec .testimonialsSlider .testimonials {
     display: flex;
     background: #252525;
+    opacity: 0.5;
     border-radius: 10px;
     padding: 155px 208px; }
     @media (max-width: 1600px) {

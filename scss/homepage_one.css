@@ -14,6 +14,8 @@ body {
   scroll-behavior: smooth;
   letter-spacing: 0.03em;
   line-height: 1.4; }
+  body:webkit-scroll bar {
+    display: none; }
 
 ul, ol, li, h1, h2, h3, h4, h5, h6, a, p {
   margin: 0;

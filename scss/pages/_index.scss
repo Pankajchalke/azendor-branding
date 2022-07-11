@@ -1443,6 +1443,9 @@ header{
                 margin: 0 -16px;
             }
         }
+        .slick-active {
+            .testimonials {opacity:1;}
+        }
 
         .slick-prev,
         .slick-next {
@@ -1554,6 +1557,7 @@ header{
         .testimonials {
             display: flex;
             background: #252525;
+            opacity: 0.5;
             border-radius: 10px;
             padding: 155px 208px;
 
