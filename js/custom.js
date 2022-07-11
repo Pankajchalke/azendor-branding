@@ -19,8 +19,13 @@ $('#fullpage').fullpage({
   afterResponsive: function (isResponsive) { },
   afterLoad: function (anchorLink, index) {
     console.log(index);
-    if (index == 1) {};
-    if (index == 2) {};
+
+    if (index == 1) {
+      $('#myBtn').css('display','none');
+     };
+    if (index == 2) { 
+     $('#myBtn').css('display','block');
+    };
   },
   onLeave: function (index, nextIndex, direction) {
     console.log(index, nextIndex, direction);

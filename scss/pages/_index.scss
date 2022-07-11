@@ -839,9 +839,7 @@ header{
             border-top: none;
         }
     }
-    @media all and (max-width: 1600px) {
-        padding: 60px 50px;
-    }
+    
 
     @media all and (max-width: 1400px) {
         .modal-content {
@@ -900,7 +898,7 @@ header{
         }
     }
     @media all and (max-width: 575px) {
-        margin: -8% auto 0;
+        //margin: -8% auto 0;
         .memberImg {
             width: 80px;
         }
@@ -1323,11 +1321,12 @@ header{
                 font-size: 12px;
                 transition: .3s;
                 width: 48%;
+                font-weight: 400;
 
 
                 &.active {
                     color: #fff;
-
+                    font-weight: 500;
 
                     a {font-weight:500 !important;}
 
@@ -1345,6 +1344,7 @@ header{
 
                 a {
                     text-decoration: none;
+                    font-weight: 400;
                 }
             }
 
@@ -2105,6 +2105,11 @@ header{
 }
 
 footer{
+margin-top: -150px;
+margin-bottom: 0px !important;
+@media all and (max-width: 1600px) {margin-top: -100px;}
+@media all and (max-width: 1400px) {margin-top: -50px;}
+@media all and (max-width: 920px) {margin-top: 0px;}
 .fp-auto-height.fp-section{height: 100px !important;}
 .footerSec {
     border-top: 1px solid rgba(242, 242, 242, 0.6);
@@ -2127,6 +2132,21 @@ footer{
 }
 }
 
+
+#myBtn{
+    box-sizing: border-box;
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    left: auto;
+    right:15px;
+    top: 300px;
+    background: #252525;
+    border: 1px solid rgba(28, 28, 28, 0.7);
+    border-radius: 5px;
+    z-index: 99;
+    @media all and (min-width: 770px) {display:none !important;}
+  }
 
 
 

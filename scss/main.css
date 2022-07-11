@@ -839,9 +839,6 @@ header {
     .modal.in .modal-dialog3 .modal-content .modal-footer {
       padding: 0px;
       border-top: none; }
-  @media all and (max-width: 1600px) {
-    .modal.in .modal-dialog3 {
-      padding: 60px 50px; } }
   @media all and (max-width: 1400px) {
     .modal.in .modal-dialog3 .modal-content .close img {
       height: 18px;
@@ -878,13 +875,11 @@ header {
           height: 250px;
           overflow: auto; } }
   @media all and (max-width: 575px) {
-    .modal.in .modal-dialog3 {
-      margin: -8% auto 0; }
-      .modal.in .modal-dialog3 .memberImg {
-        width: 80px; }
-      .modal.in .modal-dialog3 .teamDesc {
-        width: 70%;
-        padding: 20px 10px !important; } }
+    .modal.in .modal-dialog3 .memberImg {
+      width: 80px; }
+    .modal.in .modal-dialog3 .teamDesc {
+      width: 70%;
+      padding: 20px 10px !important; } }
   @media all and (max-width: 375px) {
     .modal.in .modal-dialog3 .modal-content {
       padding: 60px 20px 30px; } }
@@ -1124,9 +1119,11 @@ header {
       z-index: 3;
       font-size: 12px;
       transition: .3s;
-      width: 48%; }
+      width: 48%;
+      font-weight: 400; }
       .clientsBox .clientSec .tabs h3.active {
-        color: #fff; }
+        color: #fff;
+        font-weight: 500; }
         .clientsBox .clientSec .tabs h3.active a {
           font-weight: 500 !important; }
         .clientsBox .clientSec .tabs h3.active:active, .clientsBox .clientSec .tabs h3.active:focus {
@@ -1134,7 +1131,8 @@ header {
           .clientsBox .clientSec .tabs h3.active:active a, .clientsBox .clientSec .tabs h3.active:focus a {
             font-weight: 500; }
       .clientsBox .clientSec .tabs h3 a {
-        text-decoration: none; }
+        text-decoration: none;
+        font-weight: 400; }
     .clientsBox .clientSec .tabs .bg {
       z-index: 1;
       position: absolute;
@@ -1602,26 +1600,54 @@ header {
         height: 35px;
         padding: 6px; } }
 
-footer .fp-auto-height.fp-section {
-  height: 100px !important; }
-footer .footerSec {
-  border-top: 1px solid rgba(242, 242, 242, 0.6);
-  padding: 10px 0px;
-  text-align: right;
-  margin-top: 0px; }
+footer {
+  margin-top: -150px;
+  margin-bottom: 0px !important; }
+  @media all and (max-width: 1600px) {
+    footer {
+      margin-top: -100px; } }
+  @media all and (max-width: 1400px) {
+    footer {
+      margin-top: -50px; } }
   @media all and (max-width: 920px) {
-    footer .footerSec {
-      padding: 15px 0px;
-      text-align: center; } }
-  footer .footerSec a {
-    text-decoration: none;
-    color: #6A6A6A !important; }
-    footer .footerSec a:hover {
-      color: #fff !important; }
-    footer .footerSec a:nth-child(1) {
-      margin-right: 20px; }
+    footer {
+      margin-top: 0px; } }
+  footer .fp-auto-height.fp-section {
+    height: 100px !important; }
+  footer .footerSec {
+    border-top: 1px solid rgba(242, 242, 242, 0.6);
+    padding: 10px 0px;
+    text-align: right;
+    margin-top: 0px; }
     @media all and (max-width: 920px) {
-      footer .footerSec a {
-        font-size: 12px; } }
+      footer .footerSec {
+        padding: 15px 0px;
+        text-align: center; } }
+    footer .footerSec a {
+      text-decoration: none;
+      color: #6A6A6A !important; }
+      footer .footerSec a:hover {
+        color: #fff !important; }
+      footer .footerSec a:nth-child(1) {
+        margin-right: 20px; }
+      @media all and (max-width: 920px) {
+        footer .footerSec a {
+          font-size: 12px; } }
+
+#myBtn {
+  box-sizing: border-box;
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  left: auto;
+  right: 15px;
+  top: 300px;
+  background: #252525;
+  border: 1px solid rgba(28, 28, 28, 0.7);
+  border-radius: 5px;
+  z-index: 99; }
+  @media all and (min-width: 770px) {
+    #myBtn {
+      display: none !important; } }
 
 /*# sourceMappingURL=main.css.map */
