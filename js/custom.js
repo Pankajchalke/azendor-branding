@@ -13,6 +13,8 @@ $('#fullpage').fullpage({
   scrollOverflow: true,
   normalScrollElements: '#scrolldiv',
   licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+  scrollBar : true,
+  //responsiveWidth: 900,
   responsiveWidth: 1030,
   afterResponsive: function (isResponsive) { },
   afterLoad: function (anchorLink, index) {
