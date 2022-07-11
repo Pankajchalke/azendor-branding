@@ -2,7 +2,6 @@
 @import url(vendor/slick.css);
 @import url(vendor/slick-theme.css);
 @import url(vendor/slider.css);
-@import url(vendor/examples.css);
 * {
   margin: 0;
   padding: 0;
@@ -781,20 +780,26 @@ header {
         .modal.in .modal-dialog2 .modal-content .teamBox {
           padding-bottom: 15px; }
           .modal.in .modal-dialog2 .modal-content .teamBox .teamDesc {
-            width: 72%;
-            padding: 20px; }
+            width: 82%;
+            padding: 0px 20px; }
             .modal.in .modal-dialog2 .modal-content .teamBox .teamDesc p {
               margin-bottom: 8px; }
             .modal.in .modal-dialog2 .modal-content .teamBox .teamDesc img {
               width: 24px; }
           .modal.in .modal-dialog2 .modal-content .teamBox .memberImg {
-            width: 26%; } }
-  @media all and (max-width: 575px) {
-    .modal.in .modal-dialog2 .modal-content .teamBox .teamDesc {
-      padding: 0px 20px; } }
+            width: unset; }
+            .modal.in .modal-dialog2 .modal-content .teamBox .memberImg img {
+              width: 100px;
+              height: 100px; } }
+  @media all and (max-width: 450px) {
+    .modal.in .modal-dialog2 .modal-content {
+      padding: 60px 20px 30px; }
+      .modal.in .modal-dialog2 .modal-content .teamBox .teamDesc {
+        padding: 0px 20px;
+        width: 72%; } }
   @media all and (max-width: 375px) {
     .modal.in .modal-dialog2 .modal-content {
-      padding: 60px 42px 30px; }
+      padding: 60px 20px 30px; }
       .modal.in .modal-dialog2 .modal-content .teamBox .teamDesc {
         padding: 0px 10px; }
         .modal.in .modal-dialog2 .modal-content .teamBox .teamDesc h3 {
@@ -1092,6 +1097,8 @@ header {
       display: block; }
       .teamSection .teamSec .teamMembers {
         width: 100%; }
+        .teamSection .teamSec .teamMembers p {
+          padding-top: 5px; }
         .teamSection .teamSec .teamMembers:nth-child(1) {
           margin-bottom: 40px; }
         .teamSection .teamSec .teamMembers .linkedinImg {
@@ -1146,12 +1153,21 @@ header {
       border: 1px solid rgba(242, 242, 242, 0.2);
       border-radius: 60px;
       transition: .3s; }
-    @media all and (max-width: 768px) {
+  @media all and (max-width: 768px) {
+    .clientsBox .clientSec {
+      padding-bottom: 30px; }
       .clientsBox .clientSec .tabs {
-        width: 127px;
+        width: 150px;
         margin-bottom: 20px; }
+        .clientsBox .clientSec .tabs h3 {
+          padding: 7px 0px; }
         .clientsBox .clientSec .tabs .bg {
-          width: 66px; } }
+          width: 74px; } }
+  @media all and (max-width: 450px) {
+    .clientsBox .clientSec .tabs {
+      width: 120px; }
+      .clientsBox .clientSec .tabs .bg {
+        width: 60px; } }
 .clientsBox #scrolldiv {
   background-color: transparent;
   width: unset;
@@ -1159,7 +1175,7 @@ header {
   overflow-y: scroll; }
   @media all and (max-width: 1150px) {
     .clientsBox #scrolldiv {
-      height: 360px; } }
+      height: 460px; } }
   .clientsBox #scrolldiv::-webkit-scrollbar {
     display: none; }
   .clientsBox #scrolldiv #scrolldiv-content {
@@ -1203,14 +1219,14 @@ header {
           content: '';
           display: block;
           border-top: 1px solid #373737;
-          width: 80%;
+          width: 90%;
           margin: 0 auto; }
         .clientsBox #scrolldiv #scrolldiv-content .tabs-content .flex .content::after,
         .clientsBox #scrolldiv #scrolldiv-content .tabs-content .flex .contentOne::after {
           content: '';
           display: block;
           border-bottom: 1px solid #373737;
-          width: 80%;
+          width: 90%;
           margin: 0 auto; }
         .clientsBox #scrolldiv #scrolldiv-content .tabs-content .flex .content:nth-child(4n+4) .imgBorder,
         .clientsBox #scrolldiv #scrolldiv-content .tabs-content .flex .contentOne:nth-child(4n+4) .imgBorder {
@@ -1220,10 +1236,12 @@ header {
           width: 170px; } }
       @media all and (max-width: 780px) {
         .clientsBox #scrolldiv #scrolldiv-content .tabs-content .flex {
-          margin-left: 0px; }
+          margin-left: -5px;
+          padding: 5px 0px; }
           .clientsBox #scrolldiv #scrolldiv-content .tabs-content .flex .content,
           .clientsBox #scrolldiv #scrolldiv-content .tabs-content .flex .contentOne {
-            width: 48%; }
+            width: 48%;
+            margin: -1px 2px 0px 2px; }
             .clientsBox #scrolldiv #scrolldiv-content .tabs-content .flex .content:nth-child(even) .imgBorder,
             .clientsBox #scrolldiv #scrolldiv-content .tabs-content .flex .contentOne:nth-child(even) .imgBorder {
               border-right: none; } }
@@ -1240,7 +1258,10 @@ header {
       pointer-events: none; }
   @media all and (max-width: 780px) {
     .clientsBox #scrolldiv {
-      height: 780px; } }
+      height: 530px; } }
+  @media all and (max-width: 450px) {
+    .clientsBox #scrolldiv {
+      height: 430px; } }
 
 .testimonialsSec {
   overflow: hidden !important; }
@@ -1428,6 +1449,9 @@ header {
   width: unset;
   height: 500px;
   overflow-y: scroll; }
+  @media all and (max-width: 1150px) {
+    .caseStudies #scrolldiv {
+      height: 460px; } }
   .caseStudies #scrolldiv::-webkit-scrollbar {
     display: none; }
   .caseStudies #scrolldiv #scrolldiv-content {
@@ -1483,7 +1507,10 @@ header {
       pointer-events: none; }
   @media all and (max-width: 780px) {
     .caseStudies #scrolldiv {
-      height: 780px; } }
+      height: 530px; } }
+  @media all and (max-width: 450px) {
+    .caseStudies #scrolldiv {
+      height: 430px; } }
 
 .contactSec .contactBox {
   display: flex;
