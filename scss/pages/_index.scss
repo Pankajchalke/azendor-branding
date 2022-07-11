@@ -1624,13 +1624,14 @@ header{
             @media (max-width: 1450px) {
                 right: 625px;
             }
+            @media (max-width: 1300px) {
+                right: 575px;
+            }
 
             @media (max-width: 1050px) {
                 right: 450px;
             }
-            @media (max-width: 1300px) {
-                right: 575px;
-            }
+            
             @media (max-width: 920px) {
                 right: 325px;
             }

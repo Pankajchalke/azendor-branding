@@ -2,6 +2,7 @@
 @import url(vendor/slick.css);
 @import url(vendor/slick-theme.css);
 @import url(vendor/slider.css);
+@import url(vendor/examples.css);
 * {
   margin: 0;
   padding: 0;
@@ -1306,12 +1307,12 @@ header {
     @media (max-width: 1450px) {
       .testimonialsSec .testimonialsSlider .slick-next {
         right: 625px; } }
-    @media (max-width: 1050px) {
-      .testimonialsSec .testimonialsSlider .slick-next {
-        right: 450px; } }
     @media (max-width: 1300px) {
       .testimonialsSec .testimonialsSlider .slick-next {
         right: 575px; } }
+    @media (max-width: 1050px) {
+      .testimonialsSec .testimonialsSlider .slick-next {
+        right: 450px; } }
     @media (max-width: 920px) {
       .testimonialsSec .testimonialsSlider .slick-next {
         right: 325px; } }
