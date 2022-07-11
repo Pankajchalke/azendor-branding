@@ -359,15 +359,16 @@ header{
         border: none;
 
         .close {
-            margin-top: -10px;
-            color: #f2f2f2;
+            margin-top: -30px;
             opacity: 1;
-            font-weight: normal;
-            text-shadow: none;
-            font-size: 46px;
             position: relative;
             z-index: 999;
+
+            img {
+                width: 20px;
+                height: 20px;
             }
+        }
         
 
         .modal-body {
@@ -386,41 +387,39 @@ header{
             .listService {
                 display: flex;
                 justify-content: space-between;
+                padding: 0px 20px;
 
                 ul {
                     width: 40%;
-                    
+
                     li {
                         margin-bottom: 40px;
+                        position: relative;
+                        list-style: none;
+
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            width: 8px;
+                            height: 8px;
+                            color: #414141;
+                            top: 8px;
+                            left: -23px;
+                            border-radius: 50%;
+                            text-align: center;
+                            background-color: #414141;
+
+
+                        }
                     }
+
+
                 }
             }
 
         }
 
-        .teamBox {
-            display: flex;
-            justify-content: space-between;
-            padding-bottom: 20px;
-
-            .teamDesc {
-                width: 76%;
-
-                p {
-                    margin-bottom: 18px;
-                }
-            }
-
-            .memberImg {
-                width: 20%;
-            }
-        }
-
-        .teamPara {
-            padding-top: 18px;
-            border-top: 1px solid #6A6A6A;
-            ;
-        }
+        
 
 
     }
@@ -429,7 +428,7 @@ header{
         width: 70%;
         margin: 10% auto 0;
         .modal-content {
-            padding: 50px;
+            padding:60px 50px;
 
             .modal-body {
                 .listService {
@@ -450,7 +449,15 @@ header{
             }
         }
     }
-    @media all and (max-width: 1400px) {margin: 5% auto 0;}
+    @media all and (max-width: 1400px) {margin: 5% auto 0;
+        .modal-content {
+            .close {
+                img {
+                    height: 18px;
+                    width: 18px;
+                }
+            }
+        }}
 
     @media all and (max-width: 1280px) {
         .modal-content {
@@ -469,23 +476,43 @@ header{
 
     }
     @media all and (max-width: 920px) {
-    .modal-content {
-        .serviceDesc{
-            h3{margin-bottom: 18px;}
-            p{padding-top: 16px; border-top: 1px solid #6A6A6A;}
-        }
-        .modal-body {
-            .serviceDescInfo{
-                height: 350px;
-                overflow: auto;
+        .modal-content {
+            .serviceDesc {
+                h3 {
+                    margin-bottom: 18px;
+                    line-height: 28px;
+                }
+
+                p {
+                    padding-top: 16px;
+                    border-top: 1px solid #6A6A6A;
+                    line-height: 22px;
+                }
                 .listService {
+                    display: block;
                     ul {
                         width: 100%;
-                        //list-style:none;
                         padding-left: 0;
                         list-style-position: inside;
+
+                        li {
+                            &::before {
+                                width: 5px;
+                                height: 5px;
+                                left: -17px;
+
+                            }
                         }
                     }
+                }
+            }
+
+            .modal-body {
+                .serviceDescInfo {
+                    height: 350px;
+                    overflow: auto;
+
+                    
                 }
             }
         }
@@ -497,15 +524,20 @@ header{
         margin: -3% auto 0;
 
         .modal-content {
-            padding: 30px;
+            padding:  60px 42px 30px;
+            .close {
+                margin-top: -42px;
+
+                img {
+                    width: 14px;
+                    height: 14px;
+                }
+            }
 
             .modal-body {
                 .listService {
-                    display: block;
-
                     ul {
-                        width: 100%;
-
+                        
                         li {
                             margin-bottom: 20px;
                         }
@@ -539,16 +571,17 @@ header{
         background-color: #252525;
         padding: 63px;
         border: none;
-            .close {
-                margin-top: -5px;
-                color: #f2f2f2;
-                opacity: 1;
-                font-weight: normal;
-                text-shadow: none;
-                font-size: 46px;
-                position: relative;
-                z-index: 999;
+        .close {
+            margin-top: -30px;
+            opacity: 1;
+            position: relative;
+            z-index: 999;
+
+            img {
+                width: 20px;
+                height: 20px;
             }
+        }
         
 
         .modal-body {
@@ -624,7 +657,8 @@ header{
         margin: 10% auto 0px;
 
         .modal-content {
-            padding: 44px 44px 10px;
+            padding: 60px 44px;
+            
 
             .teamBox {
                 padding-bottom: 15px;
@@ -647,12 +681,21 @@ header{
 
      @media all and (max-width: 1400px) {
         margin: 5% auto 0px;
+        .modal-content {
+            .close {
+                img {
+                    height: 18px;
+                    width: 18px;
+                }
+            }
+
+        }
      }
 
     @media all and (max-width: 1280px) {
 
         .modal-content {
-            padding: 44px;
+            padding:  60px 44px 30px;
             
 
         }
@@ -661,7 +704,7 @@ header{
     @media all and (max-width: 920px) {
 
         .modal-content {
-            padding: 30px;
+            padding: 60px 44px 30px;
             .teamPara{
                 height: 250px;
                 overflow: auto;
@@ -679,6 +722,15 @@ header{
         width: 100%;
         margin: -3% auto 0;
         .modal-content {
+            padding: 60px 42px 30px;
+            .close {
+                margin-top: -42px;
+
+                img {
+                    width: 14px;
+                    height: 14px;
+                }
+            }
             .teamBox {
                 padding-bottom: 15px;
 
@@ -713,11 +765,9 @@ header{
     @media all and (max-width: 375px) {
 
         .modal-content {
-            padding: 20px;
+            padding: 60px 42px 30px;
 
-            .close {
-                margin-top: 0px !important;
-            }
+            
             .teamBox {
                 .teamDesc {
                     padding: 0px 10px;
@@ -741,16 +791,17 @@ header{
 
         
 
-            .close {
-                margin-top: -10px;
-                color: #f2f2f2;
-                opacity: 1;
-                font-weight: normal;
-                text-shadow: none;
-                font-size: 46px;
-                position: relative;
-                z-index: 999;
+        .close {
+            margin-top: -30px;
+            opacity: 1;
+            position: relative;
+            z-index: 999;
+
+            img {
+                width: 20px;
+                height: 20px;
             }
+        }
         
 
         .modal-body {
@@ -788,13 +839,36 @@ header{
             border-top: none;
         }
     }
+    @media all and (max-width: 1600px) {
+        padding: 60px 50px;
+    }
+
+    @media all and (max-width: 1400px) {
+        .modal-content {
+            .close {
+                img {
+                    height: 18px;
+                    width: 18px;
+                }
+            }
+        }
+
+    }
 
    @media all and (max-width: 920px) {
         transform: translate(0px, 100px);
         width: 100%;
         margin: -3% auto 0;
         .modal-content {
-            padding: 30px;
+            padding: 60px 42px 30px;
+            .close {
+                margin-top: -42px;
+
+                img {
+                    width: 14px;
+                    height: 14px;
+                }
+            }
             .teamBox {
                 padding-bottom: 15px;
 
@@ -839,12 +913,7 @@ header{
     @media all and (max-width: 375px) {
 
         .modal-content {
-            padding: 20px;
-
-            .close {
-                margin-top: 0px !important;
-            }
-
+            padding: 60px 20px 30px;
         }
     }
 }
@@ -1016,13 +1085,14 @@ header{
         .slick-dots li button::before {
             color: transparent;
             border: 1px solid rgba(242, 242, 242, 0.4);
-            border-radius: 50%;
-            line-height: 16px;
+            border-radius: 60px;
+            line-height: 20px;
         }
 
         .slick-dots li.slick-active button:before {
             color: rgba(242, 242, 242, 0.6);
-            font-size: 36px;
+            font-size: 14px;
+            padding-right: 1px;
         }
 
         .slick-slide img {
@@ -1196,9 +1266,23 @@ header{
 
             .teamMembers {
                 width: 100%;
+                &:nth-child(1) {
+                    margin-bottom: 40px;
+                }
+
 
                 .linkedinImg {
                     width: 30px;
+                }
+            }
+        }
+
+        @media all and (max-width: 450px){
+            .teamMembers{
+                height: 240px;
+                overflow: hidden;
+                a{
+                    padding: 36px 0px;
                 }
             }
         }
@@ -1222,7 +1306,7 @@ header{
             display: flex;
             align-items: center;
             justify-content: space-between;
-            margin-bottom: 40px;
+            margin-bottom: 50px;
             width: 230px;
             border: 1px solid rgba(242, 242, 242, 0.2);
             border-radius: 60px;
@@ -1236,13 +1320,18 @@ header{
                 z-index: 3;
                 font-size: 12px;
                 transition: .3s;
+                width: 48%;
 
-                &.active {
+                &:active, &:focus{
                     color: #fff;
-                    a {font-weight:500 !important;}
+                    a{
+                        font-weight:500 !important;}
+                    }
+                    
+
                 }
 
-                width: 48%;
+                
 
                 a {
                     text-decoration: none;
@@ -1260,14 +1349,17 @@ header{
                 border: 1px solid rgba(242, 242, 242, 0.2);
                 border-radius: 60px;
                 transition: .3s;
+                
+                
             }
 
 
             @media all and (max-width: 768px) {
-                width: 140px;
+                width: 127px;
+                margin-bottom: 20px;
 
                 .bg {
-                    width: 78px;
+                    width: 66px;
                 }
             }
         }
@@ -1279,8 +1371,12 @@ header{
     #scrolldiv {
         background-color: transparent;
         width: unset;
-        height: auto;
+        height: 450px;
         overflow-y: scroll;
+
+        @media all and (max-width:1150px) {
+            height: 360px;
+        }
 
         &::-webkit-scrollbar {
             display: none;
@@ -1333,7 +1429,7 @@ header{
                     .content,
                     .contentOne {
                         width: 25%;
-                        margin-top: -1px;
+                        margin-top: 0px;
 
 
                         display: none;
@@ -1443,6 +1539,7 @@ header{
                 margin: 0 -16px;
             }
         }
+
         .slick-active {
             .testimonials {opacity:1;}
         }
@@ -1494,9 +1591,11 @@ header{
 
             &:before {
                 font-size: 38px;
+
                 font-family:"";
                 opacity: 0.5;
                 
+
                 &:hover {
                     opacity: 1;
                 }
@@ -1704,7 +1803,7 @@ header{
     #scrolldiv {
         background-color: transparent;
         width: unset;
-        height: auto;
+        height: 500px;
         overflow-y: scroll;
 
         &::-webkit-scrollbar {
@@ -1720,8 +1819,8 @@ header{
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-between;
-                margin-left: 0px;
-
+                margin-left: -30px;
+                
                 img {
                     filter: grayscale(100%);
                     -webkit-filter: grayscale(100%);
@@ -1742,18 +1841,21 @@ header{
                 .contentThree {
                     width: 23%;
                     display: none;
-                    margin-bottom: 35px;
+                    margin-top: 30px;
                     padding: 10px 0px;
                     background-color: #252525;
                     border: 1px solid #1C1C1C;
                     border-radius: 10px;
-                    @media all and (max-width:920px) {border-radius: 5px;}
-                    @media all and (max-width:770px) {margin-bottom: 30px;}
-                    @media all and (max-width:575px) {margin-bottom: 20px;}
-                    @media all and (max-width:375px) {margin-bottom: 15px;}
+
 
                 }
 
+                @media all and (max-width:1600px){
+                    margin-top: 0px;
+                    .contentThree{
+                        margin-top: 18px;
+                    }
+                }
                 @media all and (max-width:1200px) {
                     img {
                         width: 170px;
@@ -1775,9 +1877,7 @@ header{
                 display: block;
                 margin: 0 auto;
                 text-decoration: none;
-                margin-top: -10px;
-                @media all and (max-width: 450px) {margin-top: 0px;}
-                @media all and (max-width: 375px) {margin-top: 5px;}
+                margin-top: 35px;
             }
 
             .noContent {
@@ -1868,6 +1968,9 @@ header{
                         padding-top: 5px;
                         font-weight: normal !important;
                     }
+                    p {
+                        margin-top: 15px;
+                    }
                 }
             }
 
@@ -1912,11 +2015,24 @@ header{
                         height: 28px;
                         font-size: 14px;
                     }
+                    p {
+                        margin-top: 10px;
+                    }
                 }
 
                 .mailDesc {
                     margin-bottom: 50px;
                 }
+            }
+        }
+
+        @media all and (max-width: 1440px) {
+            .contDec {
+                .icon-1 {
+                    width: 50px;
+                    height: 50px;
+                }
+
             }
         }
 
@@ -1953,7 +2069,7 @@ header{
                 }
 
                 a {
-                    font-size: 16px;
+                    font-size: 14px;
                 }
             }
         }

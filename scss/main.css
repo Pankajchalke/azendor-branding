@@ -266,16 +266,16 @@ img {
     font-size: 30px; }
 
   .font55 {
-    font-size: 26px; }
+    font-size: 22px; }
 
   .font50 {
-    font-size: 18px; }
+    font-size: 20px; }
 
   .font36 {
-    font-size: 16px; }
+    font-size: 18px; }
 
   .font30 {
-    font-size: 20px; }
+    font-size: 16px; }
 
   .font24 {
     font-size: 14px; }
@@ -583,14 +583,13 @@ header {
     padding: 70px;
     border: none; }
     .modal.in .modal-dialog1 .modal-content .close {
-      margin-top: -10px;
-      color: #f2f2f2;
+      margin-top: -30px;
       opacity: 1;
-      font-weight: normal;
-      text-shadow: none;
-      font-size: 46px;
       position: relative;
       z-index: 999; }
+      .modal.in .modal-dialog1 .modal-content .close img {
+        width: 20px;
+        height: 20px; }
     .modal.in .modal-dialog1 .modal-content .modal-body {
       padding: 0px; }
     .modal.in .modal-dialog1 .modal-content .serviceDesc h3 {
@@ -599,30 +598,31 @@ header {
       margin-bottom: 80px; }
     .modal.in .modal-dialog1 .modal-content .serviceDesc .listService {
       display: flex;
-      justify-content: space-between; }
+      justify-content: space-between;
+      padding: 0px 20px; }
       .modal.in .modal-dialog1 .modal-content .serviceDesc .listService ul {
         width: 40%; }
         .modal.in .modal-dialog1 .modal-content .serviceDesc .listService ul li {
-          margin-bottom: 40px; }
-    .modal.in .modal-dialog1 .modal-content .teamBox {
-      display: flex;
-      justify-content: space-between;
-      padding-bottom: 20px; }
-      .modal.in .modal-dialog1 .modal-content .teamBox .teamDesc {
-        width: 76%; }
-        .modal.in .modal-dialog1 .modal-content .teamBox .teamDesc p {
-          margin-bottom: 18px; }
-      .modal.in .modal-dialog1 .modal-content .teamBox .memberImg {
-        width: 20%; }
-    .modal.in .modal-dialog1 .modal-content .teamPara {
-      padding-top: 18px;
-      border-top: 1px solid #6A6A6A; }
+          margin-bottom: 40px;
+          position: relative;
+          list-style: none; }
+          .modal.in .modal-dialog1 .modal-content .serviceDesc .listService ul li::before {
+            content: '';
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            color: #414141;
+            top: 8px;
+            left: -23px;
+            border-radius: 50%;
+            text-align: center;
+            background-color: #414141; }
   @media all and (max-width: 1600px) {
     .modal.in .modal-dialog1 {
       width: 70%;
       margin: 10% auto 0; }
       .modal.in .modal-dialog1 .modal-content {
-        padding: 50px; }
+        padding: 60px 50px; }
         .modal.in .modal-dialog1 .modal-content .modal-body .listService ul {
           width: 48%; }
           .modal.in .modal-dialog1 .modal-content .modal-body .listService ul li {
@@ -631,7 +631,10 @@ header {
           margin-bottom: 30px; } }
   @media all and (max-width: 1400px) {
     .modal.in .modal-dialog1 {
-      margin: 5% auto 0; } }
+      margin: 5% auto 0; }
+      .modal.in .modal-dialog1 .modal-content .close img {
+        height: 18px;
+        width: 18px; } }
   @media all and (max-width: 1280px) {
     .modal.in .modal-dialog1 .modal-content .modal-body .listService ul {
       width: 48%; }
@@ -639,30 +642,39 @@ header {
         margin-bottom: 20px; } }
   @media all and (max-width: 920px) {
     .modal.in .modal-dialog1 .modal-content .serviceDesc h3 {
-      margin-bottom: 18px; }
+      margin-bottom: 18px;
+      line-height: 28px; }
     .modal.in .modal-dialog1 .modal-content .serviceDesc p {
       padding-top: 16px;
-      border-top: 1px solid #6A6A6A; }
-    .modal.in .modal-dialog1 .modal-content .modal-body .serviceDescInfo {
-      height: 350px;
-      overflow: auto; }
-      .modal.in .modal-dialog1 .modal-content .modal-body .serviceDescInfo .listService ul {
+      border-top: 1px solid #6A6A6A;
+      line-height: 22px; }
+    .modal.in .modal-dialog1 .modal-content .serviceDesc .listService {
+      display: block; }
+      .modal.in .modal-dialog1 .modal-content .serviceDesc .listService ul {
         width: 100%;
         padding-left: 0;
-        list-style-position: inside; } }
+        list-style-position: inside; }
+        .modal.in .modal-dialog1 .modal-content .serviceDesc .listService ul li::before {
+          width: 5px;
+          height: 5px;
+          left: -17px; }
+    .modal.in .modal-dialog1 .modal-content .modal-body .serviceDescInfo {
+      height: 350px;
+      overflow: auto; } }
   @media all and (max-width: 780px) {
     .modal.in .modal-dialog1 {
       transform: translate(0px, 100px);
       width: 100%;
       margin: -3% auto 0; }
       .modal.in .modal-dialog1 .modal-content {
-        padding: 30px; }
-        .modal.in .modal-dialog1 .modal-content .modal-body .listService {
-          display: block; }
-          .modal.in .modal-dialog1 .modal-content .modal-body .listService ul {
-            width: 100%; }
-            .modal.in .modal-dialog1 .modal-content .modal-body .listService ul li {
-              margin-bottom: 20px; }
+        padding: 60px 42px 30px; }
+        .modal.in .modal-dialog1 .modal-content .close {
+          margin-top: -42px; }
+          .modal.in .modal-dialog1 .modal-content .close img {
+            width: 14px;
+            height: 14px; }
+        .modal.in .modal-dialog1 .modal-content .modal-body .listService ul li {
+          margin-bottom: 20px; }
         .modal.in .modal-dialog1 .modal-content .serviceDescInfo {
           height: 320px; } }
   @media all and (max-width: 375px) {
@@ -679,14 +691,13 @@ header {
     padding: 63px;
     border: none; }
     .modal.in .modal-dialog2 .modal-content .close {
-      margin-top: -5px;
-      color: #f2f2f2;
+      margin-top: -30px;
       opacity: 1;
-      font-weight: normal;
-      text-shadow: none;
-      font-size: 46px;
       position: relative;
       z-index: 999; }
+      .modal.in .modal-dialog2 .modal-content .close img {
+        width: 20px;
+        height: 20px; }
     .modal.in .modal-dialog2 .modal-content .modal-body {
       padding: 0px; }
     .modal.in .modal-dialog2 .modal-content .teamBox {
@@ -728,7 +739,7 @@ header {
       width: 70%;
       margin: 10% auto 0px; }
       .modal.in .modal-dialog2 .modal-content {
-        padding: 44px 44px 10px; }
+        padding: 60px 44px; }
         .modal.in .modal-dialog2 .modal-content .teamBox {
           padding-bottom: 15px; }
           .modal.in .modal-dialog2 .modal-content .teamBox .teamDesc {
@@ -739,13 +750,16 @@ header {
             width: 20%; } }
   @media all and (max-width: 1400px) {
     .modal.in .modal-dialog2 {
-      margin: 5% auto 0px; } }
+      margin: 5% auto 0px; }
+      .modal.in .modal-dialog2 .modal-content .close img {
+        height: 18px;
+        width: 18px; } }
   @media all and (max-width: 1280px) {
     .modal.in .modal-dialog2 .modal-content {
-      padding: 44px; } }
+      padding: 60px 44px 30px; } }
   @media all and (max-width: 920px) {
     .modal.in .modal-dialog2 .modal-content {
-      padding: 30px; }
+      padding: 60px 44px 30px; }
       .modal.in .modal-dialog2 .modal-content .teamPara {
         height: 250px;
         overflow: auto; }
@@ -757,25 +771,30 @@ header {
       transform: translate(0px, 100px);
       width: 100%;
       margin: -3% auto 0; }
-      .modal.in .modal-dialog2 .modal-content .teamBox {
-        padding-bottom: 15px; }
-        .modal.in .modal-dialog2 .modal-content .teamBox .teamDesc {
-          width: 72%;
-          padding: 20px; }
-          .modal.in .modal-dialog2 .modal-content .teamBox .teamDesc p {
-            margin-bottom: 8px; }
-          .modal.in .modal-dialog2 .modal-content .teamBox .teamDesc img {
-            width: 24px; }
-        .modal.in .modal-dialog2 .modal-content .teamBox .memberImg {
-          width: 26%; } }
+      .modal.in .modal-dialog2 .modal-content {
+        padding: 60px 42px 30px; }
+        .modal.in .modal-dialog2 .modal-content .close {
+          margin-top: -42px; }
+          .modal.in .modal-dialog2 .modal-content .close img {
+            width: 14px;
+            height: 14px; }
+        .modal.in .modal-dialog2 .modal-content .teamBox {
+          padding-bottom: 15px; }
+          .modal.in .modal-dialog2 .modal-content .teamBox .teamDesc {
+            width: 72%;
+            padding: 20px; }
+            .modal.in .modal-dialog2 .modal-content .teamBox .teamDesc p {
+              margin-bottom: 8px; }
+            .modal.in .modal-dialog2 .modal-content .teamBox .teamDesc img {
+              width: 24px; }
+          .modal.in .modal-dialog2 .modal-content .teamBox .memberImg {
+            width: 26%; } }
   @media all and (max-width: 575px) {
     .modal.in .modal-dialog2 .modal-content .teamBox .teamDesc {
       padding: 0px 20px; } }
   @media all and (max-width: 375px) {
     .modal.in .modal-dialog2 .modal-content {
-      padding: 20px; }
-      .modal.in .modal-dialog2 .modal-content .close {
-        margin-top: 0px !important; }
+      padding: 60px 42px 30px; }
       .modal.in .modal-dialog2 .modal-content .teamBox .teamDesc {
         padding: 0px 10px; }
         .modal.in .modal-dialog2 .modal-content .teamBox .teamDesc h3 {
@@ -792,14 +811,13 @@ header {
     border: none;
     border-radius: 10px 10px 0px 0px; }
     .modal.in .modal-dialog3 .modal-content .close {
-      margin-top: -10px;
-      color: #f2f2f2;
+      margin-top: -30px;
       opacity: 1;
-      font-weight: normal;
-      text-shadow: none;
-      font-size: 46px;
       position: relative;
       z-index: 999; }
+      .modal.in .modal-dialog3 .modal-content .close img {
+        width: 20px;
+        height: 20px; }
     .modal.in .modal-dialog3 .modal-content .modal-body {
       padding: 0px; }
     .modal.in .modal-dialog3 .modal-content .teamBox {
@@ -821,13 +839,25 @@ header {
     .modal.in .modal-dialog3 .modal-content .modal-footer {
       padding: 0px;
       border-top: none; }
+  @media all and (max-width: 1600px) {
+    .modal.in .modal-dialog3 {
+      padding: 60px 50px; } }
+  @media all and (max-width: 1400px) {
+    .modal.in .modal-dialog3 .modal-content .close img {
+      height: 18px;
+      width: 18px; } }
   @media all and (max-width: 920px) {
     .modal.in .modal-dialog3 {
       transform: translate(0px, 100px);
       width: 100%;
       margin: -3% auto 0; }
       .modal.in .modal-dialog3 .modal-content {
-        padding: 30px; }
+        padding: 60px 42px 30px; }
+        .modal.in .modal-dialog3 .modal-content .close {
+          margin-top: -42px; }
+          .modal.in .modal-dialog3 .modal-content .close img {
+            width: 14px;
+            height: 14px; }
         .modal.in .modal-dialog3 .modal-content .teamBox {
           padding-bottom: 15px; }
           .modal.in .modal-dialog3 .modal-content .teamBox .teamDesc {
@@ -857,9 +887,7 @@ header {
         padding: 20px 10px !important; } }
   @media all and (max-width: 375px) {
     .modal.in .modal-dialog3 .modal-content {
-      padding: 20px; }
-      .modal.in .modal-dialog3 .modal-content .close {
-        margin-top: 0px !important; } }
+      padding: 60px 20px 30px; } }
 
 .bannerSec h1:hover {
   background: -webkit-linear-gradient(330deg, #F2F2F2 42.19%, #A2DFF2 73.22%);
@@ -968,11 +996,12 @@ header {
   .serviceSec .serviceSlider .slick-dots li button::before {
     color: transparent;
     border: 1px solid rgba(242, 242, 242, 0.4);
-    border-radius: 50%;
-    line-height: 16px; }
+    border-radius: 60px;
+    line-height: 20px; }
   .serviceSec .serviceSlider .slick-dots li.slick-active button:before {
     color: rgba(242, 242, 242, 0.6);
-    font-size: 36px; }
+    font-size: 14px;
+    padding-right: 1px; }
   .serviceSec .serviceSlider .slick-slide img {
     display: inline-block; }
 @media all and (max-width: 1800px) {
@@ -1061,8 +1090,16 @@ header {
       display: block; }
       .teamSection .teamSec .teamMembers {
         width: 100%; }
+        .teamSection .teamSec .teamMembers:nth-child(1) {
+          margin-bottom: 40px; }
         .teamSection .teamSec .teamMembers .linkedinImg {
           width: 30px; } }
+  @media all and (max-width: 450px) {
+    .teamSection .teamSec .teamMembers {
+      height: 240px;
+      overflow: hidden; }
+      .teamSection .teamSec .teamMembers a {
+        padding: 36px 0px; } }
 
 .clientsBox .clientSec {
   display: flex;
@@ -1072,7 +1109,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     width: 230px;
     border: 1px solid rgba(242, 242, 242, 0.2);
     border-radius: 60px; }
@@ -1088,8 +1125,13 @@ header {
       width: 48%; }
       .clientsBox .clientSec .tabs h3.active {
         color: #fff; }
+<<<<<<< Updated upstream
         .clientsBox .clientSec .tabs h3.active a {
           font-weight: 500 !important; }
+=======
+        .clientsBox .clientSec .tabs h3.active:active a, .clientsBox .clientSec .tabs h3.active:focus a {
+          font-weight: 500; }
+>>>>>>> Stashed changes
       .clientsBox .clientSec .tabs h3 a {
         text-decoration: none; }
     .clientsBox .clientSec .tabs .bg {
@@ -1105,14 +1147,18 @@ header {
       transition: .3s; }
     @media all and (max-width: 768px) {
       .clientsBox .clientSec .tabs {
-        width: 140px; }
+        width: 127px;
+        margin-bottom: 20px; }
         .clientsBox .clientSec .tabs .bg {
-          width: 78px; } }
+          width: 66px; } }
 .clientsBox #scrolldiv {
   background-color: transparent;
   width: unset;
-  height: auto;
+  height: 450px;
   overflow-y: scroll; }
+  @media all and (max-width: 1150px) {
+    .clientsBox #scrolldiv {
+      height: 360px; } }
   .clientsBox #scrolldiv::-webkit-scrollbar {
     display: none; }
   .clientsBox #scrolldiv #scrolldiv-content {
@@ -1145,7 +1191,7 @@ header {
       .clientsBox #scrolldiv #scrolldiv-content .tabs-content .flex .content,
       .clientsBox #scrolldiv #scrolldiv-content .tabs-content .flex .contentOne {
         width: 25%;
-        margin-top: -1px;
+        margin-top: 0px;
         display: none; }
         .clientsBox #scrolldiv #scrolldiv-content .tabs-content .flex .content .imgBorder,
         .clientsBox #scrolldiv #scrolldiv-content .tabs-content .flex .contentOne .imgBorder {
@@ -1245,8 +1291,12 @@ header {
       opacity: 1; }
     .testimonialsSec .testimonialsSlider .slick-prev:before {
       font-size: 38px;
+<<<<<<< Updated upstream
       font-family: "";
       opacity: 0.5; }
+=======
+      opacity: 0.7; }
+>>>>>>> Stashed changes
       .testimonialsSec .testimonialsSlider .slick-prev:before:hover {
         opacity: 1; }
   .testimonialsSec .testimonialsSlider .slick-next {
@@ -1379,7 +1429,7 @@ header {
 .caseStudies #scrolldiv {
   background-color: transparent;
   width: unset;
-  height: auto;
+  height: 500px;
   overflow-y: scroll; }
   .caseStudies #scrolldiv::-webkit-scrollbar {
     display: none; }
@@ -1391,7 +1441,7 @@ header {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      margin-left: 0px; }
+      margin-left: -30px; }
       .caseStudies #scrolldiv #scrolldiv-content .flex img {
         filter: grayscale(100%);
         -webkit-filter: grayscale(100%);
@@ -1406,23 +1456,16 @@ header {
       .caseStudies #scrolldiv #scrolldiv-content .flex .contentThree {
         width: 23%;
         display: none;
-        margin-bottom: 35px;
+        margin-top: 30px;
         padding: 10px 0px;
         background-color: #252525;
         border: 1px solid #1C1C1C;
         border-radius: 10px; }
-        @media all and (max-width: 920px) {
+      @media all and (max-width: 1600px) {
+        .caseStudies #scrolldiv #scrolldiv-content .flex {
+          margin-top: 0px; }
           .caseStudies #scrolldiv #scrolldiv-content .flex .contentThree {
-            border-radius: 5px; } }
-        @media all and (max-width: 770px) {
-          .caseStudies #scrolldiv #scrolldiv-content .flex .contentThree {
-            margin-bottom: 30px; } }
-        @media all and (max-width: 575px) {
-          .caseStudies #scrolldiv #scrolldiv-content .flex .contentThree {
-            margin-bottom: 20px; } }
-        @media all and (max-width: 375px) {
-          .caseStudies #scrolldiv #scrolldiv-content .flex .contentThree {
-            margin-bottom: 15px; } }
+            margin-top: 18px; } }
       @media all and (max-width: 1200px) {
         .caseStudies #scrolldiv #scrolldiv-content .flex img {
           width: 170px; } }
@@ -1436,13 +1479,7 @@ header {
       display: block;
       margin: 0 auto;
       text-decoration: none;
-      margin-top: -10px; }
-      @media all and (max-width: 450px) {
-        .caseStudies #scrolldiv #scrolldiv-content #loadMorethree {
-          margin-top: 0px; } }
-      @media all and (max-width: 375px) {
-        .caseStudies #scrolldiv #scrolldiv-content #loadMorethree {
-          margin-top: 5px; } }
+      margin-top: 35px; }
     .caseStudies #scrolldiv #scrolldiv-content .noContent {
       color: #6A6A6A;
       background-color: transparent !important;
@@ -1501,6 +1538,8 @@ header {
           font-size: 18px;
           padding-top: 5px;
           font-weight: normal !important; }
+        .contactSec .contactBox .contDec ol li p {
+          margin-top: 15px; }
   @media all and (max-width: 1800px) {
     .contactSec .contactBox .contDec {
       padding: 0px 70px; } }
@@ -1524,8 +1563,14 @@ header {
             width: 28px;
             height: 28px;
             font-size: 14px; }
+          .contactSec .contactBox .contDec ol li p {
+            margin-top: 10px; }
         .contactSec .contactBox .contDec .mailDesc {
           margin-bottom: 50px; } }
+  @media all and (max-width: 1440px) {
+    .contactSec .contactBox .contDec .icon-1 {
+      width: 50px;
+      height: 50px; } }
   @media all and (max-width: 1280px) {
     .contactSec .contactBox .contDec {
       padding: 0px 20px; }
@@ -1548,7 +1593,7 @@ header {
         .contactSec .contactBox .contDec .mailDesc {
           margin-bottom: 10px; }
         .contactSec .contactBox .contDec a {
-          font-size: 16px; } }
+          font-size: 14px; } }
   @media all and (max-width: 920px) {
     .contactSec .contactBox .contDec h3, .contactSec .contactBox .contDec h4, .contactSec .contactBox .contDec ol, .contactSec .contactBox .contDec li {
       font-size: 16px; } }
