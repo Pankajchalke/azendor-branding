@@ -102,7 +102,12 @@ $('.tabs .tabsToggle').click(function () {
   $('.tabs .bg').css('left', (120 * indis).toString() + "px");
   $('.tabs .bg a').css('left', (120 * indis).toString() + "px");
 
-  const mQuery = window.matchMedia('(max-width: 768px)')
+  var mQuery = window.matchMedia('(max-width: 768px)')
+  if (mQuery.matches) {
+    // Print a message to the console 
+    $('.tabs .bg').css('left', (76 * indis).toString() + "px");
+  }
+  var mQuery = window.matchMedia('(max-width: 450px)')
   if (mQuery.matches) {
     // Print a message to the console 
     $('.tabs .bg').css('left', (60 * indis).toString() + "px");

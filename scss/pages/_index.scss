@@ -735,8 +735,8 @@ header{
                 padding-bottom: 15px;
 
                 .teamDesc {
-                    width: 72%;
-                    padding: 20px;
+                    width: 82%;
+                    padding:0px 20px;
 
                     p {
                         margin-bottom: 8px;
@@ -747,25 +747,33 @@ header{
                 }
 
                 .memberImg {
-                    width: 26%;
+                    width: unset;
+                    img{
+                        width: 100px;
+                        height: 100px;
+                    }
                 }
             }
         }
     }
-     @media all and (max-width: 575px) {
-     .modal-content {
-         .teamBox {
-            .teamDesc {
+    
+
+     @media all and (max-width: 450px){
+        .modal-content{
+            padding: 60px 20px 30px;
+        
+        .teamBox{
+           
+            .teamDesc{
                 padding: 0px 20px;
-                }
+                width: 72%;
             }
         }
-     }
-
+    }}
     @media all and (max-width: 375px) {
 
         .modal-content {
-            padding: 60px 42px 30px;
+            padding: 60px 20px 30px;
 
             
             .teamBox {
@@ -1266,6 +1274,9 @@ header{
 
             .teamMembers {
                 width: 100%;
+                p{
+                    padding-top: 5px;
+                }
                 &:nth-child(1) {
                     margin-bottom: 40px;
                 }
@@ -1364,14 +1375,36 @@ header{
             }
 
 
-            @media all and (max-width: 768px) {
-                width: 127px;
+            
+        }
+
+        @media all and (max-width: 768px) {
+            padding-bottom: 30px;
+
+            .tabs {
+                width: 150px;
                 margin-bottom: 20px;
 
+                h3 {
+                    padding: 7px 0px;
+                }
+
+
                 .bg {
-                    width: 66px;
+                    width: 74px;
                 }
             }
+
+        }
+        @media all and (max-width: 450px) {
+            .tabs {
+                width: 120px;
+        
+                .bg {
+                    width: 60px;
+                }
+            }
+
         }
 
 
@@ -1385,7 +1418,7 @@ header{
         overflow-y: scroll;
 
         @media all and (max-width:1150px) {
-            height: 360px;
+            height: 460px;
         }
 
         &::-webkit-scrollbar {
@@ -1454,7 +1487,7 @@ header{
                             display: block;
 
                             border-top: 1px solid #373737;
-                            width: 80%;
+                            width: 90%;
                             margin: 0 auto;
                         }
 
@@ -1463,7 +1496,7 @@ header{
                             display: block;
 
                             border-bottom: 1px solid #373737;
-                            width: 80%;
+                            width: 90%;
                             margin: 0 auto;
                         }
 
@@ -1486,11 +1519,13 @@ header{
                     }
 
                     @media all and (max-width:780px) {
-                        margin-left: 0px;
+                        margin-left: -5px;
+                        padding: 5px 0px;
 
                         .content,
                         .contentOne {
                             width: 48%;
+                            margin: -1px 2px 0px 2px;
 
 
                             &:nth-child(even) {
@@ -1523,7 +1558,10 @@ header{
         }
 
         @media all and (max-width: 780px) {
-            height: 780px;
+            height: 530px;
+        }
+        @media all and (max-width: 450px) {
+            height: 430px;
         }
     }
 
@@ -1814,6 +1852,9 @@ header{
         width: unset;
         height: 500px;
         overflow-y: scroll;
+        @media all and (max-width:1150px) {
+            height: 460px;
+        }
 
         &::-webkit-scrollbar {
             display: none;
@@ -1897,7 +1938,10 @@ header{
         }
 
         @media all and (max-width: 780px) {
-            height: 780px;
+            height: 530px;
+        }
+        @media all and (max-width: 450px) {
+            height: 430px;
         }
     }
 
