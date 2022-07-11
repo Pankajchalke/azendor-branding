@@ -1328,6 +1328,7 @@ header{
                 &.active {
                     color: #fff;
 
+
                     a {font-weight:500 !important;}
 
                     &:active, &:focus{
@@ -1336,6 +1337,7 @@ header{
                             font-weight: 500;
                         }
                     }
+
 
                 }
 
@@ -1599,11 +1601,9 @@ header{
 
             &:before {
                 font-size: 38px;
-
                 font-family:"";
                 opacity: 0.5;
                 
-
                 &:hover {
                     opacity: 1;
                 }
