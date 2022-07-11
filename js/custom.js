@@ -291,6 +291,27 @@ window.onscroll = () => {
 });
 */
 
+//progress bar js
+let progressSection = document.querySelector(".progress-bar");
+    let x, y;
 
+      window.addEventListener("mouseover", (e) => {
+        x = e.clientX;
+        y = e.clientY;
+      });
+
+      function updateProgressBar() {
+        progressSection.style.transform = `transform(${x}px, ${y}px)`;
+        progressBar.style.height = `${getScrollPercentage()}%`;
+        requestAnimationFrame(updateProgressBar);
+      }
+
+      function getScrollPercentage() {
+        return (
+          (window.scrollY / (document.body.scrollHeight - window.innerHeight)) *
+          100
+        );
+      }
+      updateProgressBar();
 
 

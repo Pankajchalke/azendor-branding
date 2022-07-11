@@ -1212,8 +1212,9 @@ header{
                 position: absolute;
                 bottom: -2px;
                 color: white;
-                right: 0;
+                right: 5px;
                 width: 100%;
+                z-index:11;
                 background: linear-gradient(180deg, rgba(13, 13, 13, 0) 8.82%, rgba(33, 33, 33, 0.88) 45.31%, #212121 91.77%);
 
                 img {
@@ -1230,6 +1231,7 @@ header{
 
             .memberImg {
                 max-width: 100%;
+                width:99%;
             }
         }
 
@@ -1322,12 +1324,18 @@ header{
                 transition: .3s;
                 width: 48%;
 
-                &:active, &:focus{
+
+                &.active {
                     color: #fff;
-                    a{
-                        font-weight:500 !important;}
+
+                    a {font-weight:500 !important;}
+
+                    &:active, &:focus{
+                        color: #fff;
+                        a{
+                            font-weight: 500;
+                        }
                     }
-                    
 
                 }
 
@@ -1579,7 +1587,7 @@ header{
             @media (max-width: 575px) {
                 left: 160px;
             }
-            @media (max-width: 350px) {
+            @media (max-width: 375px) {
                 left: 120px;
             }
             &:hover{
@@ -1630,7 +1638,7 @@ header{
             @media (max-width: 575px) {
                 right: 160px;
             }
-            @media (max-width: 350px) {
+            @media (max-width: 375px) {
                 right: 120px;
             }
             &:hover{
