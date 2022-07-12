@@ -1443,8 +1443,9 @@ header {
             border: 1px solid rgba(242, 242, 242, 0.2);
             border-radius: 60px;
 
-            h3 {
+            a {
                 text-align: center;
+                text-decoration: none;
                 color: #94969A;
                 padding-top: 15px;
                 padding-bottom: 15px;
@@ -1452,23 +1453,31 @@ header {
                 z-index: 3;
                 font-size: 12px;
                 transition: .3s;
+                width: 48%;
+               
 
-
-
-
-
-                &.active {
+                h3{
+                    font-weight: 400;
+                }
+                &.active h3{
                     color: #fff;
                     font-weight: 500 !important;
 
                     
+
+                    &:active h3,
+                    &:focus h3 {
+                        color: #fff;
+                        font-weight: 500 !important;
+                        
+                    }
+
+
                 }
 
-                width: 48%;
 
-                a {
-                    text-decoration: none;
-                }
+
+                
             }
 
             .bg {
@@ -1482,6 +1491,8 @@ header {
                 border: 1px solid rgba(242, 242, 242, 0.2);
                 border-radius: 60px;
                 transition: .3s;
+
+
             }
 
 
@@ -1495,7 +1506,7 @@ header {
                 width: 150px;
                 margin-bottom: 20px;
 
-                h3 {
+                a {
                     padding: 7px 0px;
                 }
 
@@ -1506,10 +1517,11 @@ header {
             }
 
         }
+
         @media all and (max-width: 450px) {
             .tabs {
                 width: 120px;
-        
+
                 .bg {
                     width: 60px;
                 }
@@ -1629,13 +1641,13 @@ header {
                     }
 
                     @media all and (max-width:780px) {
+                        margin-left: -5px;
                         padding: 5px 0px;
-                        margin-left: 0px;
 
                         .content,
                         .contentOne {
                             width: 48%;
-                            margin-top: -1px 2px 0px 2px;
+                            margin: -1px 2px 0px 2px;
 
 
                             &:nth-child(even) {
@@ -1670,6 +1682,7 @@ header {
         @media all and (max-width: 780px) {
             height: 530px;
         }
+
         @media all and (max-width: 450px) {
             height: 430px;
         }
