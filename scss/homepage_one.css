@@ -1113,8 +1113,9 @@ header {
     width: 230px;
     border: 1px solid rgba(242, 242, 242, 0.2);
     border-radius: 60px; }
-    .clientsBox .clientSec .tabs h3 {
+    .clientsBox .clientSec .tabs a {
       text-align: center;
+      text-decoration: none;
       color: #94969A;
       padding-top: 15px;
       padding-bottom: 15px;
@@ -1123,11 +1124,14 @@ header {
       font-size: 12px;
       transition: .3s;
       width: 48%; }
-      .clientsBox .clientSec .tabs h3.active {
+      .clientsBox .clientSec .tabs a h3 {
+        font-weight: 400; }
+      .clientsBox .clientSec .tabs a.active h3 {
         color: #fff;
         font-weight: 500 !important; }
-      .clientsBox .clientSec .tabs h3 a {
-        text-decoration: none; }
+        .clientsBox .clientSec .tabs a.active h3:active h3, .clientsBox .clientSec .tabs a.active h3:focus h3 {
+          color: #fff;
+          font-weight: 500 !important; }
     .clientsBox .clientSec .tabs .bg {
       z-index: 1;
       position: absolute;
@@ -1145,7 +1149,7 @@ header {
       .clientsBox .clientSec .tabs {
         width: 150px;
         margin-bottom: 20px; }
-        .clientsBox .clientSec .tabs h3 {
+        .clientsBox .clientSec .tabs a {
           padding: 7px 0px; }
         .clientsBox .clientSec .tabs .bg {
           width: 74px; } }
@@ -1222,12 +1226,12 @@ header {
           width: 170px; } }
       @media all and (max-width: 780px) {
         .clientsBox #scrolldiv #scrolldiv-content .tabs-content .flex {
-          padding: 5px 0px;
-          margin-left: 0px; }
+          margin-left: -5px;
+          padding: 5px 0px; }
           .clientsBox #scrolldiv #scrolldiv-content .tabs-content .flex .content,
           .clientsBox #scrolldiv #scrolldiv-content .tabs-content .flex .contentOne {
             width: 48%;
-            margin-top: -1px 2px 0px 2px; }
+            margin: -1px 2px 0px 2px; }
             .clientsBox #scrolldiv #scrolldiv-content .tabs-content .flex .content:nth-child(even) .imgBorder,
             .clientsBox #scrolldiv #scrolldiv-content .tabs-content .flex .contentOne:nth-child(even) .imgBorder {
               border-right: none; } }

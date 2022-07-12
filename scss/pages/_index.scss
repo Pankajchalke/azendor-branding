@@ -376,7 +376,10 @@ header {
     border: 1px solid rgba(106, 106, 106, 50%);
 
     .progress-bar {
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
     width: 2px;
     background: #fff;
     border-radius: 2px;
@@ -393,7 +396,10 @@ header {
     background: #fff;
     border-radius: 50%;
     }
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
     }
 }
 
@@ -1448,8 +1454,9 @@ header {
             border: 1px solid rgba(242, 242, 242, 0.2);
             border-radius: 60px;
 
-            h3 {
+            a {
                 text-align: center;
+                text-decoration: none;
                 color: #94969A;
                 padding-top: 15px;
                 padding-bottom: 15px;
@@ -1458,35 +1465,30 @@ header {
                 font-size: 12px;
                 transition: .3s;
                 width: 48%;
-                font-weight: 400;
+               
 
-
-                &.active {
-                    color: #fff;
-                    font-weight: 500;
-
-                    a {
-                        font-weight: 500 !important;
-                    }
-
-                    &:active,
-                    &:focus {
-                        color: #fff;
-
-                        a {
-                            font-weight: 500;
-                        }
-                    }
-
-
-                }
-
-
-
-                a {
-                    text-decoration: none;
+                h3{
                     font-weight: 400;
                 }
+                &.active h3{
+                    color: #fff;
+                    font-weight: 500 !important;
+
+                    
+
+                    &:active h3,
+                    &:focus h3 {
+                        color: #fff;
+                        font-weight: 500 !important;
+                        
+                    }
+
+
+                }
+
+
+
+                
             }
 
             .bg {
@@ -1515,7 +1517,7 @@ header {
                 width: 150px;
                 margin-bottom: 20px;
 
-                h3 {
+                a {
                     padding: 7px 0px;
                 }
 
