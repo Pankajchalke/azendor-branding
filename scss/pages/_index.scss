@@ -1738,6 +1738,9 @@ header {
             @media (max-width: 1950px) {
                 left: 850px;
             }
+            @media (max-width: 1800px) {
+                left: 750px;
+            }
 
             @media (max-width: 1600px) {
                 left: 725px;
@@ -1796,7 +1799,9 @@ header {
             @media (max-width: 1950px) {
                 right: 850px;
             }
-
+            @media (max-width: 1800px) {
+                right: 750px;
+            }
             @media (max-width: 1600px) {
                 right: 725px;
             }
@@ -2313,7 +2318,7 @@ header {
 }
 
 footer {
-    margin-top: -150px;
+    margin-top: -125px;
     margin-bottom: 0px !important;
 
     @media all and (max-width: 1600px) {
