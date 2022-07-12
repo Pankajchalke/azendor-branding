@@ -1,7 +1,7 @@
 /*
 Error: Invalid CSS after "    width: 2px": expected "{", was ";"
-        on line 383 of C:/xampp/htdocs/azendor-branding/scss/pages/_index.scss
-        from line 5 of C:\xampp\htdocs\azendor-branding\scss\main.scss
+        on line 383 of C:/wamp64/www/projects/azendor_branding/scss/pages/_index.scss
+        from line 5 of C:\wamp64\www\projects\azendor_branding\scss\main.scss
 
 378:     .progress-bar {
 379: <<<<<<< Updated upstream
@@ -16,8 +16,8 @@ Error: Invalid CSS after "    width: 2px": expected "{", was ";"
 388:     position:absolute;
 
 Backtrace:
-C:/xampp/htdocs/azendor-branding/scss/pages/_index.scss:383
-C:\xampp\htdocs\azendor-branding\scss\main.scss:5
+C:/wamp64/www/projects/azendor_branding/scss/pages/_index.scss:383
+C:\wamp64\www\projects\azendor_branding\scss\main.scss:5
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1208:in `expected'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1203:in `tok!'
@@ -74,4 +74,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"    width: 2px\": expected \"{\", was \";\"\A         on line 383 of C:/xampp/htdocs/azendor-branding/scss/pages/_index.scss\A         from line 5 of C:\xampp\htdocs\azendor-branding\scss\main.scss\A \A 378:     .progress-bar {\A 379: <<<<<<< Updated upstream\A 380: \A 381: =======\A 382: >>>>>>> Stashed changes\A 383:     width: 2px;\A 384:     background: #fff;\A 385:     border-radius: 2px;\A 386:     margin-left: -1px;\A 387:     &:before {\A 388:     position:absolute;"; }
+  content: "Error: Invalid CSS after \"    width: 2px\": expected \"{\", was \";\"\A         on line 383 of C:/wamp64/www/projects/azendor_branding/scss/pages/_index.scss\A         from line 5 of C:\wamp64\www\projects\azendor_branding\scss\main.scss\A \A 378:     .progress-bar {\A 379: <<<<<<< Updated upstream\A 380: \A 381: =======\A 382: >>>>>>> Stashed changes\A 383:     width: 2px;\A 384:     background: #fff;\A 385:     border-radius: 2px;\A 386:     margin-left: -1px;\A 387:     &:before {\A 388:     position:absolute;"; }
