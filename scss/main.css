@@ -547,9 +547,10 @@ header {
   margin: auto;
   border: 1px solid #6a6a6a; }
   .progress-container .progress-bar {
-    width: 1px;
+    width: 2px;
     background: #fff;
-    border-radius: 2px; }
+    border-radius: 2px;
+    margin-left: -1px; }
     .progress-container .progress-bar:before {
       position: absolute;
       content: "";

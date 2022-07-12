@@ -303,9 +303,10 @@ header{
     margin: auto;
     border: 1px solid rgba(106, 106, 106, 50%);
     .progress-bar {
-    width: 1px;
+    width: 2px;
     background: #fff;
     border-radius: 2px;
+    margin-left: -1px;
     &:before {
     position:absolute;
     content:"";
