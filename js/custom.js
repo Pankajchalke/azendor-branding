@@ -22,9 +22,13 @@ $('#fullpage').fullpage({
 
     if (index == 1) {
       $('#myBtn').css('display','none');
+      $('.scroll-text').css('display','none');
+      $('.scroll-symbol').css('display','none');
      };
     if (index == 2) { 
      $('#myBtn').css('display','block');
+     $('.scroll-text').css('display','block');
+     $('.scroll-symbol').css('display','block');
     };
   },
   onLeave: function (index, nextIndex, direction) {
@@ -323,5 +327,17 @@ let progressSection = document.querySelector(".progress-bar");
         );
       }
       updateProgressBar();
+      
+      // For Mobile view
+      let progressSectionMobile = document.querySelector('.progress-bar-mobile');
+       
+      function updateProgressBarMobile() {
+        progressSectionMobile.style.width = `${getScrollPercentageMobile()}%`
+        requestAnimationFrame(updateProgressBarMobile);
+      }
 
+      function getScrollPercentageMobile() {
+        return (window.scrollY / (document.body.scrollHeight - window.innerHeight) * 100 );
+      }
+       updateProgressBarMobile();
 

@@ -46,6 +46,7 @@ header {
 
     @media (max-width: 920px) {
         padding: 0px;
+        border-bottom: 1px solid #6A6A6A;
     }
 
     input[type="checkbox"]:checked~ {
@@ -374,7 +375,7 @@ header {
     border-radius: 2px;
     margin: auto;
     border: 1px solid rgba(106, 106, 106, 50%);
-
+    @media (max-width:770px){display: none !important;}
     .progress-bar {
         width: 2px;
         background: #fff;
@@ -393,6 +394,7 @@ header {
             background: #fff;
             border-radius: 50%;
         }
+
     }
 }
 
@@ -1435,6 +1437,8 @@ header {
 
 
 .clientsBox {
+    @media all and (max-width:1400px) {margin-top:30px;}
+    
     .clientSec {
         display: flex;
         justify-content: space-between;
@@ -1999,8 +2003,8 @@ header {
 
 
 .caseStudies {
-
-
+    @media all and (max-width:1400px) {margin-top:40px;}
+    @media all and (max-width:1050px) {margin-top:20px;}
     #scrolldiv {
         background-color: transparent;
         width: unset;
@@ -2327,7 +2331,7 @@ footer {
     }
 
     @media all and (max-width: 920px) {
-        margin-top: 0px;
+        margin-top: 20px;
     }
 
     .fp-auto-height.fp-section {
@@ -2372,8 +2376,8 @@ footer {
     width: 40px;
     height: 40px;
     left: auto;
-    right: 15px;
-    top: 300px;
+    right: 20px;
+    bottom: 270px;
     background: #252525;
     border: 1px solid rgba(28, 28, 28, 0.7);
     border-radius: 5px;
@@ -2382,4 +2386,53 @@ footer {
     @media all and (min-width: 770px) {
         display: none !important;
     }
+}
+
+.scroll-text{
+    position: fixed;
+    width: 39px;
+    height: 13px;
+    left:0;
+    right:0;
+    margin:0 auto;
+    bottom: 350px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 130.9%;
+    
+
+    letter-spacing: 0.05em;
+    font-feature-settings: 'liga' off;
+
+    color: #FFFFFF;
+    z-index: 9999;
+    @media all and (min-width: 770px) { display: none !important;}
+} 
+
+
+.scroll-symbol{
+  position: fixed;
+  width:18.62px;
+  height:0px;
+  left:0;
+  right:0;
+  margin:0 auto;
+  bottom:330px;
+  border: 1px solid #e2e2e2;
+  transform: rotate(90deg);
+  z-index: 999;
+  @media all and (min-width: 770px) { display: none !important;}
+}
+
+
+.progress-container-mobile .progress-bar-mobile{
+  position: fixed;
+  height: 2px;
+  background: #fff;
+  z-index: 999;
+  left: 0;
+  @media all and (min-width: 770px) { display: none !important;}
 }
