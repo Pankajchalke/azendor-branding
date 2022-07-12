@@ -376,7 +376,7 @@ header {
     border: 1px solid rgba(106, 106, 106, 50%);
 
     .progress-bar {
-<<<<<<< Updated upstream
+
     width: 2px;
     background: #fff;
     border-radius: 2px;
@@ -393,24 +393,7 @@ header {
     background: #fff;
     border-radius: 50%;
     }
-=======
-        width: 1px;
-        background: #fff;
-        border-radius: 2px;
 
-        &:before {
-            position: absolute;
-            content: "";
-            right: 0;
-            top: -5px;
-            left: -6px;
-            width: 12px;
-            height: 12px;
-            //height: 1%;
-            background: #fff;
-            border-radius: 50%;
-        }
->>>>>>> Stashed changes
     }
 }
 
