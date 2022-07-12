@@ -376,30 +376,23 @@ header {
     border: 1px solid rgba(106, 106, 106, 50%);
 
     .progress-bar {
-<<<<<<< Updated upstream
+        width: 2px;
+        background: #fff;
+        border-radius: 2px;
+        margin-left: -1px;
 
-=======
->>>>>>> Stashed changes
-    width: 2px;
-    background: #fff;
-    border-radius: 2px;
-    margin-left: -1px;
-    &:before {
-    position:absolute;
-    content:"";
-    right:0;
-    top:-5px;
-    left:-6px;
-    width:12px;
-    height:12px;
-    //height: 1%;
-    background: #fff;
-    border-radius: 50%;
-    }
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
+        &:before {
+            position: absolute;
+            content: "";
+            right: 0;
+            top: -5px;
+            left: -6px;
+            width: 12px;
+            height: 12px;
+            //height: 1%;
+            background: #fff;
+            border-radius: 50%;
+        }
     }
 }
 
@@ -1403,35 +1396,40 @@ header {
 
             .teamMembers {
                 width: 100%;
-
-                p {
-                    padding-top: 5px;
-                }
-
-                &:nth-child(1) {
-                    margin-bottom: 40px;
-                }
-
-
-                .linkedinImg {
-                    width: 30px;
-                }
             }
-        }
 
-        @media all and (max-width: 450px) {
-            .teamMembers {
-                height: 240px;
-                overflow: hidden;
+            a {
+                margin-bottom: 15px;
+            }
 
-                a {
-                    padding: 36px 0px;
-                }
+            p {
+                padding-top: 5px;
+            }
+
+            &:nth-child(1) {
+                margin-bottom: 40px;
+            }
+
+
+            .linkedinImg {
+                width: 30px;
             }
         }
     }
 
+    @media all and (max-width: 450px) {
+        .teamMembers {
+            height: 240px;
+            overflow: hidden;
+
+            a {
+                padding: 36px 0px;
+            }
+        }
+    }
 }
+
+
 
 
 
@@ -1465,22 +1463,23 @@ header {
                 font-size: 12px;
                 transition: .3s;
                 width: 48%;
-               
 
-                h3{
+
+                h3 {
                     font-weight: 400;
                 }
-                &.active h3{
+
+                &.active h3 {
                     color: #fff;
                     font-weight: 500 !important;
 
-                    
+
 
                     &:active h3,
                     &:focus h3 {
                         color: #fff;
                         font-weight: 500 !important;
-                        
+
                     }
 
 
@@ -1488,7 +1487,7 @@ header {
 
 
 
-                
+
             }
 
             .bg {
@@ -1691,12 +1690,10 @@ header {
         }
 
         @media all and (max-width: 780px) {
-            height: 530px;
+            height: 542px;
         }
 
-        @media all and (max-width: 450px) {
-            height: 430px;
-        }
+        
     }
 
 }
@@ -2098,12 +2095,10 @@ header {
         }
 
         @media all and (max-width: 780px) {
-            height: 530px;
+            height: 542px;
         }
 
-        @media all and (max-width: 450px) {
-            height: 430px;
-        }
+       
     }
 
 

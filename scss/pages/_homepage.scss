@@ -1395,6 +1395,9 @@ header {
 
             .teamMembers {
                 width: 100%;
+                a {
+                   margin-bottom: 15px;
+                }
                 p{
                     padding-top: 5px;
                 }
@@ -1680,12 +1683,10 @@ header {
         }
 
         @media all and (max-width: 780px) {
-            height: 530px;
+            height: 542px;
         }
 
-        @media all and (max-width: 450px) {
-            height: 430px;
-        }
+        
     }
 
 }
@@ -2028,11 +2029,9 @@ header {
         }
 
         @media all and (max-width: 780px) {
-            height: 530px;
+            height: 542px;
         }
-        @media all and (max-width: 450px) {
-            height: 430px;
-        }
+        
     }
 
 

@@ -1088,6 +1088,8 @@ header {
       display: block; }
       .teamSection .teamSec .teamMembers {
         width: 100%; }
+        .teamSection .teamSec .teamMembers a {
+          margin-bottom: 15px; }
         .teamSection .teamSec .teamMembers p {
           padding-top: 5px; }
         .teamSection .teamSec .teamMembers:nth-child(1) {
@@ -1248,10 +1250,7 @@ header {
       pointer-events: none; }
   @media all and (max-width: 780px) {
     .clientsBox #scrolldiv {
-      height: 530px; } }
-  @media all and (max-width: 450px) {
-    .clientsBox #scrolldiv {
-      height: 430px; } }
+      height: 542px; } }
 
 .testimonialsSec {
   overflow: hidden !important; }
@@ -1470,10 +1469,7 @@ header {
       pointer-events: none; }
   @media all and (max-width: 780px) {
     .caseStudies #scrolldiv {
-      height: 530px; } }
-  @media all and (max-width: 450px) {
-    .caseStudies #scrolldiv {
-      height: 430px; } }
+      height: 542px; } }
 
 .contactSec .contactBox {
   display: flex;

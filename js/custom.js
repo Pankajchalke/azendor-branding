@@ -76,7 +76,7 @@ $(".serviceSlider").slick({
 // tabs toggle
 
 jQuery(document).ready(function ($) {
-  tab = $('.tabs a');
+  tab = $('.tabs h3 a');
 
   tab.on('click', function (event) {
     event.preventDefault();
