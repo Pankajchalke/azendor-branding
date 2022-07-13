@@ -1897,9 +1897,11 @@ header {
 
             &:before {
                 font-size: 38px;
-                font-family: "";
+                //font-family: "";
                 opacity: 0.5;
-
+                content: url(../images/left-arrow.png);
+                background-repeat: no-repeat;
+                @media (max-width: 920px) {content: url(../images/left-arrow-mobile.png);}
                 &:hover {
                     opacity: 1;
                 }
@@ -1957,9 +1959,11 @@ header {
 
             &:before {
                 font-size: 38px;
-                font-family: "";
+                //font-family: "";
                 opacity: 0.5;
-
+                content: url(../images/right-arrow.png);
+                background-repeat: no-repeat;
+                @media (max-width: 920px) {content: url(../images/right-arrow-mobile.png);}
 
                 &:hover {
 
@@ -2220,7 +2224,7 @@ header {
 
 
 .contactSec {
-
+    @media all and (max-width: 920px) {margin-top:40px;}
     .contactBox {
         display: flex;
         justify-content: space-between;

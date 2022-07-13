@@ -1420,8 +1420,12 @@ header {
       opacity: 1; }
     .testimonialsSec .testimonialsSlider .slick-prev:before {
       font-size: 38px;
-      font-family: "";
-      opacity: 0.5; }
+      opacity: 0.5;
+      content: url(../images/left-arrow.png);
+      background-repeat: no-repeat; }
+      @media (max-width: 920px) {
+        .testimonialsSec .testimonialsSlider .slick-prev:before {
+          content: url(../images/left-arrow-mobile.png); } }
       .testimonialsSec .testimonialsSlider .slick-prev:before:hover {
         opacity: 1; }
   .testimonialsSec .testimonialsSlider .slick-next {
@@ -1459,8 +1463,12 @@ header {
       opacity: 1; }
     .testimonialsSec .testimonialsSlider .slick-next:before {
       font-size: 38px;
-      font-family: "";
-      opacity: 0.5; }
+      opacity: 0.5;
+      content: url(../images/right-arrow.png);
+      background-repeat: no-repeat; }
+      @media (max-width: 920px) {
+        .testimonialsSec .testimonialsSlider .slick-next:before {
+          content: url(../images/right-arrow-mobile.png); } }
       .testimonialsSec .testimonialsSlider .slick-next:before:hover {
         color: #fff; }
   .testimonialsSec .testimonialsSlider .testimonials {
@@ -1625,6 +1633,9 @@ header {
     .caseStudies #scrolldiv {
       height: 542px; } }
 
+@media all and (max-width: 920px) {
+  .contactSec {
+    margin-top: 40px; } }
 .contactSec .contactBox {
   display: flex;
   justify-content: space-between;
