@@ -662,7 +662,7 @@ header {
       position: absolute;
       content: "";
       right: 0;
-      bottom: -5px;
+      bottom: 0px;
       left: -6px;
       width: 12px;
       height: 12px;
