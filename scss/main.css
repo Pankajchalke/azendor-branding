@@ -1802,7 +1802,7 @@ footer {
   left: 0;
   right: 0;
   margin: 0 auto;
-  bottom: 350px;
+  bottom: 125px;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
@@ -1823,7 +1823,7 @@ footer {
   left: 0;
   right: 0;
   margin: 0 auto;
-  bottom: 330px;
+  bottom: 110px;
   border: 1px solid #e2e2e2;
   transform: rotate(90deg);
   z-index: 999; }
