@@ -1410,10 +1410,10 @@ header {
         left: 325px; } }
     @media (max-width: 575px) {
       .testimonialsSec .testimonialsSlider .slick-prev {
-        left: 160px; } }
+        left: 145px; } }
     @media (max-width: 375px) {
       .testimonialsSec .testimonialsSlider .slick-prev {
-        left: 120px; } }
+        left: 105px; } }
     .testimonialsSec .testimonialsSlider .slick-prev:hover:before {
       opacity: 1; }
     .testimonialsSec .testimonialsSlider .slick-prev:focus:before {
