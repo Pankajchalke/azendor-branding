@@ -22,13 +22,13 @@ $('#fullpage').fullpage({
 
     if (index == 1) {
       $('#myBtn').css('display','none');
-      $('.scroll-text').css('display','none');
-      $('.scroll-symbol').css('display','none');
+      $('.scroll-text').css('display','block');
+      $('.scroll-symbol').css('display','block');
      };
     if (index == 2) { 
      $('#myBtn').css('display','block');
-     $('.scroll-text').css('display','block');
-     $('.scroll-symbol').css('display','block');
+     $('.scroll-text').css('display','none');
+     $('.scroll-symbol').css('display','none');
     };
   },
   onLeave: function (index, nextIndex, direction) {
@@ -227,6 +227,18 @@ menuLinks.forEach((link) => {
   });
 });
 
+//show -hide mobile header
+function hideSidebar() {
+  document.getElementById('openSideMenu').checked = false;
+}
+
+var sideIconToggle = document.getElementById('sidebarContainer');
+
+document.addEventListener('click', function(event) {
+  if (!sidebarContainer.contains(event.target))
+    hideSidebar();
+});
+
 
 // testimonial JS
 
@@ -327,7 +339,7 @@ let progressSection = document.querySelector(".progress-bar");
         );
       }
       updateProgressBar();
-      
+
       // For Mobile view
       let progressSectionMobile = document.querySelector('.progress-bar-mobile');
        
