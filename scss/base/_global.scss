@@ -1,7 +1,8 @@
 
 
 *{margin: 0;padding: 0;box-sizing: border-box;outline: none;}
-body{background: #212121 !important;scroll-behavior: smooth; letter-spacing: 0.03em;line-height: 1.4;
+body{background: #212121 !important;scroll-behavior: smooth; letter-spacing: 0.03em;line-height: 1.4; overflow: hidden !important;
+    @media all and (max-width: 1030px){overflow: visible !important;}
 &:webkit-scroll bar{display:none;}
 }
 

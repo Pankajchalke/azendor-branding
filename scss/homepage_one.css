@@ -12,7 +12,11 @@ body {
   background: #212121 !important;
   scroll-behavior: smooth;
   letter-spacing: 0.03em;
-  line-height: 1.4; }
+  line-height: 1.4;
+  overflow: hidden !important; }
+  @media all and (max-width: 1030px) {
+    body {
+      overflow: visible !important; } }
   body:webkit-scroll bar {
     display: none; }
 

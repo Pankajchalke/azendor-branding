@@ -12,7 +12,11 @@ body {
   background: #212121 !important;
   scroll-behavior: smooth;
   letter-spacing: 0.03em;
-  line-height: 1.4; }
+  line-height: 1.4;
+  overflow: hidden !important; }
+  @media all and (max-width: 1030px) {
+    body {
+      overflow: visible !important; } }
   body:webkit-scroll bar {
     display: none; }
 
@@ -672,7 +676,7 @@ header {
 .section {
   margin-bottom: 30px; }
   .section h2 {
-    margin-bottom: 40px; }
+    margin-bottom: 20px; }
     @media all and (max-width: 1050px) {
       .section h2 {
         margin-bottom: 20px; } }
@@ -1278,7 +1282,7 @@ header {
 .clientsBox #scrolldiv {
   background-color: transparent;
   width: unset;
-  height: 450px;
+  height: 440px;
   overflow-y: scroll; }
   @media all and (max-width: 1150px) {
     .clientsBox #scrolldiv {
@@ -1407,6 +1411,7 @@ header {
         left: 450px; } }
     @media (max-width: 920px) {
       .testimonialsSec .testimonialsSlider .slick-prev {
+        top: 98%;
         left: 325px; } }
     @media (max-width: 575px) {
       .testimonialsSec .testimonialsSlider .slick-prev {
@@ -1421,11 +1426,11 @@ header {
     .testimonialsSec .testimonialsSlider .slick-prev:before {
       font-size: 38px;
       opacity: 0.5;
-      content: url(../images/left-arrow.png);
+      content: url(../images/left-arrow.svg);
       background-repeat: no-repeat; }
       @media (max-width: 920px) {
         .testimonialsSec .testimonialsSlider .slick-prev:before {
-          content: url(../images/left-arrow-mobile.png); } }
+          content: url(../images/left-arrow-mobile.svg); } }
       .testimonialsSec .testimonialsSlider .slick-prev:before:hover {
         opacity: 1; }
   .testimonialsSec .testimonialsSlider .slick-next {
@@ -1450,6 +1455,7 @@ header {
         right: 450px; } }
     @media (max-width: 920px) {
       .testimonialsSec .testimonialsSlider .slick-next {
+        top: 98%;
         right: 325px; } }
     @media (max-width: 575px) {
       .testimonialsSec .testimonialsSlider .slick-next {
@@ -1464,11 +1470,11 @@ header {
     .testimonialsSec .testimonialsSlider .slick-next:before {
       font-size: 38px;
       opacity: 0.5;
-      content: url(../images/right-arrow.png);
+      content: url(../images/right-arrow.svg);
       background-repeat: no-repeat; }
       @media (max-width: 920px) {
         .testimonialsSec .testimonialsSlider .slick-next:before {
-          content: url(../images/right-arrow-mobile.png); } }
+          content: url(../images/right-arrow-mobile.svg); } }
       .testimonialsSec .testimonialsSlider .slick-next:before:hover {
         color: #fff; }
   .testimonialsSec .testimonialsSlider .testimonials {
@@ -1571,7 +1577,7 @@ header {
 .caseStudies #scrolldiv {
   background-color: transparent;
   width: unset;
-  height: 500px;
+  height: 440px;
   overflow-y: scroll; }
   @media all and (max-width: 1150px) {
     .caseStudies #scrolldiv {
@@ -1585,8 +1591,7 @@ header {
     .caseStudies #scrolldiv #scrolldiv-content .flex {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
-      margin-left: -30px; }
+      justify-content: space-between; }
       .caseStudies #scrolldiv #scrolldiv-content .flex img {
         filter: grayscale(100%);
         -webkit-filter: grayscale(100%);

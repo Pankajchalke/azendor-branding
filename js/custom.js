@@ -14,7 +14,6 @@ $('#fullpage').fullpage({
   normalScrollElements: '#scrolldiv',
   licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
   scrollBar : true,
-  //responsiveWidth: 900,
   responsiveWidth: 1030,
   afterResponsive: function (isResponsive) { },
   afterLoad: function (anchorLink, index) {
@@ -93,9 +92,6 @@ jQuery(document).ready(function ($) {
   });
 });
 
-// $('.active').click(function(){
-//   $("a").css("font-weight",500);
-// })
 
 // tabs slider
 
@@ -277,6 +273,8 @@ $('.testimonialsSlider').slick({
   ]
 });
 
+
+// Progress bar Js
 
 const progressBar = document.getElementById("progressbar");
 progressBar.style.height = 1 + "%";
