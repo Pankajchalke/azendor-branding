@@ -10,7 +10,7 @@ $('#fullpage').fullpage({
   slidesNavigation: false,
   scrollHorizontally: true,
   controlArrows: true,
-  scrollOverflow: true,
+  //scrollOverflow: true,
   normalScrollElements: '#scrolldiv',
   licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
   scrollBar : true,
@@ -24,11 +24,19 @@ $('#fullpage').fullpage({
       $('.scroll-text').css('display','block');
       $('.scroll-symbol').css('display','block');
      };
-    if (index == 2) { 
+    if (index == 2) {
      $('#myBtn').css('display','block');
-     $('.scroll-text').css('display','none');
-     $('.scroll-symbol').css('display','none');
+     $('.scroll-text').css('display','block');
+     $('.scroll-symbol').css('display','block');
     };
+    if(index == 3) {
+      $('.scroll-text').css('display','block');
+      $('.scroll-symbol').css('display','block');
+    }
+     if(index == 4){
+      $('.scroll-text').css('display','none');
+     $('.scroll-symbol').css('display','none');
+    }
   },
   onLeave: function (index, nextIndex, direction) {
     console.log(index, nextIndex, direction);
