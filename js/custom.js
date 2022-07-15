@@ -231,6 +231,14 @@ menuLinks.forEach((link) => {
   });
 });
 
+// mobile header active
+$(function(){
+    $('#sideMenu a').click(function(){
+        $('#sideMenu a.active').removeClass('active');
+        $(this).addClass('active');
+    });
+});
+
 //show -hide mobile header
 function hideSidebar() {
   document.getElementById('openSideMenu').checked = false;

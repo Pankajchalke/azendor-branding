@@ -371,12 +371,12 @@ header {
             cursor: pointer;
             text-decoration: none;
             font-size: 16px; }
-            header #sidebarContainer #sideMenu .sideMenuInner li a.is-active {
+            header #sidebarContainer #sideMenu .sideMenuInner li a.active {
               position: relative;
               color: #fff !important;
               transition: all 0.35s ease;
               text-decoration: none; }
-              header #sidebarContainer #sideMenu .sideMenuInner li a.is-active:after {
+              header #sidebarContainer #sideMenu .sideMenuInner li a.active:after {
                 position: absolute;
                 content: "";
                 left: 0;
