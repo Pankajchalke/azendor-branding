@@ -23,19 +23,24 @@ $('#fullpage').fullpage({
       $('#myBtn').css('display','none');
       $('.scroll-text').css('display','block');
       $('.scroll-symbol').css('display','block');
-     };
+      $("a[class = 'scroll-icon']").prop("href","#bannerSec1");
+    };
     if (index == 2) {
      $('#myBtn').css('display','block');
      $('.scroll-text').css('display','block');
      $('.scroll-symbol').css('display','block');
+     $("a[class = 'scroll-icon']").prop("href","#bannerSec2");
     };
     if(index == 3) {
       $('.scroll-text').css('display','block');
       $('.scroll-symbol').css('display','block');
+      $("a[class = 'scroll-icon']").prop("href","#serviceSec");
     }
-     if(index == 4){
-      $('.scroll-text').css('display','none');
-     $('.scroll-symbol').css('display','none');
+    for(let i = 4 ; i < 10; i++){
+      if(index == i){
+        $('.scroll-text').css('display','none');
+        $('.scroll-symbol').css('display','none');
+      }
     }
   },
   onLeave: function (index, nextIndex, direction) {
