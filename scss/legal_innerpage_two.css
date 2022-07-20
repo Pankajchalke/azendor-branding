@@ -16,7 +16,17 @@ body {
   body:webkit-scroll bar {
     display: none; }
 
-ul, ol, li, h1, h2, h3, h4, h5, h6, a, p {
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p {
   margin: 0;
   outline: none;
   padding: 0; }
@@ -297,7 +307,8 @@ img {
   height: inherit !important; }
 
 .About {
-  margin: 150px 0px 0px 150px; }
+  margin-top: 297.48px;
+  color: #212121; }
   .About .heading-about {
     margin-bottom: 30px; }
   .About .contents p {
@@ -306,7 +317,12 @@ img {
 body {
   background-color: white !important; }
 
-.career {
-  color: crimson; }
+.careers {
+  color: #212121;
+  margin-top: 297.48px; }
+  .careers .careers-heading {
+    margin-bottom: 30px; }
+  .careers .careers-content p {
+    margin-bottom: 30px; }
 
 /*# sourceMappingURL=legal_innerpage_two.css.map */
