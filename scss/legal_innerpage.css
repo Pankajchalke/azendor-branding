@@ -101,11 +101,11 @@ p {
 .colordarkGray {
   color: #6A6A6A; }
 
-.textCenter {
-  text-align: center; }
-
 .colorB {
   color: #212121; }
+
+.textCenter {
+  text-align: center; }
 
 img {
   max-width: 100%; }
