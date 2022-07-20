@@ -98,6 +98,9 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, a, p {
 .textCenter {
   text-align: center; }
 
+.colorB {
+  color: #212121; }
+
 img {
   max-width: 100%; }
 

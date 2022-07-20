@@ -94,6 +94,9 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, a, p {
 .textCenter {
   text-align: center; }
 
+.colorB {
+  color: #212121; }
+
 img {
   max-width: 100%; }
 
@@ -296,7 +299,32 @@ img {
 .slick-slide {
   height: inherit !important; }
 
-.founder {
-  color: darkgreen; }
+.founder h2 {
+  margin-bottom: 30px; }
+.founder .founderBox {
+  display: flex; }
+  .founder .founderBox .profile {
+    width: 35%; }
+  .founder .founderBox .founderDesc {
+    width: 65%;
+    padding-left: 80px; }
+    .founder .founderBox .founderDesc .founderDescName {
+      display: flex;
+      align-items: end; }
+      .founder .founderBox .founderDesc .founderDescName a {
+        margin-left: 45px; }
+    .founder .founderBox .founderDesc .details {
+      display: flex;
+      padding: 25px 0px 40px; }
+      .founder .founderBox .founderDesc .details p {
+        display: flex;
+        align-items: center;
+        width: 40%; }
+        .founder .founderBox .founderDesc .details p img {
+          margin-right: 15px; }
+      .founder .founderBox .founderDesc .details a {
+        text-decoration: none; }
+    .founder .founderBox .founderDesc .founderDescInfo {
+      width: 70%; }
 
 /*# sourceMappingURL=legal_innerpage.css.map */
