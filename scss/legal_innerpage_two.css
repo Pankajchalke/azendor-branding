@@ -296,8 +296,15 @@ img {
 .slick-slide {
   height: inherit !important; }
 
-.aboutUs {
-  color: darkmagenta; }
+.About {
+  margin: 150px 0px 0px 150px; }
+  .About .heading-about {
+    margin-bottom: 30px; }
+  .About .contents p {
+    margin-bottom: 30px; }
+
+body {
+  background-color: white !important; }
 
 .career {
   color: crimson; }
