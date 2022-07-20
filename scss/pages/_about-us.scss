@@ -1,1 +1,18 @@
-.aboutUs{color: darkmagenta;}
+.About {
+    margin-top: 297.48px ;
+    color: #212121;
+
+    .heading-about {
+        margin-bottom: 30px;
+    }
+
+    .contents {
+        p {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+body{
+    background-color: white !important;
+}
