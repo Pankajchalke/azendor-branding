@@ -2,13 +2,17 @@
     color: #212121;
     margin-top: 297.48px;
 
-    .careers-heading{
+    .careers-heading {
         margin-bottom: 30px;
     }
 
     .careers-content {
         p {
             margin-bottom: 30px;
+            font-style: normal;
+            line-height: 160%;
+            letter-spacing: 0.03em;
+            font-family: 'Poppins' !important;
         }
     }
 }
