@@ -101,6 +101,9 @@ p {
 .colordarkGray {
   color: #6A6A6A; }
 
+.colorB {
+  color: #212121; }
+
 .textCenter {
   text-align: center; }
 
@@ -306,30 +309,102 @@ img {
 .slick-slide {
   height: inherit !important; }
 
-.About {
-  margin-top: 297.48px;
+.aboutUs {
+  margin-top: 100px;
+  margin-bottom: 160px;
   color: #212121; }
-  .About .heading-about {
+  .aboutUs .about-heading {
     margin-bottom: 30px; }
-  .About .contents p {
-    margin-bottom: 30px;
-    line-height: 125%;
-    text-transform: capitalize;
-    font-family: "Poppins" !important; }
+  .aboutUs .about-contents {
+    width: 80%; }
+    .aboutUs .about-contents p {
+      margin-bottom: 30px;
+      line-height: 125%;
+      text-transform: capitalize;
+      font-family: 'Poppins' !important; }
+  .aboutUs .ctaLink {
+    margin-top: 40px; }
+    .aboutUs .ctaLink a {
+      text-decoration: none;
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      border-radius: 60px;
+      padding: 12px 30px;
+      transition: 0.2s all ease-in-out; }
+      .aboutUs .ctaLink a img {
+        opacity: 0;
+        width: 0; }
+      .aboutUs .ctaLink a:visited, .aboutUs .ctaLink a:active, .aboutUs .ctaLink a:focus {
+        text-decoration: none;
+        color: #212121; }
+      .aboutUs .ctaLink a:hover {
+        font-weight: 600;
+        border: 1px solid #212121; }
+        .aboutUs .ctaLink a:hover img {
+          opacity: 1;
+          width: auto;
+          margin-left: 5px;
+          vertical-align: middle; }
+  @media all and (max-width: 1800px) {
+    .aboutUs .about-contents {
+      width: 80%; } }
+  @media all and (max-width: 1650px) {
+    .aboutUs .about-contents {
+      width: 84%; } }
+  @media all and (max-width: 1600px) {
+    .aboutUs .about-contents {
+      width: 80%; } }
+  @media all and (max-width: 1460px) {
+    .aboutUs .about-contents {
+      width: 90%; } }
+  @media all and (max-width: 1280px) {
+    .aboutUs .about-contents {
+      width: 95%; } }
+  @media all and (max-width: 1050px) {
+    .aboutUs .about-contents {
+      width: 90%; } }
+  @media all and (max-width: 680px) {
+    .aboutUs .about-contents {
+      width: 100%; }
+    .aboutUs .ctaLink {
+      margin-top: 20px; } }
 
 body {
   background-color: white !important; }
 
 .careers {
   color: #212121;
-  margin-top: 297.48px; }
+  margin-top: 150px;
+  margin-bottom: 150px; }
   .careers .careers-heading {
     margin-bottom: 30px; }
-  .careers .careers-content p {
-    margin-bottom: 30px;
-    font-style: normal;
-    line-height: 160%;
-    letter-spacing: 0.03em;
-    font-family: 'Poppins' !important; }
+  .careers .careers-content {
+    width: 80%; }
+    .careers .careers-content p {
+      margin-bottom: 30px;
+      font-style: normal;
+      line-height: 160%;
+      letter-spacing: 0.03em;
+      font-family: 'Poppins' !important; }
+  @media all and (max-width: 1800px) {
+    .careers .careers-content {
+      width: 80%; } }
+  @media all and (max-width: 1650px) {
+    .careers .careers-content {
+      width: 84%; } }
+  @media all and (max-width: 1600px) {
+    .careers .careers-content {
+      width: 80%; } }
+  @media all and (max-width: 1460px) {
+    .careers .careers-content {
+      width: 90%; } }
+  @media all and (max-width: 1280px) {
+    .careers .careers-content {
+      width: 95%; } }
+  @media all and (max-width: 1050px) {
+    .careers .careers-content {
+      width: 90%; } }
+  @media all and (max-width: 680px) {
+    .careers .careers-content {
+      width: 100%; } }
 
 /*# sourceMappingURL=legal_innerpage_two.css.map */
