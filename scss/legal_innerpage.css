@@ -337,4 +337,59 @@ img {
     .founder .founderBox .founderDesc .founderDescInfo {
       width: 70%; }
 
+body {
+  overflow: visible !important; }
+
+.contact {
+  margin: 150px 0px; }
+  .contact .contactBox {
+    display: flex; }
+  .contact .contactDesc {
+    width: 50%; }
+    .contact .contactDesc h2 {
+      margin-bottom: 30px; }
+    .contact .contactDesc p {
+      width: 80%; }
+  .contact .contactForm {
+    width: 50%;
+    margin-left: 180px; }
+    .contact .contactForm form {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      .contact .contactForm form input[type=text], .contact .contactForm form [type=number], .contact .contactForm form [type=mail], .contact .contactForm form textarea {
+        width: 100%;
+        padding: 14px 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        margin-top: 15px;
+        margin-bottom: 50px;
+        resize: vertical;
+        background: rgba(215, 215, 215, 0.3);
+        font-size: 20px; }
+        .contact .contactForm form input[type=text]:focus, .contact .contactForm form [type=number]:focus, .contact .contactForm form [type=mail]:focus, .contact .contactForm form textarea:focus {
+          background: rgba(243, 243, 243, 0.7);
+          border: 2px solid #212121; }
+      .contact .contactForm form textarea {
+        margin-bottom: 20px;
+        height: 166px; }
+        .contact .contactForm form textarea a {
+          text-decoration: none; }
+      .contact .contactForm form input[type=submit] {
+        background-color: #04AA6D;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer; }
+        .contact .contactForm form input[type=submit]:hover {
+          background-color: #45a049; }
+    .contact .contactForm .formDivider {
+      width: 45%; }
+      .contact .contactForm .formDivider label {
+        font-size: 16px; }
+    .contact .contactForm .aboutQuery {
+      width: 100%; }
+
 /*# sourceMappingURL=legal_innerpage.css.map */
