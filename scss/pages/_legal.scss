@@ -378,6 +378,7 @@ header {
                 position: relative;
                 color: #212121 !important;
                 transition: all 0.35s ease;
+                font-weight: 600;
                
 
 
@@ -401,7 +402,6 @@ header {
         
         text-decoration: none;
         // transition: all 0.35s ease;
-        font-weight: 600;
 
         // &::after {
         //     position: absolute;
@@ -624,6 +624,7 @@ header {
                 &:hover,
                 &:focus {
                     border: 1px solid #212121;
+                    font-weight: 600;
                     &::after {
                         border-bottom: none !important;
                     }
@@ -690,26 +691,29 @@ footer{
     position: relative;
     bottom: 0;
     background-color: #252525;
+    li{list-style: none;}
     .footerSec{
-        padding: 80px 0px 60px 0px;
+        padding: 80px 0px 0px 0px;
         display: flex;
         flex-wrap: wrap;
         border-bottom:  1px solid rgba(242, 242, 242, 0.6);
         .footerSub{
             border-right: 1px solid rgba(255,255,255,0.1);
-            padding: 0px 54px;
+            padding: 0px 54px 80px 54px;
+            h4{margin-bottom: 50px;}
+            ul li{margin-bottom: 15px;&:nth-last-child(1){margin-bottom: 0px;}}
             &:nth-child(1){
                 width: 20%;
                 padding-left: 0px;
             }
             &:nth-child(2){
-                width: 16%;
+                width: 23%;
             }
             &:nth-child(3){
-                width: 26%;
+                width: 45%;
             }
             &:nth-child(4){
-                width: 38%;
+                width: 12%;
                 border-right: none;
                 padding-right: 0px;
             }
@@ -717,14 +721,25 @@ footer{
             .subSector{
                 display: flex;
                 flex-wrap: wrap;
+                justify-content: space-between;
                 .sectorftSub{
-                    width: 31%;
+                    width: 30%;
                     justify-content: space-between;
                 }
 
             }
+            .socialmediaIcons{
+                margin-top: 136px;
+                ul{
+                    display: flex;
+                    li{margin-right: 30px;margin-bottom: 0px !important; &:nth-last-child(1){margin-right: 0px;}}
+                }
+            }
+            .quickLinksft ul li{margin-bottom: 0px !important;}
         }
     }
+
+    
     .footerLinks{
         display: flex;
         justify-content: space-between;

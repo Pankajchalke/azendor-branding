@@ -162,43 +162,68 @@
             <div class="footerSec">
                 <div class="footerSub">
                     <a href="#"><img src="images/legal-footer-logo.svg"></a>
-                </div>
-                <div class="footerSub">
-                    <h4 class="colordarkGray fontW400 font22 fontPoppins">Quick Links</h4>
-                    <a href="#" class="colorW fontW400 font22 fontPoppins">Who we are</a>
-                    <a href="#" class="colorW fontW400 font22 fontPoppins">Founder</a>
-                    <a href="#" class="colorW fontW400 font22 fontPoppins">Careers</a>
-                    <a href="#" class="colorW fontW400 font22 fontPoppins">Contact</a>
+                    <div class="socialmediaIcons">
+                        <ul>
+                            <li><a href="#"><img src="images/linkdin-footer.png"></a></li>
+                            <li><a href="#"><img src="images/twitter.png"></a></li>
+                            <li><a href="#"><img src="images/facebook.png"></a></li>
+                            <li><a href="#"><img src="images/youtube.png"></a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="footerSub">
                     <h4 class="colordarkGray fontW400 font22 fontPoppins">Solutions</h4>
-                    <a href="#" class="colorW fontW400 font22 fontPoppins">Legal Advisory</a>
-                    <a href="#" class="colorW fontW400 font22 fontPoppins">General Counsel</a>
-                    <a href="#" class="colorW fontW400 font22 fontPoppins">Legal Audit</a>
-                    <a href="#" class="colorW fontW400 font22 fontPoppins">Digital Transformation</a>
+                    <ul>
+                        <li><a href="#" class="colorW fontW400 font22 fontPoppins">General Counsel</a></li>
+                        <li><a href="#" class="colorW fontW400 font22 fontPoppins">Legal Advisory</a></li>
+                        <li><a href="#" class="colorW fontW400 font22 fontPoppins">Legal Audit</a></li>
+                        <li><a href="#" class="colorW fontW400 font22 fontPoppins">Digital Transformation</a></li>
+                    </ul>
                 </div>
+
+
                 <div class="footerSub">
                     <h4 class="colordarkGray fontW400 font22 fontPoppins">Sectors</h4>
                     <div class="subSector">
                         <div class="sectorftSub">
-                            <a href="#" class="colorW fontW400 font22 fontPoppins">Television</a>
-                            <a href="#" class="colorW fontW400 font22 fontPoppins">Film</a>
-                            <a href="#" class="colorW fontW400 font22 fontPoppins">OTT Platform</a>
-                            <a href="#" class="colorW fontW400 font22 fontPoppins">Online Gaming</a>
+                            <ul>
+                                <li><a href="#" class="colorW fontW400 font22 fontPoppins">Television</a></li>
+                                <li> <a href="#" class="colorW fontW400 font22 fontPoppins">Online Gaming</a></li>
+                                <li><a href="#" class="colorW fontW400 font22 fontPoppins">Live Events</a></li>
+                                <li><a href="#" class="colorW fontW400 font22 fontPoppins">Radio</a></li>
+                            </ul>
                         </div>
                         <div class="sectorftSub">
-                            <a href="#" class="colorW fontW400 font22 fontPoppins">Print</a>
-                            <a href="#" class="colorW fontW400 font22 fontPoppins">OOH</a>
-                            <a href="#" class="colorW fontW400 font22 fontPoppins">Live Events</a>
-                            <a href="#" class="colorW fontW400 font22 fontPoppins"> Animation/ VFX</a>
+                            <ul>
+                                <li><a href="#" class="colorW fontW400 font22 fontPoppins">Film</a></li>
+                                <li><a href="#" class="colorW fontW400 font22 fontPoppins">Print</a></li>
+                                <li><a href="#" class="colorW fontW400 font22 fontPoppins"> Animation/ VFX</a></li>
+                                <li><a href="#" class="colorW fontW400 font22 fontPoppins"> Sports</a></li>
+                            </ul>
                         </div>
                         <div class="sectorftSub">
-                            <a href="#" class="colorW fontW400 font22 fontPoppins">Music</a>
-                            <a href="#" class="colorW fontW400 font22 fontPoppins">Radio</a>
-                            <a href="#" class="colorW fontW400 font22 fontPoppins"> Sports</a>
-                            <a href="#" class="colorW fontW400 font22 fontPoppins"> Advertising</a>
+                            <ul>
+                                <li> <a href="#" class="colorW fontW400 font22 fontPoppins">OTT Platform</a></li>
+                                <li><a href="#" class="colorW fontW400 font22 fontPoppins">OOH</a></li>
+                                <li><a href="#" class="colorW fontW400 font22 fontPoppins">Music</a></li>
+                                <li><a href="#" class="colorW fontW400 font22 fontPoppins"> Advertising</a></li>
+                            </ul>
                         </div>
                     </div>
+                </div>
+
+                <div class="footerSub">
+                    <h4 class="colordarkGray fontW400 font22 fontPoppins">Quick Links</h4>
+                    <ul>
+                        <li><a href="#" class="colorW fontW400 font22 fontPoppins">Careers</a></li>
+                        <li class="quickLinksft"><a href="#" class="colorW fontW400 font22 fontPoppins">About</a>
+                            <ul>
+                                <li><a href="#" class="colorW fontW300 font16 fontPoppins">- Who we are</a></li>
+                                <li><a href="#" class="colorW fontW300 font16 fontPoppins">- Founder</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="colorW fontW400 font22 fontPoppins">Contact</a></li>
+                    </ul>
                 </div>
             </div>
             <div class="footerLinks">
@@ -212,7 +237,7 @@
                 </div>
             </div>
         </div>
-        
+
     </footer>
 
 
@@ -221,12 +246,12 @@
     <script src="js/jquery-3.3.1.min.js"></script>
     <script>
         $(document).ready(function () {
-            $('.dropdown').click(function (e) {
+            $('.dropdown').hover(function (e) {
                 $(this).find('.dropdown-menu').toggleClass('open');
                 $($(e.target).find('.down-caret').toggleClass('open-caret'));
                 e.preventDefault();
                 e.stopPropagation();
-                $(document).click(function () {
+                $(document).hover(function () {
                     $('.dropdown-menu').removeClass('open');
                     $('.down-caret').removeClass('open-caret');
                 });
