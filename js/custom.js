@@ -257,6 +257,13 @@ document.addEventListener('click', function(event) {
 });
 
 
+
+
+
+// legal Header
+
+
+
 // testimonial JS
 
 $('.testimonialsSlider').slick({
