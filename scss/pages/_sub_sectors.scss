@@ -1,110 +1,124 @@
-.aboutUs {
+.subSectors {
     margin-top: 100px;
     color: #212121;
 
-    .about-heading {
+    .subSectors-heading {
         margin-bottom: 30px;
-
-
     }
 
-    .about-contents{
+    .subSectors-content {
         width: 80%;
-
-        p {
+        margin-left: 15.60px;
+        li {
             margin-bottom: 30px;
             line-height: 125%;
             text-transform: capitalize;
             font-family: 'Poppins' !important;
         }
+
     }
 
-    .ctaLink {
+    .subSectors-Cta {
         margin-top: 40px;
 
         a {
             text-decoration: none;
-            border: 1px solid rgba(33, 33, 33, 0.2);
+            background-color: #212121;
+            color: white;
+            border: 1px solid #212121;
             border-radius: 60px;
             padding: 12px 30px;
-            transition: 0.2s all ease-in-out;
+            vertical-align: middle;
 
-            img {
-                opacity: 0;
-                width: 0;
-            }
 
             &:visited,
             &:active,
             &:focus {
                 text-decoration: none;
-                color: #212121;
+                color: white;
+                background-color: #212121;
+                border: 1px solid #212121;
+                border-radius: 60px;
+                padding: 12px 30px;
+                vertical-align: middle;
             }
 
             &:hover {
-                font-weight: 600;
+                text-decoration: none;
+                background-color: white;
                 border: 1px solid #212121;
+                color: #212121;
+            }
 
-                img {
-                    opacity: 1;
-                    width: auto;
-                    margin-left: 5px;
-                    vertical-align: middle;
-                }
-
+            img {
+                vertical-align: middle;
+                opacity: 1;
+                width: auto;
+                margin-left: 5px;
             }
 
 
         }
+
     }
+    @media all and (max-width : 2000px){
+        .subSectors-content{
+         width: 80%;
+         margin-left: 20px;
+        }
+     }
+
 
     @media all and (max-width : 1800px){
-        .about-contents{
+        .subSectors-content{
          width: 80%;
+         margin-left: 18.5px;
         }
      }
  
      @media all and (max-width : 1650px){
-        .about-contents{
+        .subSectors-content{
           width: 84%;
+          margin-left: 18.5px;
          }
  
      }
  
      @media all and (max-width : 1600px){
-        .about-contents{
+        .subSectors-content{
           width: 80%;
+          margin-left: 16.5px;
          }
  
      }
  
      @media all and (max-width : 1460px){
-        .about-contents{
+        .subSectors-content{
           width: 90%;
          }
  
      }
  
      @media all and (max-width : 1280px){
-        .about-contents{
+        .subSectors-content{
           width: 95%;
          }
  
      }
  
      @media all and (max-width : 1050px){
-        .about-contents{
+        .subSectors-content{
           width: 90%;
          }
  
      }
  
      @media all and (max-width : 680px){
-        .about-contents{
+        .subSectors-content{
           width: 100%;
          }
 
-         .ctaLink{
+         .subSectors-Cta{
             margin-top: 20px;
          }
  
@@ -112,7 +126,3 @@
  
 }
 
-
-body {
-    background-color: white !important;
-}
