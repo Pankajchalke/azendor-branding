@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html style="overflow-y: scroll !important;">
 
 <head>
     <meta charset="utf-8">
@@ -8,22 +8,244 @@
     <meta name="author" content="">
     <title>Azendor</title>
 
-   
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Roboto:wght@400;500;700&display=swap"
         rel="stylesheet">
     <link href="scss/legal_main.css" rel="stylesheet">
+    <link href="scss/legal_innerpage.css" rel="stylesheet">
+
 
 </head>
 
-<body>
+<body style="background-color: #ffffff !important;">
 
-   <h2 class="legalMain">
-    Hi
-   </h2>
-   
+    <header class="wrapper" id="header">
+        <div class="header-container">
+            <a href="branding.html" class="logo">
+                <img src="images/legal-logo.svg">
+            </a>
+            <div id="sidebarContainer">
+                <input type="checkbox" class="openSideMenu" id="openSideMenu">
+
+                <label for="openSideMenu" class="sideIconToggle">
+                    <div class="spinner diagonal part-1"></div>
+                    <div class="spinner horizontal"></div>
+                    <div class="spinner diagonal part-2"></div>
+                </label>
+
+                <div id="sideMenu">
+                    <ul class="sideMenuInner">
+                        <li class="fontPoppins font18 colorBlack fontW400" onclick="hideSidebar()">
+                            <div class="dropdown">
+                                <a class="menu-link active drop" href="#bannerSec"
+                                    data-menuanchor="bannerSec">Solutions<span class="down-caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Link</a></li>
+                                    <li><a href="#">Link</a></li>
+                                    <li><a href="#">Link</a></li>
+                                    <li><a href="#">Link</a></li>
+                                </ul>
+                            </div>
+
+                        </li>
+                        <li class="fontPoppins font18 colorBlack fontW400" onclick="hideSidebar()"><a class="menu-link"
+                                href="#serviceSec" data-menuanchor="serviceSec">Sectors</a></li>
+                        <li onclick="hideSidebar()" class="fontPoppins font18 colorBlack fontW400"><a class="menu-link"
+                                href="#teamSection" data-menuanchor="teamSection">Careers</a></li>
+                        <li onclick="hideSidebar()" class="fontPoppins font18 colorBlack fontW400"><a class="menu-link"
+                                href="#clientsBox" data-menuanchor="clientsBox">About </a>
+                        </li>
+                        <li onclick="hideSidebar()" class="fontPoppins font18 colorBlack fontW400"><a
+                                class="menu-link contact" href="#contactSec" data-menuanchor="contactSec">Contact</a>
+                        </li>
+                        <!-- <li onclick="hideSidebar()"><a href="#" data-toggle="tab">Item3</a></li> -->
+                    </ul>
+                    <div id="#sidenav-overlay"></div>
+                </div>
+
+            </div>
+
+            <ul class="menu-items" id="menu">
+                <li class="fontPoppins font18 colorBlack fontW400">
+                    <div class="dropdown">
+                        <a class="menu-link is-active drop" href="#bannerSec" data-menuanchor="bannerSec">Solutions<span
+                                class="down-caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="fontPoppins fontW400 font18">Legal Advisory</a></li>
+                            <li><a href="#" class="fontPoppins fontW400 font18">General Counsel</a></li>
+                            <li><a href="#" class="fontPoppins fontW400 font18">Legal Audit</a></li>
+                            <li><a href="#" class="fontPoppins fontW400 font18">Digital Transformation</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="fontPoppins font18 colorBlack fontW400">
+                    <div class="dropdown">
+                        <a class="menu-link drop" href="#serviceSec" data-menuanchor="serviceSec">Sectors<span
+                                class="down-caret"></span></a>
+                        <ul class="dropdown-menu sector">
+                            <li><a href="#" class="fontPoppins fontW400 font18">Television</a></li>
+                            <li><a href="#" class="fontPoppins fontW400 font18">Film</a></li>
+                            <li><a href="#" class="fontPoppins fontW400 font18">OTT Platform</a></li>
+                            <li><a href="#" class="fontPoppins fontW400 font18">Online Gaming</a></li>
+                            <li><a href="#" class="fontPoppins fontW400 font18">Print</a></li>
+                            <li><a href="#" class="fontPoppins fontW400 font18">OOH</a></li>
+                            <li><a href="#" class="fontPoppins fontW400 font18">Live Events</a></li>
+                            <li><a href="#" class="fontPoppins fontW400 font18">Animation/ VFX</a></li>
+                            <li><a href="#" class="fontPoppins fontW400 font18">Music</a></li>
+                            <li><a href="#" class="fontPoppins fontW400 font18">Radio</a></li>
+                            <li><a href="#" class="fontPoppins fontW400 font18">Sports</a></li>
+                            <li><a href="#" class="fontPoppins fontW400 font18">Advertising</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="fontPoppins font18 colorBlack fontW400"><a class="menu-link" href="#teamSection"
+                        data-menuanchor="teamSection">Careers</a></li>
+                <li class="fontPoppins font18 colorBlack fontW400">
+                    <div class="dropdown">
+                        <a class="menu-link drop" href="#clientsBox" data-menuanchor="clientsBox">About<span
+                                class="down-caret"></span> </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="fontPoppins fontW400 font18">Who we are</a></li>
+                            <li><a href="#" class="fontPoppins fontW400 font18">Founder</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="fontPoppins font18 colorBlack fontW400"><a class="menu-link contact" href="#contactSec"
+                        data-menuanchor="contactSec">Contact</a></li>
+            </ul>
+        </div>
+
+
+        <!-- progress bar for mobile -->
+        <div class="progress-container-mobile">
+            <div class="progress-bar-mobile"></div>
+        </div>
+    </header>
+    <div class="progress-container">
+        <div id="progressbar" class="progress-bar"></div>
+    </div>
+    <section class="founder">
+        <div class="wrapper">
+            <h2 class="fontRoboto font64 fontW700 colorB">Founder</h2>
+            <div class="founderBox">
+                <div class="profile">
+                    <img src="images/founder-profile.svg">
+                </div>
+                <div class="founderDesc">
+                    <div class="founderDescName">
+                        <h3 class="font50 fontRoboto fontW500 colorB">Indraneel Banerjee</h3>
+                        <a href="#" target="_blank"><img src="images/linkdin.svg"></a>
+                    </div>
+                    <p class="fontPoppins fontW400 font24 colordarkGray">Managing Partner</p>
+                    <div class="details">
+                        <p><img src="images/tel.svg"><a class="fontPoppins fontW400 font22 colorB"
+                                href="tel:+91 98206 07601">+91 9820607601</a></p>
+                        <p><img src="images/mail.svg"><a href="mailto: indranil.banerjee@azendor.com"
+                                class="fontPoppins fontW400 font22 colorB">indranil.banerjee@azendor.com</a></p>
+                    </div>
+                    <p class="fontPoppins fontW400 font22 colorB founderDescInfo">A business lawyer, Indranil has a rich
+                        and varied experience of over 22 years. He was associated with leading law firms and has
+                        represented a wide range of clients (including Fortune 500 clients) from the United States,
+                        Europe and Asia Pacific in the areas of corporate & commercial law as well as dispute
+                        resolution. In corporate sector, he has held leadership positions at Star India (a leading
+                        broadcaster) and DEN Networks (a leading cable TV distribution company).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="wrapper">
+            <div class="footerSec">
+                <div class="footerSub">
+                    <a href="#"><img src="images/legal-footer-logo.svg"></a>
+                </div>
+                <div class="footerSub">
+                    <h4 class="colordarkGray fontW400 font22 fontPoppins">Quick Links</h4>
+                    <a href="#" class="colorW fontW400 font22 fontPoppins">Who we are</a>
+                    <a href="#" class="colorW fontW400 font22 fontPoppins">Founder</a>
+                    <a href="#" class="colorW fontW400 font22 fontPoppins">Careers</a>
+                    <a href="#" class="colorW fontW400 font22 fontPoppins">Contact</a>
+                </div>
+                <div class="footerSub">
+                    <h4 class="colordarkGray fontW400 font22 fontPoppins">Solutions</h4>
+                    <a href="#" class="colorW fontW400 font22 fontPoppins">Legal Advisory</a>
+                    <a href="#" class="colorW fontW400 font22 fontPoppins">General Counsel</a>
+                    <a href="#" class="colorW fontW400 font22 fontPoppins">Legal Audit</a>
+                    <a href="#" class="colorW fontW400 font22 fontPoppins">Digital Transformation</a>
+                </div>
+                <div class="footerSub">
+                    <h4 class="colordarkGray fontW400 font22 fontPoppins">Sectors</h4>
+                    <div class="subSector">
+                        <div class="sectorftSub">
+                            <a href="#" class="colorW fontW400 font22 fontPoppins">Television</a>
+                            <a href="#" class="colorW fontW400 font22 fontPoppins">Film</a>
+                            <a href="#" class="colorW fontW400 font22 fontPoppins">OTT Platform</a>
+                            <a href="#" class="colorW fontW400 font22 fontPoppins">Online Gaming</a>
+                        </div>
+                        <div class="sectorftSub">
+                            <a href="#" class="colorW fontW400 font22 fontPoppins">Print</a>
+                            <a href="#" class="colorW fontW400 font22 fontPoppins">OOH</a>
+                            <a href="#" class="colorW fontW400 font22 fontPoppins">Live Events</a>
+                            <a href="#" class="colorW fontW400 font22 fontPoppins"> Animation/ VFX</a>
+                        </div>
+                        <div class="sectorftSub">
+                            <a href="#" class="colorW fontW400 font22 fontPoppins">Music</a>
+                            <a href="#" class="colorW fontW400 font22 fontPoppins">Radio</a>
+                            <a href="#" class="colorW fontW400 font22 fontPoppins"> Sports</a>
+                            <a href="#" class="colorW fontW400 font22 fontPoppins"> Advertising</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footerLinks">
+                <div class="linksFt">
+                    <a href="#" class="fontPoppins fontW500 font20 colordarkGray">Terms Of Use </a>
+                    <a href="#" class="fontPoppins fontW500 font20 colordarkGray">Privacy Policy</a>
+                </div>
+                <div>
+                    <p class="colorW fontW400 font20 fontPoppins"><img src="images/footer-text-icon.png"> 2022 Azendor
+                        Consulting Pvt. Ltd, all rights reserved.</p>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+
+
+    <!-- <script src="js/custom.js"></script> -->
+    <script src="js/custom.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.dropdown').click(function (e) {
+                $(this).find('.dropdown-menu').toggleClass('open');
+                $($(e.target).find('.down-caret').toggleClass('open-caret'));
+                e.preventDefault();
+                e.stopPropagation();
+                $(document).click(function () {
+                    $('.dropdown-menu').removeClass('open');
+                    $('.down-caret').removeClass('open-caret');
+                });
+            });
+
+            const menuLinks = document.querySelectorAll(".menu-items .menu-link");
+
+            menuLinks.forEach((link) => {
+                link.addEventListener("click", () => {
+                    menuLinks.forEach((link) => {
+                        link.classList.remove("is-active");
+                    });
+                    link.classList.add("is-active");
+                });
+            });
+        });
+
+    </script>
+
 </body>
 
 </html>
