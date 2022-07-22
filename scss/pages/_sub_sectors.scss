@@ -9,6 +9,7 @@
     .subSectors-content {
         width: 80%;
         margin-left: 15.60px;
+
         li {
             margin-bottom: 30px;
             line-height: 125%;
@@ -29,6 +30,8 @@
             border-radius: 60px;
             padding: 12px 30px;
             vertical-align: middle;
+            transition: 0.3s all ease;
+
 
 
             &:visited,
@@ -43,86 +46,90 @@
                 vertical-align: middle;
             }
 
-            &:hover {
-                text-decoration: none;
-                background-color: white;
-                border: 1px solid #212121;
-                color: #212121;
-            }
+            // &:hover {
+            //     text-decoration: none;
+            //     background-color: white;
+            //     border: 1px solid #212121;
+            //     color: #212121;
+            //     vertical-align: middle;
+            // }
 
             img {
                 vertical-align: middle;
                 opacity: 1;
                 width: auto;
                 margin-left: 5px;
+
             }
+
+
 
 
         }
 
     }
-    @media all and (max-width : 2000px){
-        .subSectors-content{
-         width: 80%;
-         margin-left: 20px;
+
+    @media all and (max-width : 2000px) {
+        .subSectors-content {
+            width: 80%;
+            margin-left: 20px;
         }
-     }
+    }
 
 
-    @media all and (max-width : 1800px){
-        .subSectors-content{
-         width: 80%;
-         margin-left: 18.5px;
+    @media all and (max-width : 1800px) {
+        .subSectors-content {
+            width: 80%;
+            margin-left: 18.5px;
         }
-     }
- 
-     @media all and (max-width : 1650px){
-        .subSectors-content{
-          width: 84%;
-          margin-left: 18.5px;
-         }
- 
-     }
- 
-     @media all and (max-width : 1600px){
-        .subSectors-content{
-          width: 80%;
-          margin-left: 16.5px;
-         }
- 
-     }
- 
-     @media all and (max-width : 1460px){
-        .subSectors-content{
-          width: 90%;
-         }
- 
-     }
- 
-     @media all and (max-width : 1280px){
-        .subSectors-content{
-          width: 95%;
-         }
- 
-     }
- 
-     @media all and (max-width : 1050px){
-        .subSectors-content{
-          width: 90%;
-         }
- 
-     }
- 
-     @media all and (max-width : 680px){
-        .subSectors-content{
-          width: 100%;
-         }
+    }
 
-         .subSectors-Cta{
+    @media all and (max-width : 1650px) {
+        .subSectors-content {
+            width: 84%;
+            margin-left: 18.5px;
+        }
+
+    }
+
+    @media all and (max-width : 1600px) {
+        .subSectors-content {
+            width: 80%;
+            margin-left: 16.5px;
+        }
+
+    }
+
+    @media all and (max-width : 1460px) {
+        .subSectors-content {
+            width: 90%;
+        }
+
+    }
+
+    @media all and (max-width : 1280px) {
+        .subSectors-content {
+            width: 95%;
+        }
+
+    }
+
+    @media all and (max-width : 1050px) {
+        .subSectors-content {
+            width: 90%;
+        }
+
+    }
+
+    @media all and (max-width : 680px) {
+        .subSectors-content {
+            width: 100%;
+        }
+
+        .subSectors-Cta {
             margin-top: 20px;
-         }
- 
-     }
- 
-}
+        }
 
+    }
+
+}
