@@ -1,14 +1,71 @@
 .careers {
     color: #212121;
-    margin-top: 297.48px;
+    margin-top: 150px;
+    margin-bottom: 150px;
 
-    .careers-heading{
+    .careers-heading {
         margin-bottom: 30px;
     }
 
     .careers-content {
+        width: 80%;
+        
         p {
             margin-bottom: 30px;
+            font-style: normal;
+            line-height: 160%;
+            letter-spacing: 0.03em;
+            font-family: 'Poppins' !important;
         }
     }
+
+    @media all and (max-width : 1800px){
+       .careers-content{
+        width: 80%;
+       }
+    }
+
+    @media all and (max-width : 1650px){
+        .careers-content{
+         width: 84%;
+        }
+
+    }
+
+    @media all and (max-width : 1600px){
+        .careers-content{
+         width: 80%;
+        }
+
+    }
+
+    @media all and (max-width : 1460px){
+        .careers-content{
+         width: 90%;
+        }
+
+    }
+
+    @media all and (max-width : 1280px){
+        .careers-content{
+         width: 95%;
+        }
+
+    }
+
+    @media all and (max-width : 1050px){
+        .careers-content{
+         width: 90%;
+        }
+
+    }
+
+    @media all and (max-width : 680px){
+        .careers-content{
+         width: 100%;
+        }
+
+    }
+
+
 }

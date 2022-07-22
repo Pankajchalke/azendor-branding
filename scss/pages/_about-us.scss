@@ -1,18 +1,119 @@
-.About {
-    margin-top: 297.48px ;
+.aboutUs {
+    margin-top: 100px;
+    margin-bottom: 160px;
     color: #212121;
 
-    .heading-about {
+    .about-heading {
         margin-bottom: 30px;
+
+
     }
 
-    .contents {
+    .about-contents{
+        width: 80%;
+
         p {
             margin-bottom: 30px;
+            line-height: 125%;
+            text-transform: capitalize;
+            font-family: 'Poppins' !important;
         }
     }
+
+    .ctaLink {
+        margin-top: 40px;
+
+        a {
+            text-decoration: none;
+            border: 1px solid rgba(33, 33, 33, 0.2);
+            border-radius: 60px;
+            padding: 12px 30px;
+            transition: 0.2s all ease-in-out;
+
+            img {
+                opacity: 0;
+                width: 0;
+            }
+
+            &:visited,
+            &:active,
+            &:focus {
+                text-decoration: none;
+                color: #212121;
+            }
+
+            &:hover {
+                font-weight: 600;
+                border: 1px solid #212121;
+
+                img {
+                    opacity: 1;
+                    width: auto;
+                    margin-left: 5px;
+                    vertical-align: middle;
+                }
+
+            }
+
+
+        }
+    }
+
+    @media all and (max-width : 1800px){
+        .about-contents{
+         width: 80%;
+        }
+     }
+ 
+     @media all and (max-width : 1650px){
+        .about-contents{
+          width: 84%;
+         }
+ 
+     }
+ 
+     @media all and (max-width : 1600px){
+        .about-contents{
+          width: 80%;
+         }
+ 
+     }
+ 
+     @media all and (max-width : 1460px){
+        .about-contents{
+          width: 90%;
+         }
+ 
+     }
+ 
+     @media all and (max-width : 1280px){
+        .about-contents{
+          width: 95%;
+         }
+ 
+     }
+ 
+     @media all and (max-width : 1050px){
+        .about-contents{
+          width: 90%;
+         }
+ 
+     }
+ 
+     @media all and (max-width : 680px){
+        .about-contents{
+          width: 100%;
+         }
+
+         .ctaLink{
+            margin-top: 20px;
+         }
+ 
+     }
+ 
 }
 
-body{
+
+body {
     background-color: white !important;
 }
