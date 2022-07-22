@@ -428,7 +428,8 @@ body {
       border: 1px solid #212121;
       border-radius: 60px;
       padding: 12px 30px;
-      vertical-align: middle; }
+      vertical-align: middle;
+      transition: 0.3s all ease; }
       .subSectors .subSectors-Cta a:visited, .subSectors .subSectors-Cta a:active, .subSectors .subSectors-Cta a:focus {
         text-decoration: none;
         color: white;
@@ -437,11 +438,6 @@ body {
         border-radius: 60px;
         padding: 12px 30px;
         vertical-align: middle; }
-      .subSectors .subSectors-Cta a:hover {
-        text-decoration: none;
-        background-color: white;
-        border: 1px solid #212121;
-        color: #212121; }
       .subSectors .subSectors-Cta a img {
         vertical-align: middle;
         opacity: 1;
