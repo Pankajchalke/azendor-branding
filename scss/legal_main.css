@@ -39,6 +39,9 @@ p {
 .font130 {
   font-size: 130px; }
 
+.font115 {
+  font-size: 115px; }
+
 .font64 {
   font-size: 64px; }
 
@@ -125,6 +128,9 @@ img {
   .font130 {
     font-size: 110px; }
 
+  .font115 {
+    font-size: 100px; }
+
   .font64 {
     font-size: 60px; }
 
@@ -157,6 +163,9 @@ img {
 
   .font130 {
     font-size: 96px; }
+
+  .font115 {
+    font-size: 80px; }
 
   .font64 {
     font-size: 50px; }
@@ -194,6 +203,9 @@ img {
   .font130 {
     font-size: 92px; }
 
+  .font115 {
+    font-size: 70px; }
+
   .font64 {
     font-size: 46px; }
 
@@ -202,6 +214,9 @@ img {
 
   .font50 {
     font-size: 34px; }
+
+  .font36 {
+    font-size: 26px; }
 
   .font30 {
     font-size: 21px; }
@@ -220,12 +235,18 @@ img {
 
   .font16 {
     font-size: 11px; } }
+@media all and (max-width: 1280px) {
+  .font36 {
+    font-size: 24px; } }
 @media all and (max-width: 1024px) {
   .wrapper {
     padding: 0px 40px; }
 
   .font130 {
     font-size: 70px; }
+
+  .font115 {
+    font-size: 50px; }
 
   .font64 {
     font-size: 36px; }
@@ -238,6 +259,9 @@ img {
 
   .font130 {
     font-size: 55px; }
+
+  .font115 {
+    font-size: 45px; }
 
   .font64 {
     font-size: 32px; }
@@ -275,6 +299,9 @@ img {
   .font130 {
     font-size: 40px; }
 
+  .font115 {
+    font-size: 35px; }
+
   .font64 {
     font-size: 30px; }
 
@@ -304,6 +331,31 @@ img {
 
   .font16 {
     font-size: 11px; } }
+.subSectors-Cta {
+  margin-top: 40px; }
+  .subSectors-Cta a {
+    text-decoration: none;
+    background-color: #212121;
+    color: white;
+    border: 1px solid #212121;
+    border-radius: 60px;
+    padding: 12px 30px;
+    vertical-align: middle;
+    transition: 0.3s all ease; }
+    .subSectors-Cta a:visited, .subSectors-Cta a:active, .subSectors-Cta a:focus {
+      text-decoration: none;
+      color: white;
+      background-color: #212121;
+      border: 1px solid #212121;
+      border-radius: 60px;
+      padding: 12px 30px;
+      vertical-align: middle; }
+    .subSectors-Cta a img {
+      vertical-align: middle;
+      opacity: 1;
+      width: auto;
+      margin-left: 5px; }
+
 .slick-track {
   display: flex !important; }
 
@@ -522,7 +574,6 @@ header {
     header .menu-items .dropdown > .dropdown-menu {
       width: 165px;
       list-style: none;
-      margin-top: 25px;
       position: absolute;
       float: left;
       max-height: 0;
@@ -584,9 +635,8 @@ header {
         border-bottom: 1px solid #212121;
         outline: none;
         background: #fff; }
-  header .menu-link:hover {
-    position: relative;
-    text-decoration: none; }
+  header .menu-link {
+    padding: 18px 0px; }
   header .header-container {
     display: flex;
     justify-content: space-between;
@@ -683,7 +733,8 @@ header {
       header .header-container .logo img {
         width: 170px; } }
   header .menu-items {
-    display: flex; }
+    display: flex;
+    align-items: center; }
     @media (max-width: 920px) {
       header .menu-items {
         position: absolute;
@@ -764,6 +815,127 @@ header {
       transform: rotate(270deg);
       transform-origin: left top 0; }
 
+.bannerSec h1 {
+  line-height: 126px;
+  width: 80%; }
+.bannerSec h5 {
+  line-height: 54px;
+  margin: 30px 0px 40px;
+  width: 66%; }
+@media all and (max-width: 1850px) {
+  .bannerSec h5 {
+    width: 68%; } }
+@media all and (max-width: 1800px) {
+  .bannerSec h1 {
+    width: 75%; } }
+@media all and (max-width: 1650px) {
+  .bannerSec h1 {
+    width: 64%;
+    line-height: 92px; }
+  .bannerSec h5 {
+    width: 71%;
+    margin: 20px 0px 30px; } }
+@media all and (max-width: 1450px) {
+  .bannerSec h1 {
+    width: 68%; }
+  .bannerSec h5 {
+    width: 78%;
+    line-height: 52px; } }
+@media all and (max-width: 1400px) {
+  .bannerSec h1 {
+    width: 66%;
+    line-height: 90px; } }
+@media all and (max-width: 1250px) {
+  .bannerSec h1 {
+    width: 75%; }
+  .bannerSec h5 {
+    width: 90%;
+    margin: 15px 0px 20px; } }
+@media all and (max-width: 1090px) {
+  .bannerSec h1 {
+    width: 83%; } }
+@media all and (max-width: 1024px) {
+  .bannerSec h1 {
+    width: 100%;
+    line-height: 70px; }
+  .bannerSec h5 {
+    width: 100%;
+    margin: 10px 0px 15px; } }
+@media all and (max-width: 900px) {
+  .bannerSec h5 {
+    line-height: 30px; } }
+@media all and (max-width: 650px) {
+  .bannerSec h1 {
+    line-height: 46px; } }
+
+.subSectors {
+  margin-top: 100px;
+  color: #212121; }
+  .subSectors .subSectors-heading {
+    margin-bottom: 30px; }
+  .subSectors .subSectors-content {
+    width: 80%;
+    margin-left: 15.60px; }
+    .subSectors .subSectors-content li {
+      margin-bottom: 30px;
+      line-height: 125%;
+      text-transform: capitalize;
+      font-family: 'Poppins' !important; }
+  .subSectors .subSectors-Cta {
+    margin-top: 40px; }
+    .subSectors .subSectors-Cta a {
+      text-decoration: none;
+      background-color: #212121;
+      color: white;
+      border: 1px solid #212121;
+      border-radius: 60px;
+      padding: 12px 30px;
+      vertical-align: middle;
+      transition: 0.3s all ease; }
+      .subSectors .subSectors-Cta a:visited, .subSectors .subSectors-Cta a:active, .subSectors .subSectors-Cta a:focus {
+        text-decoration: none;
+        color: white;
+        background-color: #212121;
+        border: 1px solid #212121;
+        border-radius: 60px;
+        padding: 12px 30px;
+        vertical-align: middle; }
+      .subSectors .subSectors-Cta a img {
+        vertical-align: middle;
+        opacity: 1;
+        width: auto;
+        margin-left: 5px; }
+  @media all and (max-width: 2000px) {
+    .subSectors .subSectors-content {
+      width: 80%;
+      margin-left: 20px; } }
+  @media all and (max-width: 1800px) {
+    .subSectors .subSectors-content {
+      width: 80%;
+      margin-left: 18.5px; } }
+  @media all and (max-width: 1650px) {
+    .subSectors .subSectors-content {
+      width: 84%;
+      margin-left: 18.5px; } }
+  @media all and (max-width: 1600px) {
+    .subSectors .subSectors-content {
+      width: 80%;
+      margin-left: 16.5px; } }
+  @media all and (max-width: 1460px) {
+    .subSectors .subSectors-content {
+      width: 90%; } }
+  @media all and (max-width: 1280px) {
+    .subSectors .subSectors-content {
+      width: 95%; } }
+  @media all and (max-width: 1050px) {
+    .subSectors .subSectors-content {
+      width: 90%; } }
+  @media all and (max-width: 680px) {
+    .subSectors .subSectors-content {
+      width: 100%; }
+    .subSectors .subSectors-Cta {
+      margin-top: 20px; } }
+
 footer {
   position: relative;
   bottom: 0;
@@ -786,7 +958,12 @@ footer {
           margin-bottom: 0px; }
       footer .footerSec .footerSub:nth-child(1) {
         width: 20%;
-        padding-left: 0px; }
+        padding-left: 0px;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between; }
+        footer .footerSec .footerSub:nth-child(1) a {
+          display: block; }
       footer .footerSec .footerSub:nth-child(2) {
         width: 23%; }
       footer .footerSec .footerSub:nth-child(3) {
@@ -804,15 +981,13 @@ footer {
         footer .footerSec .footerSub .subSector .sectorftSub {
           width: 30%;
           justify-content: space-between; }
-      footer .footerSec .footerSub .socialmediaIcons {
-        margin-top: 136px; }
-        footer .footerSec .footerSub .socialmediaIcons ul {
-          display: flex; }
-          footer .footerSec .footerSub .socialmediaIcons ul li {
-            margin-right: 30px;
-            margin-bottom: 0px !important; }
-            footer .footerSec .footerSub .socialmediaIcons ul li:nth-last-child(1) {
-              margin-right: 0px; }
+      footer .footerSec .footerSub .socialmediaIcons ul {
+        display: flex; }
+        footer .footerSec .footerSub .socialmediaIcons ul li {
+          margin-right: 30px;
+          margin-bottom: 0px !important; }
+          footer .footerSec .footerSub .socialmediaIcons ul li:nth-last-child(1) {
+            margin-right: 0px; }
       footer .footerSec .footerSub .quickLinksft ul li {
         margin-bottom: 0px !important; }
   footer .footerLinks {
@@ -823,5 +998,10 @@ footer {
       text-decoration: none; }
       footer .footerLinks .linksFt a:nth-child(1) {
         margin-right: 50px; }
+    footer .footerLinks .copyRight {
+      display: flex;
+      align-items: center; }
+      footer .footerLinks .copyRight img {
+        margin-right: 10px; }
 
 /*# sourceMappingURL=legal_main.css.map */
