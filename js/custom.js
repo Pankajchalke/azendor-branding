@@ -95,6 +95,38 @@ if ($('.serviceSlider').length) {
 }
 
 
+if ($('.solutionSlider').length) {
+  $(".solutionSlider").slick({
+    dots: false,
+    infinite: true,
+    arrows: false,
+    speed: 300,
+    autoplay: false,
+    autoplaySpeed: 2000,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          dots: true,
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 654,
+        settings: {
+          dots: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      }
+    ],
+  });
+}
+
+
 
 
 // tabs toggle
