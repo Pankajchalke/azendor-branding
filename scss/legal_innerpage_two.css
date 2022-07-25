@@ -331,7 +331,8 @@ img {
       border: 1px solid #212121;
       border-radius: 60px;
       padding: 12px 30px;
-      transition: 0.2s all ease-in-out; }
+      transition: 0.2s all ease-in-out;
+      font-weight: 300; }
       .aboutUs .ctaLink a img {
         opacity: 0;
         width: 0; }
@@ -431,7 +432,8 @@ body {
       border: 1px solid #212121;
       border-radius: 60px;
       padding: 12px 30px;
-      transition: 0.2s all ease-in-out; }
+      transition: 0.2s all ease-in-out;
+      font-weight: 300; }
       .subSectors .subSectors-Cta a img {
         opacity: 0;
         width: 0; }
