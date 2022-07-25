@@ -38,11 +38,11 @@
 
                 <div id="sideMenu">
                     <ul class="sideMenuInner">
-                        <li class="fontPoppins font18 colorBlack fontW400" onclick="hideSidebar()">
+                        <li class="fontPoppins font18 colorBlack fontW400">
                             <div class="dropdown">
                                 <a class="menu-link active drop" href="#bannerSec"
                                     data-menuanchor="bannerSec">Solutions<span class="down-caret"></span></a>
-                                <ul class="dropdown-menu">
+                                <ul class="dropdown-menu" onclick="hideSidebar()">
                                     <li><a href="#" class="fontPoppins fontW400 font18">Legal Advisory</a></li>
                                     <li><a href="#" class="fontPoppins fontW400 font18">General Counsel</a></li>
                                     <li><a href="#" class="fontPoppins fontW400 font18">Legal Audit</a></li>
@@ -51,10 +51,10 @@
                             </div>
 
                         </li>
-                        <li class="fontPoppins font18 colorBlack fontW400" onclick="hideSidebar()">
+                        <li class="fontPoppins font18 colorBlack fontW400" >
                             <div class="dropdown">
                                 <a class="menu-link drop" href="#serviceSec" data-menuanchor="serviceSec">Sectors <span class="down-caret"></span></a>
-                                <ul class="dropdown-menu sector">
+                                <ul class="dropdown-menu sector" onclick="hideSidebar()">
                                     <li><a href="#" class="fontPoppins fontW400 font18">Television</a></li>
                                     <li><a href="#" class="fontPoppins fontW400 font18">Film</a></li>
                                     <li><a href="#" class="fontPoppins fontW400 font18">OTT Platform</a></li>
@@ -72,12 +72,12 @@
                         </li>
                         <li onclick="hideSidebar()" class="fontPoppins font18 colorBlack fontW400"><a class="menu-link"
                                 href="#teamSection" data-menuanchor="teamSection">Careers</a></li>
-                        <li onclick="hideSidebar()" class="fontPoppins font18 colorBlack fontW400">
+                        <li class="fontPoppins font18 colorBlack fontW400">
                             <div class="dropdown">
                             <a class="menu-link drop"
                                 href="#clientsBox" data-menuanchor="clientsBox">About <span class="down-caret"></span>
                             </a>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu" onclick="hideSidebar()">
                                 <li><a href="#" class="fontPoppins fontW400 font18">Who we are</a></li>
                                 <li><a href="#" class="fontPoppins fontW400 font18">Founder</a></li>
                             </ul>
@@ -168,7 +168,7 @@
           </div>
     </section>
 
-    <!-- <section class="founder">
+    <section class="founder">
         <div class="wrapper">
             <h2 class="fontRoboto font64 fontW700 colorB">Founder</h2>
             <div class="founderBox">
@@ -196,7 +196,7 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
     <footer>
         <div class="wrapper">
