@@ -21,10 +21,13 @@
 
     .ctaLink {
         margin-top: 40px;
+        display: inline-block;
 
         a {
             text-decoration: none;
-            border: 1px solid rgba(33, 33, 33, 0.2);
+            background-color: #212121;
+            color: white;
+            border: 1px solid #212121;
             border-radius: 60px;
             padding: 12px 30px;
             transition: 0.2s all ease-in-out;
@@ -38,12 +41,13 @@
             &:active,
             &:focus {
                 text-decoration: none;
-                color: #212121;
+        
             }
 
             &:hover {
-                font-weight: 600;
+                font-weight: 500;
                 border: 1px solid #212121;
+
 
                 img {
                     opacity: 1;
@@ -66,7 +70,7 @@
  
      @media all and (max-width : 1650px){
         .about-contents{
-          width: 84%;
+          width: 80%;
          }
  
      }
@@ -80,14 +84,14 @@
  
      @media all and (max-width : 1460px){
         .about-contents{
-          width: 90%;
+          width: 80%;
          }
  
      }
  
      @media all and (max-width : 1280px){
         .about-contents{
-          width: 95%;
+          width: 85%;
          }
  
      }

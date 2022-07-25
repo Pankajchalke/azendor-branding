@@ -21,6 +21,7 @@
 
     .subSectors-Cta {
         margin-top: 40px;
+        display: inline-block;
 
         a {
             text-decoration: none;
@@ -29,41 +30,31 @@
             border: 1px solid #212121;
             border-radius: 60px;
             padding: 12px 30px;
-            vertical-align: middle;
-            transition: 0.3s all ease;
+            transition: 0.2s all ease-in-out;
 
-
+            img {
+                opacity: 0;
+                width: 0;
+            }
 
             &:visited,
             &:active,
             &:focus {
                 text-decoration: none;
-                color: white;
-                background-color: #212121;
+
+            }
+
+            &:hover {
+                font-weight: 500;
                 border: 1px solid #212121;
-                border-radius: 60px;
-                padding: 12px 30px;
-                vertical-align: middle;
+
+                img {
+                    opacity: 1;
+                    width: auto;
+                    vertical-align: middle;
+                    margin-left: 5px;
+                }
             }
-
-            // &:hover {
-            //     text-decoration: none;
-            //     background-color: white;
-            //     border: 1px solid #212121;
-            //     color: #212121;
-            //     vertical-align: middle;
-            // }
-
-            img {
-                vertical-align: middle;
-                opacity: 1;
-                width: auto;
-                margin-left: 5px;
-
-            }
-
-
-
 
         }
 
@@ -86,7 +77,7 @@
 
     @media all and (max-width : 1650px) {
         .subSectors-content {
-            width: 84%;
+            width: 80%;
             margin-left: 18.5px;
         }
 
@@ -102,14 +93,14 @@
 
     @media all and (max-width : 1460px) {
         .subSectors-content {
-            width: 90%;
+            width: 80%;
         }
 
     }
 
     @media all and (max-width : 1280px) {
         .subSectors-content {
-            width: 95%;
+            width: 80%;
         }
 
     }
