@@ -549,20 +549,18 @@ header {
           background-color: #fff;
           color: #000; }
   header .menu-items .down-caret {
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 5px 5px 0 5px;
-    border-color: #000 transparent transparent transparent;
+    width: 12px;
+    height: 8px;
+    background-image: url("../images/down-arrow.svg");
+    background-repeat: no-repeat;
     display: inline-block;
-    margin-left: 6px;
-    top: -3px;
+    margin-left: 3px;
+    top: 1px;
     position: relative;
-    transform: rotate(0deg);
-    transition: all .25s ease-in; }
+    transition: all .25s ease;
+    background-size: 9px; }
   header .menu-items .open-caret {
-    transform: rotate(180deg);
-    transition: all .25s ease-out; }
+    transform: rotate(180deg); }
   header .menu-items a {
     color: #212121;
     text-decoration: none;
@@ -719,18 +717,15 @@ header {
       header .menu-items li:last-child a.is-active:after {
         background: transparent; }
       header .menu-items li .contact {
-        padding: 5px 10px;
+        padding: 10px 20px;
         text-decoration: none;
         border: 1px solid rgba(33, 33, 33, 0.2);
-        border-radius: 60px; }
+        border-radius: 60px;
+        background-color: #212121;
+        color: #fff !important; }
         header .menu-items li .contact:before {
           background: transparent;
           border: none; }
-        header .menu-items li .contact:hover, header .menu-items li .contact:focus {
-          border: 1px solid #212121;
-          font-weight: 600; }
-          header .menu-items li .contact:hover::after, header .menu-items li .contact:focus::after {
-            border-bottom: none !important; }
 
 .progress-container {
   position: fixed;
