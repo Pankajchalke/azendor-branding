@@ -342,6 +342,9 @@ body {
       .founder .founderBox .founderDesc .founderDescInfo {
         width: 70%; }
 
+.legalHeader {
+  position: relative !important; }
+
 .contact {
   margin: 150px 0px; }
   .contact .contactBox {
