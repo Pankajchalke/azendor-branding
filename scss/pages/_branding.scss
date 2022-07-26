@@ -484,13 +484,14 @@ header {
                 &.is-active {
                     &:after {
                         position: absolute;
-                        top: 0;
-                        height: 27px;
+                        top: -1px;
+                        height: 36px;
                         border: 1px solid #fff;
                         border-radius: 60px;
                         padding: 5px 10px;
                         text-decoration: none;
-
+                        @media (max-width: 1600px){height: 33px;}
+                        @media (max-width: 1400px){height: 29px;}
 
                     }
                 }
