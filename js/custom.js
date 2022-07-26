@@ -1,58 +1,107 @@
+if($("#fullpage").length){
+$('#fullpage').fullpage({
+  css3: true,
+  anchors: ['bannerSec', 'bannerSec1', 'bannerSec2', 'serviceSec', 'teamSection', 'clientsBox', 'testimonialsSec', 'caseStudies', 'contactSec', 'footer'],
+  menu: '#menu',
+  navigation: false,
+  fadingEffect: true,
+  keyboardScrolling: true,
+  scrollingSpeed: 1500,
+  slidesNavigation: false,
+  scrollHorizontally: true,
+  controlArrows: true,
+  //scrollOverflow: true,
+  normalScrollElements: '#scrolldiv',
+  licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+  scrollBar : true,
+  responsiveWidth: 1030,
+  afterResponsive: function (isResponsive) { },
+  afterLoad: function (anchorLink, index) {
+    console.log(index);
 
-if ($('#fullpage').length) {
-  $('#fullpage').fullpage({
-    css3: true,
-    anchors: ['bannerSec', 'bannerSec1', 'bannerSec2', 'serviceSec', 'teamSection', 'clientsBox', 'testimonialsSec', 'caseStudies', 'contactSec', 'footer'],
-    menu: '#menu',
-    navigation: false,
-    fadingEffect: true,
-    keyboardScrolling: true,
-    scrollingSpeed: 1500,
-    slidesNavigation: false,
-    scrollHorizontally: true,
-    controlArrows: true,
-    //scrollOverflow: true,
-    normalScrollElements: '#scrolldiv',
-    licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
-    scrollBar : true,
-    responsiveWidth: 1030,
-    afterResponsive: function (isResponsive) { },
-    afterLoad: function (anchorLink, index) {
-      console.log(index);
-  
-      if (index == 1) {
-        $('#myBtn').css('display','none');
-        $('.scroll-text').css('display','block');
-        $('.scroll-symbol').css('display','block');
-        $("a[class = 'scroll-icon']").prop("href","#bannerSec1");
-      };
-      if (index == 2) {
-       $('#myBtn').css('display','block');
-       $('.scroll-text').css('display','block');
-       $('.scroll-symbol').css('display','block');
-       $("a[class = 'scroll-icon']").prop("href","#bannerSec2");
-      };
-      if(index == 3) {
-        $('.scroll-text').css('display','block');
-        $('.scroll-symbol').css('display','block');
-        $("a[class = 'scroll-icon']").prop("href","#serviceSec");
-      }
-      for(let i = 4 ; i < 10; i++){
-        if(index == i){
-          $('.scroll-text').css('display','none');
-          $('.scroll-symbol').css('display','none');
-        }
-      }
-    },
-    onLeave: function (index, nextIndex, direction) {
-      console.log(index, nextIndex, direction);
-      if (index == 1) { };
-      if (index == 2) { };
-      if (index == 8 && nextIndex == 7) { };
-    },
+    if (index == 1) {
+      $('#myBtn').css('display','none');
+      $('.scroll-text').css('display','block');
+      $('.scroll-symbol').css('display','block');
+      $("a[class = 'scroll-icon']").prop("href","#bannerSec1");
+      $('.secOne').addClass('is-active');
+      $('.secTwo').removeClass('is-active');
+    };
+    if (index == 2) {
+     $('#myBtn').css('display','block');
+     $('.scroll-text').css('display','block');
+     $('.scroll-symbol').css('display','block');
+     $("a[class = 'scroll-icon']").prop("href","#bannerSec2");
+     $('.secOne').addClass('is-active');
+     $('.secTwo').removeClass('is-active');
+    };
+    if(index == 3) {
+      $('.scroll-text').css('display','block');
+      $('.scroll-symbol').css('display','block');
+      $("a[class = 'scroll-icon']").prop("href","#serviceSec");
+      $('.secOne').addClass('is-active');
+      $('.secTwo').removeClass('is-active');
+    }
+    if(index == 4){
+      $('.scroll-text').css('display','none');
+      $('.scroll-symbol').css('display','none');
+      $('.secOne').removeClass('is-active');
+      $('.secTwo').addClass('is-active');
+      $('.secThree').removeClass('is-active');
     
-  
-  });
+    }
+    if(index == 5){
+      $('.scroll-text').css('display','none');
+      $('.scroll-symbol').css('display','none');
+      $('.secTwo').removeClass('is-active');
+      $('.secThree').addClass('is-active');
+      $('.secFour').removeClass('is-active');
+    
+     
+    }
+    if(index == 6){
+      $('.scroll-text').css('display','none');
+      $('.scroll-symbol').css('display','none');
+      $('.secThree').removeClass('is-active');
+      $('.secFour').addClass('is-active');
+      $('.secFive').removeClass('is-active');
+    
+    }
+    if(index == 7){
+      $('.scroll-text').css('display','none');
+      $('.scroll-symbol').css('display','none');
+      $('.secFour').removeClass('is-active');
+      $('.secFive').addClass('is-active');
+      $('.secSix').removeClass('is-active');
+    
+     
+    }
+    if(index == 8){
+      $('.scroll-text').css('display','none');
+      $('.scroll-symbol').css('display','none');
+      $('.secFive').removeClass('is-active');
+      $('.secSix').addClass('is-active');
+      $('.secSeven').removeClass('is-active');
+    
+     
+    }
+    if(index == 9){
+      $('.scroll-text').css('display','none');
+      $('.scroll-symbol').css('display','none');
+      $('.secSix').removeClass('is-active');
+      $('.secSeven').addClass('is-active');
+      
+    
+    }
+  },
+
+  onLeave: function (index, nextIndex, direction) {
+    console.log(index, nextIndex, direction);
+    if (index == 1) { };
+    if (index == 2) { };
+    if (index == 8 && nextIndex == 7) { };
+  },
+});
 }
 
 

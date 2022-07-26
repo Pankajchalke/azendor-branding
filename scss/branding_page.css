@@ -702,11 +702,20 @@ header {
         border: 1px solid rgba(242, 242, 242, 0.2);
         border-radius: 60px;
         padding: 5px 10px;
-        text-decoration: none; }
+        text-decoration: none;
+        position: relative; }
+        header .menu-items li .contact.is-active:after {
+          position: absolute;
+          top: 0;
+          height: 27px;
+          border: 1px solid #fff;
+          border-radius: 60px;
+          padding: 5px 10px;
+          text-decoration: none; }
         header .menu-items li .contact:before {
           background: transparent;
           border: none; }
-        header .menu-items li .contact:hover, header .menu-items li .contact:focus {
+        header .menu-items li .contact:hover {
           border: 1px solid #fff;
           color: #fff; }
 
