@@ -1,4 +1,4 @@
-
+if($("#fullpage").length){
 $('#fullpage').fullpage({
   css3: true,
   anchors: ['bannerSec', 'bannerSec1', 'bannerSec2', 'serviceSec', 'teamSection', 'clientsBox', 'testimonialsSec', 'caseStudies', 'contactSec', 'footer'],
@@ -94,15 +94,17 @@ $('#fullpage').fullpage({
     
     }
   },
+
   onLeave: function (index, nextIndex, direction) {
     console.log(index, nextIndex, direction);
     if (index == 1) { };
     if (index == 2) { };
     if (index == 8 && nextIndex == 7) { };
   },
-  
-
 });
+}
+
+
 
 
 
@@ -110,34 +112,70 @@ $('#fullpage').fullpage({
 
 //service Slider 
 
-$(".serviceSlider").slick({
-  dots: false,
-  infinite: true,
-  arrows: false,
-  speed: 300,
-  autoplay: false,
-  autoplaySpeed: 2000,
-  slidesToShow: 4,
-  slidesToScroll: 4,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        dots: true,
-        slidesToShow: 2,
-        slidesToScroll: 2,
+if ($('.serviceSlider').length) {
+  $(".serviceSlider").slick({
+    dots: false,
+    infinite: true,
+    arrows: false,
+    speed: 300,
+    autoplay: false,
+    autoplaySpeed: 2000,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          dots: true,
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
       },
-    },
-    {
-      breakpoint: 654,
-      settings: {
-        dots: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
+      {
+        breakpoint: 654,
+        settings: {
+          dots: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      }
+    ],
+  });
+}
+
+
+if ($('.solutionSlider').length) {
+  $(".solutionSlider").slick({
+    dots: false,
+    infinite: true,
+    arrows: false,
+    speed: 300,
+    autoplay: false,
+    autoplaySpeed: 2000,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          dots: true,
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
       },
-    }
-  ],
-});
+      {
+        breakpoint: 654,
+        settings: {
+          dots: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      }
+    ],
+  });
+}
+
+
 
 
 // tabs toggle
@@ -316,41 +354,43 @@ document.addEventListener('click', function(event) {
 
 
 // testimonial JS
+if ($('.testimonialsSlider').length) {
+  $('.testimonialsSlider').slick({
+    centerMode: true,
+    centerPadding: '17%',
+    slidesToShow: 1,
+    responsive: [
+      {
+        breakpoint: 1400,
+        settings: {
+          arrows: true,
+          centerMode: true,
+          centerPadding: '15%',
+          slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: true,
+          centerMode: true,
+          centerPadding: '15%',
+          slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: true,
+          centerMode: true,
+          centerPadding: '15%',
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
+}
 
-$('.testimonialsSlider').slick({
-  centerMode: true,
-  centerPadding: '17%',
-  slidesToShow: 1,
-  responsive: [
-    {
-      breakpoint: 1400,
-      settings: {
-        arrows: true,
-        centerMode: true,
-        centerPadding: '15%',
-        slidesToShow: 1
-      }
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        arrows: true,
-        centerMode: true,
-        centerPadding: '15%',
-        slidesToShow: 1
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        arrows: true,
-        centerMode: true,
-        centerPadding: '15%',
-        slidesToShow: 1
-      }
-    }
-  ]
-});
 
 
 // Progress bar Js

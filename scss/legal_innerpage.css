@@ -38,6 +38,9 @@ p {
 .font130 {
   font-size: 130px; }
 
+.font115 {
+  font-size: 115px; }
+
 .font64 {
   font-size: 64px; }
 
@@ -124,6 +127,9 @@ img {
   .font130 {
     font-size: 110px; }
 
+  .font115 {
+    font-size: 100px; }
+
   .font64 {
     font-size: 60px; }
 
@@ -156,6 +162,9 @@ img {
 
   .font130 {
     font-size: 96px; }
+
+  .font115 {
+    font-size: 80px; }
 
   .font64 {
     font-size: 50px; }
@@ -193,6 +202,9 @@ img {
   .font130 {
     font-size: 92px; }
 
+  .font115 {
+    font-size: 70px; }
+
   .font64 {
     font-size: 46px; }
 
@@ -201,6 +213,9 @@ img {
 
   .font50 {
     font-size: 34px; }
+
+  .font36 {
+    font-size: 26px; }
 
   .font30 {
     font-size: 21px; }
@@ -219,12 +234,18 @@ img {
 
   .font16 {
     font-size: 11px; } }
+@media all and (max-width: 1280px) {
+  .font36 {
+    font-size: 24px; } }
 @media all and (max-width: 1024px) {
   .wrapper {
     padding: 0px 40px; }
 
   .font130 {
     font-size: 70px; }
+
+  .font115 {
+    font-size: 50px; }
 
   .font64 {
     font-size: 36px; }
@@ -237,6 +258,9 @@ img {
 
   .font130 {
     font-size: 55px; }
+
+  .font115 {
+    font-size: 45px; }
 
   .font64 {
     font-size: 32px; }
@@ -274,6 +298,9 @@ img {
   .font130 {
     font-size: 40px; }
 
+  .font115 {
+    font-size: 35px; }
+
   .font64 {
     font-size: 30px; }
 
@@ -303,6 +330,31 @@ img {
 
   .font16 {
     font-size: 11px; } }
+.subSectors-Cta {
+  margin-top: 40px; }
+  .subSectors-Cta a {
+    text-decoration: none;
+    background-color: #212121;
+    color: white;
+    border: 1px solid #212121;
+    border-radius: 60px;
+    padding: 12px 30px;
+    vertical-align: middle;
+    transition: 0.3s all ease; }
+    .subSectors-Cta a:visited, .subSectors-Cta a:active, .subSectors-Cta a:focus {
+      text-decoration: none;
+      color: white;
+      background-color: #212121;
+      border: 1px solid #212121;
+      border-radius: 60px;
+      padding: 12px 30px;
+      vertical-align: middle; }
+    .subSectors-Cta a img {
+      vertical-align: middle;
+      opacity: 1;
+      width: auto;
+      margin-left: 5px; }
+
 .slick-track {
   display: flex !important; }
 
@@ -314,7 +366,10 @@ body {
 
 .founder {
   margin: 150px 0px; }
-  .founder h2 {
+  @media all and (max-width: 1400px) {
+    .founder {
+      margin: 75px 0px; } }
+  .founder h1 {
     margin-bottom: 30px; }
   .founder .founderBox {
     display: flex; }
@@ -328,6 +383,9 @@ body {
         align-items: end; }
         .founder .founderBox .founderDesc .founderDescName a {
           margin-left: 45px; }
+          @media all and (max-width: 1400px) {
+            .founder .founderBox .founderDesc .founderDescName a {
+              margin-left: 35px; } }
       .founder .founderBox .founderDesc .details {
         display: flex;
         padding: 25px 0px 40px; }
@@ -339,11 +397,27 @@ body {
             margin-right: 15px; }
         .founder .founderBox .founderDesc .details a {
           text-decoration: none; }
+          .founder .founderBox .founderDesc .details a img {
+            position: relative;
+            top: 12px;
+            margin-right: 15px; }
+            @media all and (max-width: 1400px) {
+              .founder .founderBox .founderDesc .details a img {
+                margin-right: 10px; } }
+          .founder .founderBox .founderDesc .details a:first-child {
+            width: 40%; }
       .founder .founderBox .founderDesc .founderDescInfo {
-        width: 70%; }
+        width: 70%;
+        line-height: 160%; }
+
+.legalHeader {
+  position: relative !important; }
 
 .contact {
   margin: 150px 0px; }
+  @media all and (max-width: 1400px) {
+    .contact {
+      margin: 75px 0px; } }
   .contact .contactBox {
     display: flex; }
   .contact .contactDesc {
@@ -379,10 +453,14 @@ body {
         @media all and (max-width: 1400px) {
           .contact .contactForm form input[type=text], .contact .contactForm form [type=number], .contact .contactForm form [type=mail], .contact .contactForm form textarea {
             font-size: 17px;
-            margin-bottom: 35px; } }
+            margin-top: 10px;
+            margin-bottom: 30px; } }
       .contact .contactForm form textarea {
         margin-bottom: 20px;
         height: 166px; }
+        @media all and (max-width: 1400px) {
+          .contact .contactForm form textarea {
+            height: 120px; } }
       .contact .contactForm form .submit input[type=submit] {
         background: #212121;
         border: 1px solid rgba(255, 255, 255, 0.2);
@@ -396,6 +474,9 @@ body {
       .contact .contactForm form .submit p {
         margin-bottom: 40px;
         font-size: 14px; }
+        @media all and (max-width: 1400px) {
+          .contact .contactForm form .submit p {
+            margin-bottom: 25px; } }
       .contact .contactForm form .submit a {
         text-decoration: none; }
     .contact .contactForm .formDivider {
@@ -429,6 +510,9 @@ body {
     .contactDetails .contactDetailsBox .address {
       width: 75%;
       position: relative; }
+      @media all and (max-width: 1400px) {
+        .contactDetails .contactDetailsBox .address {
+          width: 70%; } }
       .contactDetails .contactDetailsBox .address:after {
         content: "";
         position: absolute;
@@ -456,6 +540,9 @@ body {
           width: 30.7%; }
     .contactDetails .contactDetailsBox .contactRight {
       width: 25%; }
+      @media all and (max-width: 1400px) {
+        .contactDetails .contactDetailsBox .contactRight {
+          width: 30%; } }
       .contactDetails .contactDetailsBox .contactRight .addTitle {
         display: flex;
         margin-bottom: 5px;

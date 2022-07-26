@@ -20,7 +20,7 @@
 </head>
 
 <body style="background-color: #ffffff !important;">
-<header class="wrapper" id="header">
+<header class="wrapper legalHeader" id="header">
     <div class="header-container">
         <a href="branding.html" class="logo">
             <img src="images/legal-logo.svg">
@@ -147,10 +147,13 @@
         <div class="progress-bar-mobile"></div>
     </div>
 </header>
+<div class="progress-container">
+    <div id="progressbar" class="progress-bar"></div>
+</div>
 <section class="contact">
     <div class="contactBox wrapper">
         <div class="contactDesc">
-            <h2 class="fontRoboto font64 fontW700 colorB">For Initial Consultation</h2>
+            <h1 class="fontRoboto font64 fontW700 colorB">For Initial Consultation</h1>
             <p class="fontPoppins fontW400 font22 colorB">Tell us about your query. A member of our team will be in touch with you shortly for an initial consultation. </p>
         </div> 
         <div class="contactForm">
@@ -160,15 +163,15 @@
                     <input class="fontPoppins fontW400" type="text" id="fname" name="firstname" placeholder="John">
                 </div>
                 <div class="formDivider">
-                    <label for="fname" class="fontPoppins fontW400 colorB">Last Name*</label>
+                    <label for="lname" class="fontPoppins fontW400 colorB">Last Name*</label>
                     <input class="fontPoppins fontW400" type="text" id="lname" name="lastname" placeholder="Doe">
                 </div>
                 <div class="formDivider">
-                    <label for="fname" class="fontPoppins fontW400 colorB">Contact Number*</label>
-                    <input class="fontPoppins fontW400" type="number" id="contact" name="contactnumber" placeholder="+91 1234 5678 90">
+                    <label for="contact" class="fontPoppins fontW400 colorB">Contact Number*</label>
+                    <input class="fontPoppins fontW400" type="text" id="contact" name="contactnumber" placeholder="+91 1234 5678 90">
                 </div>
                 <div class="formDivider">
-                    <label for="fname" class="fontPoppins fontW400 colorB">Email*</label>
+                    <label for="email" class="fontPoppins fontW400 colorB">Email*</label>
                     <input class="fontPoppins fontW400" type="mail" id="email" name="email" placeholder="JhonDoe@Gmail.com">
                 </div>
                 
@@ -305,8 +308,34 @@
 
 
 <!-- <script src="js/custom.js"></script> -->
-<script src="js/custom.js"></script>
 <script src="js/jquery-3.3.1.min.js"></script> 
+<script src="js/custom.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.dropdown').hover(function (e) {
+            $(this).find('.dropdown-menu').toggleClass('open');
+            $($(e.target).find('.down-caret').toggleClass('open-caret'));
+            e.preventDefault();
+            e.stopPropagation();
+            $(document).hover(function () {
+                $('.dropdown-menu').removeClass('open');
+                $('.down-caret').removeClass('open-caret');
+            });
+        });
+
+        const menuLinks = document.querySelectorAll(".menu-items .menu-link");
+
+        menuLinks.forEach((link) => {
+            link.addEventListener("click", () => {
+                menuLinks.forEach((link) => {
+                    link.classList.remove("is-active");
+                });
+                link.classList.add("is-active");
+            });
+        });
+    });
+
+</script>
 </body>
 
 </html>

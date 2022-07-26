@@ -38,6 +38,9 @@ p {
 .font130 {
   font-size: 130px; }
 
+.font115 {
+  font-size: 115px; }
+
 .font64 {
   font-size: 64px; }
 
@@ -124,6 +127,9 @@ img {
   .font130 {
     font-size: 110px; }
 
+  .font115 {
+    font-size: 100px; }
+
   .font64 {
     font-size: 60px; }
 
@@ -156,6 +162,9 @@ img {
 
   .font130 {
     font-size: 96px; }
+
+  .font115 {
+    font-size: 80px; }
 
   .font64 {
     font-size: 50px; }
@@ -193,6 +202,9 @@ img {
   .font130 {
     font-size: 92px; }
 
+  .font115 {
+    font-size: 70px; }
+
   .font64 {
     font-size: 46px; }
 
@@ -201,6 +213,9 @@ img {
 
   .font50 {
     font-size: 34px; }
+
+  .font36 {
+    font-size: 26px; }
 
   .font30 {
     font-size: 21px; }
@@ -219,12 +234,18 @@ img {
 
   .font16 {
     font-size: 11px; } }
+@media all and (max-width: 1280px) {
+  .font36 {
+    font-size: 24px; } }
 @media all and (max-width: 1024px) {
   .wrapper {
     padding: 0px 40px; }
 
   .font130 {
     font-size: 70px; }
+
+  .font115 {
+    font-size: 50px; }
 
   .font64 {
     font-size: 36px; }
@@ -237,6 +258,9 @@ img {
 
   .font130 {
     font-size: 55px; }
+
+  .font115 {
+    font-size: 45px; }
 
   .font64 {
     font-size: 32px; }
@@ -274,6 +298,9 @@ img {
   .font130 {
     font-size: 40px; }
 
+  .font115 {
+    font-size: 35px; }
+
   .font64 {
     font-size: 30px; }
 
@@ -303,6 +330,31 @@ img {
 
   .font16 {
     font-size: 11px; } }
+.subSectors-Cta {
+  margin-top: 40px; }
+  .subSectors-Cta a {
+    text-decoration: none;
+    background-color: #212121;
+    color: white;
+    border: 1px solid #212121;
+    border-radius: 60px;
+    padding: 12px 30px;
+    vertical-align: middle;
+    transition: 0.3s all ease; }
+    .subSectors-Cta a:visited, .subSectors-Cta a:active, .subSectors-Cta a:focus {
+      text-decoration: none;
+      color: white;
+      background-color: #212121;
+      border: 1px solid #212121;
+      border-radius: 60px;
+      padding: 12px 30px;
+      vertical-align: middle; }
+    .subSectors-Cta a img {
+      vertical-align: middle;
+      opacity: 1;
+      width: auto;
+      margin-left: 5px; }
+
 .slick-track {
   display: flex !important; }
 
