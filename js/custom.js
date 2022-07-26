@@ -127,6 +127,70 @@ if ($('.solutionSlider').length) {
 }
 
 
+if ($('.sectorSlider').length) {
+  $(".sectorSlider").slick({
+    dots: false,
+    infinite: true,
+    arrows: true,
+    speed: 800,
+    autoplay: false,
+    autoplaySpeed: 2000,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          arrows: true,
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 654,
+        settings: {
+          arrows: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      }
+    ],
+  });
+}
+
+if ($('.advantageSlider').length) {
+  $(".advantageSlider").slick({
+    dots: false,
+    infinite: true,
+    arrows: false,
+    speed: 300,
+    autoplay: false,
+    autoplaySpeed: 2000,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          dots: true,
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 654,
+        settings: {
+          dots: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      }
+    ],
+  });
+}
+
+
+
 
 
 // tabs toggle
@@ -307,6 +371,44 @@ document.addEventListener('click', function(event) {
 // testimonial JS
 if ($('.testimonialsSlider').length) {
   $('.testimonialsSlider').slick({
+    centerMode: true,
+    centerPadding: '17%',
+    slidesToShow: 1,
+    responsive: [
+      {
+        breakpoint: 1400,
+        settings: {
+          arrows: true,
+          centerMode: true,
+          centerPadding: '15%',
+          slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: true,
+          centerMode: true,
+          centerPadding: '15%',
+          slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: true,
+          centerMode: true,
+          centerPadding: '15%',
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
+}
+
+
+if ($('.testlegalSlider').length) {
+  $('.testlegalSlider').slick({
     centerMode: true,
     centerPadding: '17%',
     slidesToShow: 1,
