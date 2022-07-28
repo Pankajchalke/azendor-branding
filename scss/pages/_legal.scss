@@ -727,6 +727,36 @@ section {
         width: 66%;
     }
 
+    .bannerCta {
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+
+        a {
+            background-color: #212121;
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid rgba(33, 33, 33, 0.2);
+            border-radius: 60px;
+            padding: 12px 26px;
+            outline: none;
+            display: flex;
+            align-items: center;
+
+            img {
+                transition: 0.6s all;
+                margin-left: 10px;
+            }
+
+            &:hover {
+                img {
+                    transform: translateX(10px);
+                }
+            }
+        }
+    }
+
+
     @media all and (max-width: 1850px) {
         h5 {
             width: 68%;
@@ -741,6 +771,10 @@ section {
 
     @media all and (max-width: 1650px) {
         margin: 220px 0px 110px 0px;
+
+        .bannerCta {
+            margin-top: 30px;
+        }
 
         h1 {
             width: 64%;
@@ -829,31 +863,41 @@ section {
 
     .solutionSlider {
         display: block;
-        margin-left: -15px;
 
         .slick-track {
             display: flex !important;
-            justify-content: space-between !important;
-            margin-left: -20px;
+            margin-left: -14px;
 
             .solutionBox {
                 border: 1px solid rgba(33, 33, 33, 0.3);
                 border-radius: 10px;
                 padding: 40px 20px 40px 34px;
-                width: 22% !important;
+                width: 24% !important;
+                margin: 0px 15px;
 
-                a {
-                    text-decoration: none;
-                    color: #000;
 
-                    img {
-                        width: 23px;
-                        height: 11px;
-                    }
-                }
 
                 .solutionContent {
                     border-top: 1px solid #000;
+
+                    a {
+                        text-decoration: none;
+                        color: #000;
+
+
+                        img {
+                            margin-top: 4px;
+                            transition: 0.6s all;
+                            width: 23px;
+                            height: 11px;
+                        }
+
+                        &:hover {
+                            img {
+                                transform: translateX(5px);
+                            }
+                        }
+                    }
                 }
 
                 &:hover {
@@ -901,10 +945,16 @@ section {
 
     }
 
-    @media all and (max-width: 1600px) {
-        .solutionSlider {
+    @media all and (max-width: 1650px) {
+        padding: 100px 0px;
+
+        h2 {
+            margin-bottom: 30px;
+        }
+
+        .solutionSlider .slick-track {
             .solutionBox {
-                padding: 20px 15px 20px 20px;
+                padding: 25px;
 
                 .iconImg {
                     width: 40px;
@@ -914,6 +964,23 @@ section {
                 p {
                     padding-top: 12px;
                     padding-bottom: 15px;
+                    line-height: 30px;
+                }
+
+
+            }
+        }
+    }
+
+    @media all and (max-width: 1400px) {
+        padding: 60px 0px;
+
+        .solutionSlider .slick-track {
+            .solutionBox {
+
+                h3,
+                p {
+                    line-height: 26px;
                 }
 
 
@@ -923,12 +990,29 @@ section {
 
 
     @media all and (max-width: 1024px) {
+        padding: 40px 0px;
+
+        h2 {
+            margin-bottom: 15px;
+        }
+
         .solutionSlider {
             display: block;
+            margin-left: 0px !important;
 
-            .solutionBox {
-                height: 530px;
-                margin-bottom: 20px;
+            .slick-track {
+                margin-left: -7px;
+
+                .solutionBox {
+                    height: 530px;
+                    margin-bottom: 20px;
+                    margin: 0px 10px;
+
+                    h3,
+                    p {
+                        line-height: 21px;
+                    }
+                }
             }
         }
     }
@@ -937,14 +1021,20 @@ section {
 
 
 
+
 .sectors {
     p {
-        padding: 30px 0px 60px 0px;
+        padding: 30px 0px 40px 0px;
     }
 
-    .sectorSlider {
+    .sectorsMobile {
+        display: none;
+    }
+
+    .sectorsliderDesktop,
+    .sectorsliderMobile {
         .slick-track {
-            margin-left: -20px;
+            margin-left: -14px;
         }
 
         .sectorBox {
@@ -953,7 +1043,7 @@ section {
                 border: 1px solid #F1F1F1;
                 border-radius: 10px;
                 padding: 35px;
-                margin: 20px 25px;
+                margin: 20px;
 
                 &:hover {
                     background: #FAFAFA;
@@ -971,16 +1061,16 @@ section {
                         width: 23px;
                         height: 11px;
                         display: inline-block;
+                        transition: 0.6s all;
+                    }
+
+                    &:hover {
+                        img {
+                            transform: translateX(5px);
+                        }
                     }
                 }
             }
-
-
-
-
-
-
-
         }
 
         .slick-prev,
@@ -1130,6 +1220,70 @@ section {
             }
         }
     }
+
+    @media all and (max-width: 1650px) {
+        p {
+            padding: 20px 0px;
+        }
+
+        .sectorsliderDesktop .sectorBox,
+        .sectorsliderMobile .sectorBox {
+            .sectorContent {
+                margin: 20px 15px;
+
+                h5 {
+                    padding: 15px 0px 15px 0px;
+                }
+
+                img {
+                    height: 40px;
+                }
+            }
+        }
+    }
+
+    @media all and (max-width: 1400px) {
+
+        .sectorsliderDesktop .sectorBox,
+        .sectorsliderMobile .sectorBox {
+            .sectorContent {
+                margin: 20px 20px;
+                padding: 30px;
+            }
+        }
+    }
+
+    @media all and (max-width: 1200px) {
+
+        .sectorsliderDesktop .sectorBox,
+        .sectorsliderMobile .sectorBox {
+            .slick-track {
+                margin-left: -7px;
+            }
+        }
+    }
+
+    @media all and (max-width: 780px) {
+
+        .sectorsDesktop {
+            display: none;
+        }
+
+        .sectorsMobile {
+            display: block;
+        }
+
+        .sectorsliderDesktop .sectorBox,
+        .sectorsliderMobile .sectorBox {
+            .sectorContent {
+                margin: 10px 15px;
+                padding: 30px;
+            }
+        }
+
+    }
+
+
 }
 
 
@@ -1143,18 +1297,17 @@ section {
 
     .advantageSlider {
         display: block;
-        margin-left: -15px;
 
         .slick-track {
             display: flex !important;
-            justify-content: space-between !important;
-            margin-left: -20px;
+            margin-left: -14px;
 
             .advantageBox {
                 border: 1px solid rgba(33, 33, 33, 0.1);
                 border-radius: 10px;
                 padding: 40px 20px 40px 34px;
-                width: 22% !important;
+                width: 24% !important;
+                margin: 0px 15px;
 
 
 
@@ -1209,10 +1362,16 @@ section {
 
     }
 
-    @media all and (max-width: 1600px) {
-        .advantageSlider {
+    @media all and (max-width: 1650px) {
+        padding: 80px 0px;
+
+        h2 {
+            margin-bottom: 30px;
+        }
+
+        .advantageSlider .slick-track {
             .advantageBox {
-                padding: 20px 15px 20px 20px;
+                padding: 25px;
 
                 .iconImg {
                     width: 40px;
@@ -1222,21 +1381,51 @@ section {
                 p {
                     padding-top: 12px;
                     padding-bottom: 15px;
+                    line-height: 30px;
                 }
-
-
             }
         }
     }
 
+    @media all and (max-width: 1400px) {
+        padding: 60px 0px;
+
+        .advantageSlider {
+            .slick-track {
+                .advantageBox {
+
+                    h3,
+                    p {
+                        line-height: 26px;
+                    }
+                }
+            }
+        }
+
+    }
+
 
     @media all and (max-width: 1024px) {
+        padding: 40px 0px;
+        h2 {
+            margin-bottom: 15px;
+        }
         .advantageSlider {
             display: block;
+            margin-left: 0px !important;
 
-            .advantageBox {
-                height: 530px;
-                margin-bottom: 20px;
+            .slick-track {
+                margin-left: -7px;
+
+                .advantageBox {
+                    height: 530px;
+                    margin-bottom: 20px;
+                    margin: 0px 10px;
+                    h3,
+                    p {
+                        line-height: 21px;
+                    }
+                }
             }
         }
     }
@@ -2071,6 +2260,11 @@ footer {
         .linksFt a {
             text-decoration: none;
 
+            &:hover,
+            &:focus {
+                color: #ffffff;
+            }
+
             &:nth-child(1) {
                 margin-right: 50px;
             }
@@ -2167,6 +2361,7 @@ footer {
     @media all and (max-width: 1280px) {
         .footerSec {
             padding: 40px 0px 0px 0px;
+
             .footerSub {
                 padding: 0px 25px 30px 25px;
             }
@@ -2234,6 +2429,7 @@ footer {
                     .footerLogo {
                         border-bottom: 1px solid rgba(242, 242, 242, 0.6);
                         padding-bottom: 30px;
+
                         img {
                             width: 120px;
                         }
@@ -2299,10 +2495,10 @@ footer {
             }
         }
     }
-    
-    @media all and (max-width:575px){
-        .footerLinks{
-            .copyRight{
+
+    @media all and (max-width:575px) {
+        .footerLinks {
+            .copyRight {
                 align-items: flex-start;
             }
         }

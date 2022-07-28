@@ -330,31 +330,6 @@ img {
 
   .font16 {
     font-size: 11px; } }
-.subSectors-Cta {
-  margin-top: 40px; }
-  .subSectors-Cta a {
-    text-decoration: none;
-    background-color: #212121;
-    color: white;
-    border: 1px solid #212121;
-    border-radius: 60px;
-    padding: 12px 30px;
-    vertical-align: middle;
-    transition: 0.3s all ease; }
-    .subSectors-Cta a:visited, .subSectors-Cta a:active, .subSectors-Cta a:focus {
-      text-decoration: none;
-      color: white;
-      background-color: #212121;
-      border: 1px solid #212121;
-      border-radius: 60px;
-      padding: 12px 30px;
-      vertical-align: middle; }
-    .subSectors-Cta a img {
-      vertical-align: middle;
-      opacity: 1;
-      width: auto;
-      margin-left: 5px; }
-
 .slick-track {
   display: flex !important; }
 
