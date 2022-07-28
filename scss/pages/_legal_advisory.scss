@@ -1,10 +1,45 @@
 .legalAdvisory{
 	margin:150px 0px;
+	@media all and (max-width: 1400px){margin:75px 0px;}
+	@media all and (max-width: 920px){margin:100px 0px 80px;}
+	h1{margin-bottom:30px;}
 	.legalAdvisorySection{
-		
-		.legalAdvisorySectionBox{
-			display: flex; flex-wrap: wrap; justify-content: space-between;
-			a{display: flex; align-items: center; justify-content: space-between;}
+		display: flex; flex-wrap: wrap; justify-content: space-between;margin-top: 10px;
+		.legalAdvisorySectionBox{width: 31%; margin-top: 50px;
+			a{display: flex; align-items: center; justify-content: space-between; text-decoration:none; padding: 35px 45px; border: 1px solid #F1F1F1;border-radius: 10px;
+				.img1{margin-right: 20px;}
+				.img2{margin-left: auto; transition: 0.6s all;}
+			&:hover{border: 1px solid #212121; transition: 0.6s all;
+				.img2{transform: translateX(10px);}
+				}
+			@media all and (max-width: 1400px){padding: 25px 35px;}	
+			}
+		}
+	}
+}
+
+.advisorySubPages{
+	margin:150px 0px;
+	@media all and (max-width: 1400px){margin:75px 0px;}
+	@media all and (max-width: 920px){margin:100px 0px 80px;}
+	h1{margin: 30px 0px;}
+	p{width:70%;
+		@media all and (max-width: 1400px){width:60%;}
+	}
+	.advisoryCta{
+		margin-top: 40px;display: flex; align-items: center;
+		a{
+			background-color: #212121;
+		    color: #fff;
+		    text-decoration: none;
+		    border: 1px solid rgba(33, 33, 33, 0.2);
+		    border-radius: 60px;
+		    padding: 12px 26px;
+		    outline: none;
+		    display: flex;
+		    align-items: center;
+		    img{transition: 0.6s all; margin-left: 10px;}
+		    &:hover img{transform: translateX(10px);}
 		}
 	}
 }
