@@ -172,8 +172,8 @@ if ($(".solutionSlider").length) {
   });
 }
 
-if ($(".sectorSlider").length) {
-  $(".sectorSlider").slick({
+if ($(".sectorsliderDesktop").length) {
+  $(".sectorsliderDesktop").slick({
     dots: false,
     infinite: false,
     arrows: true,
@@ -181,18 +181,32 @@ if ($(".sectorSlider").length) {
     autoplay: false,
     autoplaySpeed: 2000,
     slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1090,
         settings: {
           arrows: true,
-          slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToShow: 3,
+          slidesToScroll: 1,
         },
       },
+    ],
+  });
+}
+if ($(".sectorsliderMobile").length) {
+  $(".sectorsliderMobile").slick({
+    dots: false,
+    infinite: false,
+    arrows: true,
+    speed: 800,
+    autoplay: false,
+    autoplaySpeed: 2000,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    responsive: [
       {
-        breakpoint: 654,
+        breakpoint: 480,
         settings: {
           arrows: true,
           slidesToShow: 1,

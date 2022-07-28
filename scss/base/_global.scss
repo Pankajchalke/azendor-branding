@@ -480,55 +480,7 @@ img {
 
 
 
-.subSectors-Cta {
-    margin-top: 40px;
 
-    a {
-        text-decoration: none;
-        background-color: #212121;
-        color: white;
-        border: 1px solid #212121;
-        border-radius: 60px;
-        padding: 12px 30px;
-        vertical-align: middle;
-        transition: 0.3s all ease;
-
-
-
-        &:visited,
-        &:active,
-        &:focus {
-            text-decoration: none;
-            color: white;
-            background-color: #212121;
-            border: 1px solid #212121;
-            border-radius: 60px;
-            padding: 12px 30px;
-            vertical-align: middle;
-        }
-
-        // &:hover {
-        //     text-decoration: none;
-        //     background-color: white;
-        //     border: 1px solid #212121;
-        //     color: #212121;
-        //     vertical-align: middle;
-        // }
-
-        img {
-            vertical-align: middle;
-            opacity: 1;
-            width: auto;
-            margin-left: 5px;
-
-        }
-
-
-
-
-    }
-
-}
 
 
 .slick-track {

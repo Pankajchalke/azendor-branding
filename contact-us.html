@@ -16,7 +16,7 @@
         rel="stylesheet">
     <link href="scss/legal_main.css" rel="stylesheet">   
     <link href="scss/legal_innerpage.css" rel="stylesheet">
-    <link href="scss/legal_main.css" rel="stylesheet">  
+      
 
 </head>
 
@@ -37,11 +37,11 @@
 
             <div id="sideMenu">
                 <ul class="sideMenuInner">
-                    <li class="fontPoppins font18 colorBlack fontW400" onclick="hideSidebar()">
+                    <li class="fontPoppins font18 colorBlack fontW400">
                         <div class="dropdown">
                             <a class="menu-link active drop" href="#bannerSec"
                                 data-menuanchor="bannerSec">Solutions<span class="down-caret"></span></a>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu" onclick="hideSidebar()">
                                 <li><a href="#" class="fontPoppins fontW400 font18">Legal Advisory</a></li>
                                 <li><a href="#" class="fontPoppins fontW400 font18">General Counsel</a></li>
                                 <li><a href="#" class="fontPoppins fontW400 font18">Legal Audit</a></li>
@@ -50,10 +50,11 @@
                         </div>
 
                     </li>
-                    <li class="fontPoppins font18 colorBlack fontW400" onclick="hideSidebar()">
+                    <li class="fontPoppins font18 colorBlack fontW400">
                         <div class="dropdown">
-                            <a class="menu-link drop" href="#serviceSec" data-menuanchor="serviceSec">Sectors <span class="down-caret"></span></a>
-                            <ul class="dropdown-menu sector">
+                            <a class="menu-link drop" href="#serviceSec" data-menuanchor="serviceSec">Sectors <span
+                                    class="down-caret"></span></a>
+                            <ul class="dropdown-menu sector" onclick="hideSidebar()">
                                 <li><a href="#" class="fontPoppins fontW400 font18">Television</a></li>
                                 <li><a href="#" class="fontPoppins fontW400 font18">Film</a></li>
                                 <li><a href="#" class="fontPoppins fontW400 font18">OTT Platform</a></li>
@@ -71,15 +72,15 @@
                     </li>
                     <li onclick="hideSidebar()" class="fontPoppins font18 colorBlack fontW400"><a class="menu-link"
                             href="#teamSection" data-menuanchor="teamSection">Careers</a></li>
-                    <li onclick="hideSidebar()" class="fontPoppins font18 colorBlack fontW400">
+                    <li class="fontPoppins font18 colorBlack fontW400">
                         <div class="dropdown">
-                        <a class="menu-link drop"
-                            href="#clientsBox" data-menuanchor="clientsBox">About <span class="down-caret"></span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#" class="fontPoppins fontW400 font18">Who we are</a></li>
-                            <li><a href="#" class="fontPoppins fontW400 font18">Founder</a></li>
-                        </ul>
+                            <a class="menu-link drop" href="#clientsBox" data-menuanchor="clientsBox">About <span
+                                    class="down-caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" onclick="hideSidebar()">
+                                <li><a href="#" class="fontPoppins fontW400 font18">Who we are</a></li>
+                                <li><a href="#" class="fontPoppins fontW400 font18">Founder</a></li>
+                            </ul>
                         </div>
                     </li>
                     <li onclick="hideSidebar()" class="fontPoppins font18 colorBlack fontW400"><a
@@ -142,7 +143,6 @@
         </ul>
     </div>
 
-
     <!-- progress bar for mobile -->
     <div class="progress-container-mobile">
         <div class="progress-bar-mobile"></div>
@@ -154,7 +154,9 @@
 <section class="contact">
     <div class="contactBox wrapper">
         <div class="contactDesc">
-            <h1 class="fontRoboto font64 fontW700 colorBlack">For Initial Consultation</h1>
+            <div class="contactDescTitle">
+                <a class="backArrow" href="#"><img src="images/legal/back-arrow.svg"></a><h1 class="fontRoboto font64 fontW700 colorBlack">For Initial Consultation</h1>
+            </div>
             <p class="fontPoppins fontW400 font22 colorBlack">Tell us about your query. A member of our team will be in touch with you shortly for an initial consultation. </p>
         </div> 
         <div class="contactForm">
@@ -167,18 +169,18 @@
                     <label for="lname" class="fontPoppins fontW400 colorBlack">Last Name*</label>
                     <input class="fontPoppins fontW400" type="text" id="lname" name="lastname" placeholder="Doe">
                 </div>
-                <div class="formDivider">
+                <div class="formDividerOne">
                     <label for="contact" class="fontPoppins fontW400 colorBlack">Contact Number*</label>
                     <input class="fontPoppins fontW400" type="text" id="contact" name="contactnumber" placeholder="+91 1234 5678 90">
                 </div>
-                <div class="formDivider">
+                <div class="formDividerOne">
                     <label for="email" class="fontPoppins fontW400 colorBlack">Email*</label>
                     <input class="fontPoppins fontW400" type="mail" id="email" name="email" placeholder="JhonDoe@Gmail.com">
                 </div>
                 
                 <div class="aboutQuery">
                     <label for="subject" class="fontPoppins fontW400 colorBlack">Tell Us About Query* </label>
-                    <textarea class="fontPoppins fontW400" id="subject" name="subject" placeholder="I would like to ask"></textarea>
+                    <textarea class="fontPoppins fontW400" id="subject" name="subject" placeholder="I Would Like To Ask"></textarea>
                 </div>
                 <div class="submit">
                     <p class="fontPoppins fontW400 colorBlack">By submitting this form, you agree to receive e-mails / calls from Azendor Legal team member. See our <a href="#" class=" fontW700 colorBlack">Privacy Policy.</a></p>
@@ -192,7 +194,11 @@
     <div class="wrapper">
         <div class="contactDetailsBox">
             <div class="address">
-                <p class="addTitle fontPoppins fontW400 font22 colordarkGray"><img src="images/legal-location.svg">Address</p>
+                <div class="addTitle">
+                   <img src="images/legal-location.svg"> 
+                   <p class="fontPoppins fontW400 font22 colordarkGray">Address</p>
+                </div>
+                
                 <div class="addressBox">
                     <div class="addressBoxDetails">
                         <h4 class="fontPoppins fontW700 font20 colorBlack">Mumbai</h4>
@@ -215,8 +221,11 @@
                 </div>
             </div>
             <div class="contactRight">
-                <p class="addTitle fontPoppins fontW400 font22 colordarkGray"><img src="images/contact-legal.svg">Contact Us</p>
-               <div class="contactRightDetails">
+                <div class="addTitle">
+                    <img src="images/contact-legal.svg">
+                    <p class="fontPoppins fontW400 font22 colordarkGray">Contact Us</p>
+                </div>
+                <div class="contactRightDetails">
                     <p><a href="mailto: sourabh.mishra@azendor.com" class="fontPoppins fontW400 font20 colorBlack">legal@azendor.com</a></p>
                     <p><a class="fontPoppins fontW400 font22 colorBlack" href="tel:+91 98206 07601">+91 98206 07601</a></p>
                 </div>
@@ -229,13 +238,13 @@
     <div class="wrapper">
         <div class="footerSec">
             <div class="footerSub">
-                <a href="#"><img src="images/legal-footer-logo.svg"></a>
+                <a href="#" class="footerLogo"><img src="images/legal-footer-logo.svg"></a>
                 <div class="socialmediaIcons">
                     <ul>
-                        <li><a href="#"><img src="images/linkdin-footer.png"></a></li>
-                        <li><a href="#"><img src="images/twitter.png"></a></li>
-                        <li><a href="#"><img src="images/facebook.png"></a></li>
-                        <li><a href="#"><img src="images/youtube.png"></a></li>
+                        <li><a href="#"><img src="images/legal/linkdin-footer.svg"></a></li>
+                        <li><a href="#"><img src="images/legal/twitter.svg"></a></li>
+                        <li><a href="#"><img src="images/legal/facebook.svg"></a></li>
+                        <li><a href="#"><img src="images/legal/youtube.svg"></a></li>
                     </ul>
                 </div>
             </div>
@@ -259,19 +268,11 @@
                             <li> <a href="#" class="colorW fontW400 font22 fontPoppins">Online Gaming</a></li>
                             <li><a href="#" class="colorW fontW400 font22 fontPoppins">Live Events</a></li>
                             <li><a href="#" class="colorW fontW400 font22 fontPoppins">Radio</a></li>
-                        </ul>
-                    </div>
-                    <div class="sectorftSub">
-                        <ul>
                             <li><a href="#" class="colorW fontW400 font22 fontPoppins">Film</a></li>
                             <li><a href="#" class="colorW fontW400 font22 fontPoppins">Print</a></li>
                             <li><a href="#" class="colorW fontW400 font22 fontPoppins"> Animation/ VFX</a></li>
                             <li><a href="#" class="colorW fontW400 font22 fontPoppins"> Sports</a></li>
-                        </ul>
-                    </div>
-                    <div class="sectorftSub">
-                        <ul>
-                            <li> <a href="#" class="colorW fontW400 font22 fontPoppins">OTT Platform</a></li>
+                            <li><a href="#" class="colorW fontW400 font22 fontPoppins">OTT Platform</a></li>
                             <li><a href="#" class="colorW fontW400 font22 fontPoppins">OOH</a></li>
                             <li><a href="#" class="colorW fontW400 font22 fontPoppins">Music</a></li>
                             <li><a href="#" class="colorW fontW400 font22 fontPoppins"> Advertising</a></li>
@@ -293,6 +294,17 @@
                     <li><a href="#" class="colorW fontW400 font22 fontPoppins">Contact</a></li>
                 </ul>
             </div>
+
+            <div class="socialmediaIcons-btm">
+                <ul>
+                    <li><a href="#"><img src="images/legal/linkdin-footer.svg"></a></li>
+                    <li><a href="#"><img src="images/legal/twitter.svg"></a></li>
+                    <li><a href="#"><img src="images/legal/facebook.svg"></a></li>
+                    <li><a href="#"><img src="images/legal/youtube.svg"></a></li>
+                </ul>
+            </div>
+
+
         </div>
         <div class="footerLinks">
             <div class="linksFt">
@@ -300,43 +312,48 @@
                 <a href="#" class="fontPoppins fontW500 font20 colordarkGray">Privacy Policy</a>
             </div>
             <div>
-                <p class="colorW fontW400 font20 fontPoppins"><img src="images/footer-text-icon.png"> 2022 Azendor
+                <p class="colorW fontW400 font20 fontPoppins copyRight"><img
+                        src="images/legal/footer-text-icon.svg"> 2022
+                    Azendor
                     Consulting Pvt. Ltd, all rights reserved.</p>
             </div>
         </div>
     </div>
+
 </footer>
 
 
 <!-- <script src="js/custom.js"></script> -->
 <script src="js/jquery-3.3.1.min.js"></script> 
+<script src="js/plugins.js"></script>
 <script src="js/custom.js"></script>
 <script>
-    $(document).ready(function () {
-        $('.dropdown').hover(function (e) {
-            $(this).find('.dropdown-menu').toggleClass('open');
-            $($(e.target).find('.down-caret').toggleClass('open-caret'));
-            e.preventDefault();
-            e.stopPropagation();
-            $(document).hover(function () {
-                $('.dropdown-menu').removeClass('open');
-                $('.down-caret').removeClass('open-caret');
-            });
-        });
-
-        const menuLinks = document.querySelectorAll(".menu-items .menu-link");
-
-        menuLinks.forEach((link) => {
-            link.addEventListener("click", () => {
-                menuLinks.forEach((link) => {
-                    link.classList.remove("is-active");
+        $(document).ready(function () {
+            $('.dropdown').hover(function (e) {
+                $(this).find('.dropdown-menu').toggleClass('open');
+                $($(e.target).find('.down-caret').toggleClass('open-caret'));
+                e.preventDefault();
+                e.stopPropagation();
+                $(document).hover(function () {
+                    $('.dropdown-menu').removeClass('open');
+                    $('.down-caret').removeClass('open-caret');
                 });
-                link.classList.add("is-active");
+            });
+
+            const menuLinks = document.querySelectorAll(".menu-items .menu-link");
+
+            menuLinks.forEach((link) => {
+                link.addEventListener("click", () => {
+                    menuLinks.forEach((link) => {
+                        link.classList.remove("is-active");
+                    });
+                    link.classList.add("is-active");
+                });
             });
         });
-    });
 
-</script>
+
+    </script>
 </body>
 
 </html>

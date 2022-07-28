@@ -2,21 +2,38 @@ body{overflow: visible !important;}
 .founder{
 	margin:150px 0px;
 	@media all and (max-width: 1400px){margin:75px 0px;}
-	h1{margin-bottom:30px;}
+	@media all and (max-width: 920px){margin:100px 0px 80px;}
+	.founderTitle{
+		@media all and (max-width: 920px){display: flex;align-items: baseline;padding-bottom: 20px;border-bottom: 0.75px solid rgba(33, 33, 33, 0.6);}
+		.backArrow{display:none;
+			@media all and (max-width: 920px){display:block;}
+			img{margin-right:30px;}
+		}
+		h1{margin-bottom:30px;
+			@media all and (max-width: 920px){margin-bottom:0px;}
+			}
+	}
 	.founderBox{
 		display:flex;
+			@media all and (max-width: 920px){display:block;}
 		.profile{
 			width:35%;
+				@media all and (max-width: 920px){width:100%; margin: 20px 0px 30px;}
+			img{width:100%;}
 		}
 		.founderDesc{
 			width:65%;
 			padding-left: 80px;
+				@media all and (max-width: 920px){width:100%; padding-left: 0px;}
 			.founderDescName{display: flex; align-items: end;
+				@media all and (max-width: 920px){align-items: unset;}
 				a{margin-left: 45px;
 					@media all and (max-width: 1400px){margin-left: 35px;}
+					@media all and (max-width: 920px){margin-left: 15px;}
 				}
 			}
 			.details{display:flex; padding: 25px 0px 40px;
+				@media all and (max-width: 920px){flex-wrap: wrap; padding: 20px 0px 30px;}
 				p{display:flex; align-items: center; width: 40%;
 					img{margin-right:15px;}
 				}
@@ -24,10 +41,22 @@ body{overflow: visible !important;}
 					img{position: relative; top: 12px;margin-right: 15px;
 						@media all and (max-width: 1400px){margin-right: 10px;}
 					}
-					&:first-child {width:40%;}
+					&:first-child {width:40%;
+						@media all and (max-width: 920px){width:100%; margin-bottom: 10px;}
+					}
 				}
 			}
-			.founderDescInfo{width:70%; line-height: 160%;}
+			.founderDescInfo{width:70%; line-height: 160%;
+				@media all and (max-width: 920px){width:100%; display:none;}
+			}
+			.founderDescInfoMobile{width:100%; display:none;
+				@media all and (max-width: 920px){display:block;margin-bottom: 10px;}
+				#more{display:none;}
+				}
+			#readMore{display:none;
+				@media all and (max-width: 920px){font-size:16px; display: inline-block; transition: 0.6s all;}
+				img{width:18px; height:10px; transition: 0.6s all;}
+			}
 		}
 	}
 }

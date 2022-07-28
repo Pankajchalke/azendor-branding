@@ -330,31 +330,6 @@ img {
 
   .font16 {
     font-size: 11px; } }
-.subSectors-Cta {
-  margin-top: 40px; }
-  .subSectors-Cta a {
-    text-decoration: none;
-    background-color: #212121;
-    color: white;
-    border: 1px solid #212121;
-    border-radius: 60px;
-    padding: 12px 30px;
-    vertical-align: middle;
-    transition: 0.3s all ease; }
-    .subSectors-Cta a:visited, .subSectors-Cta a:active, .subSectors-Cta a:focus {
-      text-decoration: none;
-      color: white;
-      background-color: #212121;
-      border: 1px solid #212121;
-      border-radius: 60px;
-      padding: 12px 30px;
-      vertical-align: middle; }
-    .subSectors-Cta a img {
-      vertical-align: middle;
-      opacity: 1;
-      width: auto;
-      margin-left: 5px; }
-
 .slick-track {
   display: flex !important; }
 
@@ -369,26 +344,68 @@ body {
   @media all and (max-width: 1400px) {
     .founder {
       margin: 75px 0px; } }
-  .founder h1 {
+  @media all and (max-width: 920px) {
+    .founder {
+      margin: 100px 0px 80px; } }
+  @media all and (max-width: 920px) {
+    .founder .founderTitle {
+      display: flex;
+      align-items: baseline;
+      padding-bottom: 20px;
+      border-bottom: 0.75px solid rgba(33, 33, 33, 0.6); } }
+  .founder .founderTitle .backArrow {
+    display: none; }
+    @media all and (max-width: 920px) {
+      .founder .founderTitle .backArrow {
+        display: block; } }
+    .founder .founderTitle .backArrow img {
+      margin-right: 30px; }
+  .founder .founderTitle h1 {
     margin-bottom: 30px; }
+    @media all and (max-width: 920px) {
+      .founder .founderTitle h1 {
+        margin-bottom: 0px; } }
   .founder .founderBox {
     display: flex; }
+    @media all and (max-width: 920px) {
+      .founder .founderBox {
+        display: block; } }
     .founder .founderBox .profile {
       width: 35%; }
+      @media all and (max-width: 920px) {
+        .founder .founderBox .profile {
+          width: 100%;
+          margin: 20px 0px 30px; } }
+      .founder .founderBox .profile img {
+        width: 100%; }
     .founder .founderBox .founderDesc {
       width: 65%;
       padding-left: 80px; }
+      @media all and (max-width: 920px) {
+        .founder .founderBox .founderDesc {
+          width: 100%;
+          padding-left: 0px; } }
       .founder .founderBox .founderDesc .founderDescName {
         display: flex;
         align-items: end; }
+        @media all and (max-width: 920px) {
+          .founder .founderBox .founderDesc .founderDescName {
+            align-items: unset; } }
         .founder .founderBox .founderDesc .founderDescName a {
           margin-left: 45px; }
           @media all and (max-width: 1400px) {
             .founder .founderBox .founderDesc .founderDescName a {
               margin-left: 35px; } }
+          @media all and (max-width: 920px) {
+            .founder .founderBox .founderDesc .founderDescName a {
+              margin-left: 15px; } }
       .founder .founderBox .founderDesc .details {
         display: flex;
         padding: 25px 0px 40px; }
+        @media all and (max-width: 920px) {
+          .founder .founderBox .founderDesc .details {
+            flex-wrap: wrap;
+            padding: 20px 0px 30px; } }
         .founder .founderBox .founderDesc .details p {
           display: flex;
           align-items: center;
@@ -406,32 +423,97 @@ body {
                 margin-right: 10px; } }
           .founder .founderBox .founderDesc .details a:first-child {
             width: 40%; }
+            @media all and (max-width: 920px) {
+              .founder .founderBox .founderDesc .details a:first-child {
+                width: 100%;
+                margin-bottom: 10px; } }
       .founder .founderBox .founderDesc .founderDescInfo {
         width: 70%;
         line-height: 160%; }
+        @media all and (max-width: 920px) {
+          .founder .founderBox .founderDesc .founderDescInfo {
+            width: 100%;
+            display: none; } }
+      .founder .founderBox .founderDesc .founderDescInfoMobile {
+        width: 100%;
+        display: none; }
+        @media all and (max-width: 920px) {
+          .founder .founderBox .founderDesc .founderDescInfoMobile {
+            display: block;
+            margin-bottom: 10px; } }
+        .founder .founderBox .founderDesc .founderDescInfoMobile #more {
+          display: none; }
+      .founder .founderBox .founderDesc #readMore {
+        display: none; }
+        @media all and (max-width: 920px) {
+          .founder .founderBox .founderDesc #readMore {
+            font-size: 16px;
+            display: inline-block;
+            transition: 0.6s all; } }
+        .founder .founderBox .founderDesc #readMore img {
+          width: 18px;
+          height: 10px;
+          transition: 0.6s all; }
+
+body {
+  overflow: visible !important; }
 
 .legalHeader {
-  position: relative !important; }
+  position: sticky !important; }
+  @media all and (max-width: 920px) {
+    .legalHeader {
+      position: fixed !important; } }
 
 .contact {
   margin: 150px 0px; }
   @media all and (max-width: 1400px) {
     .contact {
       margin: 75px 0px; } }
+  @media all and (max-width: 920px) {
+    .contact {
+      margin: 100px 0px 80px; } }
   .contact .contactBox {
     display: flex; }
+    @media all and (max-width: 920px) {
+      .contact .contactBox {
+        display: block; } }
   .contact .contactDesc {
     width: 50%; }
+    @media all and (max-width: 920px) {
+      .contact .contactDesc .contactDescTitle {
+        display: flex;
+        align-items: baseline;
+        padding-bottom: 20px;
+        border-bottom: 0.75px solid rgba(33, 33, 33, 0.6); } }
+    .contact .contactDesc .contactDescTitle .backArrow {
+      display: none; }
+      @media all and (max-width: 920px) {
+        .contact .contactDesc .contactDescTitle .backArrow {
+          display: block; } }
+      .contact .contactDesc .contactDescTitle .backArrow img {
+        margin-right: 30px; }
+    @media all and (max-width: 920px) {
+      .contact .contactDesc {
+        width: 100%; } }
     .contact .contactDesc h2 {
       margin-bottom: 30px; }
     .contact .contactDesc p {
       width: 80%; }
+      @media all and (max-width: 920px) {
+        .contact .contactDesc p {
+          width: 100%;
+          margin-top: 20px;
+          margin-bottom: 45px; } }
   .contact .contactForm {
     width: 50%;
     margin-left: 180px; }
     @media all and (max-width: 1400px) {
       .contact .contactForm {
         margin-left: 100px; } }
+    @media all and (max-width: 920px) {
+      .contact .contactForm {
+        width: 100%;
+        margin-left: 0px; } }
     .contact .contactForm form {
       display: flex;
       flex-wrap: wrap;
@@ -447,20 +529,30 @@ body {
         resize: vertical;
         background: rgba(215, 215, 215, 0.3);
         font-size: 20px; }
-        .contact .contactForm form input[type=text]:focus, .contact .contactForm form [type=number]:focus, .contact .contactForm form [type=mail]:focus, .contact .contactForm form textarea:focus {
-          background: rgba(243, 243, 243, 0.7);
-          border: 2px solid #212121; }
         @media all and (max-width: 1400px) {
           .contact .contactForm form input[type=text], .contact .contactForm form [type=number], .contact .contactForm form [type=mail], .contact .contactForm form textarea {
             font-size: 17px;
             margin-top: 10px;
-            margin-bottom: 30px; } }
+            margin-bottom: 40px; } }
+        @media all and (max-width: 920px) {
+          .contact .contactForm form input[type=text], .contact .contactForm form [type=number], .contact .contactForm form [type=mail], .contact .contactForm form textarea {
+            font-size: 16px;
+            padding: 12px 15px; } }
+        .contact .contactForm form input[type=text]:focus, .contact .contactForm form [type=number]:focus, .contact .contactForm form [type=mail]:focus, .contact .contactForm form textarea:focus {
+          background: rgba(243, 243, 243, 0.7);
+          border: 2px solid #212121; }
+          @media all and (max-width: 920px) {
+            .contact .contactForm form input[type=text]:focus, .contact .contactForm form [type=number]:focus, .contact .contactForm form [type=mail]:focus, .contact .contactForm form textarea:focus {
+              border: 1px solid #212121; } }
       .contact .contactForm form textarea {
         margin-bottom: 20px;
         height: 166px; }
         @media all and (max-width: 1400px) {
           .contact .contactForm form textarea {
-            height: 120px; } }
+            height: 166px; } }
+        @media all and (max-width: 1400px) {
+          .contact .contactForm form textarea {
+            margin-bottom: 10px; } }
       .contact .contactForm form .submit input[type=submit] {
         background: #212121;
         border: 1px solid rgba(255, 255, 255, 0.2);
@@ -489,6 +581,19 @@ body {
         @media all and (max-width: 1400px) {
           .contact .contactForm .formDivider label {
             font-size: 14px; } }
+    .contact .contactForm .formDividerOne {
+      width: 45%; }
+      @media all and (max-width: 1400px) {
+        .contact .contactForm .formDividerOne {
+          width: 47%; } }
+      @media all and (max-width: 920px) {
+        .contact .contactForm .formDividerOne {
+          width: 100%; } }
+      .contact .contactForm .formDividerOne label {
+        font-size: 16px; }
+        @media all and (max-width: 1400px) {
+          .contact .contactForm .formDividerOne label {
+            font-size: 14px; } }
     .contact .contactForm .aboutQuery {
       width: 100%; }
       .contact .contactForm .aboutQuery label {
@@ -507,12 +612,19 @@ body {
   .contactDetails .contactDetailsBox {
     display: flex;
     margin-bottom: 60px; }
+    @media all and (max-width: 920px) {
+      .contactDetails .contactDetailsBox {
+        display: block;
+        margin-bottom: 30px; } }
     .contactDetails .contactDetailsBox .address {
       width: 75%;
       position: relative; }
       @media all and (max-width: 1400px) {
         .contactDetails .contactDetailsBox .address {
           width: 70%; } }
+      @media all and (max-width: 920px) {
+        .contactDetails .contactDetailsBox .address {
+          width: 100%; } }
       .contactDetails .contactDetailsBox .address:after {
         content: "";
         position: absolute;
@@ -521,42 +633,85 @@ body {
         opacity: 0.1;
         border: 1px solid #212121;
         top: 0; }
+        @media all and (max-width: 920px) {
+          .contactDetails .contactDetailsBox .address:after {
+            height: 100%;
+            border: 0;
+            border-bottom: 1px solid #212121;
+            left: 0px;
+            right: 0px;
+            top: 30px;
+            width: 100%; } }
       .contactDetails .contactDetailsBox .address .addTitle {
         display: flex;
         margin-bottom: 5px;
         align-items: center; }
+        @media all and (max-width: 920px) {
+          .contactDetails .contactDetailsBox .address .addTitle {
+            display: block; } }
         .contactDetails .contactDetailsBox .address .addTitle img {
           margin-right: 25px; }
           @media all and (max-width: 1400px) {
             .contactDetails .contactDetailsBox .address .addTitle img {
               width: 35px; } }
+        @media all and (max-width: 920px) {
+          .contactDetails .contactDetailsBox .address .addTitle p {
+            margin: 25px 0px 20px; } }
       .contactDetails .contactDetailsBox .address .addressBox {
         display: flex;
         margin-left: 70px; }
         @media all and (max-width: 1400px) {
           .contactDetails .contactDetailsBox .address .addressBox {
             margin-left: 60px; } }
+        @media all and (max-width: 920px) {
+          .contactDetails .contactDetailsBox .address .addressBox {
+            display: block;
+            margin-left: 0px; } }
         .contactDetails .contactDetailsBox .address .addressBox .addressBoxDetails {
           width: 30.7%; }
+          @media all and (max-width: 920px) {
+            .contactDetails .contactDetailsBox .address .addressBox .addressBoxDetails {
+              width: 100%;
+              margin-bottom: 20px; } }
+          @media all and (max-width: 920px) {
+            .contactDetails .contactDetailsBox .address .addressBox .addressBoxDetails h4 {
+              margin-bottom: 7px;
+              font-size: 16px; } }
+          @media all and (max-width: 920px) {
+            .contactDetails .contactDetailsBox .address .addressBox .addressBoxDetails p {
+              font-size: 16px; } }
     .contactDetails .contactDetailsBox .contactRight {
       width: 25%; }
       @media all and (max-width: 1400px) {
         .contactDetails .contactDetailsBox .contactRight {
           width: 30%; } }
+      @media all and (max-width: 920px) {
+        .contactDetails .contactDetailsBox .contactRight {
+          width: 100%;
+          margin: 60px 0px 30px; } }
       .contactDetails .contactDetailsBox .contactRight .addTitle {
         display: flex;
         margin-bottom: 5px;
         align-items: center; }
+        @media all and (max-width: 920px) {
+          .contactDetails .contactDetailsBox .contactRight .addTitle {
+            display: block; } }
         .contactDetails .contactDetailsBox .contactRight .addTitle img {
           margin-right: 25px; }
           @media all and (max-width: 1400px) {
             .contactDetails .contactDetailsBox .contactRight .addTitle img {
               width: 35px; } }
+        @media all and (max-width: 920px) {
+          .contactDetails .contactDetailsBox .contactRight .addTitle p {
+            margin: 25px 0px 20px; } }
       .contactDetails .contactDetailsBox .contactRight .contactRightDetails {
         margin-left: 70px; }
         @media all and (max-width: 1400px) {
           .contactDetails .contactDetailsBox .contactRight .contactRightDetails {
             margin-left: 60px; } }
+        @media all and (max-width: 920px) {
+          .contactDetails .contactDetailsBox .contactRight .contactRightDetails {
+            margin-left: 0px; } }
         .contactDetails .contactDetailsBox .contactRight .contactRightDetails p {
           margin-bottom: 5px;
           margin-bottom: 5px; }
@@ -565,6 +720,9 @@ body {
   .contactDetails .info {
     display: flex;
     align-items: center; }
+    @media all and (max-width: 920px) {
+      .contactDetails .info {
+        align-items: self-start; } }
     .contactDetails .info img {
       margin-right: 10px; }
       @media all and (max-width: 1400px) {
@@ -573,17 +731,13 @@ body {
 
 .legalAdvisory {
   margin: 150px 0px; }
-  .legalAdvisory .legalAdvisorySection {
+  .legalAdvisory .legalAdvisorySection .legalAdvisorySectionBox {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; }
-    .legalAdvisory .legalAdvisorySection .legalAdvisorySectionBox {
+    .legalAdvisory .legalAdvisorySection .legalAdvisorySectionBox a {
       display: flex;
-      flex-wrap: wrap;
+      align-items: center;
       justify-content: space-between; }
-      .legalAdvisory .legalAdvisorySection .legalAdvisorySectionBox a {
-        display: flex;
-        align-items: center;
-        justify-content: space-between; }
 
 /*# sourceMappingURL=legal_innerpage.css.map */
