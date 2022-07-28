@@ -455,6 +455,9 @@ body {
           height: 10px;
           transition: 0.6s all; }
 
+body {
+  overflow: visible !important; }
+
 .legalHeader {
   position: sticky !important; }
   @media all and (max-width: 920px) {
