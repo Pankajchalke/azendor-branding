@@ -36,11 +36,11 @@
 
             <div id="sideMenu">
                 <ul class="sideMenuInner">
-                    <li class="fontPoppins font18 colorBlack fontW400" onclick="hideSidebar()">
+                    <li class="fontPoppins font18 colorBlack fontW400">
                         <div class="dropdown">
                             <a class="menu-link active drop" href="#bannerSec"
                                 data-menuanchor="bannerSec">Solutions<span class="down-caret"></span></a>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu" onclick="hideSidebar()">
                                 <li><a href="#" class="fontPoppins fontW400 font18">Legal Advisory</a></li>
                                 <li><a href="#" class="fontPoppins fontW400 font18">General Counsel</a></li>
                                 <li><a href="#" class="fontPoppins fontW400 font18">Legal Audit</a></li>
@@ -49,10 +49,11 @@
                         </div>
 
                     </li>
-                    <li class="fontPoppins font18 colorBlack fontW400" onclick="hideSidebar()">
+                    <li class="fontPoppins font18 colorBlack fontW400">
                         <div class="dropdown">
-                            <a class="menu-link drop" href="#serviceSec" data-menuanchor="serviceSec">Sectors <span class="down-caret"></span></a>
-                            <ul class="dropdown-menu sector">
+                            <a class="menu-link drop" href="#serviceSec" data-menuanchor="serviceSec">Sectors <span
+                                    class="down-caret"></span></a>
+                            <ul class="dropdown-menu sector" onclick="hideSidebar()">
                                 <li><a href="#" class="fontPoppins fontW400 font18">Television</a></li>
                                 <li><a href="#" class="fontPoppins fontW400 font18">Film</a></li>
                                 <li><a href="#" class="fontPoppins fontW400 font18">OTT Platform</a></li>
@@ -70,15 +71,15 @@
                     </li>
                     <li onclick="hideSidebar()" class="fontPoppins font18 colorBlack fontW400"><a class="menu-link"
                             href="#teamSection" data-menuanchor="teamSection">Careers</a></li>
-                    <li onclick="hideSidebar()" class="fontPoppins font18 colorBlack fontW400">
+                    <li class="fontPoppins font18 colorBlack fontW400">
                         <div class="dropdown">
-                        <a class="menu-link drop"
-                            href="#clientsBox" data-menuanchor="clientsBox">About <span class="down-caret"></span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#" class="fontPoppins fontW400 font18">Who we are</a></li>
-                            <li><a href="#" class="fontPoppins fontW400 font18">Founder</a></li>
-                        </ul>
+                            <a class="menu-link drop" href="#clientsBox" data-menuanchor="clientsBox">About <span
+                                    class="down-caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" onclick="hideSidebar()">
+                                <li><a href="#" class="fontPoppins fontW400 font18">Who we are</a></li>
+                                <li><a href="#" class="fontPoppins fontW400 font18">Founder</a></li>
+                            </ul>
                         </div>
                     </li>
                     <li onclick="hideSidebar()" class="fontPoppins font18 colorBlack fontW400"><a
@@ -141,7 +142,6 @@
         </ul>
     </div>
 
-
     <!-- progress bar for mobile -->
     <div class="progress-container-mobile">
         <div class="progress-bar-mobile"></div>
@@ -152,7 +152,10 @@
 </div>
 <section class="founder">
     <div class="wrapper">
-        <h1 class="fontRoboto font64 fontW700 colorBlack">Founder</h1>
+        <div class="founderTitle">
+            <a class="backArrow" href="#"><img src="images/legal/back-arrow.svg"></a>
+            <h1 class="fontRoboto font64 fontW700 colorBlack">Founder</h1>
+        </div>
         <div class="founderBox">
             <div class="profile">
                 <img src="images/founder-profile.svg">
@@ -171,6 +174,9 @@
                     <a href="mailto: indranil.banerjee@azendor.com" class="fontPoppins fontW400 font22 colorBlack"><img src="images/mail.svg"> indranil.banerjee@azendor.com</a>
                 </div>
                 <p class="fontPoppins fontW400 font22 colorBlack founderDescInfo">A business lawyer, Indranil has a rich and varied experience of over 22 years. He was associated with leading law firms and has represented a wide range of clients (including Fortune 500 clients) from the United States, Europe and Asia Pacific in the areas of corporate & commercial law as well as dispute resolution. In corporate sector, he has held leadership positions at Star India (a leading broadcaster) and DEN Networks (a leading cable TV distribution company).</p>
+
+                <p class="fontPoppins fontW400 font22 colorBlack founderDescInfoMobile">A business lawyer, Indranil has a rich and varied experience of over 22 years. He was associated with leading law firms and has represented a wide range of clients (including Fortune 500 clients) from the United States<span id="dots">...</span><span id="more">, Europe and Asia Pacific in the areas of corporate & commercial law as well as dispute resolution. In corporate sector, he has held leadership positions at Star India (a leading broadcaster) and DEN Networks (a leading cable TV distribution company).</span></p>
+                <p onclick="myFunction()" class="fontPoppins fontW500 colorBlack" id="readMore">Read More <img src="images/legal/solution-arrow.svg"></p>
             </div>
         </div>
     </div>
@@ -179,13 +185,13 @@
     <div class="wrapper">
         <div class="footerSec">
             <div class="footerSub">
-                <a href="#"><img src="images/legal-footer-logo.svg"></a>
+                <a href="#" class="footerLogo"><img src="images/legal-footer-logo.svg"></a>
                 <div class="socialmediaIcons">
                     <ul>
-                        <li><a href="#"><img src="images/linkdin-footer.png"></a></li>
-                        <li><a href="#"><img src="images/twitter.png"></a></li>
-                        <li><a href="#"><img src="images/facebook.png"></a></li>
-                        <li><a href="#"><img src="images/youtube.png"></a></li>
+                        <li><a href="#"><img src="images/legal/linkdin-footer.svg"></a></li>
+                        <li><a href="#"><img src="images/legal/twitter.svg"></a></li>
+                        <li><a href="#"><img src="images/legal/facebook.svg"></a></li>
+                        <li><a href="#"><img src="images/legal/youtube.svg"></a></li>
                     </ul>
                 </div>
             </div>
@@ -209,19 +215,11 @@
                             <li> <a href="#" class="colorW fontW400 font22 fontPoppins">Online Gaming</a></li>
                             <li><a href="#" class="colorW fontW400 font22 fontPoppins">Live Events</a></li>
                             <li><a href="#" class="colorW fontW400 font22 fontPoppins">Radio</a></li>
-                        </ul>
-                    </div>
-                    <div class="sectorftSub">
-                        <ul>
                             <li><a href="#" class="colorW fontW400 font22 fontPoppins">Film</a></li>
                             <li><a href="#" class="colorW fontW400 font22 fontPoppins">Print</a></li>
                             <li><a href="#" class="colorW fontW400 font22 fontPoppins"> Animation/ VFX</a></li>
                             <li><a href="#" class="colorW fontW400 font22 fontPoppins"> Sports</a></li>
-                        </ul>
-                    </div>
-                    <div class="sectorftSub">
-                        <ul>
-                            <li> <a href="#" class="colorW fontW400 font22 fontPoppins">OTT Platform</a></li>
+                            <li><a href="#" class="colorW fontW400 font22 fontPoppins">OTT Platform</a></li>
                             <li><a href="#" class="colorW fontW400 font22 fontPoppins">OOH</a></li>
                             <li><a href="#" class="colorW fontW400 font22 fontPoppins">Music</a></li>
                             <li><a href="#" class="colorW fontW400 font22 fontPoppins"> Advertising</a></li>
@@ -243,6 +241,17 @@
                     <li><a href="#" class="colorW fontW400 font22 fontPoppins">Contact</a></li>
                 </ul>
             </div>
+
+            <div class="socialmediaIcons-btm">
+                <ul>
+                    <li><a href="#"><img src="images/legal/linkdin-footer.svg"></a></li>
+                    <li><a href="#"><img src="images/legal/twitter.svg"></a></li>
+                    <li><a href="#"><img src="images/legal/facebook.svg"></a></li>
+                    <li><a href="#"><img src="images/legal/youtube.svg"></a></li>
+                </ul>
+            </div>
+
+
         </div>
         <div class="footerLinks">
             <div class="linksFt">
@@ -250,16 +259,20 @@
                 <a href="#" class="fontPoppins fontW500 font20 colordarkGray">Privacy Policy</a>
             </div>
             <div>
-                <p class="colorW fontW400 font20 fontPoppins"><img src="images/footer-text-icon.png"> 2022 Azendor
+                <p class="colorW fontW400 font20 fontPoppins copyRight"><img
+                        src="images/legal/footer-text-icon.svg"> 2022
+                    Azendor
                     Consulting Pvt. Ltd, all rights reserved.</p>
             </div>
         </div>
     </div>
+
 </footer>
 
 
 <!-- <script src="js/custom.js"></script> -->
 <script src="js/jquery-3.3.1.min.js"></script> 
+<script src="js/plugins.js"></script>
 <script src="js/custom.js"></script>
 <script>
     $(document).ready(function () {
@@ -285,6 +298,26 @@
             });
         });
     });
+
+</script>
+
+
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("readMore");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more <img src=images/legal/solution-arrow.svg>"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less <img src=images/legal/solution-arrow.svg>"; 
+    moreText.style.display = "inline";
+  }
+}
 
 </script>
    
