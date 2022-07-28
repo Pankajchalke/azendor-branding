@@ -1463,28 +1463,56 @@ section {
   @media all and (max-width: 1400px) {
     .contact {
       margin: 75px 0px; } }
+  @media all and (max-width: 920px) {
+    .contact {
+      margin: 100px 0px 80px; } }
   .contact .contactBox {
     display: flex; }
+    @media all and (max-width: 920px) {
+      .contact .contactBox {
+        display: block; } }
   .contact .contactDesc {
     width: 50%; }
+    @media all and (max-width: 920px) {
+      .contact .contactDesc .contactDescTitle {
+        display: flex;
+        align-items: baseline;
+        padding-bottom: 20px;
+        border-bottom: 0.75px solid rgba(33, 33, 33, 0.6); } }
+    .contact .contactDesc .contactDescTitle .backArrow {
+      display: none; }
+      @media all and (max-width: 920px) {
+        .contact .contactDesc .contactDescTitle .backArrow {
+          display: block; } }
+      .contact .contactDesc .contactDescTitle .backArrow img {
+        margin-right: 30px; }
+    @media all and (max-width: 920px) {
+      .contact .contactDesc {
+        width: 100%; } }
     .contact .contactDesc h2 {
       margin-bottom: 30px; }
     .contact .contactDesc p {
       width: 80%; }
+      @media all and (max-width: 920px) {
+        .contact .contactDesc p {
+          width: 100%;
+          margin-top: 20px;
+          margin-bottom: 45px; } }
   .contact .contactForm {
     width: 50%;
     margin-left: 180px; }
     @media all and (max-width: 1400px) {
       .contact .contactForm {
         margin-left: 100px; } }
+    @media all and (max-width: 920px) {
+      .contact .contactForm {
+        width: 100%;
+        margin-left: 0px; } }
     .contact .contactForm form {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between; }
-      .contact .contactForm form input[type=text],
-      .contact .contactForm form [type=number],
-      .contact .contactForm form [type=mail],
-      .contact .contactForm form textarea {
+      .contact .contactForm form input[type=text], .contact .contactForm form [type=number], .contact .contactForm form [type=mail], .contact .contactForm form textarea {
         width: 100%;
         padding: 14px 15px;
         border: 2px solid transparent;
@@ -1495,26 +1523,30 @@ section {
         resize: vertical;
         background: rgba(215, 215, 215, 0.3);
         font-size: 20px; }
-        .contact .contactForm form input[type=text]:focus,
-        .contact .contactForm form [type=number]:focus,
-        .contact .contactForm form [type=mail]:focus,
-        .contact .contactForm form textarea:focus {
-          background: rgba(243, 243, 243, 0.7);
-          border: 2px solid #212121; }
         @media all and (max-width: 1400px) {
-          .contact .contactForm form input[type=text],
-          .contact .contactForm form [type=number],
-          .contact .contactForm form [type=mail],
-          .contact .contactForm form textarea {
+          .contact .contactForm form input[type=text], .contact .contactForm form [type=number], .contact .contactForm form [type=mail], .contact .contactForm form textarea {
             font-size: 17px;
             margin-top: 10px;
-            margin-bottom: 30px; } }
+            margin-bottom: 40px; } }
+        @media all and (max-width: 920px) {
+          .contact .contactForm form input[type=text], .contact .contactForm form [type=number], .contact .contactForm form [type=mail], .contact .contactForm form textarea {
+            font-size: 16px;
+            padding: 12px 15px; } }
+        .contact .contactForm form input[type=text]:focus, .contact .contactForm form [type=number]:focus, .contact .contactForm form [type=mail]:focus, .contact .contactForm form textarea:focus {
+          background: rgba(243, 243, 243, 0.7);
+          border: 2px solid #212121; }
+          @media all and (max-width: 920px) {
+            .contact .contactForm form input[type=text]:focus, .contact .contactForm form [type=number]:focus, .contact .contactForm form [type=mail]:focus, .contact .contactForm form textarea:focus {
+              border: 1px solid #212121; } }
       .contact .contactForm form textarea {
         margin-bottom: 20px;
         height: 166px; }
         @media all and (max-width: 1400px) {
           .contact .contactForm form textarea {
-            height: 120px; } }
+            height: 166px; } }
+        @media all and (max-width: 1400px) {
+          .contact .contactForm form textarea {
+            margin-bottom: 10px; } }
       .contact .contactForm form .submit input[type=submit] {
         background: #212121;
         border: 1px solid rgba(255, 255, 255, 0.2);
@@ -1543,6 +1575,19 @@ section {
         @media all and (max-width: 1400px) {
           .contact .contactForm .formDivider label {
             font-size: 14px; } }
+    .contact .contactForm .formDividerOne {
+      width: 45%; }
+      @media all and (max-width: 1400px) {
+        .contact .contactForm .formDividerOne {
+          width: 47%; } }
+      @media all and (max-width: 920px) {
+        .contact .contactForm .formDividerOne {
+          width: 100%; } }
+      .contact .contactForm .formDividerOne label {
+        font-size: 16px; }
+        @media all and (max-width: 1400px) {
+          .contact .contactForm .formDividerOne label {
+            font-size: 14px; } }
     .contact .contactForm .aboutQuery {
       width: 100%; }
       .contact .contactForm .aboutQuery label {
@@ -1561,12 +1606,19 @@ section {
   .contactDetails .contactDetailsBox {
     display: flex;
     margin-bottom: 60px; }
+    @media all and (max-width: 920px) {
+      .contactDetails .contactDetailsBox {
+        display: block;
+        margin-bottom: 30px; } }
     .contactDetails .contactDetailsBox .address {
       width: 75%;
       position: relative; }
       @media all and (max-width: 1400px) {
         .contactDetails .contactDetailsBox .address {
           width: 70%; } }
+      @media all and (max-width: 920px) {
+        .contactDetails .contactDetailsBox .address {
+          width: 100%; } }
       .contactDetails .contactDetailsBox .address:after {
         content: "";
         position: absolute;
@@ -1575,42 +1627,85 @@ section {
         opacity: 0.1;
         border: 1px solid #212121;
         top: 0; }
+        @media all and (max-width: 920px) {
+          .contactDetails .contactDetailsBox .address:after {
+            height: 100%;
+            border: 0;
+            border-bottom: 1px solid #212121;
+            left: 0px;
+            right: 0px;
+            top: 30px;
+            width: 100%; } }
       .contactDetails .contactDetailsBox .address .addTitle {
         display: flex;
         margin-bottom: 5px;
         align-items: center; }
+        @media all and (max-width: 920px) {
+          .contactDetails .contactDetailsBox .address .addTitle {
+            display: block; } }
         .contactDetails .contactDetailsBox .address .addTitle img {
           margin-right: 25px; }
           @media all and (max-width: 1400px) {
             .contactDetails .contactDetailsBox .address .addTitle img {
               width: 35px; } }
+        @media all and (max-width: 920px) {
+          .contactDetails .contactDetailsBox .address .addTitle p {
+            margin: 25px 0px 20px; } }
       .contactDetails .contactDetailsBox .address .addressBox {
         display: flex;
         margin-left: 70px; }
         @media all and (max-width: 1400px) {
           .contactDetails .contactDetailsBox .address .addressBox {
             margin-left: 60px; } }
+        @media all and (max-width: 920px) {
+          .contactDetails .contactDetailsBox .address .addressBox {
+            display: block;
+            margin-left: 0px; } }
         .contactDetails .contactDetailsBox .address .addressBox .addressBoxDetails {
           width: 30.7%; }
+          @media all and (max-width: 920px) {
+            .contactDetails .contactDetailsBox .address .addressBox .addressBoxDetails {
+              width: 100%;
+              margin-bottom: 20px; } }
+          @media all and (max-width: 920px) {
+            .contactDetails .contactDetailsBox .address .addressBox .addressBoxDetails h4 {
+              margin-bottom: 7px;
+              font-size: 16px; } }
+          @media all and (max-width: 920px) {
+            .contactDetails .contactDetailsBox .address .addressBox .addressBoxDetails p {
+              font-size: 16px; } }
     .contactDetails .contactDetailsBox .contactRight {
       width: 25%; }
       @media all and (max-width: 1400px) {
         .contactDetails .contactDetailsBox .contactRight {
           width: 30%; } }
+      @media all and (max-width: 920px) {
+        .contactDetails .contactDetailsBox .contactRight {
+          width: 100%;
+          margin: 60px 0px 30px; } }
       .contactDetails .contactDetailsBox .contactRight .addTitle {
         display: flex;
         margin-bottom: 5px;
         align-items: center; }
+        @media all and (max-width: 920px) {
+          .contactDetails .contactDetailsBox .contactRight .addTitle {
+            display: block; } }
         .contactDetails .contactDetailsBox .contactRight .addTitle img {
           margin-right: 25px; }
           @media all and (max-width: 1400px) {
             .contactDetails .contactDetailsBox .contactRight .addTitle img {
               width: 35px; } }
+        @media all and (max-width: 920px) {
+          .contactDetails .contactDetailsBox .contactRight .addTitle p {
+            margin: 25px 0px 20px; } }
       .contactDetails .contactDetailsBox .contactRight .contactRightDetails {
         margin-left: 70px; }
         @media all and (max-width: 1400px) {
           .contactDetails .contactDetailsBox .contactRight .contactRightDetails {
             margin-left: 60px; } }
+        @media all and (max-width: 920px) {
+          .contactDetails .contactDetailsBox .contactRight .contactRightDetails {
+            margin-left: 0px; } }
         .contactDetails .contactDetailsBox .contactRight .contactRightDetails p {
           margin-bottom: 5px;
           margin-bottom: 5px; }
@@ -1619,6 +1714,9 @@ section {
   .contactDetails .info {
     display: flex;
     align-items: center; }
+    @media all and (max-width: 920px) {
+      .contactDetails .info {
+        align-items: self-start; } }
     .contactDetails .info img {
       margin-right: 10px; }
       @media all and (max-width: 1400px) {
