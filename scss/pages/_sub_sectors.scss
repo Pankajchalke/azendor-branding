@@ -1,8 +1,9 @@
-.subSectors {
-    margin-top: 100px;
-    color: #212121;
 
-    .subSectors-heading {
+.legalHeader{position:sticky !important;}
+
+.subSectors {
+margin: 150px 0px;
+.subSectors-heading {
         margin-bottom: 30px;
     }
 
@@ -20,7 +21,7 @@
     }
 
     .subSectors-Cta {
-        margin-top: 40px;
+        margin-top: 150px;
         display: inline-block;
        
 

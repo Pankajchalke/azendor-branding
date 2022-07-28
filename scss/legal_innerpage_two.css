@@ -361,8 +361,11 @@ img {
 .slick-slide {
   height: inherit !important; }
 
+.legalHeader {
+  position: sticky !important; }
+
 .aboutUs {
-  margin-top: 100px;
+  margin: 150px 0px;
   color: #212121; }
   .aboutUs .about-heading {
     margin-bottom: 30px; }
@@ -425,10 +428,12 @@ img {
 body {
   background-color: white !important; }
 
+.legalHeader {
+  position: sticky !important; }
+
 .careers {
   color: #212121;
-  margin-top: 150px;
-  margin-bottom: 150px; }
+  margin: 150px 0px; }
   .careers .careers-heading {
     margin-bottom: 30px; }
   .careers .careers-content {
@@ -461,9 +466,11 @@ body {
     .careers .careers-content {
       width: 100%; } }
 
+.legalHeader {
+  position: sticky !important; }
+
 .subSectors {
-  margin-top: 100px;
-  color: #212121; }
+  margin: 150px 0px; }
   .subSectors .subSectors-heading {
     margin-bottom: 30px; }
   .subSectors .subSectors-content {
@@ -475,7 +482,7 @@ body {
       text-transform: capitalize;
       font-family: 'Poppins' !important; }
   .subSectors .subSectors-Cta {
-    margin-top: 40px;
+    margin-top: 150px;
     display: inline-block; }
     .subSectors .subSectors-Cta a {
       text-decoration: none;
