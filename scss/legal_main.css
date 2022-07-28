@@ -921,14 +921,17 @@ section {
           border-top: 1px solid #000; }
           .solutionSec .solutionSlider .slick-track .solutionBox .solutionContent a {
             text-decoration: none;
-            color: #000; }
+            color: #000;
+            display: flex;
+            align-items: center; }
             .solutionSec .solutionSlider .slick-track .solutionBox .solutionContent a img {
               margin-top: 4px;
               transition: 0.6s all;
               width: 23px;
-              height: 11px; }
+              height: 11px;
+              margin-left: 5px; }
             .solutionSec .solutionSlider .slick-track .solutionBox .solutionContent a:hover img {
-              transform: translateX(5px); }
+              transform: translateX(10px); }
         .solutionSec .solutionSlider .slick-track .solutionBox:hover {
           border: 1px solid #212121; }
         .solutionSec .solutionSlider .slick-track .solutionBox h3,
@@ -985,6 +988,9 @@ section {
             height: 530px;
             margin-bottom: 20px;
             margin: 0px 10px; }
+            .solutionSec .solutionSlider .slick-track .solutionBox .solutionContent a img {
+              width: 18px;
+              height: 9px; }
             .solutionSec .solutionSlider .slick-track .solutionBox h3,
             .solutionSec .solutionSlider .slick-track .solutionBox p {
               line-height: 21px; } }
@@ -1011,16 +1017,20 @@ section {
   .sectors .sectorsliderDesktop .sectorBox .sectorContent a,
   .sectors .sectorsliderMobile .sectorBox .sectorContent a {
     text-decoration: none;
-    color: #000; }
+    color: #000;
+    display: flex;
+    align-items: center; }
     .sectors .sectorsliderDesktop .sectorBox .sectorContent a img,
     .sectors .sectorsliderMobile .sectorBox .sectorContent a img {
       width: 23px;
       height: 11px;
       display: inline-block;
-      transition: 0.6s all; }
+      transition: 0.6s all;
+      margin-left: 5px;
+      margin-top: 4px; }
     .sectors .sectorsliderDesktop .sectorBox .sectorContent a:hover img,
     .sectors .sectorsliderMobile .sectorBox .sectorContent a:hover img {
-      transform: translateX(5px); }
+      transform: translateX(10px); }
 .sectors .sectorsliderDesktop .slick-prev,
 .sectors .sectorsliderDesktop .slick-next,
 .sectors .sectorsliderMobile .slick-prev,
@@ -1175,7 +1185,11 @@ section {
   .sectors .sectorsliderDesktop .sectorBox .sectorContent,
   .sectors .sectorsliderMobile .sectorBox .sectorContent {
     margin: 10px 15px;
-    padding: 30px; } }
+    padding: 30px; }
+    .sectors .sectorsliderDesktop .sectorBox .sectorContent a img,
+    .sectors .sectorsliderMobile .sectorBox .sectorContent a img {
+      width: 18px;
+      height: 9px; } }
 
 .advantageSec {
   background-color: #FAFAFA;
@@ -1258,6 +1272,14 @@ section {
 
 .testlegalSec {
   overflow: hidden !important; }
+  .testlegalSec h2 {
+    margin-bottom: 60px; }
+  @media all and (max-width: 1650px) {
+    .testlegalSec h2 {
+      margin-bottom: 30px; } }
+  @media all and (max-width: 1650px) {
+    .testlegalSec h2 {
+      margin-bottom: 15px; } }
   .testlegalSec .testlegalSlider .slick-slide {
     margin: 0 26px; }
     @media (max-width: 480px) {
@@ -1380,23 +1402,34 @@ section {
     .testlegalSec .testlegalSlider .testimonialsLegal .profile {
       width: 26%;
       margin-left: -65px; }
+      @media (max-width: 1650px) {
+        .testlegalSec .testlegalSlider .testimonialsLegal .profile {
+          margin-left: -30px; }
+          .testlegalSec .testlegalSlider .testimonialsLegal .profile img {
+            margin: 0 auto;
+            height: 150px;
+            width: 150px; } }
+      @media (max-width: 1400px) {
+        .testlegalSec .testlegalSlider .testimonialsLegal .profile {
+          margin-left: 0px; }
+          .testlegalSec .testlegalSlider .testimonialsLegal .profile img {
+            height: 130px;
+            width: 130px; } }
+      @media (max-width: 1280px) {
+        .testlegalSec .testlegalSlider .testimonialsLegal .profile img {
+          height: 110px;
+          width: 110px; } }
       @media (max-width: 920px) {
         .testlegalSec .testlegalSlider .testimonialsLegal .profile {
           width: 100%;
           display: flex;
           align-items: center;
-          border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-          padding-bottom: 20px; } }
-      .testlegalSec .testlegalSlider .testimonialsLegal .profile img {
-        margin: 0 auto;
-        max-width: 100%; }
-        @media (max-width: 920px) {
+          border-bottom: 1px solid rgba(106, 106, 106, 0.1);
+          padding-bottom: 20px; }
           .testlegalSec .testlegalSlider .testimonialsLegal .profile img {
             margin: 0;
-            width: 150px; } }
-        @media (max-width: 575px) {
-          .testlegalSec .testlegalSlider .testimonialsLegal .profile img {
-            width: 80px; } }
+            width: 80px;
+            height: 80px; } }
       .testlegalSec .testlegalSlider .testimonialsLegal .profile .profileInfo {
         margin-top: 20px; }
         @media (max-width: 920px) {
@@ -1443,13 +1476,23 @@ section {
           display: none; } }
     .testlegalSec .testlegalSlider .testimonialsLegal .testlegalMobile {
       display: none; }
+      .testlegalSec .testlegalSlider .testimonialsLegal .testlegalMobile a {
+        text-decoration: none;
+        color: #000;
+        display: flex;
+        align-items: center; }
+        .testlegalSec .testlegalSlider .testimonialsLegal .testlegalMobile a img {
+          margin-top: 4px;
+          transition: 0.6s all;
+          width: 18px;
+          height: 9px;
+          position: unset;
+          margin-left: 5px; }
+        .testlegalSec .testlegalSlider .testimonialsLegal .testlegalMobile a:hover img {
+          transform: translateX(10px); }
       @media (max-width: 920px) {
         .testlegalSec .testlegalSlider .testimonialsLegal .testlegalMobile {
           display: block; } }
-      .testlegalSec .testlegalSlider .testimonialsLegal .testlegalMobile a:visited, .testlegalSec .testlegalSlider .testimonialsLegal .testlegalMobile a:hover, .testlegalSec .testlegalSlider .testimonialsLegal .testlegalMobile a:active, .testlegalSec .testlegalSlider .testimonialsLegal .testlegalMobile a:focus {
-        outline: none;
-        text-decoration: none;
-        color: #6A6A6A; }
 
 .clientlogoSec .logosSlider {
   display: block; }

@@ -883,6 +883,8 @@ section {
                     a {
                         text-decoration: none;
                         color: #000;
+                        display: flex;
+                        align-items: center;
 
 
                         img {
@@ -890,11 +892,12 @@ section {
                             transition: 0.6s all;
                             width: 23px;
                             height: 11px;
+                            margin-left: 5px;
                         }
 
                         &:hover {
                             img {
-                                transform: translateX(5px);
+                                transform: translateX(10px);
                             }
                         }
                     }
@@ -1007,6 +1010,14 @@ section {
                     height: 530px;
                     margin-bottom: 20px;
                     margin: 0px 10px;
+                    .solutionContent{
+                        a{
+                            img{
+                                width: 18px;
+                                height: 9px;
+                            }
+                        }
+                    }
 
                     h3,
                     p {
@@ -1056,17 +1067,21 @@ section {
                 a {
                     text-decoration: none;
                     color: #000;
+                    display: flex;
+                    align-items: center;
 
                     img {
                         width: 23px;
                         height: 11px;
                         display: inline-block;
                         transition: 0.6s all;
+                        margin-left: 5px;
+                        margin-top: 4px;
                     }
 
                     &:hover {
                         img {
-                            transform: translateX(5px);
+                            transform: translateX(10px);
                         }
                     }
                 }
@@ -1278,6 +1293,13 @@ section {
             .sectorContent {
                 margin: 10px 15px;
                 padding: 30px;
+
+                a{
+                    img{
+                        width: 18px;
+                        height: 9px;
+                    }
+                }
             }
         }
 
@@ -1434,6 +1456,19 @@ section {
 
 .testlegalSec {
     overflow: hidden !important;
+    h2{
+        margin-bottom: 60px;
+    }
+    @media all and (max-width: 1650px){
+        h2{
+            margin-bottom: 30px;
+        }
+    }
+    @media all and (max-width: 1650px){
+        h2{
+            margin-bottom: 15px;
+        }
+    }
 
     .testlegalSlider {
         .slick-slide {
@@ -1626,29 +1661,43 @@ section {
                 width: 26%;
                 margin-left: -65px;
 
+                @media (max-width: 1650px) {
+                    margin-left: -30px;
+                    img{
+                        margin: 0 auto;
+                        height: 150px;
+                        width: 150px;
+                    }
+                }
+                @media (max-width: 1400px) {
+                    margin-left: 0px;
+                    img{
+                        height: 130px;
+                        width: 130px;
+                    }
+                }
+                @media (max-width: 1280px) {
+                   img{
+                        height: 110px;
+                        width: 110px;
+                    }
+                }
+
                 @media (max-width: 920px) {
                     width: 100%;
                     display: flex;
                     //text-align: center;
                     align-items: center;
-                    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                    border-bottom: 1px solid rgba(106, 106, 106, 0.1);
                     padding-bottom: 20px;
-                }
-
-                img {
-                    margin: 0 auto;
-                    max-width: 100%;
-
-                    //@media (max-width: 1400px){width:150px;}
-                    @media (max-width: 920px) {
+                    img{
                         margin: 0;
-                        width: 150px;
-                    }
-
-                    @media (max-width: 575px) {
                         width: 80px;
+                        height: 80px;
                     }
                 }
+
+                
 
                 .profileInfo {
                     margin-top: 20px;
@@ -1722,21 +1771,34 @@ section {
             .testlegalMobile {
                 display: none;
 
+                a {
+                    text-decoration: none;
+                    color: #000;
+                    display: flex;
+                    align-items: center;
+
+
+                    img {
+                        margin-top: 4px;
+                        transition: 0.6s all;
+                        width: 18px;
+                        height: 9px;
+                        position: unset;
+                        margin-left: 5px;
+                    }
+
+                    &:hover {
+                        img {
+                            transform: translateX(10px);
+                        }
+                    }
+                }
+
                 @media (max-width: 920px) {
                     display: block;
                 }
 
-                a {
-
-                    &:visited,
-                    &:hover,
-                    &:active,
-                    &:focus {
-                        outline: none;
-                        text-decoration: none;
-                        color: #6A6A6A;
-                    }
-                }
+                
             }
 
         }
