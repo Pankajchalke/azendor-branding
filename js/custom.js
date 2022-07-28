@@ -175,7 +175,7 @@ if ($(".solutionSlider").length) {
 if ($(".sectorSlider").length) {
   $(".sectorSlider").slick({
     dots: false,
-    infinite: true,
+    infinite: false,
     arrows: true,
     speed: 800,
     autoplay: false,
@@ -423,16 +423,16 @@ if ($(".testimonialsSlider").length) {
 
 if ($(".testlegalSlider").length) {
   $(".testlegalSlider").slick({
-    centerMode: true,
-    centerPadding: "17%",
+    speed: 800,
+    autoplay: false,
+    autoplaySpeed: 2000,
+    slidesToShow: 4,
     slidesToShow: 1,
     responsive: [
       {
         breakpoint: 1400,
         settings: {
-          arrows: true,
-          centerMode: true,
-          centerPadding: "15%",
+          arrows: true,         
           slidesToShow: 1,
         },
       },
@@ -440,8 +440,6 @@ if ($(".testlegalSlider").length) {
         breakpoint: 768,
         settings: {
           arrows: true,
-          centerMode: true,
-          centerPadding: "15%",
           slidesToShow: 1,
         },
       },
@@ -449,9 +447,32 @@ if ($(".testlegalSlider").length) {
         breakpoint: 480,
         settings: {
           arrows: true,
-          centerMode: true,
-          centerPadding: "15%",
           slidesToShow: 1,
+        },
+      },
+    ],
+  });
+}
+
+
+
+
+if ($(".logosSlider").length) {
+  $(".logosSlider").slick({
+    dots: false,
+    infinite: true,
+    arrows: false,
+    speed: 500,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    slidesToShow: 8,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 700,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
         },
       },
     ],
