@@ -571,4 +571,19 @@ body {
         .contactDetails .info img {
           width: 20px; } }
 
+.legalAdvisory {
+  margin: 150px 0px; }
+  .legalAdvisory .legalAdvisorySection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .legalAdvisory .legalAdvisorySection .legalAdvisorySectionBox {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      .legalAdvisory .legalAdvisorySection .legalAdvisorySectionBox a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; }
+
 /*# sourceMappingURL=legal_innerpage.css.map */
