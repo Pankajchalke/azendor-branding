@@ -343,7 +343,7 @@ body {
   margin: 150px 0px; }
   @media all and (max-width: 1400px) {
     .founder {
-      margin: 75px 0px; } }
+      margin: 100px 0px; } }
   @media all and (max-width: 920px) {
     .founder {
       margin: 100px 0px 80px; } }
@@ -361,7 +361,10 @@ body {
     .founder .founderTitle .backArrow img {
       margin-right: 30px; }
   .founder .founderTitle h1 {
-    margin-bottom: 30px; }
+    margin-bottom: 60px; }
+    @media all and (max-width: 1400px) {
+      .founder .founderTitle h1 {
+        margin-bottom: 40px; } }
     @media all and (max-width: 920px) {
       .founder .founderTitle h1 {
         margin-bottom: 0px; } }
@@ -380,7 +383,10 @@ body {
         width: 100%; }
     .founder .founderBox .founderDesc {
       width: 65%;
-      padding-left: 80px; }
+      margin-left: 80px; }
+      @media all and (max-width: 1400px) {
+        .founder .founderBox .founderDesc {
+          margin-left: 55px; } }
       @media all and (max-width: 920px) {
         .founder .founderBox .founderDesc {
           width: 100%;
@@ -395,13 +401,19 @@ body {
           margin-left: 45px; }
           @media all and (max-width: 1400px) {
             .founder .founderBox .founderDesc .founderDescName a {
-              margin-left: 35px; } }
+              margin-left: 32px; } }
           @media all and (max-width: 920px) {
             .founder .founderBox .founderDesc .founderDescName a {
               margin-left: 15px; } }
       .founder .founderBox .founderDesc .details {
         display: flex;
         padding: 25px 0px 40px; }
+        @media all and (max-width: 1400px) {
+          .founder .founderBox .founderDesc .details {
+            padding: 20px 0px 30px; } }
+        @media all and (max-width: 1080px) {
+          .founder .founderBox .founderDesc .details {
+            padding: 5px 0px 25px; } }
         @media all and (max-width: 920px) {
           .founder .founderBox .founderDesc .details {
             flex-wrap: wrap;
@@ -423,6 +435,9 @@ body {
                 margin-right: 10px; } }
           .founder .founderBox .founderDesc .details a:first-child {
             width: 40%; }
+            @media all and (max-width: 1400px) {
+              .founder .founderBox .founderDesc .details a:first-child {
+                width: 35%; } }
             @media all and (max-width: 920px) {
               .founder .founderBox .founderDesc .details a:first-child {
                 width: 100%;
@@ -430,6 +445,9 @@ body {
       .founder .founderBox .founderDesc .founderDescInfo {
         width: 70%;
         line-height: 160%; }
+        @media all and (max-width: 1080px) {
+          .founder .founderBox .founderDesc .founderDescInfo {
+            width: 100%; } }
         @media all and (max-width: 920px) {
           .founder .founderBox .founderDesc .founderDescInfo {
             width: 100%;

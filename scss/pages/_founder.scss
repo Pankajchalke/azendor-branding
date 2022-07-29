@@ -1,7 +1,7 @@
 body{overflow: visible !important;}
 .founder{
 	margin:150px 0px;
-	@media all and (max-width: 1400px){margin:75px 0px;}
+	@media all and (max-width: 1400px){margin:100px 0px;}
 	@media all and (max-width: 920px){margin:100px 0px 80px;}
 	.founderTitle{
 		@media all and (max-width: 920px){display: flex;align-items: baseline;padding-bottom: 20px;border-bottom: 0.75px solid rgba(33, 33, 33, 0.6);}
@@ -9,7 +9,8 @@ body{overflow: visible !important;}
 			@media all and (max-width: 920px){display:block;}
 			img{margin-right:30px;}
 		}
-		h1{margin-bottom:30px;
+		h1{margin-bottom:60px;
+			@media all and (max-width: 1400px){margin-bottom:40px;}
 			@media all and (max-width: 920px){margin-bottom:0px;}
 			}
 	}
@@ -23,16 +24,19 @@ body{overflow: visible !important;}
 		}
 		.founderDesc{
 			width:65%;
-			padding-left: 80px;
+			margin-left: 80px;
+				@media all and (max-width: 1400px){margin-left: 55px;}
 				@media all and (max-width: 920px){width:100%; padding-left: 0px;}
 			.founderDescName{display: flex; align-items: end;
 				@media all and (max-width: 920px){align-items: unset;}
 				a{margin-left: 45px;
-					@media all and (max-width: 1400px){margin-left: 35px;}
+					@media all and (max-width: 1400px){margin-left: 32px;}
 					@media all and (max-width: 920px){margin-left: 15px;}
 				}
 			}
 			.details{display:flex; padding: 25px 0px 40px;
+				@media all and (max-width: 1400px){padding: 20px 0px 30px;}
+				@media all and (max-width: 1080px){padding: 5px 0px 25px;}
 				@media all and (max-width: 920px){flex-wrap: wrap; padding: 20px 0px 30px;}
 				p{display:flex; align-items: center; width: 40%;
 					img{margin-right:15px;}
@@ -42,11 +46,13 @@ body{overflow: visible !important;}
 						@media all and (max-width: 1400px){margin-right: 10px;}
 					}
 					&:first-child {width:40%;
+						@media all and (max-width: 1400px){width:35%;}
 						@media all and (max-width: 920px){width:100%; margin-bottom: 10px;}
 					}
 				}
 			}
 			.founderDescInfo{width:70%; line-height: 160%;
+				@media all and (max-width: 1080px){width:100%;}
 				@media all and (max-width: 920px){width:100%; display:none;}
 			}
 			.founderDescInfoMobile{width:100%; display:none;
