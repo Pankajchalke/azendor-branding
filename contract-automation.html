@@ -14,9 +14,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Roboto:wght@400;500;700&display=swap"
         rel="stylesheet">
-    <link href="scss/legal_main.css" rel="stylesheet">   
+    <link href="scss/legal_main.css" rel="stylesheet">
     <link href="scss/legal_innerpage.css" rel="stylesheet">
-      
 
 </head>
 
@@ -37,11 +36,11 @@
 
             <div id="sideMenu">
                 <ul class="sideMenuInner">
-                    <li class="fontPoppins font18 colorBlack fontW400">
+                    <li class="fontPoppins font18 colorBlack fontW400" onclick="hideSidebar()">
                         <div class="dropdown">
                             <a class="menu-link active drop" href="#bannerSec"
                                 data-menuanchor="bannerSec">Solutions<span class="down-caret"></span></a>
-                            <ul class="dropdown-menu" onclick="hideSidebar()">
+                            <ul class="dropdown-menu">
                                 <li><a href="#" class="fontPoppins fontW400 font18">Legal Advisory</a></li>
                                 <li><a href="#" class="fontPoppins fontW400 font18">General Counsel</a></li>
                                 <li><a href="#" class="fontPoppins fontW400 font18">Legal Audit</a></li>
@@ -50,11 +49,10 @@
                         </div>
 
                     </li>
-                    <li class="fontPoppins font18 colorBlack fontW400">
+                    <li class="fontPoppins font18 colorBlack fontW400" onclick="hideSidebar()">
                         <div class="dropdown">
-                            <a class="menu-link drop" href="#serviceSec" data-menuanchor="serviceSec">Sectors <span
-                                    class="down-caret"></span></a>
-                            <ul class="dropdown-menu sector" onclick="hideSidebar()">
+                            <a class="menu-link drop" href="#serviceSec" data-menuanchor="serviceSec">Sectors <span class="down-caret"></span></a>
+                            <ul class="dropdown-menu sector">
                                 <li><a href="#" class="fontPoppins fontW400 font18">Television</a></li>
                                 <li><a href="#" class="fontPoppins fontW400 font18">Film</a></li>
                                 <li><a href="#" class="fontPoppins fontW400 font18">OTT Platform</a></li>
@@ -72,15 +70,15 @@
                     </li>
                     <li onclick="hideSidebar()" class="fontPoppins font18 colorBlack fontW400"><a class="menu-link"
                             href="#teamSection" data-menuanchor="teamSection">Careers</a></li>
-                    <li class="fontPoppins font18 colorBlack fontW400">
+                    <li onclick="hideSidebar()" class="fontPoppins font18 colorBlack fontW400">
                         <div class="dropdown">
-                            <a class="menu-link drop" href="#clientsBox" data-menuanchor="clientsBox">About <span
-                                    class="down-caret"></span>
-                            </a>
-                            <ul class="dropdown-menu" onclick="hideSidebar()">
-                                <li><a href="#" class="fontPoppins fontW400 font18">Who we are</a></li>
-                                <li><a href="#" class="fontPoppins fontW400 font18">Founder</a></li>
-                            </ul>
+                        <a class="menu-link drop"
+                            href="#clientsBox" data-menuanchor="clientsBox">About <span class="down-caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="fontPoppins fontW400 font18">Who we are</a></li>
+                            <li><a href="#" class="fontPoppins fontW400 font18">Founder</a></li>
+                        </ul>
                         </div>
                     </li>
                     <li onclick="hideSidebar()" class="fontPoppins font18 colorBlack fontW400"><a
@@ -143,6 +141,7 @@
         </ul>
     </div>
 
+
     <!-- progress bar for mobile -->
     <div class="progress-container-mobile">
         <div class="progress-bar-mobile"></div>
@@ -151,89 +150,18 @@
 <div class="progress-container">
     <div id="progressbar" class="progress-bar"></div>
 </div>
-<section class="contact">
-    <div class="contactBox wrapper">
-        <div class="contactDesc">
-            <div class="contactDescTitle">
-                <a class="backArrow" href="#"><img src="images/legal/back-arrow.svg"></a><h1 class="fontRoboto font64 fontW700 colorBlack">For Initial Consultation</h1>
-            </div>
-            <p class="fontPoppins fontW400 font22 colorBlack">Tell us about your query. A member of our team will be in touch with you shortly for an initial consultation. </p>
-        </div> 
-        <div class="contactForm">
-            <form>
-                <div class="formDivider">
-                    <label for="fname" class="fontPoppins fontW400 colorBlack">First Name*</label>
-                    <input class="fontPoppins fontW400" type="text" id="fname" name="firstname" placeholder="John">
-                </div>
-                <div class="formDivider">
-                    <label for="lname" class="fontPoppins fontW400 colorBlack">Last Name*</label>
-                    <input class="fontPoppins fontW400" type="text" id="lname" name="lastname" placeholder="Doe">
-                </div>
-                <div class="formDividerOne">
-                    <label for="contact" class="fontPoppins fontW400 colorBlack">Contact Number*</label>
-                    <input class="fontPoppins fontW400" type="text" id="contact" name="contactnumber" placeholder="+91 1234 5678 90">
-                </div>
-                <div class="formDividerOne">
-                    <label for="email" class="fontPoppins fontW400 colorBlack">Email*</label>
-                    <input class="fontPoppins fontW400" type="mail" id="email" name="email" placeholder="JhonDoe@Gmail.com">
-                </div>
-                
-                <div class="aboutQuery">
-                    <label for="subject" class="fontPoppins fontW400 colorBlack">Tell Us About Query* </label>
-                    <textarea class="fontPoppins fontW400" id="subject" name="subject" placeholder="I Would Like To Ask"></textarea>
-                </div>
-                <div class="submit">
-                    <p class="fontPoppins fontW400 colorBlack">By submitting this form, you agree to receive e-mails / calls from Azendor Legal team member.<br> See our <a href="#" class=" fontW700 colorBlack">Privacy Policy.</a></p>
-                    <input class="fontPoppins fontW400 colorW" type="submit" value="Submit">
-                </div>
-            </form>
-        </div> 
+<section class="advisorySubPages">
+    <div class="wrapper">
+        <a class="backArrow" href="digital-transformation.html"><img src="images/legal/advisory-back.svg"></a>
+        <h1 class="fontRoboto font64 fontW700 colorBlack">Contract Automation</h1>
+        <p class="font24 fontW400 fontPoppins colorBlack">There are many legal functions that have been automated by advanced contract management solutions, as part of legal’s digital transformation journey. With such systems, contract authors can find and apply template content to agreements based on authorized terms and conditions. They can automate approvals for certain terms and conditions, or pricing. For contract managers, paralegals, and administrators, in particular, the system can review standard contract terms due to its machine learning-based training. For any non-standard terms or complex issues, it can call on its human counterparts to decide the best course of action. Consider this the end-to-end operational support for your day-to-day contracting.</p>
+        <div class="advisoryCta">
+            <a href="#" class="font20 fontPoppins fontW400">
+                For Initial Consultation<img src="images/legal/banner-arrow.svg">
+            </a>
+        </div>
     </div>
 </section>
-<section class="contactDetails">
-    <div class="wrapper">
-        <div class="contactDetailsBox">
-            <div class="address">
-                <div class="addTitle">
-                   <img src="images/legal-location.svg"> 
-                   <p class="fontPoppins fontW400 font22 colordarkGray">Address</p>
-                </div>
-                
-                <div class="addressBox">
-                    <div class="addressBoxDetails">
-                        <h4 class="fontPoppins fontW700 font20 colorBlack">Mumbai</h4>
-                        <p class="fontPoppins fontW400 font22 colorBlack">
-                            2nd Floor, Duru House <br> Juhu Tara Road, Juhu <br> Mumbai – 400049
-                        </p>
-                    </div>
-                    <div class="addressBoxDetails">
-                        <h4 class="fontPoppins fontW700 font20 colorBlack">Delhi</h4>
-                        <p class="fontPoppins fontW400 font22 colorBlack">
-                            5th Floor, SB Towers Film <br> City Road, Sector 16A <br> Noida – 201301 (Delhi NCR)
-                        </p>
-                    </div>
-                    <div class="addressBoxDetails">
-                        <h4 class="fontPoppins fontW700 font20 colorBlack">Singapore</h4>
-                        <p class="fontPoppins fontW400 font22 colorBlack">
-                            1 Sophia Road <br> #05-23 Peace Centre <br> Singapore – 228149
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="contactRight">
-                <div class="addTitle">
-                    <img src="images/contact-legal.svg">
-                    <p class="fontPoppins fontW400 font22 colordarkGray">Contact Us</p>
-                </div>
-                <div class="contactRightDetails">
-                    <p><a href="mailto: sourabh.mishra@azendor.com" class="fontPoppins fontW400 font20 colorBlack">legal@azendor.com</a></p>
-                    <p><a class="fontPoppins fontW400 font22 colorBlack" href="tel:+91 98206 07601">+91 98206 07601</a></p>
-                </div>
-            </div>
-        </div>
-        <p class="info fontPoppins fontW400 font16 colorBlack"><img src="images/info.svg">Covid-19 pandemic has compelled us to deliver legal services online. If you wish to meet with us in person, you are welcome to visit any of our offices with prior appointment.</p>
-    </div>
-</section>  
 <footer>
     <div class="wrapper">
         <div class="footerSec">
@@ -328,32 +256,32 @@
 <script src="js/plugins.js"></script>
 <script src="js/custom.js"></script>
 <script>
-        $(document).ready(function () {
-            $('.dropdown').hover(function (e) {
-                $(this).find('.dropdown-menu').toggleClass('open');
-                $($(e.target).find('.down-caret').toggleClass('open-caret'));
-                e.preventDefault();
-                e.stopPropagation();
-                $(document).hover(function () {
-                    $('.dropdown-menu').removeClass('open');
-                    $('.down-caret').removeClass('open-caret');
-                });
-            });
-
-            const menuLinks = document.querySelectorAll(".menu-items .menu-link");
-
-            menuLinks.forEach((link) => {
-                link.addEventListener("click", () => {
-                    menuLinks.forEach((link) => {
-                        link.classList.remove("is-active");
-                    });
-                    link.classList.add("is-active");
-                });
+    $(document).ready(function () {
+        $('.dropdown').hover(function (e) {
+            $(this).find('.dropdown-menu').toggleClass('open');
+            $($(e.target).find('.down-caret').toggleClass('open-caret'));
+            e.preventDefault();
+            e.stopPropagation();
+            $(document).hover(function () {
+                $('.dropdown-menu').removeClass('open');
+                $('.down-caret').removeClass('open-caret');
             });
         });
 
+        const menuLinks = document.querySelectorAll(".menu-items .menu-link");
 
-    </script>
+        menuLinks.forEach((link) => {
+            link.addEventListener("click", () => {
+                menuLinks.forEach((link) => {
+                    link.classList.remove("is-active");
+                });
+                link.classList.add("is-active");
+            });
+        });
+    });
+
+</script>
+   
 </body>
 
 </html>

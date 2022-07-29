@@ -468,6 +468,9 @@ body {
   margin: 150px 0px; }
   @media all and (max-width: 1400px) {
     .contact {
+      margin: 100px 0px; } }
+  @media all and (max-width: 1080px) {
+    .contact {
       margin: 75px 0px; } }
   @media all and (max-width: 920px) {
     .contact {
@@ -479,11 +482,16 @@ body {
         display: block; } }
   .contact .contactDesc {
     width: 50%; }
+    @media all and (max-width: 1400px) {
+      .contact .contactDesc {
+        width: 45%; } }
+    @media all and (max-width: 1080px) {
+      .contact .contactDesc {
+        width: 50%; } }
     @media all and (max-width: 920px) {
       .contact .contactDesc .contactDescTitle {
         display: flex;
         align-items: baseline;
-        padding-bottom: 20px;
         border-bottom: 0.75px solid rgba(33, 33, 33, 0.6); } }
     .contact .contactDesc .contactDescTitle .backArrow {
       display: none; }
@@ -492,13 +500,18 @@ body {
           display: block; } }
       .contact .contactDesc .contactDescTitle .backArrow img {
         margin-right: 30px; }
+    .contact .contactDesc .contactDescTitle h1 {
+      margin-bottom: 30px; }
+      @media all and (max-width: 1400px) {
+        .contact .contactDesc .contactDescTitle h1 {
+          margin-bottom: 20px; } }
     @media all and (max-width: 920px) {
       .contact .contactDesc {
         width: 100%; } }
     .contact .contactDesc h2 {
       margin-bottom: 30px; }
     .contact .contactDesc p {
-      width: 80%; }
+      width: 75%; }
       @media all and (max-width: 920px) {
         .contact .contactDesc p {
           width: 100%;
@@ -509,7 +522,12 @@ body {
     margin-left: 180px; }
     @media all and (max-width: 1400px) {
       .contact .contactForm {
-        margin-left: 100px; } }
+        width: 55%;
+        margin-left: 120px; } }
+    @media all and (max-width: 1080px) {
+      .contact .contactForm {
+        width: 50%;
+        margin-left: 80px; } }
     @media all and (max-width: 920px) {
       .contact .contactForm {
         width: 100%;
@@ -531,9 +549,11 @@ body {
         font-size: 20px; }
         @media all and (max-width: 1400px) {
           .contact .contactForm form input[type=text], .contact .contactForm form [type=number], .contact .contactForm form [type=mail], .contact .contactForm form textarea {
-            font-size: 17px;
+            font-size: 14px;
             margin-top: 10px;
-            margin-bottom: 40px; } }
+            margin-bottom: 35px;
+            padding: 10px;
+            border-radius: 3.5px; } }
         @media all and (max-width: 920px) {
           .contact .contactForm form input[type=text], .contact .contactForm form [type=number], .contact .contactForm form [type=mail], .contact .contactForm form textarea {
             font-size: 16px;
@@ -541,6 +561,9 @@ body {
         .contact .contactForm form input[type=text]:focus, .contact .contactForm form [type=number]:focus, .contact .contactForm form [type=mail]:focus, .contact .contactForm form textarea:focus {
           background: rgba(243, 243, 243, 0.7);
           border: 2px solid #212121; }
+          @media all and (max-width: 1400px) {
+            .contact .contactForm form input[type=text]:focus, .contact .contactForm form [type=number]:focus, .contact .contactForm form [type=mail]:focus, .contact .contactForm form textarea:focus {
+              border: 1.4px solid #212121; } }
           @media all and (max-width: 920px) {
             .contact .contactForm form input[type=text]:focus, .contact .contactForm form [type=number]:focus, .contact .contactForm form [type=mail]:focus, .contact .contactForm form textarea:focus {
               border: 1px solid #212121; } }
@@ -549,10 +572,9 @@ body {
         height: 166px; }
         @media all and (max-width: 1400px) {
           .contact .contactForm form textarea {
-            height: 166px; } }
-        @media all and (max-width: 1400px) {
-          .contact .contactForm form textarea {
-            margin-bottom: 10px; } }
+            height: 118px;
+            margin-bottom: 14px;
+            padding: 15px 10px; } }
       .contact .contactForm form .submit input[type=submit] {
         background: #212121;
         border: 1px solid rgba(255, 255, 255, 0.2);
@@ -562,13 +584,16 @@ body {
         cursor: pointer; }
         @media all and (max-width: 1400px) {
           .contact .contactForm form .submit input[type=submit] {
-            font-size: 16px; } }
+            font-size: 12px;
+            border: 0.7px solid rgba(33, 33, 33, 0.2);
+            border-radius: 42px; } }
       .contact .contactForm form .submit p {
         margin-bottom: 40px;
         font-size: 14px; }
         @media all and (max-width: 1400px) {
           .contact .contactForm form .submit p {
-            margin-bottom: 25px; } }
+            margin-bottom: 28px;
+            font-size: 10px; } }
       .contact .contactForm form .submit a {
         text-decoration: none; }
     .contact .contactForm .formDivider {
@@ -580,7 +605,7 @@ body {
         font-size: 16px; }
         @media all and (max-width: 1400px) {
           .contact .contactForm .formDivider label {
-            font-size: 14px; } }
+            font-size: 12px; } }
     .contact .contactForm .formDividerOne {
       width: 45%; }
       @media all and (max-width: 1400px) {
@@ -593,14 +618,14 @@ body {
         font-size: 16px; }
         @media all and (max-width: 1400px) {
           .contact .contactForm .formDividerOne label {
-            font-size: 14px; } }
+            font-size: 12px; } }
     .contact .contactForm .aboutQuery {
       width: 100%; }
       .contact .contactForm .aboutQuery label {
         font-size: 16px; }
         @media all and (max-width: 1400px) {
           .contact .contactForm .aboutQuery label {
-            font-size: 14px; } }
+            font-size: 12px; } }
 
 .contactDetails {
   background: rgba(194, 194, 194, 0.2);
@@ -608,10 +633,13 @@ body {
   margin: 0; }
   @media all and (max-width: 1400px) {
     .contactDetails {
-      padding: 30px 0px; } }
+      padding: 35px 0px; } }
   .contactDetails .contactDetailsBox {
     display: flex;
     margin-bottom: 60px; }
+    @media all and (max-width: 1400px) {
+      .contactDetails .contactDetailsBox {
+        margin-bottom: 12px; } }
     @media all and (max-width: 920px) {
       .contactDetails .contactDetailsBox {
         display: block;
@@ -622,6 +650,9 @@ body {
       @media all and (max-width: 1400px) {
         .contactDetails .contactDetailsBox .address {
           width: 70%; } }
+      @media all and (max-width: 1080px) {
+        .contactDetails .contactDetailsBox .address {
+          width: 75%; } }
       @media all and (max-width: 920px) {
         .contactDetails .contactDetailsBox .address {
           width: 100%; } }
@@ -633,6 +664,12 @@ body {
         opacity: 0.1;
         border: 1px solid #212121;
         top: 0; }
+        @media all and (max-width: 1400px) {
+          .contactDetails .contactDetailsBox .address:after {
+            height: 136px; } }
+        @media all and (max-width: 1080px) {
+          .contactDetails .contactDetailsBox .address:after {
+            right: 40px; } }
         @media all and (max-width: 920px) {
           .contactDetails .contactDetailsBox .address:after {
             height: 100%;
@@ -646,6 +683,9 @@ body {
         display: flex;
         margin-bottom: 5px;
         align-items: center; }
+        @media all and (max-width: 1400px) {
+          .contactDetails .contactDetailsBox .address .addTitle {
+            margin-bottom: 10px; } }
         @media all and (max-width: 920px) {
           .contactDetails .contactDetailsBox .address .addTitle {
             display: block; } }
@@ -653,7 +693,8 @@ body {
           margin-right: 25px; }
           @media all and (max-width: 1400px) {
             .contactDetails .contactDetailsBox .address .addTitle img {
-              width: 35px; } }
+              width: 33px;
+              margin-right: 18px; } }
         @media all and (max-width: 920px) {
           .contactDetails .contactDetailsBox .address .addTitle p {
             margin: 25px 0px 20px; } }
@@ -662,21 +703,29 @@ body {
         margin-left: 70px; }
         @media all and (max-width: 1400px) {
           .contactDetails .contactDetailsBox .address .addressBox {
-            margin-left: 60px; } }
+            margin-left: 50px; } }
         @media all and (max-width: 920px) {
           .contactDetails .contactDetailsBox .address .addressBox {
             display: block;
             margin-left: 0px; } }
         .contactDetails .contactDetailsBox .address .addressBox .addressBoxDetails {
           width: 30.7%; }
+          @media all and (max-width: 1080px) {
+            .contactDetails .contactDetailsBox .address .addressBox .addressBoxDetails {
+              width: 31.5%; } }
           @media all and (max-width: 920px) {
             .contactDetails .contactDetailsBox .address .addressBox .addressBoxDetails {
               width: 100%;
               margin-bottom: 20px; } }
-          @media all and (max-width: 920px) {
-            .contactDetails .contactDetailsBox .address .addressBox .addressBoxDetails h4 {
-              margin-bottom: 7px;
-              font-size: 16px; } }
+          .contactDetails .contactDetailsBox .address .addressBox .addressBoxDetails h4 {
+            margin-bottom: 5px; }
+            @media all and (max-width: 1400px) {
+              .contactDetails .contactDetailsBox .address .addressBox .addressBoxDetails h4 {
+                margin-bottom: 3px; } }
+            @media all and (max-width: 920px) {
+              .contactDetails .contactDetailsBox .address .addressBox .addressBoxDetails h4 {
+                margin-bottom: 7px;
+                font-size: 16px; } }
           @media all and (max-width: 920px) {
             .contactDetails .contactDetailsBox .address .addressBox .addressBoxDetails p {
               font-size: 16px; } }
@@ -685,6 +734,9 @@ body {
       @media all and (max-width: 1400px) {
         .contactDetails .contactDetailsBox .contactRight {
           width: 30%; } }
+      @media all and (max-width: 1080px) {
+        .contactDetails .contactDetailsBox .contactRight {
+          width: 25%; } }
       @media all and (max-width: 920px) {
         .contactDetails .contactDetailsBox .contactRight {
           width: 100%;
@@ -700,7 +752,8 @@ body {
           margin-right: 25px; }
           @media all and (max-width: 1400px) {
             .contactDetails .contactDetailsBox .contactRight .addTitle img {
-              width: 35px; } }
+              width: 33px;
+              margin-right: 18px; } }
         @media all and (max-width: 920px) {
           .contactDetails .contactDetailsBox .contactRight .addTitle p {
             margin: 25px 0px 20px; } }
@@ -719,7 +772,7 @@ body {
           text-decoration: none; }
   .contactDetails .info {
     display: flex;
-    align-items: center; }
+    align-items: flex-start; }
     @media all and (max-width: 920px) {
       .contactDetails .info {
         align-items: self-start; } }
@@ -727,7 +780,7 @@ body {
       margin-right: 10px; }
       @media all and (max-width: 1400px) {
         .contactDetails .info img {
-          width: 20px; } }
+          width: 14px; } }
 
 .legalAdvisory {
   margin: 150px 0px; }
@@ -802,6 +855,154 @@ body {
         transition: 0.6s all;
         margin-left: 10px; }
       .advisorySubPages .advisoryCta a:hover img {
+        transform: translateX(10px); }
+
+.digitalTransformation {
+  margin: 150px 0px; }
+  @media all and (max-width: 1400px) {
+    .digitalTransformation {
+      margin: 75px 0px; } }
+  @media all and (max-width: 920px) {
+    .digitalTransformation {
+      margin: 100px 0px 80px; } }
+  .digitalTransformation h1 {
+    margin-bottom: 30px; }
+  .digitalTransformation .digitalTransformationSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px; }
+    .digitalTransformation .digitalTransformationSection .digitalTransformationSectionBox {
+      width: 48%;
+      margin-top: 50px; }
+      .digitalTransformation .digitalTransformationSection .digitalTransformationSectionBox a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-decoration: none;
+        padding: 32px 45px;
+        background: #FAFAFA;
+        border: 1px solid #F1F1F1;
+        border-radius: 10px; }
+        .digitalTransformation .digitalTransformationSection .digitalTransformationSectionBox a .img1 {
+          margin-right: 20px; }
+        .digitalTransformation .digitalTransformationSection .digitalTransformationSectionBox a .img2 {
+          margin-left: auto;
+          transition: 0.6s all; }
+        .digitalTransformation .digitalTransformationSection .digitalTransformationSectionBox a:hover {
+          border: 1px solid #212121;
+          transition: 0.6s all; }
+          .digitalTransformation .digitalTransformationSection .digitalTransformationSectionBox a:hover .img2 {
+            transform: translateX(10px); }
+        @media all and (max-width: 1400px) {
+          .digitalTransformation .digitalTransformationSection .digitalTransformationSectionBox a {
+            padding: 22px 35px; } }
+
+.digitalTransformationSubPages {
+  margin: 150px 0px; }
+  @media all and (max-width: 1400px) {
+    .digitalTransformationSubPages {
+      margin: 75px 0px; } }
+  @media all and (max-width: 920px) {
+    .digitalTransformationSubPages {
+      margin: 100px 0px 80px; } }
+  .digitalTransformationSubPages h1 {
+    margin: 30px 0px; }
+  .digitalTransformationSubPages p {
+    width: 70%; }
+    @media all and (max-width: 1400px) {
+      .digitalTransformationSubPages p {
+        width: 60%; } }
+  .digitalTransformationSubPages .digitalTransformationCta {
+    margin-top: 40px;
+    display: flex;
+    align-items: center; }
+    .digitalTransformationSubPages .digitalTransformationCta a {
+      background-color: #212121;
+      color: #fff;
+      text-decoration: none;
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      border-radius: 60px;
+      padding: 12px 26px;
+      outline: none;
+      display: flex;
+      align-items: center; }
+      .digitalTransformationSubPages .digitalTransformationCta a img {
+        transition: 0.6s all;
+        margin-left: 10px; }
+      .digitalTransformationSubPages .digitalTransformationCta a:hover img {
+        transform: translateX(10px); }
+
+.generalCounsel {
+  margin: 150px 0px; }
+  @media all and (max-width: 1400px) {
+    .generalCounsel {
+      margin: 75px 0px; } }
+  @media all and (max-width: 920px) {
+    .generalCounsel {
+      margin: 100px 0px 80px; } }
+  .generalCounsel h1 {
+    margin-bottom: 30px; }
+  .generalCounsel p {
+    width: 80%;
+    margin-bottom: 20px; }
+    @media all and (max-width: 1400px) {
+      .generalCounsel p {
+        width: 70%; } }
+  .generalCounsel .generalCounselCta {
+    margin-top: 40px;
+    display: flex;
+    align-items: center; }
+    .generalCounsel .generalCounselCta a {
+      background-color: #212121;
+      color: #fff;
+      text-decoration: none;
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      border-radius: 60px;
+      padding: 12px 26px;
+      outline: none;
+      display: flex;
+      align-items: center; }
+      .generalCounsel .generalCounselCta a img {
+        transition: 0.6s all;
+        margin-left: 10px; }
+      .generalCounsel .generalCounselCta a:hover img {
+        transform: translateX(10px); }
+
+.legalAudit {
+  margin: 150px 0px; }
+  @media all and (max-width: 1400px) {
+    .legalAudit {
+      margin: 75px 0px; } }
+  @media all and (max-width: 920px) {
+    .legalAudit {
+      margin: 100px 0px 80px; } }
+  .legalAudit h1 {
+    margin-bottom: 30px; }
+  .legalAudit p {
+    width: 80%;
+    margin-bottom: 20px; }
+    @media all and (max-width: 1400px) {
+      .legalAudit p {
+        width: 70%; } }
+  .legalAudit .legalAuditCta {
+    margin-top: 40px;
+    display: flex;
+    align-items: center; }
+    .legalAudit .legalAuditCta a {
+      background-color: #212121;
+      color: #fff;
+      text-decoration: none;
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      border-radius: 60px;
+      padding: 12px 26px;
+      outline: none;
+      display: flex;
+      align-items: center; }
+      .legalAudit .legalAuditCta a img {
+        transition: 0.6s all;
+        margin-left: 10px; }
+      .legalAudit .legalAuditCta a:hover img {
         transform: translateX(10px); }
 
 /*# sourceMappingURL=legal_innerpage.css.map */
