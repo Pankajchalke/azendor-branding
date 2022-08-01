@@ -2,30 +2,52 @@ body{overflow: visible !important;}
 .legalHeader{position:sticky !important;
 	@media all and (max-width: 920px){position:fixed !important;}
 }
+.progress-container {z-index: 11;
+	.progress-bar{
+		&:after{
+		font-family: 'Poppins';
+	    font-style: normal;
+	    font-weight: 400;
+	    font-size: 14px;
+	    line-height: 130.9%;
+	    letter-spacing: 0.05em;
+	    color: #212121;
+		}
+	}
+}
 .contact{
 	margin:150px 0px;
-	@media all and (max-width: 1400px){margin:75px 0px;}
+	@media all and (max-width: 1400px){margin:100px 0px;}
+	@media all and (max-width: 1080px){margin:75px 0px;}
 	@media all and (max-width: 920px){margin:100px 0px 80px;}
 	.contactBox{display:flex;
 		@media all and (max-width: 920px){display:block;}
 		}
 	.contactDesc{width: 50%;
+		@media all and (max-width: 1400px){width:45%;}
+		@media all and (max-width: 1280px){width:50%;}
 		.contactDescTitle{
-			@media all and (max-width: 920px){display: flex;align-items: baseline;padding-bottom: 20px;border-bottom: 0.75px solid rgba(33, 33, 33, 0.6);}
+			@media all and (max-width: 920px){display: flex;align-items: baseline; border-bottom: 0.75px solid rgba(33, 33, 33, 0.6);}
 			.backArrow{display:none;
 				@media all and (max-width: 920px){display:block;}
 				img{margin-right:30px;}
+			}
+			h1{margin-bottom:30px; line-height: 100%;
+				@media all and (max-width: 1400px){margin-bottom:20px;}
+				@media all and (max-width: 920px){line-height: 125%;}
+				
 			}
 		}	
 		
 		@media all and (max-width: 920px){width:100%;}
 		h2{margin-bottom:30px;}
-		p{width:80%;
-		@media all and (max-width: 920px){width:100%; margin-top: 20px; margin-bottom: 45px;}}
+		p{width:75%; line-height: 160%;
+		@media all and (max-width: 920px){width:100%; margin-top: 20px; margin-bottom: 45px;line-height: 150%;}}
 	}
 	.contactForm{
 		width: 50%; margin-left: 180px;
-		@media all and (max-width: 1400px){margin-left: 100px;}
+		@media all and (max-width: 1400px){width: 55%;margin-left: 120px;}
+		@media all and (max-width: 1280px){width:50%; margin-left: 80px; margin-right: 10px;}
 		@media all and (max-width: 920px){width:100%; margin-left: 0px;}
 		form{display: flex; flex-wrap: wrap; justify-content: space-between;
 		input[type=text], [type=number], [type=mail], textarea {
@@ -39,14 +61,14 @@ body{overflow: visible !important;}
 			  resize: vertical;
 			  background: rgba(215, 215, 215, 0.3);
 			  font-size:20px;
-			  @media all and (max-width: 1400px){font-size:17px; margin-top: 10px; margin-bottom: 40px;}
+			  @media all and (max-width: 1400px){font-size:14px; margin-top: 10px; margin-bottom: 35px; padding:10px; border-radius: 3.5px;}
 			  @media all and (max-width: 920px){font-size:16px; padding: 12px 15px;}
 			  &:focus{background: rgba(243, 243, 243, 0.7);border: 2px solid #212121;
+			  	@media all and (max-width: 1400px){border: 1.4px solid #212121;}
 			  	@media all and (max-width: 920px){border: 1px solid #212121;}}
 			}
 			textarea {margin-bottom: 20px; height: 166px;
-				@media all and (max-width: 1400px){height: 166px;}
-				@media all and (max-width: 1400px){margin-bottom: 10px;}
+				@media all and (max-width: 1400px){height: 118px; margin-bottom: 14px; padding: 15px 10px;}
 			}
 			.submit{
 				  input[type=submit] {
@@ -56,10 +78,13 @@ body{overflow: visible !important;}
 	              padding: 10px 25px;
 	              font-size:18px;
 				  cursor: pointer;
-				  @media all and (max-width: 1400px){font-size:16px;}
+				  line-height: 104.75%;
+				  @media all and (max-width: 1400px){font-size:12px; border: 0.7px solid rgba(33, 33, 33, 0.2); border-radius: 42px;}
+				  @media all and (max-width: 920px){border: 1px solid rgba(33, 33, 33, 0.2); border-radius: 60px;padding: 11px 33px;font-size: 14px;line-height: 130%;}
 				}
-				p{margin-bottom:40px; font-size:14px;
-					@media all and (max-width: 1400px){margin-bottom:25px;}
+				p{margin-bottom:40px; font-size:14px; line-height: 160%;
+					@media all and (max-width: 1400px){margin-bottom:28px; font-size: 10px;}
+					@media all and (max-width: 920px){line-height: 160%;color: #6a6a6a;}
 				}
 				a{text-decoration:none;}
 			}
@@ -68,24 +93,29 @@ body{overflow: visible !important;}
 		.formDivider{width: 45%;
 			@media all and (max-width: 1400px){width: 47%;}
 			label{font-size:16px;
-			@media all and (max-width: 1400px){font-size:14px;}}}
+			@media all and (max-width: 1400px){font-size:12px;}
+			@media all and (max-width: 920px){font-size:14px;}}}
 		.formDividerOne{width: 45%;
 			@media all and (max-width: 1400px){width: 47%;}
 			@media all and (max-width: 920px){width: 100%;}
 			label{font-size:16px;
-			@media all and (max-width: 1400px){font-size:14px;}}}
+			@media all and (max-width: 1400px){font-size:12px;}
+			@media all and (max-width: 920px){font-size:14px;}}}
 		.aboutQuery{width:100%;
 			label{font-size:16px;
-			@media all and (max-width: 1400px){font-size:14px;}}}
+			@media all and (max-width: 1400px){font-size:12px;}
+			@media all and (max-width: 920px){font-size:14px;}}}
 	}
 }
 
 .contactDetails{background: rgba(194, 194, 194, 0.2); padding: 50px 0px; margin: 0;
-	@media all and (max-width: 1400px) {padding: 30px 0px;}
+	@media all and (max-width: 1400px) {padding: 35px 0px;}
 	.contactDetailsBox{display:flex; margin-bottom: 60px;
+		@media all and (max-width: 1400px){margin-bottom: 12px;}
 		@media all and (max-width: 920px){display:block; margin-bottom: 30px;}
 	.address{width:75%; position:relative;
 		@media all and (max-width: 1400px){width:70%;}
+		@media all and (max-width: 1080px){width:75%;}
 		@media all and (max-width: 920px){width:100%;}
 			&:after{content: "";
 			    position: absolute;
@@ -94,25 +124,30 @@ body{overflow: visible !important;}
 			    opacity: 0.1;
 	    		border: 1px solid #212121;
 			    top: 0;
+			    	@media all and (max-width: 1400px){height: 136px;}
+			    	@media all and (max-width: 1080px){right: 40px;}
 			    	@media all and (max-width: 920px){height: 100%; border: 0; border-bottom: 1px solid #212121; left: 0px; right: 0px;top: 30px; width: 100%;}
 			    }
 		.addTitle{display: flex;margin-bottom: 5px; align-items: center;
+			@media all and (max-width: 1400px){margin-bottom: 10px;}
 			@media all and (max-width: 920px){display:block;}
 			img{margin-right:25px;
-			@media all and (max-width: 1400px) {width:35px;}}
-			p{
+			@media all and (max-width: 1400px) {width:33px; margin-right: 18px;}}
+			p{line-height: 147%;
 				@media all and (max-width: 920px){margin:25px 0px 20px;}
 			}
 		}
-		.addressBox{display:flex; margin-left: 70px;
-			@media all and (max-width: 1400px){margin-left: 60px;}
+		.addressBox{display:flex; margin-left: 70px; 
+			@media all and (max-width: 1400px){margin-left: 50px;}
 			@media all and (max-width: 920px){display:block; margin-left: 0px;}
 		.addressBoxDetails{width: 30.7%;
+			@media all and (max-width: 1080px){width:31.5%;}
 			@media all and (max-width: 920px){width:100%; margin-bottom: 20px;}
-			h4{
+			h4{margin-bottom:5px; line-height: 147%;
+				@media all and (max-width: 1400px){margin-bottom:3px;}
 				@media all and (max-width: 920px){margin-bottom:7px; font-size: 16px;}
 			}
-			p{
+			p{line-height: 160%;
 				@media all and (max-width: 920px){font-size: 16px;}
 			}
 			}
@@ -120,28 +155,30 @@ body{overflow: visible !important;}
 		}
 		.contactRight{width:25%;
 			@media all and (max-width: 1400px){width:30%;}
+			@media all and (max-width: 1080px){width:25%;}
 			@media all and (max-width: 920px){width:100%; margin: 60px 0px 30px;}
 			.addTitle{display: flex;margin-bottom: 5px; align-items: center;
 				@media all and (max-width: 920px){display:block;}
 			img{margin-right:25px;
-				@media all and (max-width: 1400px) {width:35px;}
+				@media all and (max-width: 1400px) {width:33px; margin-right: 18px;}
 				}
-			p{
+			p{line-height: 147%;
 				@media all and (max-width: 920px){margin:25px 0px 20px;}
 				}
 			}
 			.contactRightDetails{margin-left:70px;
-				@media all and (max-width: 1400px){margin-left: 60px;}
+				@media all and (max-width: 1400px){margin-left: 50px;}
 				@media all and (max-width: 920px){margin-left: 0px;}
-				p{margin-bottom:5px; margin-bottom: 5px;}
+				p{margin-bottom:5px; margin-bottom: 5px; line-height: 160%;}
 				a{text-decoration:none;}
 			}
 		}
 	}
-	.info{display: flex; align-items: center;
-		@media all and (max-width: 920px){align-items: self-start;}
+	.info{display: flex; align-items: flex-start;
+		@media all and (max-width: 920px){align-items: self-start;font-size: 12px;line-height: 160%;}
 		img{margin-right:10px;
-		@media all and (max-width: 1400px) {width:20px;}}
+		@media all and (max-width: 1400px) {width:14px;}
+		@media all and (max-width: 920px){width:24px;}}
 	}
 }
 
