@@ -1041,22 +1041,51 @@ body {
   margin: 150px 0px; }
   @media all and (max-width: 1400px) {
     .generalCounsel {
-      margin: 75px 0px; } }
+      margin: 100px 0px; } }
   @media all and (max-width: 920px) {
     .generalCounsel {
       margin: 100px 0px 80px; } }
-  .generalCounsel h1 {
-    margin-bottom: 30px; }
+  @media all and (max-width: 920px) {
+    .generalCounsel .sectionTitle {
+      display: flex;
+      align-items: baseline;
+      padding-bottom: 20px;
+      margin-bottom: 15px;
+      border-bottom: 0.75px solid rgba(33, 33, 33, 0.6); } }
+  .generalCounsel .sectionTitle .backArrow {
+    display: none; }
+    @media all and (max-width: 920px) {
+      .generalCounsel .sectionTitle .backArrow {
+        display: block; } }
+    .generalCounsel .sectionTitle .backArrow img {
+      margin-right: 30px; }
+  .generalCounsel .sectionTitle h1 {
+    margin-bottom: 60px; }
+    @media all and (max-width: 1400px) {
+      .generalCounsel .sectionTitle h1 {
+        margin-bottom: 40px; } }
+    @media all and (max-width: 920px) {
+      .generalCounsel .sectionTitle h1 {
+        margin-bottom: 0px; } }
   .generalCounsel p {
     width: 80%;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    line-height: 160%; }
     @media all and (max-width: 1400px) {
       .generalCounsel p {
-        width: 70%; } }
+        width: 75%; } }
+    @media all and (max-width: 920px) {
+      .generalCounsel p {
+        width: 100%;
+        font-size: 16px;
+        line-height: 130%; } }
   .generalCounsel .generalCounselCta {
     margin-top: 40px;
     display: flex;
     align-items: center; }
+    @media all and (max-width: 1400px) {
+      .generalCounsel .generalCounselCta {
+        margin-top: 25px; } }
     .generalCounsel .generalCounselCta a {
       background-color: #212121;
       color: #fff;
@@ -1067,9 +1096,20 @@ body {
       outline: none;
       display: flex;
       align-items: center; }
+      @media all and (max-width: 920px) {
+        .generalCounsel .generalCounselCta a {
+          padding: 11px 19px; } }
       .generalCounsel .generalCounselCta a img {
         transition: 0.6s all;
         margin-left: 10px; }
+        @media all and (max-width: 1400px) {
+          .generalCounsel .generalCounselCta a img {
+            width: 16px;
+            height: 8px; } }
+        @media all and (max-width: 920px) {
+          .generalCounsel .generalCounselCta a img {
+            width: 18px;
+            height: 9px; } }
       .generalCounsel .generalCounselCta a:hover img {
         transform: translateX(10px); }
 
@@ -1077,12 +1117,32 @@ body {
   margin: 150px 0px; }
   @media all and (max-width: 1400px) {
     .legalAudit {
-      margin: 75px 0px; } }
+      margin: 100px 0px; } }
   @media all and (max-width: 920px) {
     .legalAudit {
       margin: 100px 0px 80px; } }
-  .legalAudit h1 {
-    margin-bottom: 30px; }
+  @media all and (max-width: 920px) {
+    .legalAudit .sectionTitle {
+      display: flex;
+      align-items: baseline;
+      padding-bottom: 20px;
+      margin-bottom: 15px;
+      border-bottom: 0.75px solid rgba(33, 33, 33, 0.6); } }
+  .legalAudit .sectionTitle .backArrow {
+    display: none; }
+    @media all and (max-width: 920px) {
+      .legalAudit .sectionTitle .backArrow {
+        display: block; } }
+    .legalAudit .sectionTitle .backArrow img {
+      margin-right: 30px; }
+  .legalAudit .sectionTitle h1 {
+    margin-bottom: 60px; }
+    @media all and (max-width: 1400px) {
+      .legalAudit .sectionTitle h1 {
+        margin-bottom: 40px; } }
+    @media all and (max-width: 920px) {
+      .legalAudit .sectionTitle h1 {
+        margin-bottom: 0px; } }
   .legalAudit p {
     width: 80%;
     margin-bottom: 20px; }
@@ -1093,6 +1153,9 @@ body {
     margin-top: 40px;
     display: flex;
     align-items: center; }
+    @media all and (max-width: 1400px) {
+      .legalAudit .legalAuditCta {
+        margin-top: 25px; } }
     .legalAudit .legalAuditCta a {
       background-color: #212121;
       color: #fff;
@@ -1103,9 +1166,20 @@ body {
       outline: none;
       display: flex;
       align-items: center; }
+      @media all and (max-width: 920px) {
+        .legalAudit .legalAuditCta a {
+          padding: 11px 19px; } }
       .legalAudit .legalAuditCta a img {
         transition: 0.6s all;
         margin-left: 10px; }
+        @media all and (max-width: 1400px) {
+          .legalAudit .legalAuditCta a img {
+            width: 16px;
+            height: 8px; } }
+        @media all and (max-width: 920px) {
+          .legalAudit .legalAuditCta a img {
+            width: 18px;
+            height: 9px; } }
       .legalAudit .legalAuditCta a:hover img {
         transform: translateX(10px); }
 
