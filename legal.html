@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <title>Azendor</title>
 
-
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" /> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -35,7 +35,7 @@
   <!-- ScrollTop button for mobile view -->
   <a href="#bannerSec">
     <button id="myBtn">
-      <img src="images/top.svg" />
+      <img src="images/legal/legal-top-arrow.svg" />
     </button>
   </a>
 
@@ -492,7 +492,8 @@
                                 brand.
                             </p>
                             <p>
-                                <a href="#" class="fontPoppins fontW500 font20">Read More <img
+                                <a href="#" class="fontPoppins fontW500 font20" data-toggle="modal"
+                                data-target="#readMore">Read More <img
                                     src="images/legal/solution-arrow.svg" /></a>
                             </p>
                             <img src="images/legal/qoutes.svg" />
@@ -862,6 +863,7 @@
     
     <!-- <script src="js/custom.js"></script> -->
     <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
     <script src="js/plugins.js"></script>
     <script src="js/custom.js"></script>
 
@@ -891,10 +893,46 @@
                 });
             });
         });
+        
 
 
     </script>
 
+
+
 </body>
 
+
+<!-- <div class="modal" id="readMore" role="dialog" tabindex="-1" aria-labelledby="basicModal" aria-hidden="true">
+    <div class="modal-dialog3 modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal">
+            <img src="images/cancel.svg" alt="" />
+          </button>
+          <div class="teamBox">
+            <div class="memberImg">
+              <img src="images/profile.png" />
+            </div>
+            <div class="teamDesc">
+              <h3 class="fontRoboto fontW500 colorW">Pearl Shah</h3>
+              <p class="fontW400 fontPoppins colorW">Sr Marketing Manager</p>
+            </div>
+          </div>
+          <div class="teamPara">
+            <p class="fontW400 fontPoppins colorW">
+              Sourabh and his team at Azendor worked for us as consultants on a
+              new brand development project at Unilever. We liked their ability
+              to ‘think out of the box’ while also bringing in the discipline of
+              consumer research and market information analysis. They identified
+              an exciting new positioning space and their work was appreciated
+              by our entire team. I would recommend them if you are looking for
+              a brand strategy consultant to define a powerful positioning space
+              for your brand.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
 </html>

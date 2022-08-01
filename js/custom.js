@@ -369,7 +369,7 @@ if (mediaQuerythree.matches) {
   $(document).ready(function () {
     $(".contentThree").slice(0, 8).show();
     $("#loadMorethree").on("click", function (e) {
-      e.preventDefault();
+      e.pre/ventDefault();
       $(".contentThree:hidden").slice(0, 8).slideDown();
       if ($(".contentThree:hidden").length == 0) {
         $("#loadMorethree").text("No Content").addClass("noContent");
@@ -410,7 +410,6 @@ document.addEventListener("click", function (event) {
   if (!sidebarContainer.contains(event.target)) hideSidebar();
 });
 
-// legal Header
 
 // testimonial JS
 if ($(".testimonialsSlider").length) {

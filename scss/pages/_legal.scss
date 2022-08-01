@@ -772,21 +772,168 @@ header {
     }
 }
 
+.modal.in .modal-dialog3 {
+    width: 50%;
+    margin: 0 auto;
 
+    .modal-content {
+        background-color: #252525;
+        padding: 40px;
+        border: none;
+        border-radius: 10px 10px 0px 0px;
+
+
+
+        .close {
+            margin-top: -30px;
+            opacity: 1;
+            position: relative;
+            z-index: 999;
+
+            img {
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+
+        .modal-body {
+            padding: 0px;
+        }
+
+        .teamBox {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 20px;
+
+            .teamDesc {
+                width: 76%;
+
+                p {
+                    margin-bottom: 18px;
+                }
+            }
+
+            .memberImg {
+                width: 20%;
+            }
+        }
+
+        .teamPara {
+            padding-top: 18px;
+            border-top: 1px solid #6A6A6A;
+
+            p {
+                margin-bottom: 30px;
+                font-size: 16px;
+            }
+        }
+
+        .modal-footer {
+            padding: 0px;
+            border-top: none;
+        }
+    }
+
+
+    @media all and (max-width: 1400px) {
+        .modal-content {
+            .close {
+                img {
+                    height: 18px;
+                    width: 18px;
+                }
+            }
+        }
+
+    }
+
+    @media all and (max-width: 920px) {
+        transform: translate(0px, 100px);
+        width: 100%;
+        margin: -3% auto 0;
+
+        .modal-content {
+            padding: 60px 42px 30px;
+
+            .close {
+                margin-top: -42px;
+
+                img {
+                    width: 14px;
+                    height: 14px;
+                }
+            }
+
+            .teamBox {
+                padding-bottom: 15px;
+
+                .teamDesc {
+                    width: 70%;
+                    padding: 70px 10px;
+
+                    h3 {
+                        font-size: 20px;
+                        margin-bottom: 10px;
+                    }
+
+                    p {
+                        margin-bottom: 12px;
+                        font-size: 14px;
+                        color: #6A6A6A;
+                    }
+
+                    img {
+                        width: 30px;
+                    }
+                }
+
+                .memberImg {
+                    width: 28%;
+                }
+            }
+
+            .teamPara {
+                height: 250px;
+                overflow: auto;
+            }
+        }
+    }
+
+    @media all and (max-width: 575px) {
+
+        //margin: -8% auto 0;
+        .memberImg {
+            width: 80px;
+        }
+
+        .teamDesc {
+            width: 70%;
+            padding: 20px 10px !important;
+        }
+    }
+
+    @media all and (max-width: 375px) {
+
+        .modal-content {
+            padding: 60px 20px 30px;
+        }
+    }
+}
 
 section {
-    margin: 150px 0px;
+    margin-top: 150px;
 
     @media all and (max-width: 1650px) {
-        margin: 120px 0px;
+        margin-top: 120px;
     }
 
     @media all and (max-width: 1450px) {
-        margin: 100px 0px;
+        margin-top: 100px;
     }
 
     @media all and (max-width: 1250px) {
-        margin: 80px 0px;
+        margin-top: 80px;
     }
 }
 
@@ -936,7 +1083,7 @@ section {
     }
 
     @media all and (max-width: 900px) {
-        margin: 120px 0px 70px 0px;
+        margin: 120px 0px 180px 0px;
 
         h1 {
             width: 100%;
@@ -955,6 +1102,10 @@ section {
             font-size: 39px;
             line-height: 48px;
         }
+    }
+
+    @media all and (max-width: 550px) {
+        margin: 100px 0px 180px 0px;
     }
 
 }
@@ -1174,9 +1325,6 @@ section {
 }
 
 
-
-
-
 .sectors {
     p {
         padding: 30px 0px 20px 0px;
@@ -1269,15 +1417,18 @@ section {
 
             @media (max-width: 920px) {
                 top: 98%;
-                left: 325px;
+                left: 280px;
             }
 
-            @media (max-width: 575px) {
+            @media (max-width: 680px) {
                 left: 145px;
             }
 
-            @media (max-width: 375px) {
+            @media (max-width: 450px) {
                 left: 105px;
+            }
+            @media (max-width: 350px) {
+                left: 84px;
             }
 
             &:hover {
@@ -1300,7 +1451,7 @@ section {
                 background-repeat: no-repeat;
 
                 @media (max-width: 920px) {
-                    content: url(../images/left-arrow-mobile.svg);
+                    content: url(../images/legal/left-sec-arrow-mbl.svg);
                 }
 
                 &:hover {
@@ -1338,15 +1489,19 @@ section {
 
             @media (max-width: 920px) {
                 top: 98%;
-                right: 325px;
+                right: 280px;
             }
 
-            @media (max-width: 575px) {
+            @media (max-width: 680px) {
                 right: 160px;
             }
 
-            @media (max-width: 375px) {
+            @media (max-width: 450px) {
                 right: 120px;
+            }
+
+            @media (max-width: 350px) {
+                right: 90px;
             }
 
             &:hover {
@@ -1369,7 +1524,7 @@ section {
                 background-repeat: no-repeat;
 
                 @media (max-width: 920px) {
-                    content: url(../images/right-arrow-mobile.svg);
+                    content: url(../images/legal/right-sec-arrow-mbl.svg);
                 }
 
                 &:hover {
@@ -1711,11 +1866,14 @@ section {
 
             
             @media (max-width: 480px) {
-                margin: 0 -16px;
+                margin: 0px -16px 60px 0px;
             }
 
             .slick-track{
-                margin-left: -18px !important;
+                margin-left: -21px !important;
+                @media (max-width: 480px) {
+                    margin-left: -10px !important;
+                }
             }
         }
 
@@ -1758,15 +1916,18 @@ section {
 
             @media (max-width: 920px) {
                 top: 98%;
-                left: 325px;
+                left: 280px;
             }
 
-            @media (max-width: 575px) {
+            @media (max-width: 680px) {
                 left: 145px;
             }
 
-            @media (max-width: 375px) {
+            @media (max-width: 450px) {
                 left: 105px;
+            }
+            @media (max-width: 350px) {
+                left: 84px;
             }
 
             &:hover {
@@ -1789,7 +1950,7 @@ section {
                 background-repeat: no-repeat;
 
                 @media (max-width: 920px) {
-                    content: url(../images/left-arrow-mobile.svg);
+                    content: url(../images/legal/left-sec-arrow-mbl.svg);
                 }
 
                 &:hover {
@@ -1827,15 +1988,19 @@ section {
 
             @media (max-width: 920px) {
                 top: 98%;
-                right: 325px;
+                right: 280px;
             }
 
-            @media (max-width: 575px) {
+            @media (max-width: 680px) {
                 right: 160px;
             }
 
-            @media (max-width: 375px) {
+            @media (max-width: 450px) {
                 right: 120px;
+            }
+
+            @media (max-width: 350px) {
+                right: 90px;
             }
 
             &:hover {
@@ -1858,7 +2023,7 @@ section {
                 background-repeat: no-repeat;
 
                 @media (max-width: 920px) {
-                    content: url(../images/right-arrow-mobile.svg);
+                    content: url(../images/legal/right-sec-arrow-mbl.svg);
                 }
 
                 &:hover {
@@ -2099,7 +2264,6 @@ section {
 
     }
 }
-
 
 
 .clientlogoSec {
@@ -3142,8 +3306,9 @@ footer {
     left: auto;
     right: 20px;
     bottom: 20px;
-    background: #252525;
-    border: 1px solid rgba(28, 28, 28, 0.7);
+    background: #FAFAFA;
+    filter: drop-shadow(5px 5px 15px rgba(33, 33, 33, 0.15));
+    border: 1px solid #FAFAFA;
     border-radius: 5px;
     z-index: 99;
 
@@ -3160,19 +3325,15 @@ footer {
     left: 0;
     right: 0;
     margin: 0 auto;
-    bottom: 60px;
-
+    bottom: 74px;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 10px;
     line-height: 130.9%;
-
-
     letter-spacing: 0.05em;
     font-feature-settings: 'liga' off;
-
-    color: #FFFFFF;
+    color: #212121;
     z-index: 11;
 
     @media all and (min-width: 770px) {
@@ -3183,15 +3344,40 @@ footer {
 
 .scroll-symbol {
     position: fixed;
-    width: 18.62px;
-    height: 0px;
+    width: 1px;
+    height: 24px;
     left: 0;
     right: 0;
-    margin: 0 auto;
-    bottom: 45px;
-    border: 1px solid #e2e2e2;
-    transform: rotate(90deg);
+    bottom: 30px;
+    border-radius: 2px;
+    margin: auto;
+    border: 1px solid rgba(33, 33, 33, 0.5);
     z-index: 11;
+    &:before {
+        position: absolute;
+        content: "";
+        right: 0;
+        bottom: 28px;
+        left: -6px;
+        width: 12px;
+        height: 12px;
+        //height: 1%;
+        background: #000;
+        border-radius: 50%;
+    }
+    &::after {
+        position: absolute;
+        content: "";
+        width: 0px;
+        height: 8px;
+        left: -1px;
+        right: 0;
+        bottom: 19px;
+        border-radius: 2px;
+        margin: auto;
+        border: 1px solid rgba(33, 33, 33, 0.5);
+        background: #000;
+    }
 
     @media all and (min-width: 770px) {
         display: none !important;
