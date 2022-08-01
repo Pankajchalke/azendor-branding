@@ -1445,6 +1445,8 @@ section {
     @media (max-width: 480px) {
       .testlegalSec .testlegalSlider .slick-list {
         margin: 0 -16px; } }
+    .testlegalSec .testlegalSlider .slick-list .slick-track {
+      margin-left: -18px !important; }
   .testlegalSec .testlegalSlider .slick-prev,
   .testlegalSec .testlegalSlider .slick-next {
     top: 100%;
