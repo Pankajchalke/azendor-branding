@@ -13,18 +13,12 @@ body {
   scroll-behavior: smooth;
   letter-spacing: 0.03em;
   line-height: 1.4;
-  overflow: hidden !important;
-}
-
+  overflow: hidden !important; }
   @media all and (max-width: 1030px) {
     body {
       overflow: visible !important; } }
-
-
-  body::-webkit-scrollbar {
-    display: none !important;}
-
-
+  body:webkit-scroll bar {
+    display: none; }
 
 ul,
 ol,
@@ -189,7 +183,7 @@ img {
     font-size: 32px; }
 
   .font30 {
-    font-size: 22px; }
+    font-size: 21px; }
 
   .font24 {
     font-size: 20px; }
@@ -216,7 +210,7 @@ img {
     font-size: 70px; }
 
   .font64 {
-    font-size: 46px; }
+    font-size: 45px; }
 
   .font55 {
     font-size: 40px; }
@@ -234,7 +228,7 @@ img {
     font-size: 16px; }
 
   .font22 {
-    font-size: 15px; }
+    font-size: 16px; }
 
   .font20 {
     font-size: 14px; }
