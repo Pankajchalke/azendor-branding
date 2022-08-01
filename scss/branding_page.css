@@ -13,12 +13,18 @@ body {
   scroll-behavior: smooth;
   letter-spacing: 0.03em;
   line-height: 1.4;
-  overflow: hidden !important; }
+  overflow: hidden !important;
+}
+
   @media all and (max-width: 1030px) {
     body {
       overflow: visible !important; } }
-  body:webkit-scroll bar {
-    display: none; }
+
+
+  body::-webkit-scrollbar {
+    display: none !important;}
+
+
 
 ul,
 ol,
