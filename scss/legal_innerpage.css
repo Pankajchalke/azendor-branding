@@ -482,6 +482,17 @@ body {
     .legalHeader {
       position: fixed !important; } }
 
+.progress-container {
+  z-index: 11; }
+  .progress-container .progress-bar:after {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130.9%;
+    letter-spacing: 0.05em;
+    color: #212121; }
+
 .contact {
   margin: 150px 0px; }
   @media all and (max-width: 1400px) {
@@ -503,7 +514,7 @@ body {
     @media all and (max-width: 1400px) {
       .contact .contactDesc {
         width: 45%; } }
-    @media all and (max-width: 1080px) {
+    @media all and (max-width: 1280px) {
       .contact .contactDesc {
         width: 50%; } }
     @media all and (max-width: 920px) {
@@ -519,22 +530,28 @@ body {
       .contact .contactDesc .contactDescTitle .backArrow img {
         margin-right: 30px; }
     .contact .contactDesc .contactDescTitle h1 {
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+      line-height: 100%; }
       @media all and (max-width: 1400px) {
         .contact .contactDesc .contactDescTitle h1 {
           margin-bottom: 20px; } }
+      @media all and (max-width: 920px) {
+        .contact .contactDesc .contactDescTitle h1 {
+          line-height: 125%; } }
     @media all and (max-width: 920px) {
       .contact .contactDesc {
         width: 100%; } }
     .contact .contactDesc h2 {
       margin-bottom: 30px; }
     .contact .contactDesc p {
-      width: 75%; }
+      width: 75%;
+      line-height: 160%; }
       @media all and (max-width: 920px) {
         .contact .contactDesc p {
           width: 100%;
           margin-top: 20px;
-          margin-bottom: 45px; } }
+          margin-bottom: 45px;
+          line-height: 150%; } }
   .contact .contactForm {
     width: 50%;
     margin-left: 180px; }
@@ -542,10 +559,11 @@ body {
       .contact .contactForm {
         width: 55%;
         margin-left: 120px; } }
-    @media all and (max-width: 1080px) {
+    @media all and (max-width: 1280px) {
       .contact .contactForm {
         width: 50%;
-        margin-left: 80px; } }
+        margin-left: 80px;
+        margin-right: 10px; } }
     @media all and (max-width: 920px) {
       .contact .contactForm {
         width: 100%;
@@ -599,19 +617,32 @@ body {
         border-radius: 60px;
         padding: 10px 25px;
         font-size: 18px;
-        cursor: pointer; }
+        cursor: pointer;
+        line-height: 104.75%; }
         @media all and (max-width: 1400px) {
           .contact .contactForm form .submit input[type=submit] {
             font-size: 12px;
             border: 0.7px solid rgba(33, 33, 33, 0.2);
             border-radius: 42px; } }
+        @media all and (max-width: 920px) {
+          .contact .contactForm form .submit input[type=submit] {
+            border: 1px solid rgba(33, 33, 33, 0.2);
+            border-radius: 60px;
+            padding: 11px 33px;
+            font-size: 14px;
+            line-height: 130%; } }
       .contact .contactForm form .submit p {
         margin-bottom: 40px;
-        font-size: 14px; }
+        font-size: 14px;
+        line-height: 160%; }
         @media all and (max-width: 1400px) {
           .contact .contactForm form .submit p {
             margin-bottom: 28px;
             font-size: 10px; } }
+        @media all and (max-width: 920px) {
+          .contact .contactForm form .submit p {
+            line-height: 160%;
+            color: #6a6a6a; } }
       .contact .contactForm form .submit a {
         text-decoration: none; }
     .contact .contactForm .formDivider {
@@ -624,6 +655,9 @@ body {
         @media all and (max-width: 1400px) {
           .contact .contactForm .formDivider label {
             font-size: 12px; } }
+        @media all and (max-width: 920px) {
+          .contact .contactForm .formDivider label {
+            font-size: 14px; } }
     .contact .contactForm .formDividerOne {
       width: 45%; }
       @media all and (max-width: 1400px) {
@@ -637,6 +671,9 @@ body {
         @media all and (max-width: 1400px) {
           .contact .contactForm .formDividerOne label {
             font-size: 12px; } }
+        @media all and (max-width: 920px) {
+          .contact .contactForm .formDividerOne label {
+            font-size: 14px; } }
     .contact .contactForm .aboutQuery {
       width: 100%; }
       .contact .contactForm .aboutQuery label {
@@ -644,6 +681,9 @@ body {
         @media all and (max-width: 1400px) {
           .contact .contactForm .aboutQuery label {
             font-size: 12px; } }
+        @media all and (max-width: 920px) {
+          .contact .contactForm .aboutQuery label {
+            font-size: 14px; } }
 
 .contactDetails {
   background: rgba(194, 194, 194, 0.2);
@@ -713,9 +753,11 @@ body {
             .contactDetails .contactDetailsBox .address .addTitle img {
               width: 33px;
               margin-right: 18px; } }
-        @media all and (max-width: 920px) {
-          .contactDetails .contactDetailsBox .address .addTitle p {
-            margin: 25px 0px 20px; } }
+        .contactDetails .contactDetailsBox .address .addTitle p {
+          line-height: 147%; }
+          @media all and (max-width: 920px) {
+            .contactDetails .contactDetailsBox .address .addTitle p {
+              margin: 25px 0px 20px; } }
       .contactDetails .contactDetailsBox .address .addressBox {
         display: flex;
         margin-left: 70px; }
@@ -736,7 +778,8 @@ body {
               width: 100%;
               margin-bottom: 20px; } }
           .contactDetails .contactDetailsBox .address .addressBox .addressBoxDetails h4 {
-            margin-bottom: 5px; }
+            margin-bottom: 5px;
+            line-height: 147%; }
             @media all and (max-width: 1400px) {
               .contactDetails .contactDetailsBox .address .addressBox .addressBoxDetails h4 {
                 margin-bottom: 3px; } }
@@ -744,9 +787,11 @@ body {
               .contactDetails .contactDetailsBox .address .addressBox .addressBoxDetails h4 {
                 margin-bottom: 7px;
                 font-size: 16px; } }
-          @media all and (max-width: 920px) {
-            .contactDetails .contactDetailsBox .address .addressBox .addressBoxDetails p {
-              font-size: 16px; } }
+          .contactDetails .contactDetailsBox .address .addressBox .addressBoxDetails p {
+            line-height: 160%; }
+            @media all and (max-width: 920px) {
+              .contactDetails .contactDetailsBox .address .addressBox .addressBoxDetails p {
+                font-size: 16px; } }
     .contactDetails .contactDetailsBox .contactRight {
       width: 25%; }
       @media all and (max-width: 1400px) {
@@ -772,9 +817,11 @@ body {
             .contactDetails .contactDetailsBox .contactRight .addTitle img {
               width: 33px;
               margin-right: 18px; } }
-        @media all and (max-width: 920px) {
-          .contactDetails .contactDetailsBox .contactRight .addTitle p {
-            margin: 25px 0px 20px; } }
+        .contactDetails .contactDetailsBox .contactRight .addTitle p {
+          line-height: 147%; }
+          @media all and (max-width: 920px) {
+            .contactDetails .contactDetailsBox .contactRight .addTitle p {
+              margin: 25px 0px 20px; } }
       .contactDetails .contactDetailsBox .contactRight .contactRightDetails {
         margin-left: 70px; }
         @media all and (max-width: 1400px) {
@@ -785,7 +832,8 @@ body {
             margin-left: 0px; } }
         .contactDetails .contactDetailsBox .contactRight .contactRightDetails p {
           margin-bottom: 5px;
-          margin-bottom: 5px; }
+          margin-bottom: 5px;
+          line-height: 160%; }
         .contactDetails .contactDetailsBox .contactRight .contactRightDetails a {
           text-decoration: none; }
   .contactDetails .info {
@@ -793,12 +841,17 @@ body {
     align-items: flex-start; }
     @media all and (max-width: 920px) {
       .contactDetails .info {
-        align-items: self-start; } }
+        align-items: self-start;
+        font-size: 12px;
+        line-height: 160%; } }
     .contactDetails .info img {
       margin-right: 10px; }
       @media all and (max-width: 1400px) {
         .contactDetails .info img {
           width: 14px; } }
+      @media all and (max-width: 920px) {
+        .contactDetails .info img {
+          width: 24px; } }
 
 .legalAdvisory {
   margin: 150px 0px; }
