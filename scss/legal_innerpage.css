@@ -762,7 +762,7 @@ body {
         @media all and (max-width: 1080px) {
           .contactDetails .contactDetailsBox .address:after {
             height: 160px;
-            right: 40px; } }
+            right: 20px; } }
         @media all and (max-width: 920px) {
           .contactDetails .contactDetailsBox .address:after {
             height: 100%;
@@ -807,7 +807,7 @@ body {
           width: 30.7%; }
           @media all and (max-width: 1080px) {
             .contactDetails .contactDetailsBox .address .addressBox .addressBoxDetails {
-              width: 31.7%; } }
+              width: 32.7%; } }
           @media all and (max-width: 920px) {
             .contactDetails .contactDetailsBox .address .addressBox .addressBoxDetails {
               width: 100%;
