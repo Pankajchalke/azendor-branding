@@ -7,6 +7,10 @@ body {
 header {
     margin-top: 60px;
 
+    img{
+        width: 174px;
+    }
+
     @media all and (max-width: 1400px) {
         margin-top: 30px;
 

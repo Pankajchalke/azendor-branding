@@ -565,7 +565,9 @@ header {
       max-height: 0;
       overflow: hidden;
       transition: all .35s linear;
-      border: 1px solid transparent; }
+      border: 1px solid transparent;
+      background: #FAFAFA;
+      border: transparent; }
       header .menu-items .dropdown > .dropdown-menu.open {
         max-height: 160px;
         height: auto;
@@ -591,7 +593,7 @@ header {
     background-image: url("../images/down-arrow.svg");
     background-repeat: no-repeat;
     display: inline-block;
-    margin-left: 3px;
+    margin-left: 7px;
     top: 1px;
     position: relative;
     transition: all .25s ease;
@@ -601,25 +603,18 @@ header {
   header .menu-items a {
     color: #212121;
     text-decoration: none;
-    transition: color 0.3s ease-in-out; }
+    transition: color 0.3s ease-in-out;
+    padding: 25px 0px; }
+    @media (max-width: 1600px) {
+      header .menu-items a {
+        padding: 15px 0px; } }
     @media (max-width: 920px) {
       header .menu-items a {
         font-size: 16px;
         color: #6A6A6A; } }
     header .menu-items a.is-active {
       position: relative;
-      color: #212121 !important;
-      transition: all 0.35s ease; }
-      header .menu-items a.is-active:after {
-        position: absolute;
-        content: "";
-        left: 0;
-        bottom: -4px;
-        width: 100%;
-        height: 2px;
-        border-bottom: 1px solid #212121;
-        outline: none;
-        background: #fff; }
+      color: #212121 !important; }
   header .careerHeader::before {
     left: -2px !important; }
   header .menu-link:hover {
@@ -635,7 +630,7 @@ header {
       content: "";
       left: -16px;
       right: 0;
-      top: -15px;
+      top: 9px;
       bottom: 0;
       width: 50px;
       height: 50px;
@@ -645,9 +640,12 @@ header {
       border-radius: 50%;
       z-index: -1;
       margin: 0 auto; }
+      @media (max-width: 1600px) {
+        header .menu-link:hover:before {
+          top: -1px; } }
       @media (max-width: 1400px) {
         header .menu-link:hover:before {
-          top: -10px;
+          top: 4px;
           width: 40px;
           height: 40px; } }
       @media (max-width: 920px) {
@@ -740,24 +738,23 @@ header {
         position: absolute;
         top: 15px;
         left: 0px; } }
-    @media (max-width: 1400px) {
-      header .header-container .logo img {
-        width: 325px; } }
-    @media (max-width: 1400px) {
-      header .header-container .logo img {
-        width: 191px; } }
-    @media (max-width: 770px) {
-      header .header-container .logo img {
-        width: 132px;
-        height: 40px; } }
-    @media (max-width: 575px) {
-      header .header-container .logo img {
-        width: 100px;
-        height: 50px; } }
-    @media (max-width: 390px) {
-      header .header-container .logo img {
-        width: 100px;
-        height: 29px; } }
+    header .header-container .logo img {
+      width: 269px; }
+      @media (max-width: 1400px) {
+        header .header-container .logo img {
+          width: 325px; } }
+      @media (max-width: 1400px) {
+        header .header-container .logo img {
+          width: 191px; } }
+      @media (max-width: 770px) {
+        header .header-container .logo img {
+          width: 132px; } }
+      @media (max-width: 575px) {
+        header .header-container .logo img {
+          width: 117px; } }
+      @media (max-width: 390px) {
+        header .header-container .logo img {
+          width: 107px; } }
   header .menu-items {
     display: flex;
     align-items: center; }
@@ -1867,7 +1864,8 @@ section {
           line-height: 150%; } }
   .contact .contactForm {
     width: 50%;
-    margin-left: 180px; }
+    margin-left: 180px;
+    padding-top: 10px; }
     @media all and (max-width: 1400px) {
       .contact .contactForm {
         width: 55%;
@@ -1885,10 +1883,7 @@ section {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between; }
-      .contact .contactForm form input[type=text],
-      .contact .contactForm form [type=number],
-      .contact .contactForm form [type=mail],
-      .contact .contactForm form textarea {
+      .contact .contactForm form input[type=text], .contact .contactForm form [type=number], .contact .contactForm form [type=mail], .contact .contactForm form textarea {
         width: 100%;
         padding: 14px 15px;
         border: 2px solid transparent;
@@ -1900,39 +1895,24 @@ section {
         background: rgba(215, 215, 215, 0.3);
         font-size: 20px; }
         @media all and (max-width: 1400px) {
-          .contact .contactForm form input[type=text],
-          .contact .contactForm form [type=number],
-          .contact .contactForm form [type=mail],
-          .contact .contactForm form textarea {
+          .contact .contactForm form input[type=text], .contact .contactForm form [type=number], .contact .contactForm form [type=mail], .contact .contactForm form textarea {
             font-size: 14px;
             margin-top: 10px;
             margin-bottom: 35px;
             padding: 10px;
             border-radius: 3.5px; } }
         @media all and (max-width: 920px) {
-          .contact .contactForm form input[type=text],
-          .contact .contactForm form [type=number],
-          .contact .contactForm form [type=mail],
-          .contact .contactForm form textarea {
+          .contact .contactForm form input[type=text], .contact .contactForm form [type=number], .contact .contactForm form [type=mail], .contact .contactForm form textarea {
             font-size: 16px;
             padding: 12px 15px; } }
-        .contact .contactForm form input[type=text]:focus,
-        .contact .contactForm form [type=number]:focus,
-        .contact .contactForm form [type=mail]:focus,
-        .contact .contactForm form textarea:focus {
+        .contact .contactForm form input[type=text]:focus, .contact .contactForm form [type=number]:focus, .contact .contactForm form [type=mail]:focus, .contact .contactForm form textarea:focus {
           background: rgba(243, 243, 243, 0.7);
           border: 2px solid #212121; }
           @media all and (max-width: 1400px) {
-            .contact .contactForm form input[type=text]:focus,
-            .contact .contactForm form [type=number]:focus,
-            .contact .contactForm form [type=mail]:focus,
-            .contact .contactForm form textarea:focus {
+            .contact .contactForm form input[type=text]:focus, .contact .contactForm form [type=number]:focus, .contact .contactForm form [type=mail]:focus, .contact .contactForm form textarea:focus {
               border: 1.4px solid #212121; } }
           @media all and (max-width: 920px) {
-            .contact .contactForm form input[type=text]:focus,
-            .contact .contactForm form [type=number]:focus,
-            .contact .contactForm form [type=mail]:focus,
-            .contact .contactForm form textarea:focus {
+            .contact .contactForm form input[type=text]:focus, .contact .contactForm form [type=number]:focus, .contact .contactForm form [type=mail]:focus, .contact .contactForm form textarea:focus {
               border: 1px solid #212121; } }
       .contact .contactForm form textarea {
         margin-bottom: 20px;
@@ -2028,7 +2008,7 @@ section {
     margin-bottom: 60px; }
     @media all and (max-width: 1400px) {
       .contactDetails .contactDetailsBox {
-        margin-bottom: 12px; } }
+        margin-bottom: 15px; } }
     @media all and (max-width: 920px) {
       .contactDetails .contactDetailsBox {
         display: block;
@@ -2058,7 +2038,8 @@ section {
             height: 136px; } }
         @media all and (max-width: 1080px) {
           .contactDetails .contactDetailsBox .address:after {
-            right: 40px; } }
+            height: 160px;
+            right: 20px; } }
         @media all and (max-width: 920px) {
           .contactDetails .contactDetailsBox .address:after {
             height: 100%;
@@ -2103,7 +2084,7 @@ section {
           width: 30.7%; }
           @media all and (max-width: 1080px) {
             .contactDetails .contactDetailsBox .address .addressBox .addressBoxDetails {
-              width: 31.5%; } }
+              width: 32.7%; } }
           @media all and (max-width: 920px) {
             .contactDetails .contactDetailsBox .address .addressBox .addressBoxDetails {
               width: 100%;
@@ -2167,6 +2148,9 @@ section {
           line-height: 160%; }
         .contactDetails .contactDetailsBox .contactRight .contactRightDetails a {
           text-decoration: none; }
+          @media all and (max-width: 1400px) {
+            .contactDetails .contactDetailsBox .contactRight .contactRightDetails a {
+              font-size: 16px; } }
   .contactDetails .info {
     display: flex;
     align-items: flex-start; }

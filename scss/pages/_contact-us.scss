@@ -27,9 +27,9 @@ body{overflow: visible !important;}
 		@media all and (max-width: 1400px){width:45%;}
 		@media all and (max-width: 1280px){width:50%;}
 		.contactDescTitle{
-			@media all and (max-width: 920px){display: flex;align-items: baseline; border-bottom: 0.75px solid rgba(33, 33, 33, 0.6);}
+			@media all and (max-width: 920px){display: flex;align-items: flex-start; border-bottom: 0.75px solid rgba(33, 33, 33, 0.6);}
 			.backArrow{display:none;
-				@media all and (max-width: 920px){display:block;}
+				@media all and (max-width: 920px){display:block;margin-top: 12px;}
 				img{margin-right:30px;}
 			}
 			h1{margin-bottom:30px; line-height: 100%;
@@ -45,7 +45,7 @@ body{overflow: visible !important;}
 		@media all and (max-width: 920px){width:100%; margin-top: 20px; margin-bottom: 45px;line-height: 150%;}}
 	}
 	.contactForm{
-		width: 50%; margin-left: 180px;
+		width: 50%; margin-left: 180px;padding-top: 10px;
 		@media all and (max-width: 1400px){width: 55%;margin-left: 120px;}
 		@media all and (max-width: 1280px){width:50%; margin-left: 80px; margin-right: 10px;}
 		@media all and (max-width: 920px){width:100%; margin-left: 0px;}
@@ -111,7 +111,7 @@ body{overflow: visible !important;}
 .contactDetails{background: rgba(194, 194, 194, 0.2); padding: 50px 0px; margin: 0;
 	@media all and (max-width: 1400px) {padding: 35px 0px;}
 	.contactDetailsBox{display:flex; margin-bottom: 60px;
-		@media all and (max-width: 1400px){margin-bottom: 12px;}
+		@media all and (max-width: 1400px){margin-bottom: 15px;}
 		@media all and (max-width: 920px){display:block; margin-bottom: 30px;}
 	.address{width:75%; position:relative;
 		@media all and (max-width: 1400px){width:70%;}
@@ -125,7 +125,7 @@ body{overflow: visible !important;}
 	    		border: 1px solid #212121;
 			    top: 0;
 			    	@media all and (max-width: 1400px){height: 136px;}
-			    	@media all and (max-width: 1080px){right: 40px;}
+			    	@media all and (max-width: 1080px){height: 160px;right: 20px;}
 			    	@media all and (max-width: 920px){height: 100%; border: 0; border-bottom: 1px solid #212121; left: 0px; right: 0px;top: 30px; width: 100%;}
 			    }
 		.addTitle{display: flex;margin-bottom: 5px; align-items: center;
@@ -141,7 +141,7 @@ body{overflow: visible !important;}
 			@media all and (max-width: 1400px){margin-left: 50px;}
 			@media all and (max-width: 920px){display:block; margin-left: 0px;}
 		.addressBoxDetails{width: 30.7%;
-			@media all and (max-width: 1080px){width:31.5%;}
+			@media all and (max-width: 1080px){width:32.7%;}
 			@media all and (max-width: 920px){width:100%; margin-bottom: 20px;}
 			h4{margin-bottom:5px; line-height: 147%;
 				@media all and (max-width: 1400px){margin-bottom:3px;}
@@ -170,7 +170,8 @@ body{overflow: visible !important;}
 				@media all and (max-width: 1400px){margin-left: 50px;}
 				@media all and (max-width: 920px){margin-left: 0px;}
 				p{margin-bottom:5px; margin-bottom: 5px; line-height: 160%;}
-				a{text-decoration:none;}
+				a{text-decoration:none;
+					@media all and (max-width: 1400px){font-size:16px;}}
 			}
 		}
 	}
