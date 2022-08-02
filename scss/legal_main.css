@@ -1163,22 +1163,17 @@ section {
             .solutionSec .solutionSlider .slick-track .solutionBox p {
               line-height: 21px; } }
   @media all and (max-width: 652px) {
-    .solutionSec .solutionSlider .slick-track
-    .solutionBox {
+    .solutionSec .solutionSlider .slick-track .solutionBox {
       padding: 25px; }
-      .solutionSec .solutionSlider .slick-track
-      .solutionBox .iconImg {
+      .solutionSec .solutionSlider .slick-track .solutionBox .iconImg {
         width: 27px; }
-      .solutionSec .solutionSlider .slick-track
-      .solutionBox h3 {
+      .solutionSec .solutionSlider .slick-track .solutionBox h3 {
         font-size: 20px;
         padding: 14px 0px 20px 0px; }
-      .solutionSec .solutionSlider .slick-track
-      .solutionBox .solutionContent p {
+      .solutionSec .solutionSlider .slick-track .solutionBox .solutionContent p {
         font-size: 16px;
         padding: 15px 0px 6px; }
-      .solutionSec .solutionSlider .slick-track
-      .solutionBox .solutionContent a {
+      .solutionSec .solutionSlider .slick-track .solutionBox .solutionContent a {
         font-size: 16px; } }
 
 .sectors p {
@@ -1433,7 +1428,8 @@ section {
         .advantageSec .advantageSlider .slick-track .advantageBox:hover {
           background: #F3F3F3;
           border: 1px solid #F3F3F3; }
-        .advantageSec .advantageSlider .slick-track .advantageBox h3, .advantageSec .advantageSlider .slick-track .advantageBox p {
+        .advantageSec .advantageSlider .slick-track .advantageBox h3,
+        .advantageSec .advantageSlider .slick-track .advantageBox p {
           padding-top: 20px;
           padding-bottom: 20px;
           line-height: 35px; }
@@ -1464,7 +1460,8 @@ section {
         padding: 25px; }
         .advantageSec .advantageSlider .slick-track .advantageBox .iconImg {
           width: 40px; }
-        .advantageSec .advantageSlider .slick-track .advantageBox h3, .advantageSec .advantageSlider .slick-track .advantageBox p {
+        .advantageSec .advantageSlider .slick-track .advantageBox h3,
+        .advantageSec .advantageSlider .slick-track .advantageBox p {
           padding: 14px 0px 15px 0px;
           line-height: 30px; } }
   @media all and (max-width: 1400px) {
@@ -1472,7 +1469,8 @@ section {
       padding: 60px 0px; }
       .advantageSec .advantageSlider .slick-track .advantageBox {
         padding: 28px 17px 25px 28px; }
-        .advantageSec .advantageSlider .slick-track .advantageBox h3, .advantageSec .advantageSlider .slick-track .advantageBox p {
+        .advantageSec .advantageSlider .slick-track .advantageBox h3,
+        .advantageSec .advantageSlider .slick-track .advantageBox p {
           line-height: 25px;
           padding: 14px 0px 9px 0px; } }
   @media all and (max-width: 1180px) {
@@ -1494,25 +1492,21 @@ section {
           .advantageSec .advantageSlider .slick-track .advantageBox {
             height: 530px;
             margin-bottom: 20px; }
-            .advantageSec .advantageSlider .slick-track .advantageBox h3, .advantageSec .advantageSlider .slick-track .advantageBox p {
+            .advantageSec .advantageSlider .slick-track .advantageBox h3,
+            .advantageSec .advantageSlider .slick-track .advantageBox p {
               line-height: 21px; } }
   @media all and (max-width: 652px) {
-    .advantageSec .advantageSlider .slick-track
-    .advantageBox {
+    .advantageSec .advantageSlider .slick-track .advantageBox {
       padding: 25px; }
-      .advantageSec .advantageSlider .slick-track
-      .advantageBox .iconImg {
+      .advantageSec .advantageSlider .slick-track .advantageBox .iconImg {
         width: 27px; }
-      .advantageSec .advantageSlider .slick-track
-      .advantageBox h3 {
+      .advantageSec .advantageSlider .slick-track .advantageBox h3 {
         font-size: 20px;
         padding: 14px 0px 20px 0px; }
-      .advantageSec .advantageSlider .slick-track
-      .advantageBox .advantageContent p {
+      .advantageSec .advantageSlider .slick-track .advantageBox .advantageContent p {
         font-size: 16px;
         padding: 15px 0px 6px; }
-      .advantageSec .advantageSlider .slick-track
-      .advantageBox .advantageContent a {
+      .advantageSec .advantageSlider .slick-track .advantageBox .advantageContent a {
         font-size: 16px; } }
 
 .testlegalSec {
@@ -2446,7 +2440,8 @@ footer {
   filter: drop-shadow(5px 5px 15px rgba(33, 33, 33, 0.15));
   border: 1px solid #FAFAFA;
   border-radius: 5px;
-  z-index: 99; }
+  z-index: 999;
+  transition: all .2s; }
   @media all and (min-width: 770px) {
     #myBtn {
       display: none !important; } }

@@ -77,19 +77,19 @@ header {
                                 overflow-y: scroll;
                                 scrollbar-width: auto;
                                 scrollbar-color: #000;
-            
-            
+
+
                                 /* Chrome, Edge, and Safari */
                                 &::-webkit-scrollbar {
                                     width: 6px;
                                 }
-            
-            
-            
+
+
+
                                 &::-webkit-scrollbar-track {
                                     background: gray;
                                 }
-            
+
                                 &::-webkit-scrollbar-thumb {
                                     background-color: #000;
                                     border-radius: 15px;
@@ -113,7 +113,7 @@ header {
                                 transition: all .37s ease-in-out;
                                 background-color: #fafafa;
                                 border: 1px solid #f1f1f1;
-                                border-radius: 5px;                                
+                                border-radius: 5px;
                                 width: 14rem;
                                 margin-top: 20px;
 
@@ -429,18 +429,21 @@ header {
             }
         }
     }
-    .careerHeader{
-        &::before{
+
+    .careerHeader {
+        &::before {
             left: -2px !important;
         }
     }
+
     .menu-link:hover {
         position: relative;
         color: #000;
         text-decoration: none;
         transition: all 0.35s ease;
         font-weight: 600;
-        a{
+
+        a {
             color: #000;
         }
 
@@ -693,10 +696,10 @@ header {
                     position: relative;
                     color: #fff !important;
                     transition: all 0.35s ease;
-    
-    
-    
-    
+
+
+
+
                     &:after {
                         position: absolute;
                         content: "";
@@ -1036,7 +1039,8 @@ section {
             width: 76%;
             line-height: 90px;
         }
-        .bannerCta a img{
+
+        .bannerCta a img {
             width: 18px;
             height: 10px;
         }
@@ -1176,23 +1180,26 @@ section {
             }
         }
 
-        
+
         .slick-dots li {
             margin: 0px 10px;
+
             button::before {
-            color: transparent;
-            border: 1px solid rgba(33, 33, 33, 0.6);
-            border-radius: 60px;
-            line-height: 16px;
-            height: 14px;
-            width: 14px;}
+                color: transparent;
+                border: 1px solid rgba(33, 33, 33, 0.6);
+                border-radius: 60px;
+                line-height: 16px;
+                height: 14px;
+                width: 14px;
+            }
         }
 
         .slick-dots li.slick-active button:before {
             color: rgba(33, 33, 33, 0.6);
             font-size: 12px;
             padding: 1px;
-        }        
+        }
+
         .slick-slide img {
             display: inline-block;
         }
@@ -1305,21 +1312,29 @@ section {
 
 
     @media all and (max-width: 652px) {
-        .solutionSlider .slick-track
-        .solutionBox {
+        .solutionSlider .slick-track .solutionBox {
             padding: 25px;
+
             .iconImg {
                 width: 27px;
             }
-            h3{
+
+            h3 {
                 font-size: 20px;
                 padding: 14px 0px 20px 0px;
             }
-            .solutionContent{
-                p{font-size: 16px;padding: 15px 0px 6px;}
-                a{font-size: 16px;}
+
+            .solutionContent {
+                p {
+                    font-size: 16px;
+                    padding: 15px 0px 6px;
+                }
+
+                a {
+                    font-size: 16px;
+                }
             }
-            
+
         }
     }
 }
@@ -1427,6 +1442,7 @@ section {
             @media (max-width: 450px) {
                 left: 105px;
             }
+
             @media (max-width: 350px) {
                 left: 84px;
             }
@@ -1557,7 +1573,7 @@ section {
     }
 
     @media all and (max-width: 1400px) {
-        p{
+        p {
             padding: 20px 0px 10px;
         }
 
@@ -1566,17 +1582,18 @@ section {
             .sectorContent {
                 margin: 30px 20px 0px;
                 padding: 25px;
+
                 h5 {
                     padding: 12px 0px 10px 0px;
                 }
             }
-           
+
         }
     }
 
     @media all and (max-width: 1200px) {
-        
-        p{
+
+        p {
             padding: 15px 0px 10px;
         }
 
@@ -1585,10 +1602,12 @@ section {
             .sectorContent {
                 margin: 20px 14px 0px;
                 padding: 25px;
+
                 h5 {
                     padding: 12px 0px 10px 0px;
                 }
             }
+
             .slick-track {
                 margin-left: -7px;
             }
@@ -1619,13 +1638,15 @@ section {
                 }
             }
         }
-        .sectorsliderMobile  .slick-track{
+
+        .sectorsliderMobile .slick-track {
             margin-left: -4px;
         }
 
-    }       
+    }
 
     @media all and (max-width: 480px) {
+
         .sectorsliderDesktop .sectorBox,
         .sectorsliderMobile .sectorBox {
             .sectorContent {
@@ -1635,6 +1656,7 @@ section {
 
                 a {
                     font-size: 16px;
+
                     img {
                         width: 23px;
                         height: 24px;
@@ -1642,9 +1664,9 @@ section {
                 }
             }
         }
-       
 
-    } 
+
+    }
 
 }
 
@@ -1683,7 +1705,8 @@ section {
                     border: 1px solid #F3F3F3;
                 }
 
-                h3,p{
+                h3,
+                p {
                     padding-top: 20px;
                     padding-bottom: 20px;
                     line-height: 35px;
@@ -1699,13 +1722,15 @@ section {
 
         .slick-dots li {
             margin: 0px 10px;
+
             button::before {
-            color: transparent;
-            border: 1px solid rgba(33, 33, 33, 0.6);
-            border-radius: 60px;
-            line-height: 16px;
-            height: 14px;
-            width: 14px;}
+                color: transparent;
+                border: 1px solid rgba(33, 33, 33, 0.6);
+                border-radius: 60px;
+                line-height: 16px;
+                height: 14px;
+                width: 14px;
+            }
         }
 
         .slick-dots li.slick-active button:before {
@@ -1719,7 +1744,7 @@ section {
         }
     }
 
-    
+
 
     @media all and (max-width: 1800px) {
         .advantageBox {
@@ -1743,7 +1768,8 @@ section {
                     width: 40px;
                 }
 
-                h3,p{
+                h3,
+                p {
                     padding: 14px 0px 15px 0px;
                     line-height: 30px;
                 }
@@ -1759,7 +1785,8 @@ section {
                 .advantageBox {
                     padding: 28px 17px 25px 28px;
 
-                    h3,p{
+                    h3,
+                    p {
                         line-height: 25px;
                         padding: 14px 0px 9px 0px;
                     }
@@ -1769,15 +1796,16 @@ section {
 
     }
 
-    @media all and (max-width: 1180px){
-        .advantageSlider .slick-track{
+    @media all and (max-width: 1180px) {
+        .advantageSlider .slick-track {
             margin-left: -9px;
-            .advantageBox{
+
+            .advantageBox {
                 padding: 20px 17px;
                 margin: 0px 10px;
             }
         }
-        
+
     }
 
     @media all and (max-width: 1024px) {
@@ -1798,7 +1826,8 @@ section {
                     height: 530px;
                     margin-bottom: 20px;
 
-                    h3,p{
+                    h3,
+                    p {
                         line-height: 21px;
                     }
                 }
@@ -1807,21 +1836,29 @@ section {
     }
 
     @media all and (max-width: 652px) {
-        .advantageSlider .slick-track
-        .advantageBox {
+        .advantageSlider .slick-track .advantageBox {
             padding: 25px;
+
             .iconImg {
                 width: 27px;
             }
-            h3{
+
+            h3 {
                 font-size: 20px;
                 padding: 14px 0px 20px 0px;
             }
-            .advantageContent{
-                p{font-size: 16px;padding: 15px 0px 6px;}
-                a{font-size: 16px;}
+
+            .advantageContent {
+                p {
+                    font-size: 16px;
+                    padding: 15px 0px 6px;
+                }
+
+                a {
+                    font-size: 16px;
+                }
             }
-            
+
         }
     }
 }
@@ -1839,18 +1876,20 @@ section {
             margin-bottom: 50px;
         }
     }
+
     @media all and (max-width: 1450px) {
         h2 {
             margin-bottom: 40px;
         }
     }
+
     @media all and (max-width: 1250px) {
         h2 {
             margin-bottom: 30px;
         }
     }
 
-    
+
 
     .testlegalSlider {
         .slick-slide {
@@ -1864,13 +1903,14 @@ section {
         .slick-list {
             margin: 0px -26px 60px 0px;
 
-            
+
             @media (max-width: 480px) {
                 margin: 0px -16px 60px 0px;
             }
 
-            .slick-track{
+            .slick-track {
                 margin-left: -21px !important;
+
                 @media (max-width: 480px) {
                     margin-left: -10px !important;
                 }
@@ -1926,6 +1966,7 @@ section {
             @media (max-width: 450px) {
                 left: 105px;
             }
+
             @media (max-width: 350px) {
                 left: 84px;
             }
@@ -2042,15 +2083,16 @@ section {
 
             @media (max-width: 1600px) {
                 padding: 52px 140px 60px 130px;
-                
+
             }
 
             @media (max-width: 1450px) {
                 padding: 44px 117px 54px 108px;
             }
+
             @media (max-width: 1280px) {
                 padding: 35px 50px 40px 60px;
-                
+
             }
 
             @media (max-width: 1090px) {
@@ -2067,7 +2109,7 @@ section {
                 width: 26%;
                 margin-left: -65px;
 
-                img{
+                img {
                     margin: 0 auto;
                 }
 
@@ -2093,6 +2135,7 @@ section {
 
                 @media (max-width: 1280px) {
                     margin-left: -15px;
+
                     img {
                         height: 110px;
                         width: 110px;
@@ -2153,6 +2196,7 @@ section {
                         @media (max-width: 920px) {
                             text-align: left;
                         }
+
                         @media (max-width: 680px) {
                             font-size: 10px;
                         }
@@ -2178,12 +2222,15 @@ section {
                 p {
                     padding-top: 30px;
                     line-height: 35px;
+
                     @media (max-width: 1600px) {
                         line-height: 25px;
                     }
+
                     @media (max-width: 1250px) {
                         padding-top: 15px;
                     }
+
                     @media (max-width: 900px) {
                         line-height: 22px;
                     }
@@ -2200,11 +2247,13 @@ section {
                         height: 100px;
                         top: -10px;
                     }
+
                     @media (max-width: 1450px) {
                         top: -2px;
                         width: 115px;
                         height: 81px;
                     }
+
                     @media (max-width: 1250px) {
                         top: -16px;
                         width: 80px;
@@ -3310,12 +3359,16 @@ footer {
     filter: drop-shadow(5px 5px 15px rgba(33, 33, 33, 0.15));
     border: 1px solid #FAFAFA;
     border-radius: 5px;
-    z-index: 99;
-
+    z-index: 999;
+    transition: all .2s;
+   
+   
     @media all and (min-width: 770px) {
         display: none !important;
     }
 }
+
+
 
 
 .scroll-text {
@@ -3353,6 +3406,7 @@ footer {
     margin: auto;
     border: 1px solid rgba(33, 33, 33, 0.5);
     z-index: 11;
+
     &:before {
         position: absolute;
         content: "";
@@ -3365,6 +3419,7 @@ footer {
         background: #000;
         border-radius: 50%;
     }
+
     &::after {
         position: absolute;
         content: "";
