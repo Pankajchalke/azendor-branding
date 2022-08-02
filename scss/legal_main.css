@@ -1870,7 +1870,8 @@ section {
           line-height: 150%; } }
   .contact .contactForm {
     width: 50%;
-    margin-left: 180px; }
+    margin-left: 180px;
+    padding-top: 10px; }
     @media all and (max-width: 1400px) {
       .contact .contactForm {
         width: 55%;
@@ -1888,10 +1889,7 @@ section {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between; }
-      .contact .contactForm form input[type=text],
-      .contact .contactForm form [type=number],
-      .contact .contactForm form [type=mail],
-      .contact .contactForm form textarea {
+      .contact .contactForm form input[type=text], .contact .contactForm form [type=number], .contact .contactForm form [type=mail], .contact .contactForm form textarea {
         width: 100%;
         padding: 14px 15px;
         border: 2px solid transparent;
@@ -1903,39 +1901,24 @@ section {
         background: rgba(215, 215, 215, 0.3);
         font-size: 20px; }
         @media all and (max-width: 1400px) {
-          .contact .contactForm form input[type=text],
-          .contact .contactForm form [type=number],
-          .contact .contactForm form [type=mail],
-          .contact .contactForm form textarea {
+          .contact .contactForm form input[type=text], .contact .contactForm form [type=number], .contact .contactForm form [type=mail], .contact .contactForm form textarea {
             font-size: 14px;
             margin-top: 10px;
             margin-bottom: 35px;
             padding: 10px;
             border-radius: 3.5px; } }
         @media all and (max-width: 920px) {
-          .contact .contactForm form input[type=text],
-          .contact .contactForm form [type=number],
-          .contact .contactForm form [type=mail],
-          .contact .contactForm form textarea {
+          .contact .contactForm form input[type=text], .contact .contactForm form [type=number], .contact .contactForm form [type=mail], .contact .contactForm form textarea {
             font-size: 16px;
             padding: 12px 15px; } }
-        .contact .contactForm form input[type=text]:focus,
-        .contact .contactForm form [type=number]:focus,
-        .contact .contactForm form [type=mail]:focus,
-        .contact .contactForm form textarea:focus {
+        .contact .contactForm form input[type=text]:focus, .contact .contactForm form [type=number]:focus, .contact .contactForm form [type=mail]:focus, .contact .contactForm form textarea:focus {
           background: rgba(243, 243, 243, 0.7);
           border: 2px solid #212121; }
           @media all and (max-width: 1400px) {
-            .contact .contactForm form input[type=text]:focus,
-            .contact .contactForm form [type=number]:focus,
-            .contact .contactForm form [type=mail]:focus,
-            .contact .contactForm form textarea:focus {
+            .contact .contactForm form input[type=text]:focus, .contact .contactForm form [type=number]:focus, .contact .contactForm form [type=mail]:focus, .contact .contactForm form textarea:focus {
               border: 1.4px solid #212121; } }
           @media all and (max-width: 920px) {
-            .contact .contactForm form input[type=text]:focus,
-            .contact .contactForm form [type=number]:focus,
-            .contact .contactForm form [type=mail]:focus,
-            .contact .contactForm form textarea:focus {
+            .contact .contactForm form input[type=text]:focus, .contact .contactForm form [type=number]:focus, .contact .contactForm form [type=mail]:focus, .contact .contactForm form textarea:focus {
               border: 1px solid #212121; } }
       .contact .contactForm form textarea {
         margin-bottom: 20px;
@@ -2031,7 +2014,7 @@ section {
     margin-bottom: 60px; }
     @media all and (max-width: 1400px) {
       .contactDetails .contactDetailsBox {
-        margin-bottom: 12px; } }
+        margin-bottom: 15px; } }
     @media all and (max-width: 920px) {
       .contactDetails .contactDetailsBox {
         display: block;
@@ -2061,7 +2044,8 @@ section {
             height: 136px; } }
         @media all and (max-width: 1080px) {
           .contactDetails .contactDetailsBox .address:after {
-            right: 40px; } }
+            height: 160px;
+            right: 20px; } }
         @media all and (max-width: 920px) {
           .contactDetails .contactDetailsBox .address:after {
             height: 100%;
@@ -2106,7 +2090,7 @@ section {
           width: 30.7%; }
           @media all and (max-width: 1080px) {
             .contactDetails .contactDetailsBox .address .addressBox .addressBoxDetails {
-              width: 31.5%; } }
+              width: 32.7%; } }
           @media all and (max-width: 920px) {
             .contactDetails .contactDetailsBox .address .addressBox .addressBoxDetails {
               width: 100%;
@@ -2170,6 +2154,9 @@ section {
           line-height: 160%; }
         .contactDetails .contactDetailsBox .contactRight .contactRightDetails a {
           text-decoration: none; }
+          @media all and (max-width: 920px) {
+            .contactDetails .contactDetailsBox .contactRight .contactRightDetails a {
+              font-size: 16px; } }
   .contactDetails .info {
     display: flex;
     align-items: flex-start; }
