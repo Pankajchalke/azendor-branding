@@ -135,6 +135,7 @@ header {
                                 display: block;
                                 text-align: left;
                                 transition: all .25s linear;
+                                font-size: 16px;
 
                                 &:hover {
 
@@ -150,7 +151,7 @@ header {
                         background-image: url('../images/down-arrow.svg');
                         background-repeat: no-repeat;
                         display: inline-block;
-                        margin-left: 3px;
+                        margin-left: 13px;
                         top: 1px;
                         position: relative;
                         transition: all .25s ease;
@@ -172,7 +173,7 @@ header {
                         color: #212121;
                         cursor: pointer;
                         text-decoration: none;
-                        font-size: 16px;
+                        font-size: 20px;
 
                         &.active {
                             position: relative;
@@ -227,13 +228,18 @@ header {
             z-index: 99;
             height: 100%;
             width: 100%;
-            top: 29px;
+            top: 43px;
             right: 0px;
             height: 24px;
             width: 24px;
 
+            
+
+            @media (max-width:770px) {
+                top: 29px;
+            }
             @media (max-width:390px) {
-                top: 21px;
+                top: 25px;
             }
 
             .spinner {
@@ -337,7 +343,7 @@ header {
             }
 
             >.dropdown-menuLegal {
-                width: 164px;
+                width: 195px;
                 list-style: none;
                 position: absolute;
                 float: left;
@@ -347,7 +353,10 @@ header {
                 border: 1px solid transparent;
                 background: #FAFAFA;
                 border: transparent;
-
+                
+                @media (max-width: 1400px) {
+                    width: 180px;
+                }
 
                 &.open {
                     max-height: 160px;
@@ -495,15 +504,20 @@ header {
         @media (max-width: 920px) {
             display: block;
             position: relative;
+            padding-top: 100px;
         }
 
         @media (max-width: 770px) {
             padding-top: 45px;
-            padding-bottom: 25px;
+            padding-bottom: 33px;
+        }
+        @media (max-width: 575px) {
+            padding-bottom: 26px;
         }
 
         @media (max-width: 390px) {
             padding-top: 34px;
+            padding-bottom: 33px;
         }
 
         input[type="checkbox"],
@@ -1104,6 +1118,10 @@ section {
             font-size: 39px;
             line-height: 48px;
         }
+        .bannerCta a{
+            font-size: 14px !important;
+            padding: 11px 19px;
+        }
     }
 
     @media all and (max-width: 550px) {
@@ -1600,6 +1618,9 @@ section {
     }
 
     @media all and (max-width: 780px) {
+        p{
+            font-size: 16px !important;
+        }
 
         .sectorsDesktop {
             display: none;
@@ -2143,6 +2164,8 @@ section {
                         @media (max-width: 920px) {
                             text-align: left;
                             margin-bottom: 5px;
+                            font-weight: 700;
+                            font-size: 20px ;
                         }
                     }
 
@@ -2241,7 +2264,7 @@ section {
                     font-size: 16px;
 
                     img {
-                        margin-top: 4px;
+                        margin-top: 2px;
                         transition: 0.6s all;
                         width: 18px;
                         height: 9px;
@@ -2718,8 +2741,11 @@ footer {
                 margin-right: 50px;
             }
         }
+        .copyrightmbl{
+            display: none;
+        }
 
-        .copyRight {
+        .copyRight , .mobileCopy{
             display: flex;
             align-items: center;
 
@@ -2731,7 +2757,7 @@ footer {
         @media all and (max-width: 1024px) {
             display: block;
 
-            .copyRight {
+            .copyRight , .mobileCopy{
                 margin-top: 20px;
             }
         }
@@ -2947,8 +2973,14 @@ footer {
 
     @media all and (max-width:575px) {
         .footerLinks {
-            .copyRight {
+            .copyRight, .mobileCopy {
                 align-items: flex-start;
+            }
+            .copyrightmbl{
+                display: block;
+            }
+            .copyRight{
+                display: none;
             }
         }
     }
@@ -3020,10 +3052,10 @@ footer {
         position: absolute;
         content: "";
         right: 0;
-        bottom: 28px;
-        left: -6px;
-        width: 12px;
-        height: 12px;
+        bottom: 26px;
+        left: -5px;
+        width: 9px;
+        height: 9px;
         //height: 1%;
         background: #000;
         border-radius: 50%;
@@ -3050,10 +3082,13 @@ footer {
 
 .progress-container-mobile .progress-bar-mobile {
     position: fixed;
-    height: 3px;
+    height: 0px;
     background: #000;
     z-index: 999;
     left: 0;
+    border: 2px solid #212121;
+    border-radius: 0px 10px 10px 0px;
+    margin-top: -1px;
 
 
     @media all and (min-width: 770px) {

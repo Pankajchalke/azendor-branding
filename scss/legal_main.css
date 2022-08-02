@@ -429,7 +429,8 @@ header {
               header #sidebarContainer #sideMenu .sideMenuInner li .dropdownLegal > .dropdown-menuLegal > li > a {
                 display: block;
                 text-align: left;
-                transition: all .25s linear; }
+                transition: all .25s linear;
+                font-size: 16px; }
                 header #sidebarContainer #sideMenu .sideMenuInner li .dropdownLegal > .dropdown-menuLegal > li > a:hover {
                   color: #212121; }
           header #sidebarContainer #sideMenu .sideMenuInner li .down-caret {
@@ -438,7 +439,7 @@ header {
             background-image: url("../images/down-arrow.svg");
             background-repeat: no-repeat;
             display: inline-block;
-            margin-left: 3px;
+            margin-left: 13px;
             top: 1px;
             position: relative;
             transition: all .25s ease;
@@ -453,7 +454,7 @@ header {
             color: #212121;
             cursor: pointer;
             text-decoration: none;
-            font-size: 16px; }
+            font-size: 20px; }
             header #sidebarContainer #sideMenu .sideMenuInner li a.active {
               position: relative;
               color: #212121 !important;
@@ -492,13 +493,16 @@ header {
       z-index: 99;
       height: 100%;
       width: 100%;
-      top: 29px;
+      top: 43px;
       right: 0px;
       height: 24px;
       width: 24px; }
+      @media (max-width: 770px) {
+        header #sidebarContainer .sideIconToggle {
+          top: 29px; } }
       @media (max-width: 390px) {
         header #sidebarContainer .sideIconToggle {
-          top: 21px; } }
+          top: 25px; } }
       header #sidebarContainer .sideIconToggle .spinner {
         transition: all 0.3s;
         box-sizing: border-box;
@@ -560,7 +564,7 @@ header {
         border-radius: 15px;
         border: 6px solid #000; }
     header .menu-items .dropdownLegal > .dropdown-menuLegal {
-      width: 164px;
+      width: 195px;
       list-style: none;
       position: absolute;
       float: left;
@@ -570,6 +574,9 @@ header {
       border: 1px solid transparent;
       background: #FAFAFA;
       border: transparent; }
+      @media (max-width: 1400px) {
+        header .menu-items .dropdownLegal > .dropdown-menuLegal {
+          width: 180px; } }
       header .menu-items .dropdownLegal > .dropdown-menuLegal.open {
         max-height: 160px;
         height: auto;
@@ -668,14 +675,19 @@ header {
     @media (max-width: 920px) {
       header .header-container {
         display: block;
-        position: relative; } }
+        position: relative;
+        padding-top: 100px; } }
     @media (max-width: 770px) {
       header .header-container {
         padding-top: 45px;
-        padding-bottom: 25px; } }
+        padding-bottom: 33px; } }
+    @media (max-width: 575px) {
+      header .header-container {
+        padding-bottom: 26px; } }
     @media (max-width: 390px) {
       header .header-container {
-        padding-top: 34px; } }
+        padding-top: 34px;
+        padding-bottom: 33px; } }
     header .header-container input[type="checkbox"],
     header .header-container .hamburger-lines {
       display: none; }
@@ -1054,7 +1066,10 @@ section {
     .bannerSec h1 {
       line-height: 46px;
       font-size: 39px;
-      line-height: 48px; } }
+      line-height: 48px; }
+    .bannerSec .bannerCta a {
+      font-size: 14px !important;
+      padding: 11px 19px; } }
   @media all and (max-width: 550px) {
     .bannerSec {
       margin: 100px 0px 180px 0px; } }
@@ -1389,6 +1404,8 @@ section {
   .sectors .sectorsliderMobile .sectorBox .slick-track {
     margin-left: -7px; } }
 @media all and (max-width: 780px) {
+  .sectors p {
+    font-size: 16px !important; }
   .sectors .sectorsDesktop {
     display: none; }
   .sectors .sectorsMobile {
@@ -1722,7 +1739,9 @@ section {
           @media (max-width: 920px) {
             .testlegalSec .testlegalSlider .testimonialsLegal .profile .profileInfo h4 {
               text-align: left;
-              margin-bottom: 5px; } }
+              margin-bottom: 5px;
+              font-weight: 700;
+              font-size: 20px; } }
         .testlegalSec .testlegalSlider .testimonialsLegal .profile .profileInfo p {
           text-align: center; }
           @media (max-width: 1450px) {
@@ -1796,7 +1815,7 @@ section {
         align-items: center;
         font-size: 16px; }
         .testlegalSec .testlegalSlider .testimonialsLegal .testlegalMobile a img {
-          margin-top: 4px;
+          margin-top: 2px;
           transition: 0.6s all;
           width: 18px;
           height: 9px;
@@ -2317,15 +2336,17 @@ footer {
         color: #ffffff; }
       footer .footerLinks .linksFt a:nth-child(1) {
         margin-right: 50px; }
-    footer .footerLinks .copyRight {
+    footer .footerLinks .copyrightmbl {
+      display: none; }
+    footer .footerLinks .copyRight, footer .footerLinks .mobileCopy {
       display: flex;
       align-items: center; }
-      footer .footerLinks .copyRight img {
+      footer .footerLinks .copyRight img, footer .footerLinks .mobileCopy img {
         margin-right: 10px; }
     @media all and (max-width: 1024px) {
       footer .footerLinks {
         display: block; }
-        footer .footerLinks .copyRight {
+        footer .footerLinks .copyRight, footer .footerLinks .mobileCopy {
           margin-top: 20px; } }
   @media all and (max-width: 1800px) {
     footer .footerSec .footerSub {
@@ -2421,8 +2442,12 @@ footer {
               width: 35px;
               height: 35px; } }
   @media all and (max-width: 575px) {
+    footer .footerLinks .copyRight, footer .footerLinks .mobileCopy {
+      align-items: flex-start; }
+    footer .footerLinks .copyrightmbl {
+      display: block; }
     footer .footerLinks .copyRight {
-      align-items: flex-start; } }
+      display: none; } }
 
 #myBtn {
   box-sizing: border-box;
@@ -2478,10 +2503,10 @@ footer {
     position: absolute;
     content: "";
     right: 0;
-    bottom: 28px;
-    left: -6px;
-    width: 12px;
-    height: 12px;
+    bottom: 26px;
+    left: -5px;
+    width: 9px;
+    height: 9px;
     background: #000;
     border-radius: 50%; }
   .scroll-symbol::after {
@@ -2502,10 +2527,13 @@ footer {
 
 .progress-container-mobile .progress-bar-mobile {
   position: fixed;
-  height: 3px;
+  height: 0px;
   background: #000;
   z-index: 999;
-  left: 0; }
+  left: 0;
+  border: 2px solid #212121;
+  border-radius: 0px 10px 10px 0px;
+  margin-top: -1px; }
   @media all and (min-width: 770px) {
     .progress-container-mobile .progress-bar-mobile {
       display: none !important; } }
