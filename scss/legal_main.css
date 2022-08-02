@@ -2287,6 +2287,12 @@ footer {
         margin-bottom: 15px; }
         footer .footerSec .footerSub ul li:nth-last-child(1) {
           margin-bottom: 0px; }
+      footer .footerSec .footerSub a {
+        color: #fff !important; }
+        footer .footerSec .footerSub a:focus, footer .footerSec .footerSub a:hover {
+          color: #fff !important;
+          outline: none;
+          outline-offset: unset; }
       footer .footerSec .footerSub:nth-child(1) {
         width: 19%;
         padding-left: 0px;

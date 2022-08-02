@@ -2646,6 +2646,14 @@ footer {
                 }
             }
 
+            a{
+                color: #fff !important;
+                &:focus, &:hover{
+                    color: #fff !important;
+                    outline: none;
+                    outline-offset: unset;
+                }
+            }
             &:nth-child(1) {
                 width: 19%;
                 padding-left: 0px;
