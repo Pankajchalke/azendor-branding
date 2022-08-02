@@ -353,7 +353,7 @@ header {
   background-color: #fff; }
   @media (max-width: 760px) {
     header {
-      border-bottom: 1px solid #6A6A6A; } }
+      border-bottom: 2px solid rgba(106, 106, 106, 0.5); } }
   header #sidebarContainer {
     display: none; }
     @media (max-width: 920px) {
@@ -383,53 +383,55 @@ header {
         header #sidebarContainer #sideMenu .sideMenuInner li {
           list-style: none;
           padding: 20px 0px;
-          cursor: pointer; }
-          header #sidebarContainer #sideMenu .sideMenuInner li .dropdown {
+          cursor: pointer;
+          color: #212121; }
+          header #sidebarContainer #sideMenu .sideMenuInner li a {
+            color: #212121 !important; }
+          header #sidebarContainer #sideMenu .sideMenuInner li .dropdownLegal {
             position: relative;
             display: inline-block; }
-            header #sidebarContainer #sideMenu .sideMenuInner li .dropdown .drop {
-              color: #000;
+            header #sidebarContainer #sideMenu .sideMenuInner li .dropdownLegal .drop {
+              color: #212121;
               border-radius: 6px;
               position: relative;
               display: inline-block; }
-            header #sidebarContainer #sideMenu .sideMenuInner li .dropdown > .sector.open {
+            header #sidebarContainer #sideMenu .sideMenuInner li .dropdownLegal > .sector.open {
               overflow-y: scroll;
               scrollbar-width: auto;
               scrollbar-color: #000;
               /* Chrome, Edge, and Safari */ }
-              header #sidebarContainer #sideMenu .sideMenuInner li .dropdown > .sector.open::-webkit-scrollbar {
+              header #sidebarContainer #sideMenu .sideMenuInner li .dropdownLegal > .sector.open::-webkit-scrollbar {
                 width: 6px; }
-              header #sidebarContainer #sideMenu .sideMenuInner li .dropdown > .sector.open::-webkit-scrollbar-track {
+              header #sidebarContainer #sideMenu .sideMenuInner li .dropdownLegal > .sector.open::-webkit-scrollbar-track {
                 background: gray; }
-              header #sidebarContainer #sideMenu .sideMenuInner li .dropdown > .sector.open::-webkit-scrollbar-thumb {
+              header #sidebarContainer #sideMenu .sideMenuInner li .dropdownLegal > .sector.open::-webkit-scrollbar-thumb {
                 background-color: #000;
                 border-radius: 15px;
                 border: 6px solid #000; }
-            header #sidebarContainer #sideMenu .sideMenuInner li .dropdown > .dropdown-menu {
+            header #sidebarContainer #sideMenu .sideMenuInner li .dropdownLegal > .dropdown-menuLegal {
               position: unset !important;
               overflow: hidden;
               max-height: 0px;
               padding: 0px 0px 0px 15px;
               border: transparent; }
-              header #sidebarContainer #sideMenu .sideMenuInner li .dropdown > .dropdown-menu.open {
+              header #sidebarContainer #sideMenu .sideMenuInner li .dropdownLegal > .dropdown-menuLegal.open {
                 padding: 0px 0px 0px 15px;
                 max-height: 200px;
                 transition: all .37s ease-in-out;
                 background-color: #fafafa;
                 border: 1px solid #f1f1f1;
                 border-radius: 5px;
-                width: 14rem;
+                width: 210px;
                 margin-top: 20px;
                 /* Chrome, Edge, and Safari */ }
-                header #sidebarContainer #sideMenu .sideMenuInner li .dropdown > .dropdown-menu.open li {
+                header #sidebarContainer #sideMenu .sideMenuInner li .dropdownLegal > .dropdown-menuLegal.open li {
                   padding: 10px 0px !important; }
-              header #sidebarContainer #sideMenu .sideMenuInner li .dropdown > .dropdown-menu > li > a {
+              header #sidebarContainer #sideMenu .sideMenuInner li .dropdownLegal > .dropdown-menuLegal > li > a {
                 display: block;
-                color: #555;
                 text-align: left;
                 transition: all .25s linear; }
-                header #sidebarContainer #sideMenu .sideMenuInner li .dropdown > .dropdown-menu > li > a:hover {
-                  color: #fff; }
+                header #sidebarContainer #sideMenu .sideMenuInner li .dropdownLegal > .dropdown-menuLegal > li > a:hover {
+                  color: #212121; }
           header #sidebarContainer #sideMenu .sideMenuInner li .down-caret {
             width: 12px;
             height: 8px;
@@ -536,28 +538,28 @@ header {
       box-sizing: border-box;
       transform: rotate(-135deg);
       margin-top: -10px; }
-  header .menu-items .dropdown {
+  header .menu-items .dropdownLegal {
     position: relative;
     display: inline-block; }
-    header .menu-items .dropdown .drop {
+    header .menu-items .dropdownLegal .drop {
       color: #000;
       border-radius: 6px;
       position: relative;
       display: inline-block; }
-    header .menu-items .dropdown > .sector.open {
+    header .menu-items .dropdownLegal > .sector.open {
       overflow-y: scroll;
       scrollbar-width: auto;
       scrollbar-color: #000;
       /* Chrome, Edge, and Safari */ }
-      header .menu-items .dropdown > .sector.open::-webkit-scrollbar {
+      header .menu-items .dropdownLegal > .sector.open::-webkit-scrollbar {
         width: 6px; }
-      header .menu-items .dropdown > .sector.open::-webkit-scrollbar-track {
+      header .menu-items .dropdownLegal > .sector.open::-webkit-scrollbar-track {
         background: gray; }
-      header .menu-items .dropdown > .sector.open::-webkit-scrollbar-thumb {
+      header .menu-items .dropdownLegal > .sector.open::-webkit-scrollbar-thumb {
         background-color: #000;
         border-radius: 15px;
         border: 6px solid #000; }
-    header .menu-items .dropdown > .dropdown-menu {
+    header .menu-items .dropdownLegal > .dropdown-menuLegal {
       width: 164px;
       list-style: none;
       position: absolute;
@@ -568,7 +570,7 @@ header {
       border: 1px solid transparent;
       background: #FAFAFA;
       border: transparent; }
-      header .menu-items .dropdown > .dropdown-menu.open {
+      header .menu-items .dropdownLegal > .dropdown-menuLegal.open {
         max-height: 160px;
         height: auto;
         padding: 10px 0px;
@@ -576,15 +578,15 @@ header {
         border: 1px solid #F1F1F1;
         border-radius: 10px;
         background: #FAFAFA; }
-      header .menu-items .dropdown > .dropdown-menu li {
+      header .menu-items .dropdownLegal > .dropdown-menuLegal li {
         margin-left: 0px !important; }
-      header .menu-items .dropdown > .dropdown-menu > li > a {
+      header .menu-items .dropdownLegal > .dropdown-menuLegal > li > a {
         padding: 7px 0px 7px 18px;
         display: block;
         color: #555;
         text-align: left;
         transition: all .25s linear; }
-        header .menu-items .dropdown > .dropdown-menu > li > a:hover {
+        header .menu-items .dropdownLegal > .dropdown-menuLegal > li > a:hover {
           background-color: #fff;
           color: #000; }
   header .menu-items .down-caret {
@@ -936,6 +938,9 @@ header {
 
 section {
   margin-top: 150px; }
+  section a:focus {
+    outline: none !important;
+    outline-offset: unset !important; }
   @media all and (max-width: 1650px) {
     section {
       margin-top: 120px; } }
@@ -1037,6 +1042,7 @@ section {
       margin: 10px 0px 15px; } }
   @media all and (max-width: 900px) {
     .bannerSec {
+      position: relative;
       margin: 120px 0px 180px 0px; }
       .bannerSec h1 {
         width: 100%;
@@ -1073,7 +1079,7 @@ section {
           border-top: 1px solid #000; }
           .solutionSec .solutionSlider .slick-track .solutionBox .solutionContent a {
             text-decoration: none;
-            color: #000;
+            color: #212121;
             display: flex;
             align-items: center; }
             .solutionSec .solutionSlider .slick-track .solutionBox .solutionContent a img {
@@ -1097,12 +1103,12 @@ section {
         color: transparent;
         border: 1px solid rgba(33, 33, 33, 0.6);
         border-radius: 60px;
-        line-height: 16px;
+        line-height: 13px;
         height: 14px;
         width: 14px; }
     .solutionSec .solutionSlider .slick-dots li.slick-active button:before {
       color: rgba(33, 33, 33, 0.6);
-      font-size: 12px;
+      font-size: 10px;
       padding: 1px; }
     .solutionSec .solutionSlider .slick-slide img {
       display: inline-block; }
@@ -1160,17 +1166,22 @@ section {
             .solutionSec .solutionSlider .slick-track .solutionBox p {
               line-height: 21px; } }
   @media all and (max-width: 652px) {
-    .solutionSec .solutionSlider .slick-track .solutionBox {
+    .solutionSec .solutionSlider .slick-track
+    .solutionBox {
       padding: 25px; }
-      .solutionSec .solutionSlider .slick-track .solutionBox .iconImg {
+      .solutionSec .solutionSlider .slick-track
+      .solutionBox .iconImg {
         width: 27px; }
-      .solutionSec .solutionSlider .slick-track .solutionBox h3 {
+      .solutionSec .solutionSlider .slick-track
+      .solutionBox h3 {
         font-size: 20px;
         padding: 14px 0px 20px 0px; }
-      .solutionSec .solutionSlider .slick-track .solutionBox .solutionContent p {
+      .solutionSec .solutionSlider .slick-track
+      .solutionBox .solutionContent p {
         font-size: 16px;
         padding: 15px 0px 6px; }
-      .solutionSec .solutionSlider .slick-track .solutionBox .solutionContent a {
+      .solutionSec .solutionSlider .slick-track
+      .solutionBox .solutionContent a {
         font-size: 16px; } }
 
 .sectors p {
@@ -1425,8 +1436,7 @@ section {
         .advantageSec .advantageSlider .slick-track .advantageBox:hover {
           background: #F3F3F3;
           border: 1px solid #F3F3F3; }
-        .advantageSec .advantageSlider .slick-track .advantageBox h3,
-        .advantageSec .advantageSlider .slick-track .advantageBox p {
+        .advantageSec .advantageSlider .slick-track .advantageBox h3, .advantageSec .advantageSlider .slick-track .advantageBox p {
           padding-top: 20px;
           padding-bottom: 20px;
           line-height: 35px; }
@@ -1436,12 +1446,12 @@ section {
         color: transparent;
         border: 1px solid rgba(33, 33, 33, 0.6);
         border-radius: 60px;
-        line-height: 16px;
+        line-height: 13px;
         height: 14px;
         width: 14px; }
     .advantageSec .advantageSlider .slick-dots li.slick-active button:before {
       color: rgba(33, 33, 33, 0.6);
-      font-size: 12px;
+      font-size: 10px;
       padding: 1px; }
     .advantageSec .advantageSlider .slick-slide img {
       display: inline-block; }
@@ -1457,8 +1467,7 @@ section {
         padding: 25px; }
         .advantageSec .advantageSlider .slick-track .advantageBox .iconImg {
           width: 40px; }
-        .advantageSec .advantageSlider .slick-track .advantageBox h3,
-        .advantageSec .advantageSlider .slick-track .advantageBox p {
+        .advantageSec .advantageSlider .slick-track .advantageBox h3, .advantageSec .advantageSlider .slick-track .advantageBox p {
           padding: 14px 0px 15px 0px;
           line-height: 30px; } }
   @media all and (max-width: 1400px) {
@@ -1466,8 +1475,7 @@ section {
       padding: 60px 0px; }
       .advantageSec .advantageSlider .slick-track .advantageBox {
         padding: 28px 17px 25px 28px; }
-        .advantageSec .advantageSlider .slick-track .advantageBox h3,
-        .advantageSec .advantageSlider .slick-track .advantageBox p {
+        .advantageSec .advantageSlider .slick-track .advantageBox h3, .advantageSec .advantageSlider .slick-track .advantageBox p {
           line-height: 25px;
           padding: 14px 0px 9px 0px; } }
   @media all and (max-width: 1180px) {
@@ -1489,21 +1497,25 @@ section {
           .advantageSec .advantageSlider .slick-track .advantageBox {
             height: 530px;
             margin-bottom: 20px; }
-            .advantageSec .advantageSlider .slick-track .advantageBox h3,
-            .advantageSec .advantageSlider .slick-track .advantageBox p {
+            .advantageSec .advantageSlider .slick-track .advantageBox h3, .advantageSec .advantageSlider .slick-track .advantageBox p {
               line-height: 21px; } }
   @media all and (max-width: 652px) {
-    .advantageSec .advantageSlider .slick-track .advantageBox {
+    .advantageSec .advantageSlider .slick-track
+    .advantageBox {
       padding: 25px; }
-      .advantageSec .advantageSlider .slick-track .advantageBox .iconImg {
+      .advantageSec .advantageSlider .slick-track
+      .advantageBox .iconImg {
         width: 27px; }
-      .advantageSec .advantageSlider .slick-track .advantageBox h3 {
+      .advantageSec .advantageSlider .slick-track
+      .advantageBox h3 {
         font-size: 20px;
         padding: 14px 0px 20px 0px; }
-      .advantageSec .advantageSlider .slick-track .advantageBox .advantageContent p {
+      .advantageSec .advantageSlider .slick-track
+      .advantageBox .advantageContent p {
         font-size: 16px;
         padding: 15px 0px 6px; }
-      .advantageSec .advantageSlider .slick-track .advantageBox .advantageContent a {
+      .advantageSec .advantageSlider .slick-track
+      .advantageBox .advantageContent a {
         font-size: 16px; } }
 
 .testlegalSec {
@@ -2431,13 +2443,13 @@ footer {
       display: none !important; } }
 
 .scroll-text {
-  position: fixed;
+  position: absolute;
   width: 39px;
   height: 13px;
   left: 0;
   right: 0;
   margin: 0 auto;
-  bottom: 74px;
+  bottom: -60px;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
@@ -2452,12 +2464,12 @@ footer {
       display: none !important; } }
 
 .scroll-symbol {
-  position: fixed;
+  position: absolute;
   width: 1px;
   height: 24px;
   left: 0;
   right: 0;
-  bottom: 30px;
+  bottom: -104px;
   border-radius: 2px;
   margin: auto;
   border: 1px solid rgba(33, 33, 33, 0.5);
