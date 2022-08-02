@@ -587,7 +587,8 @@ body {
           line-height: 150%; } }
   .contact .contactForm {
     width: 50%;
-    margin-left: 180px; }
+    margin-left: 180px;
+    padding-top: 10px; }
     @media all and (max-width: 1400px) {
       .contact .contactForm {
         width: 55%;
@@ -730,7 +731,7 @@ body {
     margin-bottom: 60px; }
     @media all and (max-width: 1400px) {
       .contactDetails .contactDetailsBox {
-        margin-bottom: 12px; } }
+        margin-bottom: 15px; } }
     @media all and (max-width: 920px) {
       .contactDetails .contactDetailsBox {
         display: block;
@@ -760,6 +761,7 @@ body {
             height: 136px; } }
         @media all and (max-width: 1080px) {
           .contactDetails .contactDetailsBox .address:after {
+            height: 160px;
             right: 40px; } }
         @media all and (max-width: 920px) {
           .contactDetails .contactDetailsBox .address:after {
@@ -805,7 +807,7 @@ body {
           width: 30.7%; }
           @media all and (max-width: 1080px) {
             .contactDetails .contactDetailsBox .address .addressBox .addressBoxDetails {
-              width: 31.5%; } }
+              width: 31.7%; } }
           @media all and (max-width: 920px) {
             .contactDetails .contactDetailsBox .address .addressBox .addressBoxDetails {
               width: 100%;
@@ -869,6 +871,9 @@ body {
           line-height: 160%; }
         .contactDetails .contactDetailsBox .contactRight .contactRightDetails a {
           text-decoration: none; }
+          @media all and (max-width: 920px) {
+            .contactDetails .contactDetailsBox .contactRight .contactRightDetails a {
+              font-size: 16px; } }
   .contactDetails .info {
     display: flex;
     align-items: flex-start; }
