@@ -871,7 +871,7 @@ body {
           line-height: 160%; }
         .contactDetails .contactDetailsBox .contactRight .contactRightDetails a {
           text-decoration: none; }
-          @media all and (max-width: 920px) {
+          @media all and (max-width: 1400px) {
             .contactDetails .contactDetailsBox .contactRight .contactRightDetails a {
               font-size: 16px; } }
   .contactDetails .info {
