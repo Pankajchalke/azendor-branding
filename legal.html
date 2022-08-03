@@ -1059,67 +1059,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/custom.js"></script>
-
-    <script>
-        $(document).ready(function () {
-            $(".dropdownSolution").hover(function () {
-                $(".submenuSolution").toggleClass("open");
-                $(".downcaretsolution").toggleClass("open-caret");        
-            });
-            $(".dropdownSector").hover(function () {
-                $(".submenuSector").toggleClass("open");
-                $(".downcaretsector").toggleClass("open-caret");        
-            });
-            $(".dropdownAbout").hover(function () {
-                $(".submenuAbout").toggleClass("open");
-                $(".downcaretabout").toggleClass("open-caret");        
-            });
-        });
-    </script>
-
-    <!-- Hiding scrollTop button from first Section that is 
-     -->
-    <script>
-        const topSection = document.getElementById("topSec");
-        sectionHeight = topSection.clientHeight;
-
-
-        const botton = document.getElementById("myBtn");
-
-        const scrollSymbol = document.getElementById("scroll-symbol");
-        const scrollText = document.getElementById("scroll-text");
-
-        window.onscroll = function () {
-            if (window.pageYOffset >= sectionHeight / 3) {
-                botton.style.visibility = "visible";
-                scrollSymbol.style.visibility = "hidden";
-                scrollText.style.visibility = "hidden";
-            } else {
-                botton.style.visibility = "hidden";
-                scrollSymbol.style.visibility = "visible";
-                scrollText.style.visibility = "visible";
-            }
-        };
-
-    </script>
-
-    <!-- Show scroll Symbol for the first section and then hide it for remaining section -->
-    <script>
-      //  const firstSection = document.getElementById("topSec");
-      //   sectionHeights = firstSection.clientHeight;
-
-      //   const scrollSymbol = document.getElementById("scroll-symbol");
-      //   const scrollText = document.getElementById("scroll-text");
-      //   window.onscroll = function () {
-      //     if (scrollY <= sectionHeights) {
-      //       scrollSymbol.style.visibility = "visible";
-      //       scrollText.style.visibility = "visible";
-      //     } else {
-      //         scrollSymbol.style.visibility = "hidden";
-      //       scrollText.style.visibility = "hidden";
-      //     }
-      //   };
-    </script>
 </body>
 
 <div class="modal" id="readMore" role="dialog" tabindex="-1" aria-labelledby="basicModal" aria-hidden="true">

@@ -21,12 +21,12 @@ if ($("#fullpage").length) {
     slidesNavigation: false,
     scrollHorizontally: true,
     controlArrows: true,
-    scrollOverflow:true,
+    scrollOverflow: true,
     normalScrollElements: "#scrolldiv",
     licenseKey: "OPEN-SOURCE-GPLV3-LICENSE",
     scrollBar: true,
     responsiveWidth: 1030,
-    afterResponsive: function (isResponsive) {},
+    afterResponsive: function (isResponsive) { },
     afterLoad: function (anchorLink, index) {
       console.log(index);
 
@@ -37,8 +37,8 @@ if ($("#fullpage").length) {
         $("a[class = 'scroll-icon']").prop("href", "#bannerSec1");
         $(".secOne").addClass("is-active");
         $(".secTwo").removeClass("is-active");
-        
-      
+
+
       }
       if (index == 2) {
         $("#myBtn").css("display", "block");
@@ -47,8 +47,8 @@ if ($("#fullpage").length) {
         $("a[class = 'scroll-icon']").prop("href", "#bannerSec2");
         $(".secOne").addClass("is-active");
         $(".secTwo").removeClass("is-active");
-       
-       
+
+
       }
       if (index == 3) {
         $(".scroll-text").css("display", "block");
@@ -56,8 +56,8 @@ if ($("#fullpage").length) {
         $("a[class = 'scroll-icon']").prop("href", "#serviceSec");
         $(".secOne").addClass("is-active");
         $(".secTwo").removeClass("is-active");
-      
-       
+
+
       }
       if (index == 4) {
         $(".scroll-text").css("display", "none");
@@ -65,8 +65,8 @@ if ($("#fullpage").length) {
         $(".secOne").removeClass("is-active");
         $(".secTwo").addClass("is-active");
         $(".secThree").removeClass("is-active");
-       
-       
+
+
       }
       if (index == 5) {
         $(".scroll-text").css("display", "none");
@@ -74,8 +74,8 @@ if ($("#fullpage").length) {
         $(".secTwo").removeClass("is-active");
         $(".secThree").addClass("is-active");
         $(".secFour").removeClass("is-active");
-       
-       
+
+
       }
       if (index == 6) {
         $(".scroll-text").css("display", "none");
@@ -83,7 +83,7 @@ if ($("#fullpage").length) {
         $(".secThree").removeClass("is-active");
         $(".secFour").addClass("is-active");
         $(".secFive").removeClass("is-active");
-       
+
       }
       if (index == 7) {
         $(".scroll-text").css("display", "none");
@@ -91,8 +91,8 @@ if ($("#fullpage").length) {
         $(".secFour").removeClass("is-active");
         $(".secFive").addClass("is-active");
         $(".secSix").removeClass("is-active");
-       
-       
+
+
       }
       if (index == 8) {
         $(".scroll-text").css("display", "none");
@@ -100,14 +100,14 @@ if ($("#fullpage").length) {
         $(".secFive").removeClass("is-active");
         $(".secSix").addClass("is-active");
         $(".secSeven").removeClass("is-active");
-       
-       }
+
+      }
       if (index == 9) {
         $(".scroll-text").css("display", "none");
         $(".scroll-symbol").css("display", "none");
         $(".secSix").removeClass("is-active");
         $(".secSeven").addClass("is-active");
-       
+
       }
     },
 
@@ -369,7 +369,7 @@ if (mediaQuerythree.matches) {
   $(document).ready(function () {
     $(".contentThree").slice(0, 8).show();
     $("#loadMorethree").on("click", function (e) {
-      e.pre/ventDefault();
+      e.pre / ventDefault();
       $(".contentThree:hidden").slice(0, 8).slideDown();
       if ($(".contentThree:hidden").length == 0) {
         $("#loadMorethree").text("No Content").addClass("noContent");
@@ -597,4 +597,41 @@ window.addEventListener("scroll", () => {
 });
 
 
+// legal Header Dropdown
+$(document).ready(function () {
+  $(".dropdownSolution").hover(function () {
+    $(".submenuSolution").toggleClass("open");
+    $(".downcaretsolution").toggleClass("open-caret");
+  });
+  $(".dropdownSector").hover(function () {
+    $(".submenuSector").toggleClass("open");
+    $(".downcaretsector").toggleClass("open-caret");
+  });
+  $(".dropdownAbout").hover(function () {
+    $(".submenuAbout").toggleClass("open");
+    $(".downcaretabout").toggleClass("open-caret");
+  });
+});
 
+
+// legal top button mobile js
+const topSection = document.getElementById("topSec");
+sectionHeight = topSection.clientHeight;
+
+
+const botton = document.getElementById("myBtn");
+
+const scrollSymbol = document.getElementById("scroll-symbol");
+const scrollText = document.getElementById("scroll-text");
+
+window.onscroll = function () {
+  if (window.pageYOffset >= sectionHeight / 3) {
+    botton.style.visibility = "visible";
+    scrollSymbol.style.visibility = "hidden";
+    scrollText.style.visibility = "hidden";
+  } else {
+    botton.style.visibility = "hidden";
+    scrollSymbol.style.visibility = "visible";
+    scrollText.style.visibility = "visible";
+  }
+};

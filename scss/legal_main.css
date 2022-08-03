@@ -529,11 +529,15 @@ header {
                 border: none;
                 outline: none;
                 background: #fff; }
-          header #sidebarContainer #sideMenu .sideMenuInner li .careerHeader, header #sidebarContainer #sideMenu .sideMenuInner li .contact {
+          header #sidebarContainer #sideMenu .sideMenuInner li .careerHeader,
+          header #sidebarContainer #sideMenu .sideMenuInner li .contact {
             font-size: 20px;
             color: #212121;
             text-decoration: none; }
-            header #sidebarContainer #sideMenu .sideMenuInner li .careerHeader:hover, header #sidebarContainer #sideMenu .sideMenuInner li .careerHeader:focus, header #sidebarContainer #sideMenu .sideMenuInner li .careerHeader:active, header #sidebarContainer #sideMenu .sideMenuInner li .contact:hover, header #sidebarContainer #sideMenu .sideMenuInner li .contact:focus, header #sidebarContainer #sideMenu .sideMenuInner li .contact:active {
+            header #sidebarContainer #sideMenu .sideMenuInner li .careerHeader:hover, header #sidebarContainer #sideMenu .sideMenuInner li .careerHeader:focus, header #sidebarContainer #sideMenu .sideMenuInner li .careerHeader:active,
+            header #sidebarContainer #sideMenu .sideMenuInner li .contact:hover,
+            header #sidebarContainer #sideMenu .sideMenuInner li .contact:focus,
+            header #sidebarContainer #sideMenu .sideMenuInner li .contact:active {
               color: #212121;
               font-weight: 600; }
       header #sidebarContainer #sideMenu #sidenav-overlay body::before {
@@ -1391,15 +1395,15 @@ section {
   margin-top: 20px; }
 .sectors .sectorsliderDesktop .slick-prev,
 .sectors .sectorsliderMobile .slick-prev {
-  left: 1150px; }
-  @media (max-width: 1950px) {
+  left: 850px; }
+  @media (max-width: 2200px) {
     .sectors .sectorsliderDesktop .slick-prev,
     .sectors .sectorsliderMobile .slick-prev {
-      left: 750px; } }
+      left: 730px; } }
   @media (max-width: 1850px) {
     .sectors .sectorsliderDesktop .slick-prev,
     .sectors .sectorsliderMobile .slick-prev {
-      left: 670px; } }
+      left: 650px; } }
   @media (max-width: 1650px) {
     .sectors .sectorsliderDesktop .slick-prev,
     .sectors .sectorsliderMobile .slick-prev {
@@ -1407,7 +1411,7 @@ section {
   @media (max-width: 1450px) {
     .sectors .sectorsliderDesktop .slick-prev,
     .sectors .sectorsliderMobile .slick-prev {
-      left: 550px; } }
+      left: 530px; } }
   @media (max-width: 1300px) {
     .sectors .sectorsliderDesktop .slick-prev,
     .sectors .sectorsliderMobile .slick-prev {
@@ -1415,7 +1419,7 @@ section {
   @media (max-width: 1050px) {
     .sectors .sectorsliderDesktop .slick-prev,
     .sectors .sectorsliderMobile .slick-prev {
-      left: 390px; } }
+      left: 360px; } }
   @media (max-width: 920px) {
     .sectors .sectorsliderDesktop .slick-prev,
     .sectors .sectorsliderMobile .slick-prev {
@@ -1454,15 +1458,15 @@ section {
       opacity: 1; }
 .sectors .sectorsliderDesktop .slick-next,
 .sectors .sectorsliderMobile .slick-next {
-  right: 1150px; }
-  @media (max-width: 1950px) {
+  right: 850px; }
+  @media (max-width: 2200px) {
     .sectors .sectorsliderDesktop .slick-next,
     .sectors .sectorsliderMobile .slick-next {
-      right: 750px; } }
+      right: 730px; } }
   @media (max-width: 1850px) {
     .sectors .sectorsliderDesktop .slick-next,
     .sectors .sectorsliderMobile .slick-next {
-      right: 670px; } }
+      right: 650px; } }
   @media (max-width: 1650px) {
     .sectors .sectorsliderDesktop .slick-next,
     .sectors .sectorsliderMobile .slick-next {
@@ -1470,7 +1474,7 @@ section {
   @media (max-width: 1450px) {
     .sectors .sectorsliderDesktop .slick-next,
     .sectors .sectorsliderMobile .slick-next {
-      right: 550px; } }
+      right: 530px; } }
   @media (max-width: 1300px) {
     .sectors .sectorsliderDesktop .slick-next,
     .sectors .sectorsliderMobile .slick-next {
@@ -1478,7 +1482,7 @@ section {
   @media (max-width: 1050px) {
     .sectors .sectorsliderDesktop .slick-next,
     .sectors .sectorsliderMobile .slick-next {
-      right: 390px; } }
+      right: 360px; } }
   @media (max-width: 920px) {
     .sectors .sectorsliderDesktop .slick-next,
     .sectors .sectorsliderMobile .slick-next {
@@ -1715,25 +1719,25 @@ section {
     height: 0;
     margin-top: 20px; }
   .testlegalSec .testlegalSlider .slick-prev {
-    left: 1150px; }
-    @media (max-width: 1950px) {
+    left: 850px; }
+    @media (max-width: 2200px) {
       .testlegalSec .testlegalSlider .slick-prev {
-        left: 750px; } }
+        left: 730px; } }
     @media (max-width: 1850px) {
       .testlegalSec .testlegalSlider .slick-prev {
-        left: 670px; } }
+        left: 650px; } }
     @media (max-width: 1650px) {
       .testlegalSec .testlegalSlider .slick-prev {
         left: 600px; } }
     @media (max-width: 1450px) {
       .testlegalSec .testlegalSlider .slick-prev {
-        left: 550px; } }
+        left: 530px; } }
     @media (max-width: 1300px) {
       .testlegalSec .testlegalSlider .slick-prev {
         left: 420px; } }
     @media (max-width: 1050px) {
       .testlegalSec .testlegalSlider .slick-prev {
-        left: 390px; } }
+        left: 360px; } }
     @media (max-width: 920px) {
       .testlegalSec .testlegalSlider .slick-prev {
         top: 98%;
@@ -1762,25 +1766,25 @@ section {
       .testlegalSec .testlegalSlider .slick-prev:before:hover {
         opacity: 1; }
   .testlegalSec .testlegalSlider .slick-next {
-    right: 1150px; }
-    @media (max-width: 1950px) {
+    right: 850px; }
+    @media (max-width: 2200px) {
       .testlegalSec .testlegalSlider .slick-next {
-        right: 750px; } }
+        right: 730px; } }
     @media (max-width: 1850px) {
       .testlegalSec .testlegalSlider .slick-next {
-        right: 670px; } }
+        right: 650px; } }
     @media (max-width: 1650px) {
       .testlegalSec .testlegalSlider .slick-next {
         right: 600px; } }
     @media (max-width: 1450px) {
       .testlegalSec .testlegalSlider .slick-next {
-        right: 550px; } }
+        right: 530px; } }
     @media (max-width: 1300px) {
       .testlegalSec .testlegalSlider .slick-next {
         right: 420px; } }
     @media (max-width: 1050px) {
       .testlegalSec .testlegalSlider .slick-next {
-        right: 390px; } }
+        right: 360px; } }
     @media (max-width: 920px) {
       .testlegalSec .testlegalSlider .slick-next {
         top: 98%;
@@ -2520,7 +2524,9 @@ footer {
         display: block; }
         footer .footerLinks .copyRight,
         footer .footerLinks .mobileCopy {
-          margin-top: 20px; } }
+          margin-top: 20px; }
+        footer .footerLinks .linksFt a:nth-child(1) {
+          margin-right: 30px; } }
   @media all and (max-width: 1800px) {
     footer .footerSec .footerSub {
       padding: 0px 40px 80px 40px; } }

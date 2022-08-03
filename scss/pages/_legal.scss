@@ -204,7 +204,8 @@ header {
                         }
                     }
 
-                    .careerHeader , .contact{
+                    .careerHeader,
+                    .contact {
                         font-size: 20px;
                         color: #212121;
                         text-decoration: none;
@@ -1483,14 +1484,14 @@ section {
         }
 
         .slick-prev {
-            left: 1150px;
+            left: 850px;
 
-            @media (max-width: 1950px) {
-                left: 750px;
+            @media (max-width: 2200px) {
+                left: 730px;
             }
 
             @media (max-width: 1850px) {
-                left: 670px;
+                left: 650px;
             }
 
 
@@ -1499,7 +1500,7 @@ section {
             }
 
             @media (max-width: 1450px) {
-                left: 550px;
+                left: 530px;
             }
 
             @media (max-width: 1300px) {
@@ -1507,7 +1508,7 @@ section {
             }
 
             @media (max-width: 1050px) {
-                left: 390px;
+                left: 360px;
             }
 
             @media (max-width: 920px) {
@@ -1557,14 +1558,14 @@ section {
         }
 
         .slick-next {
-            right: 1150px;
+            right: 850px;
 
-            @media (max-width: 1950px) {
-                right: 750px;
+            @media (max-width: 2200px) {
+                right: 730px;
             }
 
             @media (max-width: 1850px) {
-                right: 670px;
+                right: 650px;
             }
 
             @media (max-width: 1650px) {
@@ -1572,7 +1573,7 @@ section {
             }
 
             @media (max-width: 1450px) {
-                right: 550px;
+                right: 530px;
             }
 
             @media (max-width: 1300px) {
@@ -1580,7 +1581,7 @@ section {
             }
 
             @media (max-width: 1050px) {
-                right: 390px;
+                right: 360px;
             }
 
             @media (max-width: 920px) {
@@ -2010,14 +2011,15 @@ section {
         }
 
         .slick-prev {
-            left: 1150px;
+            left: 850px;
 
-            @media (max-width: 1950px) {
-                left: 750px;
+            @media (max-width: 2200px) {
+                left: 730px;
             }
+           
 
             @media (max-width: 1850px) {
-                left: 670px;
+                left: 650px;
             }
 
 
@@ -2026,7 +2028,7 @@ section {
             }
 
             @media (max-width: 1450px) {
-                left: 550px;
+                left: 530px;
             }
 
             @media (max-width: 1300px) {
@@ -2034,7 +2036,7 @@ section {
             }
 
             @media (max-width: 1050px) {
-                left: 390px;
+                left: 360px;
             }
 
             @media (max-width: 920px) {
@@ -2084,14 +2086,14 @@ section {
         }
 
         .slick-next {
-            right: 1150px;
+            right: 850px;
 
-            @media (max-width: 1950px) {
-                right: 750px;
+            @media (max-width: 2200px) {
+                right: 730px;
             }
 
             @media (max-width: 1850px) {
-                right: 670px;
+                right: 650px;
             }
 
             @media (max-width: 1650px) {
@@ -2099,7 +2101,7 @@ section {
             }
 
             @media (max-width: 1450px) {
-                right: 550px;
+                right: 530px;
             }
 
             @media (max-width: 1300px) {
@@ -2107,7 +2109,7 @@ section {
             }
 
             @media (max-width: 1050px) {
-                right: 390px;
+                right: 360px;
             }
 
             @media (max-width: 920px) {
@@ -3234,6 +3236,12 @@ footer {
             .copyRight,
             .mobileCopy {
                 margin-top: 20px;
+            }
+
+            .linksFt a {
+                &:nth-child(1) {
+                    margin-right: 30px;
+                }
             }
         }
     }
