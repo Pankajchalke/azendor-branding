@@ -385,39 +385,67 @@ header {
           padding: 20px 0px;
           cursor: pointer;
           color: #212121; }
-          header #sidebarContainer #sideMenu .sideMenuInner li a {
-            color: #212121 !important; }
-          header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout {
+          header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution,
+          header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector,
+          header #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout {
             position: relative;
             display: inline-block; }
-            header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution .drop, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector .drop, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout .drop {
+            header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution .drop,
+            header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector .drop,
+            header #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout .drop {
               color: #212121;
               border-radius: 6px;
               position: relative;
               display: inline-block; }
             @media (max-width: 920px) {
-              header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution > .sector, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector > .sector, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout > .sector {
+              header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution > .sector,
+              header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector > .sector,
+              header #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout > .sector {
                 max-height: 176px; } }
-            header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution > .sector.open, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector > .sector.open, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout > .sector.open {
+            header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution > .sector.open,
+            header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector > .sector.open,
+            header #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout > .sector.open {
               overflow-y: scroll;
               scrollbar-width: auto;
               scrollbar-color: #000;
               /* Chrome, Edge, and Safari */ }
-              header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution > .sector.open::-webkit-scrollbar, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector > .sector.open::-webkit-scrollbar, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout > .sector.open::-webkit-scrollbar {
+              header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution > .sector.open::-webkit-scrollbar,
+              header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector > .sector.open::-webkit-scrollbar,
+              header #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout > .sector.open::-webkit-scrollbar {
                 width: 6px; }
-              header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution > .sector.open::-webkit-scrollbar-track, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector > .sector.open::-webkit-scrollbar-track, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout > .sector.open::-webkit-scrollbar-track {
+              header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution > .sector.open::-webkit-scrollbar-track,
+              header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector > .sector.open::-webkit-scrollbar-track,
+              header #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout > .sector.open::-webkit-scrollbar-track {
                 background: gray; }
-              header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution > .sector.open::-webkit-scrollbar-thumb, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector > .sector.open::-webkit-scrollbar-thumb, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout > .sector.open::-webkit-scrollbar-thumb {
+              header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution > .sector.open::-webkit-scrollbar-thumb,
+              header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector > .sector.open::-webkit-scrollbar-thumb,
+              header #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout > .sector.open::-webkit-scrollbar-thumb {
                 background-color: #000;
                 border-radius: 15px;
                 border: 6px solid #000; }
-            header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution > .submenuSolution, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution .submenuSector, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution .submenuAbout, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector > .submenuSolution, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector .submenuSector, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector .submenuAbout, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout > .submenuSolution, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout .submenuSector, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout .submenuAbout {
+            header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution > .submenuSolution,
+            header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution .submenuSector,
+            header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution .submenuAbout,
+            header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector > .submenuSolution,
+            header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector .submenuSector,
+            header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector .submenuAbout,
+            header #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout > .submenuSolution,
+            header #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout .submenuSector,
+            header #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout .submenuAbout {
               position: unset !important;
               overflow: hidden;
               display: none;
               padding: 0px 0px 0px 15px;
               border: transparent; }
-              header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution > .submenuSolution.open, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution .submenuSector.open, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution .submenuAbout.open, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector > .submenuSolution.open, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector .submenuSector.open, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector .submenuAbout.open, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout > .submenuSolution.open, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout .submenuSector.open, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout .submenuAbout.open {
+              header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution > .submenuSolution.open,
+              header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution .submenuSector.open,
+              header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution .submenuAbout.open,
+              header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector > .submenuSolution.open,
+              header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector .submenuSector.open,
+              header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector .submenuAbout.open,
+              header #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout > .submenuSolution.open,
+              header #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout .submenuSector.open,
+              header #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout .submenuAbout.open {
                 padding: 0px 0px 0px 15px;
                 display: block;
                 transition: all .37s ease-in-out;
@@ -427,16 +455,44 @@ header {
                 width: 210px;
                 margin-top: 20px;
                 /* Chrome, Edge, and Safari */ }
-                header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution > .submenuSolution.open li, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution .submenuSector.open li, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution .submenuAbout.open li, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector > .submenuSolution.open li, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector .submenuSector.open li, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector .submenuAbout.open li, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout > .submenuSolution.open li, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout .submenuSector.open li, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout .submenuAbout.open li {
+                header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution > .submenuSolution.open li,
+                header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution .submenuSector.open li,
+                header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution .submenuAbout.open li,
+                header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector > .submenuSolution.open li,
+                header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector .submenuSector.open li,
+                header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector .submenuAbout.open li,
+                header #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout > .submenuSolution.open li,
+                header #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout .submenuSector.open li,
+                header #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout .submenuAbout.open li {
                   padding: 10px 0px !important; }
-              header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution > .submenuSolution > li > a, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution .submenuSector > li > a, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution .submenuAbout > li > a, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector > .submenuSolution > li > a, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector .submenuSector > li > a, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector .submenuAbout > li > a, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout > .submenuSolution > li > a, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout .submenuSector > li > a, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout .submenuAbout > li > a {
+              header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution > .submenuSolution > li > a,
+              header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution .submenuSector > li > a,
+              header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution .submenuAbout > li > a,
+              header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector > .submenuSolution > li > a,
+              header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector .submenuSector > li > a,
+              header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector .submenuAbout > li > a,
+              header #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout > .submenuSolution > li > a,
+              header #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout .submenuSector > li > a,
+              header #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout .submenuAbout > li > a {
                 display: block;
                 text-align: left;
                 transition: all .25s linear;
-                font-size: 16px; }
-                header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution > .submenuSolution > li > a:hover, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution .submenuSector > li > a:hover, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution .submenuAbout > li > a:hover, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector > .submenuSolution > li > a:hover, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector .submenuSector > li > a:hover, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector .submenuAbout > li > a:hover, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout > .submenuSolution > li > a:hover, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout .submenuSector > li > a:hover, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout .submenuAbout > li > a:hover {
+                font-size: 16px;
+                color: #212121;
+                text-decoration: none; }
+                header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution > .submenuSolution > li > a:hover,
+                header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution .submenuSector > li > a:hover,
+                header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution .submenuAbout > li > a:hover,
+                header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector > .submenuSolution > li > a:hover,
+                header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector .submenuSector > li > a:hover,
+                header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector .submenuAbout > li > a:hover,
+                header #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout > .submenuSolution > li > a:hover,
+                header #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout .submenuSector > li > a:hover,
+                header #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout .submenuAbout > li > a:hover {
                   color: #212121; }
-          header #sidebarContainer #sideMenu .sideMenuInner li .downcaretsolution, header #sidebarContainer #sideMenu .sideMenuInner li .downcaretsector, header #sidebarContainer #sideMenu .sideMenuInner li .downcaretabout {
+          header #sidebarContainer #sideMenu .sideMenuInner li .downcaretsolution,
+          header #sidebarContainer #sideMenu .sideMenuInner li .downcaretsector,
+          header #sidebarContainer #sideMenu .sideMenuInner li .downcaretabout {
             width: 12px;
             height: 8px;
             background-image: url("../images/down-arrow.svg");
@@ -453,17 +509,17 @@ header {
             display: block;
             font-size: 14px;
             color: rgba(255, 255, 255, 0.5); }
-          header #sidebarContainer #sideMenu .sideMenuInner li a {
-            color: #212121;
+          header #sidebarContainer #sideMenu .sideMenuInner li p {
+            color: #212121 !important;
             cursor: pointer;
             text-decoration: none;
             font-size: 20px; }
-            header #sidebarContainer #sideMenu .sideMenuInner li a.active {
+            header #sidebarContainer #sideMenu .sideMenuInner li p.active {
               position: relative;
               color: #212121 !important;
               transition: all 0.35s ease;
               text-decoration: none; }
-              header #sidebarContainer #sideMenu .sideMenuInner li a.active:after {
+              header #sidebarContainer #sideMenu .sideMenuInner li p.active:after {
                 position: absolute;
                 content: "";
                 left: 0;
@@ -473,6 +529,13 @@ header {
                 border: none;
                 outline: none;
                 background: #fff; }
+          header #sidebarContainer #sideMenu .sideMenuInner li .careerHeader, header #sidebarContainer #sideMenu .sideMenuInner li .contact {
+            font-size: 20px;
+            color: #212121;
+            text-decoration: none; }
+            header #sidebarContainer #sideMenu .sideMenuInner li .careerHeader:hover, header #sidebarContainer #sideMenu .sideMenuInner li .careerHeader:focus, header #sidebarContainer #sideMenu .sideMenuInner li .careerHeader:active, header #sidebarContainer #sideMenu .sideMenuInner li .contact:hover, header #sidebarContainer #sideMenu .sideMenuInner li .contact:focus, header #sidebarContainer #sideMenu .sideMenuInner li .contact:active {
+              color: #212121;
+              font-weight: 600; }
       header #sidebarContainer #sideMenu #sidenav-overlay body::before {
         position: fixed;
         top: 0;
@@ -545,39 +608,67 @@ header {
       box-sizing: border-box;
       transform: rotate(-135deg);
       margin-top: -10px; }
-  header .menu-items .dropdownSolution, header .menu-items .dropdownSector, header .menu-items .dropdownAbout {
+  header .menu-items .dropdownSolution,
+  header .menu-items .dropdownSector,
+  header .menu-items .dropdownAbout {
     position: relative;
     display: inline-block; }
-    header .menu-items .dropdownSolution .drop, header .menu-items .dropdownSector .drop, header .menu-items .dropdownAbout .drop {
+    header .menu-items .dropdownSolution .drop,
+    header .menu-items .dropdownSector .drop,
+    header .menu-items .dropdownAbout .drop {
       color: #000;
       border-radius: 6px;
       position: relative;
       display: inline-block; }
-    header .menu-items .dropdownSolution > .sector, header .menu-items .dropdownSector > .sector, header .menu-items .dropdownAbout > .sector {
+    header .menu-items .dropdownSolution > .sector,
+    header .menu-items .dropdownSector > .sector,
+    header .menu-items .dropdownAbout > .sector {
       max-height: 176px; }
       @media (max-width: 1800px) {
-        header .menu-items .dropdownSolution > .sector, header .menu-items .dropdownSector > .sector, header .menu-items .dropdownAbout > .sector {
+        header .menu-items .dropdownSolution > .sector,
+        header .menu-items .dropdownSector > .sector,
+        header .menu-items .dropdownAbout > .sector {
           max-height: 166px; } }
       @media (max-width: 1600px) {
-        header .menu-items .dropdownSolution > .sector, header .menu-items .dropdownSector > .sector, header .menu-items .dropdownAbout > .sector {
+        header .menu-items .dropdownSolution > .sector,
+        header .menu-items .dropdownSector > .sector,
+        header .menu-items .dropdownAbout > .sector {
           max-height: 154px; } }
       @media (max-width: 1400px) {
-        header .menu-items .dropdownSolution > .sector, header .menu-items .dropdownSector > .sector, header .menu-items .dropdownAbout > .sector {
+        header .menu-items .dropdownSolution > .sector,
+        header .menu-items .dropdownSector > .sector,
+        header .menu-items .dropdownAbout > .sector {
           max-height: 144px; } }
-      header .menu-items .dropdownSolution > .sector.open, header .menu-items .dropdownSector > .sector.open, header .menu-items .dropdownAbout > .sector.open {
+      header .menu-items .dropdownSolution > .sector.open,
+      header .menu-items .dropdownSector > .sector.open,
+      header .menu-items .dropdownAbout > .sector.open {
         overflow-y: scroll;
         scrollbar-width: auto;
         scrollbar-color: #000;
         /* Chrome, Edge, and Safari */ }
-        header .menu-items .dropdownSolution > .sector.open::-webkit-scrollbar, header .menu-items .dropdownSector > .sector.open::-webkit-scrollbar, header .menu-items .dropdownAbout > .sector.open::-webkit-scrollbar {
+        header .menu-items .dropdownSolution > .sector.open::-webkit-scrollbar,
+        header .menu-items .dropdownSector > .sector.open::-webkit-scrollbar,
+        header .menu-items .dropdownAbout > .sector.open::-webkit-scrollbar {
           width: 6px; }
-        header .menu-items .dropdownSolution > .sector.open::-webkit-scrollbar-track, header .menu-items .dropdownSector > .sector.open::-webkit-scrollbar-track, header .menu-items .dropdownAbout > .sector.open::-webkit-scrollbar-track {
+        header .menu-items .dropdownSolution > .sector.open::-webkit-scrollbar-track,
+        header .menu-items .dropdownSector > .sector.open::-webkit-scrollbar-track,
+        header .menu-items .dropdownAbout > .sector.open::-webkit-scrollbar-track {
           background: gray; }
-        header .menu-items .dropdownSolution > .sector.open::-webkit-scrollbar-thumb, header .menu-items .dropdownSector > .sector.open::-webkit-scrollbar-thumb, header .menu-items .dropdownAbout > .sector.open::-webkit-scrollbar-thumb {
+        header .menu-items .dropdownSolution > .sector.open::-webkit-scrollbar-thumb,
+        header .menu-items .dropdownSector > .sector.open::-webkit-scrollbar-thumb,
+        header .menu-items .dropdownAbout > .sector.open::-webkit-scrollbar-thumb {
           background-color: #000;
           border-radius: 15px;
           border: 6px solid #000; }
-    header .menu-items .dropdownSolution > .submenuSolution, header .menu-items .dropdownSolution .submenuSector, header .menu-items .dropdownSolution .submenuAbout, header .menu-items .dropdownSector > .submenuSolution, header .menu-items .dropdownSector .submenuSector, header .menu-items .dropdownSector .submenuAbout, header .menu-items .dropdownAbout > .submenuSolution, header .menu-items .dropdownAbout .submenuSector, header .menu-items .dropdownAbout .submenuAbout {
+    header .menu-items .dropdownSolution > .submenuSolution,
+    header .menu-items .dropdownSolution .submenuSector,
+    header .menu-items .dropdownSolution .submenuAbout,
+    header .menu-items .dropdownSector > .submenuSolution,
+    header .menu-items .dropdownSector .submenuSector,
+    header .menu-items .dropdownSector .submenuAbout,
+    header .menu-items .dropdownAbout > .submenuSolution,
+    header .menu-items .dropdownAbout .submenuSector,
+    header .menu-items .dropdownAbout .submenuAbout {
       width: 195px;
       list-style: none;
       position: absolute;
@@ -589,27 +680,70 @@ header {
       background: #FAFAFA;
       border: transparent; }
       @media (max-width: 1400px) {
-        header .menu-items .dropdownSolution > .submenuSolution, header .menu-items .dropdownSolution .submenuSector, header .menu-items .dropdownSolution .submenuAbout, header .menu-items .dropdownSector > .submenuSolution, header .menu-items .dropdownSector .submenuSector, header .menu-items .dropdownSector .submenuAbout, header .menu-items .dropdownAbout > .submenuSolution, header .menu-items .dropdownAbout .submenuSector, header .menu-items .dropdownAbout .submenuAbout {
+        header .menu-items .dropdownSolution > .submenuSolution,
+        header .menu-items .dropdownSolution .submenuSector,
+        header .menu-items .dropdownSolution .submenuAbout,
+        header .menu-items .dropdownSector > .submenuSolution,
+        header .menu-items .dropdownSector .submenuSector,
+        header .menu-items .dropdownSector .submenuAbout,
+        header .menu-items .dropdownAbout > .submenuSolution,
+        header .menu-items .dropdownAbout .submenuSector,
+        header .menu-items .dropdownAbout .submenuAbout {
           width: 180px; } }
-      header .menu-items .dropdownSolution > .submenuSolution.open, header .menu-items .dropdownSolution .submenuSector.open, header .menu-items .dropdownSolution .submenuAbout.open, header .menu-items .dropdownSector > .submenuSolution.open, header .menu-items .dropdownSector .submenuSector.open, header .menu-items .dropdownSector .submenuAbout.open, header .menu-items .dropdownAbout > .submenuSolution.open, header .menu-items .dropdownAbout .submenuSector.open, header .menu-items .dropdownAbout .submenuAbout.open {
+      header .menu-items .dropdownSolution > .submenuSolution.open,
+      header .menu-items .dropdownSolution .submenuSector.open,
+      header .menu-items .dropdownSolution .submenuAbout.open,
+      header .menu-items .dropdownSector > .submenuSolution.open,
+      header .menu-items .dropdownSector .submenuSector.open,
+      header .menu-items .dropdownSector .submenuAbout.open,
+      header .menu-items .dropdownAbout > .submenuSolution.open,
+      header .menu-items .dropdownAbout .submenuSector.open,
+      header .menu-items .dropdownAbout .submenuAbout.open {
         display: block;
         padding: 10px 0px;
         transition: all .35s linear;
         border: 1px solid #F1F1F1;
         border-radius: 10px;
         background: #FAFAFA; }
-      header .menu-items .dropdownSolution > .submenuSolution li, header .menu-items .dropdownSolution .submenuSector li, header .menu-items .dropdownSolution .submenuAbout li, header .menu-items .dropdownSector > .submenuSolution li, header .menu-items .dropdownSector .submenuSector li, header .menu-items .dropdownSector .submenuAbout li, header .menu-items .dropdownAbout > .submenuSolution li, header .menu-items .dropdownAbout .submenuSector li, header .menu-items .dropdownAbout .submenuAbout li {
+      header .menu-items .dropdownSolution > .submenuSolution li,
+      header .menu-items .dropdownSolution .submenuSector li,
+      header .menu-items .dropdownSolution .submenuAbout li,
+      header .menu-items .dropdownSector > .submenuSolution li,
+      header .menu-items .dropdownSector .submenuSector li,
+      header .menu-items .dropdownSector .submenuAbout li,
+      header .menu-items .dropdownAbout > .submenuSolution li,
+      header .menu-items .dropdownAbout .submenuSector li,
+      header .menu-items .dropdownAbout .submenuAbout li {
         margin-left: 0px !important; }
-      header .menu-items .dropdownSolution > .submenuSolution > li > a, header .menu-items .dropdownSolution .submenuSector > li > a, header .menu-items .dropdownSolution .submenuAbout > li > a, header .menu-items .dropdownSector > .submenuSolution > li > a, header .menu-items .dropdownSector .submenuSector > li > a, header .menu-items .dropdownSector .submenuAbout > li > a, header .menu-items .dropdownAbout > .submenuSolution > li > a, header .menu-items .dropdownAbout .submenuSector > li > a, header .menu-items .dropdownAbout .submenuAbout > li > a {
+      header .menu-items .dropdownSolution > .submenuSolution > li > a,
+      header .menu-items .dropdownSolution .submenuSector > li > a,
+      header .menu-items .dropdownSolution .submenuAbout > li > a,
+      header .menu-items .dropdownSector > .submenuSolution > li > a,
+      header .menu-items .dropdownSector .submenuSector > li > a,
+      header .menu-items .dropdownSector .submenuAbout > li > a,
+      header .menu-items .dropdownAbout > .submenuSolution > li > a,
+      header .menu-items .dropdownAbout .submenuSector > li > a,
+      header .menu-items .dropdownAbout .submenuAbout > li > a {
         padding: 7px 0px 7px 18px;
         display: block;
         color: #555;
         text-align: left;
-        transition: all .25s linear; }
-        header .menu-items .dropdownSolution > .submenuSolution > li > a:hover, header .menu-items .dropdownSolution .submenuSector > li > a:hover, header .menu-items .dropdownSolution .submenuAbout > li > a:hover, header .menu-items .dropdownSector > .submenuSolution > li > a:hover, header .menu-items .dropdownSector .submenuSector > li > a:hover, header .menu-items .dropdownSector .submenuAbout > li > a:hover, header .menu-items .dropdownAbout > .submenuSolution > li > a:hover, header .menu-items .dropdownAbout .submenuSector > li > a:hover, header .menu-items .dropdownAbout .submenuAbout > li > a:hover {
+        transition: all .25s linear;
+        text-decoration: none; }
+        header .menu-items .dropdownSolution > .submenuSolution > li > a:hover,
+        header .menu-items .dropdownSolution .submenuSector > li > a:hover,
+        header .menu-items .dropdownSolution .submenuAbout > li > a:hover,
+        header .menu-items .dropdownSector > .submenuSolution > li > a:hover,
+        header .menu-items .dropdownSector .submenuSector > li > a:hover,
+        header .menu-items .dropdownSector .submenuAbout > li > a:hover,
+        header .menu-items .dropdownAbout > .submenuSolution > li > a:hover,
+        header .menu-items .dropdownAbout .submenuSector > li > a:hover,
+        header .menu-items .dropdownAbout .submenuAbout > li > a:hover {
           background-color: #fff;
           color: #000; }
-  header .menu-items .downcaretsolution, header .menu-items .downcaretsector, header .menu-items .downcaretabout {
+  header .menu-items .downcaretsolution,
+  header .menu-items .downcaretsector,
+  header .menu-items .downcaretabout {
     width: 12px;
     height: 8px;
     background-image: url("../images/down-arrow.svg");
@@ -622,30 +756,35 @@ header {
     background-size: 9px; }
   header .menu-items .open-caret {
     transform: rotate(180deg); }
-  header .menu-items a {
+  header .menu-items p {
     color: #212121;
     text-decoration: none;
     transition: color 0.3s ease-in-out;
-    padding: 25px 0px; }
+    padding: 25px 0px;
+    cursor: pointer; }
     @media (max-width: 1600px) {
-      header .menu-items a {
+      header .menu-items p {
         padding: 15px 0px; } }
     @media (max-width: 920px) {
-      header .menu-items a {
+      header .menu-items p {
         font-size: 16px;
         color: #6A6A6A; } }
-    header .menu-items a.is-active {
+    header .menu-items p.is-active {
       position: relative;
       color: #212121 !important; }
-  header .careerHeader::before {
-    left: -2px !important; }
+  header .careerHeader {
+    color: #212121; }
+    header .careerHeader:hover, header .careerHeader:focus, header .careerHeader:active {
+      color: #212121; }
+    header .careerHeader::before {
+      left: -2px !important; }
   header .menu-link:hover {
     position: relative;
     color: #000;
     text-decoration: none;
     transition: all 0.35s ease;
     font-weight: 600; }
-    header .menu-link:hover a {
+    header .menu-link:hover p {
       color: #000; }
     header .menu-link:hover:before {
       position: absolute;
@@ -1111,7 +1250,7 @@ section {
             display: flex;
             align-items: center; }
             .solutionSec .solutionSlider .slick-track .solutionBox .solutionContent a img {
-              margin-top: 4px;
+              margin-top: 3px;
               transition: 0.6s all;
               width: 23px;
               height: 11px;
@@ -1194,22 +1333,17 @@ section {
             .solutionSec .solutionSlider .slick-track .solutionBox p {
               line-height: 21px; } }
   @media all and (max-width: 652px) {
-    .solutionSec .solutionSlider .slick-track
-    .solutionBox {
+    .solutionSec .solutionSlider .slick-track .solutionBox {
       padding: 25px; }
-      .solutionSec .solutionSlider .slick-track
-      .solutionBox .iconImg {
+      .solutionSec .solutionSlider .slick-track .solutionBox .iconImg {
         width: 27px; }
-      .solutionSec .solutionSlider .slick-track
-      .solutionBox h3 {
+      .solutionSec .solutionSlider .slick-track .solutionBox h3 {
         font-size: 20px;
         padding: 14px 0px 20px 0px; }
-      .solutionSec .solutionSlider .slick-track
-      .solutionBox .solutionContent p {
+      .solutionSec .solutionSlider .slick-track .solutionBox .solutionContent p {
         font-size: 16px;
         padding: 15px 0px 6px; }
-      .solutionSec .solutionSlider .slick-track
-      .solutionBox .solutionContent a {
+      .solutionSec .solutionSlider .slick-track .solutionBox .solutionContent a {
         font-size: 16px; } }
 
 .sectors p {
@@ -1244,7 +1378,7 @@ section {
       display: inline-block;
       transition: 0.6s all;
       margin-left: 5px;
-      margin-top: 4px; }
+      margin-top: 3px; }
     .sectors .sectorsliderDesktop .sectorBox .sectorContent a:hover img,
     .sectors .sectorsliderMobile .sectorBox .sectorContent a:hover img {
       transform: translateX(10px); }
@@ -1442,8 +1576,8 @@ section {
     font-size: 16px; }
     .sectors .sectorsliderDesktop .sectorBox .sectorContent a img,
     .sectors .sectorsliderMobile .sectorBox .sectorContent a img {
-      width: 23px;
-      height: 24px; } }
+      width: 18px;
+      height: 9px; } }
 
 .advantageSec {
   background-color: #FAFAFA;
@@ -1466,7 +1600,8 @@ section {
         .advantageSec .advantageSlider .slick-track .advantageBox:hover {
           background: #F3F3F3;
           border: 1px solid #F3F3F3; }
-        .advantageSec .advantageSlider .slick-track .advantageBox h3, .advantageSec .advantageSlider .slick-track .advantageBox p {
+        .advantageSec .advantageSlider .slick-track .advantageBox h3,
+        .advantageSec .advantageSlider .slick-track .advantageBox p {
           padding-top: 20px;
           padding-bottom: 20px;
           line-height: 35px; }
@@ -1497,7 +1632,8 @@ section {
         padding: 25px; }
         .advantageSec .advantageSlider .slick-track .advantageBox .iconImg {
           width: 40px; }
-        .advantageSec .advantageSlider .slick-track .advantageBox h3, .advantageSec .advantageSlider .slick-track .advantageBox p {
+        .advantageSec .advantageSlider .slick-track .advantageBox h3,
+        .advantageSec .advantageSlider .slick-track .advantageBox p {
           padding: 14px 0px 15px 0px;
           line-height: 30px; } }
   @media all and (max-width: 1400px) {
@@ -1505,7 +1641,8 @@ section {
       padding: 60px 0px; }
       .advantageSec .advantageSlider .slick-track .advantageBox {
         padding: 28px 17px 25px 28px; }
-        .advantageSec .advantageSlider .slick-track .advantageBox h3, .advantageSec .advantageSlider .slick-track .advantageBox p {
+        .advantageSec .advantageSlider .slick-track .advantageBox h3,
+        .advantageSec .advantageSlider .slick-track .advantageBox p {
           line-height: 25px;
           padding: 14px 0px 9px 0px; } }
   @media all and (max-width: 1180px) {
@@ -1527,25 +1664,21 @@ section {
           .advantageSec .advantageSlider .slick-track .advantageBox {
             height: 530px;
             margin-bottom: 20px; }
-            .advantageSec .advantageSlider .slick-track .advantageBox h3, .advantageSec .advantageSlider .slick-track .advantageBox p {
+            .advantageSec .advantageSlider .slick-track .advantageBox h3,
+            .advantageSec .advantageSlider .slick-track .advantageBox p {
               line-height: 21px; } }
   @media all and (max-width: 652px) {
-    .advantageSec .advantageSlider .slick-track
-    .advantageBox {
+    .advantageSec .advantageSlider .slick-track .advantageBox {
       padding: 25px; }
-      .advantageSec .advantageSlider .slick-track
-      .advantageBox .iconImg {
+      .advantageSec .advantageSlider .slick-track .advantageBox .iconImg {
         width: 27px; }
-      .advantageSec .advantageSlider .slick-track
-      .advantageBox h3 {
+      .advantageSec .advantageSlider .slick-track .advantageBox h3 {
         font-size: 20px;
         padding: 14px 0px 20px 0px; }
-      .advantageSec .advantageSlider .slick-track
-      .advantageBox .advantageContent p {
+      .advantageSec .advantageSlider .slick-track .advantageBox .advantageContent p {
         font-size: 16px;
         padding: 15px 0px 6px; }
-      .advantageSec .advantageSlider .slick-track
-      .advantageBox .advantageContent a {
+      .advantageSec .advantageSlider .slick-track .advantageBox .advantageContent a {
         font-size: 16px; } }
 
 .testlegalSec {
@@ -1828,7 +1961,7 @@ section {
         align-items: center;
         font-size: 16px; }
         .testlegalSec .testlegalSlider .testimonialsLegal .testlegalMobile a img {
-          margin-top: 2px;
+          margin-top: 3px;
           transition: 0.6s all;
           width: 18px;
           height: 9px;
@@ -1927,7 +2060,10 @@ section {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between; }
-      .contact .contactForm form input[type=text], .contact .contactForm form [type=number], .contact .contactForm form [type=mail], .contact .contactForm form textarea {
+      .contact .contactForm form input[type=text],
+      .contact .contactForm form [type=number],
+      .contact .contactForm form [type=mail],
+      .contact .contactForm form textarea {
         width: 100%;
         padding: 14px 15px;
         border: 2px solid transparent;
@@ -1939,24 +2075,39 @@ section {
         background: rgba(215, 215, 215, 0.3);
         font-size: 20px; }
         @media all and (max-width: 1400px) {
-          .contact .contactForm form input[type=text], .contact .contactForm form [type=number], .contact .contactForm form [type=mail], .contact .contactForm form textarea {
+          .contact .contactForm form input[type=text],
+          .contact .contactForm form [type=number],
+          .contact .contactForm form [type=mail],
+          .contact .contactForm form textarea {
             font-size: 14px;
             margin-top: 10px;
             margin-bottom: 35px;
             padding: 10px;
             border-radius: 3.5px; } }
         @media all and (max-width: 920px) {
-          .contact .contactForm form input[type=text], .contact .contactForm form [type=number], .contact .contactForm form [type=mail], .contact .contactForm form textarea {
+          .contact .contactForm form input[type=text],
+          .contact .contactForm form [type=number],
+          .contact .contactForm form [type=mail],
+          .contact .contactForm form textarea {
             font-size: 16px;
             padding: 12px 15px; } }
-        .contact .contactForm form input[type=text]:focus, .contact .contactForm form [type=number]:focus, .contact .contactForm form [type=mail]:focus, .contact .contactForm form textarea:focus {
+        .contact .contactForm form input[type=text]:focus,
+        .contact .contactForm form [type=number]:focus,
+        .contact .contactForm form [type=mail]:focus,
+        .contact .contactForm form textarea:focus {
           background: rgba(243, 243, 243, 0.7);
           border: 2px solid #212121; }
           @media all and (max-width: 1400px) {
-            .contact .contactForm form input[type=text]:focus, .contact .contactForm form [type=number]:focus, .contact .contactForm form [type=mail]:focus, .contact .contactForm form textarea:focus {
+            .contact .contactForm form input[type=text]:focus,
+            .contact .contactForm form [type=number]:focus,
+            .contact .contactForm form [type=mail]:focus,
+            .contact .contactForm form textarea:focus {
               border: 1.4px solid #212121; } }
           @media all and (max-width: 920px) {
-            .contact .contactForm form input[type=text]:focus, .contact .contactForm form [type=number]:focus, .contact .contactForm form [type=mail]:focus, .contact .contactForm form textarea:focus {
+            .contact .contactForm form input[type=text]:focus,
+            .contact .contactForm form [type=number]:focus,
+            .contact .contactForm form [type=mail]:focus,
+            .contact .contactForm form textarea:focus {
               border: 1px solid #212121; } }
       .contact .contactForm form textarea {
         margin-bottom: 20px;
@@ -2357,15 +2508,18 @@ footer {
         margin-right: 50px; }
     footer .footerLinks .copyrightmbl {
       display: none; }
-    footer .footerLinks .copyRight, footer .footerLinks .mobileCopy {
+    footer .footerLinks .copyRight,
+    footer .footerLinks .mobileCopy {
       display: flex;
       align-items: center; }
-      footer .footerLinks .copyRight img, footer .footerLinks .mobileCopy img {
+      footer .footerLinks .copyRight img,
+      footer .footerLinks .mobileCopy img {
         margin-right: 10px; }
     @media all and (max-width: 1024px) {
       footer .footerLinks {
         display: block; }
-        footer .footerLinks .copyRight, footer .footerLinks .mobileCopy {
+        footer .footerLinks .copyRight,
+        footer .footerLinks .mobileCopy {
           margin-top: 20px; } }
   @media all and (max-width: 1800px) {
     footer .footerSec .footerSub {
@@ -2461,7 +2615,8 @@ footer {
               width: 35px;
               height: 35px; } }
   @media all and (max-width: 575px) {
-    footer .footerLinks .copyRight, footer .footerLinks .mobileCopy {
+    footer .footerLinks .copyRight,
+    footer .footerLinks .mobileCopy {
       align-items: flex-start; }
     footer .footerLinks .copyrightmbl {
       display: block; }
