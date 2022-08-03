@@ -8,13 +8,14 @@
 			@media all and (max-width: 920px){display:block;}
 			img{margin-right:30px;}
 		}
-		h1{margin-bottom:60px;
-			@media all and (max-width: 1400px){margin-bottom:40px;}
+		h1{margin-bottom:30px;
+			@media all and (max-width: 1400px){margin-bottom:20px;}
 			@media all and (max-width: 920px){margin-bottom:0px;}
 			}
 	}
 	p{width:80%; margin-bottom:20px;
 		@media all and (max-width: 1400px){width:70%;}
+		@media all and (max-width: 920px){width:100%;}
 	}
 	.legalAuditCta{
 		margin-top: 40px;display: flex; align-items: center;

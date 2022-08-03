@@ -36,11 +36,11 @@
 
             <div id="sideMenu">
                 <ul class="sideMenuInner">
-                    <li class="fontPoppins font18 colorBlack fontW400" onclick="hideSidebar()">
+                    <li class="fontPoppins font18 colorBlack fontW400">
                         <div class="dropdown">
                             <a class="menu-link active drop" href="#bannerSec"
                                 data-menuanchor="bannerSec">Solutions<span class="down-caret"></span></a>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu" onclick="hideSidebar()">
                                 <li><a href="#" class="fontPoppins fontW400 font18">Legal Advisory</a></li>
                                 <li><a href="#" class="fontPoppins fontW400 font18">General Counsel</a></li>
                                 <li><a href="#" class="fontPoppins fontW400 font18">Legal Audit</a></li>
@@ -49,10 +49,11 @@
                         </div>
 
                     </li>
-                    <li class="fontPoppins font18 colorBlack fontW400" onclick="hideSidebar()">
+                    <li class="fontPoppins font18 colorBlack fontW400">
                         <div class="dropdown">
-                            <a class="menu-link drop" href="#serviceSec" data-menuanchor="serviceSec">Sectors <span class="down-caret"></span></a>
-                            <ul class="dropdown-menu sector">
+                            <a class="menu-link drop" href="#serviceSec" data-menuanchor="serviceSec">Sectors <span
+                                    class="down-caret"></span></a>
+                            <ul class="dropdown-menu sector" onclick="hideSidebar()">
                                 <li><a href="#" class="fontPoppins fontW400 font18">Television</a></li>
                                 <li><a href="#" class="fontPoppins fontW400 font18">Film</a></li>
                                 <li><a href="#" class="fontPoppins fontW400 font18">OTT Platform</a></li>
@@ -70,15 +71,15 @@
                     </li>
                     <li onclick="hideSidebar()" class="fontPoppins font18 colorBlack fontW400"><a class="menu-link"
                             href="#teamSection" data-menuanchor="teamSection">Careers</a></li>
-                    <li onclick="hideSidebar()" class="fontPoppins font18 colorBlack fontW400">
+                    <li class="fontPoppins font18 colorBlack fontW400">
                         <div class="dropdown">
-                        <a class="menu-link drop"
-                            href="#clientsBox" data-menuanchor="clientsBox">About <span class="down-caret"></span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#" class="fontPoppins fontW400 font18">Who we are</a></li>
-                            <li><a href="#" class="fontPoppins fontW400 font18">Founder</a></li>
-                        </ul>
+                            <a class="menu-link drop" href="#clientsBox" data-menuanchor="clientsBox">About <span
+                                    class="down-caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" onclick="hideSidebar()">
+                                <li><a href="#" class="fontPoppins fontW400 font18">Who we are</a></li>
+                                <li><a href="#" class="fontPoppins fontW400 font18">Founder</a></li>
+                            </ul>
                         </div>
                     </li>
                     <li onclick="hideSidebar()" class="fontPoppins font18 colorBlack fontW400"><a
@@ -124,7 +125,7 @@
                     </ul>
                 </div>
             </li>
-            <li class="fontPoppins font18 colorBlack fontW400"><a class="menu-link" href="#teamSection"
+            <li class="fontPoppins font18 colorBlack fontW400 "><a class="menu-link careerHeader" href="#teamSection"
                     data-menuanchor="teamSection">Careers</a></li>
             <li class="fontPoppins font18 colorBlack fontW400">
                 <div class="dropdown">
@@ -166,7 +167,7 @@
     <div class="wrapper">
         <div class="footerSec">
             <div class="footerSub">
-                <a href="#" class="footerLogo"><img src="images/legal-footer-logo.svg"></a>
+                <a href="#" class="footerLogo"><img src="images/legal-footer-logo.png"></a>
                 <div class="socialmediaIcons">
                     <ul>
                         <li><a href="#"><img src="images/legal/linkdin-footer.svg"></a></li>
@@ -193,16 +194,16 @@
                     <div class="sectorftSub">
                         <ul>
                             <li><a href="#" class="colorW fontW400 font22 fontPoppins">Television</a></li>
-                            <li> <a href="#" class="colorW fontW400 font22 fontPoppins">Online Gaming</a></li>
-                            <li><a href="#" class="colorW fontW400 font22 fontPoppins">Live Events</a></li>
-                            <li><a href="#" class="colorW fontW400 font22 fontPoppins">Radio</a></li>
-                            <li><a href="#" class="colorW fontW400 font22 fontPoppins">Film</a></li>
-                            <li><a href="#" class="colorW fontW400 font22 fontPoppins">Print</a></li>
-                            <li><a href="#" class="colorW fontW400 font22 fontPoppins"> Animation/ VFX</a></li>
-                            <li><a href="#" class="colorW fontW400 font22 fontPoppins"> Sports</a></li>
+                            <li> <a href="#" class="colorW fontW400 font22 fontPoppins">Film</a></li>
                             <li><a href="#" class="colorW fontW400 font22 fontPoppins">OTT Platform</a></li>
+                            <li><a href="#" class="colorW fontW400 font22 fontPoppins">Online Gaming</a></li>
+                            <li><a href="#" class="colorW fontW400 font22 fontPoppins">Print</a></li>
                             <li><a href="#" class="colorW fontW400 font22 fontPoppins">OOH</a></li>
+                            <li><a href="#" class="colorW fontW400 font22 fontPoppins">Live Events</a></li>
+                            <li><a href="#" class="colorW fontW400 font22 fontPoppins">Animation/ VFX</a></li>
                             <li><a href="#" class="colorW fontW400 font22 fontPoppins">Music</a></li>
+                            <li><a href="#" class="colorW fontW400 font22 fontPoppins">Radio</a></li>
+                            <li><a href="#" class="colorW fontW400 font22 fontPoppins">Sports</a></li>
                             <li><a href="#" class="colorW fontW400 font22 fontPoppins"> Advertising</a></li>
                         </ul>
                     </div>
