@@ -387,36 +387,39 @@ header {
           color: #212121; }
           header #sidebarContainer #sideMenu .sideMenuInner li a {
             color: #212121 !important; }
-          header #sidebarContainer #sideMenu .sideMenuInner li .dropdownLegal {
+          header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout {
             position: relative;
             display: inline-block; }
-            header #sidebarContainer #sideMenu .sideMenuInner li .dropdownLegal .drop {
+            header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution .drop, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector .drop, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout .drop {
               color: #212121;
               border-radius: 6px;
               position: relative;
               display: inline-block; }
-            header #sidebarContainer #sideMenu .sideMenuInner li .dropdownLegal > .sector.open {
+            @media (max-width: 920px) {
+              header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution > .sector, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector > .sector, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout > .sector {
+                max-height: 176px; } }
+            header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution > .sector.open, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector > .sector.open, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout > .sector.open {
               overflow-y: scroll;
               scrollbar-width: auto;
               scrollbar-color: #000;
               /* Chrome, Edge, and Safari */ }
-              header #sidebarContainer #sideMenu .sideMenuInner li .dropdownLegal > .sector.open::-webkit-scrollbar {
+              header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution > .sector.open::-webkit-scrollbar, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector > .sector.open::-webkit-scrollbar, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout > .sector.open::-webkit-scrollbar {
                 width: 6px; }
-              header #sidebarContainer #sideMenu .sideMenuInner li .dropdownLegal > .sector.open::-webkit-scrollbar-track {
+              header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution > .sector.open::-webkit-scrollbar-track, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector > .sector.open::-webkit-scrollbar-track, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout > .sector.open::-webkit-scrollbar-track {
                 background: gray; }
-              header #sidebarContainer #sideMenu .sideMenuInner li .dropdownLegal > .sector.open::-webkit-scrollbar-thumb {
+              header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution > .sector.open::-webkit-scrollbar-thumb, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector > .sector.open::-webkit-scrollbar-thumb, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout > .sector.open::-webkit-scrollbar-thumb {
                 background-color: #000;
                 border-radius: 15px;
                 border: 6px solid #000; }
-            header #sidebarContainer #sideMenu .sideMenuInner li .dropdownLegal > .dropdown-menuLegal {
+            header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution > .submenuSolution, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution .submenuSector, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution .submenuAbout, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector > .submenuSolution, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector .submenuSector, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector .submenuAbout, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout > .submenuSolution, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout .submenuSector, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout .submenuAbout {
               position: unset !important;
               overflow: hidden;
-              max-height: 0px;
+              display: none;
               padding: 0px 0px 0px 15px;
               border: transparent; }
-              header #sidebarContainer #sideMenu .sideMenuInner li .dropdownLegal > .dropdown-menuLegal.open {
+              header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution > .submenuSolution.open, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution .submenuSector.open, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution .submenuAbout.open, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector > .submenuSolution.open, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector .submenuSector.open, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector .submenuAbout.open, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout > .submenuSolution.open, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout .submenuSector.open, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout .submenuAbout.open {
                 padding: 0px 0px 0px 15px;
-                max-height: 200px;
+                display: block;
                 transition: all .37s ease-in-out;
                 background-color: #fafafa;
                 border: 1px solid #f1f1f1;
@@ -424,16 +427,16 @@ header {
                 width: 210px;
                 margin-top: 20px;
                 /* Chrome, Edge, and Safari */ }
-                header #sidebarContainer #sideMenu .sideMenuInner li .dropdownLegal > .dropdown-menuLegal.open li {
+                header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution > .submenuSolution.open li, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution .submenuSector.open li, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution .submenuAbout.open li, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector > .submenuSolution.open li, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector .submenuSector.open li, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector .submenuAbout.open li, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout > .submenuSolution.open li, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout .submenuSector.open li, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout .submenuAbout.open li {
                   padding: 10px 0px !important; }
-              header #sidebarContainer #sideMenu .sideMenuInner li .dropdownLegal > .dropdown-menuLegal > li > a {
+              header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution > .submenuSolution > li > a, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution .submenuSector > li > a, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution .submenuAbout > li > a, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector > .submenuSolution > li > a, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector .submenuSector > li > a, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector .submenuAbout > li > a, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout > .submenuSolution > li > a, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout .submenuSector > li > a, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout .submenuAbout > li > a {
                 display: block;
                 text-align: left;
                 transition: all .25s linear;
                 font-size: 16px; }
-                header #sidebarContainer #sideMenu .sideMenuInner li .dropdownLegal > .dropdown-menuLegal > li > a:hover {
+                header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution > .submenuSolution > li > a:hover, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution .submenuSector > li > a:hover, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution .submenuAbout > li > a:hover, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector > .submenuSolution > li > a:hover, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector .submenuSector > li > a:hover, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector .submenuAbout > li > a:hover, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout > .submenuSolution > li > a:hover, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout .submenuSector > li > a:hover, header #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout .submenuAbout > li > a:hover {
                   color: #212121; }
-          header #sidebarContainer #sideMenu .sideMenuInner li .down-caret {
+          header #sidebarContainer #sideMenu .sideMenuInner li .downcaretsolution, header #sidebarContainer #sideMenu .sideMenuInner li .downcaretsector, header #sidebarContainer #sideMenu .sideMenuInner li .downcaretabout {
             width: 12px;
             height: 8px;
             background-image: url("../images/down-arrow.svg");
@@ -493,7 +496,7 @@ header {
       z-index: 99;
       height: 100%;
       width: 100%;
-      top: 43px;
+      top: 41px;
       right: 0px;
       height: 24px;
       width: 24px; }
@@ -542,61 +545,71 @@ header {
       box-sizing: border-box;
       transform: rotate(-135deg);
       margin-top: -10px; }
-  header .menu-items .dropdownLegal {
+  header .menu-items .dropdownSolution, header .menu-items .dropdownSector, header .menu-items .dropdownAbout {
     position: relative;
     display: inline-block; }
-    header .menu-items .dropdownLegal .drop {
+    header .menu-items .dropdownSolution .drop, header .menu-items .dropdownSector .drop, header .menu-items .dropdownAbout .drop {
       color: #000;
       border-radius: 6px;
       position: relative;
       display: inline-block; }
-    header .menu-items .dropdownLegal > .sector.open {
-      overflow-y: scroll;
-      scrollbar-width: auto;
-      scrollbar-color: #000;
-      /* Chrome, Edge, and Safari */ }
-      header .menu-items .dropdownLegal > .sector.open::-webkit-scrollbar {
-        width: 6px; }
-      header .menu-items .dropdownLegal > .sector.open::-webkit-scrollbar-track {
-        background: gray; }
-      header .menu-items .dropdownLegal > .sector.open::-webkit-scrollbar-thumb {
-        background-color: #000;
-        border-radius: 15px;
-        border: 6px solid #000; }
-    header .menu-items .dropdownLegal > .dropdown-menuLegal {
+    header .menu-items .dropdownSolution > .sector, header .menu-items .dropdownSector > .sector, header .menu-items .dropdownAbout > .sector {
+      max-height: 176px; }
+      @media (max-width: 1800px) {
+        header .menu-items .dropdownSolution > .sector, header .menu-items .dropdownSector > .sector, header .menu-items .dropdownAbout > .sector {
+          max-height: 166px; } }
+      @media (max-width: 1600px) {
+        header .menu-items .dropdownSolution > .sector, header .menu-items .dropdownSector > .sector, header .menu-items .dropdownAbout > .sector {
+          max-height: 154px; } }
+      @media (max-width: 1400px) {
+        header .menu-items .dropdownSolution > .sector, header .menu-items .dropdownSector > .sector, header .menu-items .dropdownAbout > .sector {
+          max-height: 144px; } }
+      header .menu-items .dropdownSolution > .sector.open, header .menu-items .dropdownSector > .sector.open, header .menu-items .dropdownAbout > .sector.open {
+        overflow-y: scroll;
+        scrollbar-width: auto;
+        scrollbar-color: #000;
+        /* Chrome, Edge, and Safari */ }
+        header .menu-items .dropdownSolution > .sector.open::-webkit-scrollbar, header .menu-items .dropdownSector > .sector.open::-webkit-scrollbar, header .menu-items .dropdownAbout > .sector.open::-webkit-scrollbar {
+          width: 6px; }
+        header .menu-items .dropdownSolution > .sector.open::-webkit-scrollbar-track, header .menu-items .dropdownSector > .sector.open::-webkit-scrollbar-track, header .menu-items .dropdownAbout > .sector.open::-webkit-scrollbar-track {
+          background: gray; }
+        header .menu-items .dropdownSolution > .sector.open::-webkit-scrollbar-thumb, header .menu-items .dropdownSector > .sector.open::-webkit-scrollbar-thumb, header .menu-items .dropdownAbout > .sector.open::-webkit-scrollbar-thumb {
+          background-color: #000;
+          border-radius: 15px;
+          border: 6px solid #000; }
+    header .menu-items .dropdownSolution > .submenuSolution, header .menu-items .dropdownSolution .submenuSector, header .menu-items .dropdownSolution .submenuAbout, header .menu-items .dropdownSector > .submenuSolution, header .menu-items .dropdownSector .submenuSector, header .menu-items .dropdownSector .submenuAbout, header .menu-items .dropdownAbout > .submenuSolution, header .menu-items .dropdownAbout .submenuSector, header .menu-items .dropdownAbout .submenuAbout {
       width: 195px;
       list-style: none;
       position: absolute;
       float: left;
-      max-height: 0;
+      display: none;
       overflow: hidden;
       transition: all .35s linear;
       border: 1px solid transparent;
       background: #FAFAFA;
       border: transparent; }
       @media (max-width: 1400px) {
-        header .menu-items .dropdownLegal > .dropdown-menuLegal {
+        header .menu-items .dropdownSolution > .submenuSolution, header .menu-items .dropdownSolution .submenuSector, header .menu-items .dropdownSolution .submenuAbout, header .menu-items .dropdownSector > .submenuSolution, header .menu-items .dropdownSector .submenuSector, header .menu-items .dropdownSector .submenuAbout, header .menu-items .dropdownAbout > .submenuSolution, header .menu-items .dropdownAbout .submenuSector, header .menu-items .dropdownAbout .submenuAbout {
           width: 180px; } }
-      header .menu-items .dropdownLegal > .dropdown-menuLegal.open {
-        max-height: 160px;
-        height: auto;
+      header .menu-items .dropdownSolution > .submenuSolution.open, header .menu-items .dropdownSolution .submenuSector.open, header .menu-items .dropdownSolution .submenuAbout.open, header .menu-items .dropdownSector > .submenuSolution.open, header .menu-items .dropdownSector .submenuSector.open, header .menu-items .dropdownSector .submenuAbout.open, header .menu-items .dropdownAbout > .submenuSolution.open, header .menu-items .dropdownAbout .submenuSector.open, header .menu-items .dropdownAbout .submenuAbout.open {
+        display: block;
         padding: 10px 0px;
         transition: all .35s linear;
         border: 1px solid #F1F1F1;
         border-radius: 10px;
         background: #FAFAFA; }
-      header .menu-items .dropdownLegal > .dropdown-menuLegal li {
+      header .menu-items .dropdownSolution > .submenuSolution li, header .menu-items .dropdownSolution .submenuSector li, header .menu-items .dropdownSolution .submenuAbout li, header .menu-items .dropdownSector > .submenuSolution li, header .menu-items .dropdownSector .submenuSector li, header .menu-items .dropdownSector .submenuAbout li, header .menu-items .dropdownAbout > .submenuSolution li, header .menu-items .dropdownAbout .submenuSector li, header .menu-items .dropdownAbout .submenuAbout li {
         margin-left: 0px !important; }
-      header .menu-items .dropdownLegal > .dropdown-menuLegal > li > a {
+      header .menu-items .dropdownSolution > .submenuSolution > li > a, header .menu-items .dropdownSolution .submenuSector > li > a, header .menu-items .dropdownSolution .submenuAbout > li > a, header .menu-items .dropdownSector > .submenuSolution > li > a, header .menu-items .dropdownSector .submenuSector > li > a, header .menu-items .dropdownSector .submenuAbout > li > a, header .menu-items .dropdownAbout > .submenuSolution > li > a, header .menu-items .dropdownAbout .submenuSector > li > a, header .menu-items .dropdownAbout .submenuAbout > li > a {
         padding: 7px 0px 7px 18px;
         display: block;
         color: #555;
         text-align: left;
         transition: all .25s linear; }
-        header .menu-items .dropdownLegal > .dropdown-menuLegal > li > a:hover {
+        header .menu-items .dropdownSolution > .submenuSolution > li > a:hover, header .menu-items .dropdownSolution .submenuSector > li > a:hover, header .menu-items .dropdownSolution .submenuAbout > li > a:hover, header .menu-items .dropdownSector > .submenuSolution > li > a:hover, header .menu-items .dropdownSector .submenuSector > li > a:hover, header .menu-items .dropdownSector .submenuAbout > li > a:hover, header .menu-items .dropdownAbout > .submenuSolution > li > a:hover, header .menu-items .dropdownAbout .submenuSector > li > a:hover, header .menu-items .dropdownAbout .submenuAbout > li > a:hover {
           background-color: #fff;
           color: #000; }
-  header .menu-items .down-caret {
+  header .menu-items .downcaretsolution, header .menu-items .downcaretsector, header .menu-items .downcaretabout {
     width: 12px;
     height: 8px;
     background-image: url("../images/down-arrow.svg");
@@ -2535,7 +2548,7 @@ footer {
   position: fixed;
   height: 0px;
   background: #000;
-  z-index: 999;
+  z-index: -1;
   left: 0;
   border: 2px solid #212121;
   border-radius: 0px 10px 10px 0px;
