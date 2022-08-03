@@ -362,8 +362,7 @@ body {
   height: 100px;
   border-radius: 2px;
   margin: auto;
-  border: 1px solid rgba(33, 33, 33, 0.5);
-  z-index: 999; }
+  border: 1px solid rgba(33, 33, 33, 0.5); }
   @media (max-width: 770px) {
     .progress-container {
       display: none !important; } }
@@ -393,7 +392,7 @@ body {
       transform-origin: left top 0; }
 
 .aboutUs {
-  margin: 230px 0px;
+  margin: 250px 0px;
   color: #212121; }
   .aboutUs .about-heading {
     margin-bottom: 30px; }
@@ -510,7 +509,7 @@ body {
 
 .careers {
   position: relative;
-  margin: 230px 0px;
+  margin: 250px 0px;
   color: #212121; }
   .careers .careers-heading {
     margin-bottom: 30px; }
@@ -570,8 +569,7 @@ body {
   height: 100px;
   border-radius: 2px;
   margin: auto;
-  border: 1px solid rgba(33, 33, 33, 0.5);
-  z-index: 999; }
+  border: 1px solid rgba(33, 33, 33, 0.5); }
   @media (max-width: 770px) {
     .progress-container {
       display: none !important; } }
@@ -579,8 +577,7 @@ body {
     position: relative;
     width: 1px;
     background: #000;
-    border-radius: 2px;
-    z-index: 999; }
+    border-radius: 2px; }
     .progress-container .progress-bar:before {
       position: absolute;
       content: "";
