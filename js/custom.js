@@ -21,6 +21,7 @@ if ($("#fullpage").length) {
     slidesNavigation: false,
     scrollHorizontally: true,
     controlArrows: true,
+    scrollOverflow:true,
     normalScrollElements: "#scrolldiv",
     licenseKey: "OPEN-SOURCE-GPLV3-LICENSE",
     scrollBar: true,
@@ -36,6 +37,7 @@ if ($("#fullpage").length) {
         $("a[class = 'scroll-icon']").prop("href", "#bannerSec1");
         $(".secOne").addClass("is-active");
         $(".secTwo").removeClass("is-active");
+        
       
       }
       if (index == 2) {
