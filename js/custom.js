@@ -21,7 +21,6 @@ if ($("#fullpage").length) {
     slidesNavigation: false,
     scrollHorizontally: true,
     controlArrows: true,
-    scrollOverflow: true,
     normalScrollElements: "#scrolldiv",
     licenseKey: "OPEN-SOURCE-GPLV3-LICENSE",
     scrollBar: true,
@@ -37,7 +36,7 @@ if ($("#fullpage").length) {
         $("a[class = 'scroll-icon']").prop("href", "#bannerSec1");
         $(".secOne").addClass("is-active");
         $(".secTwo").removeClass("is-active");
-        $('body').css("overflow","hidden");
+      
       }
       if (index == 2) {
         $("#myBtn").css("display", "block");
@@ -46,7 +45,7 @@ if ($("#fullpage").length) {
         $("a[class = 'scroll-icon']").prop("href", "#bannerSec2");
         $(".secOne").addClass("is-active");
         $(".secTwo").removeClass("is-active");
-        $('body').css("overflow","hidden");
+       
        
       }
       if (index == 3) {
@@ -55,7 +54,7 @@ if ($("#fullpage").length) {
         $("a[class = 'scroll-icon']").prop("href", "#serviceSec");
         $(".secOne").addClass("is-active");
         $(".secTwo").removeClass("is-active");
-        $('body').css("overflow","hidden");
+      
        
       }
       if (index == 4) {
@@ -64,7 +63,7 @@ if ($("#fullpage").length) {
         $(".secOne").removeClass("is-active");
         $(".secTwo").addClass("is-active");
         $(".secThree").removeClass("is-active");
-        $('body').css("overflow","hidden");
+       
        
       }
       if (index == 5) {
@@ -73,7 +72,7 @@ if ($("#fullpage").length) {
         $(".secTwo").removeClass("is-active");
         $(".secThree").addClass("is-active");
         $(".secFour").removeClass("is-active");
-        $('body').css("overflow","hidden");
+       
        
       }
       if (index == 6) {
@@ -82,7 +81,7 @@ if ($("#fullpage").length) {
         $(".secThree").removeClass("is-active");
         $(".secFour").addClass("is-active");
         $(".secFive").removeClass("is-active");
-        $('body').css("overflow","");
+       
       }
       if (index == 7) {
         $(".scroll-text").css("display", "none");
@@ -90,7 +89,7 @@ if ($("#fullpage").length) {
         $(".secFour").removeClass("is-active");
         $(".secFive").addClass("is-active");
         $(".secSix").removeClass("is-active");
-        $('body').css("overflow","hidden");
+       
        
       }
       if (index == 8) {
@@ -99,14 +98,13 @@ if ($("#fullpage").length) {
         $(".secFive").removeClass("is-active");
         $(".secSix").addClass("is-active");
         $(".secSeven").removeClass("is-active");
-        $('body').css("overflow","");
+       
        }
       if (index == 9) {
         $(".scroll-text").css("display", "none");
         $(".scroll-symbol").css("display", "none");
         $(".secSix").removeClass("is-active");
         $(".secSeven").addClass("is-active");
-        $('body').css("overflow","hidden");
        
       }
     },
@@ -595,3 +593,6 @@ window.addEventListener("scroll", () => {
     }
   });
 });
+
+
+

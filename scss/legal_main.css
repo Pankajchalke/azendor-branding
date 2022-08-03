@@ -353,7 +353,7 @@ header {
   background-color: #fff; }
   @media (max-width: 760px) {
     header {
-      border-bottom: 1px solid #6A6A6A; } }
+      border-bottom: 2px solid rgba(106, 106, 106, 0.5); } }
   header #sidebarContainer {
     display: none; }
     @media (max-width: 920px) {
@@ -383,60 +383,63 @@ header {
         header #sidebarContainer #sideMenu .sideMenuInner li {
           list-style: none;
           padding: 20px 0px;
-          cursor: pointer; }
-          header #sidebarContainer #sideMenu .sideMenuInner li .dropdown {
+          cursor: pointer;
+          color: #212121; }
+          header #sidebarContainer #sideMenu .sideMenuInner li a {
+            color: #212121 !important; }
+          header #sidebarContainer #sideMenu .sideMenuInner li .dropdownLegal {
             position: relative;
             display: inline-block; }
-            header #sidebarContainer #sideMenu .sideMenuInner li .dropdown .drop {
-              color: #000;
+            header #sidebarContainer #sideMenu .sideMenuInner li .dropdownLegal .drop {
+              color: #212121;
               border-radius: 6px;
               position: relative;
               display: inline-block; }
-            header #sidebarContainer #sideMenu .sideMenuInner li .dropdown > .sector.open {
+            header #sidebarContainer #sideMenu .sideMenuInner li .dropdownLegal > .sector.open {
               overflow-y: scroll;
               scrollbar-width: auto;
               scrollbar-color: #000;
               /* Chrome, Edge, and Safari */ }
-              header #sidebarContainer #sideMenu .sideMenuInner li .dropdown > .sector.open::-webkit-scrollbar {
+              header #sidebarContainer #sideMenu .sideMenuInner li .dropdownLegal > .sector.open::-webkit-scrollbar {
                 width: 6px; }
-              header #sidebarContainer #sideMenu .sideMenuInner li .dropdown > .sector.open::-webkit-scrollbar-track {
+              header #sidebarContainer #sideMenu .sideMenuInner li .dropdownLegal > .sector.open::-webkit-scrollbar-track {
                 background: gray; }
-              header #sidebarContainer #sideMenu .sideMenuInner li .dropdown > .sector.open::-webkit-scrollbar-thumb {
+              header #sidebarContainer #sideMenu .sideMenuInner li .dropdownLegal > .sector.open::-webkit-scrollbar-thumb {
                 background-color: #000;
                 border-radius: 15px;
                 border: 6px solid #000; }
-            header #sidebarContainer #sideMenu .sideMenuInner li .dropdown > .dropdown-menu {
+            header #sidebarContainer #sideMenu .sideMenuInner li .dropdownLegal > .dropdown-menuLegal {
               position: unset !important;
               overflow: hidden;
               max-height: 0px;
               padding: 0px 0px 0px 15px;
               border: transparent; }
-              header #sidebarContainer #sideMenu .sideMenuInner li .dropdown > .dropdown-menu.open {
+              header #sidebarContainer #sideMenu .sideMenuInner li .dropdownLegal > .dropdown-menuLegal.open {
                 padding: 0px 0px 0px 15px;
                 max-height: 200px;
                 transition: all .37s ease-in-out;
                 background-color: #fafafa;
                 border: 1px solid #f1f1f1;
                 border-radius: 5px;
-                width: 14rem;
+                width: 210px;
                 margin-top: 20px;
                 /* Chrome, Edge, and Safari */ }
-                header #sidebarContainer #sideMenu .sideMenuInner li .dropdown > .dropdown-menu.open li {
+                header #sidebarContainer #sideMenu .sideMenuInner li .dropdownLegal > .dropdown-menuLegal.open li {
                   padding: 10px 0px !important; }
-              header #sidebarContainer #sideMenu .sideMenuInner li .dropdown > .dropdown-menu > li > a {
+              header #sidebarContainer #sideMenu .sideMenuInner li .dropdownLegal > .dropdown-menuLegal > li > a {
                 display: block;
-                color: #555;
                 text-align: left;
-                transition: all .25s linear; }
-                header #sidebarContainer #sideMenu .sideMenuInner li .dropdown > .dropdown-menu > li > a:hover {
-                  color: #fff; }
+                transition: all .25s linear;
+                font-size: 16px; }
+                header #sidebarContainer #sideMenu .sideMenuInner li .dropdownLegal > .dropdown-menuLegal > li > a:hover {
+                  color: #212121; }
           header #sidebarContainer #sideMenu .sideMenuInner li .down-caret {
             width: 12px;
             height: 8px;
             background-image: url("../images/down-arrow.svg");
             background-repeat: no-repeat;
             display: inline-block;
-            margin-left: 3px;
+            margin-left: 13px;
             top: 1px;
             position: relative;
             transition: all .25s ease;
@@ -451,7 +454,7 @@ header {
             color: #212121;
             cursor: pointer;
             text-decoration: none;
-            font-size: 16px; }
+            font-size: 20px; }
             header #sidebarContainer #sideMenu .sideMenuInner li a.active {
               position: relative;
               color: #212121 !important;
@@ -490,13 +493,16 @@ header {
       z-index: 99;
       height: 100%;
       width: 100%;
-      top: 29px;
+      top: 43px;
       right: 0px;
       height: 24px;
       width: 24px; }
+      @media (max-width: 770px) {
+        header #sidebarContainer .sideIconToggle {
+          top: 29px; } }
       @media (max-width: 390px) {
         header #sidebarContainer .sideIconToggle {
-          top: 21px; } }
+          top: 25px; } }
       header #sidebarContainer .sideIconToggle .spinner {
         transition: all 0.3s;
         box-sizing: border-box;
@@ -536,29 +542,29 @@ header {
       box-sizing: border-box;
       transform: rotate(-135deg);
       margin-top: -10px; }
-  header .menu-items .dropdown {
+  header .menu-items .dropdownLegal {
     position: relative;
     display: inline-block; }
-    header .menu-items .dropdown .drop {
+    header .menu-items .dropdownLegal .drop {
       color: #000;
       border-radius: 6px;
       position: relative;
       display: inline-block; }
-    header .menu-items .dropdown > .sector.open {
+    header .menu-items .dropdownLegal > .sector.open {
       overflow-y: scroll;
       scrollbar-width: auto;
       scrollbar-color: #000;
       /* Chrome, Edge, and Safari */ }
-      header .menu-items .dropdown > .sector.open::-webkit-scrollbar {
+      header .menu-items .dropdownLegal > .sector.open::-webkit-scrollbar {
         width: 6px; }
-      header .menu-items .dropdown > .sector.open::-webkit-scrollbar-track {
+      header .menu-items .dropdownLegal > .sector.open::-webkit-scrollbar-track {
         background: gray; }
-      header .menu-items .dropdown > .sector.open::-webkit-scrollbar-thumb {
+      header .menu-items .dropdownLegal > .sector.open::-webkit-scrollbar-thumb {
         background-color: #000;
         border-radius: 15px;
         border: 6px solid #000; }
-    header .menu-items .dropdown > .dropdown-menu {
-      width: 164px;
+    header .menu-items .dropdownLegal > .dropdown-menuLegal {
+      width: 195px;
       list-style: none;
       position: absolute;
       float: left;
@@ -568,7 +574,10 @@ header {
       border: 1px solid transparent;
       background: #FAFAFA;
       border: transparent; }
-      header .menu-items .dropdown > .dropdown-menu.open {
+      @media (max-width: 1400px) {
+        header .menu-items .dropdownLegal > .dropdown-menuLegal {
+          width: 180px; } }
+      header .menu-items .dropdownLegal > .dropdown-menuLegal.open {
         max-height: 160px;
         height: auto;
         padding: 10px 0px;
@@ -576,15 +585,15 @@ header {
         border: 1px solid #F1F1F1;
         border-radius: 10px;
         background: #FAFAFA; }
-      header .menu-items .dropdown > .dropdown-menu li {
+      header .menu-items .dropdownLegal > .dropdown-menuLegal li {
         margin-left: 0px !important; }
-      header .menu-items .dropdown > .dropdown-menu > li > a {
+      header .menu-items .dropdownLegal > .dropdown-menuLegal > li > a {
         padding: 7px 0px 7px 18px;
         display: block;
         color: #555;
         text-align: left;
         transition: all .25s linear; }
-        header .menu-items .dropdown > .dropdown-menu > li > a:hover {
+        header .menu-items .dropdownLegal > .dropdown-menuLegal > li > a:hover {
           background-color: #fff;
           color: #000; }
   header .menu-items .down-caret {
@@ -666,14 +675,19 @@ header {
     @media (max-width: 920px) {
       header .header-container {
         display: block;
-        position: relative; } }
+        position: relative;
+        padding-top: 100px; } }
     @media (max-width: 770px) {
       header .header-container {
         padding-top: 45px;
-        padding-bottom: 25px; } }
+        padding-bottom: 33px; } }
+    @media (max-width: 575px) {
+      header .header-container {
+        padding-bottom: 26px; } }
     @media (max-width: 390px) {
       header .header-container {
-        padding-top: 34px; } }
+        padding-top: 34px;
+        padding-bottom: 33px; } }
     header .header-container input[type="checkbox"],
     header .header-container .hamburger-lines {
       display: none; }
@@ -936,6 +950,9 @@ header {
 
 section {
   margin-top: 150px; }
+  section a:focus {
+    outline: none !important;
+    outline-offset: unset !important; }
   @media all and (max-width: 1650px) {
     section {
       margin-top: 120px; } }
@@ -1037,6 +1054,7 @@ section {
       margin: 10px 0px 15px; } }
   @media all and (max-width: 900px) {
     .bannerSec {
+      position: relative;
       margin: 120px 0px 180px 0px; }
       .bannerSec h1 {
         width: 100%;
@@ -1048,7 +1066,10 @@ section {
     .bannerSec h1 {
       line-height: 46px;
       font-size: 39px;
-      line-height: 48px; } }
+      line-height: 48px; }
+    .bannerSec .bannerCta a {
+      font-size: 14px !important;
+      padding: 11px 19px; } }
   @media all and (max-width: 550px) {
     .bannerSec {
       margin: 100px 0px 180px 0px; } }
@@ -1073,7 +1094,7 @@ section {
           border-top: 1px solid #000; }
           .solutionSec .solutionSlider .slick-track .solutionBox .solutionContent a {
             text-decoration: none;
-            color: #000;
+            color: #212121;
             display: flex;
             align-items: center; }
             .solutionSec .solutionSlider .slick-track .solutionBox .solutionContent a img {
@@ -1097,12 +1118,12 @@ section {
         color: transparent;
         border: 1px solid rgba(33, 33, 33, 0.6);
         border-radius: 60px;
-        line-height: 16px;
+        line-height: 13px;
         height: 14px;
         width: 14px; }
     .solutionSec .solutionSlider .slick-dots li.slick-active button:before {
       color: rgba(33, 33, 33, 0.6);
-      font-size: 12px;
+      font-size: 10px;
       padding: 1px; }
     .solutionSec .solutionSlider .slick-slide img {
       display: inline-block; }
@@ -1383,6 +1404,8 @@ section {
   .sectors .sectorsliderMobile .sectorBox .slick-track {
     margin-left: -7px; } }
 @media all and (max-width: 780px) {
+  .sectors p {
+    font-size: 16px !important; }
   .sectors .sectorsDesktop {
     display: none; }
   .sectors .sectorsMobile {
@@ -1440,12 +1463,12 @@ section {
         color: transparent;
         border: 1px solid rgba(33, 33, 33, 0.6);
         border-radius: 60px;
-        line-height: 16px;
+        line-height: 13px;
         height: 14px;
         width: 14px; }
     .advantageSec .advantageSlider .slick-dots li.slick-active button:before {
       color: rgba(33, 33, 33, 0.6);
-      font-size: 12px;
+      font-size: 10px;
       padding: 1px; }
     .advantageSec .advantageSlider .slick-slide img {
       display: inline-block; }
@@ -1716,7 +1739,9 @@ section {
           @media (max-width: 920px) {
             .testlegalSec .testlegalSlider .testimonialsLegal .profile .profileInfo h4 {
               text-align: left;
-              margin-bottom: 5px; } }
+              margin-bottom: 5px;
+              font-weight: 700;
+              font-size: 20px; } }
         .testlegalSec .testlegalSlider .testimonialsLegal .profile .profileInfo p {
           text-align: center; }
           @media (max-width: 1450px) {
@@ -1790,7 +1815,7 @@ section {
         align-items: center;
         font-size: 16px; }
         .testlegalSec .testlegalSlider .testimonialsLegal .testlegalMobile a img {
-          margin-top: 4px;
+          margin-top: 2px;
           transition: 0.6s all;
           width: 18px;
           height: 9px;
@@ -2262,6 +2287,12 @@ footer {
         margin-bottom: 15px; }
         footer .footerSec .footerSub ul li:nth-last-child(1) {
           margin-bottom: 0px; }
+      footer .footerSec .footerSub a {
+        color: #fff !important; }
+        footer .footerSec .footerSub a:focus, footer .footerSec .footerSub a:hover {
+          color: #fff !important;
+          outline: none;
+          outline-offset: unset; }
       footer .footerSec .footerSub:nth-child(1) {
         width: 19%;
         padding-left: 0px;
@@ -2311,15 +2342,17 @@ footer {
         color: #ffffff; }
       footer .footerLinks .linksFt a:nth-child(1) {
         margin-right: 50px; }
-    footer .footerLinks .copyRight {
+    footer .footerLinks .copyrightmbl {
+      display: none; }
+    footer .footerLinks .copyRight, footer .footerLinks .mobileCopy {
       display: flex;
       align-items: center; }
-      footer .footerLinks .copyRight img {
+      footer .footerLinks .copyRight img, footer .footerLinks .mobileCopy img {
         margin-right: 10px; }
     @media all and (max-width: 1024px) {
       footer .footerLinks {
         display: block; }
-        footer .footerLinks .copyRight {
+        footer .footerLinks .copyRight, footer .footerLinks .mobileCopy {
           margin-top: 20px; } }
   @media all and (max-width: 1800px) {
     footer .footerSec .footerSub {
@@ -2415,8 +2448,12 @@ footer {
               width: 35px;
               height: 35px; } }
   @media all and (max-width: 575px) {
+    footer .footerLinks .copyRight, footer .footerLinks .mobileCopy {
+      align-items: flex-start; }
+    footer .footerLinks .copyrightmbl {
+      display: block; }
     footer .footerLinks .copyRight {
-      align-items: flex-start; } }
+      display: none; } }
 
 #myBtn {
   box-sizing: border-box;
@@ -2430,19 +2467,20 @@ footer {
   filter: drop-shadow(5px 5px 15px rgba(33, 33, 33, 0.15));
   border: 1px solid #FAFAFA;
   border-radius: 5px;
-  z-index: 99; }
+  z-index: 999;
+  transition: all .2s; }
   @media all and (min-width: 770px) {
     #myBtn {
       display: none !important; } }
 
 .scroll-text {
-  position: fixed;
+  position: absolute;
   width: 39px;
   height: 13px;
   left: 0;
   right: 0;
   margin: 0 auto;
-  bottom: 74px;
+  bottom: -60px;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
@@ -2457,12 +2495,12 @@ footer {
       display: none !important; } }
 
 .scroll-symbol {
-  position: fixed;
+  position: absolute;
   width: 1px;
   height: 24px;
   left: 0;
   right: 0;
-  bottom: 30px;
+  bottom: -104px;
   border-radius: 2px;
   margin: auto;
   border: 1px solid rgba(33, 33, 33, 0.5);
@@ -2471,10 +2509,10 @@ footer {
     position: absolute;
     content: "";
     right: 0;
-    bottom: 28px;
-    left: -6px;
-    width: 12px;
-    height: 12px;
+    bottom: 26px;
+    left: -5px;
+    width: 9px;
+    height: 9px;
     background: #000;
     border-radius: 50%; }
   .scroll-symbol::after {
@@ -2495,10 +2533,13 @@ footer {
 
 .progress-container-mobile .progress-bar-mobile {
   position: fixed;
-  height: 3px;
+  height: 0px;
   background: #000;
   z-index: 999;
-  left: 0; }
+  left: 0;
+  border: 2px solid #212121;
+  border-radius: 0px 10px 10px 0px;
+  margin-top: -1px; }
   @media all and (min-width: 770px) {
     .progress-container-mobile .progress-bar-mobile {
       display: none !important; } }

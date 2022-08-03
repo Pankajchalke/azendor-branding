@@ -18,7 +18,7 @@ header {
 
 
     @media (max-width: 760px) {
-        border-bottom: 1px solid #6A6A6A;
+        border-bottom: 2px solid rgba(106, 106, 106, 0.5);
     }
 
     #sidebarContainer {
@@ -60,13 +60,18 @@ header {
                     list-style: none;
                     padding: 20px 0px;
                     cursor: pointer;
+                    color: #212121;
+                    a{
+                        color: #212121 !important;
+                        
+                    }
 
-                    .dropdown {
+                    .dropdownLegal {
                         position: relative;
                         display: inline-block;
 
                         .drop {
-                            color: #000;
+                            color: #212121;
                             border-radius: 6px;
                             position: relative;
                             display: inline-block;
@@ -98,7 +103,7 @@ header {
                             }
                         }
 
-                        >.dropdown-menu {
+                        >.dropdown-menuLegal {
                             position: unset !important;
                             overflow: hidden;
                             max-height: 0px;
@@ -114,7 +119,7 @@ header {
                                 background-color: #fafafa;
                                 border: 1px solid #f1f1f1;
                                 border-radius: 5px;                                
-                                width: 14rem;
+                                width: 210px;
                                 margin-top: 20px;
 
                                 li {
@@ -128,13 +133,13 @@ header {
 
                             >li>a {
                                 display: block;
-                                color: #555;
                                 text-align: left;
                                 transition: all .25s linear;
+                                font-size: 16px;
 
                                 &:hover {
 
-                                    color: #fff;
+                                    color: #212121;
                                 }
                             }
                         }
@@ -146,7 +151,7 @@ header {
                         background-image: url('../images/down-arrow.svg');
                         background-repeat: no-repeat;
                         display: inline-block;
-                        margin-left: 3px;
+                        margin-left: 13px;
                         top: 1px;
                         position: relative;
                         transition: all .25s ease;
@@ -168,7 +173,7 @@ header {
                         color: #212121;
                         cursor: pointer;
                         text-decoration: none;
-                        font-size: 16px;
+                        font-size: 20px;
 
                         &.active {
                             position: relative;
@@ -223,13 +228,18 @@ header {
             z-index: 99;
             height: 100%;
             width: 100%;
-            top: 29px;
+            top: 43px;
             right: 0px;
             height: 24px;
             width: 24px;
 
+            
+
+            @media (max-width:770px) {
+                top: 29px;
+            }
             @media (max-width:390px) {
-                top: 21px;
+                top: 25px;
             }
 
             .spinner {
@@ -292,7 +302,7 @@ header {
 
     .menu-items {
 
-        .dropdown {
+        .dropdownLegal {
             position: relative;
             display: inline-block;
 
@@ -332,8 +342,8 @@ header {
                 }
             }
 
-            >.dropdown-menu {
-                width: 164px;
+            >.dropdown-menuLegal {
+                width: 195px;
                 list-style: none;
                 position: absolute;
                 float: left;
@@ -343,7 +353,10 @@ header {
                 border: 1px solid transparent;
                 background: #FAFAFA;
                 border: transparent;
-
+                
+                @media (max-width: 1400px) {
+                    width: 180px;
+                }
 
                 &.open {
                     max-height: 160px;
@@ -491,15 +504,20 @@ header {
         @media (max-width: 920px) {
             display: block;
             position: relative;
+            padding-top: 100px;
         }
 
         @media (max-width: 770px) {
             padding-top: 45px;
-            padding-bottom: 25px;
+            padding-bottom: 33px;
+        }
+        @media (max-width: 575px) {
+            padding-bottom: 26px;
         }
 
         @media (max-width: 390px) {
             padding-top: 34px;
+            padding-bottom: 33px;
         }
 
         input[type="checkbox"],
@@ -916,6 +934,10 @@ header {
 
 section {
     margin-top: 150px;
+    a:focus{
+        outline: none !important;
+        outline-offset: unset !important;
+    }
 
     @media all and (max-width: 1650px) {
         margin-top: 120px;
@@ -1076,6 +1098,7 @@ section {
     }
 
     @media all and (max-width: 900px) {
+        position: relative;
         margin: 120px 0px 180px 0px;
 
         h1 {
@@ -1094,6 +1117,10 @@ section {
             line-height: 46px;
             font-size: 39px;
             line-height: 48px;
+        }
+        .bannerCta a{
+            font-size: 14px !important;
+            padding: 11px 19px;
         }
     }
 
@@ -1133,9 +1160,11 @@ section {
 
                     a {
                         text-decoration: none;
-                        color: #000;
+                        color: #212121;
                         display: flex;
                         align-items: center;
+
+                        
 
 
                         img {
@@ -1176,14 +1205,14 @@ section {
             color: transparent;
             border: 1px solid rgba(33, 33, 33, 0.6);
             border-radius: 60px;
-            line-height: 16px;
+            line-height: 13px;
             height: 14px;
             width: 14px;}
         }
 
         .slick-dots li.slick-active button:before {
             color: rgba(33, 33, 33, 0.6);
-            font-size: 12px;
+            font-size: 10px;
             padding: 1px;
         }        
         .slick-slide img {
@@ -1589,6 +1618,9 @@ section {
     }
 
     @media all and (max-width: 780px) {
+        p{
+            font-size: 16px !important;
+        }
 
         .sectorsDesktop {
             display: none;
@@ -1696,17 +1728,16 @@ section {
             color: transparent;
             border: 1px solid rgba(33, 33, 33, 0.6);
             border-radius: 60px;
-            line-height: 16px;
+            line-height: 13px;
             height: 14px;
             width: 14px;}
         }
 
         .slick-dots li.slick-active button:before {
             color: rgba(33, 33, 33, 0.6);
-            font-size: 12px;
+            font-size: 10px;
             padding: 1px;
-        }
-
+        }        
         .slick-slide img {
             display: inline-block;
         }
@@ -2133,6 +2164,8 @@ section {
                         @media (max-width: 920px) {
                             text-align: left;
                             margin-bottom: 5px;
+                            font-weight: 700;
+                            font-size: 20px ;
                         }
                     }
 
@@ -2231,7 +2264,7 @@ section {
                     font-size: 16px;
 
                     img {
-                        margin-top: 4px;
+                        margin-top: 2px;
                         transition: 0.6s all;
                         width: 18px;
                         height: 9px;
@@ -2613,6 +2646,14 @@ footer {
                 }
             }
 
+            a{
+                color: #fff !important;
+                &:focus, &:hover{
+                    color: #fff !important;
+                    outline: none;
+                    outline-offset: unset;
+                }
+            }
             &:nth-child(1) {
                 width: 19%;
                 padding-left: 0px;
@@ -2708,8 +2749,11 @@ footer {
                 margin-right: 50px;
             }
         }
+        .copyrightmbl{
+            display: none;
+        }
 
-        .copyRight {
+        .copyRight , .mobileCopy{
             display: flex;
             align-items: center;
 
@@ -2721,7 +2765,7 @@ footer {
         @media all and (max-width: 1024px) {
             display: block;
 
-            .copyRight {
+            .copyRight , .mobileCopy{
                 margin-top: 20px;
             }
         }
@@ -2937,12 +2981,19 @@ footer {
 
     @media all and (max-width:575px) {
         .footerLinks {
-            .copyRight {
+            .copyRight, .mobileCopy {
                 align-items: flex-start;
+            }
+            .copyrightmbl{
+                display: block;
+            }
+            .copyRight{
+                display: none;
             }
         }
     }
 }
+
 
 
 #myBtn {
@@ -2957,22 +3008,26 @@ footer {
     filter: drop-shadow(5px 5px 15px rgba(33, 33, 33, 0.15));
     border: 1px solid #FAFAFA;
     border-radius: 5px;
-    z-index: 99;
-
+    z-index: 999;
+    transition: all .2s;
+   
+   
     @media all and (min-width: 770px) {
         display: none !important;
     }
 }
 
 
+
+
 .scroll-text {
-    position: fixed;
+    position: absolute;
     width: 39px;
     height: 13px;
     left: 0;
     right: 0;
     margin: 0 auto;
-    bottom: 74px;
+    bottom: -60px;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
@@ -2990,12 +3045,12 @@ footer {
 
 
 .scroll-symbol {
-    position: fixed;
+    position: absolute;
     width: 1px;
     height: 24px;
     left: 0;
     right: 0;
-    bottom: 30px;
+    bottom: -104px;
     border-radius: 2px;
     margin: auto;
     border: 1px solid rgba(33, 33, 33, 0.5);
@@ -3005,14 +3060,15 @@ footer {
         position: absolute;
         content: "";
         right: 0;
-        bottom: 28px;
-        left: -6px;
-        width: 12px;
-        height: 12px;
+        bottom: 26px;
+        left: -5px;
+        width: 9px;
+        height: 9px;
         //height: 1%;
         background: #000;
         border-radius: 50%;
     }
+
     &::after {
         position: absolute;
         content: "";
@@ -3034,10 +3090,13 @@ footer {
 
 .progress-container-mobile .progress-bar-mobile {
     position: fixed;
-    height: 3px;
+    height: 0px;
     background: #000;
     z-index: 999;
     left: 0;
+    border: 2px solid #212121;
+    border-radius: 0px 10px 10px 0px;
+    margin-top: -1px;
 
 
     @media all and (min-width: 770px) {
