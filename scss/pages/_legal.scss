@@ -368,6 +368,15 @@ header {
                 }
             }
 
+            .submenuAbout{
+                @media (max-width: 1650px) {
+                    width: 180px;
+                }
+                @media (max-width: 1050px) {
+                    width: 160px;
+                }
+            }
+
             .downcaretsolution,
             .downcaretsector,
             .downcaretabout {
@@ -426,6 +435,8 @@ header {
 
                 }
 
+
+
                 .submenuSolution,
                 .submenuSector,
                 .submenuAbout {
@@ -447,6 +458,11 @@ header {
                         text-align: left;
                         transition: all .25s linear;
                         text-decoration: none;
+                        font-size: 14px;
+                        @media (max-width: 1400px) {
+                            padding: 7px 0px 7px 12px;
+                            font-size: 13px;
+                        }
 
                         &:hover {
                             background-color: #fff;
