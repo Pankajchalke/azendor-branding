@@ -924,10 +924,10 @@ body {
     .legalAdvisory .sectionTitle .backArrow img {
       margin-right: 30px; }
   .legalAdvisory .sectionTitle h1 {
-    margin-bottom: 60px; }
+    margin-bottom: 30px; }
     @media all and (max-width: 1400px) {
       .legalAdvisory .sectionTitle h1 {
-        margin-bottom: 40px; } }
+        margin-bottom: 20px; } }
     @media all and (max-width: 920px) {
       .legalAdvisory .sectionTitle h1 {
         margin-bottom: 0px; } }
@@ -958,7 +958,8 @@ body {
           margin-top: 30px; } }
       @media all and (max-width: 920px) {
         .legalAdvisory .legalAdvisorySection .legalAdvisorySectionBox {
-          width: 100%; } }
+          width: 100%;
+          margin-top: 20px; } }
       .legalAdvisory .legalAdvisorySection .legalAdvisorySectionBox a {
         display: flex;
         align-items: center;
@@ -1037,7 +1038,8 @@ body {
       margin-top: 30px; } }
   .advisorySubPages .subSectionTitle .backArrow img {
     width: 50px;
-    height: 25px; }
+    height: 25px;
+    cursor: pointer; }
     @media all and (max-width: 1400px) {
       .advisorySubPages .subSectionTitle .backArrow img {
         width: 35px;
@@ -1111,34 +1113,98 @@ body {
   margin: 150px 0px; }
   @media all and (max-width: 1400px) {
     .digitalTransformation {
-      margin: 75px 0px; } }
+      margin: 100px 0px; } }
   @media all and (max-width: 920px) {
     .digitalTransformation {
       margin: 100px 0px 80px; } }
-  .digitalTransformation h1 {
+  @media all and (max-width: 920px) {
+    .digitalTransformation .sectionTitle {
+      display: flex;
+      align-items: flex-start;
+      padding-bottom: 20px;
+      margin-bottom: 15px;
+      border-bottom: 0.75px solid rgba(33, 33, 33, 0.6); } }
+  .digitalTransformation .sectionTitle .backArrow {
+    display: none; }
+    @media all and (max-width: 920px) {
+      .digitalTransformation .sectionTitle .backArrow {
+        display: block;
+        margin-top: 15px; } }
+    .digitalTransformation .sectionTitle .backArrow img {
+      margin-right: 30px; }
+  .digitalTransformation .sectionTitle h1 {
     margin-bottom: 30px; }
+    @media all and (max-width: 1400px) {
+      .digitalTransformation .sectionTitle h1 {
+        margin-bottom: 20px; } }
+    @media all and (max-width: 920px) {
+      .digitalTransformation .sectionTitle h1 {
+        margin-bottom: 0px; } }
+  @media all and (max-width: 920px) {
+    .digitalTransformation p {
+      font-size: 16px; } }
   .digitalTransformation .digitalTransformationSection {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 10px; }
+    @media all and (max-width: 1400px) {
+      .digitalTransformation .digitalTransformationSection {
+        margin-top: 5px; } }
+    @media all and (max-width: 920px) {
+      .digitalTransformation .digitalTransformationSection {
+        margin-top: 0px; } }
     .digitalTransformation .digitalTransformationSection .digitalTransformationSectionBox {
-      width: 48%;
+      width: 48.5%;
       margin-top: 50px; }
+      @media all and (max-width: 1400px) {
+        .digitalTransformation .digitalTransformationSection .digitalTransformationSectionBox {
+          width: 48.5%;
+          margin-top: 35px; } }
+      @media all and (max-width: 1080px) {
+        .digitalTransformation .digitalTransformationSection .digitalTransformationSectionBox {
+          width: 31.5%;
+          margin-top: 30px; } }
+      @media all and (max-width: 920px) {
+        .digitalTransformation .digitalTransformationSection .digitalTransformationSectionBox {
+          width: 100%;
+          margin-top: 20px; } }
       .digitalTransformation .digitalTransformationSection .digitalTransformationSectionBox a {
         display: flex;
         align-items: center;
+        line-height: 130%;
         justify-content: space-between;
         text-decoration: none;
-        padding: 32px 45px;
-        background: #FAFAFA;
+        padding: 32px 50px 32px 45px;
         border: 1px solid #F1F1F1;
         border-radius: 10px; }
         .digitalTransformation .digitalTransformationSection .digitalTransformationSectionBox a .img1 {
-          margin-right: 20px; }
+          margin-right: 30px; }
+          @media all and (max-width: 1400px) {
+            .digitalTransformation .digitalTransformationSection .digitalTransformationSectionBox a .img1 {
+              margin-right: 25px;
+              width: 40px;
+              height: 45px; } }
+          @media all and (max-width: 1080px) {
+            .digitalTransformation .digitalTransformationSection .digitalTransformationSectionBox a .img1 {
+              margin-right: 15px; } }
+          @media all and (max-width: 920px) {
+            .digitalTransformation .digitalTransformationSection .digitalTransformationSectionBox a .img1 {
+              width: 30px;
+              height: 35px; } }
         .digitalTransformation .digitalTransformationSection .digitalTransformationSectionBox a .img2 {
           margin-left: auto;
-          transition: 0.6s all; }
+          transition: 0.6s all;
+          width: 25px;
+          height: 25px; }
+          @media all and (max-width: 1400px) {
+            .digitalTransformation .digitalTransformationSection .digitalTransformationSectionBox a .img2 {
+              width: 17px;
+              height: 17px; } }
+          @media all and (max-width: 920px) {
+            .digitalTransformation .digitalTransformationSection .digitalTransformationSectionBox a .img2 {
+              width: 18px;
+              height: 9px; } }
         .digitalTransformation .digitalTransformationSection .digitalTransformationSectionBox a:hover {
           border: 1px solid #212121;
           transition: 0.6s all; }
@@ -1146,27 +1212,82 @@ body {
             transform: translateX(10px); }
         @media all and (max-width: 1400px) {
           .digitalTransformation .digitalTransformationSection .digitalTransformationSectionBox a {
-            padding: 22px 35px; } }
+            padding: 20px 35px 21px 30px;
+            font-size: 18px; } }
+        @media all and (max-width: 1080px) {
+          .digitalTransformation .digitalTransformationSection .digitalTransformationSectionBox a {
+            padding: 20px;
+            font-size: 16px; } }
+        @media all and (max-width: 920px) {
+          .digitalTransformation .digitalTransformationSection .digitalTransformationSectionBox a {
+            padding: 20px 25px 20px 30px;
+            font-size: 16px;
+            line-height: 160%; } }
 
 .digitalTransformationSubPages {
-  margin: 150px 0px; }
+  margin: 150px 0px 250px; }
   @media all and (max-width: 1400px) {
     .digitalTransformationSubPages {
-      margin: 75px 0px; } }
+      margin: 100px 0px; } }
   @media all and (max-width: 920px) {
     .digitalTransformationSubPages {
       margin: 100px 0px 80px; } }
-  .digitalTransformationSubPages h1 {
-    margin: 30px 0px; }
+  @media all and (max-width: 920px) {
+    .digitalTransformationSubPages .subSectionTitle {
+      display: flex;
+      align-items: center;
+      padding-bottom: 20px;
+      margin-bottom: 15px;
+      border-bottom: 0.75px solid rgba(33, 33, 33, 0.6); } }
+  @media all and (max-width: 390px) {
+    .digitalTransformationSubPages .subSectionTitle {
+      align-items: self-start; } }
+  @media all and (max-width: 920px) {
+    .digitalTransformationSubPages .subSectionTitle .backArrow {
+      margin-top: 25px; } }
+  @media all and (max-width: 390px) {
+    .digitalTransformationSubPages .subSectionTitle .backArrow {
+      margin-top: 30px; } }
+  .digitalTransformationSubPages .subSectionTitle .backArrow img {
+    width: 50px;
+    height: 25px;
+    cursor: pointer; }
+    @media all and (max-width: 1400px) {
+      .digitalTransformationSubPages .subSectionTitle .backArrow img {
+        width: 35px;
+        height: 18px; } }
+    @media all and (max-width: 920px) {
+      .digitalTransformationSubPages .subSectionTitle .backArrow img {
+        margin-right: 20px;
+        width: 23px;
+        height: 12px; } }
+  .digitalTransformationSubPages .subSectionTitle h1 {
+    margin: 30px 0px;
+    line-height: 125%; }
+    @media all and (max-width: 1400px) {
+      .digitalTransformationSubPages .subSectionTitle h1 {
+        margin: 20px 0px; } }
+    @media all and (max-width: 920px) {
+      .digitalTransformationSubPages .subSectionTitle h1 {
+        font-size: 30px;
+        margin-bottom: 0px; } }
   .digitalTransformationSubPages p {
-    width: 70%; }
+    width: 70%;
+    line-height: 140%; }
     @media all and (max-width: 1400px) {
       .digitalTransformationSubPages p {
-        width: 60%; } }
+        width: 70%; } }
+    @media all and (max-width: 920px) {
+      .digitalTransformationSubPages p {
+        font-size: 16px;
+        width: 100%; } }
   .digitalTransformationSubPages .digitalTransformationCta {
     margin-top: 40px;
     display: flex;
     align-items: center; }
+    @media all and (max-width: 1400px) {
+      .digitalTransformationSubPages .digitalTransformationCta {
+        margin-top: 25px; } }
     .digitalTransformationSubPages .digitalTransformationCta a {
       background-color: #212121;
       color: #fff;
@@ -1177,9 +1298,26 @@ body {
       outline: none;
       display: flex;
       align-items: center; }
+      @media all and (max-width: 1400px) {
+        .digitalTransformationSubPages .digitalTransformationCta a {
+          padding: 11px 17px; } }
+      @media all and (max-width: 920px) {
+        .digitalTransformationSubPages .digitalTransformationCta a {
+          font-size: 14px;
+          padding: 11px 19px; } }
       .digitalTransformationSubPages .digitalTransformationCta a img {
+        width: 23px;
+        height: 18px;
         transition: 0.6s all;
         margin-left: 10px; }
+        @media all and (max-width: 1400px) {
+          .digitalTransformationSubPages .digitalTransformationCta a img {
+            width: 16px;
+            height: 8px; } }
+        @media all and (max-width: 920px) {
+          .digitalTransformationSubPages .digitalTransformationCta a img {
+            width: 18px;
+            height: 9px; } }
       .digitalTransformationSubPages .digitalTransformationCta a:hover img {
         transform: translateX(10px); }
 

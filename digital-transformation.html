@@ -191,7 +191,11 @@
 </div>
 <section class="digitalTransformation">
     <div class="wrapper">
-        <h1 class="fontRoboto font64 fontW700 colorBlack">Digital Transformation</h1>
+        <div class="sectionTitle">
+            <a class="backArrow" onclick="history.back(-1)" ><img src="images/legal/back-arrow.svg"></a>
+            <h1 class="fontRoboto font64 fontW700 colorBlack">Digital Transformation</h1>
+        </div>
+        
         <p class="font22 fontW400 fontPoppins colorBlack">We can help you in all stages of legal digital transformation. </p>
         <div class="digitalTransformationSection">
             <div class="digitalTransformationSectionBox">
@@ -302,31 +306,7 @@
 <script src="js/jquery-3.3.1.min.js"></script> 
 <script src="js/plugins.js"></script>
 <script src="js/custom.js"></script>
-<!-- <script>
-    $(document).ready(function () {
-        $(".dropdownLegal").hover(function (e) {
-            $(this).find(".dropdown-menuLegal").toggleClass("open");
-            $($(e.target).find(".down-caret").toggleClass("open-caret"));
-            e.preventDefault();
-            e.stopPropagation();
-            $(document).hover(function () {
-                $(".dropdown-menuLegal").removeClass("open");
-                $(".down-caret").removeClass("open-caret");
-            });
-        });
 
-        const menuLinks = document.querySelectorAll(".menu-items .menu-link");
-
-        menuLinks.forEach((link) => {
-            link.addEventListener("click", () => {
-                menuLinks.forEach((link) => {
-                    link.classList.remove("is-active");
-                });
-                link.classList.add("is-active");
-            });
-        });
-    });
-</script> -->
    
 </body>
 

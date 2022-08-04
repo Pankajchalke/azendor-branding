@@ -189,12 +189,15 @@
 <div class="progress-container">
     <div id="progressbar" class="progress-bar"></div>
 </div>
-<section class="advisorySubPages">
+<section class="digitalTransformationSubPages">
     <div class="wrapper">
-        <a class="backArrow" href="digital-transformation.html"><img src="images/legal/advisory-back.svg"></a>
-        <h1 class="fontRoboto font64 fontW700 colorBlack">One Legal Platform</h1>
+        <div class="subSectionTitle">
+            <a class="backArrow" onclick="history.back(-1)" ><img src="images/legal/advisory-back.svg"></a>
+            <h1 class="fontRoboto font64 fontW700 colorBlack">One Legal Platform</h1>
+        </div>
+        
         <p class="font24 fontW400 fontPoppins colorBlack">A single legal document management systems provide transformative automation — across all legal functions. A single platform for M&As, litigations, claims, and other contract-related functions is an ideal one stop solution for which legal departments and companies strive for. Ultimately, though, your company may only need a subset of the system’s functionality today and only for a small group of buy-side or sales-side users in your organization. But after accounting for your current business status and requirements, and making a realistic prediction for your contracting needs, say five or ten years down the road,  you may find that a comprehensive suite of legal applications is your best choice.</p>
-        <div class="advisoryCta">
+        <div class="digitalTransformationCta">
             <a href="#" class="font20 fontPoppins fontW400">
                 For Initial Consultation<img src="images/legal/banner-arrow.svg">
             </a>
@@ -205,7 +208,7 @@
     <div class="wrapper">
         <div class="footerSec">
             <div class="footerSub">
-                <a href="#" class="footerLogo"><img src="images/legal-footer-logo.svg"></a>
+                <a href="#" class="footerLogo"><img src="images/legal-footer-logo.png"></a>
                 <div class="socialmediaIcons">
                     <ul>
                         <li><a href="#"><img src="images/legal/linkdin-footer.svg"></a></li>
@@ -232,16 +235,16 @@
                     <div class="sectorftSub">
                         <ul>
                             <li><a href="#" class="colorW fontW400 font22 fontPoppins">Television</a></li>
-                            <li> <a href="#" class="colorW fontW400 font22 fontPoppins">Online Gaming</a></li>
-                            <li><a href="#" class="colorW fontW400 font22 fontPoppins">Live Events</a></li>
-                            <li><a href="#" class="colorW fontW400 font22 fontPoppins">Radio</a></li>
-                            <li><a href="#" class="colorW fontW400 font22 fontPoppins">Film</a></li>
-                            <li><a href="#" class="colorW fontW400 font22 fontPoppins">Print</a></li>
-                            <li><a href="#" class="colorW fontW400 font22 fontPoppins"> Animation/ VFX</a></li>
-                            <li><a href="#" class="colorW fontW400 font22 fontPoppins"> Sports</a></li>
+                            <li> <a href="#" class="colorW fontW400 font22 fontPoppins">Film</a></li>
                             <li><a href="#" class="colorW fontW400 font22 fontPoppins">OTT Platform</a></li>
+                            <li><a href="#" class="colorW fontW400 font22 fontPoppins">Online Gaming</a></li>
+                            <li><a href="#" class="colorW fontW400 font22 fontPoppins">Print</a></li>
                             <li><a href="#" class="colorW fontW400 font22 fontPoppins">OOH</a></li>
+                            <li><a href="#" class="colorW fontW400 font22 fontPoppins">Live Events</a></li>
+                            <li><a href="#" class="colorW fontW400 font22 fontPoppins">Animation/ VFX</a></li>
                             <li><a href="#" class="colorW fontW400 font22 fontPoppins">Music</a></li>
+                            <li><a href="#" class="colorW fontW400 font22 fontPoppins">Radio</a></li>
+                            <li><a href="#" class="colorW fontW400 font22 fontPoppins">Sports</a></li>
                             <li><a href="#" class="colorW fontW400 font22 fontPoppins"> Advertising</a></li>
                         </ul>
                     </div>
@@ -294,32 +297,7 @@
 <script src="js/jquery-3.3.1.min.js"></script> 
 <script src="js/plugins.js"></script>
 <script src="js/custom.js"></script>
-<script>
-    $(document).ready(function () {
-        $('.dropdown').hover(function (e) {
-            $(this).find('.dropdown-menu').toggleClass('open');
-            $($(e.target).find('.down-caret').toggleClass('open-caret'));
-            e.preventDefault();
-            e.stopPropagation();
-            $(document).hover(function () {
-                $('.dropdown-menu').removeClass('open');
-                $('.down-caret').removeClass('open-caret');
-            });
-        });
 
-        const menuLinks = document.querySelectorAll(".menu-items .menu-link");
-
-        menuLinks.forEach((link) => {
-            link.addEventListener("click", () => {
-                menuLinks.forEach((link) => {
-                    link.classList.remove("is-active");
-                });
-                link.classList.add("is-active");
-            });
-        });
-    });
-
-</script>
    
 </body>
 
