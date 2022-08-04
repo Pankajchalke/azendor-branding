@@ -1,16 +1,16 @@
 body {
     overflow: visible !important;
     background-color: white !important;
-    /* Hide scrollbar for IE, Edge and Firefox */
-    -ms-overflow-style: none;
-    /* IE and Edge */
-    scrollbar-width: none;
-    /* Firefox */
-
-    /* Hide scrollbar for Chrome, Safari and Opera */
-    &::-webkit-scrollbar {
-        display: none;
-    }
+     /* Hide scrollbar for IE, Edge and Firefox */
+     -ms-overflow-style: none;
+     /* IE and Edge */
+     scrollbar-width: none;
+     /* Firefox */
+ 
+     /* Hide scrollbar for Chrome, Safari and Opera */
+     &::-webkit-scrollbar {
+         display: none;
+     }
 }
 
 .legalHeader {
@@ -31,6 +31,7 @@ body {
     border-radius: 2px;
     margin: auto;
     border: 1px solid rgba(33, 33, 33, 0.5);
+    z-index: 999;
 
     @media (max-width:770px) {
         display: none !important;
@@ -41,6 +42,7 @@ body {
         width: 1px;
         background: #000;
         border-radius: 2px;
+        z-index: 999;
 
 
         &:before {
@@ -54,7 +56,17 @@ body {
             //height: 1%;
             background: #000;
             border-radius: 50%;
+
+            
         }
+    &:after{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 130.9%;
+        letter-spacing: 0.05em;
+        color: #212121;}
 
         &::after {
             position: absolute;
@@ -73,7 +85,7 @@ body {
 
 .careers {
     position: relative;
-    margin: 250px 0px;
+    margin: 150px 0px;
     color: #212121;
 
 
