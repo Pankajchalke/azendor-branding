@@ -42,7 +42,7 @@ body{overflow: visible !important;}
 				@media all and (max-width: 1400px){width:55%;margin-left: 55px;}
 				@media all and (max-width: 920px){width:100%; margin-left: 0px;}
 			.founderDescName{display: flex; align-items: baseline;
-				@media all and (max-width: 1400px){align-items: center;}
+				@media all and (max-width: 1400px){align-items: baseline;}
 				@media all and (max-width: 920px){align-items: end;}
 				h3{
 					@media all and (max-width: 920px){font-size:24px;}
@@ -50,7 +50,7 @@ body{overflow: visible !important;}
 				a{margin-left: 45px;
 					@media all and (max-width: 1400px){margin-left: 32px;}
 					@media all and (max-width: 920px){margin-left: 15px;}
-					img{
+					img{margin-top: 15px;
 						@media all and (max-width: 1400px){width:25px;}
 						@media all and (max-width: 920px){width:24px;}
 					}

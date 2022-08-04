@@ -412,7 +412,7 @@ body {
         align-items: baseline; }
         @media all and (max-width: 1400px) {
           .founder .founderBox .founderDesc .founderDescName {
-            align-items: center; } }
+            align-items: baseline; } }
         @media all and (max-width: 920px) {
           .founder .founderBox .founderDesc .founderDescName {
             align-items: end; } }
@@ -427,12 +427,14 @@ body {
           @media all and (max-width: 920px) {
             .founder .founderBox .founderDesc .founderDescName a {
               margin-left: 15px; } }
-          @media all and (max-width: 1400px) {
-            .founder .founderBox .founderDesc .founderDescName a img {
-              width: 25px; } }
-          @media all and (max-width: 920px) {
-            .founder .founderBox .founderDesc .founderDescName a img {
-              width: 24px; } }
+          .founder .founderBox .founderDesc .founderDescName a img {
+            margin-top: 15px; }
+            @media all and (max-width: 1400px) {
+              .founder .founderBox .founderDesc .founderDescName a img {
+                width: 25px; } }
+            @media all and (max-width: 920px) {
+              .founder .founderBox .founderDesc .founderDescName a img {
+                width: 24px; } }
       @media all and (max-width: 1400px) {
         .founder .founderBox .founderDesc p {
           font-size: 18px; } }
