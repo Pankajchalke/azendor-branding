@@ -658,6 +658,16 @@ header {
         header .menu-items .dropdownAbout .submenuSector,
         header .menu-items .dropdownAbout .submenuAbout {
           width: 180px; } }
+    @media (max-width: 1650px) {
+      header .menu-items .dropdownSolution .submenuAbout,
+      header .menu-items .dropdownSector .submenuAbout,
+      header .menu-items .dropdownAbout .submenuAbout {
+        width: 180px; } }
+    @media (max-width: 1050px) {
+      header .menu-items .dropdownSolution .submenuAbout,
+      header .menu-items .dropdownSector .submenuAbout,
+      header .menu-items .dropdownAbout .submenuAbout {
+        width: 160px; } }
     header .menu-items .dropdownSolution .downcaretsolution,
     header .menu-items .dropdownSolution .downcaretsector,
     header .menu-items .dropdownSolution .downcaretabout,
@@ -753,7 +763,20 @@ header {
         color: #555;
         text-align: left;
         transition: all .25s linear;
-        text-decoration: none; }
+        text-decoration: none;
+        font-size: 14px; }
+        @media (max-width: 1400px) {
+          header .menu-items .dropdownSolution:hover .submenuSolution > li > a,
+          header .menu-items .dropdownSolution:hover .submenuSector > li > a,
+          header .menu-items .dropdownSolution:hover .submenuAbout > li > a,
+          header .menu-items .dropdownSector:hover .submenuSolution > li > a,
+          header .menu-items .dropdownSector:hover .submenuSector > li > a,
+          header .menu-items .dropdownSector:hover .submenuAbout > li > a,
+          header .menu-items .dropdownAbout:hover .submenuSolution > li > a,
+          header .menu-items .dropdownAbout:hover .submenuSector > li > a,
+          header .menu-items .dropdownAbout:hover .submenuAbout > li > a {
+            padding: 7px 0px 7px 12px;
+            font-size: 13px; } }
         header .menu-items .dropdownSolution:hover .submenuSolution > li > a:hover,
         header .menu-items .dropdownSolution:hover .submenuSector > li > a:hover,
         header .menu-items .dropdownSolution:hover .submenuAbout > li > a:hover,
