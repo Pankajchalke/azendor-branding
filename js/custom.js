@@ -599,8 +599,8 @@ window.addEventListener("scroll", () => {
 
 // legal Header Dropdown
 
-const dropdownMenu = window.matchMedia("(max-width: 900px)");
-if (dropdownMenu.matches) {
+
+if ( $(window).width() <= 920 ) {
   // Print a message to the console
   $(document).ready(function () {
     $(".dropdownSolution").click(function () {
