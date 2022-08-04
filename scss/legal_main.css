@@ -540,7 +540,8 @@ header {
             header #sidebarContainer #sideMenu .sideMenuInner li .contact:active {
               color: #212121;
               font-weight: 600;
-              text-decoration: none; }
+              text-decoration: none;
+              outline: none; }
       header #sidebarContainer #sideMenu #sidenav-overlay body::before {
         position: fixed;
         top: 0;
@@ -778,11 +779,16 @@ header {
       position: relative;
       color: #212121 !important; }
   header .careerHeader {
-    color: #212121; }
+    color: #212121;
+    text-decoration: none;
+    outline: none; }
     header .careerHeader:hover, header .careerHeader:focus, header .careerHeader:active {
-      color: #212121; }
+      color: #212121;
+      text-decoration: none;
+      outline: none; }
     header .careerHeader::before {
-      left: -2px !important; }
+      left: -2px !important;
+      top: -10px !important; }
   header .menu-link:hover {
     position: relative;
     color: #000;
@@ -796,7 +802,7 @@ header {
       content: "";
       left: -16px;
       right: 0;
-      top: 9px;
+      top: 12px;
       bottom: 0;
       width: 50px;
       height: 50px;
