@@ -598,20 +598,28 @@ window.addEventListener("scroll", () => {
 
 
 // legal Header Dropdown
-$(document).ready(function () {
-  $(".dropdownSolution").hover(function () {
-    $(".submenuSolution").toggleClass("open");
-    $(".downcaretsolution").toggleClass("open-caret");
+
+const dropdownMenu = window.matchMedia("(max-width: 900px)");
+if (dropdownMenu.matches) {
+  // Print a message to the console
+  $(document).ready(function () {
+    $(".dropdownSolution").click(function () {
+      $(".submenuSolution").toggleClass("open");
+      $(".downcaretsolution").toggleClass("open-caret");
+    });
+    $(".dropdownSector").click(function () {
+      $(".submenuSector").toggleClass("open");
+      $(".downcaretsector").toggleClass("open-caret");
+    });
+    $(".dropdownAbout").click(function () {
+      $(".submenuAbout").toggleClass("open");
+      $(".downcaretabout").toggleClass("open-caret");
+    });
   });
-  $(".dropdownSector").hover(function () {
-    $(".submenuSector").toggleClass("open");
-    $(".downcaretsector").toggleClass("open-caret");
-  });
-  $(".dropdownAbout").hover(function () {
-    $(".submenuAbout").toggleClass("open");
-    $(".downcaretabout").toggleClass("open-caret");
-  });
-});
+} 
+
+
+
 
 
 // legal top button mobile js
