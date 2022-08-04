@@ -539,7 +539,8 @@ header {
             header #sidebarContainer #sideMenu .sideMenuInner li .contact:focus,
             header #sidebarContainer #sideMenu .sideMenuInner li .contact:active {
               color: #212121;
-              font-weight: 600; }
+              font-weight: 600;
+              text-decoration: none; }
       header #sidebarContainer #sideMenu #sidenav-overlay body::before {
         position: fixed;
         top: 0;
