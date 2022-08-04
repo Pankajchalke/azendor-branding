@@ -628,46 +628,6 @@ header {
       border-radius: 6px;
       position: relative;
       display: inline-block; }
-    header .menu-items .dropdownSolution > .sector,
-    header .menu-items .dropdownSector > .sector,
-    header .menu-items .dropdownAbout > .sector {
-      max-height: 176px; }
-      @media (max-width: 1800px) {
-        header .menu-items .dropdownSolution > .sector,
-        header .menu-items .dropdownSector > .sector,
-        header .menu-items .dropdownAbout > .sector {
-          max-height: 166px; } }
-      @media (max-width: 1600px) {
-        header .menu-items .dropdownSolution > .sector,
-        header .menu-items .dropdownSector > .sector,
-        header .menu-items .dropdownAbout > .sector {
-          max-height: 154px; } }
-      @media (max-width: 1400px) {
-        header .menu-items .dropdownSolution > .sector,
-        header .menu-items .dropdownSector > .sector,
-        header .menu-items .dropdownAbout > .sector {
-          max-height: 144px; } }
-      header .menu-items .dropdownSolution > .sector.open,
-      header .menu-items .dropdownSector > .sector.open,
-      header .menu-items .dropdownAbout > .sector.open {
-        overflow-y: scroll;
-        scrollbar-width: auto;
-        scrollbar-color: #000;
-        /* Chrome, Edge, and Safari */ }
-        header .menu-items .dropdownSolution > .sector.open::-webkit-scrollbar,
-        header .menu-items .dropdownSector > .sector.open::-webkit-scrollbar,
-        header .menu-items .dropdownAbout > .sector.open::-webkit-scrollbar {
-          width: 6px; }
-        header .menu-items .dropdownSolution > .sector.open::-webkit-scrollbar-track,
-        header .menu-items .dropdownSector > .sector.open::-webkit-scrollbar-track,
-        header .menu-items .dropdownAbout > .sector.open::-webkit-scrollbar-track {
-          background: gray; }
-        header .menu-items .dropdownSolution > .sector.open::-webkit-scrollbar-thumb,
-        header .menu-items .dropdownSector > .sector.open::-webkit-scrollbar-thumb,
-        header .menu-items .dropdownAbout > .sector.open::-webkit-scrollbar-thumb {
-          background-color: #000;
-          border-radius: 15px;
-          border: 6px solid #000; }
     header .menu-items .dropdownSolution .submenuSolution,
     header .menu-items .dropdownSolution .submenuSector,
     header .menu-items .dropdownSolution .submenuAbout,
@@ -717,6 +677,43 @@ header {
       position: relative;
       transition: all .25s ease;
       background-size: 9px; }
+    header .menu-items .dropdownSolution:hover .sector,
+    header .menu-items .dropdownSector:hover .sector,
+    header .menu-items .dropdownAbout:hover .sector {
+      max-height: 176px;
+      overflow-y: scroll;
+      scrollbar-width: auto;
+      scrollbar-color: #000;
+      /* Chrome, Edge, and Safari */ }
+      @media (max-width: 1800px) {
+        header .menu-items .dropdownSolution:hover .sector,
+        header .menu-items .dropdownSector:hover .sector,
+        header .menu-items .dropdownAbout:hover .sector {
+          max-height: 166px; } }
+      @media (max-width: 1600px) {
+        header .menu-items .dropdownSolution:hover .sector,
+        header .menu-items .dropdownSector:hover .sector,
+        header .menu-items .dropdownAbout:hover .sector {
+          max-height: 154px; } }
+      @media (max-width: 1400px) {
+        header .menu-items .dropdownSolution:hover .sector,
+        header .menu-items .dropdownSector:hover .sector,
+        header .menu-items .dropdownAbout:hover .sector {
+          max-height: 144px; } }
+      header .menu-items .dropdownSolution:hover .sector::-webkit-scrollbar,
+      header .menu-items .dropdownSector:hover .sector::-webkit-scrollbar,
+      header .menu-items .dropdownAbout:hover .sector::-webkit-scrollbar {
+        width: 6px; }
+      header .menu-items .dropdownSolution:hover .sector::-webkit-scrollbar-track,
+      header .menu-items .dropdownSector:hover .sector::-webkit-scrollbar-track,
+      header .menu-items .dropdownAbout:hover .sector::-webkit-scrollbar-track {
+        background: gray; }
+      header .menu-items .dropdownSolution:hover .sector::-webkit-scrollbar-thumb,
+      header .menu-items .dropdownSector:hover .sector::-webkit-scrollbar-thumb,
+      header .menu-items .dropdownAbout:hover .sector::-webkit-scrollbar-thumb {
+        background-color: #000;
+        border-radius: 15px;
+        border: 6px solid #000; }
     header .menu-items .dropdownSolution:hover .submenuSolution,
     header .menu-items .dropdownSolution:hover .submenuSector,
     header .menu-items .dropdownSolution:hover .submenuAbout,
@@ -1278,7 +1275,7 @@ section {
             display: flex;
             align-items: center; }
             .solutionSec .solutionSlider .slick-track .solutionBox .solutionContent a img {
-              margin-top: 3px;
+              margin-top: 1px;
               transition: 0.6s all;
               width: 23px;
               height: 11px;
@@ -1406,7 +1403,7 @@ section {
       display: inline-block;
       transition: 0.6s all;
       margin-left: 5px;
-      margin-top: 3px; }
+      margin-top: 1px; }
     .sectors .sectorsliderDesktop .sectorBox .sectorContent a:hover img,
     .sectors .sectorsliderMobile .sectorBox .sectorContent a:hover img {
       transform: translateX(10px); }
@@ -1989,7 +1986,7 @@ section {
         align-items: center;
         font-size: 16px; }
         .testlegalSec .testlegalSlider .testimonialsLegal .testlegalMobile a img {
-          margin-top: 3px;
+          margin-top: 1px;
           transition: 0.6s all;
           width: 18px;
           height: 9px;
@@ -2519,8 +2516,11 @@ footer {
           footer .footerSec .footerSub .socialmediaIcons ul li img {
             height: 45px;
             width: 45px; }
+      footer .footerSec .footerSub .quickLinksft p {
+        cursor: text; }
       footer .footerSec .footerSub .quickLinksft ul li {
-        margin-bottom: 0px !important; }
+        margin-bottom: 0px !important;
+        margin-top: 5px; }
     footer .footerSec .socialmediaIcons-btm {
       display: none !important;
       width: 0; }

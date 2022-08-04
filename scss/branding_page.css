@@ -1428,7 +1428,8 @@ header {
       display: block;
       margin: 0 auto;
       text-decoration: none;
-      margin-top: 40px; }
+      margin-top: 40px;
+      cursor: pointer; }
     .clientsBox #scrolldiv #scrolldiv-content .noContent {
       color: #6A6A6A;
       background-color: transparent !important;

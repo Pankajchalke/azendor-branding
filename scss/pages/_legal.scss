@@ -347,45 +347,7 @@ header {
                 display: inline-block;
             }
 
-            >.sector {
-                max-height: 176px;
 
-                @media (max-width: 1800px) {
-                    max-height: 166px;
-                }
-
-                @media (max-width: 1600px) {
-                    max-height: 154px;
-                }
-
-                @media (max-width: 1400px) {
-                    max-height: 144px;
-                }
-
-                &.open {
-                    overflow-y: scroll;
-                    scrollbar-width: auto;
-                    scrollbar-color: #000;
-
-
-                    /* Chrome, Edge, and Safari */
-                    &::-webkit-scrollbar {
-                        width: 6px;
-                    }
-
-
-
-                    &::-webkit-scrollbar-track {
-                        background: gray;
-                    }
-
-                    &::-webkit-scrollbar-thumb {
-                        background-color: #000;
-                        border-radius: 15px;
-                        border: 6px solid #000;
-                    }
-                }
-            }
 
             .submenuSolution,
             .submenuSector,
@@ -423,6 +385,46 @@ header {
 
 
             &:hover {
+
+                .sector {
+                    max-height: 176px;
+
+                    @media (max-width: 1800px) {
+                        max-height: 166px;
+                    }
+
+                    @media (max-width: 1600px) {
+                        max-height: 154px;
+                    }
+
+                    @media (max-width: 1400px) {
+                        max-height: 144px;
+                    }
+
+
+                    overflow-y: scroll;
+                    scrollbar-width: auto;
+                    scrollbar-color: #000;
+
+
+                    /* Chrome, Edge, and Safari */
+                    &::-webkit-scrollbar {
+                        width: 6px;
+                    }
+
+
+
+                    &::-webkit-scrollbar-track {
+                        background: gray;
+                    }
+
+                    &::-webkit-scrollbar-thumb {
+                        background-color: #000;
+                        border-radius: 15px;
+                        border: 6px solid #000;
+                    }
+
+                }
 
                 .submenuSolution,
                 .submenuSector,
@@ -1247,7 +1249,7 @@ section {
 
 
                         img {
-                            margin-top: 3px;
+                            margin-top: 1px;
                             transition: 0.6s all;
                             width: 23px;
                             height: 11px;
@@ -1480,7 +1482,7 @@ section {
                         display: inline-block;
                         transition: 0.6s all;
                         margin-left: 5px;
-                        margin-top: 3px;
+                        margin-top: 1px;
                     }
 
                     &:hover {
@@ -2390,7 +2392,7 @@ section {
                     font-size: 16px;
 
                     img {
-                        margin-top: 3px;
+                        margin-top: 1px;
                         transition: 0.6s all;
                         width: 18px;
                         height: 9px;
@@ -3202,8 +3204,14 @@ footer {
             }
 
 
-            .quickLinksft ul li {
-                margin-bottom: 0px !important;
+            .quickLinksft {
+                p{
+                    cursor: text;
+                }
+                ul li {
+                    margin-bottom: 0px !important;
+                    margin-top: 5px;
+                }
             }
         }
 
