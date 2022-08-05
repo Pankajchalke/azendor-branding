@@ -1075,7 +1075,7 @@ header {
   width: 50%;
   margin: 0 auto; }
   .modal.in .modal-dialog3 .modal-content {
-    background-color: #252525;
+    background-color: #f3f3f3;
     padding: 40px;
     border: none;
     border-radius: 10px 10px 0px 0px; }
@@ -1118,9 +1118,9 @@ header {
       width: 100%;
       margin: -3% auto 0; }
       .modal.in .modal-dialog3 .modal-content {
-        padding: 60px 42px 30px; }
+        padding: 40px 30px 20px; }
         .modal.in .modal-dialog3 .modal-content .close {
-          margin-top: -42px; }
+          margin-top: -15px; }
           .modal.in .modal-dialog3 .modal-content .close img {
             width: 14px;
             height: 14px; }
@@ -1131,7 +1131,9 @@ header {
             padding: 70px 10px; }
             .modal.in .modal-dialog3 .modal-content .teamBox .teamDesc h3 {
               font-size: 20px;
-              margin-bottom: 10px; }
+              margin-bottom: 10px;
+              color: #212121;
+              font-weight: 700; }
             .modal.in .modal-dialog3 .modal-content .teamBox .teamDesc p {
               margin-bottom: 12px;
               font-size: 14px;
@@ -1142,7 +1144,9 @@ header {
             width: 28%; }
         .modal.in .modal-dialog3 .modal-content .teamPara {
           height: 250px;
-          overflow: auto; } }
+          overflow: auto; }
+          .modal.in .modal-dialog3 .modal-content .teamPara p {
+            color: #212121; } }
   @media all and (max-width: 575px) {
     .modal.in .modal-dialog3 .memberImg {
       width: 80px; }

@@ -887,11 +887,11 @@ header {
     margin: 0 auto;
 
     .modal-content {
-        background-color: #252525;
+        background-color: #f3f3f3;
         padding: 40px;
         border: none;
         border-radius: 10px 10px 0px 0px;
-
+        
 
 
         .close {
@@ -964,10 +964,11 @@ header {
         margin: -3% auto 0;
 
         .modal-content {
-            padding: 60px 42px 30px;
+            padding: 40px 30px 20px;
+            
 
             .close {
-                margin-top: -42px;
+                margin-top: -15px;
 
                 img {
                     width: 14px;
@@ -985,6 +986,8 @@ header {
                     h3 {
                         font-size: 20px;
                         margin-bottom: 10px;
+                        color: #212121;
+                        font-weight: 700;
                     }
 
                     p {
@@ -1006,6 +1009,9 @@ header {
             .teamPara {
                 height: 250px;
                 overflow: auto;
+                p{
+                    color: #212121;
+                }
             }
         }
     }
