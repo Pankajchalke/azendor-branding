@@ -1041,6 +1041,9 @@ body {
   @media all and (max-width: 920px) {
     .advisorySubPages {
       margin: 100px 0px 80px; } }
+  @media all and (max-width: 575px) {
+    .advisorySubPages {
+      margin: 80px 0px; } }
   @media all and (max-width: 920px) {
     .advisorySubPages .subSectionTitle {
       display: flex;
@@ -1267,6 +1270,9 @@ body {
   @media all and (max-width: 920px) {
     .digitalTransformationSubPages {
       margin: 100px 0px 80px; } }
+  @media all and (max-width: 575px) {
+    .digitalTransformationSubPages {
+      margin: 80px 0px; } }
   @media all and (max-width: 920px) {
     .digitalTransformationSubPages .subSectionTitle {
       display: flex;
