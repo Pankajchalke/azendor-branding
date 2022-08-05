@@ -530,7 +530,7 @@ body {
     font-size: 14px;
     line-height: 130.9%;
     letter-spacing: 0.05em;
-    color: #212121; }
+    color: #000; }
 
 .contact {
   margin: 150px 0px; }
@@ -566,9 +566,18 @@ body {
       @media all and (max-width: 920px) {
         .contact .contactDesc .contactDescTitle .backArrow {
           display: block;
+          margin-top: 12.5px; } }
+      @media all and (max-width: 575px) {
+        .contact .contactDesc .contactDescTitle .backArrow {
+          display: block;
           margin-top: 12px; } }
       .contact .contactDesc .contactDescTitle .backArrow img {
         margin-right: 30px; }
+        @media all and (max-width: 920px) {
+          .contact .contactDesc .contactDescTitle .backArrow img {
+            margin-right: 20px;
+            width: 23px;
+            height: 12px; } }
     .contact .contactDesc .contactDescTitle h1 {
       margin-bottom: 30px;
       line-height: 100%; }
@@ -595,11 +604,12 @@ body {
   .contact .contactForm {
     width: 50%;
     margin-left: 180px;
-    padding-top: 10px; }
+    padding-top: 20px; }
     @media all and (max-width: 1400px) {
       .contact .contactForm {
         width: 55%;
-        margin-left: 120px; } }
+        margin-left: 120px;
+        padding-top: 10px; } }
     @media all and (max-width: 1280px) {
       .contact .contactForm {
         width: 50%;
@@ -758,7 +768,7 @@ body {
       .contactDetails .contactDetailsBox .address:after {
         content: "";
         position: absolute;
-        height: 166px;
+        height: 190px;
         right: 60px;
         opacity: 0.1;
         border: 1px solid #212121;

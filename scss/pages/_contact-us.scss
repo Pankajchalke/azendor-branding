@@ -12,7 +12,7 @@ body{overflow: visible !important;}
 	    font-size: 14px;
 	    line-height: 130.9%;
 	    letter-spacing: 0.05em;
-	    color: #212121;
+	    color: #000;
 		}
 	}
 }
@@ -30,8 +30,11 @@ body{overflow: visible !important;}
 		.contactDescTitle{
 			@media all and (max-width: 920px){display: flex;align-items: flex-start; border-bottom: 0.75px solid rgba(33, 33, 33, 0.6);}
 			.backArrow{display:none;
-				@media all and (max-width: 920px){display:block;margin-top: 12px;}
-				img{margin-right:30px;}
+				@media all and (max-width: 920px){display:block;margin-top: 12.5px;}
+				@media all and (max-width: 575px){display:block;margin-top: 12px;}
+			img{margin-right:30px;
+				@media all and (max-width: 920px){margin-right:20px; width: 23px;height: 12px;}
+				}
 			}
 			h1{margin-bottom:30px; line-height: 100%;
 				@media all and (max-width: 1400px){margin-bottom:20px;}
@@ -46,8 +49,8 @@ body{overflow: visible !important;}
 		@media all and (max-width: 920px){width:100%; margin-top: 20px; margin-bottom: 45px;line-height: 150%;}}
 	}
 	.contactForm{
-		width: 50%; margin-left: 180px;padding-top: 10px;
-		@media all and (max-width: 1400px){width: 55%;margin-left: 120px;}
+		width: 50%; margin-left: 180px;padding-top: 20px;
+		@media all and (max-width: 1400px){width: 55%;margin-left: 120px;padding-top: 10px;}
 		@media all and (max-width: 1280px){width:50%; margin-left: 80px; margin-right: 10px;}
 		@media all and (max-width: 920px){width:100%; margin-left: 0px;}
 		form{display: flex; flex-wrap: wrap; justify-content: space-between;
@@ -120,7 +123,7 @@ body{overflow: visible !important;}
 		@media all and (max-width: 920px){width:100%;}
 			&:after{content: "";
 			    position: absolute;
-			    height: 166px;
+			    height: 190px;
 			    right: 60px;
 			    opacity: 0.1;
 	    		border: 1px solid #212121;
