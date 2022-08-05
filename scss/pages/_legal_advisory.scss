@@ -5,8 +5,11 @@
 	.sectionTitle{
 		@media all and (max-width: 920px){display: flex;align-items: flex-start;padding-bottom: 20px;margin-bottom: 15px; border-bottom: 0.75px solid rgba(33, 33, 33, 0.6);}
 		.backArrow{display:none;
-			@media all and (max-width: 920px){display:block;margin-top: 15px;}
-			img{margin-right:30px;}
+			@media all and (max-width: 920px){display:block;margin-top: 12.5px;}
+			@media all and (max-width: 575px){display:block;margin-top: 12px;}
+			img{margin-right:30px;
+				@media all and (max-width: 920px){margin-right:20px; width: 23px;height: 12px;}
+				}
 		}
 		h1{margin-bottom:30px;
 			@media all and (max-width: 1400px){margin-bottom:20px;}
@@ -23,8 +26,8 @@
 		.legalAdvisorySectionBox{width: 31%; margin-top: 50px;
 			@media all and (max-width: 1400px){width: 31.5%; margin-top: 35px;}
 			@media all and (max-width: 1080px){width: 31.5%; margin-top: 30px;}
-			@media all and (max-width: 920px){width: 100%;margin-top: 20px;}
-			//@media all and (max-width: 575px){width: 100%;margin-top: 20px;}
+			@media all and (max-width: 920px){width: 48%;margin-top: 20px;}
+			@media all and (max-width: 575px){width: 100%;margin-top: 20px;}
 			a{display: flex; align-items: center; line-height: 130%; justify-content: space-between; text-decoration:none; padding: 35px 48px 35px 45px; border: 1px solid #F1F1F1;border-radius: 10px;
 				.img1{margin-right: 20px;
 					@media all and (max-width: 1400px){width: 40px;height: 45px;}
