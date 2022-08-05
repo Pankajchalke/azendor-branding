@@ -369,7 +369,7 @@ body {
     @media all and (max-width: 920px) {
       .founder .founderTitle .backArrow {
         display: block;
-        margin-top: 15px; } }
+        margin-top: 12.5px; } }
     .founder .founderTitle .backArrow img {
       margin-right: 30px; }
   .founder .founderTitle h1 {
@@ -437,7 +437,7 @@ body {
                 width: 24px; } }
       @media all and (max-width: 1400px) {
         .founder .founderBox .founderDesc p {
-          font-size: 18px; } }
+          font-size: 16px; } }
       @media all and (max-width: 920px) {
         .founder .founderBox .founderDesc p {
           font-size: 14px; } }
