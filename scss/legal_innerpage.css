@@ -1349,14 +1349,23 @@ body {
     @media all and (max-width: 920px) {
       .generalCounsel .sectionTitle .backArrow {
         display: block;
-        margin-top: 15px; } }
+        margin-top: 12.5px; } }
+    @media all and (max-width: 575px) {
+      .generalCounsel .sectionTitle .backArrow {
+        display: block;
+        margin-top: 12px; } }
     .generalCounsel .sectionTitle .backArrow img {
       margin-right: 30px; }
+      @media all and (max-width: 920px) {
+        .generalCounsel .sectionTitle .backArrow img {
+          margin-right: 20px;
+          width: 23px;
+          height: 12px; } }
   .generalCounsel .sectionTitle h1 {
-    margin-bottom: 60px; }
+    margin-bottom: 30px; }
     @media all and (max-width: 1400px) {
       .generalCounsel .sectionTitle h1 {
-        margin-bottom: 40px; } }
+        margin-bottom: 20px; } }
     @media all and (max-width: 920px) {
       .generalCounsel .sectionTitle h1 {
         margin-bottom: 0px; } }
@@ -1427,9 +1436,18 @@ body {
     @media all and (max-width: 920px) {
       .legalAudit .sectionTitle .backArrow {
         display: block;
-        margin-top: 15px; } }
+        margin-top: 12.5px; } }
+    @media all and (max-width: 575px) {
+      .legalAudit .sectionTitle .backArrow {
+        display: block;
+        margin-top: 12px; } }
     .legalAudit .sectionTitle .backArrow img {
       margin-right: 30px; }
+      @media all and (max-width: 920px) {
+        .legalAudit .sectionTitle .backArrow img {
+          margin-right: 20px;
+          width: 23px;
+          height: 12px; } }
   .legalAudit .sectionTitle h1 {
     margin-bottom: 30px; }
     @media all and (max-width: 1400px) {
