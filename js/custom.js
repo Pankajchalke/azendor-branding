@@ -494,7 +494,21 @@ if ($(".logosSlider").length) {
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 700,
+        breakpoint: 1450,
+        settings: {
+          slidesToShow: 6,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 650,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
