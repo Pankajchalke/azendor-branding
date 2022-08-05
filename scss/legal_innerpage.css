@@ -336,20 +336,6 @@ img {
 .slick-slide {
   height: inherit !important; }
 
-body {
-  overflow: visible !important; }
-
-.progress-container {
-  z-index: 11; }
-  .progress-container .progress-bar:after {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 130.9%;
-    letter-spacing: 0.05em;
-    color: #212121; }
-
 .founder {
   margin: 150px 0px; }
   @media all and (max-width: 1400px) {
@@ -370,8 +356,17 @@ body {
       .founder .founderTitle .backArrow {
         display: block;
         margin-top: 12.5px; } }
+    @media all and (max-width: 575px) {
+      .founder .founderTitle .backArrow {
+        display: block;
+        margin-top: 12px; } }
     .founder .founderTitle .backArrow img {
       margin-right: 30px; }
+      @media all and (max-width: 920px) {
+        .founder .founderTitle .backArrow img {
+          margin-right: 20px;
+          width: 23px;
+          height: 12px; } }
   .founder .founderTitle h1 {
     margin-bottom: 60px; }
     @media all and (max-width: 1400px) {
@@ -525,6 +520,9 @@ body {
 
 .progress-container {
   z-index: 11; }
+  @media screen and (max-width: 1024px) and (min-height: 1200px) {
+    .progress-container {
+      display: none; } }
   .progress-container .progress-bar:after {
     font-family: 'Poppins';
     font-style: normal;
@@ -532,7 +530,7 @@ body {
     font-size: 14px;
     line-height: 130.9%;
     letter-spacing: 0.05em;
-    color: #000; }
+    color: #212121; }
 
 .contact {
   margin: 150px 0px; }
