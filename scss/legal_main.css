@@ -1364,7 +1364,8 @@ section {
             .solutionSec .solutionSlider .slick-track .solutionBox .solutionContent a img {
               width: 18px;
               height: 9px; }
-            .solutionSec .solutionSlider .slick-track .solutionBox h3,
+            .solutionSec .solutionSlider .slick-track .solutionBox h3 {
+              line-height: 25px; }
             .solutionSec .solutionSlider .slick-track .solutionBox p {
               line-height: 21px; } }
   @media all and (max-width: 652px) {
@@ -1699,7 +1700,8 @@ section {
           .advantageSec .advantageSlider .slick-track .advantageBox {
             height: 530px;
             margin-bottom: 20px; }
-            .advantageSec .advantageSlider .slick-track .advantageBox h3,
+            .advantageSec .advantageSlider .slick-track .advantageBox h3 {
+              line-height: 25px; }
             .advantageSec .advantageSlider .slick-track .advantageBox p {
               line-height: 21px; } }
   @media all and (max-width: 652px) {
