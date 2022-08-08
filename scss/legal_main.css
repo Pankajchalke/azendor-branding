@@ -1062,90 +1062,78 @@ header {
       transform-origin: left top 0; }
 
 .modal.in .modal-dialog3 {
-  width: 50%;
-  margin: 0 auto; }
+  transform: translate(0px, 100px);
+  width: 80%;
+  margin: -3% auto 0; }
   .modal.in .modal-dialog3 .modal-content {
     background-color: #f3f3f3;
-    padding: 40px;
+    padding: 25px 20px 20px;
     border: none;
-    border-radius: 10px 10px 0px 0px; }
+    border-radius: 10px 10px 10px 10px; }
     .modal.in .modal-dialog3 .modal-content .close {
-      margin-top: -30px;
+      margin-top: -15px;
       opacity: 1;
       position: relative;
       z-index: 999; }
       .modal.in .modal-dialog3 .modal-content .close img {
-        width: 20px;
-        height: 20px; }
+        width: 14px;
+        height: 14px; }
     .modal.in .modal-dialog3 .modal-content .modal-body {
       padding: 0px; }
     .modal.in .modal-dialog3 .modal-content .teamBox {
       display: flex;
-      justify-content: space-between;
-      padding-bottom: 20px; }
+      align-items: center;
+      padding-bottom: 15px; }
       .modal.in .modal-dialog3 .modal-content .teamBox .teamDesc {
-        width: 76%; }
+        padding: 0px 20px; }
+        .modal.in .modal-dialog3 .modal-content .teamBox .teamDesc h3 {
+          font-size: 20px;
+          margin-bottom: 5px;
+          color: #212121;
+          font-weight: 700; }
         .modal.in .modal-dialog3 .modal-content .teamBox .teamDesc p {
-          margin-bottom: 18px; }
-      .modal.in .modal-dialog3 .modal-content .teamBox .memberImg {
-        width: 20%; }
+          margin-bottom: 12px;
+          font-size: 14px;
+          color: #6A6A6A; }
     .modal.in .modal-dialog3 .modal-content .teamPara {
       padding-top: 18px;
-      border-top: 1px solid #6A6A6A; }
+      overflow-y: scroll;
+      border-top: 1px solid rgba(106, 106, 106, 0.1); }
       .modal.in .modal-dialog3 .modal-content .teamPara p {
         margin-bottom: 30px;
-        font-size: 16px; }
+        font-size: 16px;
+        color: #212121; }
     .modal.in .modal-dialog3 .modal-content .modal-footer {
       padding: 0px;
       border-top: none; }
-  @media all and (max-width: 1400px) {
-    .modal.in .modal-dialog3 .modal-content .close img {
-      height: 18px;
-      width: 18px; } }
-  @media all and (max-width: 920px) {
-    .modal.in .modal-dialog3 {
-      transform: translate(0px, 100px);
-      width: 100%;
-      margin: -3% auto 0; }
-      .modal.in .modal-dialog3 .modal-content {
-        padding: 40px 30px 20px; }
-        .modal.in .modal-dialog3 .modal-content .close {
-          margin-top: -15px; }
-          .modal.in .modal-dialog3 .modal-content .close img {
-            width: 14px;
-            height: 14px; }
-        .modal.in .modal-dialog3 .modal-content .teamBox {
-          padding-bottom: 15px; }
-          .modal.in .modal-dialog3 .modal-content .teamBox .teamDesc {
-            width: 70%;
-            padding: 70px 10px; }
-            .modal.in .modal-dialog3 .modal-content .teamBox .teamDesc h3 {
-              font-size: 20px;
-              margin-bottom: 10px;
-              color: #212121;
-              font-weight: 700; }
-            .modal.in .modal-dialog3 .modal-content .teamBox .teamDesc p {
-              margin-bottom: 12px;
-              font-size: 14px;
-              color: #6A6A6A; }
-            .modal.in .modal-dialog3 .modal-content .teamBox .teamDesc img {
-              width: 30px; }
-          .modal.in .modal-dialog3 .modal-content .teamBox .memberImg {
-            width: 28%; }
-        .modal.in .modal-dialog3 .modal-content .teamPara {
-          height: 250px;
-          overflow: auto; }
-          .modal.in .modal-dialog3 .modal-content .teamPara p {
-            color: #212121; } }
   @media all and (max-width: 575px) {
-    .modal.in .modal-dialog3 .memberImg {
-      width: 80px; }
-    .modal.in .modal-dialog3 .teamDesc {
-      width: 70%;
-      padding: 20px 10px !important; } }
+    .modal.in .modal-dialog3 {
+      width: 100%; }
+      .modal.in .modal-dialog3 .memberImg {
+        width: 80px; }
+      .modal.in .modal-dialog3 .teamDesc {
+        width: 70%;
+        padding: 20px 10px !important; } }
   @media all and (max-width: 375px) {
     .modal.in .modal-dialog3 .modal-content {
-      padding: 60px 20px 30px; } }
+      padding: 20px 20px 40px; }
+      .modal.in .modal-dialog3 .modal-content .close {
+        margin-top: 2px; }
+      .modal.in .modal-dialog3 .modal-content .teamBox {
+        padding-bottom: 20px; }
+        .modal.in .modal-dialog3 .modal-content .teamBox .teamDesc {
+          width: 68%; }
+          .modal.in .modal-dialog3 .modal-content .teamBox .teamDesc h3 {
+            font-size: 20px;
+            margin-bottom: 5px; }
+          .modal.in .modal-dialog3 .modal-content .teamBox .teamDesc p {
+            margin-bottom: 0px; }
+      .modal.in .modal-dialog3 .modal-content .teamPara {
+        height: 250px;
+        overflow-y: scroll;
+        padding-top: 20px; }
+        .modal.in .modal-dialog3 .modal-content .teamPara p {
+          color: #212121; } }
 
 section {
   margin-top: 150px; }
@@ -2045,6 +2033,20 @@ section {
   .clientlogoSec .logosSlider .slick-track .logosBox {
     padding: 0px 20px; } }
 
+.legalInnerPageProgress {
+  z-index: 11; }
+  @media screen and (max-width: 1024px) and (min-height: 1366px) {
+    .legalInnerPageProgress {
+      display: none; } }
+  .legalInnerPageProgress .progress-bar:after {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130.9%;
+    letter-spacing: 0.05em;
+    color: #000; }
+
 .contact {
   margin: 150px 0px; }
   @media all and (max-width: 1400px) {
@@ -2072,15 +2074,25 @@ section {
     @media all and (max-width: 920px) {
       .contact .contactDesc .contactDescTitle {
         display: flex;
-        align-items: baseline;
+        align-items: flex-start;
         border-bottom: 0.75px solid rgba(33, 33, 33, 0.6); } }
     .contact .contactDesc .contactDescTitle .backArrow {
       display: none; }
       @media all and (max-width: 920px) {
         .contact .contactDesc .contactDescTitle .backArrow {
-          display: block; } }
+          display: block;
+          margin-top: 12.5px; } }
+      @media all and (max-width: 575px) {
+        .contact .contactDesc .contactDescTitle .backArrow {
+          display: block;
+          margin-top: 12px; } }
       .contact .contactDesc .contactDescTitle .backArrow img {
         margin-right: 30px; }
+        @media all and (max-width: 920px) {
+          .contact .contactDesc .contactDescTitle .backArrow img {
+            margin-right: 20px;
+            width: 23px;
+            height: 12px; } }
     .contact .contactDesc .contactDescTitle h1 {
       margin-bottom: 30px;
       line-height: 100%; }
@@ -2107,11 +2119,12 @@ section {
   .contact .contactForm {
     width: 50%;
     margin-left: 180px;
-    padding-top: 10px; }
+    padding-top: 20px; }
     @media all and (max-width: 1400px) {
       .contact .contactForm {
         width: 55%;
-        margin-left: 120px; } }
+        margin-left: 120px;
+        padding-top: 10px; } }
     @media all and (max-width: 1280px) {
       .contact .contactForm {
         width: 50%;
@@ -2202,6 +2215,8 @@ section {
             padding: 11px 33px;
             font-size: 14px;
             line-height: 130%; } }
+        .contact .contactForm form .submit input[type=submit]:hover {
+          font-weight: 700; }
       .contact .contactForm form .submit p {
         margin-bottom: 40px;
         font-size: 14px;
@@ -2288,7 +2303,7 @@ section {
       .contactDetails .contactDetailsBox .address:after {
         content: "";
         position: absolute;
-        height: 166px;
+        height: 190px;
         right: 60px;
         opacity: 0.1;
         border: 1px solid #212121;
