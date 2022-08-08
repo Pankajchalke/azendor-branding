@@ -663,16 +663,6 @@ header {
         header .menu-items .dropdownAbout .submenuSector,
         header .menu-items .dropdownAbout .submenuAbout {
           width: 180px; } }
-    @media (max-width: 1650px) {
-      header .menu-items .dropdownSolution .submenuAbout,
-      header .menu-items .dropdownSector .submenuAbout,
-      header .menu-items .dropdownAbout .submenuAbout {
-        width: 180px; } }
-    @media (max-width: 1050px) {
-      header .menu-items .dropdownSolution .submenuAbout,
-      header .menu-items .dropdownSector .submenuAbout,
-      header .menu-items .dropdownAbout .submenuAbout {
-        width: 160px; } }
     header .menu-items .dropdownSolution .downcaretsolution,
     header .menu-items .dropdownSolution .downcaretsector,
     header .menu-items .dropdownSolution .downcaretabout,
@@ -2438,74 +2428,6 @@ section {
         .contactDetails .info img {
           width: 24px; } }
 
-.subSectors {
-  margin-top: 100px;
-  color: #212121; }
-  .subSectors .subSectors-heading {
-    margin-bottom: 30px; }
-  .subSectors .subSectors-content {
-    width: 80%;
-    margin-left: 15.60px; }
-    .subSectors .subSectors-content li {
-      margin-bottom: 30px;
-      line-height: 125%;
-      text-transform: capitalize;
-      font-family: 'Poppins' !important; }
-  .subSectors .subSectors-Cta {
-    margin-top: 40px; }
-    .subSectors .subSectors-Cta a {
-      text-decoration: none;
-      background-color: #212121;
-      color: white;
-      border: 1px solid #212121;
-      border-radius: 60px;
-      padding: 12px 30px;
-      vertical-align: middle;
-      transition: 0.3s all ease; }
-      .subSectors .subSectors-Cta a:visited, .subSectors .subSectors-Cta a:active, .subSectors .subSectors-Cta a:focus {
-        text-decoration: none;
-        color: white;
-        background-color: #212121;
-        border: 1px solid #212121;
-        border-radius: 60px;
-        padding: 12px 30px;
-        vertical-align: middle; }
-      .subSectors .subSectors-Cta a img {
-        vertical-align: middle;
-        opacity: 1;
-        width: auto;
-        margin-left: 5px; }
-  @media all and (max-width: 2000px) {
-    .subSectors .subSectors-content {
-      width: 80%;
-      margin-left: 20px; } }
-  @media all and (max-width: 1800px) {
-    .subSectors .subSectors-content {
-      width: 80%;
-      margin-left: 18.5px; } }
-  @media all and (max-width: 1650px) {
-    .subSectors .subSectors-content {
-      width: 84%;
-      margin-left: 18.5px; } }
-  @media all and (max-width: 1600px) {
-    .subSectors .subSectors-content {
-      width: 80%;
-      margin-left: 16.5px; } }
-  @media all and (max-width: 1460px) {
-    .subSectors .subSectors-content {
-      width: 90%; } }
-  @media all and (max-width: 1280px) {
-    .subSectors .subSectors-content {
-      width: 95%; } }
-  @media all and (max-width: 1050px) {
-    .subSectors .subSectors-content {
-      width: 90%; } }
-  @media all and (max-width: 680px) {
-    .subSectors .subSectors-content {
-      width: 100%; }
-    .subSectors .subSectors-Cta {
-      margin-top: 20px; } }
-
 footer {
   position: relative;
   bottom: 0;
@@ -2679,6 +2601,8 @@ footer {
             flex-wrap: wrap; }
             footer .footerSec .footerSub:nth-child(4) ul .quickLinksft ul li {
               width: 100% !important; }
+            footer .footerSec .footerSub:nth-child(4) ul .contactFt {
+              margin-top: -40px !important; }
         footer .footerSec .footerSub .socialmediaIcons {
           display: none; }
       footer .footerSec .socialmediaIcons-btm {
