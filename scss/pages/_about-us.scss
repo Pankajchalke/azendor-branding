@@ -21,7 +21,6 @@ body {
     }
 }
 
-
 .progress-container {
     position: fixed;
     right: 30px;
@@ -67,7 +66,8 @@ body {
         font-size: 14px;
         line-height: 130.9%;
         letter-spacing: 0.05em;
-        color: #212121;}
+        color: #000;
+        z-index: 999;}
 
         &::after {
             position: absolute;
@@ -78,16 +78,44 @@ body {
             padding-bottom: 10px !important;
             transform: rotate(270deg);
             transform-origin: left top 0;
+            z-index: 999;
         }
 
     }
 }
 
-
 .aboutUs {
     position: relative;
     margin: 150px 0px;
     color: #212121;
+
+    @media all and (max-width: 1800px){
+        margin: 150px 0px;
+    }
+
+    @media all and (max-width: 1600px){
+        margin: 120px 0px;
+    }
+
+    @media all and (max-width: 1400px){
+        margin: 120px 0px;
+    }
+
+    @media all and (max-width: 1050px){
+        margin: 100px 0px
+    }
+
+    @media all and (max-width: 920px){
+        margin: 100px 0px;
+    }
+
+    @media all and (max-width: 675px){
+        margin: 100px 0px;
+    }
+
+    @media all and (max-width: 575px){
+        margin: 100px 0px;
+    }
 
     .about-heading {
         margin-bottom: 30px;
@@ -98,6 +126,42 @@ body {
     .about-contents {
         width: 80%;
 
+        @media all and (max-width: 1800px){
+            width: 80%;
+        
+        }
+    
+        @media all and (max-width: 1600px){
+            width: 80%;
+           
+        }
+    
+        @media all and (max-width: 1400px){
+            width: 80%;
+            
+        }
+    
+        @media all and (max-width: 1050px){
+            width: 80%;
+            
+        }
+    
+        @media all and (max-width: 920px){
+            width: 90%;
+            
+        }
+    
+        @media all and (max-width: 675px){
+            width: 100%;
+            
+        }
+    
+        @media all and (max-width: 575px){
+            width: 100%;
+            
+        }
+              
+
         p {
             margin-bottom: 30px;
             line-height: 125%;
@@ -107,99 +171,26 @@ body {
     }
 
     .ctaLink {
-        margin-top: 40px;
-        display: inline-block;
+        margin-top: 40px;display: flex; align-items: center;
+		@media all and (max-width: 1400px){margin-top: 25px;}
+		a{
+			background-color: #212121;
+		    color: #fff;
+		    text-decoration: none;
+		    border: 1px solid rgba(33, 33, 33, 0.2);
+		    border-radius: 60px;
+		    padding: 12px 26px;
+		    outline: none;
+		    display: flex;
+		    align-items: center;
+		    @media all and (max-width: 920px){padding: 11px 19px;font-size: 14px;}
+		    img{transition: 0.6s all; margin-left: 10px;
+		    	@media all and (max-width: 1400px){width:16px; height:8px;}
+		    	@media all and (max-width: 920px){width:18px; height:9px;}}
+		    &:hover img{transform: translateX(10px);}
 
-        a {
-            text-decoration: none;
-            background-color: #212121;
-            color: white;
-            border: 1px solid #212121;
-            border-radius: 60px;
-            padding: 12px 30px;
-            transition: 0.2s all ease-in-out;
-            font-weight: 300;
-
-            img {
-                opacity: 0;
-                width: 0;
-            }
-
-            &:visited,
-            &:active,
-            &:focus {
-                text-decoration: none;
-
-            }
-
-            &:hover {
-                font-weight: 500;
-                border: 1px solid #212121;
-
-
-                img {
-                    opacity: 1;
-                    width: auto;
-                    margin-left: 5px;
-                    vertical-align: middle;
-                }
-
-            }
-
-
-        }
+		}
     }
 
-    @media all and (max-width : 1800px) {
-        .about-contents {
-            width: 80%;
-        }
-    }
-
-    @media all and (max-width : 1650px) {
-        .about-contents {
-            width: 80%;
-        }
-
-    }
-
-    @media all and (max-width : 1600px) {
-        .about-contents {
-            width: 80%;
-        }
-
-    }
-
-    @media all and (max-width : 1460px) {
-        .about-contents {
-            width: 80%;
-        }
-
-    }
-
-    @media all and (max-width : 1280px) {
-        .about-contents {
-            width: 85%;
-        }
-
-    }
-
-    @media all and (max-width : 1050px) {
-        .about-contents {
-            width: 90%;
-        }
-
-    }
-
-    @media all and (max-width : 680px) {
-        .about-contents {
-            width: 100%;
-        }
-
-        .ctaLink {
-            margin-top: 20px;
-        }
-
-    }
 
 }

@@ -390,7 +390,8 @@ body {
       font-size: 14px;
       line-height: 130.9%;
       letter-spacing: 0.05em;
-      color: #212121; }
+      color: #000;
+      z-index: 999; }
     .progress-container .progress-bar::after {
       position: absolute;
       content: "SCROLL";
@@ -399,16 +400,59 @@ body {
       top: -20px;
       padding-bottom: 10px !important;
       transform: rotate(270deg);
-      transform-origin: left top 0; }
+      transform-origin: left top 0;
+      z-index: 999; }
 
 .aboutUs {
   position: relative;
   margin: 150px 0px;
   color: #212121; }
+  @media all and (max-width: 1800px) {
+    .aboutUs {
+      margin: 150px 0px; } }
+  @media all and (max-width: 1600px) {
+    .aboutUs {
+      margin: 120px 0px; } }
+  @media all and (max-width: 1400px) {
+    .aboutUs {
+      margin: 120px 0px; } }
+  @media all and (max-width: 1050px) {
+    .aboutUs {
+      margin: 100px 0px; } }
+  @media all and (max-width: 920px) {
+    .aboutUs {
+      margin: 100px 0px; } }
+  @media all and (max-width: 675px) {
+    .aboutUs {
+      margin: 100px 0px; } }
+  @media all and (max-width: 575px) {
+    .aboutUs {
+      margin: 100px 0px; } }
   .aboutUs .about-heading {
     margin-bottom: 30px; }
   .aboutUs .about-contents {
     width: 80%; }
+    @media all and (max-width: 1800px) {
+      .aboutUs .about-contents {
+        width: 80%; } }
+    @media all and (max-width: 1600px) {
+      .aboutUs .about-contents {
+        width: 80%; } }
+    @media all and (max-width: 1400px) {
+      .aboutUs .about-contents {
+        width: 80%; } }
+    @media all and (max-width: 1050px) {
+      .aboutUs .about-contents {
+        width: 80%; } }
+    @media all and (max-width: 920px) {
+      .aboutUs .about-contents {
+        width: 90%; } }
+    @media all and (max-width: 675px) {
+      .aboutUs .about-contents {
+        width: 100%; } }
+    @media all and (max-width: 575px) {
+      .aboutUs .about-contents {
+        width: 100%; } }
     .aboutUs .about-contents p {
       margin-bottom: 30px;
       line-height: 125%;
@@ -416,52 +460,38 @@ body {
       font-family: 'Poppins' !important; }
   .aboutUs .ctaLink {
     margin-top: 40px;
-    display: inline-block; }
+    display: flex;
+    align-items: center; }
+    @media all and (max-width: 1400px) {
+      .aboutUs .ctaLink {
+        margin-top: 25px; } }
     .aboutUs .ctaLink a {
-      text-decoration: none;
       background-color: #212121;
-      color: white;
-      border: 1px solid #212121;
+      color: #fff;
+      text-decoration: none;
+      border: 1px solid rgba(33, 33, 33, 0.2);
       border-radius: 60px;
-      padding: 12px 30px;
-      transition: 0.2s all ease-in-out;
-      font-weight: 300; }
+      padding: 12px 26px;
+      outline: none;
+      display: flex;
+      align-items: center; }
+      @media all and (max-width: 920px) {
+        .aboutUs .ctaLink a {
+          padding: 11px 19px;
+          font-size: 14px; } }
       .aboutUs .ctaLink a img {
-        opacity: 0;
-        width: 0; }
-      .aboutUs .ctaLink a:visited, .aboutUs .ctaLink a:active, .aboutUs .ctaLink a:focus {
-        text-decoration: none; }
-      .aboutUs .ctaLink a:hover {
-        font-weight: 500;
-        border: 1px solid #212121; }
-        .aboutUs .ctaLink a:hover img {
-          opacity: 1;
-          width: auto;
-          margin-left: 5px;
-          vertical-align: middle; }
-  @media all and (max-width: 1800px) {
-    .aboutUs .about-contents {
-      width: 80%; } }
-  @media all and (max-width: 1650px) {
-    .aboutUs .about-contents {
-      width: 80%; } }
-  @media all and (max-width: 1600px) {
-    .aboutUs .about-contents {
-      width: 80%; } }
-  @media all and (max-width: 1460px) {
-    .aboutUs .about-contents {
-      width: 80%; } }
-  @media all and (max-width: 1280px) {
-    .aboutUs .about-contents {
-      width: 85%; } }
-  @media all and (max-width: 1050px) {
-    .aboutUs .about-contents {
-      width: 90%; } }
-  @media all and (max-width: 680px) {
-    .aboutUs .about-contents {
-      width: 100%; }
-    .aboutUs .ctaLink {
-      margin-top: 20px; } }
+        transition: 0.6s all;
+        margin-left: 10px; }
+        @media all and (max-width: 1400px) {
+          .aboutUs .ctaLink a img {
+            width: 16px;
+            height: 8px; } }
+        @media all and (max-width: 920px) {
+          .aboutUs .ctaLink a img {
+            width: 18px;
+            height: 9px; } }
+      .aboutUs .ctaLink a:hover img {
+        transform: translateX(10px); }
 
 body {
   overflow: visible !important;
@@ -517,7 +547,8 @@ body {
       font-size: 14px;
       line-height: 130.9%;
       letter-spacing: 0.05em;
-      color: #212121; }
+      color: #000;
+      z-index: 999; }
     .progress-container .progress-bar::after {
       position: absolute;
       content: "SCROLL";
@@ -526,43 +557,65 @@ body {
       top: -20px;
       padding-bottom: 10px !important;
       transform: rotate(270deg);
-      transform-origin: left top 0; }
+      transform-origin: left top 0;
+      z-index: 999; }
 
 .careers {
   position: relative;
   margin: 150px 0px;
   color: #212121; }
+  @media all and (max-width: 1800px) {
+    .careers {
+      margin: 150px 0px; } }
+  @media all and (max-width: 1600px) {
+    .careers {
+      margin: 120px 0px; } }
+  @media all and (max-width: 1400px) {
+    .careers {
+      margin: 120px 0px; } }
+  @media all and (max-width: 1050px) {
+    .careers {
+      margin: 100px 0px; } }
+  @media all and (max-width: 920px) {
+    .careers {
+      margin: 100px 0px; } }
+  @media all and (max-width: 675px) {
+    .careers {
+      margin: 100px 0px; } }
+  @media all and (max-width: 575px) {
+    .careers {
+      margin: 100px 0px; } }
   .careers .careers-heading {
     margin-bottom: 30px; }
   .careers .careers-content {
     width: 80%; }
+    @media all and (max-width: 1800px) {
+      .careers .careers-content {
+        width: 80%; } }
+    @media all and (max-width: 1600px) {
+      .careers .careers-content {
+        width: 80%; } }
+    @media all and (max-width: 1400px) {
+      .careers .careers-content {
+        width: 80%; } }
+    @media all and (max-width: 1050px) {
+      .careers .careers-content {
+        width: 80%; } }
+    @media all and (max-width: 920px) {
+      .careers .careers-content {
+        width: 90%; } }
+    @media all and (max-width: 675px) {
+      .careers .careers-content {
+        width: 100%; } }
+    @media all and (max-width: 575px) {
+      .careers .careers-content {
+        width: 100%; } }
     .careers .careers-content p {
       margin-bottom: 30px;
       font-style: normal;
       line-height: 160%;
       letter-spacing: 0.03em;
       font-family: 'Poppins' !important; }
-  @media all and (max-width: 1800px) {
-    .careers .careers-content {
-      width: 80%; } }
-  @media all and (max-width: 1650px) {
-    .careers .careers-content {
-      width: 80%; } }
-  @media all and (max-width: 1600px) {
-    .careers .careers-content {
-      width: 80%; } }
-  @media all and (max-width: 1460px) {
-    .careers .careers-content {
-      width: 80%; } }
-  @media all and (max-width: 1280px) {
-    .careers .careers-content {
-      width: 85%; } }
-  @media all and (max-width: 1050px) {
-    .careers .careers-content {
-      width: 90%; } }
-  @media all and (max-width: 680px) {
-    .careers .careers-content {
-      width: 100%; } }
 
 body {
   overflow: visible !important;
@@ -618,7 +671,8 @@ body {
       font-size: 14px;
       line-height: 130.9%;
       letter-spacing: 0.05em;
-      color: #212121; }
+      color: #000;
+      z-index: 999; }
     .progress-container .progress-bar::after {
       position: absolute;
       content: "SCROLL";
@@ -627,15 +681,65 @@ body {
       top: -20px;
       padding-bottom: 10px !important;
       transform: rotate(270deg);
-      transform-origin: left top 0; }
+      transform-origin: left top 0;
+      z-index: 999; }
 
 .subSectors {
   margin: 150px 0px; }
+  @media all and (max-width: 1800px) {
+    .subSectors {
+      margin: 150px 0px; } }
+  @media all and (max-width: 1600px) {
+    .subSectors {
+      margin: 120px 0px; } }
+  @media all and (max-width: 1400px) {
+    .subSectors {
+      margin: 120px 0px; } }
+  @media all and (max-width: 1050px) {
+    .subSectors {
+      margin: 100px 0px; } }
+  @media all and (max-width: 920px) {
+    .subSectors {
+      margin: 100px 0px; } }
+  @media all and (max-width: 675px) {
+    .subSectors {
+      margin: 100px 0px; } }
+  @media all and (max-width: 575px) {
+    .subSectors {
+      margin: 100px 0px; } }
   .subSectors .subSectors-heading {
     margin-bottom: 30px; }
   .subSectors .subSectors-content {
     width: 80%;
-    margin-left: 15.60px; }
+    margin-left: 22px; }
+    @media all and (max-width: 1800px) {
+      .subSectors .subSectors-content {
+        width: 80%;
+        margin-left: 19.5px; } }
+    @media all and (max-width: 1600px) {
+      .subSectors .subSectors-content {
+        width: 80%;
+        margin-left: 19px; } }
+    @media all and (max-width: 1400px) {
+      .subSectors .subSectors-content {
+        width: 80%;
+        margin-left: 17.5px; } }
+    @media all and (max-width: 1050px) {
+      .subSectors .subSectors-content {
+        width: 80%;
+        margin-left: 16.5px; } }
+    @media all and (max-width: 920px) {
+      .subSectors .subSectors-content {
+        width: 90%;
+        margin-left: 17px; } }
+    @media all and (max-width: 675px) {
+      .subSectors .subSectors-content {
+        width: 100%;
+        margin-left: 17.60px; } }
+    @media all and (max-width: 575px) {
+      .subSectors .subSectors-content {
+        width: 100%;
+        margin-left: 15.60px; } }
     .subSectors .subSectors-content li {
       margin-bottom: 30px;
       line-height: 125%;
@@ -643,58 +747,37 @@ body {
       font-family: 'Poppins' !important; }
   .subSectors .subSectors-Cta {
     margin-top: 40px;
-    display: inline-block; }
+    display: flex;
+    align-items: center; }
+    @media all and (max-width: 1400px) {
+      .subSectors .subSectors-Cta {
+        margin-top: 25px; } }
     .subSectors .subSectors-Cta a {
-      text-decoration: none;
       background-color: #212121;
-      color: white;
-      border: 1px solid #212121;
+      color: #fff;
+      text-decoration: none;
+      border: 1px solid rgba(33, 33, 33, 0.2);
       border-radius: 60px;
-      padding: 12px 30px;
-      transition: 0.2s all ease-in-out;
-      font-weight: 300; }
+      padding: 12px 26px;
+      outline: none;
+      display: flex;
+      align-items: center; }
+      @media all and (max-width: 920px) {
+        .subSectors .subSectors-Cta a {
+          padding: 11px 19px;
+          font-size: 14px; } }
       .subSectors .subSectors-Cta a img {
-        opacity: 0;
-        width: 0; }
-      .subSectors .subSectors-Cta a:visited, .subSectors .subSectors-Cta a:active, .subSectors .subSectors-Cta a:focus {
-        text-decoration: none; }
-      .subSectors .subSectors-Cta a:hover {
-        font-weight: 500;
-        border: 1px solid #212121; }
-        .subSectors .subSectors-Cta a:hover img {
-          opacity: 1;
-          width: auto;
-          vertical-align: middle;
-          margin-left: 5px; }
-  @media all and (max-width: 2000px) {
-    .subSectors .subSectors-content {
-      width: 80%;
-      margin-left: 20px; } }
-  @media all and (max-width: 1800px) {
-    .subSectors .subSectors-content {
-      width: 80%;
-      margin-left: 18.5px; } }
-  @media all and (max-width: 1650px) {
-    .subSectors .subSectors-content {
-      width: 80%;
-      margin-left: 18.5px; } }
-  @media all and (max-width: 1600px) {
-    .subSectors .subSectors-content {
-      width: 80%;
-      margin-left: 16.5px; } }
-  @media all and (max-width: 1460px) {
-    .subSectors .subSectors-content {
-      width: 80%; } }
-  @media all and (max-width: 1280px) {
-    .subSectors .subSectors-content {
-      width: 80%; } }
-  @media all and (max-width: 1050px) {
-    .subSectors .subSectors-content {
-      width: 90%; } }
-  @media all and (max-width: 680px) {
-    .subSectors .subSectors-content {
-      width: 100%; }
-    .subSectors .subSectors-Cta {
-      margin-top: 20px; } }
+        transition: 0.6s all;
+        margin-left: 10px; }
+        @media all and (max-width: 1400px) {
+          .subSectors .subSectors-Cta a img {
+            width: 16px;
+            height: 8px; } }
+        @media all and (max-width: 920px) {
+          .subSectors .subSectors-Cta a img {
+            width: 18px;
+            height: 9px; } }
+      .subSectors .subSectors-Cta a:hover img {
+        transform: translateX(10px); }
 
 /*# sourceMappingURL=legal_innerpage_two.css.map */
