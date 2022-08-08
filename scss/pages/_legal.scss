@@ -373,15 +373,7 @@ header {
                 }
             }
 
-            .submenuAbout {
-                @media (max-width: 1650px) {
-                    width: 180px;
-                }
-
-                @media (max-width: 1050px) {
-                    width: 160px;
-                }
-            }
+            
 
             .downcaretsolution,
             .downcaretsector,
@@ -3283,6 +3275,7 @@ footer {
                     margin-bottom: 0px !important;
                     margin-top: 5px;
                 }
+                
             }
         }
 
@@ -3515,6 +3508,9 @@ footer {
 
                         .quickLinksft ul li {
                             width: 100% !important;
+                        }
+                        .contactFt{
+                            margin-top: -40px !important;
                         }
                     }
                 }
