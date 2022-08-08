@@ -520,12 +520,9 @@ body {
 
 .legalInnerPageProgress {
   z-index: 11; }
-  @media screen and (max-width: 1024px) and (min-height: 1400px) {
+  @media screen and (max-width: 1024px) and (min-height: 1366px) {
     .legalInnerPageProgress {
       display: none; } }
-  @media all and (max-width: 920px) {
-    .legalInnerPageProgress {
-      display: block !important; } }
   .legalInnerPageProgress .progress-bar:after {
     font-family: 'Poppins';
     font-style: normal;
@@ -1505,7 +1502,7 @@ body {
       .legalAudit p {
         width: 100%;
         font-size: 16px;
-        line-height: 130%; } }
+        line-height: 150%; } }
   .legalAudit .legalAuditCta {
     margin-top: 40px;
     display: flex;
