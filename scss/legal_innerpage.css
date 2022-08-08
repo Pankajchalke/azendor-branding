@@ -520,9 +520,12 @@ body {
 
 .progress-container {
   z-index: 11; }
-  @media screen and (max-width: 1024px) and (min-height: 1200px) {
+  @media screen and (max-width: 1024px) and (min-height: 1400px) {
     .progress-container {
       display: none; } }
+  @media all and (max-width: 920px) {
+    .progress-container {
+      display: block !important; } }
   .progress-container .progress-bar:after {
     font-family: 'Poppins';
     font-style: normal;
@@ -682,6 +685,8 @@ body {
             padding: 11px 33px;
             font-size: 14px;
             line-height: 130%; } }
+        .contact .contactForm form .submit input[type=submit]:hover {
+          font-weight: 700; }
       .contact .contactForm form .submit p {
         margin-bottom: 40px;
         font-size: 14px;
