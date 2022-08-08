@@ -518,15 +518,15 @@ body {
     .legalHeader {
       position: fixed !important; } }
 
-.progress-container {
+.legalInnerPageProgress {
   z-index: 11; }
   @media screen and (max-width: 1024px) and (min-height: 1400px) {
-    .progress-container {
+    .legalInnerPageProgress {
       display: none; } }
   @media all and (max-width: 920px) {
-    .progress-container {
+    .legalInnerPageProgress {
       display: block !important; } }
-  .progress-container .progress-bar:after {
+  .legalInnerPageProgress .progress-bar:after {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
