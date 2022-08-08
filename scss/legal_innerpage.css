@@ -523,6 +523,9 @@ body {
   @media screen and (max-width: 1024px) and (min-height: 1200px) {
     .progress-container {
       display: none; } }
+  @media all and (max-width: 920px) {
+    .progress-container {
+      display: block !important; } }
   .progress-container .progress-bar:after {
     font-family: 'Poppins';
     font-style: normal;
