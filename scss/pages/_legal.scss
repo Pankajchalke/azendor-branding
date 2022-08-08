@@ -373,14 +373,7 @@ header {
                 }
             }
 
-            .submenuAbout{
-                @media (max-width: 1650px) {
-                    width: 180px;
-                }
-                @media (max-width: 1050px) {
-                    width: 160px;
-                }
-            }
+            
 
             .downcaretsolution,
             .downcaretsector,
@@ -464,6 +457,7 @@ header {
                         transition: all .25s linear;
                         text-decoration: none;
                         font-size: 14px;
+
                         @media (max-width: 1400px) {
                             padding: 7px 0px 7px 12px;
                             font-size: 13px;
@@ -891,7 +885,7 @@ header {
         padding: 40px;
         border: none;
         border-radius: 10px 10px 0px 0px;
-        
+
 
 
         .close {
@@ -965,7 +959,7 @@ header {
 
         .modal-content {
             padding: 40px 30px 20px;
-            
+
 
             .close {
                 margin-top: -15px;
@@ -1009,7 +1003,8 @@ header {
             .teamPara {
                 height: 250px;
                 overflow: auto;
-                p{
+
+                p {
                     color: #212121;
                 }
             }
@@ -2451,11 +2446,51 @@ section {
     .logosSlider {
         display: block;
 
-        .logosBox {
-            border-right: 1px solid #EEEEEE;
+        .slick-track {
+            align-items: center;
 
-            img {
-                margin: auto;
+            .logosBox {
+                border-right: 1px solid #EEEEEE;
+                padding: 0px 64px;
+                img{
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+    @media all and (max-width: 1800px) {
+        .logosSlider .slick-track{
+            .logosBox {
+                padding: 0px 52px;
+            }
+        }
+    }
+
+    @media all and (max-width: 1650px) {
+        .logosSlider .slick-track{
+            .logosBox {
+                padding: 0px 40px;
+            }
+        }
+    }
+    @media all and (max-width: 1450px) {
+        .logosSlider .slick-track{
+            .logosBox {
+                padding: 0px 27px;
+            }
+        }
+    }
+    @media all and (max-width: 1450px) {
+        .logosSlider .slick-track{
+            .logosBox {
+                padding: 0px 27px;
+            }
+        }
+    }
+    @media all and (max-width: 480px) {
+        .logosSlider .slick-track{
+            .logosBox {
+                padding: 0px 20px;
             }
         }
     }
@@ -3095,13 +3130,15 @@ footer {
 
 
             .quickLinksft {
-                p{
+                p {
                     cursor: text;
                 }
+
                 ul li {
                     margin-bottom: 0px !important;
                     margin-top: 5px;
                 }
+                
             }
         }
 
@@ -3334,6 +3371,9 @@ footer {
 
                         .quickLinksft ul li {
                             width: 100% !important;
+                        }
+                        .contactFt{
+                            margin-top: -40px !important;
                         }
                     }
                 }
