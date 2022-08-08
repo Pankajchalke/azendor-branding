@@ -86,6 +86,7 @@ body{overflow: visible !important;}
 				  line-height: 104.75%;
 				  @media all and (max-width: 1400px){font-size:12px; border: 0.7px solid rgba(33, 33, 33, 0.2); border-radius: 42px;}
 				  @media all and (max-width: 920px){border: 1px solid rgba(33, 33, 33, 0.2); border-radius: 60px;padding: 11px 33px;font-size: 14px;line-height: 130%;}
+				  &:hover{font-weight:700;}
 				}
 				p{margin-bottom:40px; font-size:14px; line-height: 160%;
 					@media all and (max-width: 1400px){margin-bottom:28px; font-size: 10px;}
