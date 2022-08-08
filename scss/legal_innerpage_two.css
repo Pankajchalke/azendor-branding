@@ -428,8 +428,38 @@ body {
   @media all and (max-width: 575px) {
     .aboutUs {
       margin: 100px 0px; } }
-  .aboutUs .about-heading {
+  @media all and (max-width: 920px) {
+    .aboutUs .sectionTitle {
+      display: flex;
+      align-items: flex-start;
+      padding-bottom: 20px;
+      margin-bottom: 15px;
+      border-bottom: 0.75px solid rgba(33, 33, 33, 0.6); } }
+  .aboutUs .sectionTitle .backArrow {
+    display: none; }
+    @media all and (max-width: 920px) {
+      .aboutUs .sectionTitle .backArrow {
+        display: block;
+        margin-top: 12.5px; } }
+    @media all and (max-width: 575px) {
+      .aboutUs .sectionTitle .backArrow {
+        display: block;
+        margin-top: 12px; } }
+    .aboutUs .sectionTitle .backArrow img {
+      margin-right: 30px; }
+      @media all and (max-width: 920px) {
+        .aboutUs .sectionTitle .backArrow img {
+          margin-right: 20px;
+          width: 23px;
+          height: 12px; } }
+  .aboutUs .sectionTitle h1 {
     margin-bottom: 30px; }
+    @media all and (max-width: 1400px) {
+      .aboutUs .sectionTitle h1 {
+        margin-bottom: 20px; } }
+    @media all and (max-width: 920px) {
+      .aboutUs .sectionTitle h1 {
+        margin-bottom: 0px; } }
   .aboutUs .about-contents {
     width: 80%; }
     @media all and (max-width: 1800px) {
@@ -585,8 +615,38 @@ body {
   @media all and (max-width: 575px) {
     .careers {
       margin: 100px 0px; } }
-  .careers .careers-heading {
+  @media all and (max-width: 920px) {
+    .careers .sectionTitle {
+      display: flex;
+      align-items: flex-start;
+      padding-bottom: 20px;
+      margin-bottom: 15px;
+      border-bottom: 0.75px solid rgba(33, 33, 33, 0.6); } }
+  .careers .sectionTitle .backArrow {
+    display: none; }
+    @media all and (max-width: 920px) {
+      .careers .sectionTitle .backArrow {
+        display: block;
+        margin-top: 12.5px; } }
+    @media all and (max-width: 575px) {
+      .careers .sectionTitle .backArrow {
+        display: block;
+        margin-top: 12px; } }
+    .careers .sectionTitle .backArrow img {
+      margin-right: 30px; }
+      @media all and (max-width: 920px) {
+        .careers .sectionTitle .backArrow img {
+          margin-right: 20px;
+          width: 23px;
+          height: 12px; } }
+  .careers .sectionTitle h1 {
     margin-bottom: 30px; }
+    @media all and (max-width: 1400px) {
+      .careers .sectionTitle h1 {
+        margin-bottom: 20px; } }
+    @media all and (max-width: 920px) {
+      .careers .sectionTitle h1 {
+        margin-bottom: 0px; } }
   .careers .careers-content {
     width: 80%; }
     @media all and (max-width: 1800px) {
@@ -707,8 +767,38 @@ body {
   @media all and (max-width: 575px) {
     .subSectors {
       margin: 100px 0px; } }
-  .subSectors .subSectors-heading {
+  @media all and (max-width: 920px) {
+    .subSectors .sectionTitle {
+      display: flex;
+      align-items: flex-start;
+      padding-bottom: 20px;
+      margin-bottom: 15px;
+      border-bottom: 0.75px solid rgba(33, 33, 33, 0.6); } }
+  .subSectors .sectionTitle .backArrow {
+    display: none; }
+    @media all and (max-width: 920px) {
+      .subSectors .sectionTitle .backArrow {
+        display: block;
+        margin-top: 12.5px; } }
+    @media all and (max-width: 575px) {
+      .subSectors .sectionTitle .backArrow {
+        display: block;
+        margin-top: 12px; } }
+    .subSectors .sectionTitle .backArrow img {
+      margin-right: 30px; }
+      @media all and (max-width: 920px) {
+        .subSectors .sectionTitle .backArrow img {
+          margin-right: 20px;
+          width: 23px;
+          height: 12px; } }
+  .subSectors .sectionTitle h1 {
     margin-bottom: 30px; }
+    @media all and (max-width: 1400px) {
+      .subSectors .sectionTitle h1 {
+        margin-bottom: 20px; } }
+    @media all and (max-width: 920px) {
+      .subSectors .sectionTitle h1 {
+        margin-bottom: 0px; } }
   .subSectors .subSectors-content {
     width: 80%;
     margin-left: 22px; }
