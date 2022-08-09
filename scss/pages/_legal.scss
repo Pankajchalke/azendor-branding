@@ -373,6 +373,14 @@ header {
                 }
             }
 
+            .submenuAbout{
+                @media (max-width: 1600px) {
+                    width: 180px !important; 
+                }
+                @media (max-width: 1400px) {
+                    width: 152px !important; 
+                }
+            }
 
 
             .downcaretsolution,
@@ -525,6 +533,13 @@ header {
         &::before {
             left: -2px !important;
             top: -10px !important;
+
+            @media (max-width: 1600px) {
+                top: -14px !important;
+            }
+            @media (max-width: 1600px) {
+                top: -10px !important;
+            }
         }
     }
 
@@ -815,9 +830,14 @@ header {
                 }
 
 
+
                 &:before {
                     background: transparent;
                     border: none;
+                }
+
+                @media (max-width: 1600px) {
+                    padding: 8px 15px;
                 }
 
 
