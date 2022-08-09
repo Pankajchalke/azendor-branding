@@ -23,23 +23,22 @@
     <header class="wrapper legalHeader" id="header">
         <div class="header-container">
             <a href="legal.html" class="logo">
-                <img src="images/legal-logo.png" />
+                <img src="images/legal-logo.png" alt="Legal Header Logo" title="Legal Header Logo" />
             </a>
             <div id="sidebarContainer">
                 <input type="checkbox" class="openSideMenu" id="openSideMenu" />
-  
+
                 <label for="openSideMenu" class="sideIconToggle">
                     <div class="spinner diagonal part-1"></div>
                     <div class="spinner horizontal"></div>
                     <div class="spinner diagonal part-2"></div>
                 </label>
-  
+
                 <div id="sideMenu">
                     <ul class="sideMenuInner">
                         <li class="fontPoppins font18 colorBlack fontW400">
                             <div class="dropdownSolution">
-                                <p class="menu-link active drop">Solutions<span
-                                        class="downcaretsolution"></span></p>
+                                <p class="menu-link active drop">Solutions<span class="downcaretsolution"></span></p>
                                 <ul class="submenuSolution" onclick="hideSidebar()">
                                     <li><a href="https://ixdtm.com/projects/azendor_branding/legal-advisory.html"
                                             class="fontPoppins fontW400 font18">Legal Advisory</a></li>
@@ -54,8 +53,7 @@
                         </li>
                         <li class="fontPoppins font18 colorBlack fontW400">
                             <div class="dropdownSector">
-                                <p class="menu-link drop" >Sectors <span
-                                        class="downcaretsector"></span></p>
+                                <p class="menu-link drop">Sectors <span class="downcaretsector"></span></p>
                                 <ul class="submenuSector sector" onclick="hideSidebar()">
                                     <li><a href="https://ixdtm.com/projects/azendor_branding/television.html"
                                             class="fontPoppins fontW400 font18">Television</a></li>
@@ -84,14 +82,10 @@
                                 </ul>
                             </div>
                         </li>
-                        <li onclick="hideSidebar()" class="fontPoppins font18 colorBlack fontW400">
-                            <a class="menu-link careerHeader"
-                                href="https://ixdtm.com/projects/azendor_branding/careers.html">Careers</a>
-                        </li>
+
                         <li class="fontPoppins font18 colorBlack fontW400">
                             <div class="dropdownAbout">
-                                <p class="menu-link drop">About <span
-                                        class="downcaretabout"></span>
+                                <p class="menu-link drop">About <span class="downcaretabout"></span>
                                 </p>
                                 <ul class="submenuAbout" onclick="hideSidebar()">
                                     <li><a href="https://ixdtm.com/projects/azendor_branding/about-us.html"
@@ -102,6 +96,10 @@
                             </div>
                         </li>
                         <li onclick="hideSidebar()" class="fontPoppins font18 colorBlack fontW400">
+                            <a class="menu-link careerHeader"
+                                href="https://ixdtm.com/projects/azendor_branding/careers.html">Careers</a>
+                        </li>
+                        <li onclick="hideSidebar()" class="fontPoppins font18 colorBlack fontW400">
                             <a class="menu-link contact"
                                 href="https://ixdtm.com/projects/azendor_branding/contact-us.html">Contact</a>
                         </li>
@@ -110,12 +108,11 @@
                     <div id="#sidenav-overlay"></div>
                 </div>
             </div>
-  
+
             <ul class="menu-items" id="menu">
                 <li class="fontPoppins font18 colorBlack fontW400">
                     <div class="dropdownSolution">
-                        <p class="menu-link is-active drop" >Solutions<span
-                                class="downcaretsolution"></span></p>
+                        <p class="menu-link is-active drop">Solutions<span class="downcaretsolution"></span></p>
                         <ul class="submenuSolution">
                             <li><a href="https://ixdtm.com/projects/azendor_branding/legal-advisory.html"
                                     class="fontPoppins fontW400 font18">Legal Advisory</a></li>
@@ -130,8 +127,7 @@
                 </li>
                 <li class="fontPoppins font18 colorBlack fontW400">
                     <div class="dropdownSector">
-                        <p class="menu-link drop">Sectors<span
-                                class="downcaretsector"></span></p>
+                        <p class="menu-link drop">Sectors<span class="downcaretsector"></span></p>
                         <ul class="submenuSector sector">
                             <li><a href="https://ixdtm.com/projects/azendor_branding/television.html"
                                     class="fontPoppins fontW400 font18">Television</a></li>
@@ -160,9 +156,7 @@
                         </ul>
                     </div>
                 </li>
-                <li class="fontPoppins font18 colorBlack fontW400">
-                    <a class="menu-link careerHeader" href="https://ixdtm.com/projects/azendor_branding/careers.html">Careers</a>
-                </li>
+
                 <li class="fontPoppins font18 colorBlack fontW400">
                     <div class="dropdownAbout">
                         <p class="menu-link drop">About<span class="downcaretabout"></span>
@@ -175,29 +169,34 @@
                         </ul>
                     </div>
                 </li>
+                <li class="fontPoppins font18 colorBlack fontW400">
+                    <a class="menu-link careerHeader"
+                        href="https://ixdtm.com/projects/azendor_branding/careers.html">Careers</a>
+                </li>
                 <li class="fontPoppins font18 colorW fontW400">
-                    <a class="menu-link contact" href="https://ixdtm.com/projects/azendor_branding/contact-us.html">Contact</a>
+                    <a class="menu-link contact"
+                        href="https://ixdtm.com/projects/azendor_branding/contact-us.html">Contact</a>
                 </li>
             </ul>
         </div>
-  
+
         <!-- progress bar for mobile -->
         <div class="progress-container-mobile">
             <div class="progress-bar-mobile"></div>
         </div>
     </header>
-<div class="progress-container">
+<div class="progress-container legalInnerPageProgress">
     <div id="progressbar" class="progress-bar"></div>
 </div>
 <section class="founder">
     <div class="wrapper">
         <div class="founderTitle">
-            <a class="backArrow" onclick="history.back(-1)"><img src="images/legal/back-arrow.svg"></a>
+            <a class="backArrow" onclick="history.back(-1)"><img src="images/legal/back-arrow.svg" alt="Back Arrow"></a>
             <h1 class="fontRoboto font64 fontW700 colorBlack">Founder</h1>
         </div>
         <div class="founderBox">
             <div class="profile">
-                <img src="images/founder-profile.svg">
+                <img src="images/founder-profile.svg" alt="Founder Profile">
             </div>
             <div class="founderDesc">
                 <div class="founderDescDetails">
@@ -209,13 +208,13 @@
                 </div>
                 
                 <div class="details">
-                    <a class="fontPoppins fontW400 font22 colorBlack" href="tel:+91 98206 07601"><img src="images/tel.svg"> +91 9820607601</a>
-                    <a href="mailto: indranil.banerjee@azendor.com" class="fontPoppins fontW400 font22 colorBlack"><img src="images/mail.svg"> indranil.banerjee@azendor.com</a>
+                    <a class="fontPoppins fontW400 font22 colorBlack" href="tel:+91 98206 07601"><img src="images/tel.svg" alt="Tel"> +91 9820607601</a>
+                    <a href="mailto: indranil.banerjee@azendor.com" class="fontPoppins fontW400 font22 colorBlack"><img src="images/mail.svg" alt="Mail"> indranil.banerjee@azendor.com</a>
                 </div>
                 <p class="fontPoppins fontW400 font22 colorBlack founderDescInfo">A business lawyer, Indranil has a rich and varied experience of over 22 years. He was associated with leading law firms and has represented a wide range of clients (including Fortune 500 clients) from the United States, Europe and Asia Pacific in the areas of corporate & commercial law as well as dispute resolution. In corporate sector, he has held leadership positions at Star India (a leading broadcaster) and DEN Networks (a leading cable TV distribution company).</p>
 
                 <p class="fontPoppins fontW400 font22 colorBlack founderDescInfoMobile">A business lawyer, Indranil has a rich and varied experience of over 22 years. He was associated with leading law firms and has represented a wide range of clients (including Fortune 500 clients) from the United States<span id="dots">...</span><span id="more">, Europe and Asia Pacific in the areas of corporate & commercial law as well as dispute resolution. In corporate sector, he has held leadership positions at Star India (a leading broadcaster) and DEN Networks (a leading cable TV distribution company).</span></p>
-                <p onclick="myFunction()" class="fontPoppins fontW500 colorBlack" id="readMore">Read More <img src="images/legal/solution-arrow.svg"></p>
+                <p onclick="myFunction()" class="fontPoppins fontW500 colorBlack" id="readMore">Read More <img src="images/legal/solution-arrow.svg" alt="Solution Arrow"></p>
             </div>
         </div>
     </div>
@@ -224,13 +223,16 @@
     <div class="wrapper">
         <div class="footerSec">
             <div class="footerSub">
-                <a href="legal.html" class="footerLogo"><img src="images/legal-footer-logo.png"></a>
+                <a href="legal.html" class="footerLogo"><img src="images/legal-footer-logo.png"
+                        alt="Legal Footer Logo" title="Legal Footer Logo"></a>
                 <div class="socialmediaIcons">
                     <ul>
-                        <li><a href="#"><img src="images/legal/linkdin-footer.svg"></a></li>
-                        <li><a href="#"><img src="images/legal/twitter.svg"></a></li>
-                        <li><a href="#"><img src="images/legal/facebook.svg"></a></li>
-                        <li><a href="#"><img src="images/legal/youtube.svg"></a></li>
+                        <li><a href="#"><img src="images/legal/linkdin-footer.svg" alt="Linkdin"
+                                    title="Linkdin"></a></li>
+                        <li><a href="#"><img src="images/legal/twitter.svg" alt="Twitter" title="Twitter"></a></li>
+                        <li><a href="#"><img src="images/legal/facebook.svg" alt="Facebook" title="Facebook"></a>
+                        </li>
+                        <li><a href="#"><img src="images/legal/youtube.svg" alt="Youtube" title="Youtube"></a></li>
                     </ul>
                 </div>
             </div>
@@ -286,11 +288,9 @@
             <div class="footerSub">
                 <h4 class="colordarkGray fontW400 font22 fontPoppins">Quick Links</h4>
                 <ul>
+
                     <li><a href="https://ixdtm.com/projects/azendor_branding/careers.html"
                             class="colorW fontW400 font22 fontPoppins">Careers</a></li>
-
-                    <li><a href="https://ixdtm.com/projects/azendor_branding/contact-us.html"
-                            class="colorW fontW400 font22 fontPoppins">Contact</a></li>
                     <li class="quickLinksft">
                         <p class="colorW fontW400 font22 fontPoppins">About</p>
                         <ul>
@@ -300,15 +300,20 @@
                                     class="colorW fontW300 font16 fontPoppins">- Founder</a></li>
                         </ul>
                     </li>
+
+                    <li class="contactFt"><a href="https://ixdtm.com/projects/azendor_branding/contact-us.html"
+                            class="colorW fontW400 font22 fontPoppins">Contact</a></li>
+
                 </ul>
             </div>
 
             <div class="socialmediaIcons-btm">
                 <ul>
-                    <li><a href="#"><img src="images/legal/linkdin-footer.svg"></a></li>
-                    <li><a href="#"><img src="images/legal/twitter.svg"></a></li>
-                    <li><a href="#"><img src="images/legal/facebook.svg"></a></li>
-                    <li><a href="#"><img src="images/legal/youtube.svg"></a></li>
+                    <li><a href="#"><img src="images/legal/linkdin-footer.svg" alt="Linkdin" title="Linkdin"></a>
+                    </li>
+                    <li><a href="#"><img src="images/legal/twitter.svg" alt="Twitter" title="Twitter"></a></li>
+                    <li><a href="#"><img src="images/legal/facebook.svg" alt="Facebook" title="Facebook"></a></li>
+                    <li><a href="#"><img src="images/legal/youtube.svg" alt="Youtube" title="Youtube"></a></li>
                 </ul>
             </div>
 
@@ -320,14 +325,15 @@
                 <a href="#" class="fontPoppins fontW500 font20 colordarkGray">Privacy Policy</a>
             </div>
             <div>
-                <p class="colorW fontW400 font20 fontPoppins copyRight"><img
-                        src="images/legal/footer-text-icon.svg"> 2022
+                <p class="colorW fontW400 font20 fontPoppins copyRight"><img src="images/legal/footer-text-icon.svg"
+                        alt="Copyright Symbol" title="Copyright Symbol"> 2022
                     Azendor
                     Consulting Pvt. Ltd, All Rights Reserved.</p>
             </div>
             <div class="copyrightmbl">
                 <p class="colorW fontW400 font20 fontPoppins mobileCopy"><img
-                        src="images/legal/footer-text-icon.svg"> 2022
+                        src="images/legal/footer-text-icon.svg" alt="Copyright Symbol" title="Copyright Symbol">
+                    2022
                     Azendor
                     Consulting Pvt. Ltd,<br> All Rights Reserved.</p>
             </div>
