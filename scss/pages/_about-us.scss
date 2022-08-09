@@ -1,121 +1,11 @@
-body {
-    overflow: visible !important;
-    background-color: white !important;
-     /* Hide scrollbar for IE, Edge and Firefox */
-     -ms-overflow-style: none;
-     /* IE and Edge */
-     scrollbar-width: none;
-     /* Firefox */
- 
-     /* Hide scrollbar for Chrome, Safari and Opera */
-     &::-webkit-scrollbar {
-         display: none;
-     }
-}
-
-.legalHeader {
-    position: sticky !important;
-
-    @media all and (max-width: 920px) {
-        position: fixed !important;
-    }
-}
-
-.progress-container {
-    position: fixed;
-    right: 30px;
-    top: 50%;
-    width: 1px;
-    height: 100px;
-    //background: #6A6A6A;
-    border-radius: 2px;
-    margin: auto;
-    border: 1px solid rgba(33, 33, 33, 0.5);
-    z-index: 999;
-
-    @media (max-width:770px) {
-        display: none !important;
-    }
-
-    .progress-bar {
-        position: relative;
-        width: 1px;
-        background: #000;
-        border-radius: 2px;
-        z-index: 999;
-
-
-        &:before {
-            position: absolute;
-            content: "";
-            right: 0;
-            bottom: 0px;
-            left: -6px;
-            width: 12px;
-            height: 12px;
-            //height: 1%;
-            background: #000;
-            border-radius: 50%;
-
-            
-        }
-    &:after{
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 130.9%;
-        letter-spacing: 0.05em;
-        color: #000;
-        z-index: 999;}
-
-        &::after {
-            position: absolute;
-            content: "SCROLL";
-            right: 0;
-            left: -10px;
-            top: -20px;
-            padding-bottom: 10px !important;
-            transform: rotate(270deg);
-            transform-origin: left top 0;
-            z-index: 999;
-        }
-
-    }
-}
-
 .aboutUs {
-    position: relative;
+    
     margin: 150px 0px;
     color: #212121;
 
-    @media all and (max-width: 1800px){
-        margin: 150px 0px;
-    }
-
-    @media all and (max-width: 1600px){
-        margin: 120px 0px;
-    }
-
-    @media all and (max-width: 1400px){
-        margin: 120px 0px;
-    }
-
-    @media all and (max-width: 1050px){
-        margin: 100px 0px
-    }
-
-    @media all and (max-width: 920px){
-        margin: 100px 0px;
-    }
-
-    @media all and (max-width: 675px){
-        margin: 100px 0px;
-    }
-
-    @media all and (max-width: 575px){
-        margin: 100px 0px;
-    }
+    
+    @media all and (max-width: 1400px){margin:100px 0px;}
+	@media all and (max-width: 920px){margin:100px 0px 80px;}
 
     .sectionTitle{
 		@media all and (max-width: 920px){display: flex;align-items: flex-start;padding-bottom: 20px;margin-bottom: 15px; border-bottom: 0.75px solid rgba(33, 33, 33, 0.6);}
@@ -134,6 +24,12 @@ body {
 
     .about-contents {
         width: 80%;
+        p {
+            margin-bottom: 20px;
+            line-height: 160%;
+            text-transform: capitalize;
+            font-family: 'Poppins' !important;
+        }
 
         @media all and (max-width: 1800px){
             width: 80%;
@@ -147,6 +43,11 @@ body {
     
         @media all and (max-width: 1400px){
             width: 80%;
+            p {
+                
+                line-height: 26px;
+               
+            }
             
         }
     
@@ -156,8 +57,12 @@ body {
         }
     
         @media all and (max-width: 920px){
-            width: 90%;
-            
+            width: 100%;
+            p {
+                font-size: 16px;
+                line-height: 21px;
+              
+            }
         }
     
         @media all and (max-width: 675px){
@@ -171,12 +76,7 @@ body {
         }
               
 
-        p {
-            margin-bottom: 30px;
-            line-height: 125%;
-            text-transform: capitalize;
-            font-family: 'Poppins' !important;
-        }
+        
     }
 
     .ctaLink {
