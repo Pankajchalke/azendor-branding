@@ -1094,7 +1094,8 @@ body {
     @media all and (max-width: 920px) {
       .advisorySubPages p {
         font-size: 16px;
-        width: 100%; } }
+        width: 100%;
+        line-height: 150%; } }
   .advisorySubPages .advisoryCta {
     margin-top: 40px;
     display: flex;
@@ -1323,7 +1324,8 @@ body {
     @media all and (max-width: 920px) {
       .digitalTransformationSubPages p {
         font-size: 16px;
-        width: 100%; } }
+        width: 100%;
+        line-height: 150%; } }
   .digitalTransformationSubPages .digitalTransformationCta {
     margin-top: 40px;
     display: flex;
@@ -1415,7 +1417,7 @@ body {
       .generalCounsel p {
         width: 100%;
         font-size: 16px;
-        line-height: 130%; } }
+        line-height: 150%; } }
   .generalCounsel .generalCounselCta {
     margin-top: 40px;
     display: flex;
