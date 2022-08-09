@@ -1041,8 +1041,8 @@ header {
         .modal.in .modal-dialog3 .modal-content .teamBox {
           padding-bottom: 15px; }
           .modal.in .modal-dialog3 .modal-content .teamBox .teamDesc {
-            width: 70%;
-            padding: 70px 10px; }
+            width: 80%;
+            padding: 20px 10px; }
             .modal.in .modal-dialog3 .modal-content .teamBox .teamDesc h3 {
               font-size: 20px;
               margin-bottom: 10px; }
@@ -1053,13 +1053,13 @@ header {
             .modal.in .modal-dialog3 .modal-content .teamBox .teamDesc img {
               width: 30px; }
           .modal.in .modal-dialog3 .modal-content .teamBox .memberImg {
-            width: 28%; }
+            width: 15%; }
         .modal.in .modal-dialog3 .modal-content .teamPara {
           height: 250px;
           overflow: auto; } }
   @media all and (max-width: 575px) {
     .modal.in .modal-dialog3 .memberImg {
-      width: 80px; }
+      width: 28% !important; }
     .modal.in .modal-dialog3 .teamDesc {
       width: 70%;
       padding: 20px 10px !important; } }
