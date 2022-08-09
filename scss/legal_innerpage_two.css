@@ -493,6 +493,8 @@ img {
       line-height: 160%;
       letter-spacing: 0.03em;
       font-family: 'Poppins' !important; }
+      .careers .careers-content p a {
+        text-decoration: none; }
     @media all and (max-width: 1800px) {
       .careers .careers-content {
         width: 80%; } }
