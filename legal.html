@@ -673,9 +673,9 @@
                                 brand.
                             </p>
                             <p>
-                                <a href="#" class="fontPoppins fontW500 font20">Read More <img
-                                        src="images/legal/solution-arrow.svg" alt="Read More Arrow"
-                                        title="Read More Arrow" /></a>
+                                <a href="#" class="fontPoppins fontW500 font20" data-toggle="modal"
+                                    data-target="#readMore">Read More <img src="images/legal/solution-arrow.svg"
+                                        alt="Read More Arrow" title="Read More Arrow" /></a>
                             </p>
                             <img src="images/legal/qoutes.svg" alt="qoutes" title="qoutes" />
                         </div>
@@ -722,9 +722,9 @@
                                 brand.
                             </p>
                             <p>
-                                <a href="#" class="fontPoppins fontW500 font20">Read More <img
-                                        src="images/legal/solution-arrow.svg" alt="Read More Arrow"
-                                        title="Read More Arrow" /></a>
+                                <a href="#" class="fontPoppins fontW500 font20" data-toggle="modal"
+                                    data-target="#readMore">Read More <img src="images/legal/solution-arrow.svg"
+                                        alt="Read More Arrow" title="Read More Arrow" /></a>
                             </p>
                             <img src="images/legal/qoutes.svg" alt="qoutes" title="qoutes" />
                         </div>
@@ -771,9 +771,9 @@
                                 brand.
                             </p>
                             <p>
-                                <a href="#" class="fontPoppins fontW500 font20">Read More <img
-                                        src="images/legal/solution-arrow.svg" alt="Read More Arrow"
-                                        title="Read More Arrow" /></a>
+                                <a href="#" class="fontPoppins fontW500 font20" data-toggle="modal"
+                                    data-target="#readMore">Read More <img src="images/legal/solution-arrow.svg"
+                                        alt="Read More Arrow" title="Read More Arrow" /></a>
                             </p>
                             <img src="images/legal/qoutes.svg" alt="qoutes" title="qoutes" />
                         </div>
@@ -830,52 +830,43 @@
         <div class="contactBox wrapper">
             <div class="contactDesc">
                 <div class="contactDescTitle">
-                    <a class="backArrow" href="#"><img src="images/legal/back-arrow.svg" /></a>
-                    <h1 class="fontRoboto font64 fontW700 colorBlack">
-                        For Initial Consultation
-                    </h1>
+                    <a class="backArrow" onclick="history.back(-1)"><img src="images/legal/back-arrow.svg"></a>
+                    <h1 class="fontRoboto font64 fontW700 colorBlack">For Initial Consultation</h1>
                 </div>
-                <p class="fontPoppins fontW400 font22 colorBlack">
-                    Tell us about your query. A member of our team will be in touch with
-                    you shortly for an initial consultation.
-                </p>
+                <p class="fontPoppins fontW400 font22 colorBlack">Tell us about your query. A member of our team will be
+                    in touch with you shortly for an initial consultation. </p>
             </div>
             <div class="contactForm">
                 <form>
                     <div class="formDivider">
                         <label for="fname" class="fontPoppins fontW400 colorBlack">First Name*</label>
-                        <input class="fontPoppins fontW400" type="text" id="fname" name="firstname"
-                            placeholder="John" />
+                        <input class="fontPoppins fontW400" type="text" id="fname" name="firstname" placeholder="John">
                     </div>
                     <div class="formDivider">
                         <label for="lname" class="fontPoppins fontW400 colorBlack">Last Name*</label>
-                        <input class="fontPoppins fontW400" type="text" id="lname" name="lastname" placeholder="Doe" />
+                        <input class="fontPoppins fontW400" type="text" id="lname" name="lastname" placeholder="Doe">
                     </div>
                     <div class="formDividerOne">
                         <label for="contact" class="fontPoppins fontW400 colorBlack">Phone Number*</label>
                         <input class="fontPoppins fontW400" type="text" id="contact" name="contactnumber"
-                            placeholder="+91 1234 5678 90" />
+                            placeholder="+91 1234 5678 90">
                     </div>
                     <div class="formDividerOne">
                         <label for="email" class="fontPoppins fontW400 colorBlack">Email*</label>
                         <input class="fontPoppins fontW400" type="mail" id="email" name="email"
-                            placeholder="JhonDoe@Gmail.com" />
+                            placeholder="JhonDoe@Gmail.com">
                     </div>
 
                     <div class="aboutQuery">
-                        <label for="subject" class="fontPoppins fontW400 colorBlack">Tell Us About Query*
-                        </label>
+                        <label for="subject" class="fontPoppins fontW400 colorBlack">Tell Us About Query* </label>
                         <textarea class="fontPoppins fontW400" id="subject" name="subject"
                             placeholder="I Would Like To Ask"></textarea>
                     </div>
                     <div class="submit">
-                        <p class="fontPoppins fontW400 colorBlack">
-                            By submitting this form, you agree to receive e-mails / calls
-                            from Azendor Legal team member.<br />
-                            See our
-                            <a href="#" class="fontW700 colorBlack">Privacy Policy.</a>
-                        </p>
-                        <input class="fontPoppins fontW400 colorW" type="submit" value="Submit" />
+                        <p class="fontPoppins fontW400 colorBlack">By submitting this form, you agree to receive e-mails
+                            / calls from Azendor Legal team member.<br> See our <a href="#"
+                                class=" fontW700 colorBlack">Privacy Policy.</a></p>
+                        <input class="fontPoppins fontW400 colorW" type="submit" value="Submit">
                     </div>
                 </form>
             </div>
@@ -886,7 +877,7 @@
             <div class="contactDetailsBox">
                 <div class="address">
                     <div class="addTitle">
-                        <img src="images/legal-location.svg" />
+                        <img src="images/legal-location.svg" alt="Legal Location">
                         <p class="fontPoppins fontW400 font22 colordarkGray">Address</p>
                     </div>
 
@@ -894,55 +885,39 @@
                         <div class="addressBoxDetails">
                             <h4 class="fontPoppins fontW700 font20 colorBlack">Mumbai</h4>
                             <p class="fontPoppins fontW400 font22 colorBlack">
-                                2nd Floor, Duru House <br />
-                                Juhu Tara Road, Juhu <br />
-                                Mumbai – 400049
+                                2nd Floor, Duru House <br> Juhu Tara Road, Juhu <br> Mumbai – 400049
                             </p>
                         </div>
                         <div class="addressBoxDetails">
                             <h4 class="fontPoppins fontW700 font20 colorBlack">Delhi</h4>
                             <p class="fontPoppins fontW400 font22 colorBlack">
-                                5th Floor, SB Towers Film <br />
-                                City Road, Sector 16A <br />
-                                Noida – 201301 (Delhi NCR)
+                                5th Floor, SB Towers Film <br> City Road, Sector 16A <br> Noida – 201301 (Delhi NCR)
                             </p>
                         </div>
                         <div class="addressBoxDetails">
-                            <h4 class="fontPoppins fontW700 font20 colorBlack">
-                                Singapore
-                            </h4>
+                            <h4 class="fontPoppins fontW700 font20 colorBlack">Singapore</h4>
                             <p class="fontPoppins fontW400 font22 colorBlack">
-                                1 Sophia Road <br />
-                                #05-23 Peace Centre <br />
-                                Singapore – 228149
+                                1 Sophia Road <br> #05-23 Peace Centre <br> Singapore – 228149
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="contactRight">
                     <div class="addTitle">
-                        <img src="images/contact-legal.svg" />
-                        <p class="fontPoppins fontW400 font22 colordarkGray">
-                            Contact Us
-                        </p>
+                        <img src="images/contact-legal.svg" alt="Contact Legal">
+                        <p class="fontPoppins fontW400 font22 colordarkGray">Contact Us</p>
                     </div>
                     <div class="contactRightDetails">
-                        <p>
-                            <a href="mailto: sourabh.mishra@azendor.com"
-                                class="fontPoppins fontW400 font20 colorBlack">legal@azendor.com</a>
-                        </p>
-                        <p>
-                            <a class="fontPoppins fontW400 font22 colorBlack" href="tel:+91 98206 07601">+91 98206
-                                07601</a>
-                        </p>
+                        <p><a href="mailto: sourabh.mishra@azendor.com"
+                                class="fontPoppins fontW400 font20 colorBlack">legal@azendor.com</a></p>
+                        <p><a class="fontPoppins fontW400 font22 colorBlack" href="tel:+91 98206 07601">+91 98206
+                                07601</a></p>
                     </div>
                 </div>
             </div>
-            <p class="info fontPoppins fontW400 font16 colorBlack">
-                <img src="images/info.svg" />Covid-19 pandemic has compelled us to
-                deliver legal services online. If you wish to meet with us in person,
-                you are welcome to visit any of our offices with prior appointment.
-            </p>
+            <p class="info fontPoppins fontW400 font16 colorBlack"><img src="images/info.svg">Covid-19 pandemic has
+                compelled us to deliver legal services online. If you wish to meet with us in person, you are welcome to
+                visit any of our offices with prior appointment.</p>
         </div>
     </section>
     <footer>
