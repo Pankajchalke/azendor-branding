@@ -628,7 +628,7 @@ body {
         margin-left: 16.5px; } }
     @media all and (max-width: 920px) {
       .subSectors .subSectors-content {
-        width: 90%;
+        width: 100%;
         margin-left: 17px; }
         .subSectors .subSectors-content li {
           font-size: 16px;
