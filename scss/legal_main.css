@@ -663,6 +663,16 @@ header {
         header .menu-items .dropdownAbout .submenuSector,
         header .menu-items .dropdownAbout .submenuAbout {
           width: 180px; } }
+    @media (max-width: 1600px) {
+      header .menu-items .dropdownSolution .submenuAbout,
+      header .menu-items .dropdownSector .submenuAbout,
+      header .menu-items .dropdownAbout .submenuAbout {
+        width: 180px !important; } }
+    @media (max-width: 1400px) {
+      header .menu-items .dropdownSolution .submenuAbout,
+      header .menu-items .dropdownSector .submenuAbout,
+      header .menu-items .dropdownAbout .submenuAbout {
+        width: 152px !important; } }
     header .menu-items .dropdownSolution .downcaretsolution,
     header .menu-items .dropdownSolution .downcaretsector,
     header .menu-items .dropdownSolution .downcaretabout,
@@ -821,6 +831,12 @@ header {
     header .careerHeader::before {
       left: -2px !important;
       top: -10px !important; }
+      @media (max-width: 1600px) {
+        header .careerHeader::before {
+          top: -14px !important; } }
+      @media (max-width: 1600px) {
+        header .careerHeader::before {
+          top: -10px !important; } }
   header .menu-link:hover {
     position: relative;
     color: #000;
@@ -1023,6 +1039,9 @@ header {
         header .menu-items li .contact:before {
           background: transparent;
           border: none; }
+        @media (max-width: 1600px) {
+          header .menu-items li .contact {
+            padding: 8px 15px; } }
 
 .progress-container {
   position: fixed;
