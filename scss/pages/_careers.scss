@@ -34,6 +34,9 @@
 
             a{
                 text-decoration: none;
+                &:hover{
+                    color:  #6A6A6A;
+                }
             }
         }
 

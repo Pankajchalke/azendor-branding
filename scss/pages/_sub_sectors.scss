@@ -20,6 +20,7 @@ body {
         position: fixed !important;
     }
 }
+
 .progress-container {z-index: 11;
 	@media screen and (max-width: 1024px) and (min-height: 1200px)  {display:none;}
 	@media all and (max-width: 920px){display:block !important;}
