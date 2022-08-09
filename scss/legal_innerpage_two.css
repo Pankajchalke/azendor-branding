@@ -402,7 +402,7 @@ img {
         width: 100%; }
         .aboutUs .about-contents p {
           font-size: 16px;
-          line-height: 21px; } }
+          line-height: 24px; } }
     @media all and (max-width: 675px) {
       .aboutUs .about-contents {
         width: 100%; } }
@@ -511,7 +511,7 @@ img {
       .careers .careers-content {
         width: 100%; }
         .careers .careers-content p {
-          line-height: 21px;
+          line-height: 24px;
           font-size: 16px; } }
     @media all and (max-width: 675px) {
       .careers .careers-content {
