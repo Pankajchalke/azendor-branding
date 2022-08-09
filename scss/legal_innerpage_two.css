@@ -382,7 +382,6 @@ img {
     .aboutUs .about-contents p {
       margin-bottom: 20px;
       line-height: 160%;
-      text-transform: capitalize;
       font-family: 'Poppins' !important; }
     @media all and (max-width: 1800px) {
       .aboutUs .about-contents {
@@ -606,7 +605,6 @@ body {
     .subSectors .subSectors-content li {
       margin-bottom: 20px;
       line-height: 35px;
-      text-transform: capitalize;
       font-family: 'Poppins' !important; }
     @media all and (max-width: 1800px) {
       .subSectors .subSectors-content {
