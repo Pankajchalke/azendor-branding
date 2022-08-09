@@ -1156,8 +1156,8 @@ header {
                 padding-bottom: 15px;
 
                 .teamDesc {
-                    width: 70%;
-                    padding: 70px 10px;
+                    width: 80%;
+                    padding: 20px 10px;
 
                     h3 {
                         font-size: 20px;
@@ -1176,7 +1176,7 @@ header {
                 }
 
                 .memberImg {
-                    width: 28%;
+                    width: 15%;
                 }
             }
 
@@ -1191,7 +1191,7 @@ header {
 
         //margin: -8% auto 0;
         .memberImg {
-            width: 80px;
+            width: 28% !important;
         }
 
         .teamDesc {
