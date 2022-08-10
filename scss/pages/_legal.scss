@@ -886,9 +886,12 @@ header {
         &::after {
             position: absolute;
             content: "SCROLL";
-            color: #212121;
+            font-style: normal;
             font-weight: 400;
             font-size: 14px;
+            line-height: 130.9%;
+            letter-spacing: 0.05em;
+            color: #000;
             font-family: 'Poppins', sans-serif;
             right: 0;
             left: -10px;
