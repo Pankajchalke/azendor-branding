@@ -388,8 +388,8 @@ header {
       position: fixed;
       right: 0;
       top: 0;
-      width: 260px;
-      background: #212121;
+      width: 100%;
+      background-color: rgba(33, 33, 33, 0.7);
       border-radius: 5px 0px 0px 5px;
       transform: translate(150%);
       transition: transform 0.5s ease-in-out;
@@ -397,7 +397,13 @@ header {
       z-index: 1; }
       header #sidebarContainer #sideMenu .sideMenuInner {
         margin: 0;
-        padding-top: 100px; }
+        padding-top: 100px;
+        padding-left: 20px;
+        width: 80%;
+        margin-left: auto;
+        background-color: #212121;
+        height: 100%;
+        overflow: scroll; }
         header #sidebarContainer #sideMenu .sideMenuInner li {
           list-style: none;
           padding: 15px 20px;
