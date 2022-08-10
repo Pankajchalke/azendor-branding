@@ -542,27 +542,6 @@ body {
     .legalHeader {
       position: fixed !important; } }
 
-.progress-container {
-  z-index: 11; }
-  @media screen and (max-width: 1024px) and (min-height: 1200px) {
-    .progress-container {
-      display: none; } }
-  @media all and (max-width: 920px) {
-    .progress-container {
-      display: block !important; } }
-  .progress-container .progress-bar:after {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 130.9%;
-    letter-spacing: 0.05em;
-    color: #000; }
-
-@media all and (max-width: 770px) {
-  #progress-container {
-    display: none !important; } }
-
 .subSectors {
   margin: 150px 0px; }
   @media all and (max-width: 1400px) {
