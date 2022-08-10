@@ -33,9 +33,9 @@
                         <input type="checkbox" class="openSideMenu" id="openSideMenu" />
         
                         <label for="openSideMenu" class="sideIconToggle">
-                             <span class="spinner diagonal part-1"></span>
-                  <span class="spinner horizontal"></span>
-                  <span class="spinner diagonal part-2"></span>
+                            <span class="spinner diagonal part-1"></span>
+                            <span class="spinner horizontal"></span>
+                            <span class="spinner diagonal part-2"></span>
                         </label>
         
                         <div id="sideMenu">
@@ -186,12 +186,10 @@
                     </ul>
                 </div>
         
-              
-              <!-- progress bar for mobile -->
-               <div class="progress-container-mobile">
-                <div class="progress-bar-mobile"></div>
-            </div>
-            
+                <!-- progress bar for mobile -->
+                <div class="progress-container-mobile">
+                    <div class="progress-bar-mobile"></div>
+                </div>
             </header>
 
             <div class="progress-container">
@@ -292,7 +290,7 @@
                     <h4 class="colordarkGray fontW400 font22 fontPoppins">Quick Links</h4>
                     <ul>
 
-                        <li><a href="https://ixdtm.com/projects/azendor_branding/careers.html"
+                        <li class="ftCareer"><a href="https://ixdtm.com/projects/azendor_branding/careers.html"
                                 class="colorW fontW400 font22 fontPoppins">Careers</a></li>
                         <li class="quickLinksft">
                             <p class="colorW fontW400 font22 fontPoppins">About</p>
@@ -349,25 +347,7 @@
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/custom.js"></script>
-    <script>
-        if ( $(window).width() <= 920 ) {
-  // Print a message to the console
-  $(document).ready(function () {
-    $(".dropdownSolution").click(function () {
-      $(".submenuSolution").toggleClass("open");
-      $(".downcaretsolution").toggleClass("open-caret");
-    });
-    $(".dropdownSector").click(function () {
-      $(".submenuSector").toggleClass("open");
-      $(".downcaretsector").toggleClass("open-caret");
-    });
-    $(".dropdownAbout").click(function () {
-      $(".submenuAbout").toggleClass("open");
-      $(".downcaretabout").toggleClass("open-caret");
-    });
-  });
-} 
-    </script>
+   
     
 
   </body>
