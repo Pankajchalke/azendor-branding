@@ -495,6 +495,8 @@ img {
       font-family: 'Poppins' !important; }
       .careers .careers-content p a {
         text-decoration: none; }
+        .careers .careers-content p a:hover {
+          color: #6A6A6A; }
     @media all and (max-width: 1800px) {
       .careers .careers-content {
         width: 80%; } }
