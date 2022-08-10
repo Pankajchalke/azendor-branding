@@ -89,7 +89,7 @@ header {
                             &.open {
                                 overflow-y: scroll;
                                 scrollbar-width: auto;
-                                scrollbar-color: #000;
+                                scrollbar-color: #767676;
 
 
                                 /* Chrome, Edge, and Safari */
@@ -100,13 +100,13 @@ header {
 
 
                                 &::-webkit-scrollbar-track {
-                                    background: gray;
+                                    background: #e4e4e4;
                                 }
 
                                 &::-webkit-scrollbar-thumb {
-                                    background-color: #000;
+                                    background-color: #767676;
                                     border-radius: 15px;
-                                    border: 6px solid #000;
+                                    border: 6px solid #767676;
                                 }
                             }
                         }
@@ -373,12 +373,13 @@ header {
                 }
             }
 
-            .submenuAbout{
+            .submenuAbout {
                 @media (max-width: 1600px) {
-                    width: 180px !important; 
+                    width: 180px !important;
                 }
+
                 @media (max-width: 1400px) {
-                    width: 152px !important; 
+                    width: 152px !important;
                 }
             }
 
@@ -419,7 +420,7 @@ header {
 
                     overflow-y: scroll;
                     scrollbar-width: auto;
-                    scrollbar-color: #000;
+                    scrollbar-color: #767676;
 
 
                     /* Chrome, Edge, and Safari */
@@ -430,13 +431,13 @@ header {
 
 
                     &::-webkit-scrollbar-track {
-                        background: gray;
+                        background: #e4e4e4;
                     }
 
                     &::-webkit-scrollbar-thumb {
-                        background-color: #000;
+                        background-color: #767676;
                         border-radius: 15px;
-                        border: 6px solid #000;
+                        border: 6px solid #767676;
                     }
 
                 }
@@ -537,6 +538,7 @@ header {
             @media (max-width: 1600px) {
                 top: -14px !important;
             }
+
             @media (max-width: 1600px) {
                 top: -10px !important;
             }
@@ -601,12 +603,10 @@ header {
         padding-top: 61px;
 
         @media (max-width: 1600px) {
-            padding-top: 40px;
+            padding-top: 20px;
         }
 
-        @media (max-width: 1400px) {
-            padding-top: 30px;
-        }
+        
 
         @media (max-width: 920px) {
             display: block;
@@ -723,10 +723,10 @@ header {
 
             img {
 
-                width: 269px;
+                width: 375px;
 
-                @media (max-width:1400px) {
-                    width: 325px;
+                @media (max-width:1920px) {
+                    width: 269px;
                 }
 
                 @media (max-width:1400px) {
@@ -857,6 +857,7 @@ header {
     border-radius: 2px;
     margin: auto;
     border: 1px solid rgba(33, 33, 33, 0.5);
+    z-index: 999;
 
     @media (max-width:770px) {
         display: none !important;
@@ -885,6 +886,10 @@ header {
         &::after {
             position: absolute;
             content: "SCROLL";
+            color: #212121;
+            font-weight: 400;
+            font-size: 14px;
+            font-family: 'Poppins', sans-serif;
             right: 0;
             left: -10px;
             top: -20px;
@@ -970,7 +975,7 @@ header {
 
 
 
-   
+
     @media all and (max-width: 575px) {
         width: 100%;
 
@@ -999,7 +1004,7 @@ header {
 
                 .teamDesc {
                     width: 68%;
-                    
+
 
                     h3 {
                         font-size: 20px;
@@ -1047,7 +1052,7 @@ section {
 }
 
 .bannerSec {
-    margin: 250px 0px 150px 0px;
+    margin: 100px 0px 150px 0px;
 
     h1 {
         line-height: 126px;
@@ -1104,7 +1109,7 @@ section {
     }
 
     @media all and (max-width: 1650px) {
-        margin: 220px 0px 110px 0px;
+        margin: 80px 0px 110px 0px;
 
         .bannerCta {
             margin-top: 30px;
@@ -1123,7 +1128,7 @@ section {
     }
 
     @media all and (max-width: 1450px) {
-        margin: 180px 0px 70px 0px;
+        margin: 80px 0px 70px 0px;
 
         h1 {
             font-size: 81px;
@@ -1166,7 +1171,7 @@ section {
     }
 
     @media all and (max-width: 1170px) {
-        margin: 160px 0px 70px 0px;
+        margin: 60px 0px 70px 0px;
 
         h1 {
             width: 80%;
@@ -1194,7 +1199,7 @@ section {
 
     @media all and (max-width: 900px) {
         position: relative;
-        margin: 120px 0px 180px 0px;
+        margin: 120px 0px 150px 0px;
 
         h1 {
             width: 100%;
@@ -1415,7 +1420,10 @@ section {
                         }
                     }
 
-                    h3{line-height: 25px;}
+                    h3 {
+                        line-height: 25px;
+                    }
+
                     p {
                         line-height: 21px;
                     }
@@ -1943,7 +1951,10 @@ section {
                     height: 530px;
                     margin-bottom: 20px;
 
-                    h3{line-height: 25px;}
+                    h3 {
+                        line-height: 25px;
+                    }
+
                     p {
                         line-height: 21px;
                     }
