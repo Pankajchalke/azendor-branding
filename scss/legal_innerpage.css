@@ -510,7 +510,16 @@ img {
           transition: 0.6s all; }
 
 body {
-  overflow: visible !important; }
+  overflow: visible !important;
+  background-color: white !important;
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+  /* Hide scrollbar for Chrome, Safari and Opera */ }
+  body::-webkit-scrollbar {
+    display: none; }
 
 .legalHeader {
   position: sticky !important; }

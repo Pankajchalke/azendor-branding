@@ -21,6 +21,21 @@ body {
     }
 }
 
+.progress-container {z-index: 11;
+	
+	@media all and (min-width: 770px){display:none}
+	.progress-bar{
+		&:after{
+		font-family: 'Poppins';
+	    font-style: normal;
+	    font-weight: 400;
+	    font-size: 14px;
+	    line-height: 130.9%;
+	    letter-spacing: 0.05em;
+	    color: #000;
+		}
+	}
+}
 
 
 
