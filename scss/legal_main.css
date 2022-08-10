@@ -2678,7 +2678,11 @@ footer {
   border: 1px solid #FAFAFA;
   border-radius: 5px;
   z-index: 2;
-  transition: all .2s; }
+  transition: all .2s;
+  text-align: center; }
+  #myBtn img {
+    position: relative;
+    top: 25%; }
   @media all and (min-width: 770px) {
     #myBtn {
       display: none !important; } }
