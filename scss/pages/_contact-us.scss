@@ -2,21 +2,7 @@ body{overflow: visible !important;}
 .legalHeader{position:sticky !important;
 	@media all and (max-width: 920px){position:fixed !important;}
 }
-.legalInnerPageProgress {z-index: 11;
-	@media screen and (max-width: 1024px) and (min-height: 1366px)  {display:none;}
-	//@media all and (max-width: 920px){display:block !important;}
-	.progress-bar{
-		&:after{
-		font-family: 'Poppins';
-	    font-style: normal;
-	    font-weight: 400;
-	    font-size: 14px;
-	    line-height: 130.9%;
-	    letter-spacing: 0.05em;
-	    color: #000;
-		}
-	}
-}
+
 .contact{
 	margin:150px 0px;
 	@media all and (max-width: 1400px){margin:100px 0px;}
