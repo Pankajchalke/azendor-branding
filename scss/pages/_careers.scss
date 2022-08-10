@@ -32,11 +32,18 @@
             letter-spacing: 0.03em;
             font-family: 'Poppins' !important;
 
-            a{
-                text-decoration: none;
-                &:hover{
-                    color:  #6A6A6A;
+            span{
+        
+                a{
+                    font-weight: 500;
+                    color: black;
+                    text-decoration: none;
+                    &:hover{
+                        color:  #6A6A6A;
+                    }
                 }
+                
+               
             }
         }
 

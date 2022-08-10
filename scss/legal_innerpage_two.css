@@ -493,9 +493,11 @@ img {
       line-height: 160%;
       letter-spacing: 0.03em;
       font-family: 'Poppins' !important; }
-      .careers .careers-content p a {
+      .careers .careers-content p span a {
+        font-weight: 500;
+        color: black;
         text-decoration: none; }
-        .careers .careers-content p a:hover {
+        .careers .careers-content p span a:hover {
           color: #6A6A6A; }
     @media all and (max-width: 1800px) {
       .careers .careers-content {
@@ -541,6 +543,20 @@ body {
   @media all and (max-width: 920px) {
     .legalHeader {
       position: fixed !important; } }
+
+.progress-container {
+  z-index: 11; }
+  @media all and (min-width: 770px) {
+    .progress-container {
+      display: none; } }
+  .progress-container .progress-bar:after {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130.9%;
+    letter-spacing: 0.05em;
+    color: #000; }
 
 .subSectors {
   margin: 150px 0px; }

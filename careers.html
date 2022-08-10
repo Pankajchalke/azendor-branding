@@ -31,9 +31,9 @@
               <input type="checkbox" class="openSideMenu" id="openSideMenu" />
 
               <label for="openSideMenu" class="sideIconToggle">
-                  <div class="spinner diagonal part-1"></div>
-                  <div class="spinner horizontal"></div>
-                  <div class="spinner diagonal part-2"></div>
+                  <span class="spinner diagonal part-1"></span>
+                  <span class="spinner horizontal"></span>
+                  <span class="spinner diagonal part-2"></span>
               </label>
 
               <div id="sideMenu">
@@ -184,11 +184,17 @@
           </ul>
       </div>
 
-      <!-- progress bar for mobile -->
-      <div class="progress-container-mobile">
-          <div class="progress-bar-mobile"></div>
-      </div>
-  </header>
+
+    <!-- progress bar for mobile -->
+               <div class="progress-container-mobile">
+                <div class="progress-bar-mobile"></div>
+            </div>
+            
+            </header>
+
+            <div class="progress-container">
+                <div id="progressbar" class="progress-bar"></div>
+              </div>
 
     <section class="careers">
       <div class="wrapper">
@@ -213,7 +219,7 @@
           <p>
             We offer career opportunities to experienced professionals, fresh
             graduates and interns. Please send your profile to
-            <a href="mailto: legal@azendor.com" class="colorBlack">legal@azendor.com</a> and if it matches with our current requirement, we
+            <span><a href="mailto: legal@azendor.com">legal@azendor.com</a></span> and if it matches with our current requirement, we
             will get back you.
           </p>
         </div>
@@ -347,5 +353,24 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/custom.js"></script>
+    <script>
+        if ( $(window).width() <= 920 ) {
+  // Print a message to the console
+  $(document).ready(function () {
+    $(".dropdownSolution").click(function () {
+      $(".submenuSolution").toggleClass("open");
+      $(".downcaretsolution").toggleClass("open-caret");
+    });
+    $(".dropdownSector").click(function () {
+      $(".submenuSector").toggleClass("open");
+      $(".downcaretsector").toggleClass("open-caret");
+    });
+    $(".dropdownAbout").click(function () {
+      $(".submenuAbout").toggleClass("open");
+      $(".downcaretabout").toggleClass("open-caret");
+    });
+  });
+} 
+    </script>
   </body>
 </html>
