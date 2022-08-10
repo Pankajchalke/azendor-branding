@@ -2526,11 +2526,16 @@ footer {
           footer .footerSec .footerSub .socialmediaIcons ul li img {
             height: 45px;
             width: 45px; }
-      footer .footerSec .footerSub .quickLinksft p {
-        cursor: text; }
-      footer .footerSec .footerSub .quickLinksft ul li {
-        margin-bottom: 0px !important;
-        margin-top: 5px; }
+      footer .footerSec .footerSub .ftCareer {
+        margin-bottom: 10px !important; }
+      footer .footerSec .footerSub .quickLinksft {
+        margin-bottom: 10px !important; }
+        footer .footerSec .footerSub .quickLinksft p {
+          cursor: text;
+          margin-bottom: 5px; }
+        footer .footerSec .footerSub .quickLinksft ul li {
+          margin-bottom: 0px !important;
+          margin-top: 0px; }
     footer .footerSec .socialmediaIcons-btm {
       display: none !important;
       width: 0; }
@@ -2586,7 +2591,11 @@ footer {
       footer .footerSec .footerSub ul li {
         margin-bottom: 20px; }
       footer .footerSec .footerSub:nth-child(1) .footerLogo img {
-        width: 200px; } }
+        width: 200px; }
+      footer .footerSec .footerSub .ftCareer {
+        margin-bottom: 20px !important; }
+      footer .footerSec .footerSub .quickLinksft {
+        margin-bottom: 20px !important; } }
   @media all and (max-width: 1280px) {
     footer .footerSec {
       padding: 40px 0px 0px 0px; }

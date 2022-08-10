@@ -3175,16 +3175,20 @@ footer {
                     }
                 }
             }
-
+            .ftCareer{
+                margin-bottom: 10px !important;
+            }
 
             .quickLinksft {
+                margin-bottom: 10px !important;
                 p {
                     cursor: text;
+                    margin-bottom: 5px;
                 }
 
                 ul li {
                     margin-bottom: 0px !important;
-                    margin-top: 5px;
+                    margin-top: 0px;
                 }
 
             }
@@ -3310,6 +3314,13 @@ footer {
                             width: 200px;
                         }
                     }
+                }
+                .ftCareer{
+                    margin-bottom: 20px !important;
+                }
+    
+                .quickLinksft {
+                    margin-bottom: 20px !important;
                 }
             }
         }
