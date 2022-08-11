@@ -55,7 +55,7 @@ body {
 		@media all and (max-width: 1280px){width:50%; margin-left: 80px; margin-right:10px;}
 		@media all and (max-width: 920px){width:100%; margin-left: 0px;}
 		form{display: flex; flex-wrap: wrap; justify-content: space-between;
-		input[type=text], [type=number], [type=mail], textarea {
+		input[type=text], [type=number], [type=email], textarea {
 			  width: 100%; 
 			  padding: 14px 15px;  
 			  border: 2px solid transparent;
