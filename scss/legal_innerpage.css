@@ -906,6 +906,13 @@ body {
         .contactDetails .info img {
           width: 24px; } }
 
+@media all and (max-width: 1450px) {
+  footer .footerSec .footerSub .quickLinksft {
+    margin-bottom: 15px !important; } }
+@media all and (max-width: 1050px) {
+  footer .footerSec .footerSub .quickLinksft {
+    margin-bottom: 10px !important; } }
+
 .legalAdvisory {
   margin: 150px 0px; }
   @media all and (max-width: 1400px) {

@@ -11,6 +11,7 @@ body {
     &::-webkit-scrollbar {
         display: none;
     }
+
 }
 .legalHeader{position:sticky !important;
 	@media all and (max-width: 920px){position:fixed !important;}
@@ -187,6 +188,18 @@ body {
 		@media all and (max-width: 920px){width:24px;}}
 	}
 }
+
+footer{
+    	.footerSec{
+    		.footerSub{
+    			.quickLinksft{
+    				@media all and (max-width: 1450px){margin-bottom: 15px !important;}
+    				@media all and (max-width: 1050px){margin-bottom: 10px !important;}
+    			}
+    		}
+
+    	}
+    }
 
 
 
