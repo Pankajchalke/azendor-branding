@@ -21,6 +21,8 @@ body {
     }
 }
 
+
+
 .progress-container {z-index: 11;
 	
 	@media all and (min-width: 770px){display:none}
@@ -146,3 +148,13 @@ body {
 
 }
 
+footer{
+    .footerSec{
+        .footerSub{
+            .quickLinksft{
+                @media all and (max-width: 1450px){margin-bottom: 15px !important;}
+                @media all and (max-width: 1050px){margin-bottom: 10px !important;}
+            }
+        }
+    }
+}
