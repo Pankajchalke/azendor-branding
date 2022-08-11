@@ -619,7 +619,7 @@ body {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between; }
-      .contact .contactForm form input[type=text], .contact .contactForm form [type=number], .contact .contactForm form [type=mail], .contact .contactForm form textarea {
+      .contact .contactForm form input[type=text], .contact .contactForm form [type=number], .contact .contactForm form [type=email], .contact .contactForm form textarea {
         width: 100%;
         padding: 14px 15px;
         border: 2px solid transparent;
@@ -631,24 +631,24 @@ body {
         background: rgba(215, 215, 215, 0.3);
         font-size: 20px; }
         @media all and (max-width: 1400px) {
-          .contact .contactForm form input[type=text], .contact .contactForm form [type=number], .contact .contactForm form [type=mail], .contact .contactForm form textarea {
+          .contact .contactForm form input[type=text], .contact .contactForm form [type=number], .contact .contactForm form [type=email], .contact .contactForm form textarea {
             font-size: 14px;
             margin-top: 10px;
             margin-bottom: 35px;
             padding: 10px;
             border-radius: 3.5px; } }
         @media all and (max-width: 920px) {
-          .contact .contactForm form input[type=text], .contact .contactForm form [type=number], .contact .contactForm form [type=mail], .contact .contactForm form textarea {
+          .contact .contactForm form input[type=text], .contact .contactForm form [type=number], .contact .contactForm form [type=email], .contact .contactForm form textarea {
             font-size: 16px;
             padding: 12px 15px; } }
-        .contact .contactForm form input[type=text]:focus, .contact .contactForm form [type=number]:focus, .contact .contactForm form [type=mail]:focus, .contact .contactForm form textarea:focus {
+        .contact .contactForm form input[type=text]:focus, .contact .contactForm form [type=number]:focus, .contact .contactForm form [type=email]:focus, .contact .contactForm form textarea:focus {
           background: rgba(243, 243, 243, 0.7);
           border: 2px solid #212121; }
           @media all and (max-width: 1400px) {
-            .contact .contactForm form input[type=text]:focus, .contact .contactForm form [type=number]:focus, .contact .contactForm form [type=mail]:focus, .contact .contactForm form textarea:focus {
+            .contact .contactForm form input[type=text]:focus, .contact .contactForm form [type=number]:focus, .contact .contactForm form [type=email]:focus, .contact .contactForm form textarea:focus {
               border: 1.4px solid #212121; } }
           @media all and (max-width: 920px) {
-            .contact .contactForm form input[type=text]:focus, .contact .contactForm form [type=number]:focus, .contact .contactForm form [type=mail]:focus, .contact .contactForm form textarea:focus {
+            .contact .contactForm form input[type=text]:focus, .contact .contactForm form [type=number]:focus, .contact .contactForm form [type=email]:focus, .contact .contactForm form textarea:focus {
               border: 1px solid #212121; } }
       .contact .contactForm form textarea {
         margin-bottom: 20px;
@@ -905,6 +905,13 @@ body {
       @media all and (max-width: 920px) {
         .contactDetails .info img {
           width: 24px; } }
+
+@media all and (max-width: 1450px) {
+  footer .footerSec .footerSub .quickLinksft {
+    margin-bottom: 15px !important; } }
+@media all and (max-width: 1050px) {
+  footer .footerSec .footerSub .quickLinksft {
+    margin-bottom: 10px !important; } }
 
 .legalAdvisory {
   margin: 150px 0px; }
