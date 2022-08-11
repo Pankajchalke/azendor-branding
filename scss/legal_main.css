@@ -2076,6 +2076,88 @@ section {
     letter-spacing: 0.05em;
     color: #000; }
 
+.careers {
+  margin: 150px 0px;
+  color: #212121; }
+  @media all and (max-width: 1400px) {
+    .careers {
+      margin: 100px 0px; } }
+  @media all and (max-width: 920px) {
+    .careers {
+      margin: 100px 0px 80px; } }
+  @media all and (max-width: 920px) {
+    .careers .sectionTitle {
+      display: flex;
+      align-items: flex-start;
+      padding-bottom: 20px;
+      margin-bottom: 15px;
+      border-bottom: 0.75px solid rgba(33, 33, 33, 0.6); } }
+  .careers .sectionTitle .backArrow {
+    display: none; }
+    @media all and (max-width: 920px) {
+      .careers .sectionTitle .backArrow {
+        display: block;
+        margin-top: 12.5px; } }
+    @media all and (max-width: 575px) {
+      .careers .sectionTitle .backArrow {
+        display: block;
+        margin-top: 12px; } }
+    .careers .sectionTitle .backArrow img {
+      margin-right: 30px; }
+      @media all and (max-width: 920px) {
+        .careers .sectionTitle .backArrow img {
+          margin-right: 20px;
+          width: 23px;
+          height: 12px; } }
+  .careers .sectionTitle h1 {
+    margin-bottom: 30px; }
+    @media all and (max-width: 1400px) {
+      .careers .sectionTitle h1 {
+        margin-bottom: 20px; } }
+    @media all and (max-width: 920px) {
+      .careers .sectionTitle h1 {
+        margin-bottom: 0px; } }
+  .careers .careers-content {
+    width: 80%; }
+    .careers .careers-content p {
+      margin-bottom: 30px;
+      font-style: normal;
+      line-height: 160%;
+      letter-spacing: 0.03em;
+      font-family: 'Poppins' !important; }
+      .careers .careers-content p span a {
+        font-weight: 500;
+        color: black;
+        text-decoration: none; }
+        .careers .careers-content p span a:hover {
+          color: #6A6A6A; }
+    @media all and (max-width: 1800px) {
+      .careers .careers-content {
+        width: 80%; } }
+    @media all and (max-width: 1600px) {
+      .careers .careers-content {
+        width: 80%; } }
+    @media all and (max-width: 1400px) {
+      .careers .careers-content {
+        width: 80%; }
+        .careers .careers-content p {
+          line-height: 26px; } }
+    @media all and (max-width: 1050px) {
+      .careers .careers-content {
+        width: 80%; } }
+    @media all and (max-width: 920px) {
+      .careers .careers-content {
+        width: 100%; }
+        .careers .careers-content p {
+          line-height: 24px;
+          font-size: 16px; } }
+    @media all and (max-width: 675px) {
+      .careers .careers-content {
+        width: 100%; } }
+    @media all and (max-width: 575px) {
+      .careers .careers-content {
+        width: 100%; } }
+
 .contact {
   margin: 150px 0px; }
   @media all and (max-width: 1400px) {
@@ -2144,7 +2226,8 @@ section {
           width: 100%;
           margin-top: 20px;
           margin-bottom: 45px;
-          line-height: 150%; } }
+          line-height: 150%;
+          font-size: 16px; } }
   .contact .contactForm {
     width: 50%;
     margin-left: 180px;
@@ -2167,10 +2250,7 @@ section {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between; }
-      .contact .contactForm form input[type=text],
-      .contact .contactForm form [type=number],
-      .contact .contactForm form [type=mail],
-      .contact .contactForm form textarea {
+      .contact .contactForm form input[type=text], .contact .contactForm form [type=number], .contact .contactForm form [type=mail], .contact .contactForm form textarea {
         width: 100%;
         padding: 14px 15px;
         border: 2px solid transparent;
@@ -2182,39 +2262,24 @@ section {
         background: rgba(215, 215, 215, 0.3);
         font-size: 20px; }
         @media all and (max-width: 1400px) {
-          .contact .contactForm form input[type=text],
-          .contact .contactForm form [type=number],
-          .contact .contactForm form [type=mail],
-          .contact .contactForm form textarea {
+          .contact .contactForm form input[type=text], .contact .contactForm form [type=number], .contact .contactForm form [type=mail], .contact .contactForm form textarea {
             font-size: 14px;
             margin-top: 10px;
             margin-bottom: 35px;
             padding: 10px;
             border-radius: 3.5px; } }
         @media all and (max-width: 920px) {
-          .contact .contactForm form input[type=text],
-          .contact .contactForm form [type=number],
-          .contact .contactForm form [type=mail],
-          .contact .contactForm form textarea {
+          .contact .contactForm form input[type=text], .contact .contactForm form [type=number], .contact .contactForm form [type=mail], .contact .contactForm form textarea {
             font-size: 16px;
             padding: 12px 15px; } }
-        .contact .contactForm form input[type=text]:focus,
-        .contact .contactForm form [type=number]:focus,
-        .contact .contactForm form [type=mail]:focus,
-        .contact .contactForm form textarea:focus {
+        .contact .contactForm form input[type=text]:focus, .contact .contactForm form [type=number]:focus, .contact .contactForm form [type=mail]:focus, .contact .contactForm form textarea:focus {
           background: rgba(243, 243, 243, 0.7);
           border: 2px solid #212121; }
           @media all and (max-width: 1400px) {
-            .contact .contactForm form input[type=text]:focus,
-            .contact .contactForm form [type=number]:focus,
-            .contact .contactForm form [type=mail]:focus,
-            .contact .contactForm form textarea:focus {
+            .contact .contactForm form input[type=text]:focus, .contact .contactForm form [type=number]:focus, .contact .contactForm form [type=mail]:focus, .contact .contactForm form textarea:focus {
               border: 1.4px solid #212121; } }
           @media all and (max-width: 920px) {
-            .contact .contactForm form input[type=text]:focus,
-            .contact .contactForm form [type=number]:focus,
-            .contact .contactForm form [type=mail]:focus,
-            .contact .contactForm form textarea:focus {
+            .contact .contactForm form input[type=text]:focus, .contact .contactForm form [type=number]:focus, .contact .contactForm form [type=mail]:focus, .contact .contactForm form textarea:focus {
               border: 1px solid #212121; } }
       .contact .contactForm form textarea {
         margin-bottom: 20px;
