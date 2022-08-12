@@ -369,7 +369,7 @@ if (mediaQuerythree.matches) {
   $(document).ready(function () {
     $(".contentThree").slice(0, 8).show();
     $("#loadMorethree").on("click", function (e) {
-      e.pre / ventDefault();
+      e.preventDefault();
       $(".contentThree:hidden").slice(0, 8).slideDown();
       if ($(".contentThree:hidden").length == 0) {
         $("#loadMorethree").text("No Content").addClass("noContent");
