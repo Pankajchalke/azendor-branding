@@ -673,11 +673,13 @@ body {
       .subSectors .subSectors-Cta a:hover img {
         transform: translateX(10px); }
 
-@media all and (max-width: 1450px) {
-  footer .footerSec .footerSub .quickLinksft {
-    margin-bottom: 15px !important; } }
-@media all and (max-width: 1050px) {
-  footer .footerSec .footerSub .quickLinksft {
-    margin-bottom: 10px !important; } }
+footer .footerSec .footerSub .quickLinksft {
+  margin-bottom: 13px !important; }
+  @media all and (max-width: 1450px) {
+    footer .footerSec .footerSub .quickLinksft {
+      margin-bottom: 13px !important; } }
+  @media all and (max-width: 1050px) {
+    footer .footerSec .footerSub .quickLinksft {
+      margin-bottom: 13px !important; } }
 
 /*# sourceMappingURL=legal_innerpage_two.css.map */
