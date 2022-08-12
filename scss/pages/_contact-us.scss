@@ -192,9 +192,9 @@ body {
 footer{
     	.footerSec{
     		.footerSub{
-    			.quickLinksft{
-    				@media all and (max-width: 1450px){margin-bottom: 15px !important;}
-    				@media all and (max-width: 1050px){margin-bottom: 10px !important;}
+    			.quickLinksft{margin-bottom: 13px !important;
+    				@media all and (max-width: 1450px){margin-bottom: 13px !important;}
+    				@media all and (max-width: 1050px){margin-bottom: 13px !important;}
     			}
     		}
 
