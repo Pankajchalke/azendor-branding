@@ -1175,6 +1175,14 @@ header {
         outline: none; }
         .serviceSec .serviceSlider .servicesBox .serviceList .ctaOne img {
           transition: 0.6s all; }
+          @media all and (max-width: 1400px) {
+            .serviceSec .serviceSlider .servicesBox .serviceList .ctaOne img {
+              width: 17px;
+              height: 9px; } }
+          @media all and (max-width: 920px) {
+            .serviceSec .serviceSlider .servicesBox .serviceList .ctaOne img {
+              width: 12px;
+              height: 7px; } }
         .serviceSec .serviceSlider .servicesBox .serviceList .ctaOne:hover img {
           transform: translateX(15px); }
   .serviceSec .serviceSlider .slick-dots li button::before {
