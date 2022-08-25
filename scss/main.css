@@ -4728,18 +4728,6 @@ h2 {
           height: 10px;
           transition: 0.6s all; }
 
-body {
-  overflow: visible !important;
-  background-color: white !important;
-  /* Hide scrollbar for IE, Edge and Firefox */
-  -ms-overflow-style: none;
-  /* IE and Edge */
-  scrollbar-width: none;
-  /* Firefox */
-  /* Hide scrollbar for Chrome, Safari and Opera */ }
-  body::-webkit-scrollbar {
-    display: none; }
-
 .legalHeader {
   position: sticky !important; }
   @media all and (max-width: 920px) {
@@ -5953,18 +5941,6 @@ footer .footerSec .footerSub .quickLinksft {
     @media all and (max-width: 575px) {
       .careers .careers-content {
         width: 100%; } }
-
-body {
-  overflow: visible !important;
-  background-color: white !important;
-  /* Hide scrollbar for IE, Edge and Firefox */
-  -ms-overflow-style: none;
-  /* IE and Edge */
-  scrollbar-width: none;
-  /* Firefox */
-  /* Hide scrollbar for Chrome, Safari and Opera */ }
-  body::-webkit-scrollbar {
-    display: none; }
 
 .legalHeader {
   position: sticky !important; }
