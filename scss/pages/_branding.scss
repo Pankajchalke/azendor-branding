@@ -35,7 +35,7 @@ h2 {
 }
 
 
-header {
+.headerBranding {
     position: fixed;
     top: 0;
     width: 100%;
@@ -45,7 +45,8 @@ header {
     background: #212121;
 
     @media (max-width: 920px) {
-        padding: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
         border-bottom: 1px solid #6A6A6A;
     }
 
@@ -2520,7 +2521,7 @@ header {
     }
 }
 
-footer {
+.footerBranding {
     margin-top: -125px;
     margin-bottom: 0px !important;
 
@@ -2571,75 +2572,82 @@ footer {
     }
 }
 
-
-#myBtn {
-    box-sizing: border-box;
-    position: fixed;
-    width: 40px;
-    height: 40px;
-    left: auto;
-    right: 20px;
-    bottom: 20px;
-    background: #252525;
-    border: 1px solid rgba(28, 28, 28, 0.7);
-    border-radius: 5px;
-    z-index: 99;
-    text-align: center;
-
-    img{
-        position: relative;
-        top: 25%;
-    }
-
-    @media all and (min-width: 770px) {
-        display: none !important;
-    }
-}
-
-.scroll-text {
-    position: fixed;
-    width: 39px;
-    height: 13px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    bottom: 60px;
-
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 130.9%;
-
-
-    letter-spacing: 0.05em;
-    font-feature-settings: 'liga' off;
-
-    color: #FFFFFF;
-    z-index: 11;
-
-    @media all and (min-width: 770px) {
-        display: none !important;
+.topbtnBrand{
+    #myBtn {
+        box-sizing: border-box;
+        position: fixed;
+        width: 40px;
+        height: 40px;
+        left: auto;
+        right: 20px;
+        bottom: 20px;
+        background: #252525;
+        border: 1px solid rgba(28, 28, 28, 0.7);
+        border-radius: 5px;
+        z-index: 99;
+        text-align: center;
+    
+        img{
+            position: relative;
+            top: 25%;
+        }
+    
+        @media all and (min-width: 770px) {
+            display: none !important;
+        }
     }
 }
 
 
-.scroll-symbol {
-    position: fixed;
-    width: 18.62px;
-    height: 0px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    bottom: 45px;
-    border: 1px solid #e2e2e2;
-    transform: rotate(90deg);
-    z-index: 11;
 
-    @media all and (min-width: 770px) {
-        display: none !important;
+.brandingScrolltxt{
+    .scroll-text {
+        position: fixed;
+        width: 39px;
+        height: 13px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        bottom: 60px;
+    
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 130.9%;
+    
+    
+        letter-spacing: 0.05em;
+        font-feature-settings: 'liga' off;
+    
+        color: #FFFFFF;
+        z-index: 11;
+    
+        @media all and (min-width: 770px) {
+            display: none !important;
+        }
     }
-}
+    
+    
+    .scroll-symbol {
+        position: fixed;
+        width: 18.62px;
+        height: 0px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        bottom: 45px;
+        border: 1px solid #e2e2e2;
+        transform: rotate(90deg);
+        z-index: 11;
+    
+        @media all and (min-width: 770px) {
+            display: none !important;
+        }
+    }
+}   
+
+
 
 
 .progress-container-mobile .progress-bar-mobile {

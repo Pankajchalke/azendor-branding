@@ -14,13 +14,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Roboto:wght@400;500;700&display=swap"
         rel="stylesheet">
-    <link href="scss/legal_main.css" rel="stylesheet">
-    <link href="scss/legal_innerpage.css" rel="stylesheet">
+    <link href="scss/main.css" rel="stylesheet">
 
 </head>
 
-<body style="background-color: #ffffff !important;">
-    <header class="wrapper legalHeader" id="header">
+<body style="overflow: visible !important;">
+    <header class="wrapper headerLegal legalHeader" id="header">
         <div class="header-container">
             <a href="legal.html" class="logo">
                 <img src="images/legal-logo.png" alt="Legal Header Logo" title="Legal Header Logo" />
@@ -83,7 +82,7 @@
                             </div>
                         </li>
 
-                        
+
                         <li onclick="hideSidebar()" class="fontPoppins font18 colorBlack fontW400">
                             <a class="menu-link careerHeader"
                                 href="https://ixdtm.com/projects/azendor_branding/careers.html">Careers</a>
@@ -158,7 +157,7 @@
                     </div>
                 </li>
 
-                
+
                 <li class="fontPoppins font18 colorBlack fontW400">
                     <a class="menu-link careerHeader"
                         href="https://ixdtm.com/projects/azendor_branding/careers.html">Careers</a>
@@ -183,10 +182,19 @@
         </div>
 
         <!-- progress bar for mobile -->
-        <div class="progress-container-mobile">
-            <div class="progress-bar-mobile"></div>
+        <div class="mblprogressLegal">
+            <div class="progress-container-mobile">
+                <div class="progress-bar-mobile"></div>
+            </div>
         </div>
+       
     </header>
+
+    <div class="progresssubpagedesk">
+        <div class="progress-container">
+            <div id="progressbar" class="progress-bar"></div>
+        </div>
+    </div>
 
 <section class="digitalTransformationSubPages">
     <div class="wrapper">
@@ -203,7 +211,8 @@
         </div>
     </div>
 </section>
-<footer>
+
+<footer class="footerLegal">
     <div class="wrapper">
         <div class="footerSec">
             <div class="footerSub">
@@ -331,28 +340,6 @@
 <script src="js/jquery-3.3.1.min.js"></script> 
 <script src="js/plugins.js"></script>
 <script src="js/custom.js"></script>
-<script>
-// legal Header Dropdown
-
-
-if ( $(window).width() <= 920 ) {
-  // Print a message to the console
-  $(document).ready(function () {
-    $(".dropdownSolution").click(function () {
-      $(".submenuSolution").toggleClass("open");
-      $(".downcaretsolution").toggleClass("open-caret");
-    });
-    $(".dropdownSector").click(function () {
-      $(".submenuSector").toggleClass("open");
-      $(".downcaretsector").toggleClass("open-caret");
-    });
-    $(".dropdownAbout").click(function () {
-      $(".submenuAbout").toggleClass("open");
-      $(".downcaretabout").toggleClass("open-caret");
-    });
-  });
-} 
-</script>
    
 </body>
 

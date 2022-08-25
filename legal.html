@@ -14,26 +14,26 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Roboto:wght@400;500;700&display=swap"
         rel="stylesheet" />
-    <link href="scss/vendor/slick.css" rel="stylesheet" />
-    <link href="scss/vendor/slick-theme.css" rel="stylesheet" />
-    <link href="scss/vendor/slider.css" rel="stylesheet" />
-    <link href="scss/legal_main.css" rel="stylesheet" />
-   
+
+        <link href="scss/main.css" rel="stylesheet">
+
 </head>
 
-<body style="background-color: #ffffff !important">
+<body style="overflow: visible !important;">
     <!-- scroll text -->
 
 
     <!-- ScrollTop button for mobile view -->
-    <a href="#top">
-        <div id="myBtn" class="topSec">
-            <img src="images/legal/legal-top-arrow.svg" alt="Top arrow" title="Top arrow" />
-        </div>
-    </a>
+    <div class="topbtnLeagl">
+        <a href="#top">
+            <div id="myBtn" class="topSec">
+                <img src="images/legal/legal-top-arrow.svg" alt="Top arrow" title="Top arrow" />
+            </div>
+        </a>
+    </div>
 
 
-    <header class="wrapper" id="header">
+    <header class="wrapper headerLegal" id="header">
         <div class="header-container">
             <a href="legal.html" class="logo">
                 <img src="images/legal-logo.png" alt="Legal Header Logo" title="Legal Header Logo" />
@@ -196,20 +196,28 @@
         </div>
 
         <!-- progress bar for mobile -->
-        <div class="progress-container-mobile">
-            <div class="progress-bar-mobile"></div>
+        <div class="mblprogressLegal">
+            <div class="progress-container-mobile">
+                <div class="progress-bar-mobile"></div>
+            </div>
         </div>
+       
     </header>
 
-    <div class="progress-container">
-        <div id="progressbar" class="progress-bar"></div>
+    <div class="progressbarLegaldesk">
+        <div class="progress-container">
+            <div id="progressbar" class="progress-bar"></div>
+        </div>
     </div>
+    
 
-    <section class="bannerSec" id="topSec">
-        <div class="scroll-text" id="scroll-text">SCROLL</div>
+    <section class="bannerSeclegal sectionsLegal" id="topSec">
+        <div class="scrolltextLegal">
+            <div class="scroll-text" id="scroll-text">SCROLL</div>
 
         <!-- progress bar for mobile -->
-        <div class="scroll-symbol" id="scroll-symbol"></div>
+            <div class="scroll-symbol" id="scroll-symbol"></div>
+        </div>
         <div class="wrapper">
             <h1 class="fontRoboto fontW700 font115 colorBlack">
                 Legal solutions for media & entertainment businesses.
@@ -227,7 +235,7 @@
         </div>
     </section>
 
-    <section class="solutionSec">
+    <section class="solutionSec sectionsLegal">
         <div class="wrapper">
             <h2 class="fontRoboto font64 fontW700 colorBlack">Solutions</h2>
             <div class="solutionSlider">
@@ -297,7 +305,7 @@
         </div>
     </section>
 
-    <section class="sectors">
+    <section class="sectors sectionsLegal">
         <div class="wrapper">
             <div class="sectorsDesktop">
                 <h2 class="fontRoboto font64 fontW700 colorBlack">Sectors</h2>
@@ -524,7 +532,7 @@
         </div>
     </section>
 
-    <section class="advantageSec">
+    <section class="advantageSec sectionsLegal">
         <div class="wrapper">
             <h2 class="fontRoboto font64 fontW700 colorBlack">Advantage Azendor</h2>
             <div class="advantageSlider">
@@ -583,7 +591,7 @@
         </div>
     </section>
 
-    <section class="testlegalSec">
+    <section class="testlegalSec sectionsLegal">
         <div class="wrapper">
             <h2 class="fontRoboto font64 fontW700 colorBlack">Testimonials</h2>
             <div class="testlegalSlider">
@@ -787,7 +795,7 @@
         </div>
     </section>
 
-    <section class="clientlogoSec">
+    <section class="clientlogoSec sectionsLegal">
         <div class="wrapper">
             <div class="logosSlider">
                 <div class="logosBox">
@@ -830,14 +838,17 @@
         </div>
     </section>
 
-    <section class="contact">
+    <section class="contact sectionsLegal">
         <div class="contactBox wrapper">
             <div class="contactDesc">
                 <div class="contactDescTitle">
-                    <a class="backArrow" onclick="history.back(-1)" ><img src="images/legal/back-arrow.svg" alt="Back Arrow"></a><h1 class="fontRoboto font64 fontW700 colorBlack">For Initial Consultation</h1>
+                    <a class="backArrow" onclick="history.back(-1)"><img src="images/legal/back-arrow.svg"
+                            alt="Back Arrow"></a>
+                    <h1 class="fontRoboto font64 fontW700 colorBlack">For Initial Consultation</h1>
                 </div>
-                <p class="fontPoppins fontW400 font22 colorBlack">Tell us about your query. A member of our team will be in touch with you shortly for an initial consultation. </p>
-            </div> 
+                <p class="fontPoppins fontW400 font22 colorBlack">Tell us about your query. A member of our team will be
+                    in touch with you shortly for an initial consultation. </p>
+            </div>
             <div class="contactForm">
                 <form>
                     <div class="formDivider">
@@ -850,34 +861,39 @@
                     </div>
                     <div class="formDividerOne">
                         <label for="contact" class="fontPoppins fontW400 colorBlack">Phone Number*</label>
-                        <input class="fontPoppins fontW400" type="text" id="contact" name="contactnumber" placeholder="+911234567890">
+                        <input class="fontPoppins fontW400" type="text" id="contact" name="contactnumber"
+                            placeholder="+911234567890">
                     </div>
                     <div class="formDividerOne">
                         <label for="email" class="fontPoppins fontW400 colorBlack">Email*</label>
-                        <input class="fontPoppins fontW400" type="email" id="email" name="email" placeholder="JhonDoe@Gmail.com">
+                        <input class="fontPoppins fontW400" type="email" id="email" name="email"
+                            placeholder="JhonDoe@Gmail.com">
                     </div>
-                    
+
                     <div class="aboutQuery">
                         <label for="subject" class="fontPoppins fontW400 colorBlack">Tell Us About Query* </label>
-                        <textarea class="fontPoppins fontW400" id="subject" name="subject" placeholder="I Would Like To Ask"></textarea>
+                        <textarea class="fontPoppins fontW400" id="subject" name="subject"
+                            placeholder="I Would Like To Ask"></textarea>
                     </div>
                     <div class="submit">
-                        <p class="fontPoppins fontW400 colorBlack">By submitting this form, you agree to receive e-mails / calls from Azendor Legal team member.<br> See our <a href="#" class=" fontW700 colorBlack">Privacy Policy.</a></p>
+                        <p class="fontPoppins fontW400 colorBlack">By submitting this form, you agree to receive e-mails
+                            / calls from Azendor Legal team member.<br> See our <a href="#"
+                                class=" fontW700 colorBlack">Privacy Policy.</a></p>
                         <input class="fontPoppins fontW400 colorW" type="submit" value="Submit">
                     </div>
                 </form>
-            </div> 
+            </div>
         </div>
     </section>
-    <section class="contactDetails">
+    <section class="contactDetails sectionsLegal">
         <div class="wrapper">
             <div class="contactDetailsBox">
                 <div class="address">
                     <div class="addTitle">
-                       <img src="images/legal-location.svg" alt="Legal Location"> 
-                       <p class="fontPoppins fontW400 font22 colordarkGray">Address</p>
+                        <img src="images/legal-location.svg" alt="Legal Location">
+                        <p class="fontPoppins fontW400 font22 colordarkGray">Address</p>
                     </div>
-                    
+
                     <div class="addressBox">
                         <div class="addressBoxDetails">
                             <h4 class="fontPoppins fontW700 font20 colorBlack">Mumbai</h4>
@@ -905,15 +921,19 @@
                         <p class="fontPoppins fontW400 font22 colordarkGray">Contact Us</p>
                     </div>
                     <div class="contactRightDetails">
-                        <p><a href="mailto:sourabh.mishra@azendor.com" class="fontPoppins fontW400 font20 colorBlack">legal@azendor.com</a></p>
-                        <p><a class="fontPoppins fontW400 font22 colorBlack" href="tel:919820607601">+91 98206 07601</a></p>
+                        <p><a href="mailto:sourabh.mishra@azendor.com"
+                                class="fontPoppins fontW400 font20 colorBlack">legal@azendor.com</a></p>
+                        <p><a class="fontPoppins fontW400 font22 colorBlack" href="tel:919820607601">+91 98206 07601</a>
+                        </p>
                     </div>
                 </div>
             </div>
-            <p class="info fontPoppins fontW400 font16 colorBlack"><img src="images/info.svg" alt="Info">Covid-19 pandemic has compelled us to deliver legal services online. If you wish to meet with us in person, you are welcome to visit any of our offices with prior appointment.</p>
+            <p class="info fontPoppins fontW400 font16 colorBlack"><img src="images/info.svg" alt="Info">Covid-19
+                pandemic has compelled us to deliver legal services online. If you wish to meet with us in person, you
+                are welcome to visit any of our offices with prior appointment.</p>
         </div>
     </section>
-    <footer>
+    <footer class="footerLegal">
         <div class="wrapper">
             <div class="footerSec">
                 <div class="footerSub">
@@ -1045,7 +1065,7 @@
     <script src="js/custom.js"></script>
 
     <div class="modal" id="readMore" role="dialog" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog3 modal-dialog-centered modal-lg" role="document">
+        <div class="modal-dialog-legal modal-dialog-centered modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-body">
                     <button type="button" class="close" data-dismiss="modal">
@@ -1053,7 +1073,7 @@
                     </button>
                     <div class="teamBox">
                         <div class="memberImg">
-                            <img src="images/legal/test-icon.svg" alt=""/>
+                            <img src="images/legal/test-icon.svg" alt="" />
                         </div>
                         <div class="teamDesc">
                             <h3 class="fontRoboto fontW500 colorW">Pearl Shah</h3>

@@ -659,3 +659,18 @@ window.onscroll = function () {
 };
 
 
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("readMore");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more <img src=images/legal/solution-arrow.svg>"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less <img src=images/legal/solution-arrow.svg>"; 
+    moreText.style.display = "inline";
+  }
+}

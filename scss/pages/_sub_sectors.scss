@@ -1,6 +1,5 @@
 body {
-    overflow: visible !important;
-    background-color: white !important;
+    overflow: visible !important;background-color: white !important;
     /* Hide scrollbar for IE, Edge and Firefox */
     -ms-overflow-style: none;
     /* IE and Edge */
@@ -22,22 +21,24 @@ body {
 }
 
 
-
-.progress-container {z-index: 11;
+.progresssubpagedesk{
+    .progress-container {z-index: 11;
 	
-	@media all and (min-width: 770px){display:none}
-	.progress-bar{
-		&:after{
-		font-family: 'Poppins';
-	    font-style: normal;
-	    font-weight: 400;
-	    font-size: 14px;
-	    line-height: 130.9%;
-	    letter-spacing: 0.05em;
-	    color: #000;
-		}
-	}
+        @media all and (min-width: 770px){display:none}
+        .progress-bar{
+            &:after{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 130.9%;
+            letter-spacing: 0.05em;
+            color: #000;
+            }
+        }
+    }
 }
+
 
 
 

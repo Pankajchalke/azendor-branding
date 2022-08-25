@@ -1,13 +1,7 @@
-body {
-    background-color: #fff !important;
-}
 
-progress {
-    position: fixed;
-    top: 15px;
-}
 
-header {
+
+.headerLegal {
     position: fixed;
     top: 0;
     width: 100%;
@@ -15,15 +9,12 @@ header {
     z-index: 100;
     display: block;
     background-color: #fff;
-
-
     @media (max-width: 760px) {
         border-bottom: 2px solid rgba(106, 106, 106, 0.5);
     }
 
     #sidebarContainer {
         display: none;
-
         @media (max-width:920px) {
             display: block;
         }
@@ -57,23 +48,16 @@ header {
                 background-color: #fff;
                 height: 100%;
                 overflow: scroll;
-
-
-
-
                 li {
                     list-style: none;
                     padding: 20px 0px;
                     cursor: pointer;
                     color: #212121;
-
-
                     .dropdownSolution,
                     .dropdownSector,
                     .dropdownAbout {
                         position: relative;
                         display: inline-block;
-
                         .drop {
                             color: #212121;
                             border-radius: 6px;
@@ -90,19 +74,13 @@ header {
                                 overflow-y: scroll;
                                 scrollbar-width: auto;
                                 scrollbar-color: #767676;
-
-
                                 /* Chrome, Edge, and Safari */
                                 &::-webkit-scrollbar {
                                     width: 6px;
                                 }
-
-
-
                                 &::-webkit-scrollbar-track {
                                     background: #e4e4e4;
                                 }
-
                                 &::-webkit-scrollbar-thumb {
                                     background-color: #767676;
                                     border-radius: 15px;
@@ -119,9 +97,6 @@ header {
                             display: none;
                             padding: 0px 0px 0px 15px;
                             border: transparent;
-
-
-
                             &.open {
                                 padding: 0px 0px 0px 15px;
                                 display: block;
@@ -135,9 +110,6 @@ header {
                                 li {
                                     padding: 10px 0px !important;
                                 }
-
-
-
                                 /* Chrome, Edge, and Safari */
                             }
 
@@ -265,13 +237,9 @@ header {
             right: 0px;
             height: 24px;
             width: 24px;
-
-
-
             @media (max-width:770px) {
                 top: 29px;
             }
-
             @media (max-width:390px) {
                 top: 25px;
             }
@@ -341,19 +309,12 @@ header {
         .dropdownAbout {
             position: relative;
             display: inline-block;
-
-
-
-
             .drop {
                 color: #000;
                 border-radius: 6px;
                 position: relative;
                 display: inline-block;
             }
-
-
-
             .submenuSolution,
             .submenuSector,
             .submenuAbout {
@@ -383,7 +344,6 @@ header {
                 }
             }
 
-
             .downcaretsolution,
             .downcaretsector,
             .downcaretabout {
@@ -398,7 +358,6 @@ header {
                 transition: all .25s ease;
                 background-size: 9px;
             }
-
 
             &:hover {
 
@@ -416,33 +375,22 @@ header {
                     @media (max-width: 1400px) {
                         max-height: 144px;
                     }
-
-
                     overflow-y: scroll;
                     scrollbar-width: auto;
                     scrollbar-color: #767676;
-
-
                     /* Chrome, Edge, and Safari */
                     &::-webkit-scrollbar {
                         width: 6px;
                     }
-
-
-
                     &::-webkit-scrollbar-track {
                         background: #e4e4e4;
                     }
-
                     &::-webkit-scrollbar-thumb {
                         background-color: #767676;
                         border-radius: 15px;
                         border: 6px solid #767676;
                     }
-
                 }
-
-
 
                 .submenuSolution,
                 .submenuSector,
@@ -489,11 +437,6 @@ header {
             }
         }
 
-
-
-
-
-
         p {
             color: #212121;
             text-decoration: none;
@@ -518,11 +461,9 @@ header {
     }
 
     .careerHeader {
-
         color: #212121;
         text-decoration: none;
         outline: none;
-
         &:hover,
         &:focus,
         &:active {
@@ -588,13 +529,7 @@ header {
             }
         }
 
-
     }
-
-
-
-
-
 
     .header-container {
         display: flex;
@@ -609,8 +544,6 @@ header {
         @media (max-width: 1400px) {
             padding-top: 30px;
         }
-        
-
         @media (max-width: 920px) {
             display: block;
             position: relative;
@@ -815,10 +748,6 @@ header {
                     position: relative;
                     color: #fff !important;
                     transition: all 0.35s ease;
-
-
-
-
                     &:after {
                         position: absolute;
                         content: "";
@@ -831,9 +760,6 @@ header {
                         background: #fff;
                     }
                 }
-
-
-
                 &:before {
                     background: transparent;
                     border: none;
@@ -842,72 +768,71 @@ header {
                 @media (max-width: 1600px) {
                     padding: 8px 15px;
                 }
-
-
             }
 
         }
     }
 }
 
-.progress-container {
-    position: fixed;
-    right: 30px;
-    top: 50%;
-    width: 1px;
-    height: 100px;
-    //background: #6A6A6A;
-    border-radius: 2px;
-    margin: auto;
-    border: 1px solid rgba(33, 33, 33, 0.5);
-    z-index: 999;
 
-    @media (max-width:770px) {
-        display: none !important;
-    }
-
-    .progress-bar {
-        position: relative;
+.progressbarLegaldesk{
+    .progress-container {
+        position: fixed;
+        right: 30px;
+        top: 50%;
         width: 1px;
-        background: #000;
+        height: 100px;
+        //background: #6A6A6A;
         border-radius: 2px;
-
-
-        &:before {
-            position: absolute;
-            content: "";
-            right: 0;
-            bottom: 0px;
-            left: -6px;
-            width: 12px;
-            height: 12px;
-            //height: 1%;
+        margin: auto;
+        border: 1px solid rgba(33, 33, 33, 0.5);
+        z-index: 999;
+        @media (max-width:770px) {
+            display: none !important;
+        }
+    
+        .progress-bar {
+            position: relative;
+            width: 1px;
             background: #000;
-            border-radius: 50%;
+            border-radius: 2px;
+            &:before {
+                position: absolute;
+                content: "";
+                right: 0;
+                bottom: 0px;
+                left: -6px;
+                width: 12px;
+                height: 12px;
+                //height: 1%;
+                background: #000;
+                border-radius: 50%;
+            }
+    
+            &::after {
+                position: absolute;
+                content: "SCROLL";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 130.9%;
+                letter-spacing: 0.05em;
+                color: #000;
+                font-family: 'Poppins', sans-serif;
+                right: 0;
+                left: -10px;
+                top: -20px;
+                padding-bottom: 10px !important;
+                transform: rotate(270deg);
+                transform-origin: left top 0;
+            }
+    
         }
-
-        &::after {
-            position: absolute;
-            content: "SCROLL";
-            font-style: normal;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 130.9%;
-            letter-spacing: 0.05em;
-            color: #000;
-            font-family: 'Poppins', sans-serif;
-            right: 0;
-            left: -10px;
-            top: -20px;
-            padding-bottom: 10px !important;
-            transform: rotate(270deg);
-            transform-origin: left top 0;
-        }
-
     }
 }
 
-.modal.in .modal-dialog3 {
+
+.modal.in .modal-dialog-legal{
     transform: translate(0px, 100px);
     width: 80%;
     margin: -3% auto 0;
@@ -917,8 +842,6 @@ header {
         padding: 25px 20px 20px;
         border: none;
         border-radius: 10px 10px 10px 10px;
-
-
 
         .close {
             margin-top: -15px;
@@ -931,7 +854,6 @@ header {
                 height: 14px;
             }
         }
-
 
         .modal-body {
             padding: 0px;
@@ -977,10 +899,6 @@ header {
             border-top: none;
         }
     }
-
-
-
-
 
     @media all and (max-width: 575px) {
         width: 100%;
@@ -1036,7 +954,7 @@ header {
     }
 }
 
-section {
+.sectionsLegal {
     margin-top: 150px;
 
     a:focus {
@@ -1057,7 +975,7 @@ section {
     }
 }
 
-.bannerSec {
+.bannerSeclegal {
     margin: 250px 0px 150px 0px;
 
     h1 {
@@ -1099,7 +1017,6 @@ section {
             }
         }
     }
-
 
     @media all and (max-width: 1850px) {
         h5 {
@@ -1260,8 +1177,6 @@ section {
                 width: 24% !important;
                 margin: 0px 15px;
 
-
-
                 .solutionContent {
                     border-top: 1px solid #000;
 
@@ -1270,10 +1185,6 @@ section {
                         color: #212121;
                         display: flex;
                         align-items: center;
-
-
-
-
                         img {
                             margin-top: 1px;
                             transition: 0.6s all;
@@ -1281,7 +1192,6 @@ section {
                             height: 11px;
                             margin-left: 5px;
                         }
-
                         &:hover {
                             img {
                                 transform: translateX(10px);
@@ -1300,11 +1210,8 @@ section {
                     padding-bottom: 20px;
                     line-height: 35px;
                 }
-
-
             }
         }
-
 
         .slick-dots li {
             margin: 0px 10px;
@@ -1351,14 +1258,11 @@ section {
                 .iconImg {
                     width: 40px;
                 }
-
                 h3,
                 p {
                     padding: 14px 0px 15px 0px;
                     line-height: 30px;
                 }
-
-
             }
         }
     }
@@ -1369,20 +1273,15 @@ section {
         .solutionSlider .slick-track {
             .solutionBox {
                 padding: 28px 17px 25px 28px;
-
-
                 h3,
                 p {
                     line-height: 25px;
                     padding: 14px 0px 9px 0px;
                 }
-
                 .solutionContent a img {
                     width: 16px;
                     height: 8px;
                 }
-
-
             }
         }
     }
@@ -1472,17 +1371,14 @@ section {
     p {
         padding: 30px 0px 20px 0px;
     }
-
     .sectorsMobile {
         display: none;
     }
-
     .sectorsliderDesktop,
     .sectorsliderMobile {
         .slick-track {
             margin-left: -14px;
         }
-
         .sectorBox {
 
             .sectorContent {
@@ -1720,7 +1616,6 @@ section {
     }
 
     @media all and (max-width: 1200px) {
-
         p {
             padding: 15px 0px 10px;
         }
@@ -1777,7 +1672,6 @@ section {
     }
 
     @media all and (max-width: 480px) {
-
         .sectorsliderDesktop .sectorBox,
         .sectorsliderMobile .sectorBox {
             .sectorContent {
@@ -1823,10 +1717,6 @@ section {
                 padding: 40px 20px 40px 34px;
                 width: 24% !important;
                 margin: 0px 15px;
-
-
-
-
                 .advantageContent {
                     border-top: 1px solid #000;
                 }
@@ -1846,11 +1736,6 @@ section {
 
             }
         }
-
-
-
-
-
         .slick-dots li {
             margin: 0px 10px;
 
@@ -2022,9 +1907,6 @@ section {
             margin-bottom: 30px;
         }
     }
-
-
-
     .testlegalSlider {
         .slick-slide {
             margin: 0 26px;
@@ -2050,9 +1932,6 @@ section {
                 }
             }
         }
-
-
-
         .slick-prev,
         .slick-next {
             top: 100%;
@@ -2293,8 +2172,6 @@ section {
                     }
                 }
 
-
-
                 .profileInfo {
                     margin-top: 35px;
 
@@ -2442,8 +2319,6 @@ section {
                 @media (max-width: 920px) {
                     display: block;
                 }
-
-
             }
 
         }
@@ -2514,11 +2389,9 @@ section {
 
 .legalInnerPageProgress {
     z-index: 11;
-
     @media screen and (max-width: 1024px) and (min-height: 1366px) {
         display: none;
     }
-
     //@media all and (max-width: 920px){display:block !important;}
     .progress-bar {
         &:after {
@@ -2536,11 +2409,8 @@ section {
 .careers {
   margin: 150px 0px;
     color: #212121;
-
     @media all and (max-width: 1400px){margin:100px 0px;}
 	@media all and (max-width: 920px){margin:100px 0px 80px;}
-
-    
 
  .sectionTitle{
 		@media all and (max-width: 920px){display: flex;align-items: flex-start;padding-bottom: 20px;margin-bottom: 15px; border-bottom: 0.75px solid rgba(33, 33, 33, 0.6);}
@@ -2627,6 +2497,7 @@ section {
         
     }
 }
+
 .contact{
 	margin:150px 0px;
 	@media all and (max-width: 1400px){margin:100px 0px;}
@@ -2799,11 +2670,7 @@ section {
 	}
 }
 
-
-
-
-
-footer {
+.footerLegal {
     position: relative;
     bottom: 0;
     background-color: #252525;
@@ -2876,8 +2743,6 @@ footer {
             }
 
             .subSector {
-
-
                 .sectorftSub {
                     width: 100%;
 
@@ -2982,8 +2847,6 @@ footer {
             }
         }
     }
-
-
     @media all and (max-width: 1800px) {
         .footerSec {
             .footerSub {
@@ -2991,7 +2854,6 @@ footer {
             }
         }
     }
-
     @media all and (max-width: 1650px) {
         .footerSec {
             padding: 60px 0px 0px 0px;
@@ -3222,118 +3084,116 @@ footer {
     }
 }
 
-
-
-#myBtn {
-    box-sizing: border-box;
-    position: fixed;
-    width: 40px;
-    height: 40px;
-    left: auto;
-    right: 20px;
-    bottom: 20px;
-    background: #FAFAFA;
-    filter: drop-shadow(5px 5px 15px rgba(33, 33, 33, 0.15));
-    border: 1px solid #FAFAFA;
-    border-radius: 5px;
-    z-index: 2;
-    transition: all .2s;
-
-    img{
-        position: relative;
-        top: 25%;
-        right: -34%;
-    }
-
-
-    @media all and (min-width: 770px) {
-        display: none !important;
+.topbtnLeagl{
+    #myBtn {
+        box-sizing: border-box;
+        position: fixed;
+        width: 40px;
+        height: 40px;
+        left: auto;
+        right: 20px;
+        bottom: 20px;
+        background: #FAFAFA;
+        filter: drop-shadow(5px 5px 15px rgba(33, 33, 33, 0.15));
+        border: 1px solid #FAFAFA;
+        border-radius: 5px;
+        z-index: 2;
+        transition: all .2s;
+    
+        img{
+            position: relative;
+            top: 25%;
+            right: -34%;
+        }
+        @media all and (min-width: 770px) {
+            display: none !important;
+        }
     }
 }
 
-
-
-
-.scroll-text {
-    position: absolute;
-    width: 39px;
-    height: 13px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    bottom: -60px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 130.9%;
-    letter-spacing: 0.05em;
-    font-feature-settings: 'liga' off;
-    color: #212121;
-    z-index: 11;
-
-    @media all and (min-width: 770px) {
-        display: none !important;
-    }
-}
-
-
-.scroll-symbol {
-    position: absolute;
-    width: 1px;
-    height: 24px;
-    left: 0;
-    right: 0;
-    bottom: -104px;
-    border-radius: 2px;
-    margin: auto;
-    border: 1px solid rgba(33, 33, 33, 0.5);
-    z-index: 11;
-
-    &:before {
+.scrolltextLegal{
+    .scroll-text {
         position: absolute;
-        content: "";
+        width: 39px;
+        height: 13px;
+        left: 0;
         right: 0;
-        bottom: 26px;
-        left: -5px;
-        width: 9px;
-        height: 9px;
-        //height: 1%;
-        background: #000;
-        border-radius: 50%;
+        margin: 0 auto;
+        bottom: -60px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 130.9%;
+        letter-spacing: 0.05em;
+        font-feature-settings: 'liga' off;
+        color: #212121;
+        z-index: 11;
+    
+        @media all and (min-width: 770px) {
+            display: none !important;
+        }
     }
-
-    &::after {
+    
+    .scroll-symbol {
         position: absolute;
-        content: "";
-        width: 0px;
-        height: 8px;
-        left: -1px;
+        width: 1px;
+        height: 24px;
+        left: 0;
         right: 0;
-        bottom: 19px;
+        bottom: -104px;
         border-radius: 2px;
         margin: auto;
         border: 1px solid rgba(33, 33, 33, 0.5);
-        background: #000;
-    }
-
-    @media all and (min-width: 770px) {
-        display: none !important;
+        z-index: 11;
+    
+        &:before {
+            position: absolute;
+            content: "";
+            right: 0;
+            bottom: 26px;
+            left: -5px;
+            width: 9px;
+            height: 9px;
+            //height: 1%;
+            background: #000;
+            border-radius: 50%;
+        }
+    
+        &::after {
+            position: absolute;
+            content: "";
+            width: 0px;
+            height: 8px;
+            left: -1px;
+            right: 0;
+            bottom: 19px;
+            border-radius: 2px;
+            margin: auto;
+            border: 1px solid rgba(33, 33, 33, 0.5);
+            background: #000;
+        }
+    
+        @media all and (min-width: 770px) {
+            display: none !important;
+        }
     }
 }
 
-.progress-container-mobile .progress-bar-mobile {
-    position: fixed;
-    height: 0px;
-    background: #000;
-    z-index: -1;
-    left: 0;
-    border: 2px solid #212121;
-    border-radius: 0px 10px 10px 0px;
-    margin-top: -1px;
-
-
-    @media all and (min-width: 770px) {
-        display: none !important;
+.mblprogressLegal{
+    .progress-container-mobile .progress-bar-mobile {
+        position: fixed;
+        height: 0px;
+        background: #000;
+        z-index: -1;
+        left: 0;
+        border: 2px solid #212121;
+        border-radius: 0px 10px 10px 0px;
+        margin-top: -1px;
+    
+    
+        @media all and (min-width: 770px) {
+            display: none !important;
+        }
     }
 }
