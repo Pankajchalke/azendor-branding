@@ -1,0 +1,162 @@
+body {
+    overflow: visible !important;background-color: white !important;
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.legalHeader {
+    position: sticky !important;
+
+    @media all and (max-width: 920px) {
+        position: fixed !important;
+    }
+}
+
+
+.progresssubpagedesk{
+    .progress-container {z-index: 11;
+	
+        @media all and (min-width: 770px){display:none}
+        .progress-bar{
+            &:after{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 130.9%;
+            letter-spacing: 0.05em;
+            color: #000;
+            }
+        }
+    }
+}
+
+
+
+
+.subSectors {
+    margin: 150px 0px;
+
+   
+    @media all and (max-width: 1400px){margin:100px 0px;}
+	@media all and (max-width: 920px){margin:100px 0px 80px;}
+
+    .sectionTitle{
+		@media all and (max-width: 920px){display: flex;align-items: flex-start;padding-bottom: 20px;margin-bottom: 15px; border-bottom: 0.75px solid rgba(33, 33, 33, 0.6);}
+		.backArrow{display:none;
+			@media all and (max-width: 920px){display:block;margin-top: 12.5px;}
+			@media all and (max-width: 575px){display:block;margin-top: 12px;}
+			img{margin-right:30px;
+				@media all and (max-width: 920px){margin-right:20px; width: 23px;height: 12px;}
+				}
+		}
+		h1{margin-bottom:30px;
+			@media all and (max-width: 1400px){margin-bottom:20px;}
+			@media all and (max-width: 920px){margin-bottom:0px;}
+			}
+	}
+
+    .subSectors-content {
+        width: 80%;
+        margin-left: 22px;
+        li {
+            margin-bottom: 20px;
+            line-height: 35px;
+            font-family: 'Poppins' !important;
+        }
+
+
+      @media all and (max-width: 1800px){
+        width: 80%;
+        margin-left: 19.5px;
+        }
+    
+        @media all and (max-width: 1600px){
+            width: 80%;
+            margin-left: 19px;
+        }
+    
+        @media all and (max-width: 1400px){
+            width: 80%;
+            margin-left: 17.5px;
+            li {
+                
+                line-height: 26px;
+                
+            }
+        }
+    
+        @media all and (max-width: 1050px){
+            width: 80%;
+            margin-left: 16.5px;
+        }
+    
+        @media all and (max-width: 920px){
+            width: 100%;
+            margin-left: 17px;
+            li {
+                font-size: 16px;
+                line-height: 21px;
+                
+            }
+        }
+    
+        @media all and (max-width: 675px){
+            width: 100%;
+            margin-left: 17.60px;
+        }
+    
+        @media all and (max-width: 575px){
+            width: 100%;
+            margin-left: 15.60px;
+        }
+              
+
+      
+
+    }
+
+    .subSectors-Cta {
+        margin-top: 40px;display: flex; align-items: center;
+		@media all and (max-width: 1400px){margin-top: 25px;}
+		a{
+			background-color: #212121;
+		    color: #fff;
+		    text-decoration: none;
+		    border: 1px solid rgba(33, 33, 33, 0.2);
+		    border-radius: 60px;
+		    padding: 12px 26px;
+		    outline: none;
+		    display: flex;
+		    align-items: center;
+		    @media all and (max-width: 920px){padding: 11px 19px;font-size: 14px;}
+		    img{transition: 0.6s all; margin-left: 10px;
+		    	@media all and (max-width: 1400px){width:16px; height:8px;}
+		    	@media all and (max-width: 920px){width:18px; height:9px;}}
+		    &:hover img{transform: translateX(10px);}
+
+		}
+
+    }
+
+}
+
+footer{
+        .footerSec{
+            .footerSub{
+                .quickLinksft{margin-bottom: 13px !important;
+                    @media all and (max-width: 1450px){margin-bottom: 13px !important;}
+                    @media all and (max-width: 1050px){margin-bottom: 13px !important;}
+                }
+            }
+
+        }
+    }
