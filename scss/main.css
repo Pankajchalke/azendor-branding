@@ -3536,7 +3536,11 @@ h2 {
             .modal.in .modal-dialog2 .modal-content .teamBox .teamDesc p {
               margin-bottom: 12px; }
           .modal.in .modal-dialog2 .modal-content .teamBox .memberImg {
-            width: 20%; } }
+            width: 20%; }
+        .modal.in .modal-dialog2 .modal-content .casestudiesPara .caseImg {
+          width: 18%; }
+        .modal.in .modal-dialog2 .modal-content .casestudiesPara .caseDesc {
+          width: 80%; } }
   @media all and (max-width: 1400px) {
     .modal.in .modal-dialog2 {
       margin: 5% auto 0px; }
