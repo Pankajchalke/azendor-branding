@@ -2149,25 +2149,15 @@ body {
   .clientlogoSec .logosSlider .slick-track {
     align-items: center; }
     .clientlogoSec .logosSlider .slick-track .logosBox {
-      border-right: 1px solid #EEEEEE;
-      padding: 0px 64px; }
+      border-right: 1px solid #EEEEEE; }
       .clientlogoSec .logosSlider .slick-track .logosBox img {
-        margin: 0 auto; }
-@media all and (max-width: 1800px) {
-  .clientlogoSec .logosSlider .slick-track .logosBox {
-    padding: 0px 52px; } }
-@media all and (max-width: 1650px) {
-  .clientlogoSec .logosSlider .slick-track .logosBox {
-    padding: 0px 40px; } }
-@media all and (max-width: 1450px) {
-  .clientlogoSec .logosSlider .slick-track .logosBox {
-    padding: 0px 27px; } }
-@media all and (max-width: 1450px) {
-  .clientlogoSec .logosSlider .slick-track .logosBox {
-    padding: 0px 27px; } }
-@media all and (max-width: 480px) {
-  .clientlogoSec .logosSlider .slick-track .logosBox {
-    padding: 0px 20px; } }
+        margin: 0 auto;
+        filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
+        transition: 0.2s; }
+        .clientlogoSec .logosSlider .slick-track .logosBox img:hover {
+          filter: grayscale(0%);
+          -webkit-filter: grayscale(0%); }
 
 .legalInnerPageProgress {
   z-index: 11; }

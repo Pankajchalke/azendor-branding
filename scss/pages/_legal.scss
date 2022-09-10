@@ -2336,54 +2336,30 @@
 
             .logosBox {
                 border-right: 1px solid #EEEEEE;
-                padding: 0px 64px;
 
                 img {
                     margin: 0 auto;
+                    filter: grayscale(100%);
+                    -webkit-filter: grayscale(100%);
+                    transition: 0.2s;
+                    &:hover{
+                        filter: grayscale(0%);
+                        -webkit-filter: grayscale(0%);
+                    }
                 }
             }
         }
     }
 
-    @media all and (max-width: 1800px) {
-        .logosSlider .slick-track {
-            .logosBox {
-                padding: 0px 52px;
-            }
-        }
-    }
 
-    @media all and (max-width: 1650px) {
-        .logosSlider .slick-track {
-            .logosBox {
-                padding: 0px 40px;
-            }
-        }
-    }
 
-    @media all and (max-width: 1450px) {
-        .logosSlider .slick-track {
-            .logosBox {
-                padding: 0px 27px;
-            }
-        }
-    }
 
-    @media all and (max-width: 1450px) {
-        .logosSlider .slick-track {
-            .logosBox {
-                padding: 0px 27px;
-            }
-        }
-    }
 
-    @media all and (max-width: 480px) {
-        .logosSlider .slick-track {
-            .logosBox {
-                padding: 0px 20px;
-            }
-        }
-    }
+    
+
+    
+
+   
 }
 
 
