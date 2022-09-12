@@ -1624,9 +1624,6 @@ h2 {
         display: flex;
         justify-content: space-between;
 
-
-
-
         .tabs {
             position: relative;
             display: flex;
@@ -1666,12 +1663,7 @@ h2 {
                         font-weight: 500 !important;
 
                     }
-
-
                 }
-
-
-
 
             }
 
@@ -1686,12 +1678,7 @@ h2 {
                 border: 1px solid rgba(242, 242, 242, 0.2);
                 border-radius: 60px;
                 transition: .3s;
-
-
             }
-
-
-
         }
 
         @media all and (max-width: 768px) {
@@ -1728,160 +1715,108 @@ h2 {
 
     }
 
-    #scrolldiv {
-        background-color: transparent;
-        width: unset;
-        height: 440px;
-        overflow-y: scroll;
-
-        @media all and (max-width:1150px) {
-            height: 460px;
-        }
-
-        &::-webkit-scrollbar {
+    .tabs-content {
+        #brands-tab-content, #agencies-tab-content {
             display: none;
         }
 
-        #scrolldiv-content {
-            background-color: unset;
-            height: unset;
-            width: unset;
+        .active {
+            display: block !important;
+        }
+        
+        .boxClients{
+            .box {
+                background-position: 0 0, 0 0, 100% 0, 0 100%;
+                background-size: 3px 100%, 100% 3px, 3px 100%, 100% 3px;
+                background-repeat: no-repeat;
+            }
+
+            img {
+                filter: grayscale(100%);
+                -webkit-filter: grayscale(100%);
+                transition: 0.5s;
+                width: 225px;
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
 
 
-            .tabs-content {
-                div[id$="tab-content"] {
-                    display: none;
+                &:hover {
+                    filter: grayscale(0%);
+                    -webkit-filter: grayscale(0%);
+                }
+            }
+
+            .content, .contentOne {
+                margin-top: 0px;
+                .imgBorder {
+                    margin: 15px 0px;
+                    border-right: 1px solid #373737;
                 }
 
-                .active {
-                    display: block !important;
-                }
-
-                .flex {
-                    display: flex;
-                    flex-wrap: wrap;
-                    margin-left: -30px;
-
-
-
-                    .box {
-                        background-position: 0 0, 0 0, 100% 0, 0 100%;
-                        background-size: 3px 100%, 100% 3px, 3px 100%, 100% 3px;
-                        background-repeat: no-repeat;
-                    }
-
-                    img {
-                        filter: grayscale(100%);
-                        -webkit-filter: grayscale(100%);
-                        transition: 0.5s;
-                        width: 225px;
-                        margin: 0 auto;
-                        display: flex;
-                        justify-content: center;
-
-
-                        &:hover {
-                            filter: grayscale(0%);
-                            -webkit-filter: grayscale(0%);
-                        }
-                    }
-
-                    .content,
-                    .contentOne {
-                        width: 25%;
-                        margin-top: 0px;
-
-
-                        display: none;
-
-                        .imgBorder {
-                            margin: 15px 0px;
-                            border-right: 1px solid #373737;
-                        }
-
-                        &::before {
-                            content: '';
-                            display: block;
-
-                            border-top: 1px solid #373737;
-                            width: 90%;
-                            margin: 0 auto;
-                        }
-
-                        &::after {
-                            content: '';
-                            display: block;
-
-                            border-bottom: 1px solid #373737;
-                            width: 90%;
-                            margin: 0 auto;
-                        }
-
-                        &:nth-child(4n+4) {
-                            .imgBorder {
-                                border-right: none;
-                            }
-                        }
-
-
-
-
-
-                    }
-
-                    @media all and (max-width:1200px) {
-                        img {
-                            width: 170px;
-                        }
-                    }
-
-                    @media all and (max-width:780px) {
-                        margin-left: -5px;
-                        padding: 5px 0px;
-
-                        .content,
-                        .contentOne {
-                            width: 48%;
-                            margin: -1px 2px 0px 2px;
-
-
-                            &:nth-child(even) {
-                                .imgBorder {
-
-                                    border-right: none;
-                                }
-                            }
-                        }
-
-
-                    }
-                }
-
-                #loadMore,
-                #loadMoretab {
-                    text-align: center;
+                &::before {
+                    content: '';
                     display: block;
+
+                    border-top: 1px solid #373737;
+                    width: 90%;
                     margin: 0 auto;
-                    text-decoration: none;
-                    margin-top: 40px;
-                    cursor: pointer;
+                }
+
+                &::after {
+                    content: '';
+                    display: block;
+
+                    border-bottom: 1px solid #373737;
+                    width: 90%;
+                    margin: 0 auto;
+                }
+
+                &:nth-child(4n+4) {
+                    .imgBorder {
+                        border-right: none;
+                    }
+                }
+
+
+
+
+
+            }
+
+            @media all and (max-width:1200px) {
+                img {
+                    width: 170px;
                 }
             }
 
-            .noContent {
-                color: #6A6A6A;
-                background-color: transparent !important;
-                pointer-events: none;
+            @media all and (max-width:780px) {
+                margin-left: -5px;
+                padding: 5px 0px;
+
+                .content,
+                .contentOne {
+                    width: 48%;
+                    margin: -1px 2px 0px 2px;
+
+
+                    &:nth-child(even) {
+                        .imgBorder {
+
+                            border-right: none;
+                        }
+                    }
+                }
+
+
             }
         }
+        
+        
 
-        @media all and (max-width: 780px) {
-            height: 542px;
-        }
-
-
+       
     }
-
+    
 }
 
 

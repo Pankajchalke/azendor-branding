@@ -3967,98 +3967,58 @@ h2 {
       width: 120px; }
       .clientsBox .clientSec .tabs .bg {
         width: 60px; } }
-.clientsBox #scrolldiv {
-  background-color: transparent;
-  width: unset;
-  height: 440px;
-  overflow-y: scroll; }
-  @media all and (max-width: 1150px) {
-    .clientsBox #scrolldiv {
-      height: 460px; } }
-  .clientsBox #scrolldiv::-webkit-scrollbar {
-    display: none; }
-  .clientsBox #scrolldiv #scrolldiv-content {
-    background-color: unset;
-    height: unset;
-    width: unset; }
-    .clientsBox #scrolldiv #scrolldiv-content .tabs-content div[id$="tab-content"] {
-      display: none; }
-    .clientsBox #scrolldiv #scrolldiv-content .tabs-content .active {
-      display: block !important; }
-    .clientsBox #scrolldiv #scrolldiv-content .tabs-content .flex {
-      display: flex;
-      flex-wrap: wrap;
-      margin-left: -30px; }
-      .clientsBox #scrolldiv #scrolldiv-content .tabs-content .flex .box {
-        background-position: 0 0, 0 0, 100% 0, 0 100%;
-        background-size: 3px 100%, 100% 3px, 3px 100%, 100% 3px;
-        background-repeat: no-repeat; }
-      .clientsBox #scrolldiv #scrolldiv-content .tabs-content .flex img {
-        filter: grayscale(100%);
-        -webkit-filter: grayscale(100%);
-        transition: 0.5s;
-        width: 225px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: center; }
-        .clientsBox #scrolldiv #scrolldiv-content .tabs-content .flex img:hover {
-          filter: grayscale(0%);
-          -webkit-filter: grayscale(0%); }
-      .clientsBox #scrolldiv #scrolldiv-content .tabs-content .flex .content,
-      .clientsBox #scrolldiv #scrolldiv-content .tabs-content .flex .contentOne {
-        width: 25%;
-        margin-top: 0px;
-        display: none; }
-        .clientsBox #scrolldiv #scrolldiv-content .tabs-content .flex .content .imgBorder,
-        .clientsBox #scrolldiv #scrolldiv-content .tabs-content .flex .contentOne .imgBorder {
-          margin: 15px 0px;
-          border-right: 1px solid #373737; }
-        .clientsBox #scrolldiv #scrolldiv-content .tabs-content .flex .content::before,
-        .clientsBox #scrolldiv #scrolldiv-content .tabs-content .flex .contentOne::before {
-          content: '';
-          display: block;
-          border-top: 1px solid #373737;
-          width: 90%;
-          margin: 0 auto; }
-        .clientsBox #scrolldiv #scrolldiv-content .tabs-content .flex .content::after,
-        .clientsBox #scrolldiv #scrolldiv-content .tabs-content .flex .contentOne::after {
-          content: '';
-          display: block;
-          border-bottom: 1px solid #373737;
-          width: 90%;
-          margin: 0 auto; }
-        .clientsBox #scrolldiv #scrolldiv-content .tabs-content .flex .content:nth-child(4n+4) .imgBorder,
-        .clientsBox #scrolldiv #scrolldiv-content .tabs-content .flex .contentOne:nth-child(4n+4) .imgBorder {
-          border-right: none; }
-      @media all and (max-width: 1200px) {
-        .clientsBox #scrolldiv #scrolldiv-content .tabs-content .flex img {
-          width: 170px; } }
-      @media all and (max-width: 780px) {
-        .clientsBox #scrolldiv #scrolldiv-content .tabs-content .flex {
-          margin-left: -5px;
-          padding: 5px 0px; }
-          .clientsBox #scrolldiv #scrolldiv-content .tabs-content .flex .content,
-          .clientsBox #scrolldiv #scrolldiv-content .tabs-content .flex .contentOne {
-            width: 48%;
-            margin: -1px 2px 0px 2px; }
-            .clientsBox #scrolldiv #scrolldiv-content .tabs-content .flex .content:nth-child(even) .imgBorder,
-            .clientsBox #scrolldiv #scrolldiv-content .tabs-content .flex .contentOne:nth-child(even) .imgBorder {
-              border-right: none; } }
-    .clientsBox #scrolldiv #scrolldiv-content .tabs-content #loadMore,
-    .clientsBox #scrolldiv #scrolldiv-content .tabs-content #loadMoretab {
-      text-align: center;
-      display: block;
-      margin: 0 auto;
-      text-decoration: none;
-      margin-top: 40px;
-      cursor: pointer; }
-    .clientsBox #scrolldiv #scrolldiv-content .noContent {
-      color: #6A6A6A;
-      background-color: transparent !important;
-      pointer-events: none; }
-  @media all and (max-width: 780px) {
-    .clientsBox #scrolldiv {
-      height: 542px; } }
+.clientsBox .tabs-content #brands-tab-content, .clientsBox .tabs-content #agencies-tab-content {
+  display: none; }
+.clientsBox .tabs-content .active {
+  display: block !important; }
+.clientsBox .tabs-content .boxClients .box {
+  background-position: 0 0, 0 0, 100% 0, 0 100%;
+  background-size: 3px 100%, 100% 3px, 3px 100%, 100% 3px;
+  background-repeat: no-repeat; }
+.clientsBox .tabs-content .boxClients img {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  transition: 0.5s;
+  width: 225px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center; }
+  .clientsBox .tabs-content .boxClients img:hover {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%); }
+.clientsBox .tabs-content .boxClients .content, .clientsBox .tabs-content .boxClients .contentOne {
+  margin-top: 0px; }
+  .clientsBox .tabs-content .boxClients .content .imgBorder, .clientsBox .tabs-content .boxClients .contentOne .imgBorder {
+    margin: 15px 0px;
+    border-right: 1px solid #373737; }
+  .clientsBox .tabs-content .boxClients .content::before, .clientsBox .tabs-content .boxClients .contentOne::before {
+    content: '';
+    display: block;
+    border-top: 1px solid #373737;
+    width: 90%;
+    margin: 0 auto; }
+  .clientsBox .tabs-content .boxClients .content::after, .clientsBox .tabs-content .boxClients .contentOne::after {
+    content: '';
+    display: block;
+    border-bottom: 1px solid #373737;
+    width: 90%;
+    margin: 0 auto; }
+  .clientsBox .tabs-content .boxClients .content:nth-child(4n+4) .imgBorder, .clientsBox .tabs-content .boxClients .contentOne:nth-child(4n+4) .imgBorder {
+    border-right: none; }
+@media all and (max-width: 1200px) {
+  .clientsBox .tabs-content .boxClients img {
+    width: 170px; } }
+@media all and (max-width: 780px) {
+  .clientsBox .tabs-content .boxClients {
+    margin-left: -5px;
+    padding: 5px 0px; }
+    .clientsBox .tabs-content .boxClients .content,
+    .clientsBox .tabs-content .boxClients .contentOne {
+      width: 48%;
+      margin: -1px 2px 0px 2px; }
+      .clientsBox .tabs-content .boxClients .content:nth-child(even) .imgBorder,
+      .clientsBox .tabs-content .boxClients .contentOne:nth-child(even) .imgBorder {
+        border-right: none; } }
 
 .testimonialsSec {
   overflow: hidden !important; }

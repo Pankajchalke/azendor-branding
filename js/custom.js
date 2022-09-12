@@ -22,7 +22,6 @@ if ($("#fullpage").length) {
     scrollHorizontally: true,
     controlArrows: true,
     scrollOverflow: true,
-    normalScrollElements: "#scrolldiv",
     licenseKey: "OPEN-SOURCE-GPLV3-LICENSE",
     scrollBar: true,
     responsiveWidth: 1030,
@@ -155,6 +154,41 @@ if ($(".serviceSlider").length) {
     ],
   });
 }
+
+
+if ($(".clientSlider").length) {
+  $(".clientSlider").slick({
+    dots: false,
+    infinite: false,
+    arrows: true,
+    speed: 300,
+    autoplay: false,
+    autoplaySpeed: 2000,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          dots: true,
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 654,
+        settings: {
+          dots: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  });
+}
+
+
+
 
 if ($(".solutionSlider").length) {
   $(".solutionSlider").slick({
@@ -674,3 +708,6 @@ function myFunction() {
     moreText.style.display = "inline";
   }
 }
+
+
+
