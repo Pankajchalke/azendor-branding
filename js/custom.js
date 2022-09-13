@@ -156,10 +156,63 @@ if ($(".serviceSlider").length) {
 }
 
 
+
 if ($(".clientSlider").length) {
-  $(".clientSlider").slick({
+$(".clientSlider").slick({
+  dots: false,
+  infinite: true,
+  arrows: true,
+  speed: 300,
+  autoplay: false,
+  autoplaySpeed: 2000,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1090,
+      settings: {
+        arrows: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      },
+    },
+    
+  ],
+
+});
+}
+
+
+$(".filter li").on('click', function () {
+  var filter = $(this).data('filter');
+  $(".clientSlider").slick('slickUnfilter');
+
+  if (filter == 'brands') {
+    $(".clientSlider").slick('slickFilter', '.brands');
+  }
+  else if (filter == 'agencies') {
+    $(".clientSlider").slick('slickFilter', '.agencies');
+  }
+  else if (filter == 'all') {
+
+    $(".clientSlider").slick('slickUnfilter');
+  }
+
+})
+
+
+if ($(".casestudySlider").length) {
+  $(".casestudySlider").slick({
     dots: false,
-    infinite: false,
+    infinite: true,
     arrows: true,
     speed: 300,
     autoplay: false,
@@ -168,26 +221,26 @@ if ($(".clientSlider").length) {
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1090,
         settings: {
-          dots: true,
-          slidesToShow: 2,
-          slidesToScroll: 2,
-        },
-      },
-      {
-        breakpoint: 654,
-        settings: {
-          dots: true,
-          slidesToShow: 1,
+          arrows: true,
+          slidesToShow: 3,
           slidesToScroll: 1,
         },
       },
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: true,
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      
     ],
+  
   });
-}
-
-
+  }
 
 
 if ($(".solutionSlider").length) {
