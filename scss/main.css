@@ -3680,6 +3680,7 @@ h2 {
         width: 20%; }
     .modal.in .modal-dialog4 .modal-content .casePara {
       padding-top: 18px;
+      padding-right: 25px;
       border-top: 1px solid #6A6A6A;
       height: 280px;
       overflow-y: scroll;
@@ -3687,7 +3688,7 @@ h2 {
       scrollbar-color: #000;
       /* Chrome, Edge, and Safari */ }
       .modal.in .modal-dialog4 .modal-content .casePara::-webkit-scrollbar {
-        width: 7px; }
+        width: 3px; }
       .modal.in .modal-dialog4 .modal-content .casePara::-webkit-scrollbar-track {
         background: #000; }
       .modal.in .modal-dialog4 .modal-content .casePara::-webkit-scrollbar-thumb {
