@@ -409,39 +409,33 @@ document.addEventListener("click", function (event) {
 
 // testimonial JS
 if ($(".testimonialsSlider").length) {
-  $(".testimonialsSlider").slick({
+  $('.testimonialsSlider').slick({
     centerMode: true,
-    centerPadding: "17%",
-    slidesToShow: 1,
+    centerPadding: '35px',
+    slidesToShow: 3,
+    infinite: true,
+   
     responsive: [
       {
-        breakpoint: 1400,
+        breakpoint: 1024,
         settings: {
-          arrows: true,
-          centerMode: true,
-          centerPadding: "15%",
-          slidesToShow: 1,
-        },
+          infinite: true,
+          centerMode: false,
+          centerPadding: '30px',
+          slidesToShow: 2
+        }
       },
+      
       {
-        breakpoint: 768,
+        breakpoint: 678,
         settings: {
-          arrows: true,
+          infinite: true,
           centerMode: true,
-          centerPadding: "15%",
-          slidesToShow: 1,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          arrows: true,
-          centerMode: true,
-          centerPadding: "15%",
-          slidesToShow: 1,
-        },
-      },
-    ],
+          centerPadding: '20px',
+          slidesToShow: 1
+        }
+      }
+    ]
   });
 }
 
