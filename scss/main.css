@@ -4434,7 +4434,21 @@ h2 {
         vertical-align: middle; }
       .testimonialsSec .testimonialsSlider .testimonials .profile .profileInfo p {
         text-align: center;
-        vertical-align: middle; }
+        vertical-align: middle;
+        display: inline-flex;
+        align-items: center; }
+        .testimonialsSec .testimonialsSlider .testimonials .profile .profileInfo p .mobileArrow {
+          display: none; }
+          @media all and (max-width: 480px) {
+            .testimonialsSec .testimonialsSlider .testimonials .profile .profileInfo p .mobileArrow {
+              display: block;
+              width: 17px;
+              height: 9px;
+              margin-left: 5px;
+              text-align: center;
+              transition: 0.6s all; } }
+        .testimonialsSec .testimonialsSlider .testimonials .profile .profileInfo p:hover .mobileArrow {
+          transform: translateX(15px); }
 
 .caseStudies .boxcaseStudy .contentThree {
   margin: 0px 60px 0px 0px;
