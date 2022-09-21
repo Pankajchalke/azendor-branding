@@ -3399,7 +3399,7 @@ h2 {
   @media all and (max-width: 1600px) {
     .modal.in .modal-dialog1 {
       width: 70%;
-      margin: 10% auto 0; }
+      margin: 7% auto 0; }
       .modal.in .modal-dialog1 .modal-content {
         padding: 60px 50px; }
         .modal.in .modal-dialog1 .modal-content .modal-body .listService ul {
@@ -3500,7 +3500,7 @@ h2 {
   @media all and (max-width: 1600px) {
     .modal.in .modal-dialog2 {
       width: 70%;
-      margin: 10% auto 0px; }
+      margin: 7% auto 0px; }
       .modal.in .modal-dialog2 .modal-content {
         padding: 60px 44px 35px; }
         .modal.in .modal-dialog2 .modal-content .teamBox {
@@ -3702,7 +3702,7 @@ h2 {
   @media all and (max-width: 1600px) {
     .modal.in .modal-dialog4 {
       width: 70%;
-      margin: 10% auto 0px; }
+      margin: 7% auto 0px; }
       .modal.in .modal-dialog4 .modal-content {
         padding: 60px 44px; }
         .modal.in .modal-dialog4 .modal-content .casestudiesPara .caseImg {
@@ -3797,11 +3797,11 @@ h2 {
   @media all and (max-width: 1600px) {
     .modal.in .modal-dialog5 {
       width: 70%;
-      margin: 10% auto 0px; }
+      margin: 7% auto 0px; }
       .modal.in .modal-dialog5 .modal-content {
         padding: 60px 44px; }
         .modal.in .modal-dialog5 .modal-content .casestudiesPara .caseImg {
-          width: 18%; }
+          width: 15%; }
         .modal.in .modal-dialog5 .modal-content .casestudiesPara .caseDesc {
           width: 80%; } }
   @media all and (max-width: 1400px) {
@@ -3817,9 +3817,9 @@ h2 {
     .modal.in .modal-dialog5 .modal-content {
       padding: 60px 44px; }
       .modal.in .modal-dialog5 .modal-content .casestudiesPara .caseImg {
-        width: 23%; }
+        width: 20%; }
       .modal.in .modal-dialog5 .modal-content .casestudiesPara .caseDesc {
-        width: 73%; }
+        width: 75%; }
         .modal.in .modal-dialog5 .modal-content .casestudiesPara .caseDesc p {
           padding-top: 7px;
           margin-bottom: 0px; }
@@ -3834,9 +3834,9 @@ h2 {
       .modal.in .modal-dialog5 .modal-content {
         padding: 60px 42px; }
         .modal.in .modal-dialog5 .modal-content .casestudiesPara .caseImg {
-          width: 25%; }
+          width: 20%; }
         .modal.in .modal-dialog5 .modal-content .casestudiesPara .caseDesc {
-          width: 70%; }
+          width: 75%; }
           .modal.in .modal-dialog5 .modal-content .casestudiesPara .caseDesc p {
             padding-top: 7px;
             margin-bottom: 0px; }
