@@ -3399,7 +3399,7 @@ h2 {
   @media all and (max-width: 1600px) {
     .modal.in .modal-dialog1 {
       width: 70%;
-      margin: 7% auto 0; }
+      margin: 4% auto 0; }
       .modal.in .modal-dialog1 .modal-content {
         padding: 60px 50px; }
         .modal.in .modal-dialog1 .modal-content .modal-body .listService ul {
@@ -3500,7 +3500,7 @@ h2 {
   @media all and (max-width: 1600px) {
     .modal.in .modal-dialog2 {
       width: 70%;
-      margin: 7% auto 0px; }
+      margin: 4% auto 0px; }
       .modal.in .modal-dialog2 .modal-content {
         padding: 60px 44px 35px; }
         .modal.in .modal-dialog2 .modal-content .teamBox {
@@ -3702,7 +3702,7 @@ h2 {
   @media all and (max-width: 1600px) {
     .modal.in .modal-dialog4 {
       width: 70%;
-      margin: 7% auto 0px; }
+      margin: 4% auto 0px; }
       .modal.in .modal-dialog4 .modal-content {
         padding: 60px 44px; }
         .modal.in .modal-dialog4 .modal-content .casestudiesPara .caseImg {
@@ -3797,7 +3797,7 @@ h2 {
   @media all and (max-width: 1600px) {
     .modal.in .modal-dialog5 {
       width: 70%;
-      margin: 7% auto 0px; }
+      margin: 4% auto 0px; }
       .modal.in .modal-dialog5 .modal-content {
         padding: 60px 44px; }
         .modal.in .modal-dialog5 .modal-content .casestudiesPara .caseImg {
