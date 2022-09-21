@@ -3467,7 +3467,7 @@ h2 {
   margin: 10% auto 0px; }
   .modal.in .modal-dialog2 .modal-content {
     background-color: #252525;
-    padding: 63px;
+    padding: 63px 63px 38px;
     border: none; }
     .modal.in .modal-dialog2 .modal-content .close {
       margin-top: -30px;
@@ -3502,7 +3502,7 @@ h2 {
       width: 70%;
       margin: 10% auto 0px; }
       .modal.in .modal-dialog2 .modal-content {
-        padding: 60px 44px; }
+        padding: 60px 44px 35px; }
         .modal.in .modal-dialog2 .modal-content .teamBox {
           padding-bottom: 15px; }
           .modal.in .modal-dialog2 .modal-content .teamBox .teamDesc {
@@ -3513,13 +3513,13 @@ h2 {
             width: 20%; } }
   @media all and (max-width: 1400px) {
     .modal.in .modal-dialog2 {
-      margin: 5% auto 0px; }
+      margin: 4% auto 0px; }
       .modal.in .modal-dialog2 .modal-content .close img {
         height: 18px;
         width: 18px; } }
   @media all and (max-width: 1280px) {
     .modal.in .modal-dialog2 .modal-content {
-      padding: 60px 44px 30px; } }
+      padding: 50px 44px 25px; } }
   @media all and (max-width: 920px) {
     .modal.in .modal-dialog2 .modal-content {
       padding: 60px 44px 30px; }
@@ -3711,10 +3711,12 @@ h2 {
           width: 80%; } }
   @media all and (max-width: 1400px) {
     .modal.in .modal-dialog4 {
-      margin: 5% auto 0px; }
-      .modal.in .modal-dialog4 .modal-content .close img {
-        height: 18px;
-        width: 18px; } }
+      margin: 4% auto 0px; }
+      .modal.in .modal-dialog4 .modal-content {
+        padding: 50px 40px; }
+        .modal.in .modal-dialog4 .modal-content .close img {
+          height: 18px;
+          width: 18px; } }
   @media all and (max-width: 1280px) {
     .modal.in .modal-dialog4 .modal-content {
       padding: 60px 44px 30px; } }
@@ -4418,9 +4420,12 @@ h2 {
       width: 65%;
       margin: 0 auto;
       vertical-align: middle; }
-      @media all and (max-width: 920px) {
+      @media all and (max-width: 1600px) {
         .testimonialsSec .testimonialsSlider .testimonials .profile img {
           width: 60%; } }
+      @media all and (max-width: 920px) {
+        .testimonialsSec .testimonialsSlider .testimonials .profile img {
+          width: 50%; } }
     .testimonialsSec .testimonialsSlider .testimonials .profile .profileInfo {
       margin-top: 20px; }
       .testimonialsSec .testimonialsSlider .testimonials .profile .profileInfo h4 {

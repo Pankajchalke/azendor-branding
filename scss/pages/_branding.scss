@@ -837,7 +837,7 @@ h2 {
 
     .modal-content {
         background-color: #252525;
-        padding: 63px;
+        padding: 63px 63px 38px;
         border: none;
 
         .close {
@@ -897,7 +897,7 @@ h2 {
         margin: 10% auto 0px;
 
         .modal-content {
-            padding: 60px 44px;
+            padding: 60px 44px 35px;
 
 
             .teamBox {
@@ -920,7 +920,7 @@ h2 {
     }
 
     @media all and (max-width: 1400px) {
-        margin: 5% auto 0px;
+        margin: 4% auto 0px;
 
         .modal-content {
             .close {
@@ -936,7 +936,7 @@ h2 {
     @media all and (max-width: 1280px) {
 
         .modal-content {
-            padding: 60px 44px 30px;
+            padding: 50px 44px 25px;
 
 
         }
@@ -1293,9 +1293,10 @@ h2 {
     }
 
     @media all and (max-width: 1400px) {
-        margin: 5% auto 0px;
+        margin: 4% auto 0px;
 
         .modal-content {
+            padding: 50px 40px;
             .close {
                 img {
                     height: 18px;
@@ -2518,9 +2519,11 @@ h2 {
                     width: 65%;
                     margin: 0 auto;
                     vertical-align: middle;
-
-                    @media all and (max-width:920px){
+                    @media all and (max-width:1600px){
                         width: 60%;
+                    }
+                    @media all and (max-width:920px){
+                        width: 50%;
                     }
                     
                 }
