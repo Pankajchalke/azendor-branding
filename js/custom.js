@@ -144,7 +144,7 @@ if ($(".serviceSlider").length) {
         },
       },
       {
-        breakpoint: 654,
+        breakpoint: 575,
         settings: {
           dots: true,
           slidesToShow: 1,
@@ -416,22 +416,12 @@ if ($(".testimonialsSlider").length) {
     infinite: true,
    
     responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          infinite: true,
-          centerMode: false,
-          centerPadding: '30px',
-          slidesToShow: 2
-        }
-      },
-      
-      {
-        breakpoint: 678,
+  {
+        breakpoint: 575,
         settings: {
           infinite: true,
           centerMode: true,
-          centerPadding: '20px',
+          centerPadding: '15%',
           slidesToShow: 1
         }
       }

@@ -1399,8 +1399,7 @@ h2 {
                 width: 76%;
 
                 p {
-                    padding-top: 10px;
-                    margin-bottom: 18px;
+                    padding-top: 9px;
                 }
             }
 
@@ -1485,7 +1484,7 @@ h2 {
     @media all and (max-width: 1280px) {
 
         .modal-content {
-            padding: 60px 44px 30px;
+            padding: 60px 44px;
 
 
         }
@@ -1495,7 +1494,22 @@ h2 {
     @media all and (max-width: 920px) {
 
         .modal-content {
-            padding: 60px 44px 30px;
+            padding: 60px 44px;
+
+            .casestudiesPara {
+                .caseImg {
+                    width: 23%;
+                }
+
+                .caseDesc {
+                    width: 73%;
+                    p{
+                    padding-top: 7px;
+                    margin-bottom: 0px;
+                    }
+                }
+            }
+
 
             .casePara {
                 height: 250px;
@@ -1511,7 +1525,21 @@ h2 {
         margin: -3% auto 0;
 
         .modal-content {
-            padding: 60px 42px 30px;
+            padding: 60px 42px;
+
+            .casestudiesPara {
+                .caseImg {
+                    width: 25%;
+                }
+
+                .caseDesc {
+                    width: 70%;
+                    p{
+                    padding-top: 7px;
+                    margin-bottom: 0px;
+                    }
+                }
+            }
 
             .close {
                 margin-top: -42px;
@@ -1525,9 +1553,22 @@ h2 {
     }
 
 
-    @media all and (max-width: 450px) {
+    @media all and (max-width: 480px) {
         .modal-content {
             padding: 60px 20px 30px;
+            .casestudiesPara {
+                .caseImg {
+                    width: 25%;
+                }
+
+                .caseDesc {
+                    width: 68%;
+                    p{
+                    padding-top: 5px;
+                    margin-bottom: 0px;
+                    }
+                }
+            }
         }
     }
 
@@ -2448,12 +2489,15 @@ h2 {
 
             @media all and (max-width:1200px) {
                 padding: 40px 20px;
+               
               
             }
 
-            @media all and (min-width:678px) and (max-width:1024px) and (min-height:920px){
-                margin-left: 50px;
+            @media all and (max-width:920px) {
+                padding: 30px 17px;    
+              
             }
+
 
 
             a:focus,
@@ -2474,6 +2518,11 @@ h2 {
                     width: 65%;
                     margin: 0 auto;
                     vertical-align: middle;
+
+                    @media all and (max-width:920px){
+                        width: 60%;
+                    }
+                    
                 }
 
                 .profileInfo {

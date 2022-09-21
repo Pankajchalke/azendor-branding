@@ -3768,8 +3768,7 @@ h2 {
       .modal.in .modal-dialog5 .modal-content .casestudiesPara .caseDesc {
         width: 76%; }
         .modal.in .modal-dialog5 .modal-content .casestudiesPara .caseDesc p {
-          padding-top: 10px;
-          margin-bottom: 18px; }
+          padding-top: 9px; }
       .modal.in .modal-dialog5 .modal-content .casestudiesPara .caseImg {
         width: 20%; }
     .modal.in .modal-dialog5 .modal-content .casePara {
@@ -3811,10 +3810,17 @@ h2 {
         width: 18px; } }
   @media all and (max-width: 1280px) {
     .modal.in .modal-dialog5 .modal-content {
-      padding: 60px 44px 30px; } }
+      padding: 60px 44px; } }
   @media all and (max-width: 920px) {
     .modal.in .modal-dialog5 .modal-content {
-      padding: 60px 44px 30px; }
+      padding: 60px 44px; }
+      .modal.in .modal-dialog5 .modal-content .casestudiesPara .caseImg {
+        width: 23%; }
+      .modal.in .modal-dialog5 .modal-content .casestudiesPara .caseDesc {
+        width: 73%; }
+        .modal.in .modal-dialog5 .modal-content .casestudiesPara .caseDesc p {
+          padding-top: 7px;
+          margin-bottom: 0px; }
       .modal.in .modal-dialog5 .modal-content .casePara {
         height: 250px;
         overflow: auto; } }
@@ -3824,15 +3830,29 @@ h2 {
       width: 100%;
       margin: -3% auto 0; }
       .modal.in .modal-dialog5 .modal-content {
-        padding: 60px 42px 30px; }
+        padding: 60px 42px; }
+        .modal.in .modal-dialog5 .modal-content .casestudiesPara .caseImg {
+          width: 25%; }
+        .modal.in .modal-dialog5 .modal-content .casestudiesPara .caseDesc {
+          width: 70%; }
+          .modal.in .modal-dialog5 .modal-content .casestudiesPara .caseDesc p {
+            padding-top: 7px;
+            margin-bottom: 0px; }
         .modal.in .modal-dialog5 .modal-content .close {
           margin-top: -42px; }
           .modal.in .modal-dialog5 .modal-content .close img {
             width: 14px;
             height: 14px; } }
-  @media all and (max-width: 450px) {
+  @media all and (max-width: 480px) {
     .modal.in .modal-dialog5 .modal-content {
-      padding: 60px 20px 30px; } }
+      padding: 60px 20px 30px; }
+      .modal.in .modal-dialog5 .modal-content .casestudiesPara .caseImg {
+        width: 25%; }
+      .modal.in .modal-dialog5 .modal-content .casestudiesPara .caseDesc {
+        width: 68%; }
+        .modal.in .modal-dialog5 .modal-content .casestudiesPara .caseDesc p {
+          padding-top: 5px;
+          margin-bottom: 0px; } }
   @media all and (max-width: 375px) {
     .modal.in .modal-dialog5 .modal-content {
       padding: 60px 20px 30px; } }
@@ -4384,9 +4404,9 @@ h2 {
     @media all and (max-width: 1200px) {
       .testimonialsSec .testimonialsSlider .testimonials {
         padding: 40px 20px; } }
-    @media all and (min-width: 678px) and (max-width: 1024px) and (min-height: 920px) {
+    @media all and (max-width: 920px) {
       .testimonialsSec .testimonialsSlider .testimonials {
-        margin-left: 50px; } }
+        padding: 30px 17px; } }
     .testimonialsSec .testimonialsSlider .testimonials a:focus,
     .testimonialsSec .testimonialsSlider .testimonials a:hover,
     .testimonialsSec .testimonialsSlider .testimonials a:active {
@@ -4398,6 +4418,9 @@ h2 {
       width: 65%;
       margin: 0 auto;
       vertical-align: middle; }
+      @media all and (max-width: 920px) {
+        .testimonialsSec .testimonialsSlider .testimonials .profile img {
+          width: 60%; } }
     .testimonialsSec .testimonialsSlider .testimonials .profile .profileInfo {
       margin-top: 20px; }
       .testimonialsSec .testimonialsSlider .testimonials .profile .profileInfo h4 {
