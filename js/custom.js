@@ -411,6 +411,9 @@ document.addEventListener("click", function (event) {
 if ($(".testimonialsSlider").length) {
   $('.testimonialsSlider').slick({
     centerMode: true,
+    arrows:true,
+    prevArrow:$(".imgBackDesk"),
+    nextArrow:$(".imgForwardDesk"),
     centerPadding: '35px',
     slidesToShow: 3,
     infinite: true,
