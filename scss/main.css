@@ -5404,7 +5404,8 @@ footer .footerSec .footerSub .quickLinksft {
     display: flex;
     align-items: center;
     margin-bottom: 30px; }
-    .legalAdvisory .sectionTitle h1 span {
+    .legalAdvisory .sectionTitle h1 a {
+      text-decoration: none;
       color: #6A6A6A;
       cursor: pointer; }
     @media all and (max-width: 1400px) {
@@ -5416,10 +5417,9 @@ footer .footerSec .footerSub .quickLinksft {
     @media all and (max-width: 480px) {
       .legalAdvisory .sectionTitle h1 {
         display: inline; }
-        .legalAdvisory .sectionTitle h1 span {
+        .legalAdvisory .sectionTitle h1 a {
           position: relative;
-          vertical-align: middle;
-          cursor: pointer; } }
+          vertical-align: middle; } }
   @media all and (max-width: 920px) {
     .legalAdvisory p {
       font-size: 16px; } }
@@ -5546,7 +5546,8 @@ footer .footerSec .footerSub .quickLinksft {
   .advisorySubPages .subSectionTitle h1 {
     display: flex;
     align-items: center; }
-    .advisorySubPages .subSectionTitle h1 span {
+    .advisorySubPages .subSectionTitle h1 a {
+      text-decoration: none;
       color: #6A6A6A;
       cursor: pointer; }
     .advisorySubPages .subSectionTitle h1 .mobileSolutions {
@@ -5571,10 +5572,9 @@ footer .footerSec .footerSub .quickLinksft {
           display: inline-block; }
         .advisorySubPages .subSectionTitle h1 .legal {
           display: inline-block; }
-        .advisorySubPages .subSectionTitle h1 span {
+        .advisorySubPages .subSectionTitle h1 a {
           position: relative;
-          vertical-align: middle;
-          cursor: pointer; } }
+          vertical-align: middle; } }
   .advisorySubPages p {
     width: 70%;
     line-height: 140%; }
@@ -5665,7 +5665,8 @@ footer .footerSec .footerSub .quickLinksft {
     display: flex;
     align-items: center;
     margin-bottom: 30px; }
-    .digitalTransformation .sectionTitle h1 span {
+    .digitalTransformation .sectionTitle h1 a {
+      text-decoration: none;
       color: #6A6A6A;
       cursor: pointer; }
     @media all and (max-width: 1400px) {
@@ -5674,16 +5675,12 @@ footer .footerSec .footerSub .quickLinksft {
     @media all and (max-width: 920px) {
       .digitalTransformation .sectionTitle h1 {
         margin-bottom: 0px; } }
-    @media all and (max-width: 700px) {
-      .digitalTransformation .sectionTitle h1 {
-        display: inline; } }
     @media all and (max-width: 480px) {
       .digitalTransformation .sectionTitle h1 {
         display: inline; }
-        .digitalTransformation .sectionTitle h1 span {
+        .digitalTransformation .sectionTitle h1 a {
           position: relative;
-          vertical-align: middle;
-          cursor: pointer; } }
+          vertical-align: middle; } }
   @media all and (max-width: 920px) {
     .digitalTransformation p {
       font-size: 16px; } }
@@ -5814,7 +5811,8 @@ footer .footerSec .footerSub .quickLinksft {
   .digitalTransformationSubPages .subSectionTitle h1 {
     display: flex;
     align-items: center; }
-    .digitalTransformationSubPages .subSectionTitle h1 span {
+    .digitalTransformationSubPages .subSectionTitle h1 a {
+      text-decoration: none;
       color: #6A6A6A;
       cursor: pointer; }
     .digitalTransformationSubPages .subSectionTitle h1 .mobileSolutions {
@@ -5839,10 +5837,9 @@ footer .footerSec .footerSub .quickLinksft {
           display: inline-block; }
         .digitalTransformationSubPages .subSectionTitle h1 .legal {
           display: inline-block; }
-        .digitalTransformationSubPages .subSectionTitle h1 span {
+        .digitalTransformationSubPages .subSectionTitle h1 a {
           position: relative;
-          vertical-align: middle;
-          cursor: pointer; } }
+          vertical-align: middle; } }
   .digitalTransformationSubPages p {
     width: 70%;
     line-height: 140%; }
@@ -5933,7 +5930,8 @@ footer .footerSec .footerSub .quickLinksft {
     display: flex;
     align-items: center;
     margin-bottom: 30px; }
-    .generalCounsel .sectionTitle h1 span {
+    .generalCounsel .sectionTitle h1 a {
+      text-decoration: none;
       color: #6A6A6A;
       cursor: pointer; }
     @media all and (max-width: 1400px) {
@@ -5945,10 +5943,9 @@ footer .footerSec .footerSub .quickLinksft {
     @media all and (max-width: 480px) {
       .generalCounsel .sectionTitle h1 {
         display: inline; }
-        .generalCounsel .sectionTitle h1 span {
+        .generalCounsel .sectionTitle h1 a {
           position: relative;
-          vertical-align: middle;
-          cursor: pointer; } }
+          vertical-align: middle; } }
   .generalCounsel p {
     width: 80%;
     margin-bottom: 20px;
@@ -6035,7 +6032,8 @@ footer .footerSec .footerSub .quickLinksft {
     display: flex;
     align-items: center;
     margin-bottom: 30px; }
-    .legalAudit .sectionTitle h1 span {
+    .legalAudit .sectionTitle h1 a {
+      text-decoration: none;
       color: #6A6A6A;
       cursor: pointer; }
     @media all and (max-width: 1400px) {
@@ -6047,10 +6045,9 @@ footer .footerSec .footerSub .quickLinksft {
     @media all and (max-width: 480px) {
       .legalAudit .sectionTitle h1 {
         display: inline; }
-        .legalAudit .sectionTitle h1 span {
+        .legalAudit .sectionTitle h1 a {
           position: relative;
-          vertical-align: middle;
-          cursor: pointer; } }
+          vertical-align: middle; } }
   .legalAudit p {
     width: 80%;
     margin-bottom: 20px;
@@ -6347,9 +6344,12 @@ footer .footerSec .footerSub .quickLinksft {
     display: flex;
     align-items: center;
     margin-bottom: 30px; }
-    .subSectors .sectionTitle h1 span {
+    .subSectors .sectionTitle h1 a {
+      text-decoration: none;
       cursor: pointer;
-      color: #6A6A6A; }
+      color: #6A6A6A;
+      padding-top: 70px;
+      margin-top: -70px; }
     @media all and (max-width: 1400px) {
       .subSectors .sectionTitle h1 {
         margin-bottom: 20px; } }
@@ -6359,7 +6359,7 @@ footer .footerSec .footerSub .quickLinksft {
     @media all and (max-width: 480px) {
       .subSectors .sectionTitle h1 {
         display: inline; }
-        .subSectors .sectionTitle h1 span {
+        .subSectors .sectionTitle h1 a {
           position: relative;
           vertical-align: middle; } }
   .subSectors .subSectors-content {

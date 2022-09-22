@@ -655,5 +655,12 @@ function myFunction() {
   }
 }
 
-
-
+//Smooth scroll with offset for breadcrumbs
+if(window.location.hash){
+  let hash = window.location.hash;
+  if($(hash).length){
+    $('html,body').animate({
+      scrollTop:$(hash).offset().top - 110
+    },200,'');
+  }
+}
