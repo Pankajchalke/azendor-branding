@@ -2151,80 +2151,24 @@ h2 {
                 }
             }
         }
+    }
 
-        .slick-prev,
-        .slick-next {
-            top: 100%;
-            height: 0;
-        }
+    .sliderArrow {
+        position: absolute;
+        right: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        padding-top: 15px;
 
-        .slick-prev {
-            left: 850px;
+        .imgclientBackarrow,
+        .imgclientForwardarrow {
+            background: 0 0;
+            border: none;
 
-            @media (max-width: 2200px) {
-                left: 730px;
-            }
-
-            @media (max-width: 1850px) {
-                left: 650px;
-            }
-
-
-            @media (max-width: 1650px) {
-                left: 600px;
-            }
-
-            @media (max-width: 1450px) {
-                left: 530px;
-            }
-
-            @media (max-width: 1300px) {
-                left: 420px;
-            }
-
-            @media (max-width: 1050px) {
-                left: 360px;
-            }
-
-            @media (max-width: 920px) {
-                top: 98%;
-                left: 280px;
-            }
-
-            @media (max-width: 680px) {
-                left: 145px;
-            }
-
-            @media (max-width: 450px) {
-                left: 105px;
-            }
-
-            @media (max-width: 350px) {
-                left: 84px;
-            }
-
-            &:hover {
-                &:before {
-                    opacity: 1;
-                }
-            }
-
-            &:focus {
-                &:before {
-                    opacity: 1;
-                }
-            }
-
-            &:before {
-                font-size: 38px;
-                //font-family: "";
+            img {
                 opacity: 0.5;
-                content: url(../images/left-arrow.svg);
-                background-repeat: no-repeat;
-
-                @media (max-width: 920px) {
-                    content: url(../images/left-arrow-mobile.svg);
-                }
 
                 &:hover {
                     opacity: 1;
@@ -2232,77 +2176,27 @@ h2 {
             }
         }
 
-        .slick-next {
-            right: 850px;
+        .imgclientBackarrow {
+            margin-right: 100px;
+        }
 
-            @media (max-width: 2200px) {
-                right: 730px;
+        @media all and (max-width:1400px) {
+
+            .imgclientBackarrow img,
+            .imgclientForwardarrow img {
+                width: 32px;
+            }
+        }
+
+        @media all and (max-width:1025px) {
+
+            .imgclientBackarrow img,
+            .imgclientForwardarrow img {
+                width: 24px;
             }
 
-            @media (max-width: 1850px) {
-                right: 650px;
-            }
-
-            @media (max-width: 1650px) {
-                right: 600px;
-            }
-
-            @media (max-width: 1450px) {
-                right: 530px;
-            }
-
-            @media (max-width: 1300px) {
-                right: 420px;
-            }
-
-            @media (max-width: 1050px) {
-                right: 360px;
-            }
-
-            @media (max-width: 920px) {
-                top: 98%;
-                right: 280px;
-            }
-
-            @media (max-width: 680px) {
-                right: 160px;
-            }
-
-            @media (max-width: 450px) {
-                right: 120px;
-            }
-
-            @media (max-width: 350px) {
-                right: 90px;
-            }
-
-            &:hover {
-                &:before {
-                    opacity: 1;
-                }
-            }
-
-            &:focus {
-                &:before {
-                    opacity: 1;
-                }
-            }
-
-            &:before {
-                font-size: 38px;
-                //font-family: "";
-                opacity: 0.5;
-                content: url(../images/right-arrow.svg);
-                background-repeat: no-repeat;
-
-                @media (max-width: 920px) {
-                    content: url(../images/right-arrow-mobile.svg);
-                }
-
-                &:hover {
-
-                    color: #fff;
-                }
+            .imgclientBackarrow {
+                margin-right: 50px;
             }
         }
     }
@@ -2430,8 +2324,8 @@ h2 {
         margin: auto;
         padding-top: 15px;
 
-        .imgBackDesk,
-        .imgForwardDesk {
+        .imgtestBackarrow,
+        .imgtestForwardarrow {
             background: 0 0;
             border: none;
 
@@ -2444,26 +2338,26 @@ h2 {
             }
         }
 
-        .imgBackDesk {
+        .imgtestBackarrow {
             margin-right: 100px;
         }
 
         @media all and (max-width:1400px) {
 
-            .imgBackDesk img,
-            .imgForwardDesk img {
+            .imgtestBackarrow img,
+            .imgtestForwardarrow img {
                 width: 32px;
             }
         }
 
         @media all and (max-width:1025px) {
 
-            .imgBackDesk img,
-            .imgForwardDesk img {
+            .imgtestBackarrow img,
+            .imgtestForwardarrow img {
                 width: 24px;
             }
 
-            .imgBackDesk {
+            .imgtestBackarrow {
                 margin-right: 50px;
             }
         }
@@ -2541,159 +2435,54 @@ h2 {
         }
     }
 
-    .slick-prev,
-    .slick-next {
-        top: 100%;
-        height: 0;
-    }
+    .sliderArrow {
+        position: absolute;
+        right: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        padding-top: 15px;
 
-    .slick-prev {
-        left: 850px;
+        .imgcaseBackarrow,
+        .imgcaseForwardarrow {
+            background: 0 0;
+            border: none;
 
-        @media (max-width: 2200px) {
-            left: 730px;
-        }
+            img {
+                opacity: 0.5;
 
-        @media (max-width: 1850px) {
-            left: 650px;
-        }
-
-
-        @media (max-width: 1650px) {
-            left: 600px;
-        }
-
-        @media (max-width: 1450px) {
-            left: 530px;
-        }
-
-        @media (max-width: 1300px) {
-            left: 420px;
-        }
-
-        @media (max-width: 1050px) {
-            left: 360px;
-        }
-
-        @media (max-width: 920px) {
-            top: 98%;
-            left: 280px;
-        }
-
-        @media (max-width: 680px) {
-            left: 145px;
-        }
-
-        @media (max-width: 450px) {
-            left: 105px;
-        }
-
-        @media (max-width: 350px) {
-            left: 84px;
-        }
-
-        &:hover {
-            &:before {
-                opacity: 1;
+                &:hover {
+                    opacity: 1;
+                }
             }
         }
 
-        &:focus {
-            &:before {
-                opacity: 1;
+        .imgcaseBackarrow {
+            margin-right: 100px;
+        }
+
+        @media all and (max-width:1400px) {
+
+            .imgcaseBackarrow img,
+            .imgcaseForwardarrow img {
+                width: 32px;
             }
         }
 
-        &:before {
-            font-size: 38px;
-            //font-family: "";
-            opacity: 0.5;
-            content: url(../images/left-arrow.svg);
-            background-repeat: no-repeat;
+        @media all and (max-width:1025px) {
 
-            @media (max-width: 920px) {
-                content: url(../images/left-arrow-mobile.svg);
+            .imgcaseBackarrow img,
+            .imgcaseForwardarrow img {
+                width: 24px;
             }
 
-            &:hover {
-                opacity: 1;
+            .imgcaseBackarrow {
+                margin-right: 50px;
             }
         }
     }
-
-    .slick-next {
-        right: 850px;
-
-        @media (max-width: 2200px) {
-            right: 730px;
-        }
-
-        @media (max-width: 1850px) {
-            right: 650px;
-        }
-
-        @media (max-width: 1650px) {
-            right: 600px;
-        }
-
-        @media (max-width: 1450px) {
-            right: 530px;
-        }
-
-        @media (max-width: 1300px) {
-            right: 420px;
-        }
-
-        @media (max-width: 1050px) {
-            right: 360px;
-        }
-
-        @media (max-width: 920px) {
-            top: 98%;
-            right: 280px;
-        }
-
-        @media (max-width: 680px) {
-            right: 160px;
-        }
-
-        @media (max-width: 450px) {
-            right: 120px;
-        }
-
-        @media (max-width: 350px) {
-            right: 90px;
-        }
-
-        &:hover {
-            &:before {
-                opacity: 1;
-            }
-        }
-
-        &:focus {
-            &:before {
-                opacity: 1;
-            }
-        }
-
-        &:before {
-            font-size: 38px;
-            //font-family: "";
-            opacity: 0.5;
-            content: url(../images/right-arrow.svg);
-            background-repeat: no-repeat;
-
-            @media (max-width: 920px) {
-                content: url(../images/right-arrow-mobile.svg);
-            }
-
-            &:hover {
-
-                color: #fff;
-            }
-        }
-    }
+    
 }
 
 
