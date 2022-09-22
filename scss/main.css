@@ -359,40 +359,30 @@ body {
   padding: 120px 0px; }
   .landingPage .pageHeading h1 {
     width: 95%; }
-    .landingPage .pageHeading h1 span {
-      font-weight: 700; }
   .landingPage .pageHeading p {
     margin-top: 30px;
     width: 80%; }
-  .landingPage .pageCta {
+  .landingPage .homepageCta {
     margin-top: 50px;
     display: flex;
     align-items: center; }
-    .landingPage .pageCta a {
+    .landingPage .homepageCta a {
       text-decoration: none;
       color: #212121;
-      border: 1px solid rgba(33, 33, 33, 0.2);
-      border-radius: 60px;
+      border: 2.5px solid #212121;
       padding: 12px 30px;
       display: flex;
       align-items: center;
       transition: 0.2s all ease-in-out; }
-      .landingPage .pageCta a img {
-        opacity: 0;
-        width: 0;
-        transition: 0.6s all;
-        margin-left: 10px; }
-      .landingPage .pageCta a:visited, .landingPage .pageCta a:active, .landingPage .pageCta a:focus {
+      .landingPage .homepageCta a img {
+        height: 10px;
+        width: 35px;
+        opacity: 1;
+        margin-left: 0px; }
+      .landingPage .homepageCta a:visited, .landingPage .homepageCta a:active, .landingPage .homepageCta a:focus {
         text-decoration: none;
         color: #212121; }
-      .landingPage .pageCta a:hover {
-        font-weight: 600;
-        border: 1px solid #212121; }
-        .landingPage .pageCta a:hover img {
-          transform: translateX(10px);
-          opacity: 1;
-          width: auto; }
-      .landingPage .pageCta a:nth-child(1) {
+      .landingPage .homepageCta a:nth-child(1) {
         margin-right: 40px; }
   @media all and (max-width: 1800px) {
     .landingPage {
@@ -404,7 +394,7 @@ body {
   @media all and (max-width: 1650px) {
     .landingPage {
       padding: 80px 0px; }
-      .landingPage .pageCta {
+      .landingPage .homepageCta {
         margin-top: 40px; }
       .landingPage .pageHeading h1 {
         width: 91%; }
@@ -432,7 +422,7 @@ body {
   @media all and (max-width: 1050px) {
     .landingPage {
       padding: 50px 0px; }
-      .landingPage .pageCta {
+      .landingPage .homepageCta {
         margin-top: 25px; }
       .landingPage .pageHeading h1 {
         width: 90%; } }
@@ -441,13 +431,13 @@ body {
       width: 100%; }
     .landingPage .pageHeading p {
       width: 100%; }
-    .landingPage .pageCta {
+    .landingPage .homepageCta {
       display: flex;
       flex-direction: column;
       align-items: flex-start; }
-      .landingPage .pageCta a {
+      .landingPage .homepageCta a {
         padding: 11px 18px; }
-        .landingPage .pageCta a:nth-child(1) {
+        .landingPage .homepageCta a:nth-child(1) {
           margin-right: 0px;
           margin-bottom: 15px; } }
 

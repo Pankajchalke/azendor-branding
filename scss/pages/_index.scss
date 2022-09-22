@@ -3,7 +3,6 @@ body {
     color: #212121;
 }
 
-
 .mainHeader {
     margin-top: 60px;
 
@@ -32,10 +31,6 @@ body {
     .pageHeading {
         h1 {
             width: 95%;
-
-            span {
-                font-weight: 700;
-            }
         }
 
         p {
@@ -44,7 +39,7 @@ body {
         }
     }
 
-    .pageCta {
+    .homepageCta {
         margin-top: 50px;
         display: flex;
         align-items: center;
@@ -52,18 +47,17 @@ body {
         a {
             text-decoration: none;
             color: #212121;
-            border: 1px solid rgba(33, 33, 33, 0.2);
-            border-radius: 60px;
+            border: 2.5px solid #212121;
             padding: 12px 30px;
             display: flex;
             align-items: center;
             transition: 0.2s all ease-in-out;
 
             img {
-                opacity: 0;
-                width: 0;
-                transition: 0.6s all;
-                margin-left: 10px;
+                height: 10px;
+                width: 35px;
+                opacity: 1;
+                margin-left: 0px;
             }
 
             &:visited,
@@ -73,17 +67,6 @@ body {
                 color: #212121;
             }
 
-            &:hover {
-                font-weight: 600;
-                border: 1px solid #212121;
-                
-
-                img {
-                    transform: translateX(10px);
-                    opacity: 1;
-                    width: auto;
-                }
-            }
 
             &:nth-child(1) {
                 margin-right: 40px;
@@ -108,7 +91,7 @@ body {
     @media all and (max-width: 1650px) {
         padding: 80px 0px;
 
-        .pageCta {
+        .homepageCta {
             margin-top: 40px;
         }
 
@@ -168,7 +151,7 @@ body {
     @media all and (max-width: 1050px) {
         padding: 50px 0px;
 
-        .pageCta {
+        .homepageCta {
             margin-top: 25px;
         }
 
@@ -192,7 +175,7 @@ body {
 
         ;
 
-        .pageCta {
+        .homepageCta {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
