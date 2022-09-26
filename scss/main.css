@@ -5046,26 +5046,29 @@ footer .footerSec .footerSub .quickLinksft {
           margin-right: 20px;
           width: 23px;
           height: 12px; } }
-  .legalAdvisory .sectionTitle h1 {
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px; }
-    .legalAdvisory .sectionTitle h1 a {
+  .legalAdvisory .sectionTitle .breadcrumbs {
+    padding: 25px 0px; }
+    @media all and (max-width: 920px) {
+      .legalAdvisory .sectionTitle .breadcrumbs {
+        display: none; } }
+    .legalAdvisory .sectionTitle .breadcrumbs .breadcrumbs-link {
+      padding: 0px 5px;
       text-decoration: none;
       color: #6A6A6A;
-      cursor: pointer; }
+      vertical-align: middle; }
+    .legalAdvisory .sectionTitle .breadcrumbs .active {
+      color: #212121; }
+    .legalAdvisory .sectionTitle .breadcrumbs img {
+      height: 10px;
+      width: 23.06px; }
+  .legalAdvisory .sectionTitle h1 {
+    margin-bottom: 30px; }
     @media all and (max-width: 1400px) {
       .legalAdvisory .sectionTitle h1 {
         margin-bottom: 20px; } }
     @media all and (max-width: 920px) {
       .legalAdvisory .sectionTitle h1 {
         margin-bottom: 0px; } }
-    @media all and (max-width: 480px) {
-      .legalAdvisory .sectionTitle h1 {
-        display: inline; }
-        .legalAdvisory .sectionTitle h1 a {
-          position: relative;
-          vertical-align: middle; } }
   @media all and (max-width: 920px) {
     .legalAdvisory p {
       font-size: 16px; } }
@@ -5189,15 +5192,23 @@ footer .footerSec .footerSub .quickLinksft {
           margin-right: 20px;
           width: 23px;
           height: 12px; } }
-  .advisorySubPages .subSectionTitle h1 {
-    display: flex;
-    align-items: center; }
-    .advisorySubPages .subSectionTitle h1 a {
+  .advisorySubPages .subSectionTitle .breadcrumbs {
+    padding: 25px 0px; }
+    @media all and (max-width: 920px) {
+      .advisorySubPages .subSectionTitle .breadcrumbs {
+        display: none; } }
+    .advisorySubPages .subSectionTitle .breadcrumbs .breadcrumbs-link {
+      padding: 0px 5px;
       text-decoration: none;
       color: #6A6A6A;
-      cursor: pointer; }
-    .advisorySubPages .subSectionTitle h1 .mobileSolutions {
-      display: none; }
+      vertical-align: middle; }
+    .advisorySubPages .subSectionTitle .breadcrumbs .active {
+      color: #212121; }
+    .advisorySubPages .subSectionTitle .breadcrumbs img {
+      height: 10px;
+      width: 23.06px; }
+  .advisorySubPages .subSectionTitle h1 {
+    margin-bottom: 30px; }
     @media all and (max-width: 1400px) {
       .advisorySubPages .subSectionTitle h1 {
         margin-bottom: 20px; } }
@@ -5205,22 +5216,6 @@ footer .footerSec .footerSub .quickLinksft {
       .advisorySubPages .subSectionTitle h1 {
         margin-bottom: 0px;
         padding-top: 10px; } }
-    @media all and (max-width: 700px) {
-      .advisorySubPages .subSectionTitle h1 {
-        display: inline; } }
-    @media all and (max-width: 480px) {
-      .advisorySubPages .subSectionTitle h1 {
-        display: inline;
-        padding-top: 0px; }
-        .advisorySubPages .subSectionTitle h1 .Solutions {
-          display: none; }
-        .advisorySubPages .subSectionTitle h1 .mobileSolutions {
-          display: inline-block; }
-        .advisorySubPages .subSectionTitle h1 .legal {
-          display: inline-block; }
-        .advisorySubPages .subSectionTitle h1 a {
-          position: relative;
-          vertical-align: middle; } }
   .advisorySubPages p {
     width: 70%;
     line-height: 140%; }
@@ -5307,26 +5302,29 @@ footer .footerSec .footerSub .quickLinksft {
           margin-right: 20px;
           width: 23px;
           height: 12px; } }
-  .digitalTransformation .sectionTitle h1 {
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px; }
-    .digitalTransformation .sectionTitle h1 a {
+  .digitalTransformation .sectionTitle .breadcrumbs {
+    padding: 25px 0px; }
+    @media all and (max-width: 920px) {
+      .digitalTransformation .sectionTitle .breadcrumbs {
+        display: none; } }
+    .digitalTransformation .sectionTitle .breadcrumbs .breadcrumbs-link {
+      padding: 0px 5px;
       text-decoration: none;
       color: #6A6A6A;
-      cursor: pointer; }
+      vertical-align: middle; }
+    .digitalTransformation .sectionTitle .breadcrumbs .active {
+      color: #212121; }
+    .digitalTransformation .sectionTitle .breadcrumbs img {
+      height: 10px;
+      width: 23.06px; }
+  .digitalTransformation .sectionTitle h1 {
+    margin-bottom: 30px; }
     @media all and (max-width: 1400px) {
       .digitalTransformation .sectionTitle h1 {
         margin-bottom: 20px; } }
     @media all and (max-width: 920px) {
       .digitalTransformation .sectionTitle h1 {
         margin-bottom: 0px; } }
-    @media all and (max-width: 480px) {
-      .digitalTransformation .sectionTitle h1 {
-        display: inline; }
-        .digitalTransformation .sectionTitle h1 a {
-          position: relative;
-          vertical-align: middle; } }
   @media all and (max-width: 920px) {
     .digitalTransformation p {
       font-size: 16px; } }
@@ -5454,15 +5452,23 @@ footer .footerSec .footerSub .quickLinksft {
           margin-right: 20px;
           width: 23px;
           height: 12px; } }
-  .digitalTransformationSubPages .subSectionTitle h1 {
-    display: flex;
-    align-items: center; }
-    .digitalTransformationSubPages .subSectionTitle h1 a {
+  .digitalTransformationSubPages .subSectionTitle .breadcrumbs {
+    padding: 25px 0px; }
+    @media all and (max-width: 920px) {
+      .digitalTransformationSubPages .subSectionTitle .breadcrumbs {
+        display: none; } }
+    .digitalTransformationSubPages .subSectionTitle .breadcrumbs .breadcrumbs-link {
+      padding: 0px 5px;
       text-decoration: none;
       color: #6A6A6A;
-      cursor: pointer; }
-    .digitalTransformationSubPages .subSectionTitle h1 .mobileSolutions {
-      display: none; }
+      vertical-align: middle; }
+    .digitalTransformationSubPages .subSectionTitle .breadcrumbs .active {
+      color: #212121; }
+    .digitalTransformationSubPages .subSectionTitle .breadcrumbs img {
+      height: 10px;
+      width: 23.06px; }
+  .digitalTransformationSubPages .subSectionTitle h1 {
+    margin-bottom: 30px; }
     @media all and (max-width: 1400px) {
       .digitalTransformationSubPages .subSectionTitle h1 {
         margin-bottom: 20px; } }
@@ -5470,22 +5476,6 @@ footer .footerSec .footerSub .quickLinksft {
       .digitalTransformationSubPages .subSectionTitle h1 {
         margin-bottom: 0px;
         padding-top: 10px; } }
-    @media all and (max-width: 700px) {
-      .digitalTransformationSubPages .subSectionTitle h1 {
-        display: inline; } }
-    @media all and (max-width: 480px) {
-      .digitalTransformationSubPages .subSectionTitle h1 {
-        display: inline;
-        padding-top: 0px; }
-        .digitalTransformationSubPages .subSectionTitle h1 .Solutions {
-          display: none; }
-        .digitalTransformationSubPages .subSectionTitle h1 .mobileSolutions {
-          display: inline-block; }
-        .digitalTransformationSubPages .subSectionTitle h1 .legal {
-          display: inline-block; }
-        .digitalTransformationSubPages .subSectionTitle h1 a {
-          position: relative;
-          vertical-align: middle; } }
   .digitalTransformationSubPages p {
     width: 70%;
     line-height: 140%; }
@@ -5572,26 +5562,29 @@ footer .footerSec .footerSub .quickLinksft {
           margin-right: 20px;
           width: 23px;
           height: 12px; } }
-  .generalCounsel .sectionTitle h1 {
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px; }
-    .generalCounsel .sectionTitle h1 a {
+  .generalCounsel .sectionTitle .breadcrumbs {
+    padding: 25px 0px; }
+    @media all and (max-width: 920px) {
+      .generalCounsel .sectionTitle .breadcrumbs {
+        display: none; } }
+    .generalCounsel .sectionTitle .breadcrumbs .breadcrumbs-link {
+      padding: 0px 5px;
       text-decoration: none;
       color: #6A6A6A;
-      cursor: pointer; }
+      vertical-align: middle; }
+    .generalCounsel .sectionTitle .breadcrumbs .active {
+      color: #212121; }
+    .generalCounsel .sectionTitle .breadcrumbs img {
+      height: 10px;
+      width: 23.06px; }
+  .generalCounsel .sectionTitle h1 {
+    margin-bottom: 30px; }
     @media all and (max-width: 1400px) {
       .generalCounsel .sectionTitle h1 {
         margin-bottom: 20px; } }
     @media all and (max-width: 920px) {
       .generalCounsel .sectionTitle h1 {
         margin-bottom: 0px; } }
-    @media all and (max-width: 480px) {
-      .generalCounsel .sectionTitle h1 {
-        display: inline; }
-        .generalCounsel .sectionTitle h1 a {
-          position: relative;
-          vertical-align: middle; } }
   .generalCounsel p {
     width: 80%;
     margin-bottom: 20px;
@@ -5674,26 +5667,29 @@ footer .footerSec .footerSub .quickLinksft {
           margin-right: 20px;
           width: 23px;
           height: 12px; } }
-  .legalAudit .sectionTitle h1 {
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px; }
-    .legalAudit .sectionTitle h1 a {
+  .legalAudit .sectionTitle .breadcrumbs {
+    padding: 25px 0px; }
+    @media all and (max-width: 920px) {
+      .legalAudit .sectionTitle .breadcrumbs {
+        display: none; } }
+    .legalAudit .sectionTitle .breadcrumbs .breadcrumbs-link {
+      padding: 0px 5px;
       text-decoration: none;
       color: #6A6A6A;
-      cursor: pointer; }
+      vertical-align: middle; }
+    .legalAudit .sectionTitle .breadcrumbs .active {
+      color: #212121; }
+    .legalAudit .sectionTitle .breadcrumbs img {
+      height: 10px;
+      width: 23.06px; }
+  .legalAudit .sectionTitle h1 {
+    margin-bottom: 30px; }
     @media all and (max-width: 1400px) {
       .legalAudit .sectionTitle h1 {
         margin-bottom: 20px; } }
     @media all and (max-width: 920px) {
       .legalAudit .sectionTitle h1 {
         margin-bottom: 0px; } }
-    @media all and (max-width: 480px) {
-      .legalAudit .sectionTitle h1 {
-        display: inline; }
-        .legalAudit .sectionTitle h1 a {
-          position: relative;
-          vertical-align: middle; } }
   .legalAudit p {
     width: 80%;
     margin-bottom: 20px;
@@ -5986,28 +5982,31 @@ footer .footerSec .footerSub .quickLinksft {
           margin-right: 20px;
           width: 23px;
           height: 12px; } }
+  .subSectors .sectionTitle .breadcrumbs {
+    padding: 25px 0px; }
+    @media all and (max-width: 920px) {
+      .subSectors .sectionTitle .breadcrumbs {
+        display: none; } }
+    .subSectors .sectionTitle .breadcrumbs .breadcrumbs-link {
+      padding: 0px 5px;
+      text-decoration: none;
+      color: #6A6A6A;
+      vertical-align: middle; }
+    .subSectors .sectionTitle .breadcrumbs .active {
+      color: #212121; }
+    .subSectors .sectionTitle .breadcrumbs img {
+      height: 10px;
+      width: 23.06px; }
   .subSectors .sectionTitle h1 {
     display: flex;
     align-items: center;
     margin-bottom: 30px; }
-    .subSectors .sectionTitle h1 a {
-      text-decoration: none;
-      cursor: pointer;
-      color: #6A6A6A;
-      padding-top: 70px;
-      margin-top: -70px; }
     @media all and (max-width: 1400px) {
       .subSectors .sectionTitle h1 {
         margin-bottom: 20px; } }
     @media all and (max-width: 920px) {
       .subSectors .sectionTitle h1 {
         margin-bottom: 0px; } }
-    @media all and (max-width: 480px) {
-      .subSectors .sectionTitle h1 {
-        display: inline; }
-        .subSectors .sectionTitle h1 a {
-          position: relative;
-          vertical-align: middle; } }
   .subSectors .subSectors-content {
     width: 80%;
     margin-left: 22px; }

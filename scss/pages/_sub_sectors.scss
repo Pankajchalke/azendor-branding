@@ -47,27 +47,33 @@
 				@media all and (max-width: 920px){margin-right:20px; width: 23px;height: 12px;}
 				}
 		}
+     .breadcrumbs{
+        @media all and (max-width:920px){
+            display: none;
+        }
+        padding: 25px 0px;
+        .breadcrumbs-link{
+         padding: 0px 5px;
+         text-decoration: none;
+         color: #6A6A6A;
+         vertical-align: middle;
+     }
+     .active{
+        color: #212121;
+     }
+     img{
+        height: 10px;
+        width: 23.06px;
+     }
+     }
 		h1{
             display: flex;
             align-items: center;
             margin-bottom:30px;
-			a{
-                text-decoration: none;
-                cursor: pointer;
-                color: #6A6A6A;
-                padding-top: 70px;
-                margin-top: -70px;
-
-               }
+		
 			@media all and (max-width: 1400px){margin-bottom:20px;}
 			@media all and (max-width: 920px){margin-bottom:0px;}
-			@media all and (max-width:480px){
-				display: inline;
-				a{
-                    position: relative;
-					vertical-align: middle;
-				}
-			}
+		
             
 			}
 	}
