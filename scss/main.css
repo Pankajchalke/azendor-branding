@@ -1956,12 +1956,12 @@ body {
 
 .contact {
   margin: 150px 0px; }
-  @media all and (max-width: 1400px) {
+  @media all and (max-width: 1600px) {
     .contact {
       margin: 100px 0px; } }
-  @media all and (max-width: 1080px) {
+  @media all and (max-width: 1400px) {
     .contact {
-      margin: 75px 0px; } }
+      margin: 60px 0px; } }
   @media all and (max-width: 920px) {
     .contact {
       margin: 100px 0px 80px; } }
@@ -4316,9 +4316,12 @@ h2 {
 
 .founder {
   margin: 150px 0px; }
-  @media all and (max-width: 1400px) {
+  @media all and (max-width: 1600px) {
     .founder {
       margin: 100px 0px; } }
+  @media all and (max-width: 1400px) {
+    .founder {
+      margin: 60px 0px; } }
   @media all and (max-width: 920px) {
     .founder {
       margin: 100px 0px 80px; } }
@@ -4495,12 +4498,12 @@ h2 {
 
 .contact {
   margin: 150px 0px; }
-  @media all and (max-width: 1400px) {
+  @media all and (max-width: 1600px) {
     .contact {
       margin: 100px 0px; } }
-  @media all and (max-width: 1080px) {
+  @media all and (max-width: 1400px) {
     .contact {
-      margin: 75px 0px; } }
+      margin: 60px 0px; } }
   @media all and (max-width: 920px) {
     .contact {
       margin: 100px 0px 80px; } }
@@ -5792,9 +5795,12 @@ footer .footerSec .footerSub .quickLinksft {
 .careers {
   margin: 150px 0px;
   color: #212121; }
-  @media all and (max-width: 1400px) {
+  @media all and (max-width: 1600px) {
     .careers {
       margin: 100px 0px; } }
+  @media all and (max-width: 1400px) {
+    .careers {
+      margin: 60px 0px; } }
   @media all and (max-width: 920px) {
     .careers {
       margin: 100px 0px 80px; } }
