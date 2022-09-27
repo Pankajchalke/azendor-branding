@@ -1702,7 +1702,7 @@ body {
     margin-bottom: 60px; }
   @media all and (max-width: 1650px) {
     .testlegalSec h2 {
-      margin-bottom: 50px; } }
+      margin-bottom: 30px; } }
   @media all and (max-width: 1450px) {
     .testlegalSec h2 {
       margin-bottom: 40px; } }
@@ -1716,9 +1716,12 @@ body {
         margin: 0 16px; } }
   .testlegalSec .testlegalSlider .slick-list {
     margin: 0px -26px 60px 0px; }
+    @media (max-width: 1600px) {
+      .testlegalSec .testlegalSlider .slick-list {
+        margin: 0px -26px 40px 0px; } }
     @media (max-width: 480px) {
       .testlegalSec .testlegalSlider .slick-list {
-        margin: 0px -16px 60px 0px; } }
+        margin: 0px -16px 40px 0px; } }
     .testlegalSec .testlegalSlider .slick-list .slick-track {
       margin-left: -21px !important; }
       @media (max-width: 480px) {
@@ -1733,7 +1736,7 @@ body {
     padding: 62px 162px 90px 152px; }
     @media (max-width: 1600px) {
       .testlegalSec .testlegalSlider .testimonialsLegal {
-        padding: 52px 140px 60px 130px; } }
+        padding: 30px 140px 30px 130px; } }
     @media (max-width: 1450px) {
       .testlegalSec .testlegalSlider .testimonialsLegal {
         padding: 44px 117px 54px 108px; } }
@@ -1920,20 +1923,22 @@ body {
       .testlegalSec .sliderArrow .imgtestlegalBackarrow {
         margin-right: 50px; } }
 
-.clientlogoSec .logosSlider {
-  display: block; }
-  .clientlogoSec .logosSlider .slick-track {
-    align-items: center; }
-    .clientlogoSec .logosSlider .slick-track .logosBox {
-      border-right: 1px solid #EEEEEE; }
-      .clientlogoSec .logosSlider .slick-track .logosBox img {
-        margin: 0 auto;
-        filter: grayscale(100%);
-        -webkit-filter: grayscale(100%);
-        transition: 0.2s; }
-        .clientlogoSec .logosSlider .slick-track .logosBox img:hover {
-          filter: grayscale(0%);
-          -webkit-filter: grayscale(0%); }
+.clientlogoSec {
+  margin-top: 50px; }
+  .clientlogoSec .logosSlider {
+    display: block; }
+    .clientlogoSec .logosSlider .slick-track {
+      align-items: center; }
+      .clientlogoSec .logosSlider .slick-track .logosBox {
+        border-right: 1px solid #EEEEEE; }
+        .clientlogoSec .logosSlider .slick-track .logosBox img {
+          margin: 0 auto;
+          filter: grayscale(100%);
+          -webkit-filter: grayscale(100%);
+          transition: 0.2s; }
+          .clientlogoSec .logosSlider .slick-track .logosBox img:hover {
+            filter: grayscale(0%);
+            -webkit-filter: grayscale(0%); }
 
 .legalInnerPageProgress {
   z-index: 11; }
@@ -1948,88 +1953,6 @@ body {
     line-height: 130.9%;
     letter-spacing: 0.05em;
     color: #000; }
-
-.careers {
-  margin: 150px 0px;
-  color: #212121; }
-  @media all and (max-width: 1400px) {
-    .careers {
-      margin: 100px 0px; } }
-  @media all and (max-width: 920px) {
-    .careers {
-      margin: 100px 0px 80px; } }
-  @media all and (max-width: 920px) {
-    .careers .sectionTitle {
-      display: flex;
-      align-items: flex-start;
-      padding-bottom: 20px;
-      margin-bottom: 15px;
-      border-bottom: 0.75px solid rgba(33, 33, 33, 0.6); } }
-  .careers .sectionTitle .backArrow {
-    display: none; }
-    @media all and (max-width: 920px) {
-      .careers .sectionTitle .backArrow {
-        display: block;
-        margin-top: 12.5px; } }
-    @media all and (max-width: 575px) {
-      .careers .sectionTitle .backArrow {
-        display: block;
-        margin-top: 12px; } }
-    .careers .sectionTitle .backArrow img {
-      margin-right: 30px; }
-      @media all and (max-width: 920px) {
-        .careers .sectionTitle .backArrow img {
-          margin-right: 20px;
-          width: 23px;
-          height: 12px; } }
-  .careers .sectionTitle h1 {
-    margin-bottom: 30px; }
-    @media all and (max-width: 1400px) {
-      .careers .sectionTitle h1 {
-        margin-bottom: 20px; } }
-    @media all and (max-width: 920px) {
-      .careers .sectionTitle h1 {
-        margin-bottom: 0px; } }
-  .careers .careers-content {
-    width: 80%; }
-    .careers .careers-content p {
-      margin-bottom: 30px;
-      font-style: normal;
-      line-height: 160%;
-      letter-spacing: 0.03em;
-      font-family: 'Poppins' !important; }
-      .careers .careers-content p span a {
-        font-weight: 500;
-        color: black;
-        text-decoration: none; }
-        .careers .careers-content p span a:hover {
-          color: #6A6A6A; }
-    @media all and (max-width: 1800px) {
-      .careers .careers-content {
-        width: 80%; } }
-    @media all and (max-width: 1600px) {
-      .careers .careers-content {
-        width: 80%; } }
-    @media all and (max-width: 1400px) {
-      .careers .careers-content {
-        width: 80%; }
-        .careers .careers-content p {
-          line-height: 26px; } }
-    @media all and (max-width: 1050px) {
-      .careers .careers-content {
-        width: 80%; } }
-    @media all and (max-width: 920px) {
-      .careers .careers-content {
-        width: 100%; }
-        .careers .careers-content p {
-          line-height: 24px;
-          font-size: 16px; } }
-    @media all and (max-width: 675px) {
-      .careers .careers-content {
-        width: 100%; } }
-    @media all and (max-width: 575px) {
-      .careers .careers-content {
-        width: 100%; } }
 
 .contact {
   margin: 150px 0px; }
@@ -2134,6 +2057,10 @@ body {
         resize: vertical;
         background: rgba(215, 215, 215, 0.3);
         font-size: 20px; }
+        @media all and (max-width: 1600px) {
+          .contact .contactForm form input[type=text], .contact .contactForm form [type=number], .contact .contactForm form [type=email], .contact .contactForm form textarea {
+            margin-bottom: 20px;
+            margin-top: 10px; } }
         @media all and (max-width: 1400px) {
           .contact .contactForm form input[type=text], .contact .contactForm form [type=number], .contact .contactForm form [type=email], .contact .contactForm form textarea {
             font-size: 14px;
@@ -2157,11 +2084,10 @@ body {
       .contact .contactForm form textarea {
         margin-bottom: 20px;
         height: 166px; }
-        @media all and (max-width: 1400px) {
+        @media all and (max-width: 1600px) {
           .contact .contactForm form textarea {
-            height: 118px;
-            margin-bottom: 14px;
-            padding: 15px 10px; } }
+            height: 120px;
+            margin-bottom: 10px; } }
       .contact .contactForm form .submit input[type=submit] {
         background: #212121;
         border: 1px solid rgba(255, 255, 255, 0.2);
@@ -2188,6 +2114,9 @@ body {
         margin-bottom: 40px;
         font-size: 14px;
         line-height: 160%; }
+        @media all and (max-width: 1600px) {
+          .contact .contactForm form .submit p {
+            margin-bottom: 20px; } }
         @media all and (max-width: 1400px) {
           .contact .contactForm form .submit p {
             margin-bottom: 28px;
@@ -2242,15 +2171,15 @@ body {
   background: rgba(194, 194, 194, 0.2);
   padding: 50px 0px;
   margin: 0; }
-  @media all and (max-width: 1400px) {
+  @media all and (max-width: 1600px) {
     .contactDetails {
-      padding: 35px 0px; } }
+      padding: 20px 0px; } }
   .contactDetails .contactDetailsBox {
     display: flex;
     margin-bottom: 60px; }
-    @media all and (max-width: 1400px) {
+    @media all and (max-width: 1600px) {
       .contactDetails .contactDetailsBox {
-        margin-bottom: 15px; } }
+        margin-bottom: 20px; } }
     @media all and (max-width: 920px) {
       .contactDetails .contactDetailsBox {
         display: block;
@@ -2515,23 +2444,27 @@ body {
       padding: 0px 40px 80px 40px; } }
   @media all and (max-width: 1650px) {
     .footerLegal .footerSec {
-      padding: 60px 0px 0px 0px; }
+      padding: 40px 0px 0px 0px; }
       .footerLegal .footerSec .footerSub {
-        padding: 0px 30px 60px 30px; }
+        padding: 0px 25px 40px 25px; }
         .footerLegal .footerSec .footerSub h4 {
           margin-bottom: 25px; }
-        .footerLegal .footerSec .footerSub:nth-child(1) .footerLogo img {
-          width: 239px; }
+        .footerLegal .footerSec .footerSub:nth-child(1) {
+          width: 19%; }
+          .footerLegal .footerSec .footerSub:nth-child(1) .footerLogo img {
+            width: 239px; }
         .footerLegal .footerSec .footerSub:nth-child(2) {
-          width: 25%; }
+          width: 23%; }
         .footerLegal .footerSec .footerSub:nth-child(3) {
-          width: 43%; }
+          width: 45%; }
         .footerLegal .footerSec .footerSub .socialmediaIcons ul li img {
           height: 35px;
           width: 35px; } }
   @media all and (max-width: 1450px) {
     .footerLegal .footerSec .footerSub {
-      padding: 0px 40px 40px 40px; }
+      padding: 0px 25px 40px 25px; }
+      .footerLegal .footerSec .footerSub a {
+        font-size: 14px !important; }
       .footerLegal .footerSec .footerSub ul li {
         margin-bottom: 20px; }
       .footerLegal .footerSec .footerSub:nth-child(1) .footerLogo img {
@@ -4663,6 +4596,10 @@ h2 {
         resize: vertical;
         background: rgba(215, 215, 215, 0.3);
         font-size: 20px; }
+        @media all and (max-width: 1600px) {
+          .contact .contactForm form input[type=text], .contact .contactForm form [type=number], .contact .contactForm form [type=email], .contact .contactForm form textarea {
+            margin-bottom: 20px;
+            margin-top: 10px; } }
         @media all and (max-width: 1400px) {
           .contact .contactForm form input[type=text], .contact .contactForm form [type=number], .contact .contactForm form [type=email], .contact .contactForm form textarea {
             font-size: 14px;
@@ -4686,11 +4623,10 @@ h2 {
       .contact .contactForm form textarea {
         margin-bottom: 20px;
         height: 166px; }
-        @media all and (max-width: 1400px) {
+        @media all and (max-width: 1600px) {
           .contact .contactForm form textarea {
-            height: 118px;
-            margin-bottom: 14px;
-            padding: 15px 10px; } }
+            height: 120px;
+            margin-bottom: 10px; } }
       .contact .contactForm form .submit input[type=submit] {
         background: #212121;
         border: 1px solid rgba(255, 255, 255, 0.2);
@@ -4717,6 +4653,9 @@ h2 {
         margin-bottom: 40px;
         font-size: 14px;
         line-height: 160%; }
+        @media all and (max-width: 1600px) {
+          .contact .contactForm form .submit p {
+            margin-bottom: 20px; } }
         @media all and (max-width: 1400px) {
           .contact .contactForm form .submit p {
             margin-bottom: 28px;
@@ -4771,15 +4710,15 @@ h2 {
   background: rgba(194, 194, 194, 0.2);
   padding: 50px 0px;
   margin: 0; }
-  @media all and (max-width: 1400px) {
+  @media all and (max-width: 1600px) {
     .contactDetails {
-      padding: 35px 0px; } }
+      padding: 20px 0px; } }
   .contactDetails .contactDetailsBox {
     display: flex;
     margin-bottom: 60px; }
-    @media all and (max-width: 1400px) {
+    @media all and (max-width: 1600px) {
       .contactDetails .contactDetailsBox {
-        margin-bottom: 15px; } }
+        margin-bottom: 20px; } }
     @media all and (max-width: 920px) {
       .contactDetails .contactDetailsBox {
         display: block;
@@ -4950,9 +4889,12 @@ footer .footerSec .footerSub .quickLinksft {
 
 .legalAdvisory {
   margin: 150px 0px; }
-  @media all and (max-width: 1400px) {
+  @media all and (max-width: 1600px) {
     .legalAdvisory {
       margin: 100px 0px; } }
+  @media all and (max-width: 1400px) {
+    .legalAdvisory {
+      margin: 60px 0px; } }
   @media all and (max-width: 920px) {
     .legalAdvisory {
       margin: 100px 0px 80px; } }
@@ -4984,7 +4926,7 @@ footer .footerSec .footerSub .quickLinksft {
           width: 23px;
           height: 12px; } }
   .legalAdvisory .sectionTitle .breadcrumbs {
-    padding: 25px 0px; }
+    padding-bottom: 25px; }
     @media all and (max-width: 920px) {
       .legalAdvisory .sectionTitle .breadcrumbs {
         display: none; } }
@@ -5092,123 +5034,141 @@ footer .footerSec .footerSub .quickLinksft {
             line-height: 160%; } }
 
 .advisorySubPages {
-  margin: 150px 0px 250px; }
-  @media all and (max-width: 1400px) {
+  margin: 150px 0px; }
+  @media all and (max-width: 1600px) {
     .advisorySubPages {
       margin: 100px 0px; } }
+  @media all and (max-width: 1400px) {
+    .advisorySubPages {
+      margin: 60px 0px; } }
   @media all and (max-width: 920px) {
     .advisorySubPages {
       margin: 100px 0px 80px; } }
   @media all and (max-width: 575px) {
     .advisorySubPages {
       margin: 80px 0px; } }
-  @media all and (max-width: 920px) {
-    .advisorySubPages .subSectionTitle {
-      display: flex;
-      align-items: center;
-      padding-bottom: 20px;
-      margin-bottom: 15px;
-      border-bottom: 0.75px solid rgba(33, 33, 33, 0.6); } }
-  @media all and (max-width: 480px) {
-    .advisorySubPages .subSectionTitle {
-      align-items: self-start; } }
-  .advisorySubPages .subSectionTitle .backArrow {
-    display: none; }
+  .advisorySubPages .subpageContent {
+    width: 70%; }
     @media all and (max-width: 920px) {
-      .advisorySubPages .subSectionTitle .backArrow {
-        display: block;
-        margin-top: 5px; } }
-    @media all and (max-width: 575px) {
-      .advisorySubPages .subSectionTitle .backArrow {
-        display: block;
-        margin-top: 6px; } }
-    .advisorySubPages .subSectionTitle .backArrow img {
-      margin-right: 30px; }
+      .advisorySubPages .subpageContent .subSectionTitle {
+        display: flex;
+        align-items: center;
+        padding-bottom: 20px;
+        margin-bottom: 15px;
+        border-bottom: 0.75px solid rgba(33, 33, 33, 0.6); } }
+    @media all and (max-width: 480px) {
+      .advisorySubPages .subpageContent .subSectionTitle {
+        align-items: self-start; } }
+    .advisorySubPages .subpageContent .subSectionTitle .backArrow {
+      display: none; }
       @media all and (max-width: 920px) {
-        .advisorySubPages .subSectionTitle .backArrow img {
-          margin-right: 20px;
-          width: 23px;
-          height: 12px; } }
-  .advisorySubPages .subSectionTitle .breadcrumbs {
-    padding: 25px 0px; }
-    @media all and (max-width: 920px) {
-      .advisorySubPages .subSectionTitle .breadcrumbs {
-        display: none; } }
-    .advisorySubPages .subSectionTitle .breadcrumbs .breadcrumbs-link {
-      padding: 0px 5px;
-      text-decoration: none;
-      color: #6A6A6A;
-      vertical-align: middle; }
-    .advisorySubPages .subSectionTitle .breadcrumbs .active {
-      color: #212121; }
-    .advisorySubPages .subSectionTitle .breadcrumbs img {
-      height: 10px;
-      width: 23.06px; }
-  .advisorySubPages .subSectionTitle h1 {
-    margin-bottom: 30px; }
-    @media all and (max-width: 1400px) {
-      .advisorySubPages .subSectionTitle h1 {
-        margin-bottom: 20px; } }
-    @media all and (max-width: 920px) {
-      .advisorySubPages .subSectionTitle h1 {
-        margin-bottom: 0px;
-        padding-top: 10px; } }
-  .advisorySubPages p {
-    width: 70%;
-    line-height: 140%; }
-    @media all and (max-width: 1400px) {
-      .advisorySubPages p {
-        width: 65%; } }
-    @media all and (max-width: 920px) {
-      .advisorySubPages p {
-        font-size: 16px;
-        width: 100%;
-        line-height: 150%; } }
-  .advisorySubPages .advisoryCta {
-    margin-top: 40px;
-    display: flex;
-    align-items: center; }
-    @media all and (max-width: 1400px) {
-      .advisorySubPages .advisoryCta {
-        margin-top: 25px; } }
-    .advisorySubPages .advisoryCta a {
-      background-color: #212121;
-      color: #fff;
-      text-decoration: none;
-      border: 1px solid rgba(33, 33, 33, 0.2);
-      border-radius: 60px;
-      padding: 12px 26px;
-      outline: none;
+        .advisorySubPages .subpageContent .subSectionTitle .backArrow {
+          display: block;
+          margin-top: 5px; } }
+      @media all and (max-width: 575px) {
+        .advisorySubPages .subpageContent .subSectionTitle .backArrow {
+          display: block;
+          margin-top: 6px; } }
+      .advisorySubPages .subpageContent .subSectionTitle .backArrow img {
+        margin-right: 30px; }
+        @media all and (max-width: 920px) {
+          .advisorySubPages .subpageContent .subSectionTitle .backArrow img {
+            margin-right: 20px;
+            width: 23px;
+            height: 12px; } }
+    .advisorySubPages .subpageContent .subSectionTitle .breadcrumbs {
+      padding-bottom: 25px; }
+      @media all and (max-width: 920px) {
+        .advisorySubPages .subpageContent .subSectionTitle .breadcrumbs {
+          display: none; } }
+      .advisorySubPages .subpageContent .subSectionTitle .breadcrumbs .breadcrumbs-link {
+        padding: 0px 5px;
+        text-decoration: none;
+        color: #6A6A6A;
+        vertical-align: middle; }
+      .advisorySubPages .subpageContent .subSectionTitle .breadcrumbs .active {
+        color: #212121; }
+      .advisorySubPages .subpageContent .subSectionTitle .breadcrumbs img {
+        height: 10px;
+        width: 23.06px; }
+    .advisorySubPages .subpageContent .subSectionTitle h1 {
+      margin-bottom: 30px; }
+      @media all and (max-width: 1400px) {
+        .advisorySubPages .subpageContent .subSectionTitle h1 {
+          margin-bottom: 20px; } }
+      @media all and (max-width: 920px) {
+        .advisorySubPages .subpageContent .subSectionTitle h1 {
+          margin-bottom: 0px;
+          padding-top: 10px; } }
+    .advisorySubPages .subpageContent p {
+      line-height: 140%; }
+      @media all and (max-width: 920px) {
+        .advisorySubPages .subpageContent p {
+          font-size: 16px;
+          line-height: 150%; } }
+    .advisorySubPages .subpageContent .advisoryCta {
+      margin-top: 40px;
       display: flex;
       align-items: center; }
       @media all and (max-width: 1400px) {
-        .advisorySubPages .advisoryCta a {
-          padding: 11px 17px; } }
-      @media all and (max-width: 920px) {
-        .advisorySubPages .advisoryCta a {
-          font-size: 14px;
-          padding: 11px 19px; } }
-      .advisorySubPages .advisoryCta a img {
-        width: 23px;
-        height: 18px;
-        transition: 0.6s all;
-        margin-left: 10px; }
+        .advisorySubPages .subpageContent .advisoryCta {
+          margin-top: 25px; } }
+      .advisorySubPages .subpageContent .advisoryCta a {
+        background-color: #212121;
+        color: #fff;
+        text-decoration: none;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 60px;
+        padding: 12px 26px;
+        outline: none;
+        display: flex;
+        align-items: center; }
         @media all and (max-width: 1400px) {
-          .advisorySubPages .advisoryCta a img {
-            width: 16px;
-            height: 8px; } }
+          .advisorySubPages .subpageContent .advisoryCta a {
+            padding: 11px 17px; } }
         @media all and (max-width: 920px) {
-          .advisorySubPages .advisoryCta a img {
-            width: 18px;
-            height: 9px; } }
-      .advisorySubPages .advisoryCta a:hover img {
-        transform: translateX(10px); }
+          .advisorySubPages .subpageContent .advisoryCta a {
+            font-size: 14px;
+            padding: 11px 19px; } }
+        .advisorySubPages .subpageContent .advisoryCta a img {
+          width: 23px;
+          height: 18px;
+          transition: 0.6s all;
+          margin-left: 10px; }
+          @media all and (max-width: 1400px) {
+            .advisorySubPages .subpageContent .advisoryCta a img {
+              width: 16px;
+              height: 8px; } }
+          @media all and (max-width: 920px) {
+            .advisorySubPages .subpageContent .advisoryCta a img {
+              width: 18px;
+              height: 9px; } }
+        .advisorySubPages .subpageContent .advisoryCta a:hover img {
+          transform: translateX(10px); }
+    @media all and (max-width: 1680px) {
+      .advisorySubPages .subpageContent {
+        width: 66%; } }
+    @media all and (max-width: 1680px) {
+      .advisorySubPages .subpageContent {
+        width: 70%; } }
+    @media all and (max-width: 1330px) {
+      .advisorySubPages .subpageContent {
+        width: 68%; } }
+    @media all and (max-width: 1280px) {
+      .advisorySubPages .subpageContent {
+        width: 64%; } }
+    @media all and (max-width: 920px) {
+      .advisorySubPages .subpageContent {
+        width: 100%; } }
 
 .digitalTransformation {
   margin: 150px 0px; }
-  @media all and (max-width: 1400px) {
+  @media all and (max-width: 1600px) {
     .digitalTransformation {
       margin: 100px 0px; } }
+  @media all and (max-width: 1400px) {
+    .digitalTransformation {
+      margin: 60px 0px; } }
   @media all and (max-width: 920px) {
     .digitalTransformation {
       margin: 100px 0px 80px; } }
@@ -5240,7 +5200,7 @@ footer .footerSec .footerSub .quickLinksft {
           width: 23px;
           height: 12px; } }
   .digitalTransformation .sectionTitle .breadcrumbs {
-    padding: 25px 0px; }
+    padding-bottom: 25px; }
     @media all and (max-width: 920px) {
       .digitalTransformation .sectionTitle .breadcrumbs {
         display: none; } }
@@ -5352,327 +5312,372 @@ footer .footerSec .footerSub .quickLinksft {
             line-height: 160%; } }
 
 .digitalTransformationSubPages {
-  margin: 150px 0px 250px; }
-  @media all and (max-width: 1400px) {
+  margin: 150px 0px; }
+  @media all and (max-width: 1600px) {
     .digitalTransformationSubPages {
       margin: 100px 0px; } }
+  @media all and (max-width: 1400px) {
+    .digitalTransformationSubPages {
+      margin: 60px 0px; } }
   @media all and (max-width: 920px) {
     .digitalTransformationSubPages {
       margin: 100px 0px 80px; } }
   @media all and (max-width: 575px) {
     .digitalTransformationSubPages {
       margin: 80px 0px; } }
-  @media all and (max-width: 920px) {
-    .digitalTransformationSubPages .subSectionTitle {
-      display: flex;
-      align-items: center;
-      padding-bottom: 20px;
-      margin-bottom: 15px;
-      border-bottom: 0.75px solid rgba(33, 33, 33, 0.6); } }
-  @media all and (max-width: 480px) {
-    .digitalTransformationSubPages .subSectionTitle {
-      align-items: self-start; } }
-  .digitalTransformationSubPages .subSectionTitle .backArrow {
-    display: none; }
+  .digitalTransformationSubPages .subpageContent {
+    width: 70%; }
     @media all and (max-width: 920px) {
-      .digitalTransformationSubPages .subSectionTitle .backArrow {
-        display: block;
-        margin-top: 5px; } }
-    @media all and (max-width: 575px) {
-      .digitalTransformationSubPages .subSectionTitle .backArrow {
-        display: block;
-        margin-top: 6px; } }
-    .digitalTransformationSubPages .subSectionTitle .backArrow img {
-      margin-right: 30px; }
+      .digitalTransformationSubPages .subpageContent .subSectionTitle {
+        display: flex;
+        align-items: center;
+        padding-bottom: 20px;
+        margin-bottom: 15px;
+        border-bottom: 0.75px solid rgba(33, 33, 33, 0.6); } }
+    @media all and (max-width: 480px) {
+      .digitalTransformationSubPages .subpageContent .subSectionTitle {
+        align-items: self-start; } }
+    .digitalTransformationSubPages .subpageContent .subSectionTitle .backArrow {
+      display: none; }
       @media all and (max-width: 920px) {
-        .digitalTransformationSubPages .subSectionTitle .backArrow img {
-          margin-right: 20px;
-          width: 23px;
-          height: 12px; } }
-  .digitalTransformationSubPages .subSectionTitle .breadcrumbs {
-    padding: 25px 0px; }
-    @media all and (max-width: 920px) {
-      .digitalTransformationSubPages .subSectionTitle .breadcrumbs {
-        display: none; } }
-    .digitalTransformationSubPages .subSectionTitle .breadcrumbs .breadcrumbs-link {
-      padding: 0px 5px;
-      text-decoration: none;
-      color: #6A6A6A;
-      vertical-align: middle; }
-    .digitalTransformationSubPages .subSectionTitle .breadcrumbs .active {
-      color: #212121; }
-    .digitalTransformationSubPages .subSectionTitle .breadcrumbs img {
-      height: 10px;
-      width: 23.06px; }
-  .digitalTransformationSubPages .subSectionTitle h1 {
-    margin-bottom: 30px; }
-    @media all and (max-width: 1400px) {
-      .digitalTransformationSubPages .subSectionTitle h1 {
-        margin-bottom: 20px; } }
-    @media all and (max-width: 920px) {
-      .digitalTransformationSubPages .subSectionTitle h1 {
-        margin-bottom: 0px;
-        padding-top: 10px; } }
-  .digitalTransformationSubPages p {
-    width: 70%;
-    line-height: 140%; }
-    @media all and (max-width: 1400px) {
-      .digitalTransformationSubPages p {
-        width: 70%; } }
-    @media all and (max-width: 920px) {
-      .digitalTransformationSubPages p {
-        font-size: 16px;
-        width: 100%;
-        line-height: 150%; } }
-  .digitalTransformationSubPages .digitalTransformationCta {
-    margin-top: 40px;
-    display: flex;
-    align-items: center; }
-    @media all and (max-width: 1400px) {
-      .digitalTransformationSubPages .digitalTransformationCta {
-        margin-top: 25px; } }
-    .digitalTransformationSubPages .digitalTransformationCta a {
-      background-color: #212121;
-      color: #fff;
-      text-decoration: none;
-      border: 1px solid rgba(33, 33, 33, 0.2);
-      border-radius: 60px;
-      padding: 12px 26px;
-      outline: none;
+        .digitalTransformationSubPages .subpageContent .subSectionTitle .backArrow {
+          display: block;
+          margin-top: 5px; } }
+      @media all and (max-width: 575px) {
+        .digitalTransformationSubPages .subpageContent .subSectionTitle .backArrow {
+          display: block;
+          margin-top: 6px; } }
+      .digitalTransformationSubPages .subpageContent .subSectionTitle .backArrow img {
+        margin-right: 30px; }
+        @media all and (max-width: 920px) {
+          .digitalTransformationSubPages .subpageContent .subSectionTitle .backArrow img {
+            margin-right: 20px;
+            width: 23px;
+            height: 12px; } }
+    .digitalTransformationSubPages .subpageContent .subSectionTitle .breadcrumbs {
+      padding-bottom: 25px; }
+      @media all and (max-width: 920px) {
+        .digitalTransformationSubPages .subpageContent .subSectionTitle .breadcrumbs {
+          display: none; } }
+      .digitalTransformationSubPages .subpageContent .subSectionTitle .breadcrumbs .breadcrumbs-link {
+        padding: 0px 5px;
+        text-decoration: none;
+        color: #6A6A6A;
+        vertical-align: middle; }
+      .digitalTransformationSubPages .subpageContent .subSectionTitle .breadcrumbs .active {
+        color: #212121; }
+      .digitalTransformationSubPages .subpageContent .subSectionTitle .breadcrumbs img {
+        height: 10px;
+        width: 23.06px; }
+    .digitalTransformationSubPages .subpageContent .subSectionTitle h1 {
+      margin-bottom: 30px; }
+      @media all and (max-width: 1400px) {
+        .digitalTransformationSubPages .subpageContent .subSectionTitle h1 {
+          margin-bottom: 20px; } }
+      @media all and (max-width: 920px) {
+        .digitalTransformationSubPages .subpageContent .subSectionTitle h1 {
+          margin-bottom: 0px;
+          padding-top: 10px; } }
+    .digitalTransformationSubPages .subpageContent p {
+      line-height: 140%; }
+      @media all and (max-width: 920px) {
+        .digitalTransformationSubPages .subpageContent p {
+          font-size: 16px;
+          line-height: 150%; } }
+    .digitalTransformationSubPages .subpageContent .digitalTransformationCta {
+      margin-top: 40px;
       display: flex;
       align-items: center; }
       @media all and (max-width: 1400px) {
-        .digitalTransformationSubPages .digitalTransformationCta a {
-          padding: 11px 17px; } }
-      @media all and (max-width: 920px) {
-        .digitalTransformationSubPages .digitalTransformationCta a {
-          font-size: 14px;
-          padding: 11px 19px; } }
-      .digitalTransformationSubPages .digitalTransformationCta a img {
-        width: 23px;
-        height: 18px;
-        transition: 0.6s all;
-        margin-left: 10px; }
+        .digitalTransformationSubPages .subpageContent .digitalTransformationCta {
+          margin-top: 25px; } }
+      .digitalTransformationSubPages .subpageContent .digitalTransformationCta a {
+        background-color: #212121;
+        color: #fff;
+        text-decoration: none;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 60px;
+        padding: 12px 26px;
+        outline: none;
+        display: flex;
+        align-items: center; }
         @media all and (max-width: 1400px) {
-          .digitalTransformationSubPages .digitalTransformationCta a img {
-            width: 16px;
-            height: 8px; } }
+          .digitalTransformationSubPages .subpageContent .digitalTransformationCta a {
+            padding: 11px 17px; } }
         @media all and (max-width: 920px) {
-          .digitalTransformationSubPages .digitalTransformationCta a img {
-            width: 18px;
-            height: 9px; } }
-      .digitalTransformationSubPages .digitalTransformationCta a:hover img {
-        transform: translateX(10px); }
+          .digitalTransformationSubPages .subpageContent .digitalTransformationCta a {
+            font-size: 14px;
+            padding: 11px 19px; } }
+        .digitalTransformationSubPages .subpageContent .digitalTransformationCta a img {
+          width: 23px;
+          height: 18px;
+          transition: 0.6s all;
+          margin-left: 10px; }
+          @media all and (max-width: 1400px) {
+            .digitalTransformationSubPages .subpageContent .digitalTransformationCta a img {
+              width: 16px;
+              height: 8px; } }
+          @media all and (max-width: 920px) {
+            .digitalTransformationSubPages .subpageContent .digitalTransformationCta a img {
+              width: 18px;
+              height: 9px; } }
+        .digitalTransformationSubPages .subpageContent .digitalTransformationCta a:hover img {
+          transform: translateX(10px); }
+    @media all and (max-width: 1680px) {
+      .digitalTransformationSubPages .subpageContent {
+        width: 66%; } }
+    @media all and (max-width: 1680px) {
+      .digitalTransformationSubPages .subpageContent {
+        width: 70%; } }
+    @media all and (max-width: 1330px) {
+      .digitalTransformationSubPages .subpageContent {
+        width: 68%; } }
+    @media all and (max-width: 1280px) {
+      .digitalTransformationSubPages .subpageContent {
+        width: 64%; } }
+    @media all and (max-width: 920px) {
+      .digitalTransformationSubPages .subpageContent {
+        width: 100%; } }
 
 .generalCounsel {
   margin: 150px 0px; }
-  @media all and (max-width: 1400px) {
+  @media all and (max-width: 1600px) {
     .generalCounsel {
       margin: 100px 0px; } }
+  @media all and (max-width: 1400px) {
+    .generalCounsel {
+      margin: 60px 0px; } }
   @media all and (max-width: 920px) {
     .generalCounsel {
       margin: 100px 0px 80px; } }
-  @media all and (max-width: 920px) {
-    .generalCounsel .sectionTitle {
-      display: flex;
-      align-items: flex-start;
-      padding-bottom: 20px;
-      margin-bottom: 15px;
-      border-bottom: 0.75px solid rgba(33, 33, 33, 0.6); } }
-  @media all and (max-width: 480px) {
-    .generalCounsel .sectionTitle {
-      align-items: self-start; } }
-  .generalCounsel .sectionTitle .backArrow {
-    display: none; }
+  .generalCounsel .subpageContent {
+    width: 70%; }
     @media all and (max-width: 920px) {
-      .generalCounsel .sectionTitle .backArrow {
-        display: block;
-        margin-top: 5px; } }
-    @media all and (max-width: 575px) {
-      .generalCounsel .sectionTitle .backArrow {
-        display: block;
-        margin-top: 6px; } }
-    .generalCounsel .sectionTitle .backArrow img {
-      margin-right: 30px; }
+      .generalCounsel .subpageContent .sectionTitle {
+        display: flex;
+        align-items: flex-start;
+        padding-bottom: 20px;
+        margin-bottom: 15px;
+        border-bottom: 0.75px solid rgba(33, 33, 33, 0.6); } }
+    @media all and (max-width: 480px) {
+      .generalCounsel .subpageContent .sectionTitle {
+        align-items: self-start; } }
+    .generalCounsel .subpageContent .sectionTitle .backArrow {
+      display: none; }
       @media all and (max-width: 920px) {
-        .generalCounsel .sectionTitle .backArrow img {
-          margin-right: 20px;
-          width: 23px;
-          height: 12px; } }
-  .generalCounsel .sectionTitle .breadcrumbs {
-    padding: 25px 0px; }
-    @media all and (max-width: 920px) {
-      .generalCounsel .sectionTitle .breadcrumbs {
-        display: none; } }
-    .generalCounsel .sectionTitle .breadcrumbs .breadcrumbs-link {
-      padding: 0px 5px;
-      text-decoration: none;
-      color: #6A6A6A;
-      vertical-align: middle; }
-    .generalCounsel .sectionTitle .breadcrumbs .active {
-      color: #212121; }
-    .generalCounsel .sectionTitle .breadcrumbs img {
-      height: 10px;
-      width: 23.06px; }
-  .generalCounsel .sectionTitle h1 {
-    margin-bottom: 30px; }
-    @media all and (max-width: 1400px) {
-      .generalCounsel .sectionTitle h1 {
-        margin-bottom: 20px; } }
-    @media all and (max-width: 920px) {
-      .generalCounsel .sectionTitle h1 {
-        margin-bottom: 0px; } }
-  .generalCounsel p {
-    width: 80%;
-    margin-bottom: 20px;
-    line-height: 160%; }
-    @media all and (max-width: 1400px) {
-      .generalCounsel p {
-        width: 75%; } }
-    @media all and (max-width: 920px) {
-      .generalCounsel p {
-        width: 100%;
-        font-size: 16px;
-        line-height: 150%; } }
-  .generalCounsel .generalCounselCta {
-    margin-top: 40px;
-    display: flex;
-    align-items: center; }
-    @media all and (max-width: 1400px) {
-      .generalCounsel .generalCounselCta {
-        margin-top: 25px; } }
-    .generalCounsel .generalCounselCta a {
-      background-color: #212121;
-      color: #fff;
-      text-decoration: none;
-      border: 1px solid rgba(33, 33, 33, 0.2);
-      border-radius: 60px;
-      padding: 12px 26px;
-      outline: none;
+        .generalCounsel .subpageContent .sectionTitle .backArrow {
+          display: block;
+          margin-top: 5px; } }
+      @media all and (max-width: 575px) {
+        .generalCounsel .subpageContent .sectionTitle .backArrow {
+          display: block;
+          margin-top: 6px; } }
+      .generalCounsel .subpageContent .sectionTitle .backArrow img {
+        margin-right: 30px; }
+        @media all and (max-width: 920px) {
+          .generalCounsel .subpageContent .sectionTitle .backArrow img {
+            margin-right: 20px;
+            width: 23px;
+            height: 12px; } }
+    .generalCounsel .subpageContent .sectionTitle .breadcrumbs {
+      padding-bottom: 25px; }
+      @media all and (max-width: 920px) {
+        .generalCounsel .subpageContent .sectionTitle .breadcrumbs {
+          display: none; } }
+      .generalCounsel .subpageContent .sectionTitle .breadcrumbs .breadcrumbs-link {
+        padding: 0px 5px;
+        text-decoration: none;
+        color: #6A6A6A;
+        vertical-align: middle; }
+      .generalCounsel .subpageContent .sectionTitle .breadcrumbs .active {
+        color: #212121; }
+      .generalCounsel .subpageContent .sectionTitle .breadcrumbs img {
+        height: 10px;
+        width: 23.06px; }
+    .generalCounsel .subpageContent .sectionTitle h1 {
+      margin-bottom: 30px; }
+      @media all and (max-width: 1400px) {
+        .generalCounsel .subpageContent .sectionTitle h1 {
+          margin-bottom: 20px; } }
+      @media all and (max-width: 920px) {
+        .generalCounsel .subpageContent .sectionTitle h1 {
+          margin-bottom: 0px; } }
+    .generalCounsel .subpageContent p {
+      margin-bottom: 20px;
+      line-height: 160%; }
+      @media all and (max-width: 920px) {
+        .generalCounsel .subpageContent p {
+          font-size: 16px;
+          line-height: 150%; } }
+    .generalCounsel .subpageContent .generalCounselCta {
+      margin-top: 40px;
       display: flex;
       align-items: center; }
-      @media all and (max-width: 920px) {
-        .generalCounsel .generalCounselCta a {
-          padding: 11px 19px;
-          font-size: 14px; } }
-      .generalCounsel .generalCounselCta a img {
-        transition: 0.6s all;
-        margin-left: 10px; }
-        @media all and (max-width: 1400px) {
-          .generalCounsel .generalCounselCta a img {
-            width: 16px;
-            height: 8px; } }
+      @media all and (max-width: 1400px) {
+        .generalCounsel .subpageContent .generalCounselCta {
+          margin-top: 25px; } }
+      .generalCounsel .subpageContent .generalCounselCta a {
+        background-color: #212121;
+        color: #fff;
+        text-decoration: none;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 60px;
+        padding: 12px 26px;
+        outline: none;
+        display: flex;
+        align-items: center; }
         @media all and (max-width: 920px) {
-          .generalCounsel .generalCounselCta a img {
-            width: 18px;
-            height: 9px; } }
-      .generalCounsel .generalCounselCta a:hover img {
-        transform: translateX(10px); }
+          .generalCounsel .subpageContent .generalCounselCta a {
+            padding: 11px 19px;
+            font-size: 14px; } }
+        .generalCounsel .subpageContent .generalCounselCta a img {
+          transition: 0.6s all;
+          margin-left: 10px; }
+          @media all and (max-width: 1400px) {
+            .generalCounsel .subpageContent .generalCounselCta a img {
+              width: 16px;
+              height: 8px; } }
+          @media all and (max-width: 920px) {
+            .generalCounsel .subpageContent .generalCounselCta a img {
+              width: 18px;
+              height: 9px; } }
+        .generalCounsel .subpageContent .generalCounselCta a:hover img {
+          transform: translateX(10px); }
+    @media all and (max-width: 1680px) {
+      .generalCounsel .subpageContent {
+        width: 66%; } }
+    @media all and (max-width: 1680px) {
+      .generalCounsel .subpageContent {
+        width: 70%; } }
+    @media all and (max-width: 1330px) {
+      .generalCounsel .subpageContent {
+        width: 68%; } }
+    @media all and (max-width: 1280px) {
+      .generalCounsel .subpageContent {
+        width: 64%; } }
+    @media all and (max-width: 920px) {
+      .generalCounsel .subpageContent {
+        width: 100%; } }
 
 .legalAudit {
   margin: 150px 0px; }
-  @media all and (max-width: 1400px) {
+  @media all and (max-width: 1600px) {
     .legalAudit {
       margin: 100px 0px; } }
+  @media all and (max-width: 1400px) {
+    .legalAudit {
+      margin: 60px 0px; } }
   @media all and (max-width: 920px) {
     .legalAudit {
       margin: 100px 0px 80px; } }
-  @media all and (max-width: 920px) {
-    .legalAudit .sectionTitle {
-      display: flex;
-      align-items: flex-start;
-      padding-bottom: 20px;
-      margin-bottom: 15px;
-      border-bottom: 0.75px solid rgba(33, 33, 33, 0.6); } }
-  @media all and (max-width: 480px) {
-    .legalAudit .sectionTitle {
-      align-items: self-start; } }
-  .legalAudit .sectionTitle .backArrow {
-    display: none; }
+  .legalAudit .subpageContent {
+    width: 70%; }
     @media all and (max-width: 920px) {
-      .legalAudit .sectionTitle .backArrow {
-        display: block;
-        margin-top: 5px; } }
-    @media all and (max-width: 575px) {
-      .legalAudit .sectionTitle .backArrow {
-        display: block;
-        margin-top: 6px; } }
-    .legalAudit .sectionTitle .backArrow img {
-      margin-right: 30px; }
+      .legalAudit .subpageContent .sectionTitle {
+        display: flex;
+        align-items: flex-start;
+        padding-bottom: 20px;
+        margin-bottom: 15px;
+        border-bottom: 0.75px solid rgba(33, 33, 33, 0.6); } }
+    @media all and (max-width: 480px) {
+      .legalAudit .subpageContent .sectionTitle {
+        align-items: self-start; } }
+    .legalAudit .subpageContent .sectionTitle .backArrow {
+      display: none; }
       @media all and (max-width: 920px) {
-        .legalAudit .sectionTitle .backArrow img {
-          margin-right: 20px;
-          width: 23px;
-          height: 12px; } }
-  .legalAudit .sectionTitle .breadcrumbs {
-    padding: 25px 0px; }
-    @media all and (max-width: 920px) {
-      .legalAudit .sectionTitle .breadcrumbs {
-        display: none; } }
-    .legalAudit .sectionTitle .breadcrumbs .breadcrumbs-link {
-      padding: 0px 5px;
-      text-decoration: none;
-      color: #6A6A6A;
-      vertical-align: middle; }
-    .legalAudit .sectionTitle .breadcrumbs .active {
-      color: #212121; }
-    .legalAudit .sectionTitle .breadcrumbs img {
-      height: 10px;
-      width: 23.06px; }
-  .legalAudit .sectionTitle h1 {
-    margin-bottom: 30px; }
-    @media all and (max-width: 1400px) {
-      .legalAudit .sectionTitle h1 {
-        margin-bottom: 20px; } }
-    @media all and (max-width: 920px) {
-      .legalAudit .sectionTitle h1 {
-        margin-bottom: 0px; } }
-  .legalAudit p {
-    width: 80%;
-    margin-bottom: 20px;
-    line-height: 160%; }
-    @media all and (max-width: 1400px) {
-      .legalAudit p {
-        width: 75%; } }
-    @media all and (max-width: 920px) {
-      .legalAudit p {
-        width: 100%;
-        font-size: 16px;
-        line-height: 150%; } }
-  .legalAudit .legalAuditCta {
-    margin-top: 40px;
-    display: flex;
-    align-items: center; }
-    @media all and (max-width: 1400px) {
-      .legalAudit .legalAuditCta {
-        margin-top: 25px; } }
-    .legalAudit .legalAuditCta a {
-      background-color: #212121;
-      color: #fff;
-      text-decoration: none;
-      border: 1px solid rgba(33, 33, 33, 0.2);
-      border-radius: 60px;
-      padding: 12px 26px;
-      outline: none;
+        .legalAudit .subpageContent .sectionTitle .backArrow {
+          display: block;
+          margin-top: 5px; } }
+      @media all and (max-width: 575px) {
+        .legalAudit .subpageContent .sectionTitle .backArrow {
+          display: block;
+          margin-top: 6px; } }
+      .legalAudit .subpageContent .sectionTitle .backArrow img {
+        margin-right: 30px; }
+        @media all and (max-width: 920px) {
+          .legalAudit .subpageContent .sectionTitle .backArrow img {
+            margin-right: 20px;
+            width: 23px;
+            height: 12px; } }
+    .legalAudit .subpageContent .sectionTitle .breadcrumbs {
+      padding-bottom: 25px; }
+      @media all and (max-width: 920px) {
+        .legalAudit .subpageContent .sectionTitle .breadcrumbs {
+          display: none; } }
+      .legalAudit .subpageContent .sectionTitle .breadcrumbs .breadcrumbs-link {
+        padding: 0px 5px;
+        text-decoration: none;
+        color: #6A6A6A;
+        vertical-align: middle; }
+      .legalAudit .subpageContent .sectionTitle .breadcrumbs .active {
+        color: #212121; }
+      .legalAudit .subpageContent .sectionTitle .breadcrumbs img {
+        height: 10px;
+        width: 23.06px; }
+    .legalAudit .subpageContent .sectionTitle h1 {
+      margin-bottom: 30px; }
+      @media all and (max-width: 1400px) {
+        .legalAudit .subpageContent .sectionTitle h1 {
+          margin-bottom: 20px; } }
+      @media all and (max-width: 920px) {
+        .legalAudit .subpageContent .sectionTitle h1 {
+          margin-bottom: 0px; } }
+    .legalAudit .subpageContent p {
+      margin-bottom: 20px;
+      line-height: 160%; }
+      @media all and (max-width: 920px) {
+        .legalAudit .subpageContent p {
+          font-size: 16px;
+          line-height: 150%; } }
+    .legalAudit .subpageContent .legalAuditCta {
+      margin-top: 40px;
       display: flex;
       align-items: center; }
-      @media all and (max-width: 920px) {
-        .legalAudit .legalAuditCta a {
-          padding: 11px 19px;
-          font-size: 14px; } }
-      .legalAudit .legalAuditCta a img {
-        transition: 0.6s all;
-        margin-left: 10px; }
-        @media all and (max-width: 1400px) {
-          .legalAudit .legalAuditCta a img {
-            width: 16px;
-            height: 8px; } }
+      @media all and (max-width: 1400px) {
+        .legalAudit .subpageContent .legalAuditCta {
+          margin-top: 25px; } }
+      .legalAudit .subpageContent .legalAuditCta a {
+        background-color: #212121;
+        color: #fff;
+        text-decoration: none;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 60px;
+        padding: 12px 26px;
+        outline: none;
+        display: flex;
+        align-items: center; }
         @media all and (max-width: 920px) {
-          .legalAudit .legalAuditCta a img {
-            width: 18px;
-            height: 9px; } }
-      .legalAudit .legalAuditCta a:hover img {
-        transform: translateX(10px); }
+          .legalAudit .subpageContent .legalAuditCta a {
+            padding: 11px 19px;
+            font-size: 14px; } }
+        .legalAudit .subpageContent .legalAuditCta a img {
+          transition: 0.6s all;
+          margin-left: 10px; }
+          @media all and (max-width: 1400px) {
+            .legalAudit .subpageContent .legalAuditCta a img {
+              width: 16px;
+              height: 8px; } }
+          @media all and (max-width: 920px) {
+            .legalAudit .subpageContent .legalAuditCta a img {
+              width: 18px;
+              height: 9px; } }
+        .legalAudit .subpageContent .legalAuditCta a:hover img {
+          transform: translateX(10px); }
+    @media all and (max-width: 1680px) {
+      .legalAudit .subpageContent {
+        width: 66%; } }
+    @media all and (max-width: 1680px) {
+      .legalAudit .subpageContent {
+        width: 70%; } }
+    @media all and (max-width: 1330px) {
+      .legalAudit .subpageContent {
+        width: 68%; } }
+    @media all and (max-width: 1280px) {
+      .legalAudit .subpageContent {
+        width: 64%; } }
+    @media all and (max-width: 920px) {
+      .legalAudit .subpageContent {
+        width: 100%; } }
 
 .aboutUs {
   margin: 150px 0px;
@@ -5683,104 +5688,100 @@ footer .footerSec .footerSub .quickLinksft {
   @media all and (max-width: 920px) {
     .aboutUs {
       margin: 100px 0px 80px; } }
-  @media all and (max-width: 920px) {
-    .aboutUs .sectionTitle {
-      display: flex;
-      align-items: flex-start;
-      padding-bottom: 20px;
-      margin-bottom: 15px;
-      border-bottom: 0.75px solid rgba(33, 33, 33, 0.6); } }
-  .aboutUs .sectionTitle .backArrow {
-    display: none; }
+  .aboutUs .subpageContent {
+    width: 70%; }
     @media all and (max-width: 920px) {
-      .aboutUs .sectionTitle .backArrow {
-        display: block;
-        margin-top: 12.5px; } }
-    @media all and (max-width: 575px) {
-      .aboutUs .sectionTitle .backArrow {
-        display: block;
-        margin-top: 12px; } }
-    .aboutUs .sectionTitle .backArrow img {
-      margin-right: 30px; }
+      .aboutUs .subpageContent .sectionTitle {
+        display: flex;
+        align-items: flex-start;
+        padding-bottom: 20px;
+        margin-bottom: 15px;
+        border-bottom: 0.75px solid rgba(33, 33, 33, 0.6); } }
+    .aboutUs .subpageContent .sectionTitle .backArrow {
+      display: none; }
       @media all and (max-width: 920px) {
-        .aboutUs .sectionTitle .backArrow img {
-          margin-right: 20px;
-          width: 23px;
-          height: 12px; } }
-  .aboutUs .sectionTitle h1 {
-    margin-bottom: 30px; }
-    @media all and (max-width: 1400px) {
-      .aboutUs .sectionTitle h1 {
-        margin-bottom: 20px; } }
-    @media all and (max-width: 920px) {
-      .aboutUs .sectionTitle h1 {
-        margin-bottom: 0px; } }
-  .aboutUs .about-contents {
-    width: 80%; }
-    .aboutUs .about-contents p {
+        .aboutUs .subpageContent .sectionTitle .backArrow {
+          display: block;
+          margin-top: 12.5px; } }
+      @media all and (max-width: 575px) {
+        .aboutUs .subpageContent .sectionTitle .backArrow {
+          display: block;
+          margin-top: 12px; } }
+      .aboutUs .subpageContent .sectionTitle .backArrow img {
+        margin-right: 30px; }
+        @media all and (max-width: 920px) {
+          .aboutUs .subpageContent .sectionTitle .backArrow img {
+            margin-right: 20px;
+            width: 23px;
+            height: 12px; } }
+    .aboutUs .subpageContent .sectionTitle h1 {
+      margin-bottom: 30px; }
+      @media all and (max-width: 1400px) {
+        .aboutUs .subpageContent .sectionTitle h1 {
+          margin-bottom: 20px; } }
+      @media all and (max-width: 920px) {
+        .aboutUs .subpageContent .sectionTitle h1 {
+          margin-bottom: 0px; } }
+    .aboutUs .subpageContent .about-contents p {
       margin-bottom: 20px;
       line-height: 160%;
       font-family: 'Poppins' !important; }
-    @media all and (max-width: 1800px) {
-      .aboutUs .about-contents {
-        width: 80%; } }
-    @media all and (max-width: 1600px) {
-      .aboutUs .about-contents {
-        width: 80%; } }
     @media all and (max-width: 1400px) {
-      .aboutUs .about-contents {
-        width: 80%; }
-        .aboutUs .about-contents p {
-          line-height: 26px; } }
-    @media all and (max-width: 1050px) {
-      .aboutUs .about-contents {
-        width: 80%; } }
+      .aboutUs .subpageContent .about-contents p {
+        line-height: 26px; } }
     @media all and (max-width: 920px) {
-      .aboutUs .about-contents {
-        width: 100%; }
-        .aboutUs .about-contents p {
-          font-size: 16px;
-          line-height: 24px; } }
-    @media all and (max-width: 675px) {
-      .aboutUs .about-contents {
-        width: 100%; } }
-    @media all and (max-width: 575px) {
-      .aboutUs .about-contents {
-        width: 100%; } }
-  .aboutUs .ctaLink {
-    margin-top: 40px;
-    display: flex;
-    align-items: center; }
-    @media all and (max-width: 1400px) {
-      .aboutUs .ctaLink {
-        margin-top: 25px; } }
-    .aboutUs .ctaLink a {
-      background-color: #212121;
-      color: #fff;
-      text-decoration: none;
-      border: 1px solid rgba(33, 33, 33, 0.2);
-      border-radius: 60px;
-      padding: 12px 26px;
-      outline: none;
+      .aboutUs .subpageContent .about-contents p {
+        font-size: 16px;
+        line-height: 24px; } }
+    .aboutUs .subpageContent .ctaLink {
+      margin-top: 40px;
       display: flex;
       align-items: center; }
-      @media all and (max-width: 920px) {
-        .aboutUs .ctaLink a {
-          padding: 11px 19px;
-          font-size: 14px; } }
-      .aboutUs .ctaLink a img {
-        transition: 0.6s all;
-        margin-left: 10px; }
-        @media all and (max-width: 1400px) {
-          .aboutUs .ctaLink a img {
-            width: 16px;
-            height: 8px; } }
+      @media all and (max-width: 1400px) {
+        .aboutUs .subpageContent .ctaLink {
+          margin-top: 25px; } }
+      .aboutUs .subpageContent .ctaLink a {
+        background-color: #212121;
+        color: #fff;
+        text-decoration: none;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 60px;
+        padding: 12px 26px;
+        outline: none;
+        display: flex;
+        align-items: center; }
         @media all and (max-width: 920px) {
-          .aboutUs .ctaLink a img {
-            width: 18px;
-            height: 9px; } }
-      .aboutUs .ctaLink a:hover img {
-        transform: translateX(10px); }
+          .aboutUs .subpageContent .ctaLink a {
+            padding: 11px 19px;
+            font-size: 14px; } }
+        .aboutUs .subpageContent .ctaLink a img {
+          transition: 0.6s all;
+          margin-left: 10px; }
+          @media all and (max-width: 1400px) {
+            .aboutUs .subpageContent .ctaLink a img {
+              width: 16px;
+              height: 8px; } }
+          @media all and (max-width: 920px) {
+            .aboutUs .subpageContent .ctaLink a img {
+              width: 18px;
+              height: 9px; } }
+        .aboutUs .subpageContent .ctaLink a:hover img {
+          transform: translateX(10px); }
+    @media all and (max-width: 1680px) {
+      .aboutUs .subpageContent {
+        width: 66%; } }
+    @media all and (max-width: 1680px) {
+      .aboutUs .subpageContent {
+        width: 70%; } }
+    @media all and (max-width: 1330px) {
+      .aboutUs .subpageContent {
+        width: 68%; } }
+    @media all and (max-width: 1280px) {
+      .aboutUs .subpageContent {
+        width: 64%; } }
+    @media all and (max-width: 920px) {
+      .aboutUs .subpageContent {
+        width: 100%; } }
 
 .careers {
   margin: 150px 0px;
@@ -5791,77 +5792,73 @@ footer .footerSec .footerSub .quickLinksft {
   @media all and (max-width: 920px) {
     .careers {
       margin: 100px 0px 80px; } }
-  @media all and (max-width: 920px) {
-    .careers .sectionTitle {
-      display: flex;
-      align-items: flex-start;
-      padding-bottom: 20px;
-      margin-bottom: 15px;
-      border-bottom: 0.75px solid rgba(33, 33, 33, 0.6); } }
-  .careers .sectionTitle .backArrow {
-    display: none; }
+  .careers .subpageContent {
+    width: 70%; }
     @media all and (max-width: 920px) {
-      .careers .sectionTitle .backArrow {
-        display: block;
-        margin-top: 12.5px; } }
-    @media all and (max-width: 575px) {
-      .careers .sectionTitle .backArrow {
-        display: block;
-        margin-top: 12px; } }
-    .careers .sectionTitle .backArrow img {
-      margin-right: 30px; }
+      .careers .subpageContent .sectionTitle {
+        display: flex;
+        align-items: flex-start;
+        padding-bottom: 20px;
+        margin-bottom: 15px;
+        border-bottom: 0.75px solid rgba(33, 33, 33, 0.6); } }
+    .careers .subpageContent .sectionTitle .backArrow {
+      display: none; }
       @media all and (max-width: 920px) {
-        .careers .sectionTitle .backArrow img {
-          margin-right: 20px;
-          width: 23px;
-          height: 12px; } }
-  .careers .sectionTitle h1 {
-    margin-bottom: 30px; }
-    @media all and (max-width: 1400px) {
-      .careers .sectionTitle h1 {
-        margin-bottom: 20px; } }
-    @media all and (max-width: 920px) {
-      .careers .sectionTitle h1 {
-        margin-bottom: 0px; } }
-  .careers .careers-content {
-    width: 80%; }
-    .careers .careers-content p {
+        .careers .subpageContent .sectionTitle .backArrow {
+          display: block;
+          margin-top: 12.5px; } }
+      @media all and (max-width: 575px) {
+        .careers .subpageContent .sectionTitle .backArrow {
+          display: block;
+          margin-top: 12px; } }
+      .careers .subpageContent .sectionTitle .backArrow img {
+        margin-right: 30px; }
+        @media all and (max-width: 920px) {
+          .careers .subpageContent .sectionTitle .backArrow img {
+            margin-right: 20px;
+            width: 23px;
+            height: 12px; } }
+    .careers .subpageContent .sectionTitle h1 {
+      margin-bottom: 30px; }
+      @media all and (max-width: 1400px) {
+        .careers .subpageContent .sectionTitle h1 {
+          margin-bottom: 20px; } }
+      @media all and (max-width: 920px) {
+        .careers .subpageContent .sectionTitle h1 {
+          margin-bottom: 0px; } }
+    .careers .subpageContent .careers-content p {
       margin-bottom: 30px;
       font-style: normal;
       line-height: 160%;
       letter-spacing: 0.03em;
       font-family: 'Poppins' !important; }
-      .careers .careers-content p span a {
+      .careers .subpageContent .careers-content p span a {
         font-weight: 500;
         color: black;
         text-decoration: none; }
-        .careers .careers-content p span a:hover {
+        .careers .subpageContent .careers-content p span a:hover {
           color: #6A6A6A; }
-    @media all and (max-width: 1800px) {
-      .careers .careers-content {
-        width: 80%; } }
-    @media all and (max-width: 1600px) {
-      .careers .careers-content {
-        width: 80%; } }
     @media all and (max-width: 1400px) {
-      .careers .careers-content {
-        width: 80%; }
-        .careers .careers-content p {
-          line-height: 26px; } }
-    @media all and (max-width: 1050px) {
-      .careers .careers-content {
-        width: 80%; } }
+      .careers .subpageContent .careers-content p {
+        line-height: 26px; } }
     @media all and (max-width: 920px) {
-      .careers .careers-content {
-        width: 100%; }
-        .careers .careers-content p {
-          line-height: 24px;
-          font-size: 16px; } }
-    @media all and (max-width: 675px) {
-      .careers .careers-content {
-        width: 100%; } }
-    @media all and (max-width: 575px) {
-      .careers .careers-content {
+      .careers .subpageContent .careers-content p {
+        line-height: 24px;
+        font-size: 16px; } }
+    @media all and (max-width: 1680px) {
+      .careers .subpageContent {
+        width: 66%; } }
+    @media all and (max-width: 1680px) {
+      .careers .subpageContent {
+        width: 70%; } }
+    @media all and (max-width: 1330px) {
+      .careers .subpageContent {
+        width: 68%; } }
+    @media all and (max-width: 1280px) {
+      .careers .subpageContent {
+        width: 64%; } }
+    @media all and (max-width: 920px) {
+      .careers .subpageContent {
         width: 100%; } }
 
 .legalHeader {
@@ -5886,138 +5883,150 @@ footer .footerSec .footerSub .quickLinksft {
 
 .subSectors {
   margin: 150px 0px; }
-  @media all and (max-width: 1400px) {
+  @media all and (max-width: 1600px) {
     .subSectors {
       margin: 100px 0px; } }
+  @media all and (max-width: 1400px) {
+    .subSectors {
+      margin: 60px 0px; } }
   @media all and (max-width: 920px) {
     .subSectors {
       margin: 100px 0px 80px; } }
-  @media all and (max-width: 920px) {
-    .subSectors .sectionTitle {
-      display: flex;
-      align-items: flex-start;
-      padding-bottom: 20px;
-      margin-bottom: 15px;
-      border-bottom: 0.75px solid rgba(33, 33, 33, 0.6); } }
-  @media all and (max-width: 480px) {
-    .subSectors .sectionTitle {
-      align-items: self-start; } }
-  .subSectors .sectionTitle .backArrow {
-    display: none; }
+  .subSectors .subpageContent {
+    width: 70%; }
     @media all and (max-width: 920px) {
-      .subSectors .sectionTitle .backArrow {
-        display: block;
-        margin-top: 5px; } }
-    @media all and (max-width: 575px) {
-      .subSectors .sectionTitle .backArrow {
-        display: block;
-        margin-top: 4px; } }
-    .subSectors .sectionTitle .backArrow img {
-      margin-right: 30px; }
+      .subSectors .subpageContent .sectionTitle {
+        display: flex;
+        align-items: flex-start;
+        padding-bottom: 20px;
+        margin-bottom: 15px;
+        border-bottom: 0.75px solid rgba(33, 33, 33, 0.6); } }
+    @media all and (max-width: 480px) {
+      .subSectors .subpageContent .sectionTitle {
+        align-items: self-start; } }
+    .subSectors .subpageContent .sectionTitle .backArrow {
+      display: none; }
       @media all and (max-width: 920px) {
-        .subSectors .sectionTitle .backArrow img {
-          margin-right: 20px;
-          width: 23px;
-          height: 12px; } }
-  .subSectors .sectionTitle .breadcrumbs {
-    padding: 25px 0px; }
-    @media all and (max-width: 920px) {
-      .subSectors .sectionTitle .breadcrumbs {
-        display: none; } }
-    .subSectors .sectionTitle .breadcrumbs .breadcrumbs-link {
-      padding: 0px 5px;
-      text-decoration: none;
-      color: #6A6A6A;
-      vertical-align: middle; }
-    .subSectors .sectionTitle .breadcrumbs .active {
-      color: #212121; }
-    .subSectors .sectionTitle .breadcrumbs img {
-      height: 10px;
-      width: 23.06px; }
-  .subSectors .sectionTitle h1 {
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px; }
-    @media all and (max-width: 1400px) {
-      .subSectors .sectionTitle h1 {
-        margin-bottom: 20px; } }
-    @media all and (max-width: 920px) {
-      .subSectors .sectionTitle h1 {
-        margin-bottom: 0px; } }
-  .subSectors .subSectors-content {
-    width: 80%;
-    margin-left: 22px; }
-    .subSectors .subSectors-content li {
-      margin-bottom: 20px;
-      line-height: 35px;
-      font-family: 'Poppins' !important; }
-    @media all and (max-width: 1800px) {
-      .subSectors .subSectors-content {
-        width: 80%;
-        margin-left: 19.5px; } }
-    @media all and (max-width: 1600px) {
-      .subSectors .subSectors-content {
-        width: 80%;
-        margin-left: 19px; } }
-    @media all and (max-width: 1400px) {
-      .subSectors .subSectors-content {
-        width: 80%;
-        margin-left: 17.5px; }
-        .subSectors .subSectors-content li {
-          line-height: 26px; } }
-    @media all and (max-width: 1050px) {
-      .subSectors .subSectors-content {
-        width: 80%;
-        margin-left: 16.5px; } }
-    @media all and (max-width: 920px) {
-      .subSectors .subSectors-content {
-        width: 100%;
-        margin-left: 17px; }
-        .subSectors .subSectors-content li {
-          font-size: 16px;
-          line-height: 21px; } }
-    @media all and (max-width: 675px) {
-      .subSectors .subSectors-content {
-        width: 100%;
-        margin-left: 17.60px; } }
-    @media all and (max-width: 575px) {
-      .subSectors .subSectors-content {
-        width: 100%;
-        margin-left: 15.60px; } }
-  .subSectors .subSectors-Cta {
-    margin-top: 40px;
-    display: flex;
-    align-items: center; }
-    @media all and (max-width: 1400px) {
-      .subSectors .subSectors-Cta {
-        margin-top: 25px; } }
-    .subSectors .subSectors-Cta a {
-      background-color: #212121;
-      color: #fff;
-      text-decoration: none;
-      border: 1px solid rgba(33, 33, 33, 0.2);
-      border-radius: 60px;
-      padding: 12px 26px;
-      outline: none;
+        .subSectors .subpageContent .sectionTitle .backArrow {
+          display: block;
+          margin-top: 5px; } }
+      @media all and (max-width: 575px) {
+        .subSectors .subpageContent .sectionTitle .backArrow {
+          display: block;
+          margin-top: 4px; } }
+      .subSectors .subpageContent .sectionTitle .backArrow img {
+        margin-right: 30px; }
+        @media all and (max-width: 920px) {
+          .subSectors .subpageContent .sectionTitle .backArrow img {
+            margin-right: 20px;
+            width: 23px;
+            height: 12px; } }
+    .subSectors .subpageContent .sectionTitle .breadcrumbs {
+      padding-bottom: 25px; }
+      @media all and (max-width: 920px) {
+        .subSectors .subpageContent .sectionTitle .breadcrumbs {
+          display: none; } }
+      .subSectors .subpageContent .sectionTitle .breadcrumbs .breadcrumbs-link {
+        padding: 0px 5px;
+        text-decoration: none;
+        color: #6A6A6A;
+        vertical-align: middle; }
+      .subSectors .subpageContent .sectionTitle .breadcrumbs .active {
+        color: #212121; }
+      .subSectors .subpageContent .sectionTitle .breadcrumbs img {
+        height: 10px;
+        width: 23.06px; }
+    .subSectors .subpageContent .sectionTitle h1 {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px; }
+      @media all and (max-width: 1400px) {
+        .subSectors .subpageContent .sectionTitle h1 {
+          margin-bottom: 20px; } }
+      @media all and (max-width: 920px) {
+        .subSectors .subpageContent .sectionTitle h1 {
+          margin-bottom: 0px; } }
+    .subSectors .subpageContent .subSectors-content {
+      margin-left: 22px; }
+      .subSectors .subpageContent .subSectors-content li {
+        margin-bottom: 20px;
+        line-height: 35px;
+        font-family: 'Poppins' !important; }
+      @media all and (max-width: 1800px) {
+        .subSectors .subpageContent .subSectors-content {
+          margin-left: 19.5px; } }
+      @media all and (max-width: 1600px) {
+        .subSectors .subpageContent .subSectors-content {
+          margin-left: 19px; } }
+      @media all and (max-width: 1400px) {
+        .subSectors .subpageContent .subSectors-content {
+          margin-left: 17.5px; }
+          .subSectors .subpageContent .subSectors-content li {
+            line-height: 26px; } }
+      @media all and (max-width: 1050px) {
+        .subSectors .subpageContent .subSectors-content {
+          margin-left: 16.5px; } }
+      @media all and (max-width: 920px) {
+        .subSectors .subpageContent .subSectors-content {
+          margin-left: 17px; }
+          .subSectors .subpageContent .subSectors-content li {
+            font-size: 16px;
+            line-height: 21px; } }
+      @media all and (max-width: 675px) {
+        .subSectors .subpageContent .subSectors-content {
+          margin-left: 17.60px; } }
+      @media all and (max-width: 575px) {
+        .subSectors .subpageContent .subSectors-content {
+          margin-left: 15.60px; } }
+    .subSectors .subpageContent .subSectors-Cta {
+      margin-top: 40px;
       display: flex;
       align-items: center; }
-      @media all and (max-width: 920px) {
-        .subSectors .subSectors-Cta a {
-          padding: 11px 19px;
-          font-size: 14px; } }
-      .subSectors .subSectors-Cta a img {
-        transition: 0.6s all;
-        margin-left: 10px; }
-        @media all and (max-width: 1400px) {
-          .subSectors .subSectors-Cta a img {
-            width: 16px;
-            height: 8px; } }
+      @media all and (max-width: 1400px) {
+        .subSectors .subpageContent .subSectors-Cta {
+          margin-top: 25px; } }
+      .subSectors .subpageContent .subSectors-Cta a {
+        background-color: #212121;
+        color: #fff;
+        text-decoration: none;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 60px;
+        padding: 12px 26px;
+        outline: none;
+        display: flex;
+        align-items: center; }
         @media all and (max-width: 920px) {
-          .subSectors .subSectors-Cta a img {
-            width: 18px;
-            height: 9px; } }
-      .subSectors .subSectors-Cta a:hover img {
-        transform: translateX(10px); }
+          .subSectors .subpageContent .subSectors-Cta a {
+            padding: 11px 19px;
+            font-size: 14px; } }
+        .subSectors .subpageContent .subSectors-Cta a img {
+          transition: 0.6s all;
+          margin-left: 10px; }
+          @media all and (max-width: 1400px) {
+            .subSectors .subpageContent .subSectors-Cta a img {
+              width: 16px;
+              height: 8px; } }
+          @media all and (max-width: 920px) {
+            .subSectors .subpageContent .subSectors-Cta a img {
+              width: 18px;
+              height: 9px; } }
+        .subSectors .subpageContent .subSectors-Cta a:hover img {
+          transform: translateX(10px); }
+    @media all and (max-width: 1680px) {
+      .subSectors .subpageContent {
+        width: 66%; } }
+    @media all and (max-width: 1680px) {
+      .subSectors .subpageContent {
+        width: 70%; } }
+    @media all and (max-width: 1330px) {
+      .subSectors .subpageContent {
+        width: 68%; } }
+    @media all and (max-width: 1280px) {
+      .subSectors .subpageContent {
+        width: 64%; } }
+    @media all and (max-width: 920px) {
+      .subSectors .subpageContent {
+        width: 100%; } }
 
 footer .footerSec .footerSub .quickLinksft {
   margin-bottom: 13px !important; }

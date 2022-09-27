@@ -52,6 +52,7 @@
 			  resize: vertical;
 			  background: rgba(215, 215, 215, 0.3);
 			  font-size:20px;
+              @media all and (max-width: 1600px){margin-bottom: 20px; margin-top: 10px;}
 			  @media all and (max-width: 1400px){font-size:14px; margin-top: 10px; margin-bottom: 35px; padding:10px; border-radius: 3.5px;}
 			  @media all and (max-width: 920px){font-size:16px; padding: 12px 15px;}
 			  &:focus{background: rgba(243, 243, 243, 0.7);border: 2px solid #212121;
@@ -59,7 +60,7 @@
 			  	@media all and (max-width: 920px){border: 1px solid #212121;}}
 			}
 			textarea {margin-bottom: 20px; height: 166px;
-				@media all and (max-width: 1400px){height: 118px; margin-bottom: 14px; padding: 15px 10px;}
+                @media all and (max-width: 1600px){height: 120px; margin-bottom: 10px;}
 			}
 			.submit{
 				  input[type=submit] {
@@ -75,6 +76,7 @@
 				  &:hover{font-weight:700;}
 				}
 				p{margin-bottom:40px; font-size:14px; line-height: 160%;
+                    @media all and (max-width: 1600px){margin-bottom: 20px;}
 					@media all and (max-width: 1400px){margin-bottom:28px; font-size: 10px;}
 					@media all and (max-width: 920px){line-height: 160%;color: #6a6a6a;}
 				}
@@ -101,9 +103,9 @@
 }
 
 .contactDetails{background: rgba(194, 194, 194, 0.2); padding: 50px 0px; margin: 0;
-	@media all and (max-width: 1400px) {padding: 35px 0px;}
+	@media all and (max-width: 1600px) {padding: 20px 0px;}
 	.contactDetailsBox{display:flex; margin-bottom: 60px;
-		@media all and (max-width: 1400px){margin-bottom: 15px;}
+		@media all and (max-width: 1600px){margin-bottom: 20px;}
 		@media all and (max-width: 920px){display:block; margin-bottom: 30px;}
 	.address{width:75%; position:relative;
 		@media all and (max-width: 1400px){width:70%;}
