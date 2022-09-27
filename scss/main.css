@@ -499,32 +499,6 @@ body {
               border-radius: 6px;
               position: relative;
               display: inline-block; }
-            @media (max-width: 920px) {
-              .headerLegal #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution > .sector,
-              .headerLegal #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector > .sector,
-              .headerLegal #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout > .sector {
-                max-height: 176px; } }
-            .headerLegal #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution > .sector.open,
-            .headerLegal #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector > .sector.open,
-            .headerLegal #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout > .sector.open {
-              overflow-y: scroll;
-              scrollbar-width: auto;
-              scrollbar-color: #767676;
-              /* Chrome, Edge, and Safari */ }
-              .headerLegal #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution > .sector.open::-webkit-scrollbar,
-              .headerLegal #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector > .sector.open::-webkit-scrollbar,
-              .headerLegal #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout > .sector.open::-webkit-scrollbar {
-                width: 6px; }
-              .headerLegal #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution > .sector.open::-webkit-scrollbar-track,
-              .headerLegal #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector > .sector.open::-webkit-scrollbar-track,
-              .headerLegal #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout > .sector.open::-webkit-scrollbar-track {
-                background: #e4e4e4; }
-              .headerLegal #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution > .sector.open::-webkit-scrollbar-thumb,
-              .headerLegal #sidebarContainer #sideMenu .sideMenuInner li .dropdownSector > .sector.open::-webkit-scrollbar-thumb,
-              .headerLegal #sidebarContainer #sideMenu .sideMenuInner li .dropdownAbout > .sector.open::-webkit-scrollbar-thumb {
-                background-color: #767676;
-                border-radius: 15px;
-                border: 6px solid #767676; }
             .headerLegal #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution > .submenuSolution,
             .headerLegal #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution .submenuSector,
             .headerLegal #sidebarContainer #sideMenu .sideMenuInner li .dropdownSolution .submenuAbout,
@@ -789,43 +763,6 @@ body {
       position: relative;
       transition: all .25s ease;
       background-size: 9px; }
-    .headerLegal .menu-items .dropdownSolution:hover .sector,
-    .headerLegal .menu-items .dropdownSector:hover .sector,
-    .headerLegal .menu-items .dropdownAbout:hover .sector {
-      max-height: 176px;
-      overflow-y: scroll;
-      scrollbar-width: auto;
-      scrollbar-color: #767676;
-      /* Chrome, Edge, and Safari */ }
-      @media (max-width: 1800px) {
-        .headerLegal .menu-items .dropdownSolution:hover .sector,
-        .headerLegal .menu-items .dropdownSector:hover .sector,
-        .headerLegal .menu-items .dropdownAbout:hover .sector {
-          max-height: 166px; } }
-      @media (max-width: 1600px) {
-        .headerLegal .menu-items .dropdownSolution:hover .sector,
-        .headerLegal .menu-items .dropdownSector:hover .sector,
-        .headerLegal .menu-items .dropdownAbout:hover .sector {
-          max-height: 154px; } }
-      @media (max-width: 1400px) {
-        .headerLegal .menu-items .dropdownSolution:hover .sector,
-        .headerLegal .menu-items .dropdownSector:hover .sector,
-        .headerLegal .menu-items .dropdownAbout:hover .sector {
-          max-height: 144px; } }
-      .headerLegal .menu-items .dropdownSolution:hover .sector::-webkit-scrollbar,
-      .headerLegal .menu-items .dropdownSector:hover .sector::-webkit-scrollbar,
-      .headerLegal .menu-items .dropdownAbout:hover .sector::-webkit-scrollbar {
-        width: 6px; }
-      .headerLegal .menu-items .dropdownSolution:hover .sector::-webkit-scrollbar-track,
-      .headerLegal .menu-items .dropdownSector:hover .sector::-webkit-scrollbar-track,
-      .headerLegal .menu-items .dropdownAbout:hover .sector::-webkit-scrollbar-track {
-        background: #e4e4e4; }
-      .headerLegal .menu-items .dropdownSolution:hover .sector::-webkit-scrollbar-thumb,
-      .headerLegal .menu-items .dropdownSector:hover .sector::-webkit-scrollbar-thumb,
-      .headerLegal .menu-items .dropdownAbout:hover .sector::-webkit-scrollbar-thumb {
-        background-color: #767676;
-        border-radius: 15px;
-        border: 6px solid #767676; }
     .headerLegal .menu-items .dropdownSolution:hover .submenuSolution,
     .headerLegal .menu-items .dropdownSolution:hover .submenuSector,
     .headerLegal .menu-items .dropdownSolution:hover .submenuAbout,

@@ -65,29 +65,29 @@
                             display: inline-block;
                         }
 
-                        >.sector {
-                            @media (max-width: 920px) {
-                                max-height: 176px;
-                            }
+                        // >.sector {
+                        //     @media (max-width: 920px) {
+                        //         max-height: 176px;
+                        //     }
 
-                            &.open {
-                                overflow-y: scroll;
-                                scrollbar-width: auto;
-                                scrollbar-color: #767676;
-                                /* Chrome, Edge, and Safari */
-                                &::-webkit-scrollbar {
-                                    width: 6px;
-                                }
-                                &::-webkit-scrollbar-track {
-                                    background: #e4e4e4;
-                                }
-                                &::-webkit-scrollbar-thumb {
-                                    background-color: #767676;
-                                    border-radius: 15px;
-                                    border: 6px solid #767676;
-                                }
-                            }
-                        }
+                        //     &.open {
+                        //         overflow-y: scroll;
+                        //         scrollbar-width: auto;
+                        //         scrollbar-color: #767676;
+                        //         /* Chrome, Edge, and Safari */
+                        //         &::-webkit-scrollbar {
+                        //             width: 6px;
+                        //         }
+                        //         &::-webkit-scrollbar-track {
+                        //             background: #e4e4e4;
+                        //         }
+                        //         &::-webkit-scrollbar-thumb {
+                        //             background-color: #767676;
+                        //             border-radius: 15px;
+                        //             border: 6px solid #767676;
+                        //         }
+                        //     }
+                        // }
 
                         >.submenuSolution,
                         .submenuSector,
@@ -361,36 +361,36 @@
 
             &:hover {
 
-                .sector {
-                    max-height: 176px;
+                // .sector {
+                //     max-height: 176px;
 
-                    @media (max-width: 1800px) {
-                        max-height: 166px;
-                    }
+                //     @media (max-width: 1800px) {
+                //         max-height: 166px;
+                //     }
 
-                    @media (max-width: 1600px) {
-                        max-height: 154px;
-                    }
+                //     @media (max-width: 1600px) {
+                //         max-height: 154px;
+                //     }
 
-                    @media (max-width: 1400px) {
-                        max-height: 144px;
-                    }
-                    overflow-y: scroll;
-                    scrollbar-width: auto;
-                    scrollbar-color: #767676;
-                    /* Chrome, Edge, and Safari */
-                    &::-webkit-scrollbar {
-                        width: 6px;
-                    }
-                    &::-webkit-scrollbar-track {
-                        background: #e4e4e4;
-                    }
-                    &::-webkit-scrollbar-thumb {
-                        background-color: #767676;
-                        border-radius: 15px;
-                        border: 6px solid #767676;
-                    }
-                }
+                //     @media (max-width: 1400px) {
+                //         max-height: 144px;
+                //     }
+                //     overflow-y: scroll;
+                //     scrollbar-width: auto;
+                //     scrollbar-color: #767676;
+                //     /* Chrome, Edge, and Safari */
+                //     &::-webkit-scrollbar {
+                //         width: 6px;
+                //     }
+                //     &::-webkit-scrollbar-track {
+                //         background: #e4e4e4;
+                //     }
+                //     &::-webkit-scrollbar-thumb {
+                //         background-color: #767676;
+                //         border-radius: 15px;
+                //         border: 6px solid #767676;
+                //     }
+                // }
 
                 .submenuSolution,
                 .submenuSector,
