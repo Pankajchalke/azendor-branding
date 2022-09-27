@@ -2065,7 +2065,7 @@ body {
           .contact .contactForm form input[type=text], .contact .contactForm form [type=number], .contact .contactForm form [type=email], .contact .contactForm form textarea {
             font-size: 14px;
             margin-top: 10px;
-            margin-bottom: 35px;
+            margin-bottom: 20px;
             padding: 10px;
             border-radius: 3.5px; } }
         @media all and (max-width: 920px) {
@@ -4604,7 +4604,7 @@ h2 {
           .contact .contactForm form input[type=text], .contact .contactForm form [type=number], .contact .contactForm form [type=email], .contact .contactForm form textarea {
             font-size: 14px;
             margin-top: 10px;
-            margin-bottom: 35px;
+            margin-bottom: 20px;
             padding: 10px;
             border-radius: 3.5px; } }
         @media all and (max-width: 920px) {
