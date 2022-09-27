@@ -5691,9 +5691,12 @@ footer .footerSec .footerSub .quickLinksft {
 .aboutUs {
   margin: 150px 0px;
   color: #212121; }
-  @media all and (max-width: 1400px) {
+  @media all and (max-width: 1600px) {
     .aboutUs {
       margin: 100px 0px; } }
+  @media all and (max-width: 1400px) {
+    .aboutUs {
+      margin: 60px 0px; } }
   @media all and (max-width: 920px) {
     .aboutUs {
       margin: 100px 0px 80px; } }
