@@ -3570,11 +3570,11 @@ h2 {
 
 @media all and (max-width: 920px) {
   .bannerSec {
-    margin-top: 300px; } }
+    margin-top: 150px; } }
 
 @media all and (max-width: 920px) {
   .bannerSec1 {
-    margin-top: 260px; } }
+    margin-top: 150px; } }
 .bannerSec1 h4 {
   margin-bottom: 15px; }
   @media all and (max-width: 1400px) {
@@ -3587,7 +3587,7 @@ h2 {
 
 @media all and (max-width: 920px) {
   .bannerSec2 {
-    margin-top: 220px; } }
+    margin-top: 150px; } }
 .bannerSec2 p {
   color: rgba(255, 255, 255, 0.9);
   margin-bottom: 25px;
@@ -3595,7 +3595,7 @@ h2 {
 
 @media all and (max-width: 920px) {
   .serviceSec {
-    margin-top: 200px; } }
+    margin-top: 150px; } }
 .serviceSec .serviceSlider {
   display: block;
   margin-left: -15px; }
@@ -3738,7 +3738,7 @@ h2 {
 
 @media all and (max-width: 920px) {
   .teamSection {
-    margin-top: 200px; } }
+    margin-top: 150px; } }
 .teamSection .teamSec {
   display: flex;
   justify-content: space-between; }
@@ -3813,7 +3813,7 @@ h2 {
 
 @media all and (max-width: 920px) {
   .clientsBox {
-    margin-top: 200px; } }
+    margin-top: 150px; } }
 .clientsBox ul {
   list-style: none; }
 .clientsBox .clientSec {
@@ -3951,7 +3951,7 @@ h2 {
   overflow: hidden !important; }
   @media all and (max-width: 920px) {
     .testimonialsSec {
-      margin-top: 200px; } }
+      margin-top: 150px; } }
   .testimonialsSec .testimonialsSlider {
     margin: 0 -70px; }
     .testimonialsSec .testimonialsSlider .slick-slide {
@@ -4050,7 +4050,7 @@ h2 {
 
 @media all and (max-width: 920px) {
   .caseStudies {
-    margin-top: 200px; } }
+    margin-top: 150px; } }
 .caseStudies .boxcaseStudy .contentThree {
   margin: 0px 60px 0px 0px;
   padding: 10px 0px;
@@ -4120,7 +4120,7 @@ h2 {
 
 @media all and (max-width: 920px) {
   .contactSec {
-    margin-top: 200px; } }
+    margin-top: 150px; } }
 .contactSec .contactBox {
   display: flex;
   justify-content: space-between;
@@ -5097,7 +5097,7 @@ footer .footerSec .footerSub .quickLinksft {
       @media all and (max-width: 575px) {
         .advisorySubPages .subpageContent .subSectionTitle .backArrow {
           display: block;
-          margin-top: 12.5px; } }
+          margin-top: 16px; } }
       .advisorySubPages .subpageContent .subSectionTitle .backArrow img {
         margin-right: 30px; }
         @media all and (max-width: 920px) {
@@ -5375,7 +5375,7 @@ footer .footerSec .footerSub .quickLinksft {
       @media all and (max-width: 575px) {
         .digitalTransformationSubPages .subpageContent .subSectionTitle .backArrow {
           display: block;
-          margin-top: 12.5px; } }
+          margin-top: 16px; } }
       .digitalTransformationSubPages .subpageContent .subSectionTitle .backArrow img {
         margin-right: 30px; }
         @media all and (max-width: 920px) {
