@@ -3568,13 +3568,6 @@ h2 {
     .modal.in .modal-dialog5 .modal-content {
       padding: 60px 20px 30px; } }
 
-@media all and (max-width: 920px) {
-  .bannerSec {
-    margin-top: 150px; } }
-
-@media all and (max-width: 920px) {
-  .bannerSec1 {
-    margin-top: 150px; } }
 .bannerSec1 h4 {
   margin-bottom: 15px; }
   @media all and (max-width: 1400px) {
@@ -3585,17 +3578,11 @@ h2 {
   margin-bottom: 25px;
   line-height: 125%; }
 
-@media all and (max-width: 920px) {
-  .bannerSec2 {
-    margin-top: 150px; } }
 .bannerSec2 p {
   color: rgba(255, 255, 255, 0.9);
   margin-bottom: 25px;
   line-height: 125%; }
 
-@media all and (max-width: 920px) {
-  .serviceSec {
-    margin-top: 150px; } }
 .serviceSec .serviceSlider {
   display: block;
   margin-left: -15px; }
@@ -3811,9 +3798,6 @@ h2 {
     .teamSection .teamMembers a {
       padding: 36px 0px; } }
 
-@media all and (max-width: 920px) {
-  .clientsBox {
-    margin-top: 150px; } }
 .clientsBox ul {
   list-style: none; }
 .clientsBox .clientSec {
@@ -3949,9 +3933,6 @@ h2 {
 
 .testimonialsSec {
   overflow: hidden !important; }
-  @media all and (max-width: 920px) {
-    .testimonialsSec {
-      margin-top: 150px; } }
   .testimonialsSec .testimonialsSlider {
     margin: 0 -70px; }
     .testimonialsSec .testimonialsSlider .slick-slide {
@@ -4048,9 +4029,6 @@ h2 {
       .testimonialsSec .sliderArrow .imgtestBackarrow {
         margin-right: 50px; } }
 
-@media all and (max-width: 920px) {
-  .caseStudies {
-    margin-top: 150px; } }
 .caseStudies .boxcaseStudy .contentThree {
   margin: 0px 60px 0px 0px;
   padding: 10px 0px;
@@ -4118,9 +4096,6 @@ h2 {
     .caseStudies .sliderArrow .imgcaseBackarrow {
       margin-right: 50px; } }
 
-@media all and (max-width: 920px) {
-  .contactSec {
-    margin-top: 150px; } }
 .contactSec .contactBox {
   display: flex;
   justify-content: space-between;

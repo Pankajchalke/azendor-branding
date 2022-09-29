@@ -432,6 +432,7 @@ if ($(".testimonialsSlider").length) {
         settings: {
           infinite: true,
           centerMode: true,
+          arrows:true,
           centerPadding: '15%',
           slidesToShow: 1
         }
