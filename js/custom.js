@@ -24,7 +24,7 @@ if ($("#fullpage").length) {
     scrollOverflow: true,
     licenseKey: "OPEN-SOURCE-GPLV3-LICENSE",
     scrollBar: true,
-    responsiveWidth: 1030,
+    responsiveWidth: 1024,
     afterResponsive: function (isResponsive) { },
     afterLoad: function (anchorLink, index) {
       console.log(index);

@@ -1238,7 +1238,7 @@ h2 {
             padding-right: 25px;
             border-top: 1px solid #6A6A6A;
             height: 280px;
-            overflow-y: scroll;
+            overflow-x: auto;
 
             scrollbar-width: auto;
             scrollbar-color: #000;
@@ -1415,7 +1415,7 @@ h2 {
             padding-right: 25px;
             border-top: 1px solid #6A6A6A;
             height: 280px;
-            overflow-y: scroll;
+            overflow-x: auto ;
 
             scrollbar-width: auto;
             scrollbar-color: #000;
@@ -2080,7 +2080,8 @@ h2 {
     }
 
     .clientSlider {
-        .boxClients {
+
+   .boxClients {
             .box {
                 background-position: 0 0, 0 0, 100% 0, 0 100%;
                 background-size: 3px 100%, 100% 3px, 3px 100%, 100% 3px;
@@ -2295,11 +2296,12 @@ h2 {
                         .mobileArrow {
                             display: none;
 
-                            @media all and (max-width:480px) {
+                            @media all and (max-width:1024px) {
                                 display: block;
                                 width: 17px;
                                 height: 9px;
                                 margin-left: 5px;
+                                vertical-align: middle;
                                 text-align: center;
                                 transition: 0.6s all;
                             }

@@ -3392,7 +3392,7 @@ h2 {
       padding-right: 25px;
       border-top: 1px solid #6A6A6A;
       height: 280px;
-      overflow-y: scroll;
+      overflow-x: auto;
       scrollbar-width: auto;
       scrollbar-color: #000;
       /* Chrome, Edge, and Safari */ }
@@ -3487,7 +3487,7 @@ h2 {
       padding-right: 25px;
       border-top: 1px solid #6A6A6A;
       height: 280px;
-      overflow-y: scroll;
+      overflow-x: auto;
       scrollbar-width: auto;
       scrollbar-color: #000;
       /* Chrome, Edge, and Safari */ }
@@ -3984,12 +3984,13 @@ h2 {
           align-items: center; }
           .testimonialsSec .testimonialsSlider .testimonials .profile .profileInfo p .mobileArrow {
             display: none; }
-            @media all and (max-width: 480px) {
+            @media all and (max-width: 1024px) {
               .testimonialsSec .testimonialsSlider .testimonials .profile .profileInfo p .mobileArrow {
                 display: block;
                 width: 17px;
                 height: 9px;
                 margin-left: 5px;
+                vertical-align: middle;
                 text-align: center;
                 transition: 0.6s all; } }
           .testimonialsSec .testimonialsSlider .testimonials .profile .profileInfo p:hover .mobileArrow {
@@ -4916,11 +4917,11 @@ footer .footerSec .footerSub .quickLinksft {
     @media all and (max-width: 920px) {
       .legalAdvisory .sectionTitle .backArrow {
         display: block;
-        margin-top: 5px; } }
+        margin-top: 10px; } }
     @media all and (max-width: 575px) {
       .legalAdvisory .sectionTitle .backArrow {
         display: block;
-        margin-top: 6px; } }
+        margin-top: 9px; } }
     .legalAdvisory .sectionTitle .backArrow img {
       margin-right: 30px; }
       @media all and (max-width: 920px) {
@@ -5068,11 +5069,11 @@ footer .footerSec .footerSub .quickLinksft {
       @media all and (max-width: 920px) {
         .advisorySubPages .subpageContent .subSectionTitle .backArrow {
           display: block;
-          margin-top: 5px; } }
+          margin-top: 10px; } }
       @media all and (max-width: 575px) {
         .advisorySubPages .subpageContent .subSectionTitle .backArrow {
           display: block;
-          margin-top: 6px; } }
+          margin-top: 9px; } }
       .advisorySubPages .subpageContent .subSectionTitle .backArrow img {
         margin-right: 30px; }
         @media all and (max-width: 920px) {
@@ -5192,11 +5193,11 @@ footer .footerSec .footerSub .quickLinksft {
     @media all and (max-width: 920px) {
       .digitalTransformation .sectionTitle .backArrow {
         display: block;
-        margin-top: 5px; } }
+        margin-top: 10px; } }
     @media all and (max-width: 575px) {
       .digitalTransformation .sectionTitle .backArrow {
         display: block;
-        margin-top: 6px; } }
+        margin-top: 9px; } }
     .digitalTransformation .sectionTitle .backArrow img {
       margin-right: 30px; }
       @media all and (max-width: 920px) {
@@ -5348,11 +5349,11 @@ footer .footerSec .footerSub .quickLinksft {
       @media all and (max-width: 920px) {
         .digitalTransformationSubPages .subpageContent .subSectionTitle .backArrow {
           display: block;
-          margin-top: 5px; } }
+          margin-top: 10px; } }
       @media all and (max-width: 575px) {
         .digitalTransformationSubPages .subpageContent .subSectionTitle .backArrow {
           display: block;
-          margin-top: 6px; } }
+          margin-top: 9px; } }
       .digitalTransformationSubPages .subpageContent .subSectionTitle .backArrow img {
         margin-right: 30px; }
         @media all and (max-width: 920px) {
@@ -5474,11 +5475,11 @@ footer .footerSec .footerSub .quickLinksft {
       @media all and (max-width: 920px) {
         .generalCounsel .subpageContent .sectionTitle .backArrow {
           display: block;
-          margin-top: 5px; } }
+          margin-top: 10px; } }
       @media all and (max-width: 575px) {
         .generalCounsel .subpageContent .sectionTitle .backArrow {
           display: block;
-          margin-top: 6px; } }
+          margin-top: 9px; } }
       .generalCounsel .subpageContent .sectionTitle .backArrow img {
         margin-right: 30px; }
         @media all and (max-width: 920px) {
@@ -5595,11 +5596,11 @@ footer .footerSec .footerSub .quickLinksft {
       @media all and (max-width: 920px) {
         .legalAudit .subpageContent .sectionTitle .backArrow {
           display: block;
-          margin-top: 5px; } }
+          margin-top: 10px; } }
       @media all and (max-width: 575px) {
         .legalAudit .subpageContent .sectionTitle .backArrow {
           display: block;
-          margin-top: 6px; } }
+          margin-top: 12px; } }
       .legalAudit .subpageContent .sectionTitle .backArrow img {
         margin-right: 30px; }
         @media all and (max-width: 920px) {
@@ -5714,11 +5715,11 @@ footer .footerSec .footerSub .quickLinksft {
       @media all and (max-width: 920px) {
         .aboutUs .subpageContent .sectionTitle .backArrow {
           display: block;
-          margin-top: 12.5px; } }
+          margin-top: 10px; } }
       @media all and (max-width: 575px) {
         .aboutUs .subpageContent .sectionTitle .backArrow {
           display: block;
-          margin-top: 12px; } }
+          margin-top: 9px; } }
       .aboutUs .subpageContent .sectionTitle .backArrow img {
         margin-right: 30px; }
         @media all and (max-width: 920px) {
@@ -5821,11 +5822,11 @@ footer .footerSec .footerSub .quickLinksft {
       @media all and (max-width: 920px) {
         .careers .subpageContent .sectionTitle .backArrow {
           display: block;
-          margin-top: 12.5px; } }
+          margin-top: 10px; } }
       @media all and (max-width: 575px) {
         .careers .subpageContent .sectionTitle .backArrow {
           display: block;
-          margin-top: 12px; } }
+          margin-top: 9px; } }
       .careers .subpageContent .sectionTitle .backArrow img {
         margin-right: 30px; }
         @media all and (max-width: 920px) {
@@ -5924,11 +5925,11 @@ footer .footerSec .footerSub .quickLinksft {
       @media all and (max-width: 920px) {
         .subSectors .subpageContent .sectionTitle .backArrow {
           display: block;
-          margin-top: 5px; } }
+          margin-top: 10px; } }
       @media all and (max-width: 575px) {
         .subSectors .subpageContent .sectionTitle .backArrow {
           display: block;
-          margin-top: 4px; } }
+          margin-top: 9px; } }
       .subSectors .subpageContent .sectionTitle .backArrow img {
         margin-right: 30px; }
         @media all and (max-width: 920px) {
