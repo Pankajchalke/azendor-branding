@@ -2202,6 +2202,7 @@ body {
         height: 190px;
         right: 60px;
         opacity: 0.1;
+        background-color: #212121;
         border: 1px solid #212121;
         top: 0; }
         @media all and (max-width: 1400px) {
@@ -2319,6 +2320,8 @@ body {
           line-height: 160%; }
         .contactDetails .contactDetailsBox .contactRight .contactRightDetails a {
           text-decoration: none; }
+          .contactDetails .contactDetailsBox .contactRight .contactRightDetails a:hover {
+            color: #212121 !important; }
           @media all and (max-width: 1400px) {
             .contactDetails .contactDetailsBox .contactRight .contactRightDetails a {
               font-size: 16px; } }
@@ -4938,7 +4941,7 @@ footer .footerSec .footerSub .quickLinksft {
           width: 23px;
           height: 12px; } }
   .legalAdvisory .sectionTitle .breadcrumbs {
-    padding-bottom: 25px; }
+    padding-bottom: 10px; }
     @media all and (max-width: 920px) {
       .legalAdvisory .sectionTitle .breadcrumbs {
         display: none; } }
@@ -4966,14 +4969,7 @@ footer .footerSec .footerSub .quickLinksft {
   .legalAdvisory .legalAdvisorySection {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 10px; }
-    @media all and (max-width: 1400px) {
-      .legalAdvisory .legalAdvisorySection {
-        margin-top: 5px; } }
-    @media all and (max-width: 920px) {
-      .legalAdvisory .legalAdvisorySection {
-        margin-top: 10px; } }
+    justify-content: space-between; }
     .legalAdvisory .legalAdvisorySection .legalAdvisorySectionBox {
       width: 31%;
       margin-top: 50px; }
@@ -5089,7 +5085,7 @@ footer .footerSec .footerSub .quickLinksft {
             width: 23px;
             height: 12px; } }
     .advisorySubPages .subpageContent .subSectionTitle .breadcrumbs {
-      padding-bottom: 25px; }
+      padding-bottom: 10px; }
       @media all and (max-width: 920px) {
         .advisorySubPages .subpageContent .subSectionTitle .breadcrumbs {
           display: none; } }
@@ -5212,7 +5208,7 @@ footer .footerSec .footerSub .quickLinksft {
           width: 23px;
           height: 12px; } }
   .digitalTransformation .sectionTitle .breadcrumbs {
-    padding-bottom: 25px; }
+    padding-bottom: 10px; }
     @media all and (max-width: 920px) {
       .digitalTransformation .sectionTitle .breadcrumbs {
         display: none; } }
@@ -5240,8 +5236,7 @@ footer .footerSec .footerSub .quickLinksft {
   .digitalTransformation .digitalTransformationSection {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 10px; }
+    justify-content: space-between; }
     @media all and (max-width: 1400px) {
       .digitalTransformation .digitalTransformationSection {
         margin-top: 5px; } }
@@ -5367,7 +5362,7 @@ footer .footerSec .footerSub .quickLinksft {
             width: 23px;
             height: 12px; } }
     .digitalTransformationSubPages .subpageContent .subSectionTitle .breadcrumbs {
-      padding-bottom: 25px; }
+      padding-bottom: 10px; }
       @media all and (max-width: 920px) {
         .digitalTransformationSubPages .subpageContent .subSectionTitle .breadcrumbs {
           display: none; } }
@@ -5492,7 +5487,7 @@ footer .footerSec .footerSub .quickLinksft {
             width: 23px;
             height: 12px; } }
     .generalCounsel .subpageContent .sectionTitle .breadcrumbs {
-      padding-bottom: 25px; }
+      padding-bottom: 10px; }
       @media all and (max-width: 920px) {
         .generalCounsel .subpageContent .sectionTitle .breadcrumbs {
           display: none; } }
@@ -5612,7 +5607,7 @@ footer .footerSec .footerSub .quickLinksft {
             width: 23px;
             height: 12px; } }
     .legalAudit .subpageContent .sectionTitle .breadcrumbs {
-      padding-bottom: 25px; }
+      padding-bottom: 10px; }
       @media all and (max-width: 920px) {
         .legalAudit .subpageContent .sectionTitle .breadcrumbs {
           display: none; } }
@@ -5940,7 +5935,7 @@ footer .footerSec .footerSub .quickLinksft {
             width: 23px;
             height: 12px; } }
     .subSectors .subpageContent .sectionTitle .breadcrumbs {
-      padding-bottom: 25px; }
+      padding-bottom: 10px; }
       @media all and (max-width: 920px) {
         .subSectors .subpageContent .sectionTitle .breadcrumbs {
           display: none; } }

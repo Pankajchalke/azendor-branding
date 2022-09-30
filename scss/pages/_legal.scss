@@ -2303,6 +2303,7 @@
 			    height: 190px;
 			    right: 60px;
 			    opacity: 0.1;
+                background-color: #212121;
 	    		border: 1px solid #212121;
 			    top: 0;
 			    	@media all and (max-width: 1400px){height: 136px;}
@@ -2352,6 +2353,9 @@
 				@media all and (max-width: 920px){margin-left: 0px;}
 				p{margin-bottom:5px; margin-bottom: 5px; line-height: 160%;}
 				a{text-decoration:none;
+                    &:hover{
+                        color: #212121 !important;
+                    }
 					@media all and (max-width: 1400px){font-size:16px;}}
 			}
 		}

@@ -17,7 +17,7 @@
 			@media all and (max-width:920px){
 				display: none;
 			}
-			padding-bottom: 25px;
+			padding-bottom: 10px;
 			.breadcrumbs-link{
 			 text-decoration: none;
 			 color: #6A6A6A;
@@ -43,9 +43,7 @@
 		@media all and (max-width: 920px){font-size:16px;}
 	}
 	.legalAdvisorySection{
-		display: flex; flex-wrap: wrap; justify-content: space-between;margin-top: 10px;
-			@media all and (max-width: 1400px){margin-top: 5px;}
-			@media all and (max-width: 920px){margin-top: 10px;}
+		display: flex; flex-wrap: wrap; justify-content: space-between;	
 		.legalAdvisorySectionBox{width: 31%; margin-top: 50px;
 			@media all and (max-width: 1400px){width: 31.5%; margin-top: 35px;}
 			@media all and (max-width: 1080px){width: 31.5%; margin-top: 30px;}
@@ -94,7 +92,7 @@
 				@media all and (max-width:920px){
 					display: none;
 				}
-				padding-bottom: 25px;
+				padding-bottom: 10px;
 				.breadcrumbs-link{
 				 text-decoration: none;
 				 color: #6A6A6A;
