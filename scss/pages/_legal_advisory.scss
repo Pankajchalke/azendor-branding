@@ -44,11 +44,11 @@
 	}
 	.legalAdvisorySection{
 		display: flex; flex-wrap: wrap; justify-content: space-between;	
-		.legalAdvisorySectionBox{width: 31%; margin-top: 50px;
-			@media all and (max-width: 1400px){width: 31.5%; margin-top: 35px;}
-			@media all and (max-width: 1080px){width: 31.5%; margin-top: 30px;}
-			@media all and (max-width: 920px){width: 48%;margin-top: 20px;}
-			@media all and (max-width: 575px){width: 100%;margin-top: 20px;}
+		.legalAdvisorySectionBox{width: 31%; margin-top: 30px;
+			@media all and (max-width: 1400px){width: 31.5%; margin-top: 30px;}
+			@media all and (max-width: 1080px){width: 31.5%; margin-top: 25px;}
+			@media all and (max-width: 920px){width: 48%;margin-top: 15px;}
+			@media all and (max-width: 575px){width: 100%;margin-top: 15px;}
 			a{display: flex; align-items: center; line-height: 130%; justify-content: space-between; text-decoration:none; padding: 35px 48px 35px 45px; border: 1px solid #F1F1F1;border-radius: 10px;
 				.img1{margin-right: 20px;
 					@media all and (max-width: 1400px){width: 40px;height: 45px;}

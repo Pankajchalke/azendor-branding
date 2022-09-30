@@ -659,27 +659,27 @@
 
             img {
 
-                width: 375px;
+                width: 300px;
 
                 @media (max-width:1920px) {
-                    width: 269px;
+                    width: 200px;
                 }
 
                 @media (max-width:1400px) {
-                    width: 191px;
+                    width: 150px;
                 }
 
 
                 @media (max-width: 770px) {
-                    width: 132px;
+                    width: 120px;
                 }
 
                 @media (max-width: 575px) {
-                    width: 117px;
+                    width: 90px;
                 }
 
                 @media (max-width: 390px) {
-                    width: 107px;
+                    width: 70px;
                 }
             }
         }

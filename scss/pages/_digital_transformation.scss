@@ -47,11 +47,11 @@
 		display: flex; flex-wrap: wrap; justify-content: space-between;
 			@media all and (max-width: 1400px){margin-top: 5px;}
 			@media all and (max-width: 920px){margin-top: 0px;}
-		.digitalTransformationSectionBox{width: 48.5%; margin-top: 50px;
-			@media all and (max-width: 1400px){width: 48.5%; margin-top: 35px;}
-			@media all and (max-width: 1080px){width: 31.5%; margin-top: 30px;}
-			@media all and (max-width: 920px){width: 48%;margin-top: 20px;}
-			@media all and (max-width: 575px){width: 100%;margin-top: 20px;}
+		.digitalTransformationSectionBox{width: 48.5%; margin-top: 30px;
+			@media all and (max-width: 1400px){width: 48.5%; margin-top: 30px;}
+			@media all and (max-width: 1080px){width: 31.5%; margin-top: 25px;}
+			@media all and (max-width: 920px){width: 48%;margin-top: 15px;}
+			@media all and (max-width: 575px){width: 100%;margin-top: 15px;}
 			a{display: flex; align-items: center; line-height: 130%; justify-content: space-between; text-decoration:none; padding: 32px 50px 32px 45px; border: 1px solid #F1F1F1;border-radius: 10px; background: #FAFAFA;
 				.img1{margin-right: 30px;
 					@media all and (max-width: 1400px){margin-right: 25px;width: 40px;height: 45px;}

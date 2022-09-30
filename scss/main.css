@@ -998,22 +998,22 @@ body {
         top: 15px;
         left: 0px; } }
     .headerLegal .header-container .logo img {
-      width: 375px; }
+      width: 300px; }
       @media (max-width: 1920px) {
         .headerLegal .header-container .logo img {
-          width: 269px; } }
+          width: 200px; } }
       @media (max-width: 1400px) {
         .headerLegal .header-container .logo img {
-          width: 191px; } }
+          width: 150px; } }
       @media (max-width: 770px) {
         .headerLegal .header-container .logo img {
-          width: 132px; } }
+          width: 120px; } }
       @media (max-width: 575px) {
         .headerLegal .header-container .logo img {
-          width: 117px; } }
+          width: 90px; } }
       @media (max-width: 390px) {
         .headerLegal .header-container .logo img {
-          width: 107px; } }
+          width: 70px; } }
   .headerLegal .menu-items {
     display: flex;
     align-items: center; }
@@ -4972,23 +4972,23 @@ footer .footerSec .footerSub .quickLinksft {
     justify-content: space-between; }
     .legalAdvisory .legalAdvisorySection .legalAdvisorySectionBox {
       width: 31%;
-      margin-top: 50px; }
+      margin-top: 30px; }
       @media all and (max-width: 1400px) {
         .legalAdvisory .legalAdvisorySection .legalAdvisorySectionBox {
           width: 31.5%;
-          margin-top: 35px; } }
+          margin-top: 30px; } }
       @media all and (max-width: 1080px) {
         .legalAdvisory .legalAdvisorySection .legalAdvisorySectionBox {
           width: 31.5%;
-          margin-top: 30px; } }
+          margin-top: 25px; } }
       @media all and (max-width: 920px) {
         .legalAdvisory .legalAdvisorySection .legalAdvisorySectionBox {
           width: 48%;
-          margin-top: 20px; } }
+          margin-top: 15px; } }
       @media all and (max-width: 575px) {
         .legalAdvisory .legalAdvisorySection .legalAdvisorySectionBox {
           width: 100%;
-          margin-top: 20px; } }
+          margin-top: 15px; } }
       .legalAdvisory .legalAdvisorySection .legalAdvisorySectionBox a {
         display: flex;
         align-items: center;
@@ -5245,23 +5245,23 @@ footer .footerSec .footerSub .quickLinksft {
         margin-top: 0px; } }
     .digitalTransformation .digitalTransformationSection .digitalTransformationSectionBox {
       width: 48.5%;
-      margin-top: 50px; }
+      margin-top: 30px; }
       @media all and (max-width: 1400px) {
         .digitalTransformation .digitalTransformationSection .digitalTransformationSectionBox {
           width: 48.5%;
-          margin-top: 35px; } }
+          margin-top: 30px; } }
       @media all and (max-width: 1080px) {
         .digitalTransformation .digitalTransformationSection .digitalTransformationSectionBox {
           width: 31.5%;
-          margin-top: 30px; } }
+          margin-top: 25px; } }
       @media all and (max-width: 920px) {
         .digitalTransformation .digitalTransformationSection .digitalTransformationSectionBox {
           width: 48%;
-          margin-top: 20px; } }
+          margin-top: 15px; } }
       @media all and (max-width: 575px) {
         .digitalTransformation .digitalTransformationSection .digitalTransformationSectionBox {
           width: 100%;
-          margin-top: 20px; } }
+          margin-top: 15px; } }
       .digitalTransformation .digitalTransformationSection .digitalTransformationSectionBox a {
         display: flex;
         align-items: center;
