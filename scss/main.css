@@ -5062,7 +5062,7 @@ footer .footerSec .footerSub .quickLinksft {
         border-bottom: 0.75px solid rgba(33, 33, 33, 0.6); } }
     @media all and (max-width: 480px) {
       .advisorySubPages .subpageContent .subSectionTitle {
-        align-items: self-start; } }
+        align-items: center; } }
     .advisorySubPages .subpageContent .subSectionTitle .backArrow {
       display: none; }
       @media all and (max-width: 920px) {
@@ -5072,7 +5072,7 @@ footer .footerSec .footerSub .quickLinksft {
       @media all and (max-width: 575px) {
         .advisorySubPages .subpageContent .subSectionTitle .backArrow {
           display: block;
-          margin-top: 16px; } }
+          margin-top: 12px; } }
       .advisorySubPages .subpageContent .subSectionTitle .backArrow img {
         margin-right: 30px; }
         @media all and (max-width: 920px) {
@@ -5340,7 +5340,7 @@ footer .footerSec .footerSub .quickLinksft {
         border-bottom: 0.75px solid rgba(33, 33, 33, 0.6); } }
     @media all and (max-width: 480px) {
       .digitalTransformationSubPages .subpageContent .subSectionTitle {
-        align-items: self-start; } }
+        align-items: center; } }
     .digitalTransformationSubPages .subpageContent .subSectionTitle .backArrow {
       display: none; }
       @media all and (max-width: 920px) {
@@ -5350,7 +5350,7 @@ footer .footerSec .footerSub .quickLinksft {
       @media all and (max-width: 575px) {
         .digitalTransformationSubPages .subpageContent .subSectionTitle .backArrow {
           display: block;
-          margin-top: 16px; } }
+          margin-top: 12px; } }
       .digitalTransformationSubPages .subpageContent .subSectionTitle .backArrow img {
         margin-right: 30px; }
         @media all and (max-width: 920px) {
