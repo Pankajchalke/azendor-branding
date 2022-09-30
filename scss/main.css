@@ -12,7 +12,7 @@ body {
   letter-spacing: 0.03em;
   line-height: 1.4;
   overflow: hidden !important; }
-  @media all and (max-width: 1030px) {
+  @media all and (max-width: 920px) {
     body {
       overflow: visible !important; } }
   body:webkit-scroll bar {
@@ -3894,6 +3894,10 @@ h2 {
 @media all and (max-width: 1200px) {
   .clientsBox .clientSlider .boxClients img {
     width: 170px; } }
+@media all and (max-width: 920px) {
+  .clientsBox .clientSlider .boxClients img {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%); } }
 @media all and (max-width: 780px) {
   .clientsBox .clientSlider .boxClients {
     margin-left: -5px;
@@ -4060,6 +4064,10 @@ h2 {
 @media all and (max-width: 1200px) {
   .caseStudies img {
     width: 170px; } }
+@media all and (max-width: 920px) {
+  .caseStudies .boxcaseStudy .contentThree img {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%); } }
 @media all and (max-width: 780px) {
   .caseStudies .boxcaseStudy .contentThree {
     margin: 0px 10px 0px 0px; }
