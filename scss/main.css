@@ -3055,6 +3055,9 @@ h2 {
 
 .section {
   margin-bottom: 30px; }
+  @media all and (max-width: 1050px) {
+    .section {
+      margin: 80px 0px; } }
   .section h2 {
     margin-bottom: 20px; }
     @media all and (max-width: 1050px) {
