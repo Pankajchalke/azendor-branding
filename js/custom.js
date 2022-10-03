@@ -672,7 +672,7 @@ if(window.location.hash){
   let hash = window.location.hash;
   if($(hash).length){
     $('html,body').animate({
-      scrollTop:$(hash).offset().top - 110
+      scrollTop:$(hash).offset().top - 125
     },200,'');
   }
 }
