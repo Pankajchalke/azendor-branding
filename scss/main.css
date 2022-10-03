@@ -2226,7 +2226,8 @@ body {
             left: 0px;
             right: 0px;
             top: 30px;
-            width: 100%; } }
+            width: 100%;
+            background-color: transparent; } }
       .contactDetails .contactDetailsBox .address .addTitle {
         display: flex;
         margin-bottom: 5px;
@@ -3061,6 +3062,9 @@ h2 {
 
 .section {
   margin-bottom: 30px; }
+  @media all and (max-width: 1050px) {
+    .section {
+      margin: 80px 0px; } }
   .section h2 {
     margin-bottom: 20px; }
     @media all and (max-width: 1050px) {
@@ -4361,16 +4365,22 @@ h2 {
       display: none !important; } }
 
 .founder {
-  margin: 150px 0px; }
-  @media all and (max-width: 1600px) {
+  margin: 110px 0px 150px 0px; }
+  @media all and (max-width: 1650px) {
     .founder {
-      margin: 100px 0px; } }
-  @media all and (max-width: 1400px) {
+      margin: 90px 0px 110px 0px; } }
+  @media all and (max-width: 1450px) {
     .founder {
-      margin: 60px 0px; } }
-  @media all and (max-width: 920px) {
+      margin: 100px 0px 70px 0px; } }
+  @media all and (max-width: 1170px) {
     .founder {
-      margin: 100px 0px 80px; } }
+      margin: 70px 0px 70px 0px; } }
+  @media all and (max-width: 900px) {
+    .founder {
+      margin: 120px 0px 180px 0px; } }
+  @media all and (max-width: 550px) {
+    .founder {
+      margin: 100px 0px 180px 0px; } }
   @media all and (max-width: 920px) {
     .founder .founderTitle {
       display: flex;
@@ -4543,16 +4553,22 @@ h2 {
       position: fixed !important; } }
 
 .contact {
-  margin: 150px 0px; }
-  @media all and (max-width: 1600px) {
+  margin: 110px 0px 150px 0px; }
+  @media all and (max-width: 1650px) {
     .contact {
-      margin: 100px 0px; } }
-  @media all and (max-width: 1400px) {
+      margin: 90px 0px 110px 0px; } }
+  @media all and (max-width: 1450px) {
     .contact {
-      margin: 60px 0px; } }
-  @media all and (max-width: 920px) {
+      margin: 100px 0px 70px 0px; } }
+  @media all and (max-width: 1170px) {
     .contact {
-      margin: 100px 0px 80px; } }
+      margin: 70px 0px 70px 0px; } }
+  @media all and (max-width: 900px) {
+    .contact {
+      margin: 120px 0px 180px 0px; } }
+  @media all and (max-width: 550px) {
+    .contact {
+      margin: 100px 0px 180px 0px; } }
   .contact .contactBox {
     display: flex; }
     @media all and (max-width: 920px) {
@@ -4790,6 +4806,7 @@ h2 {
         height: 190px;
         right: 60px;
         opacity: 0.1;
+        background-color: #212121;
         border: 1px solid #212121;
         top: 0; }
         @media all and (max-width: 1400px) {
@@ -4807,7 +4824,8 @@ h2 {
             left: 0px;
             right: 0px;
             top: 30px;
-            width: 100%; } }
+            width: 100%;
+            background-color: transparent; } }
       .contactDetails .contactDetailsBox .address .addTitle {
         display: flex;
         margin-bottom: 5px;
@@ -4907,6 +4925,8 @@ h2 {
           line-height: 160%; }
         .contactDetails .contactDetailsBox .contactRight .contactRightDetails a {
           text-decoration: none; }
+          .contactDetails .contactDetailsBox .contactRight .contactRightDetails a:hover {
+            color: #212121 !important; }
           @media all and (max-width: 1400px) {
             .contactDetails .contactDetailsBox .contactRight .contactRightDetails a {
               font-size: 16px; } }
@@ -4937,16 +4957,22 @@ footer .footerSec .footerSub .quickLinksft {
       margin-bottom: 13px !important; } }
 
 .legalAdvisory {
-  margin: 150px 0px; }
-  @media all and (max-width: 1600px) {
+  margin: 110px 0px 150px 0px; }
+  @media all and (max-width: 1650px) {
     .legalAdvisory {
-      margin: 100px 0px; } }
-  @media all and (max-width: 1400px) {
+      margin: 90px 0px 110px 0px; } }
+  @media all and (max-width: 1450px) {
     .legalAdvisory {
-      margin: 60px 0px; } }
-  @media all and (max-width: 920px) {
+      margin: 100px 0px 70px 0px; } }
+  @media all and (max-width: 1170px) {
     .legalAdvisory {
-      margin: 100px 0px 80px; } }
+      margin: 70px 0px 70px 0px; } }
+  @media all and (max-width: 900px) {
+    .legalAdvisory {
+      margin: 120px 0px 180px 0px; } }
+  @media all and (max-width: 550px) {
+    .legalAdvisory {
+      margin: 100px 0px 180px 0px; } }
   @media all and (max-width: 920px) {
     .legalAdvisory .sectionTitle {
       display: flex;
@@ -5204,16 +5230,22 @@ footer .footerSec .footerSub .quickLinksft {
         width: 100%; } }
 
 .digitalTransformation {
-  margin: 150px 0px; }
-  @media all and (max-width: 1600px) {
+  margin: 110px 0px 150px 0px; }
+  @media all and (max-width: 1650px) {
     .digitalTransformation {
-      margin: 100px 0px; } }
-  @media all and (max-width: 1400px) {
+      margin: 90px 0px 110px 0px; } }
+  @media all and (max-width: 1450px) {
     .digitalTransformation {
-      margin: 60px 0px; } }
-  @media all and (max-width: 920px) {
+      margin: 100px 0px 70px 0px; } }
+  @media all and (max-width: 1170px) {
     .digitalTransformation {
-      margin: 100px 0px 80px; } }
+      margin: 70px 0px 70px 0px; } }
+  @media all and (max-width: 900px) {
+    .digitalTransformation {
+      margin: 120px 0px 180px 0px; } }
+  @media all and (max-width: 550px) {
+    .digitalTransformation {
+      margin: 100px 0px 180px 0px; } }
   @media all and (max-width: 920px) {
     .digitalTransformation .sectionTitle {
       display: flex;
@@ -5481,16 +5513,22 @@ footer .footerSec .footerSub .quickLinksft {
         width: 100%; } }
 
 .generalCounsel {
-  margin: 150px 0px; }
-  @media all and (max-width: 1600px) {
+  margin: 110px 0px 150px 0px; }
+  @media all and (max-width: 1650px) {
     .generalCounsel {
-      margin: 100px 0px; } }
-  @media all and (max-width: 1400px) {
+      margin: 90px 0px 110px 0px; } }
+  @media all and (max-width: 1450px) {
     .generalCounsel {
-      margin: 60px 0px; } }
-  @media all and (max-width: 920px) {
+      margin: 100px 0px 70px 0px; } }
+  @media all and (max-width: 1170px) {
     .generalCounsel {
-      margin: 100px 0px 80px; } }
+      margin: 70px 0px 70px 0px; } }
+  @media all and (max-width: 900px) {
+    .generalCounsel {
+      margin: 120px 0px 180px 0px; } }
+  @media all and (max-width: 550px) {
+    .generalCounsel {
+      margin: 100px 0px 180px 0px; } }
   .generalCounsel .subpageContent {
     width: 70%; }
     @media all and (max-width: 920px) {
@@ -5601,16 +5639,22 @@ footer .footerSec .footerSub .quickLinksft {
         width: 100%; } }
 
 .legalAudit {
-  margin: 150px 0px; }
-  @media all and (max-width: 1600px) {
+  margin: 110px 0px 150px 0px; }
+  @media all and (max-width: 1650px) {
     .legalAudit {
-      margin: 100px 0px; } }
-  @media all and (max-width: 1400px) {
+      margin: 90px 0px 110px 0px; } }
+  @media all and (max-width: 1450px) {
     .legalAudit {
-      margin: 60px 0px; } }
-  @media all and (max-width: 920px) {
+      margin: 100px 0px 70px 0px; } }
+  @media all and (max-width: 1170px) {
     .legalAudit {
-      margin: 100px 0px 80px; } }
+      margin: 70px 0px 70px 0px; } }
+  @media all and (max-width: 900px) {
+    .legalAudit {
+      margin: 120px 0px 180px 0px; } }
+  @media all and (max-width: 550px) {
+    .legalAudit {
+      margin: 100px 0px 180px 0px; } }
   .legalAudit .subpageContent {
     width: 70%; }
     @media all and (max-width: 920px) {
@@ -5721,17 +5765,23 @@ footer .footerSec .footerSub .quickLinksft {
         width: 100%; } }
 
 .aboutUs {
-  margin: 150px 0px;
-  color: #212121; }
-  @media all and (max-width: 1600px) {
+  color: #212121;
+  margin: 110px 0px 150px 0px; }
+  @media all and (max-width: 1650px) {
     .aboutUs {
-      margin: 100px 0px; } }
-  @media all and (max-width: 1400px) {
+      margin: 90px 0px 110px 0px; } }
+  @media all and (max-width: 1450px) {
     .aboutUs {
-      margin: 60px 0px; } }
-  @media all and (max-width: 920px) {
+      margin: 100px 0px 70px 0px; } }
+  @media all and (max-width: 1170px) {
     .aboutUs {
-      margin: 100px 0px 80px; } }
+      margin: 70px 0px 70px 0px; } }
+  @media all and (max-width: 900px) {
+    .aboutUs {
+      margin: 120px 0px 180px 0px; } }
+  @media all and (max-width: 550px) {
+    .aboutUs {
+      margin: 100px 0px 180px 0px; } }
   .aboutUs .subpageContent {
     width: 70%; }
     @media all and (max-width: 920px) {
@@ -5828,17 +5878,23 @@ footer .footerSec .footerSub .quickLinksft {
         width: 100%; } }
 
 .careers {
-  margin: 150px 0px;
-  color: #212121; }
-  @media all and (max-width: 1600px) {
+  color: #212121;
+  margin: 110px 0px 150px 0px; }
+  @media all and (max-width: 1650px) {
     .careers {
-      margin: 100px 0px; } }
-  @media all and (max-width: 1400px) {
+      margin: 90px 0px 110px 0px; } }
+  @media all and (max-width: 1450px) {
     .careers {
-      margin: 60px 0px; } }
-  @media all and (max-width: 920px) {
+      margin: 100px 0px 70px 0px; } }
+  @media all and (max-width: 1170px) {
     .careers {
-      margin: 100px 0px 80px; } }
+      margin: 70px 0px 70px 0px; } }
+  @media all and (max-width: 900px) {
+    .careers {
+      margin: 120px 0px 180px 0px; } }
+  @media all and (max-width: 550px) {
+    .careers {
+      margin: 100px 0px 180px 0px; } }
   .careers .subpageContent {
     width: 70%; }
     @media all and (max-width: 920px) {
@@ -5929,16 +5985,22 @@ footer .footerSec .footerSub .quickLinksft {
     color: #000; }
 
 .subSectors {
-  margin: 150px 0px; }
-  @media all and (max-width: 1600px) {
+  margin: 110px 0px 150px 0px; }
+  @media all and (max-width: 1650px) {
     .subSectors {
-      margin: 100px 0px; } }
-  @media all and (max-width: 1400px) {
+      margin: 90px 0px 110px 0px; } }
+  @media all and (max-width: 1450px) {
     .subSectors {
-      margin: 60px 0px; } }
-  @media all and (max-width: 920px) {
+      margin: 100px 0px 70px 0px; } }
+  @media all and (max-width: 1170px) {
     .subSectors {
-      margin: 100px 0px 80px; } }
+      margin: 70px 0px 70px 0px; } }
+  @media all and (max-width: 900px) {
+    .subSectors {
+      margin: 120px 0px 180px 0px; } }
+  @media all and (max-width: 550px) {
+    .subSectors {
+      margin: 100px 0px 180px 0px; } }
   .subSectors .subpageContent {
     width: 70%; }
     @media all and (max-width: 920px) {

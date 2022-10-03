@@ -31,12 +31,12 @@
 
 
 .subSectors {
-    margin: 150px 0px;
-
-   
-    @media all and (max-width: 1600px){margin:100px 0px;}
-    @media all and (max-width: 1400px){margin:60px 0px;}
-	@media all and (max-width: 920px){margin:100px 0px 80px;}
+    margin:110px 0px 150px 0px;
+	@media all and (max-width: 1650px){margin: 90px 0px 110px 0px;}
+	@media all and (max-width: 1450px){margin:100px 0px 70px 0px;}
+	@media all and (max-width: 1170px){margin:70px 0px 70px 0px;}
+	@media all and (max-width: 900px){margin:120px 0px 180px 0px;}
+	@media all and (max-width: 550px){margin:100px 0px 180px 0px;}
     
     .subpageContent{
         width: 70%;
