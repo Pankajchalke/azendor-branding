@@ -2308,7 +2308,7 @@
 			    top: 0;
 			    	@media all and (max-width: 1400px){height: 136px;}
 			    	@media all and (max-width: 1080px){height: 160px;right: 20px;}
-			    	@media all and (max-width: 920px){height: 100%; border: 0; border-bottom: 1px solid #212121; left: 0px; right: 0px;top: 30px; width: 100%;}
+			    	@media all and (max-width: 920px){height: 100%; border: 0; border-bottom: 1px solid #212121; left: 0px; right: 0px;top: 30px; width: 100%; background-color: transparent;}
 			    }
 		.addTitle{display: flex;margin-bottom: 5px; align-items: center;
 			@media all and (max-width: 1400px){margin-bottom: 10px;}

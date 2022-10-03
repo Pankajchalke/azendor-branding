@@ -2220,7 +2220,8 @@ body {
             left: 0px;
             right: 0px;
             top: 30px;
-            width: 100%; } }
+            width: 100%;
+            background-color: transparent; } }
       .contactDetails .contactDetailsBox .address .addTitle {
         display: flex;
         margin-bottom: 5px;
@@ -4771,6 +4772,7 @@ h2 {
         height: 190px;
         right: 60px;
         opacity: 0.1;
+        background-color: #212121;
         border: 1px solid #212121;
         top: 0; }
         @media all and (max-width: 1400px) {
@@ -4788,7 +4790,8 @@ h2 {
             left: 0px;
             right: 0px;
             top: 30px;
-            width: 100%; } }
+            width: 100%;
+            background-color: transparent; } }
       .contactDetails .contactDetailsBox .address .addTitle {
         display: flex;
         margin-bottom: 5px;
@@ -4888,6 +4891,8 @@ h2 {
           line-height: 160%; }
         .contactDetails .contactDetailsBox .contactRight .contactRightDetails a {
           text-decoration: none; }
+          .contactDetails .contactDetailsBox .contactRight .contactRightDetails a:hover {
+            color: #212121 !important; }
           @media all and (max-width: 1400px) {
             .contactDetails .contactDetailsBox .contactRight .contactRightDetails a {
               font-size: 16px; } }
