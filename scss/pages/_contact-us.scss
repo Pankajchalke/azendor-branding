@@ -8,7 +8,7 @@
 	@media all and (max-width: 1650px){margin: 90px 0px 110px 0px;}
 	@media all and (max-width: 1450px){margin:100px 0px 70px 0px;}
 	@media all and (max-width: 1170px){margin:70px 0px 70px 0px;}
-	@media all and (max-width: 900px){margin:120px 0px 180px 0px;}
+	@media all and (max-width: 920px){margin:120px 0px 180px 0px;}
 	@media all and (max-width: 550px){margin:100px 0px 180px 0px;}
 	.contactBox{display:flex;
 		@media all and (max-width: 920px){display:block;}
@@ -39,6 +39,9 @@
 	}
 	.contactForm{
 		width: 50%; margin-left: 180px; padding-top:20px;
+		::-webkit-input-placeholder {font-size: 16px;color: rgba(33, 33, 33, 0.3);}
+		  :-ms-input-placeholder {font-size: 16px;color: rgba(33, 33, 33, 0.3);}
+		  ::placeholder {font-size: 16px;color: rgba(33, 33, 33, 0.3);}
 		@media all and (max-width: 1400px){width: 55%;margin-left: 120px;padding-top:10px;}
 		@media all and (max-width: 1280px){width:50%; margin-left: 80px; margin-right:10px;}
 		@media all and (max-width: 920px){width:100%; margin-left: 0px;}

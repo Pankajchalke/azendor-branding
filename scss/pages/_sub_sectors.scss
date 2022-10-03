@@ -35,7 +35,7 @@
 	@media all and (max-width: 1650px){margin: 90px 0px 110px 0px;}
 	@media all and (max-width: 1450px){margin:100px 0px 70px 0px;}
 	@media all and (max-width: 1170px){margin:70px 0px 70px 0px;}
-	@media all and (max-width: 900px){margin:120px 0px 180px 0px;}
+	@media all and (max-width: 920px){margin:120px 0px 180px 0px;}
 	@media all and (max-width: 550px){margin:100px 0px 180px 0px;}
     
     .subpageContent{
@@ -78,11 +78,15 @@
                 @media all and (max-width: 920px){margin-bottom:0px;}
             
                 
-                }
+                }   
         }
-    
-        .subSectors-content {
+        
+        ul {
             margin-left: 22px;
+            font-weight: 400;
+            font-family: 'Poppins', sans-serif;
+            color: #212121;
+            font-size: 22px;
             li {
                 margin-bottom: 20px;
                 line-height: 35px;
@@ -96,10 +100,12 @@
         
             @media all and (max-width: 1600px){
                 margin-left: 19px;
+                font-size: 18px;
             }
         
             @media all and (max-width: 1400px){
                 margin-left: 17.5px;
+                font-size: 16px;
                 li {
                     
                     line-height: 26px;
@@ -126,6 +132,7 @@
         
             @media all and (max-width: 575px){
                 margin-left: 15.60px;
+                font-size: 14px;
             }
         }
     

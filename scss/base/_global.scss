@@ -44,7 +44,24 @@ p {
 
 /************************************************ Common CSS **************************************************/
 
+h1 {
+    font-size: 64px;
+}
 
+h2{
+    font-size: 55px;
+}
+
+h3{
+    font-size: 50px;
+}
+
+h4 {
+    font-size: 36px;
+}
+p{
+    font-size: 18px;
+}
 
 .font130 {
     font-size: 130px;
@@ -163,6 +180,26 @@ img {
 
 
 @media all and (max-width: 1800px) {
+
+    h1 {
+        font-size: 60px;
+    }
+    
+    h2{
+        font-size: 52px;
+    }
+    
+    h3{
+        font-size: 42px;
+    }
+    
+    h4 {
+        font-size: 34px;
+    }
+    p{
+        font-size: 16px;
+    }
+
     .wrapper {
         padding: 0px 130px;
     }
@@ -213,6 +250,26 @@ img {
 }
 
 @media all and (max-width: 1600px) {
+
+    h1 {
+        font-size: 50px;
+    }
+    
+    h2{
+        font-size: 46px;
+    }
+    
+    h3{
+        font-size: 38px;
+    }
+    
+    h4 {
+        font-size: 32px;
+    }
+    p{
+        font-size: 14px;
+    }
+
     .wrapper {
         padding: 0px 70px;
     }
@@ -267,6 +324,26 @@ img {
 }
 
 @media all and (max-width: 1400px) {
+
+    h1 {
+        font-size: 45px;
+    }
+    
+    h2{
+        font-size: 40px;
+    }
+    
+    h3{
+        font-size: 34px;
+    }
+    
+    h4 {
+        font-size: 26px;
+    }
+    p{
+        font-size: 12px;
+    }
+
     .wrapper {
         padding: 0px 70px;
     }
@@ -322,6 +399,9 @@ img {
 }
 
 @media all and (max-width: 1280px) {
+    h4{
+        font-size: 24px;
+    }
     .font36 {
         font-size: 24px;
     }
@@ -334,6 +414,15 @@ img {
 @media all and (max-width: 1080px) {}
 
 @media all and (max-width: 1024px) {
+
+    h1 {
+        font-size: 36px;
+    }
+    
+    h3{
+        font-size: 30px;
+    }
+    
     .wrapper {
         padding: 0px 40px;
     }
@@ -357,6 +446,26 @@ img {
 }
 
 @media all and (max-width: 900px) {
+
+    h1 {
+        font-size: 32px;
+    }
+    
+    h2{
+        font-size: 30px;
+    }
+    
+    h3{
+        font-size: 24px;
+    }
+    
+    h4 {
+        font-size: 18px;
+    }
+    p{
+        font-size: 12px;
+    }
+
     .wrapper {
         padding: 0px 40px;
     }
@@ -423,6 +532,24 @@ img {
 @media all and (max-width: 680px) {}
 
 @media all and (max-width: 575px) {
+    h1 {
+        font-size: 30px;
+    }
+    
+    h2{
+        font-size: 22px;
+    }
+    
+    h3{
+        font-size: 22px;
+    }
+    
+    h4 {
+        font-size: 18px;
+    }
+    p{
+        font-size: 10px;
+    }
     .font130 {
         font-size: 40px;
     }

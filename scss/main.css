@@ -37,6 +37,21 @@ p {
   padding: 0px 150px; }
 
 /************************************************ Common CSS **************************************************/
+h1 {
+  font-size: 64px; }
+
+h2 {
+  font-size: 55px; }
+
+h3 {
+  font-size: 50px; }
+
+h4 {
+  font-size: 36px; }
+
+p {
+  font-size: 18px; }
+
 .font130 {
   font-size: 130px; }
 
@@ -123,6 +138,21 @@ img {
 
 /****************************************************Media Queries***********************************************************/
 @media all and (max-width: 1800px) {
+  h1 {
+    font-size: 60px; }
+
+  h2 {
+    font-size: 52px; }
+
+  h3 {
+    font-size: 42px; }
+
+  h4 {
+    font-size: 34px; }
+
+  p {
+    font-size: 16px; }
+
   .wrapper {
     padding: 0px 130px; }
 
@@ -159,6 +189,21 @@ img {
   .font16 {
     font-size: 14px; } }
 @media all and (max-width: 1600px) {
+  h1 {
+    font-size: 50px; }
+
+  h2 {
+    font-size: 46px; }
+
+  h3 {
+    font-size: 38px; }
+
+  h4 {
+    font-size: 32px; }
+
+  p {
+    font-size: 14px; }
+
   .wrapper {
     padding: 0px 70px; }
 
@@ -198,6 +243,21 @@ img {
   .font16 {
     font-size: 12px; } }
 @media all and (max-width: 1400px) {
+  h1 {
+    font-size: 45px; }
+
+  h2 {
+    font-size: 40px; }
+
+  h3 {
+    font-size: 34px; }
+
+  h4 {
+    font-size: 26px; }
+
+  p {
+    font-size: 12px; }
+
   .wrapper {
     padding: 0px 70px; }
 
@@ -237,9 +297,18 @@ img {
   .font16 {
     font-size: 11px; } }
 @media all and (max-width: 1280px) {
+  h4 {
+    font-size: 24px; }
+
   .font36 {
     font-size: 24px; } }
 @media all and (max-width: 1024px) {
+  h1 {
+    font-size: 36px; }
+
+  h3 {
+    font-size: 30px; }
+
   .wrapper {
     padding: 0px 40px; }
 
@@ -255,6 +324,21 @@ img {
   .font50 {
     font-size: 30px; } }
 @media all and (max-width: 900px) {
+  h1 {
+    font-size: 32px; }
+
+  h2 {
+    font-size: 30px; }
+
+  h3 {
+    font-size: 24px; }
+
+  h4 {
+    font-size: 18px; }
+
+  p {
+    font-size: 12px; }
+
   .wrapper {
     padding: 0px 40px; }
 
@@ -297,6 +381,21 @@ img {
   .wrapper {
     padding: 0px 30px; } }
 @media all and (max-width: 575px) {
+  h1 {
+    font-size: 30px; }
+
+  h2 {
+    font-size: 22px; }
+
+  h3 {
+    font-size: 22px; }
+
+  h4 {
+    font-size: 18px; }
+
+  p {
+    font-size: 10px; }
+
   .font130 {
     font-size: 40px; }
 
@@ -879,33 +978,6 @@ body {
     font-weight: 600; }
     .headerLegal .menu-link:hover p {
       color: #000; }
-    .headerLegal .menu-link:hover:before {
-      position: absolute;
-      content: "";
-      left: -16px;
-      right: 0;
-      top: 12px;
-      bottom: 0;
-      width: 50px;
-      height: 50px;
-      background: #F1F1F1;
-      border: 1px solid #F1F1F1;
-      outline: none;
-      border-radius: 50%;
-      z-index: -1;
-      margin: 0 auto; }
-      @media (max-width: 1600px) {
-        .headerLegal .menu-link:hover:before {
-          top: -1px; } }
-      @media (max-width: 1400px) {
-        .headerLegal .menu-link:hover:before {
-          top: 4px;
-          width: 40px;
-          height: 40px; } }
-      @media (max-width: 920px) {
-        .headerLegal .menu-link:hover:before {
-          background: transparent;
-          border: none; } }
   .headerLegal .header-container {
     display: flex;
     justify-content: space-between;
@@ -1306,7 +1378,7 @@ body {
     .bannerSeclegal h5 {
       width: 100%;
       margin: 10px 0px 15px; } }
-  @media all and (max-width: 900px) {
+  @media all and (max-width: 920px) {
     .bannerSeclegal {
       position: relative;
       margin: 120px 0px 180px 0px; }
@@ -1945,6 +2017,10 @@ body {
           .clientlogoSec .logosSlider .slick-track .logosBox img:hover {
             filter: grayscale(0%);
             -webkit-filter: grayscale(0%); }
+        @media all and (max-width: 920px) {
+          .clientlogoSec .logosSlider .slick-track .logosBox img {
+            filter: grayscale(0%);
+            -webkit-filter: grayscale(0%); } }
 
 .legalInnerPageProgress {
   z-index: 11; }
@@ -1961,16 +2037,22 @@ body {
     color: #000; }
 
 .contact {
-  margin: 150px 0px; }
-  @media all and (max-width: 1600px) {
+  margin: 110px 0px 150px 0px; }
+  @media all and (max-width: 1650px) {
     .contact {
-      margin: 100px 0px; } }
-  @media all and (max-width: 1400px) {
+      margin: 90px 0px 110px 0px; } }
+  @media all and (max-width: 1450px) {
     .contact {
-      margin: 60px 0px; } }
+      margin: 100px 0px 70px 0px; } }
+  @media all and (max-width: 1170px) {
+    .contact {
+      margin: 70px 0px 70px 0px; } }
   @media all and (max-width: 920px) {
     .contact {
-      margin: 100px 0px 80px; } }
+      margin: 120px 0px 180px 0px; } }
+  @media all and (max-width: 550px) {
+    .contact {
+      margin: 100px 0px 180px 0px; } }
   .contact .contactBox {
     display: flex; }
     @media all and (max-width: 920px) {
@@ -2034,6 +2116,15 @@ body {
     width: 50%;
     margin-left: 180px;
     padding-top: 20px; }
+    .contact .contactForm ::-webkit-input-placeholder {
+      font-size: 16px;
+      color: rgba(33, 33, 33, 0.3); }
+    .contact .contactForm :-ms-input-placeholder {
+      font-size: 16px;
+      color: rgba(33, 33, 33, 0.3); }
+    .contact .contactForm ::placeholder {
+      font-size: 16px;
+      color: rgba(33, 33, 33, 0.3); }
     @media all and (max-width: 1400px) {
       .contact .contactForm {
         width: 55%;
@@ -2052,7 +2143,10 @@ body {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between; }
-      .contact .contactForm form input[type=text], .contact .contactForm form [type=number], .contact .contactForm form [type=email], .contact .contactForm form textarea {
+      .contact .contactForm form input[type=text],
+      .contact .contactForm form [type=number],
+      .contact .contactForm form [type=email],
+      .contact .contactForm form textarea {
         width: 100%;
         padding: 14px 15px;
         border: 2px solid transparent;
@@ -2064,28 +2158,46 @@ body {
         background: rgba(215, 215, 215, 0.3);
         font-size: 20px; }
         @media all and (max-width: 1600px) {
-          .contact .contactForm form input[type=text], .contact .contactForm form [type=number], .contact .contactForm form [type=email], .contact .contactForm form textarea {
+          .contact .contactForm form input[type=text],
+          .contact .contactForm form [type=number],
+          .contact .contactForm form [type=email],
+          .contact .contactForm form textarea {
             margin-bottom: 20px;
             margin-top: 10px; } }
         @media all and (max-width: 1400px) {
-          .contact .contactForm form input[type=text], .contact .contactForm form [type=number], .contact .contactForm form [type=email], .contact .contactForm form textarea {
+          .contact .contactForm form input[type=text],
+          .contact .contactForm form [type=number],
+          .contact .contactForm form [type=email],
+          .contact .contactForm form textarea {
             font-size: 14px;
             margin-top: 10px;
             margin-bottom: 20px;
             padding: 10px;
             border-radius: 3.5px; } }
         @media all and (max-width: 920px) {
-          .contact .contactForm form input[type=text], .contact .contactForm form [type=number], .contact .contactForm form [type=email], .contact .contactForm form textarea {
+          .contact .contactForm form input[type=text],
+          .contact .contactForm form [type=number],
+          .contact .contactForm form [type=email],
+          .contact .contactForm form textarea {
             font-size: 16px;
             padding: 12px 15px; } }
-        .contact .contactForm form input[type=text]:focus, .contact .contactForm form [type=number]:focus, .contact .contactForm form [type=email]:focus, .contact .contactForm form textarea:focus {
+        .contact .contactForm form input[type=text]:focus,
+        .contact .contactForm form [type=number]:focus,
+        .contact .contactForm form [type=email]:focus,
+        .contact .contactForm form textarea:focus {
           background: rgba(243, 243, 243, 0.7);
           border: 2px solid #212121; }
           @media all and (max-width: 1400px) {
-            .contact .contactForm form input[type=text]:focus, .contact .contactForm form [type=number]:focus, .contact .contactForm form [type=email]:focus, .contact .contactForm form textarea:focus {
+            .contact .contactForm form input[type=text]:focus,
+            .contact .contactForm form [type=number]:focus,
+            .contact .contactForm form [type=email]:focus,
+            .contact .contactForm form textarea:focus {
               border: 1.4px solid #212121; } }
           @media all and (max-width: 920px) {
-            .contact .contactForm form input[type=text]:focus, .contact .contactForm form [type=number]:focus, .contact .contactForm form [type=email]:focus, .contact .contactForm form textarea:focus {
+            .contact .contactForm form input[type=text]:focus,
+            .contact .contactForm form [type=number]:focus,
+            .contact .contactForm form [type=email]:focus,
+            .contact .contactForm form textarea:focus {
               border: 1px solid #212121; } }
       .contact .contactForm form textarea {
         margin-bottom: 20px;
@@ -4375,7 +4487,7 @@ h2 {
   @media all and (max-width: 1170px) {
     .founder {
       margin: 70px 0px 70px 0px; } }
-  @media all and (max-width: 900px) {
+  @media all and (max-width: 920px) {
     .founder {
       margin: 120px 0px 180px 0px; } }
   @media all and (max-width: 550px) {
@@ -4563,7 +4675,7 @@ h2 {
   @media all and (max-width: 1170px) {
     .contact {
       margin: 70px 0px 70px 0px; } }
-  @media all and (max-width: 900px) {
+  @media all and (max-width: 920px) {
     .contact {
       margin: 120px 0px 180px 0px; } }
   @media all and (max-width: 550px) {
@@ -4632,6 +4744,15 @@ h2 {
     width: 50%;
     margin-left: 180px;
     padding-top: 20px; }
+    .contact .contactForm ::-webkit-input-placeholder {
+      font-size: 16px;
+      color: rgba(33, 33, 33, 0.3); }
+    .contact .contactForm :-ms-input-placeholder {
+      font-size: 16px;
+      color: rgba(33, 33, 33, 0.3); }
+    .contact .contactForm ::placeholder {
+      font-size: 16px;
+      color: rgba(33, 33, 33, 0.3); }
     @media all and (max-width: 1400px) {
       .contact .contactForm {
         width: 55%;
@@ -4967,7 +5088,7 @@ footer .footerSec .footerSub .quickLinksft {
   @media all and (max-width: 1170px) {
     .legalAdvisory {
       margin: 70px 0px 70px 0px; } }
-  @media all and (max-width: 900px) {
+  @media all and (max-width: 920px) {
     .legalAdvisory {
       margin: 120px 0px 180px 0px; } }
   @media all and (max-width: 550px) {
@@ -5240,7 +5361,7 @@ footer .footerSec .footerSub .quickLinksft {
   @media all and (max-width: 1170px) {
     .digitalTransformation {
       margin: 70px 0px 70px 0px; } }
-  @media all and (max-width: 900px) {
+  @media all and (max-width: 920px) {
     .digitalTransformation {
       margin: 120px 0px 180px 0px; } }
   @media all and (max-width: 550px) {
@@ -5523,7 +5644,7 @@ footer .footerSec .footerSub .quickLinksft {
   @media all and (max-width: 1170px) {
     .generalCounsel {
       margin: 70px 0px 70px 0px; } }
-  @media all and (max-width: 900px) {
+  @media all and (max-width: 920px) {
     .generalCounsel {
       margin: 120px 0px 180px 0px; } }
   @media all and (max-width: 550px) {
@@ -5649,7 +5770,7 @@ footer .footerSec .footerSub .quickLinksft {
   @media all and (max-width: 1170px) {
     .legalAudit {
       margin: 70px 0px 70px 0px; } }
-  @media all and (max-width: 900px) {
+  @media all and (max-width: 920px) {
     .legalAudit {
       margin: 120px 0px 180px 0px; } }
   @media all and (max-width: 550px) {
@@ -5776,7 +5897,7 @@ footer .footerSec .footerSub .quickLinksft {
   @media all and (max-width: 1170px) {
     .aboutUs {
       margin: 70px 0px 70px 0px; } }
-  @media all and (max-width: 900px) {
+  @media all and (max-width: 920px) {
     .aboutUs {
       margin: 120px 0px 180px 0px; } }
   @media all and (max-width: 550px) {
@@ -5889,7 +6010,7 @@ footer .footerSec .footerSub .quickLinksft {
   @media all and (max-width: 1170px) {
     .careers {
       margin: 70px 0px 70px 0px; } }
-  @media all and (max-width: 900px) {
+  @media all and (max-width: 920px) {
     .careers {
       margin: 120px 0px 180px 0px; } }
   @media all and (max-width: 550px) {
@@ -5995,7 +6116,7 @@ footer .footerSec .footerSub .quickLinksft {
   @media all and (max-width: 1170px) {
     .subSectors {
       margin: 70px 0px 70px 0px; } }
-  @media all and (max-width: 900px) {
+  @media all and (max-width: 920px) {
     .subSectors {
       margin: 120px 0px 180px 0px; } }
   @media all and (max-width: 550px) {
@@ -6055,38 +6176,45 @@ footer .footerSec .footerSub .quickLinksft {
       @media all and (max-width: 920px) {
         .subSectors .subpageContent .sectionTitle h1 {
           margin-bottom: 0px; } }
-    .subSectors .subpageContent .subSectors-content {
-      margin-left: 22px; }
-      .subSectors .subpageContent .subSectors-content li {
+    .subSectors .subpageContent ul {
+      margin-left: 22px;
+      font-weight: 400;
+      font-family: 'Poppins', sans-serif;
+      color: #212121;
+      font-size: 22px; }
+      .subSectors .subpageContent ul li {
         margin-bottom: 20px;
         line-height: 35px;
         font-family: 'Poppins' !important; }
       @media all and (max-width: 1800px) {
-        .subSectors .subpageContent .subSectors-content {
+        .subSectors .subpageContent ul {
           margin-left: 19.5px; } }
       @media all and (max-width: 1600px) {
-        .subSectors .subpageContent .subSectors-content {
-          margin-left: 19px; } }
+        .subSectors .subpageContent ul {
+          margin-left: 19px;
+          font-size: 18px; } }
       @media all and (max-width: 1400px) {
-        .subSectors .subpageContent .subSectors-content {
-          margin-left: 17.5px; }
-          .subSectors .subpageContent .subSectors-content li {
+        .subSectors .subpageContent ul {
+          margin-left: 17.5px;
+          font-size: 16px; }
+          .subSectors .subpageContent ul li {
             line-height: 26px; } }
       @media all and (max-width: 1050px) {
-        .subSectors .subpageContent .subSectors-content {
+        .subSectors .subpageContent ul {
           margin-left: 16.5px; } }
       @media all and (max-width: 920px) {
-        .subSectors .subpageContent .subSectors-content {
+        .subSectors .subpageContent ul {
           margin-left: 17px; }
-          .subSectors .subpageContent .subSectors-content li {
+          .subSectors .subpageContent ul li {
             font-size: 16px;
             line-height: 21px; } }
       @media all and (max-width: 675px) {
-        .subSectors .subpageContent .subSectors-content {
+        .subSectors .subpageContent ul {
           margin-left: 17.60px; } }
       @media all and (max-width: 575px) {
-        .subSectors .subpageContent .subSectors-content {
-          margin-left: 15.60px; } }
+        .subSectors .subpageContent ul {
+          margin-left: 15.60px;
+          font-size: 14px; } }
     .subSectors .subpageContent .subSectors-Cta {
       margin-top: 40px;
       display: flex;
