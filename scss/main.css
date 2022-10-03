@@ -4079,106 +4079,104 @@ h2 {
     .clientsBox .sliderArrow .imgclientBackarrow {
       margin-right: 50px; } }
 
-.testimonialsSec {
-  overflow: hidden !important; }
-  @media all and (max-width: 920px) {
-    .testimonialsSec {
-      margin-top: 150px; } }
-  .testimonialsSec .testimonialsSlider {
-    margin: 0 -70px; }
-    .testimonialsSec .testimonialsSlider .slick-slide {
-      transform: scale(0.8);
-      transition: all ease 0.5s; }
-    .testimonialsSec .testimonialsSlider .slick-current {
-      transform: scale(1);
-      opacity: 1; }
-      .testimonialsSec .testimonialsSlider .slick-current .testimonials {
-        opacity: 1;
-        width: 100%; }
-    .testimonialsSec .testimonialsSlider .testimonials {
-      background: #252525;
-      opacity: 0.5;
-      border-radius: 10px;
-      padding: 50px 70px;
-      text-align: center;
+@media all and (max-width: 920px) {
+  .testimonialsSec {
+    margin-top: 150px; } }
+.testimonialsSec .testimonialsSlider {
+  margin: 0 -70px; }
+  .testimonialsSec .testimonialsSlider .slick-slide {
+    transform: scale(0.8);
+    transition: all ease 0.5s; }
+  .testimonialsSec .testimonialsSlider .slick-current {
+    transform: scale(1);
+    opacity: 1; }
+    .testimonialsSec .testimonialsSlider .slick-current .testimonials {
+      opacity: 1;
+      width: 100%; }
+  .testimonialsSec .testimonialsSlider .testimonials {
+    background: #252525;
+    opacity: 0.5;
+    border-radius: 10px;
+    padding: 50px 70px;
+    text-align: center;
+    vertical-align: middle; }
+    @media all and (max-width: 1200px) {
+      .testimonialsSec .testimonialsSlider .testimonials {
+        padding: 40px 20px; } }
+    @media all and (max-width: 920px) {
+      .testimonialsSec .testimonialsSlider .testimonials {
+        padding: 30px 17px; } }
+    .testimonialsSec .testimonialsSlider .testimonials a:focus,
+    .testimonialsSec .testimonialsSlider .testimonials a:hover,
+    .testimonialsSec .testimonialsSlider .testimonials a:active {
+      outline: none !important;
+      text-decoration: none; }
+    .testimonialsSec .testimonialsSlider .testimonials:hover {
+      cursor: pointer; }
+    .testimonialsSec .testimonialsSlider .testimonials .profile img {
+      width: 65%;
+      margin: 0 auto;
       vertical-align: middle; }
-      @media all and (max-width: 1200px) {
-        .testimonialsSec .testimonialsSlider .testimonials {
-          padding: 40px 20px; } }
+      @media all and (max-width: 1600px) {
+        .testimonialsSec .testimonialsSlider .testimonials .profile img {
+          width: 60%; } }
       @media all and (max-width: 920px) {
-        .testimonialsSec .testimonialsSlider .testimonials {
-          padding: 30px 17px; } }
-      .testimonialsSec .testimonialsSlider .testimonials a:focus,
-      .testimonialsSec .testimonialsSlider .testimonials a:hover,
-      .testimonialsSec .testimonialsSlider .testimonials a:active {
-        outline: none !important;
-        text-decoration: none; }
-      .testimonialsSec .testimonialsSlider .testimonials:hover {
-        cursor: pointer; }
-      .testimonialsSec .testimonialsSlider .testimonials .profile img {
-        width: 65%;
-        margin: 0 auto;
+        .testimonialsSec .testimonialsSlider .testimonials .profile img {
+          width: 50%; } }
+    .testimonialsSec .testimonialsSlider .testimonials .profile .profileInfo {
+      margin-top: 20px; }
+      .testimonialsSec .testimonialsSlider .testimonials .profile .profileInfo h4 {
+        margin-bottom: 10px;
+        text-align: center;
         vertical-align: middle; }
-        @media all and (max-width: 1600px) {
-          .testimonialsSec .testimonialsSlider .testimonials .profile img {
-            width: 60%; } }
-        @media all and (max-width: 920px) {
-          .testimonialsSec .testimonialsSlider .testimonials .profile img {
-            width: 50%; } }
-      .testimonialsSec .testimonialsSlider .testimonials .profile .profileInfo {
-        margin-top: 20px; }
-        .testimonialsSec .testimonialsSlider .testimonials .profile .profileInfo h4 {
-          margin-bottom: 10px;
-          text-align: center;
-          vertical-align: middle; }
-        .testimonialsSec .testimonialsSlider .testimonials .profile .profileInfo p {
-          text-align: center;
-          vertical-align: middle;
-          display: inline-flex;
-          align-items: center; }
-          .testimonialsSec .testimonialsSlider .testimonials .profile .profileInfo p .mobileArrow {
-            display: none; }
-            @media all and (max-width: 1024px) {
-              .testimonialsSec .testimonialsSlider .testimonials .profile .profileInfo p .mobileArrow {
-                display: block;
-                width: 17px;
-                height: 9px;
-                margin-left: 5px;
-                vertical-align: middle;
-                text-align: center;
-                transition: 0.6s all; } }
-          .testimonialsSec .testimonialsSlider .testimonials .profile .profileInfo p:hover .mobileArrow {
-            transform: translateX(15px); }
-  .testimonialsSec .sliderArrow {
-    position: absolute;
-    right: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    padding-top: 15px; }
-    .testimonialsSec .sliderArrow .imgtestBackarrow,
-    .testimonialsSec .sliderArrow .imgtestForwardarrow {
-      background: 0 0;
-      border: none; }
-      .testimonialsSec .sliderArrow .imgtestBackarrow img,
-      .testimonialsSec .sliderArrow .imgtestForwardarrow img {
-        opacity: 0.5; }
-        .testimonialsSec .sliderArrow .imgtestBackarrow img:hover,
-        .testimonialsSec .sliderArrow .imgtestForwardarrow img:hover {
-          opacity: 1; }
+      .testimonialsSec .testimonialsSlider .testimonials .profile .profileInfo p {
+        text-align: center;
+        vertical-align: middle;
+        display: inline-flex;
+        align-items: center; }
+        .testimonialsSec .testimonialsSlider .testimonials .profile .profileInfo p .mobileArrow {
+          display: none; }
+          @media all and (max-width: 1024px) {
+            .testimonialsSec .testimonialsSlider .testimonials .profile .profileInfo p .mobileArrow {
+              display: block;
+              width: 17px;
+              height: 9px;
+              margin-left: 5px;
+              vertical-align: middle;
+              text-align: center;
+              transition: 0.6s all; } }
+        .testimonialsSec .testimonialsSlider .testimonials .profile .profileInfo p:hover .mobileArrow {
+          transform: translateX(15px); }
+.testimonialsSec .sliderArrow {
+  position: absolute;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding-top: 15px; }
+  .testimonialsSec .sliderArrow .imgtestBackarrow,
+  .testimonialsSec .sliderArrow .imgtestForwardarrow {
+    background: 0 0;
+    border: none; }
+    .testimonialsSec .sliderArrow .imgtestBackarrow img,
+    .testimonialsSec .sliderArrow .imgtestForwardarrow img {
+      opacity: 0.5; }
+      .testimonialsSec .sliderArrow .imgtestBackarrow img:hover,
+      .testimonialsSec .sliderArrow .imgtestForwardarrow img:hover {
+        opacity: 1; }
+  .testimonialsSec .sliderArrow .imgtestBackarrow {
+    margin-right: 100px; }
+  @media all and (max-width: 1400px) {
+    .testimonialsSec .sliderArrow .imgtestBackarrow img,
+    .testimonialsSec .sliderArrow .imgtestForwardarrow img {
+      width: 32px; } }
+  @media all and (max-width: 1025px) {
+    .testimonialsSec .sliderArrow .imgtestBackarrow img,
+    .testimonialsSec .sliderArrow .imgtestForwardarrow img {
+      width: 24px; }
     .testimonialsSec .sliderArrow .imgtestBackarrow {
-      margin-right: 100px; }
-    @media all and (max-width: 1400px) {
-      .testimonialsSec .sliderArrow .imgtestBackarrow img,
-      .testimonialsSec .sliderArrow .imgtestForwardarrow img {
-        width: 32px; } }
-    @media all and (max-width: 1025px) {
-      .testimonialsSec .sliderArrow .imgtestBackarrow img,
-      .testimonialsSec .sliderArrow .imgtestForwardarrow img {
-        width: 24px; }
-      .testimonialsSec .sliderArrow .imgtestBackarrow {
-        margin-right: 50px; } }
+      margin-right: 50px; } }
 
 @media all and (max-width: 920px) {
   .caseStudies {
