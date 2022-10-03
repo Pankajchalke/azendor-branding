@@ -634,10 +634,7 @@ if ( $(window).width() <= 920 ) {
 // legal top button mobile js
 const topSection = document.getElementById("topSec");
 sectionHeight = topSection.clientHeight;
-
-
 const botton = document.getElementById("myBtn");
-
 const scrollSymbol = document.getElementById("scroll-symbol");
 const scrollText = document.getElementById("scroll-text");
 
@@ -679,3 +676,6 @@ if(window.location.hash){
     },200,'');
   }
 }
+
+
+

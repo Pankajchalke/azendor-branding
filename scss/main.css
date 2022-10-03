@@ -1219,7 +1219,7 @@ body {
   .bannerSeclegal h5 {
     line-height: 54px;
     margin: 30px 0px 40px;
-    width: 66%; }
+    width: 65%; }
   .bannerSeclegal .bannerCta {
     margin-top: 50px;
     display: flex;
@@ -1241,7 +1241,7 @@ body {
         transform: translateX(10px); }
   @media all and (max-width: 1850px) {
     .bannerSeclegal h5 {
-      width: 68%; } }
+      width: 65%; } }
   @media all and (max-width: 1800px) {
     .bannerSeclegal h1 {
       width: 75%;
@@ -1256,7 +1256,7 @@ body {
         line-height: 100px;
         font-size: 90px; }
       .bannerSeclegal h5 {
-        width: 71%;
+        width: 66%;
         margin: 20px 0px 30px; } }
   @media all and (max-width: 1450px) {
     .bannerSeclegal {
@@ -1265,7 +1265,7 @@ body {
         font-size: 81px;
         line-height: 90px; }
       .bannerSeclegal h5 {
-        width: 78%;
+        width: 70%;
         line-height: 39px; }
       .bannerSeclegal .bannerCta {
         margin-top: 25px; } }
@@ -1273,6 +1273,9 @@ body {
     .bannerSeclegal h1 {
       width: 76%;
       line-height: 90px; }
+    .bannerSeclegal h5 {
+      width: 63%;
+      margin: 15px 0px 20px; }
     .bannerSeclegal .bannerCta a img {
       width: 18px;
       height: 10px; } }
@@ -1282,13 +1285,16 @@ body {
       font-size: 72px;
       line-height: 85px; }
     .bannerSeclegal h5 {
-      width: 90%;
+      width: 65%;
       margin: 15px 0px 20px; } }
   @media all and (max-width: 1170px) {
     .bannerSeclegal {
       margin: 160px 0px 70px 0px; }
       .bannerSeclegal h1 {
-        width: 80%; } }
+        width: 80%; }
+      .bannerSeclegal h5 {
+        width: 60%;
+        margin: 15px 0px 20px; } }
   @media all and (max-width: 1090px) {
     .bannerSeclegal h1 {
       width: 74%;
@@ -3571,6 +3577,13 @@ h2 {
     .modal.in .modal-dialog5 .modal-content {
       padding: 60px 20px 30px; } }
 
+@media all and (max-width: 920px) {
+  .bannerSec {
+    margin-top: 150px; } }
+
+@media all and (max-width: 920px) {
+  .bannerSec1 {
+    margin-top: 150px; } }
 .bannerSec1 h4 {
   margin-bottom: 15px; }
   @media all and (max-width: 1400px) {
@@ -3581,11 +3594,17 @@ h2 {
   margin-bottom: 25px;
   line-height: 125%; }
 
+@media all and (max-width: 920px) {
+  .bannerSec2 {
+    margin-top: 150px; } }
 .bannerSec2 p {
   color: rgba(255, 255, 255, 0.9);
   margin-bottom: 25px;
   line-height: 125%; }
 
+@media all and (max-width: 920px) {
+  .serviceSec {
+    margin-top: 150px; } }
 .serviceSec .serviceSlider {
   display: block;
   margin-left: -15px; }
@@ -3729,6 +3748,9 @@ h2 {
 @media all and (max-width: 920px) {
   .teamSection {
     margin-top: 150px; } }
+@media all and (max-width: 920px) {
+  .teamSection {
+    margin-top: 150px; } }
 .teamSection .teamSec {
   display: flex;
   justify-content: space-between; }
@@ -3801,6 +3823,9 @@ h2 {
     .teamSection .teamMembers a {
       padding: 36px 0px; } }
 
+@media all and (max-width: 920px) {
+  .clientsBox {
+    margin-top: 150px; } }
 .clientsBox ul {
   list-style: none; }
 .clientsBox .clientSec {
@@ -3940,6 +3965,9 @@ h2 {
 
 .testimonialsSec {
   overflow: hidden !important; }
+  @media all and (max-width: 920px) {
+    .testimonialsSec {
+      margin-top: 150px; } }
   .testimonialsSec .testimonialsSlider {
     margin: 0 -70px; }
     .testimonialsSec .testimonialsSlider .slick-slide {
@@ -4036,6 +4064,9 @@ h2 {
       .testimonialsSec .sliderArrow .imgtestBackarrow {
         margin-right: 50px; } }
 
+@media all and (max-width: 920px) {
+  .caseStudies {
+    margin-top: 150px; } }
 .caseStudies .boxcaseStudy .contentThree {
   margin: 0px 60px 0px 0px;
   padding: 10px 0px;
@@ -4107,6 +4138,9 @@ h2 {
     .caseStudies .sliderArrow .imgcaseBackarrow {
       margin-right: 50px; } }
 
+@media all and (max-width: 920px) {
+  .contactSec {
+    margin-top: 150px; } }
 .contactSec .contactBox {
   display: flex;
   justify-content: space-between;

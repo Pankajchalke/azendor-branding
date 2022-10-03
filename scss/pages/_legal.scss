@@ -986,7 +986,7 @@
     h5 {
         line-height: 54px;
         margin: 30px 0px 40px;
-        width: 66%;
+        width: 65%; 
     }
 
     .bannerCta {
@@ -1020,7 +1020,7 @@
 
     @media all and (max-width: 1850px) {
         h5 {
-            width: 68%;
+            width: 65%;
         }
     }
 
@@ -1045,7 +1045,7 @@
         }
 
         h5 {
-            width: 71%;
+            width: 66%;
             margin: 20px 0px 30px;
         }
     }
@@ -1059,7 +1059,7 @@
         }
 
         h5 {
-            width: 78%;
+            width: 70%;
             line-height: 39px;
         }
 
@@ -1072,6 +1072,10 @@
         h1 {
             width: 76%;
             line-height: 90px;
+        }
+        h5 {
+            width: 63%;
+            margin: 15px 0px 20px;
         }
 
         .bannerCta a img {
@@ -1088,7 +1092,7 @@
         }
 
         h5 {
-            width: 90%;
+            width: 65%;
             margin: 15px 0px 20px;
         }
     }
@@ -1098,6 +1102,10 @@
 
         h1 {
             width: 80%;
+        }
+        h5 {
+            width: 60%;
+            margin: 15px 0px 20px;
         }
     }
 

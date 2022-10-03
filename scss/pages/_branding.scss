@@ -1,4 +1,6 @@
 // Bhavika's CSS
+
+
 progress {
     position: fixed;
     top: 15px;
@@ -1587,9 +1589,17 @@ h2 {
 }
 
 
-.bannerSec {}
+.bannerSec {
+    @media all and (max-width:920px){
+        margin-top: 150px;
+    }
+   
+}
 
 .bannerSec1 {
+    @media all and (max-width:920px){
+        margin-top: 150px;
+    }
 
 
 
@@ -1609,6 +1619,9 @@ h2 {
 }
 
 .bannerSec2 {
+    @media all and (max-width:920px){
+        margin-top: 150px;
+    }
 
     p {
         color: rgba(255, 255, 255, 0.9);
@@ -1618,6 +1631,9 @@ h2 {
 }
 
 .serviceSec {
+    @media all and (max-width:920px){
+        margin-top: 150px;
+    }
 
     .serviceSlider {
         display: block;
@@ -1862,6 +1878,9 @@ h2 {
 }
 
 .teamSection {
+    @media all and (max-width:920px){
+        margin-top: 150px;
+    }
     @media all and(max-width:920px) {
         margin-top: 150px;
     }
@@ -1986,7 +2005,9 @@ h2 {
 }
 
 .clientsBox {
-
+    @media all and (max-width:920px){
+        margin-top: 150px;
+    }
     ul {
         list-style: none;
     }
@@ -2216,7 +2237,9 @@ h2 {
 }
 
 .testimonialsSec {
-
+    @media all and (max-width:920px){
+        margin-top: 150px;
+    }
     overflow: hidden !important;
 
     .testimonialsSlider {
@@ -2378,6 +2401,9 @@ h2 {
 }
 
 .caseStudies {
+    @media all and (max-width:920px){
+        margin-top: 150px;
+    }
     .boxcaseStudy {
 
         .contentThree {
@@ -2503,7 +2529,9 @@ h2 {
 
 .contactSec {
 
-
+    @media all and (max-width:920px){
+        margin-top: 150px;
+    }
     .contactBox {
         display: flex;
         justify-content: space-between;
