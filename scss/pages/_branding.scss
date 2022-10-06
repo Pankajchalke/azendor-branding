@@ -2245,6 +2245,9 @@ h2 {
 
     .testimonialsSlider {
         margin: 0 -70px;
+        @media all and (max-width:920px){
+            margin: 0px;
+        }
 
         .slick-slide {
             transform: scale(0.8);

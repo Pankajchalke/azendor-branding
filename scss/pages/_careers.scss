@@ -17,22 +17,14 @@
                     @media all and (max-width: 920px){margin-right:20px; width: 23px;height: 12px;}
                     }
             }
-            h1{margin-bottom:30px;
-                @media all and (max-width: 1400px){margin-bottom:20px;}
-                @media all and (max-width: 920px){margin-bottom:0px;}
-                }
+            h1{font-size: 64px;font-family: 'Roboto', sans-serif;font-weight: 700;color: #212121;margin-bottom:30px;}
+            h2{font-size: 55px;font-family: 'Roboto', sans-serif;font-weight: 700;color: #212121;}
+            h3{font-size: 50px;font-family: 'Roboto', sans-serif;font-weight: 700;color: #212121;}
+            h4 {font-size: 36px;font-family: 'Roboto', sans-serif;font-weight: 700;color: #212121;}
         }
     
         .careers-content {
-            
-    
-            p {
-                margin-bottom: 30px;
-                font-style: normal;
-                line-height: 160%;
-                letter-spacing: 0.03em;
-                font-family: 'Poppins' !important;
-    
+            p{font-size: 22px;font-weight: 400; font-family: 'Poppins', sans-serif;color: #212121; margin-bottom: 30px;line-height: 160%;letter-spacing: 0.03em;
                 span{
             
                     a{
@@ -47,32 +39,50 @@
                    
                 }
             }
-    
-            
-        
-            @media all and (max-width: 1400px){
-                
-                p {
-                    line-height: 26px;
-                    
-                    }
-            }
-        
-            
-            @media all and (max-width: 920px){
-               
-                
-                p {
-                line-height: 24px;
-                font-size: 16px;
-                }
-            }            
+        }
+        @media all and (max-width: 1800px){
+            .sectionTitle{
+            h1 {font-size: 60px;}
+            h2{font-size: 52px;}
+            h3{font-size: 42px;}
+            h4 {font-size: 34px;}}
+            .careers-content p{font-size: 22px;}
         }
         @media all and (max-width: 1680px){width: 66%;}
-		@media all and (max-width: 1680px){width: 70%;}
+		@media all and (max-width: 1600px){width: 70%;
+            .sectionTitle{
+            h1 {font-size: 50px;}
+            h2{font-size: 46px;}
+            h3{font-size: 38px;}
+            h4 {font-size: 32px;}}
+           .careers-content p{font-size: 18px;}}
+        @media all and (max-width: 1400px){
+            .sectionTitle{
+            h1 {font-size: 45px;margin-bottom:20px;}
+            h2{font-size: 40px;}
+            h3{font-size: 34px;}
+            h4 {font-size: 26px;}}
+            .careers-content p{font-size: 16px;line-height: 26px;}
+        }
 		@media all and (max-width: 1330px){width: 68%;}
-		@media all and (max-width: 1280px){width: 64%;}
-		@media all and (max-width: 920px){width: 100%;}
+		@media all and (max-width: 1280px){width: 64%;.sectionTitle h4 {font-size: 24px;}}
+        @media all and (max-width: 1024px){
+            .sectionTitle {h1 {font-size: 36px;}
+            h3{font-size: 30px;}}
+         }
+		@media all and (max-width: 920px){width: 100%;
+            .sectionTitle{ h1 {font-size: 32px;margin-bottom:0px;}
+            h2{font-size: 30px;}
+            h3{font-size: 24px;}
+            h4 {font-size: 18px;}}
+            .careers-content  p{font-size: 16px;line-height: 24px;}}
+        @media all and (max-width: 575px){
+            .sectionTitle {h1 {font-size: 30px;}
+            h2{font-size: 22px;}
+            h3{font-size: 22px;}
+            h4 {font-size: 18px;}}
+            .careers-content   p{font-size: 16px;}
+        }      
 
     }
 }

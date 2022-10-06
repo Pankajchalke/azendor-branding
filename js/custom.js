@@ -433,7 +433,7 @@ if ($(".testimonialsSlider").length) {
           infinite: true,
           centerMode: true,
           arrows:true,
-          centerPadding: '15%',
+          centerPadding: '0',
           slidesToShow: 1
         }
       }

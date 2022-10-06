@@ -69,71 +69,108 @@
             width: 23.06px;
          }
          }
-            h1{
-                display: flex;
-                align-items: center;
-                margin-bottom:30px;
-            
-                @media all and (max-width: 1400px){margin-bottom:20px;}
-                @media all and (max-width: 920px){margin-bottom:0px;}
-            
-                
-                }   
+        h1{font-size: 64px;font-family: 'Roboto', sans-serif;font-weight: 700;color: #212121;display: flex;align-items: center;margin-bottom:30px;}
+        h2{font-size: 55px;font-family: 'Roboto', sans-serif;font-weight: 700;color: #212121;}
+        h3{font-size: 50px;font-family: 'Roboto', sans-serif;font-weight: 700;color: #212121;}
+        h4 {font-size: 36px;font-family: 'Roboto', sans-serif;font-weight: 700;color: #212121;}
+        p{font-size: 22px;font-weight: 400; font-family: 'Poppins', sans-serif;color: #212121;}
         }
-        
+
         ul {
             margin-left: 22px;
-            font-weight: 400;
-            font-family: 'Poppins', sans-serif;
-            color: #212121;
-            font-size: 22px;
             li {
                 margin-bottom: 20px;
                 line-height: 35px;
-                font-family: 'Poppins' !important;
+                font-weight: 400;
+                font-family: 'Poppins', sans-serif;
+                color: #212121;
             }
-    
-    
-          @media all and (max-width: 1800px){
-            margin-left: 19.5px;
-            }
+        }
+
+        @media all and (max-width: 1800px){
+            ul{margin-left: 19.5px;}
+            .sectionTitle{
+            h1 {font-size: 60px;}
+            h2{font-size: 52px;}
+            h3{font-size: 42px;}
+            h4 {font-size: 34px;}
+            p{font-size: 22px;}}
+        }
         
-            @media all and (max-width: 1600px){
-                margin-left: 19px;
-                font-size: 18px;
-            }
-        
-            @media all and (max-width: 1400px){
-                margin-left: 17.5px;
+        @media all and (max-width: 1680px){width: 66%;}
+
+        @media all and (max-width: 1600px){
+            width: 70%;
+
+           ul{margin-left: 19px;
+            li{font-size: 18px;}}
+            .sectionTitle{
+            h1 {font-size: 50px;}
+            h2{font-size: 46px;}
+            h3{font-size: 38px;}
+            h4 {font-size: 32px;}
+            p{font-size: 18px;}}
+        }
+    
+        @media all and (max-width: 1400px){
+            ul{
+            margin-left: 17.5px;
+            li {
                 font-size: 16px;
-                li {
-                    
-                    line-height: 26px;
-                    
-                }
-            }
-        
-            @media all and (max-width: 1050px){
-                margin-left: 16.5px;
-            }
-        
-            @media all and (max-width: 920px){
-                margin-left: 17px;
-                li {
-                    font-size: 16px;
-                    line-height: 21px;
-                    
-                }
-            }
-        
-            @media all and (max-width: 675px){
-                margin-left: 17.60px;
-            }
-        
-            @media all and (max-width: 575px){
-                margin-left: 15.60px;
-                font-size: 14px;
-            }
+                line-height: 26px;
+            }}
+            .sectionTitle{
+            h1 {font-size: 45px;margin-bottom:20px;}
+            h2{font-size: 40px;}
+            h3{font-size: 34px;}
+            h4 {font-size: 26px;}
+            p{font-size: 16px;}}
+        }
+
+        @media all and (max-width: 1330px){width: 68%;}
+
+        @media all and (max-width: 1280px){
+            width: 64%;
+            .sectionTitle h4 {font-size: 24px;}
+         }
+    
+        @media all and (max-width: 1024px){
+           ul{ margin-left: 16.5px;}
+           .sectionTitle{
+           h1 {font-size: 36px;}
+           h3{font-size: 30px;}}
+        }
+    
+        @media all and (max-width: 920px){
+            width: 100%;
+            ul{margin-left: 17px;
+            li {
+                font-size: 16px;
+                line-height: 21px;  
+            }}
+            .sectionTitle{
+            h1 {font-size: 32px;margin-bottom:0px;}
+            h2{font-size: 30px;}
+            h3{font-size: 24px;}
+            h4 {font-size: 18px;}
+            p{font-size: 16px;}}
+        }
+    
+        @media all and (max-width: 675px){
+           ul{ margin-left: 17.60px;}
+        }
+    
+        @media all and (max-width: 575px){
+            ul{margin-left: 15.60px;
+            li {
+                font-size: 16px;                    
+            }}
+            .sectionTitle{
+            h1 {font-size: 30px;}
+            h2{font-size: 22px;}
+            h3{font-size: 22px;}
+            h4 {font-size: 18px;}
+            p{font-size: 16px;}}
         }
     
         .subSectors-Cta {
@@ -158,11 +195,7 @@
             }
     
         }
-        @media all and (max-width: 1680px){width: 66%;}
-		@media all and (max-width: 1680px){width: 70%;}
-		@media all and (max-width: 1330px){width: 68%;}
-		@media all and (max-width: 1280px){width: 64%;}
-		@media all and (max-width: 920px){width: 100%;}
+        
     }
 
     
