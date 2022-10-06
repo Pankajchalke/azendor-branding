@@ -2012,6 +2012,9 @@ h2 {
     }
     ul {
         list-style: none;
+        @media all and (max-width:920px){
+            padding: 15px;
+        }
     }
 
     .clientSec {
@@ -2174,15 +2177,19 @@ h2 {
                 img {
                     filter: grayscale(0%);
                     -webkit-filter: grayscale(0%);
+                    width: 100px;
+                }
+                .imgBorder{
+                    border-left: 1px solid #373737;
+                    margin-left: -1px !important;
                 }
             }
 
             @media all and (max-width:780px) {
-                margin-left: -5px;
                 padding: 5px 0px;
 
                 .content {
-                    margin: -1px 2px 0px 2px;
+                    margin: -1px 0px 0px 0px;
                 }
             }
         }

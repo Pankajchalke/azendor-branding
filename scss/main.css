@@ -3845,6 +3845,9 @@ h2 {
     margin-top: 150px; } }
 .clientsBox ul {
   list-style: none; }
+  @media all and (max-width: 920px) {
+    .clientsBox ul {
+      padding: 15px; } }
 .clientsBox .clientSec {
   display: flex;
   justify-content: space-between; }
@@ -3942,13 +3945,16 @@ h2 {
 @media all and (max-width: 920px) {
   .clientsBox .clientSlider .boxClients img {
     filter: grayscale(0%);
-    -webkit-filter: grayscale(0%); } }
+    -webkit-filter: grayscale(0%);
+    width: 100px; }
+  .clientsBox .clientSlider .boxClients .imgBorder {
+    border-left: 1px solid #373737;
+    margin-left: -1px !important; } }
 @media all and (max-width: 780px) {
   .clientsBox .clientSlider .boxClients {
-    margin-left: -5px;
     padding: 5px 0px; }
     .clientsBox .clientSlider .boxClients .content {
-      margin: -1px 2px 0px 2px; } }
+      margin: -1px 0px 0px 0px; } }
 .clientsBox .sliderArrow {
   position: absolute;
   right: 0;
