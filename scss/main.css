@@ -6601,11 +6601,6 @@ footer .footerSec .footerSub .quickLinksft {
       font-family: 'Roboto', sans-serif;
       font-weight: 700;
       color: #212121; }
-    .subSectors .subpageContent .sectionTitle p {
-      font-size: 22px;
-      font-weight: 400;
-      font-family: 'Poppins', sans-serif;
-      color: #212121; }
     .subSectors .subpageContent ul {
       margin-left: 22px; }
       .subSectors .subpageContent ul li {
@@ -6614,6 +6609,11 @@ footer .footerSec .footerSub .quickLinksft {
         font-weight: 400;
         font-family: 'Poppins', sans-serif;
         color: #212121; }
+    .subSectors .subpageContent p {
+      font-size: 22px;
+      font-weight: 400;
+      font-family: 'Poppins', sans-serif;
+      color: #212121; }
     @media all and (max-width: 1800px) {
       .subSectors .subpageContent ul {
         margin-left: 19.5px; }
@@ -6625,7 +6625,7 @@ footer .footerSec .footerSub .quickLinksft {
         font-size: 42px; }
       .subSectors .subpageContent .sectionTitle h4 {
         font-size: 34px; }
-      .subSectors .subpageContent .sectionTitle p {
+      .subSectors .subpageContent p {
         font-size: 22px; } }
     @media all and (max-width: 1680px) {
       .subSectors .subpageContent {
@@ -6645,7 +6645,7 @@ footer .footerSec .footerSub .quickLinksft {
           font-size: 38px; }
         .subSectors .subpageContent .sectionTitle h4 {
           font-size: 32px; }
-        .subSectors .subpageContent .sectionTitle p {
+        .subSectors .subpageContent p {
           font-size: 18px; } }
     @media all and (max-width: 1400px) {
       .subSectors .subpageContent ul {
@@ -6662,7 +6662,7 @@ footer .footerSec .footerSub .quickLinksft {
         font-size: 34px; }
       .subSectors .subpageContent .sectionTitle h4 {
         font-size: 26px; }
-      .subSectors .subpageContent .sectionTitle p {
+      .subSectors .subpageContent p {
         font-size: 16px; } }
     @media all and (max-width: 1330px) {
       .subSectors .subpageContent {
@@ -6696,7 +6696,7 @@ footer .footerSec .footerSub .quickLinksft {
           font-size: 24px; }
         .subSectors .subpageContent .sectionTitle h4 {
           font-size: 18px; }
-        .subSectors .subpageContent .sectionTitle p {
+        .subSectors .subpageContent p {
           font-size: 16px; } }
     @media all and (max-width: 675px) {
       .subSectors .subpageContent ul {
@@ -6714,7 +6714,7 @@ footer .footerSec .footerSub .quickLinksft {
         font-size: 22px; }
       .subSectors .subpageContent .sectionTitle h4 {
         font-size: 18px; }
-      .subSectors .subpageContent .sectionTitle p {
+      .subSectors .subpageContent p {
         font-size: 16px; } }
     .subSectors .subpageContent .subSectors-Cta {
       margin-top: 40px;
