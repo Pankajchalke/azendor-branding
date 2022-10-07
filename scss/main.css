@@ -6045,20 +6045,12 @@ footer .footerSec .footerSub .quickLinksft {
             margin-right: 20px;
             width: 23px;
             height: 12px; } }
-    .careers .subpageContent .careers-content p {
-      font-size: 22px;
-      font-weight: 400;
-      font-family: 'Poppins', sans-serif;
-      color: #212121;
-      margin-bottom: 30px;
-      line-height: 160%;
-      letter-spacing: 0.03em; }
-      .careers .subpageContent .careers-content p span a {
-        font-weight: 500;
-        color: black;
-        text-decoration: none; }
-        .careers .subpageContent .careers-content p span a:hover {
-          color: #6A6A6A; }
+    .careers .subpageContent .careers-content p span a {
+      font-weight: 500;
+      color: black;
+      text-decoration: none; }
+      .careers .subpageContent .careers-content p span a:hover {
+        color: #6A6A6A; }
 
 .legalHeader {
   position: sticky !important; }
