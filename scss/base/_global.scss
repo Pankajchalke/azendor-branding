@@ -45,11 +45,8 @@ p {
 /************************************************ Common CSS **************************************************/
 
 
-.font130 {
-    font-size: 130px;
-}
-.font115{
-    font-size: 115px;
+.font105 {
+    font-size: 105px;
 }
 
 .font64 {
@@ -167,13 +164,11 @@ img {
         padding: 0px 130px;
     }
 
-    .font130 {
-        font-size: 110px;
+    .font105 {
+        font-size: 90px;
     }
 
-    .font115{
-        font-size: 100px;
-    }
+    
 
     .font64 {
         font-size: 60px;
@@ -218,13 +213,11 @@ img {
         padding: 0px 70px;
     }
 
-    .font130 {
-        font-size: 96px;
-    }
-
-    .font115{
+    .font105 {
         font-size: 80px;
     }
+
+   
 
     .font64 {
         font-size: 50px;
@@ -267,19 +260,16 @@ img {
     }
 }
 
+@media all and (max-width:1480px) {
+    .font105 {
+        font-size: 70px;
+    }
+}
+
 @media all and (max-width: 1400px) {
     .wrapper {
         padding: 0px 70px;
     }
-
-    .font130 {
-        font-size: 92px;
-    }
-
-    .font115{
-        font-size: 70px;
-    }
-
     .font64 {
         font-size: 45px;
     }
@@ -328,7 +318,11 @@ img {
     }
 }
 
-@media all and (max-width: 1200px) {}
+@media all and (max-width: 1200px) {
+    .font105 {
+        font-size: 60px;
+    }
+}
 
 @media all and (max-width: 1180px) {}
 
@@ -339,11 +333,9 @@ img {
         padding: 0px 40px;
     }
 
-    .font130 {
-        font-size: 70px;
-    }
+   
 
-    .font115{
+    .font105 {
         font-size: 50px;
     }
 
@@ -362,11 +354,7 @@ img {
         padding: 0px 40px;
     }
 
-    .font130 {
-        font-size: 55px;
-    }
-
-    .font115{
+    .font105 {
         font-size: 45px;
     }
 
@@ -424,14 +412,9 @@ img {
 @media all and (max-width: 680px) {}
 
 @media all and (max-width: 575px) {
-    .font130 {
-        font-size: 40px;
-    }
-
-    .font115{
+    .font105 {
         font-size: 35px;
     }
-
     .font64 {
         font-size: 30px;
     }
