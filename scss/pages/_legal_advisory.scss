@@ -34,12 +34,9 @@
 			width: 23.06px;
 		 }
 		 }
-		h1 {font-size: 64px;font-family: 'Roboto', sans-serif;font-weight: 700;color: #212121;margin-bottom: 30px;}
-		h2 {font-size: 55px;font-family: 'Roboto', sans-serif;font-weight: 700;color: #212121;}
-		h3 {font-size: 50px;font-family: 'Roboto', sans-serif;font-weight: 700;color: #212121;}
-		h4 {font-size: 36px;font-family: 'Roboto', sans-serif;font-weight: 700;color: #212121;}
+		
 	}
-	p {font-size: 22px;font-weight: 400;font-family: 'Poppins', sans-serif;color: #212121;}
+	
 
 	.legalAdvisorySection{
 		display: flex; flex-wrap: wrap; justify-content: space-between;	
@@ -66,6 +63,105 @@
 			@media all and (max-width: 920px){padding: 20px 25px 20px 30px; font-size: 16px; line-height: 160%;}	
 			}
 		}
+	}
+
+	h1 {font-size: 64px;font-family: 'Roboto', sans-serif;font-weight: 700;color: #212121;margin-bottom: 30px;}
+	h2 {font-size: 55px;font-family: 'Roboto', sans-serif;font-weight: 700;color: #212121;}
+	h3 {font-size: 50px;font-family: 'Roboto', sans-serif;font-weight: 700;color: #212121;}
+	h4 {font-size: 36px;font-family: 'Roboto', sans-serif;font-weight: 700;color: #212121;}
+	p {
+		font-size: 22px;
+		font-weight: 400;
+		font-family: 'Poppins', sans-serif;
+		color: #212121;
+	}
+
+	@media all and (max-width: 1800px){
+		ul{margin-left: 19.5px;}
+		
+		h1 {font-size: 60px;}
+		h2{font-size: 52px;}
+		h3{font-size: 42px;}
+		h4 {font-size: 34px;}
+		p{font-size: 22px;}
+	}
+	
+	@media all and (max-width: 1680px){width: 66%;}
+
+	@media all and (max-width: 1600px){
+		width: 70%;
+
+	   ul{margin-left: 19px;
+		li{font-size: 18px;}}
+		
+		h1 {font-size: 50px;}
+		h2{font-size: 46px;}
+		h3{font-size: 38px;}
+		h4 {font-size: 32px;}
+		p{font-size: 18px;}
+	}
+
+	@media all and (max-width: 1400px){
+		ul{
+		margin-left: 17.5px;
+		li {
+			font-size: 16px;
+			line-height: 26px;
+		}}
+	   
+		h1 {font-size: 45px;margin-bottom:20px;}
+		h2{font-size: 40px;}
+		h3{font-size: 34px;}
+		h4 {font-size: 26px;}
+		p{font-size: 16px;line-height: 26px;}
+	}
+
+	@media all and (max-width: 1330px){width: 68%;}
+
+	@media all and (max-width: 1280px){
+		width: 64%;
+	   h4 {font-size: 24px;}
+	 }
+
+	@media all and (max-width: 1024px){
+	   ul{ margin-left: 16.5px;}
+	   
+	   h1 {font-size: 36px;}
+	   h3{font-size: 30px;}
+	}
+
+	@media all and (max-width: 920px){
+		width: 100%;
+		ul{margin-left: 17px;
+		li {
+			font-size: 16px;
+			line-height: 21px;  
+		}}
+		
+		h1 {font-size: 32px;margin-bottom:0px;}
+		h2{font-size: 30px;}
+		h3{font-size: 24px;}
+		h4 {font-size: 18px;}
+		p{font-size: 16px;}
+		
+		.subSectionTitle{padding-top: 10px;}
+	}
+
+	@media all and (max-width: 675px){
+	   ul{ margin-left: 17.60px;}
+	}
+
+	@media all and (max-width: 575px){
+		ul{margin-left: 15.60px;
+		li {
+			font-size: 16px;                    
+		}}
+	   
+		h1 {font-size: 30px;}
+		h2{font-size: 22px;}
+		h3{font-size: 22px;}
+		h4 {font-size: 18px;}
+		p{font-size: 16px;}
 	}
 
 }
@@ -107,12 +203,9 @@
 				width: 23.06px;
 			 }
 			 }
-			 h1 {font-size: 64px;font-family: 'Roboto', sans-serif;font-weight: 700;color: #212121;margin-bottom: 30px;}
-			h2 {font-size: 55px;font-family: 'Roboto', sans-serif;font-weight: 700;color: #212121;}
-			h3 {font-size: 50px;font-family: 'Roboto', sans-serif;font-weight: 700;color: #212121;}
-			h4 {font-size: 36px;font-family: 'Roboto', sans-serif;font-weight: 700;color: #212121;}
+			
 		}
-		p {font-size: 22px;font-weight: 400;font-family: 'Poppins', sans-serif;color: #212121;}
+		
 		
 		
 		.advisoryCta{
@@ -146,142 +239,15 @@
 	
 }
 
-@media all and (max-width: 1800px) {
-	.legalAdvisory .sectionTitle, .advisorySubPages .subpageContent .subSectionTitle{
-	h1 {
-		font-size: 60px;
-	}
 
-	h2 {
-		font-size: 52px;
-	}
 
-	h3 {
-		font-size: 42px;
-	}
 
-	h4 {
-		font-size: 34px;
-	}}
-
-	.advisorySubPages .subpageContent p ,.legalAdvisory p{
-		font-size: 22px;
-	}
-}
-
-@media all and (max-width: 1600px) {
-	.legalAdvisory .sectionTitle, .advisorySubPages .subpageContent .subSectionTitle{
-	h1 {
-		font-size: 50px;
-	}
-
-	h2 {
-		font-size: 46px;
-	}
-
-	h3 {
-		font-size: 38px;
-	}
-
-	h4 {
-		font-size: 32px;
-	}}
-
-	.advisorySubPages .subpageContent p , .legalAdvisory p{
-		font-size: 18px;
-	}
-}
-
-@media all and (max-width: 1400px) {
-	.legalAdvisory .sectionTitle, .advisorySubPages .subpageContent .subSectionTitle{
-	h1 {
-		font-size: 45px;
-		margin-bottom: 20px;
-	}
-
-	h2 {
-		font-size: 40px;
-	}
-
-	h3 {
-		font-size: 34px;
-	}
-
-	h4 {
-		font-size: 26px;
-	}}
-
-	.advisorySubPages .subpageContent p , .legalAdvisory p{
-		font-size: 16px;
-		line-height: 26px;
-	}
-}
-
-@media all and (max-width: 1280px) {
-	.legalAdvisory .sectionTitle, .advisorySubPages .subpageContent .subSectionTitle{
-	h4 {
-		font-size: 24px;
-	}}
-}
-
-@media all and (max-width: 1024px) {
-	.legalAdvisory .sectionTitle, .advisorySubPages .subpageContent .subSectionTitle{
-	h1 {
-		font-size: 36px;
-	}
-
-	h3 {
-		font-size: 30px;
-	}}
-}
 
 @media all and (max-width: 920px) {
-	.legalAdvisory .sectionTitle, .advisorySubPages .subpageContent .subSectionTitle{
-	h1 {
-		font-size: 32px;
-		margin-bottom: 0px;
-	}
-
-	h2 {
-		font-size: 30px;
-	}
-
-	h3 {
-		font-size: 24px;
-	}
-
-	h4 {
-		font-size: 18px;
-	}}
+	
 	.advisorySubPages .subpageContent .subSectionTitle{
 		padding-top: 10px;
 	}
 
-	.advisorySubPages.subpageContent p , .legalAdvisory p{
-		font-size: 16px;
-		line-height: 24px;
-	}
 }
 
-@media all and (max-width: 575px) {
-	.legalAdvisory .sectionTitle, .advisorySubPages .subpageContent .subSectionTitle{
-	h1 {
-		font-size: 30px;
-	}
-
-	h2 {
-		font-size: 22px;
-	}
-
-	h3 {
-		font-size: 22px;
-	}
-
-	h4 {
-		font-size: 18px;
-	}}
-
-	.advisorySubPages .subpageContent p , .legalAdvisory p{
-		font-size: 16px;
-	}
-}

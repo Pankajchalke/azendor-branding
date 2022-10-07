@@ -5044,32 +5044,6 @@ footer .footerSec .footerSub .quickLinksft {
     .legalAdvisory .sectionTitle .breadcrumbs img {
       height: 10px;
       width: 23.06px; }
-  .legalAdvisory .sectionTitle h1 {
-    font-size: 64px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    color: #212121;
-    margin-bottom: 30px; }
-  .legalAdvisory .sectionTitle h2 {
-    font-size: 55px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    color: #212121; }
-  .legalAdvisory .sectionTitle h3 {
-    font-size: 50px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    color: #212121; }
-  .legalAdvisory .sectionTitle h4 {
-    font-size: 36px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    color: #212121; }
-  .legalAdvisory p {
-    font-size: 22px;
-    font-weight: 400;
-    font-family: 'Poppins', sans-serif;
-    color: #212121; }
   .legalAdvisory .legalAdvisorySection {
     display: flex;
     flex-wrap: wrap;
@@ -5144,6 +5118,137 @@ footer .footerSec .footerSub .quickLinksft {
             padding: 20px 25px 20px 30px;
             font-size: 16px;
             line-height: 160%; } }
+  .legalAdvisory h1 {
+    font-size: 64px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #212121;
+    margin-bottom: 30px; }
+  .legalAdvisory h2 {
+    font-size: 55px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #212121; }
+  .legalAdvisory h3 {
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #212121; }
+  .legalAdvisory h4 {
+    font-size: 36px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #212121; }
+  .legalAdvisory p {
+    font-size: 22px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    color: #212121; }
+  @media all and (max-width: 1800px) {
+    .legalAdvisory ul {
+      margin-left: 19.5px; }
+    .legalAdvisory h1 {
+      font-size: 60px; }
+    .legalAdvisory h2 {
+      font-size: 52px; }
+    .legalAdvisory h3 {
+      font-size: 42px; }
+    .legalAdvisory h4 {
+      font-size: 34px; }
+    .legalAdvisory p {
+      font-size: 22px; } }
+  @media all and (max-width: 1680px) {
+    .legalAdvisory {
+      width: 66%; } }
+  @media all and (max-width: 1600px) {
+    .legalAdvisory {
+      width: 70%; }
+      .legalAdvisory ul {
+        margin-left: 19px; }
+        .legalAdvisory ul li {
+          font-size: 18px; }
+      .legalAdvisory h1 {
+        font-size: 50px; }
+      .legalAdvisory h2 {
+        font-size: 46px; }
+      .legalAdvisory h3 {
+        font-size: 38px; }
+      .legalAdvisory h4 {
+        font-size: 32px; }
+      .legalAdvisory p {
+        font-size: 18px; } }
+  @media all and (max-width: 1400px) {
+    .legalAdvisory ul {
+      margin-left: 17.5px; }
+      .legalAdvisory ul li {
+        font-size: 16px;
+        line-height: 26px; }
+    .legalAdvisory h1 {
+      font-size: 45px;
+      margin-bottom: 20px; }
+    .legalAdvisory h2 {
+      font-size: 40px; }
+    .legalAdvisory h3 {
+      font-size: 34px; }
+    .legalAdvisory h4 {
+      font-size: 26px; }
+    .legalAdvisory p {
+      font-size: 16px;
+      line-height: 26px; } }
+  @media all and (max-width: 1330px) {
+    .legalAdvisory {
+      width: 68%; } }
+  @media all and (max-width: 1280px) {
+    .legalAdvisory {
+      width: 64%; }
+      .legalAdvisory h4 {
+        font-size: 24px; } }
+  @media all and (max-width: 1024px) {
+    .legalAdvisory ul {
+      margin-left: 16.5px; }
+    .legalAdvisory h1 {
+      font-size: 36px; }
+    .legalAdvisory h3 {
+      font-size: 30px; } }
+  @media all and (max-width: 920px) {
+    .legalAdvisory {
+      width: 100%; }
+      .legalAdvisory ul {
+        margin-left: 17px; }
+        .legalAdvisory ul li {
+          font-size: 16px;
+          line-height: 21px; }
+      .legalAdvisory h1 {
+        font-size: 32px;
+        margin-bottom: 0px; }
+      .legalAdvisory h2 {
+        font-size: 30px; }
+      .legalAdvisory h3 {
+        font-size: 24px; }
+      .legalAdvisory h4 {
+        font-size: 18px; }
+      .legalAdvisory p {
+        font-size: 16px; }
+      .legalAdvisory .subSectionTitle {
+        padding-top: 10px; } }
+  @media all and (max-width: 675px) {
+    .legalAdvisory ul {
+      margin-left: 17.60px; } }
+  @media all and (max-width: 575px) {
+    .legalAdvisory ul {
+      margin-left: 15.60px; }
+      .legalAdvisory ul li {
+        font-size: 16px; }
+    .legalAdvisory h1 {
+      font-size: 30px; }
+    .legalAdvisory h2 {
+      font-size: 22px; }
+    .legalAdvisory h3 {
+      font-size: 22px; }
+    .legalAdvisory h4 {
+      font-size: 18px; }
+    .legalAdvisory p {
+      font-size: 16px; } }
 
 .advisorySubPages {
   margin: 150px 0px; }
@@ -5203,32 +5308,6 @@ footer .footerSec .footerSub .quickLinksft {
       .advisorySubPages .subpageContent .subSectionTitle .breadcrumbs img {
         height: 10px;
         width: 23.06px; }
-    .advisorySubPages .subpageContent .subSectionTitle h1 {
-      font-size: 64px;
-      font-family: 'Roboto', sans-serif;
-      font-weight: 700;
-      color: #212121;
-      margin-bottom: 30px; }
-    .advisorySubPages .subpageContent .subSectionTitle h2 {
-      font-size: 55px;
-      font-family: 'Roboto', sans-serif;
-      font-weight: 700;
-      color: #212121; }
-    .advisorySubPages .subpageContent .subSectionTitle h3 {
-      font-size: 50px;
-      font-family: 'Roboto', sans-serif;
-      font-weight: 700;
-      color: #212121; }
-    .advisorySubPages .subpageContent .subSectionTitle h4 {
-      font-size: 36px;
-      font-family: 'Roboto', sans-serif;
-      font-weight: 700;
-      color: #212121; }
-    .advisorySubPages .subpageContent p {
-      font-size: 22px;
-      font-weight: 400;
-      font-family: 'Poppins', sans-serif;
-      color: #212121; }
     .advisorySubPages .subpageContent .advisoryCta {
       margin-top: 40px;
       display: flex;
@@ -5284,81 +5363,9 @@ footer .footerSec .footerSub .quickLinksft {
       .advisorySubPages .subpageContent {
         width: 100%; } }
 
-@media all and (max-width: 1800px) {
-  .legalAdvisory .sectionTitle h1, .advisorySubPages .subpageContent .subSectionTitle h1 {
-    font-size: 60px; }
-  .legalAdvisory .sectionTitle h2, .advisorySubPages .subpageContent .subSectionTitle h2 {
-    font-size: 52px; }
-  .legalAdvisory .sectionTitle h3, .advisorySubPages .subpageContent .subSectionTitle h3 {
-    font-size: 42px; }
-  .legalAdvisory .sectionTitle h4, .advisorySubPages .subpageContent .subSectionTitle h4 {
-    font-size: 34px; }
-
-  .advisorySubPages .subpageContent p, .legalAdvisory p {
-    font-size: 22px; } }
-@media all and (max-width: 1600px) {
-  .legalAdvisory .sectionTitle h1, .advisorySubPages .subpageContent .subSectionTitle h1 {
-    font-size: 50px; }
-  .legalAdvisory .sectionTitle h2, .advisorySubPages .subpageContent .subSectionTitle h2 {
-    font-size: 46px; }
-  .legalAdvisory .sectionTitle h3, .advisorySubPages .subpageContent .subSectionTitle h3 {
-    font-size: 38px; }
-  .legalAdvisory .sectionTitle h4, .advisorySubPages .subpageContent .subSectionTitle h4 {
-    font-size: 32px; }
-
-  .advisorySubPages .subpageContent p, .legalAdvisory p {
-    font-size: 18px; } }
-@media all and (max-width: 1400px) {
-  .legalAdvisory .sectionTitle h1, .advisorySubPages .subpageContent .subSectionTitle h1 {
-    font-size: 45px;
-    margin-bottom: 20px; }
-  .legalAdvisory .sectionTitle h2, .advisorySubPages .subpageContent .subSectionTitle h2 {
-    font-size: 40px; }
-  .legalAdvisory .sectionTitle h3, .advisorySubPages .subpageContent .subSectionTitle h3 {
-    font-size: 34px; }
-  .legalAdvisory .sectionTitle h4, .advisorySubPages .subpageContent .subSectionTitle h4 {
-    font-size: 26px; }
-
-  .advisorySubPages .subpageContent p, .legalAdvisory p {
-    font-size: 16px;
-    line-height: 26px; } }
-@media all and (max-width: 1280px) {
-  .legalAdvisory .sectionTitle h4, .advisorySubPages .subpageContent .subSectionTitle h4 {
-    font-size: 24px; } }
-@media all and (max-width: 1024px) {
-  .legalAdvisory .sectionTitle h1, .advisorySubPages .subpageContent .subSectionTitle h1 {
-    font-size: 36px; }
-  .legalAdvisory .sectionTitle h3, .advisorySubPages .subpageContent .subSectionTitle h3 {
-    font-size: 30px; } }
 @media all and (max-width: 920px) {
-  .legalAdvisory .sectionTitle h1, .advisorySubPages .subpageContent .subSectionTitle h1 {
-    font-size: 32px;
-    margin-bottom: 0px; }
-  .legalAdvisory .sectionTitle h2, .advisorySubPages .subpageContent .subSectionTitle h2 {
-    font-size: 30px; }
-  .legalAdvisory .sectionTitle h3, .advisorySubPages .subpageContent .subSectionTitle h3 {
-    font-size: 24px; }
-  .legalAdvisory .sectionTitle h4, .advisorySubPages .subpageContent .subSectionTitle h4 {
-    font-size: 18px; }
-
   .advisorySubPages .subpageContent .subSectionTitle {
-    padding-top: 10px; }
-
-  .advisorySubPages.subpageContent p, .legalAdvisory p {
-    font-size: 16px;
-    line-height: 24px; } }
-@media all and (max-width: 575px) {
-  .legalAdvisory .sectionTitle h1, .advisorySubPages .subpageContent .subSectionTitle h1 {
-    font-size: 30px; }
-  .legalAdvisory .sectionTitle h2, .advisorySubPages .subpageContent .subSectionTitle h2 {
-    font-size: 22px; }
-  .legalAdvisory .sectionTitle h3, .advisorySubPages .subpageContent .subSectionTitle h3 {
-    font-size: 22px; }
-  .legalAdvisory .sectionTitle h4, .advisorySubPages .subpageContent .subSectionTitle h4 {
-    font-size: 18px; }
-
-  .advisorySubPages .subpageContent p, .legalAdvisory p {
-    font-size: 16px; } }
+    padding-top: 10px; } }
 .digitalTransformation {
   margin: 110px 0px 150px 0px; }
   @media all and (max-width: 1650px) {
@@ -5418,32 +5425,6 @@ footer .footerSec .footerSub .quickLinksft {
     .digitalTransformation .sectionTitle .breadcrumbs img {
       height: 10px;
       width: 23.06px; }
-  .digitalTransformation .sectionTitle h1 {
-    font-size: 64px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    color: #212121;
-    margin-bottom: 30px; }
-  .digitalTransformation .sectionTitle h2 {
-    font-size: 55px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    color: #212121; }
-  .digitalTransformation .sectionTitle h3 {
-    font-size: 50px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    color: #212121; }
-  .digitalTransformation .sectionTitle h4 {
-    font-size: 36px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    color: #212121; }
-  .digitalTransformation p {
-    font-size: 22px;
-    font-weight: 400;
-    font-family: 'Poppins', sans-serif;
-    color: #212121; }
   .digitalTransformation .digitalTransformationSection {
     display: flex;
     flex-wrap: wrap;
@@ -5528,6 +5509,137 @@ footer .footerSec .footerSub .quickLinksft {
             padding: 20px 25px 20px 30px;
             font-size: 16px;
             line-height: 160%; } }
+  .digitalTransformation h1 {
+    font-size: 64px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #212121;
+    margin-bottom: 30px; }
+  .digitalTransformation h2 {
+    font-size: 55px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #212121; }
+  .digitalTransformation h3 {
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #212121; }
+  .digitalTransformation h4 {
+    font-size: 36px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #212121; }
+  .digitalTransformation p {
+    font-size: 22px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    color: #212121; }
+  @media all and (max-width: 1800px) {
+    .digitalTransformation ul {
+      margin-left: 19.5px; }
+    .digitalTransformation h1 {
+      font-size: 60px; }
+    .digitalTransformation h2 {
+      font-size: 52px; }
+    .digitalTransformation h3 {
+      font-size: 42px; }
+    .digitalTransformation h4 {
+      font-size: 34px; }
+    .digitalTransformation p {
+      font-size: 22px; } }
+  @media all and (max-width: 1680px) {
+    .digitalTransformation {
+      width: 66%; } }
+  @media all and (max-width: 1600px) {
+    .digitalTransformation {
+      width: 70%; }
+      .digitalTransformation ul {
+        margin-left: 19px; }
+        .digitalTransformation ul li {
+          font-size: 18px; }
+      .digitalTransformation h1 {
+        font-size: 50px; }
+      .digitalTransformation h2 {
+        font-size: 46px; }
+      .digitalTransformation h3 {
+        font-size: 38px; }
+      .digitalTransformation h4 {
+        font-size: 32px; }
+      .digitalTransformation p {
+        font-size: 18px; } }
+  @media all and (max-width: 1400px) {
+    .digitalTransformation ul {
+      margin-left: 17.5px; }
+      .digitalTransformation ul li {
+        font-size: 16px;
+        line-height: 26px; }
+    .digitalTransformation h1 {
+      font-size: 45px;
+      margin-bottom: 20px; }
+    .digitalTransformation h2 {
+      font-size: 40px; }
+    .digitalTransformation h3 {
+      font-size: 34px; }
+    .digitalTransformation h4 {
+      font-size: 26px; }
+    .digitalTransformation p {
+      font-size: 16px;
+      line-height: 26px; } }
+  @media all and (max-width: 1330px) {
+    .digitalTransformation {
+      width: 68%; } }
+  @media all and (max-width: 1280px) {
+    .digitalTransformation {
+      width: 64%; }
+      .digitalTransformation h4 {
+        font-size: 24px; } }
+  @media all and (max-width: 1024px) {
+    .digitalTransformation ul {
+      margin-left: 16.5px; }
+    .digitalTransformation h1 {
+      font-size: 36px; }
+    .digitalTransformation h3 {
+      font-size: 30px; } }
+  @media all and (max-width: 920px) {
+    .digitalTransformation {
+      width: 100%; }
+      .digitalTransformation ul {
+        margin-left: 17px; }
+        .digitalTransformation ul li {
+          font-size: 16px;
+          line-height: 21px; }
+      .digitalTransformation h1 {
+        font-size: 32px;
+        margin-bottom: 0px; }
+      .digitalTransformation h2 {
+        font-size: 30px; }
+      .digitalTransformation h3 {
+        font-size: 24px; }
+      .digitalTransformation h4 {
+        font-size: 18px; }
+      .digitalTransformation p {
+        font-size: 16px; }
+      .digitalTransformation .subSectionTitle {
+        padding-top: 10px; } }
+  @media all and (max-width: 675px) {
+    .digitalTransformation ul {
+      margin-left: 17.60px; } }
+  @media all and (max-width: 575px) {
+    .digitalTransformation ul {
+      margin-left: 15.60px; }
+      .digitalTransformation ul li {
+        font-size: 16px; }
+    .digitalTransformation h1 {
+      font-size: 30px; }
+    .digitalTransformation h2 {
+      font-size: 22px; }
+    .digitalTransformation h3 {
+      font-size: 22px; }
+    .digitalTransformation h4 {
+      font-size: 18px; }
+    .digitalTransformation p {
+      font-size: 16px; } }
 
 .digitalTransformationSubPages {
   margin: 150px 0px; }
@@ -5587,32 +5699,6 @@ footer .footerSec .footerSub .quickLinksft {
       .digitalTransformationSubPages .subpageContent .subSectionTitle .breadcrumbs img {
         height: 10px;
         width: 23.06px; }
-    .digitalTransformationSubPages .subpageContent .subSectionTitle h1 {
-      font-size: 64px;
-      font-family: 'Roboto', sans-serif;
-      font-weight: 700;
-      color: #212121;
-      margin-bottom: 30px; }
-    .digitalTransformationSubPages .subpageContent .subSectionTitle h2 {
-      font-size: 55px;
-      font-family: 'Roboto', sans-serif;
-      font-weight: 700;
-      color: #212121; }
-    .digitalTransformationSubPages .subpageContent .subSectionTitle h3 {
-      font-size: 50px;
-      font-family: 'Roboto', sans-serif;
-      font-weight: 700;
-      color: #212121; }
-    .digitalTransformationSubPages .subpageContent .subSectionTitle h4 {
-      font-size: 36px;
-      font-family: 'Roboto', sans-serif;
-      font-weight: 700;
-      color: #212121; }
-    .digitalTransformationSubPages .subpageContent p {
-      font-size: 22px;
-      font-weight: 400;
-      font-family: 'Poppins', sans-serif;
-      color: #212121; }
     .digitalTransformationSubPages .subpageContent .digitalTransformationCta {
       margin-top: 40px;
       display: flex;
@@ -5668,81 +5754,6 @@ footer .footerSec .footerSub .quickLinksft {
       .digitalTransformationSubPages .subpageContent {
         width: 100%; } }
 
-@media all and (max-width: 1800px) {
-  .digitalTransformation .sectionTitle h1, .digitalTransformationSubPages .subpageContent .subSectionTitle h1 {
-    font-size: 60px; }
-  .digitalTransformation .sectionTitle h2, .digitalTransformationSubPages .subpageContent .subSectionTitle h2 {
-    font-size: 52px; }
-  .digitalTransformation .sectionTitle h3, .digitalTransformationSubPages .subpageContent .subSectionTitle h3 {
-    font-size: 42px; }
-  .digitalTransformation .sectionTitle h4, .digitalTransformationSubPages .subpageContent .subSectionTitle h4 {
-    font-size: 34px; }
-
-  .digitalTransformationSubPages .subpageContent p, .digitalTransformation p {
-    font-size: 22px; } }
-@media all and (max-width: 1600px) {
-  .digitalTransformation .sectionTitle h1, .digitalTransformationSubPages .subpageContent .subSectionTitle h1 {
-    font-size: 50px; }
-  .digitalTransformation .sectionTitle h2, .digitalTransformationSubPages .subpageContent .subSectionTitle h2 {
-    font-size: 46px; }
-  .digitalTransformation .sectionTitle h3, .digitalTransformationSubPages .subpageContent .subSectionTitle h3 {
-    font-size: 38px; }
-  .digitalTransformation .sectionTitle h4, .digitalTransformationSubPages .subpageContent .subSectionTitle h4 {
-    font-size: 32px; }
-
-  .digitalTransformationSubPages .subpageContent p, .digitalTransformation p {
-    font-size: 18px; } }
-@media all and (max-width: 1400px) {
-  .digitalTransformation .sectionTitle h1, .digitalTransformationSubPages .subpageContent .subSectionTitle h1 {
-    font-size: 45px;
-    margin-bottom: 20px; }
-  .digitalTransformation .sectionTitle h2, .digitalTransformationSubPages .subpageContent .subSectionTitle h2 {
-    font-size: 40px; }
-  .digitalTransformation .sectionTitle h3, .digitalTransformationSubPages .subpageContent .subSectionTitle h3 {
-    font-size: 34px; }
-  .digitalTransformation .sectionTitle h4, .digitalTransformationSubPages .subpageContent .subSectionTitle h4 {
-    font-size: 26px; }
-
-  .digitalTransformationSubPages .subpageContent p, .digitalTransformation p {
-    font-size: 16px;
-    line-height: 26px; } }
-@media all and (max-width: 1280px) {
-  .digitalTransformation .sectionTitle h4, .digitalTransformationSubPages .subpageContent .subSectionTitle h4 {
-    font-size: 24px; } }
-@media all and (max-width: 1024px) {
-  .digitalTransformation .sectionTitle h1, .digitalTransformationSubPages .subpageContent .subSectionTitle h1 {
-    font-size: 36px; }
-  .digitalTransformation .sectionTitle h3, .digitalTransformationSubPages .subpageContent .subSectionTitle h3 {
-    font-size: 30px; } }
-@media all and (max-width: 920px) {
-  .digitalTransformation .sectionTitle h1, .digitalTransformationSubPages .subpageContent .subSectionTitle h1 {
-    font-size: 32px;
-    margin-bottom: 0px; }
-  .digitalTransformation .sectionTitle h2, .digitalTransformationSubPages .subpageContent .subSectionTitle h2 {
-    font-size: 30px; }
-  .digitalTransformation .sectionTitle h3, .digitalTransformationSubPages .subpageContent .subSectionTitle h3 {
-    font-size: 24px; }
-  .digitalTransformation .sectionTitle h4, .digitalTransformationSubPages .subpageContent .subSectionTitle h4 {
-    font-size: 18px; }
-
-  .digitalTransformationSubPages .subpageContent .subSectionTitle {
-    padding-top: 10px; }
-
-  .digitalTransformationSubPages.subpageContent p, .digitalTransformation p {
-    font-size: 16px;
-    line-height: 24px; } }
-@media all and (max-width: 575px) {
-  .digitalTransformation .sectionTitle h1, .digitalTransformationSubPages .subpageContent .subSectionTitle h1 {
-    font-size: 30px; }
-  .digitalTransformation .sectionTitle h2, .digitalTransformationSubPages .subpageContent .subSectionTitle h2 {
-    font-size: 22px; }
-  .digitalTransformation .sectionTitle h3, .digitalTransformationSubPages .subpageContent .subSectionTitle h3 {
-    font-size: 22px; }
-  .digitalTransformation .sectionTitle h4, .digitalTransformationSubPages .subpageContent .subSectionTitle h4 {
-    font-size: 18px; }
-
-  .digitalTransformationSubPages .subpageContent p, .digitalTransformation p {
-    font-size: 16px; } }
 .generalCounsel {
   margin: 110px 0px 150px 0px; }
   @media all and (max-width: 1650px) {
@@ -5804,35 +5815,6 @@ footer .footerSec .footerSub .quickLinksft {
       .generalCounsel .subpageContent .sectionTitle .breadcrumbs img {
         height: 10px;
         width: 23.06px; }
-    .generalCounsel .subpageContent .sectionTitle h1 {
-      font-size: 64px;
-      font-family: 'Roboto', sans-serif;
-      font-weight: 700;
-      color: #212121;
-      margin-bottom: 30px; }
-    .generalCounsel .subpageContent .sectionTitle h2 {
-      font-size: 55px;
-      font-family: 'Roboto', sans-serif;
-      font-weight: 700;
-      color: #212121; }
-    .generalCounsel .subpageContent .sectionTitle h3 {
-      font-size: 50px;
-      font-family: 'Roboto', sans-serif;
-      font-weight: 700;
-      color: #212121; }
-    .generalCounsel .subpageContent .sectionTitle h4 {
-      font-size: 36px;
-      font-family: 'Roboto', sans-serif;
-      font-weight: 700;
-      color: #212121; }
-    .generalCounsel .subpageContent p {
-      font-size: 22px;
-      font-weight: 400;
-      font-family: 'Poppins', sans-serif;
-      color: #212121;
-      margin-bottom: 20px;
-      line-height: 160%;
-      letter-spacing: 0.03em; }
     .generalCounsel .subpageContent .generalCounselCta {
       margin-top: 40px;
       display: flex;
@@ -5867,85 +5849,6 @@ footer .footerSec .footerSub .quickLinksft {
               height: 9px; } }
         .generalCounsel .subpageContent .generalCounselCta a:hover img {
           transform: translateX(10px); }
-    @media all and (max-width: 1800px) {
-      .generalCounsel .subpageContent .sectionTitle h1 {
-        font-size: 60px; }
-      .generalCounsel .subpageContent .sectionTitle h2 {
-        font-size: 52px; }
-      .generalCounsel .subpageContent .sectionTitle h3 {
-        font-size: 42px; }
-      .generalCounsel .subpageContent .sectionTitle h4 {
-        font-size: 34px; }
-      .generalCounsel .subpageContent p {
-        font-size: 22px; } }
-    @media all and (max-width: 1680px) {
-      .generalCounsel .subpageContent {
-        width: 66%; } }
-    @media all and (max-width: 1600px) {
-      .generalCounsel .subpageContent {
-        width: 70%; }
-        .generalCounsel .subpageContent .sectionTitle h1 {
-          font-size: 50px; }
-        .generalCounsel .subpageContent .sectionTitle h2 {
-          font-size: 46px; }
-        .generalCounsel .subpageContent .sectionTitle h3 {
-          font-size: 38px; }
-        .generalCounsel .subpageContent .sectionTitle h4 {
-          font-size: 32px; }
-        .generalCounsel .subpageContent p {
-          font-size: 18px; } }
-    @media all and (max-width: 1400px) {
-      .generalCounsel .subpageContent .sectionTitle h1 {
-        font-size: 45px;
-        margin-bottom: 20px; }
-      .generalCounsel .subpageContent .sectionTitle h2 {
-        font-size: 40px; }
-      .generalCounsel .subpageContent .sectionTitle h3 {
-        font-size: 34px; }
-      .generalCounsel .subpageContent .sectionTitle h4 {
-        font-size: 26px; }
-      .generalCounsel .subpageContent p {
-        font-size: 16px;
-        line-height: 26px; } }
-    @media all and (max-width: 1330px) {
-      .generalCounsel .subpageContent {
-        width: 68%; } }
-    @media all and (max-width: 1280px) {
-      .generalCounsel .subpageContent {
-        width: 64%; }
-        .generalCounsel .subpageContent .sectionTitle h4 {
-          font-size: 24px; } }
-    @media all and (max-width: 1024px) {
-      .generalCounsel .subpageContent .sectionTitle h1 {
-        font-size: 36px; }
-      .generalCounsel .subpageContent .sectionTitle h3 {
-        font-size: 30px; } }
-    @media all and (max-width: 920px) {
-      .generalCounsel .subpageContent {
-        width: 100%; }
-        .generalCounsel .subpageContent .sectionTitle h1 {
-          font-size: 32px;
-          margin-bottom: 0px; }
-        .generalCounsel .subpageContent .sectionTitle h2 {
-          font-size: 30px; }
-        .generalCounsel .subpageContent .sectionTitle h3 {
-          font-size: 24px; }
-        .generalCounsel .subpageContent .sectionTitle h4 {
-          font-size: 18px; }
-        .generalCounsel .subpageContent p {
-          font-size: 16px;
-          line-height: 150%; } }
-    @media all and (max-width: 575px) {
-      .generalCounsel .subpageContent .sectionTitle h1 {
-        font-size: 30px; }
-      .generalCounsel .subpageContent .sectionTitle h2 {
-        font-size: 22px; }
-      .generalCounsel .subpageContent .sectionTitle h3 {
-        font-size: 22px; }
-      .generalCounsel .subpageContent .sectionTitle h4 {
-        font-size: 18px; }
-      .generalCounsel .subpageContent p {
-        font-size: 16px; } }
 
 .legalAudit {
   margin: 110px 0px 150px 0px; }
@@ -6008,35 +5911,6 @@ footer .footerSec .footerSub .quickLinksft {
       .legalAudit .subpageContent .sectionTitle .breadcrumbs img {
         height: 10px;
         width: 23.06px; }
-    .legalAudit .subpageContent .sectionTitle h1 {
-      font-size: 64px;
-      font-family: 'Roboto', sans-serif;
-      font-weight: 700;
-      color: #212121;
-      margin-bottom: 30px; }
-    .legalAudit .subpageContent .sectionTitle h2 {
-      font-size: 55px;
-      font-family: 'Roboto', sans-serif;
-      font-weight: 700;
-      color: #212121; }
-    .legalAudit .subpageContent .sectionTitle h3 {
-      font-size: 50px;
-      font-family: 'Roboto', sans-serif;
-      font-weight: 700;
-      color: #212121; }
-    .legalAudit .subpageContent .sectionTitle h4 {
-      font-size: 36px;
-      font-family: 'Roboto', sans-serif;
-      font-weight: 700;
-      color: #212121; }
-    .legalAudit .subpageContent p {
-      font-size: 22px;
-      font-weight: 400;
-      font-family: 'Poppins', sans-serif;
-      color: #212121;
-      margin-bottom: 20px;
-      line-height: 160%;
-      letter-spacing: 0.03em; }
     .legalAudit .subpageContent .legalAuditCta {
       margin-top: 40px;
       display: flex;
@@ -6071,85 +5945,6 @@ footer .footerSec .footerSub .quickLinksft {
               height: 9px; } }
         .legalAudit .subpageContent .legalAuditCta a:hover img {
           transform: translateX(10px); }
-    @media all and (max-width: 1800px) {
-      .legalAudit .subpageContent .sectionTitle h1 {
-        font-size: 60px; }
-      .legalAudit .subpageContent .sectionTitle h2 {
-        font-size: 52px; }
-      .legalAudit .subpageContent .sectionTitle h3 {
-        font-size: 42px; }
-      .legalAudit .subpageContent .sectionTitle h4 {
-        font-size: 34px; }
-      .legalAudit .subpageContent p {
-        font-size: 22px; } }
-    @media all and (max-width: 1680px) {
-      .legalAudit .subpageContent {
-        width: 66%; } }
-    @media all and (max-width: 1600px) {
-      .legalAudit .subpageContent {
-        width: 70%; }
-        .legalAudit .subpageContent .sectionTitle h1 {
-          font-size: 50px; }
-        .legalAudit .subpageContent .sectionTitle h2 {
-          font-size: 46px; }
-        .legalAudit .subpageContent .sectionTitle h3 {
-          font-size: 38px; }
-        .legalAudit .subpageContent .sectionTitle h4 {
-          font-size: 32px; }
-        .legalAudit .subpageContent p {
-          font-size: 18px; } }
-    @media all and (max-width: 1400px) {
-      .legalAudit .subpageContent .sectionTitle h1 {
-        font-size: 45px;
-        margin-bottom: 20px; }
-      .legalAudit .subpageContent .sectionTitle h2 {
-        font-size: 40px; }
-      .legalAudit .subpageContent .sectionTitle h3 {
-        font-size: 34px; }
-      .legalAudit .subpageContent .sectionTitle h4 {
-        font-size: 26px; }
-      .legalAudit .subpageContent p {
-        font-size: 16px;
-        line-height: 26px; } }
-    @media all and (max-width: 1330px) {
-      .legalAudit .subpageContent {
-        width: 68%; } }
-    @media all and (max-width: 1280px) {
-      .legalAudit .subpageContent {
-        width: 64%; }
-        .legalAudit .subpageContent .sectionTitle h4 {
-          font-size: 24px; } }
-    @media all and (max-width: 1024px) {
-      .legalAudit .subpageContent .sectionTitle h1 {
-        font-size: 36px; }
-      .legalAudit .subpageContent .sectionTitle h3 {
-        font-size: 30px; } }
-    @media all and (max-width: 920px) {
-      .legalAudit .subpageContent {
-        width: 100%; }
-        .legalAudit .subpageContent .sectionTitle h1 {
-          font-size: 32px;
-          margin-bottom: 0px; }
-        .legalAudit .subpageContent .sectionTitle h2 {
-          font-size: 30px; }
-        .legalAudit .subpageContent .sectionTitle h3 {
-          font-size: 24px; }
-        .legalAudit .subpageContent .sectionTitle h4 {
-          font-size: 18px; }
-        .legalAudit .subpageContent p {
-          font-size: 16px;
-          line-height: 150%; } }
-    @media all and (max-width: 575px) {
-      .legalAudit .subpageContent .sectionTitle h1 {
-        font-size: 30px; }
-      .legalAudit .subpageContent .sectionTitle h2 {
-        font-size: 22px; }
-      .legalAudit .subpageContent .sectionTitle h3 {
-        font-size: 22px; }
-      .legalAudit .subpageContent .sectionTitle h4 {
-        font-size: 18px; }
-      .legalAudit .subpageContent p {
-        font-size: 16px; } }
 
 .aboutUs {
   color: #212121;
@@ -6195,35 +5990,6 @@ footer .footerSec .footerSub .quickLinksft {
             margin-right: 20px;
             width: 23px;
             height: 12px; } }
-    .aboutUs .subpageContent .sectionTitle h1 {
-      font-size: 64px;
-      font-family: 'Roboto', sans-serif;
-      font-weight: 700;
-      color: #212121;
-      margin-bottom: 30px; }
-    .aboutUs .subpageContent .sectionTitle h2 {
-      font-size: 55px;
-      font-family: 'Roboto', sans-serif;
-      font-weight: 700;
-      color: #212121; }
-    .aboutUs .subpageContent .sectionTitle h3 {
-      font-size: 50px;
-      font-family: 'Roboto', sans-serif;
-      font-weight: 700;
-      color: #212121; }
-    .aboutUs .subpageContent .sectionTitle h4 {
-      font-size: 36px;
-      font-family: 'Roboto', sans-serif;
-      font-weight: 700;
-      color: #212121; }
-    .aboutUs .subpageContent .about-contents p {
-      font-size: 22px;
-      font-weight: 400;
-      font-family: 'Poppins', sans-serif;
-      color: #212121;
-      margin-bottom: 20px;
-      line-height: 160%;
-      letter-spacing: 0.03em; }
     .aboutUs .subpageContent .ctaLink {
       margin-top: 40px;
       display: flex;
@@ -6258,85 +6024,6 @@ footer .footerSec .footerSub .quickLinksft {
               height: 9px; } }
         .aboutUs .subpageContent .ctaLink a:hover img {
           transform: translateX(10px); }
-    @media all and (max-width: 1800px) {
-      .aboutUs .subpageContent .sectionTitle h1 {
-        font-size: 60px; }
-      .aboutUs .subpageContent .sectionTitle h2 {
-        font-size: 52px; }
-      .aboutUs .subpageContent .sectionTitle h3 {
-        font-size: 42px; }
-      .aboutUs .subpageContent .sectionTitle h4 {
-        font-size: 34px; }
-      .aboutUs .subpageContent .about-contents p {
-        font-size: 22px; } }
-    @media all and (max-width: 1680px) {
-      .aboutUs .subpageContent {
-        width: 66%; } }
-    @media all and (max-width: 1600px) {
-      .aboutUs .subpageContent {
-        width: 70%; }
-        .aboutUs .subpageContent .sectionTitle h1 {
-          font-size: 50px; }
-        .aboutUs .subpageContent .sectionTitle h2 {
-          font-size: 46px; }
-        .aboutUs .subpageContent .sectionTitle h3 {
-          font-size: 38px; }
-        .aboutUs .subpageContent .sectionTitle h4 {
-          font-size: 32px; }
-        .aboutUs .subpageContent .about-contents p {
-          font-size: 18px; } }
-    @media all and (max-width: 1400px) {
-      .aboutUs .subpageContent .sectionTitle h1 {
-        font-size: 45px;
-        margin-bottom: 20px; }
-      .aboutUs .subpageContent .sectionTitle h2 {
-        font-size: 40px; }
-      .aboutUs .subpageContent .sectionTitle h3 {
-        font-size: 34px; }
-      .aboutUs .subpageContent .sectionTitle h4 {
-        font-size: 26px; }
-      .aboutUs .subpageContent .about-contents p {
-        font-size: 16px;
-        line-height: 26px; } }
-    @media all and (max-width: 1330px) {
-      .aboutUs .subpageContent {
-        width: 68%; } }
-    @media all and (max-width: 1280px) {
-      .aboutUs .subpageContent {
-        width: 64%; }
-        .aboutUs .subpageContent .sectionTitle h4 {
-          font-size: 24px; } }
-    @media all and (max-width: 1024px) {
-      .aboutUs .subpageContent .sectionTitle h1 {
-        font-size: 36px; }
-      .aboutUs .subpageContent .sectionTitle h3 {
-        font-size: 30px; } }
-    @media all and (max-width: 920px) {
-      .aboutUs .subpageContent {
-        width: 100%; }
-        .aboutUs .subpageContent .sectionTitle h1 {
-          font-size: 32px;
-          margin-bottom: 0px; }
-        .aboutUs .subpageContent .sectionTitle h2 {
-          font-size: 30px; }
-        .aboutUs .subpageContent .sectionTitle h3 {
-          font-size: 24px; }
-        .aboutUs .subpageContent .sectionTitle h4 {
-          font-size: 18px; }
-        .aboutUs .subpageContent .about-contents p {
-          font-size: 16px;
-          line-height: 24px; } }
-    @media all and (max-width: 575px) {
-      .aboutUs .subpageContent .sectionTitle h1 {
-        font-size: 30px; }
-      .aboutUs .subpageContent .sectionTitle h2 {
-        font-size: 22px; }
-      .aboutUs .subpageContent .sectionTitle h3 {
-        font-size: 22px; }
-      .aboutUs .subpageContent .sectionTitle h4 {
-        font-size: 18px; }
-      .aboutUs .subpageContent .about-contents p {
-        font-size: 16px; } }
 
 .careers {
   color: #212121;
@@ -6382,27 +6069,6 @@ footer .footerSec .footerSub .quickLinksft {
             margin-right: 20px;
             width: 23px;
             height: 12px; } }
-    .careers .subpageContent .sectionTitle h1 {
-      font-size: 64px;
-      font-family: 'Roboto', sans-serif;
-      font-weight: 700;
-      color: #212121;
-      margin-bottom: 30px; }
-    .careers .subpageContent .sectionTitle h2 {
-      font-size: 55px;
-      font-family: 'Roboto', sans-serif;
-      font-weight: 700;
-      color: #212121; }
-    .careers .subpageContent .sectionTitle h3 {
-      font-size: 50px;
-      font-family: 'Roboto', sans-serif;
-      font-weight: 700;
-      color: #212121; }
-    .careers .subpageContent .sectionTitle h4 {
-      font-size: 36px;
-      font-family: 'Roboto', sans-serif;
-      font-weight: 700;
-      color: #212121; }
     .careers .subpageContent .careers-content p {
       font-size: 22px;
       font-weight: 400;
@@ -6417,85 +6083,6 @@ footer .footerSec .footerSub .quickLinksft {
         text-decoration: none; }
         .careers .subpageContent .careers-content p span a:hover {
           color: #6A6A6A; }
-    @media all and (max-width: 1800px) {
-      .careers .subpageContent .sectionTitle h1 {
-        font-size: 60px; }
-      .careers .subpageContent .sectionTitle h2 {
-        font-size: 52px; }
-      .careers .subpageContent .sectionTitle h3 {
-        font-size: 42px; }
-      .careers .subpageContent .sectionTitle h4 {
-        font-size: 34px; }
-      .careers .subpageContent .careers-content p {
-        font-size: 22px; } }
-    @media all and (max-width: 1680px) {
-      .careers .subpageContent {
-        width: 66%; } }
-    @media all and (max-width: 1600px) {
-      .careers .subpageContent {
-        width: 70%; }
-        .careers .subpageContent .sectionTitle h1 {
-          font-size: 50px; }
-        .careers .subpageContent .sectionTitle h2 {
-          font-size: 46px; }
-        .careers .subpageContent .sectionTitle h3 {
-          font-size: 38px; }
-        .careers .subpageContent .sectionTitle h4 {
-          font-size: 32px; }
-        .careers .subpageContent .careers-content p {
-          font-size: 18px; } }
-    @media all and (max-width: 1400px) {
-      .careers .subpageContent .sectionTitle h1 {
-        font-size: 45px;
-        margin-bottom: 20px; }
-      .careers .subpageContent .sectionTitle h2 {
-        font-size: 40px; }
-      .careers .subpageContent .sectionTitle h3 {
-        font-size: 34px; }
-      .careers .subpageContent .sectionTitle h4 {
-        font-size: 26px; }
-      .careers .subpageContent .careers-content p {
-        font-size: 16px;
-        line-height: 26px; } }
-    @media all and (max-width: 1330px) {
-      .careers .subpageContent {
-        width: 68%; } }
-    @media all and (max-width: 1280px) {
-      .careers .subpageContent {
-        width: 64%; }
-        .careers .subpageContent .sectionTitle h4 {
-          font-size: 24px; } }
-    @media all and (max-width: 1024px) {
-      .careers .subpageContent .sectionTitle h1 {
-        font-size: 36px; }
-      .careers .subpageContent .sectionTitle h3 {
-        font-size: 30px; } }
-    @media all and (max-width: 920px) {
-      .careers .subpageContent {
-        width: 100%; }
-        .careers .subpageContent .sectionTitle h1 {
-          font-size: 32px;
-          margin-bottom: 0px; }
-        .careers .subpageContent .sectionTitle h2 {
-          font-size: 30px; }
-        .careers .subpageContent .sectionTitle h3 {
-          font-size: 24px; }
-        .careers .subpageContent .sectionTitle h4 {
-          font-size: 18px; }
-        .careers .subpageContent .careers-content p {
-          font-size: 16px;
-          line-height: 24px; } }
-    @media all and (max-width: 575px) {
-      .careers .subpageContent .sectionTitle h1 {
-        font-size: 30px; }
-      .careers .subpageContent .sectionTitle h2 {
-        font-size: 22px; }
-      .careers .subpageContent .sectionTitle h3 {
-        font-size: 22px; }
-      .careers .subpageContent .sectionTitle h4 {
-        font-size: 18px; }
-      .careers .subpageContent .careers-content p {
-        font-size: 16px; } }
 
 .legalHeader {
   position: sticky !important; }
@@ -6578,144 +6165,6 @@ footer .footerSec .footerSub .quickLinksft {
       .subSectors .subpageContent .sectionTitle .breadcrumbs img {
         height: 10px;
         width: 23.06px; }
-    .subSectors .subpageContent .sectionTitle h1 {
-      font-size: 64px;
-      font-family: 'Roboto', sans-serif;
-      font-weight: 700;
-      color: #212121;
-      display: flex;
-      align-items: center;
-      margin-bottom: 30px; }
-    .subSectors .subpageContent .sectionTitle h2 {
-      font-size: 55px;
-      font-family: 'Roboto', sans-serif;
-      font-weight: 700;
-      color: #212121; }
-    .subSectors .subpageContent .sectionTitle h3 {
-      font-size: 50px;
-      font-family: 'Roboto', sans-serif;
-      font-weight: 700;
-      color: #212121; }
-    .subSectors .subpageContent .sectionTitle h4 {
-      font-size: 36px;
-      font-family: 'Roboto', sans-serif;
-      font-weight: 700;
-      color: #212121; }
-    .subSectors .subpageContent ul {
-      margin-left: 22px; }
-      .subSectors .subpageContent ul li {
-        margin-bottom: 20px;
-        line-height: 35px;
-        font-weight: 400;
-        font-family: 'Poppins', sans-serif;
-        color: #212121; }
-    .subSectors .subpageContent p {
-      font-size: 22px;
-      font-weight: 400;
-      font-family: 'Poppins', sans-serif;
-      color: #212121; }
-    @media all and (max-width: 1800px) {
-      .subSectors .subpageContent ul {
-        margin-left: 19.5px; }
-      .subSectors .subpageContent .sectionTitle h1 {
-        font-size: 60px; }
-      .subSectors .subpageContent .sectionTitle h2 {
-        font-size: 52px; }
-      .subSectors .subpageContent .sectionTitle h3 {
-        font-size: 42px; }
-      .subSectors .subpageContent .sectionTitle h4 {
-        font-size: 34px; }
-      .subSectors .subpageContent p {
-        font-size: 22px; } }
-    @media all and (max-width: 1680px) {
-      .subSectors .subpageContent {
-        width: 66%; } }
-    @media all and (max-width: 1600px) {
-      .subSectors .subpageContent {
-        width: 70%; }
-        .subSectors .subpageContent ul {
-          margin-left: 19px; }
-          .subSectors .subpageContent ul li {
-            font-size: 18px; }
-        .subSectors .subpageContent .sectionTitle h1 {
-          font-size: 50px; }
-        .subSectors .subpageContent .sectionTitle h2 {
-          font-size: 46px; }
-        .subSectors .subpageContent .sectionTitle h3 {
-          font-size: 38px; }
-        .subSectors .subpageContent .sectionTitle h4 {
-          font-size: 32px; }
-        .subSectors .subpageContent p {
-          font-size: 18px; } }
-    @media all and (max-width: 1400px) {
-      .subSectors .subpageContent ul {
-        margin-left: 17.5px; }
-        .subSectors .subpageContent ul li {
-          font-size: 16px;
-          line-height: 26px; }
-      .subSectors .subpageContent .sectionTitle h1 {
-        font-size: 45px;
-        margin-bottom: 20px; }
-      .subSectors .subpageContent .sectionTitle h2 {
-        font-size: 40px; }
-      .subSectors .subpageContent .sectionTitle h3 {
-        font-size: 34px; }
-      .subSectors .subpageContent .sectionTitle h4 {
-        font-size: 26px; }
-      .subSectors .subpageContent p {
-        font-size: 16px; } }
-    @media all and (max-width: 1330px) {
-      .subSectors .subpageContent {
-        width: 68%; } }
-    @media all and (max-width: 1280px) {
-      .subSectors .subpageContent {
-        width: 64%; }
-        .subSectors .subpageContent .sectionTitle h4 {
-          font-size: 24px; } }
-    @media all and (max-width: 1024px) {
-      .subSectors .subpageContent ul {
-        margin-left: 16.5px; }
-      .subSectors .subpageContent .sectionTitle h1 {
-        font-size: 36px; }
-      .subSectors .subpageContent .sectionTitle h3 {
-        font-size: 30px; } }
-    @media all and (max-width: 920px) {
-      .subSectors .subpageContent {
-        width: 100%; }
-        .subSectors .subpageContent ul {
-          margin-left: 17px; }
-          .subSectors .subpageContent ul li {
-            font-size: 16px;
-            line-height: 21px; }
-        .subSectors .subpageContent .sectionTitle h1 {
-          font-size: 32px;
-          margin-bottom: 0px; }
-        .subSectors .subpageContent .sectionTitle h2 {
-          font-size: 30px; }
-        .subSectors .subpageContent .sectionTitle h3 {
-          font-size: 24px; }
-        .subSectors .subpageContent .sectionTitle h4 {
-          font-size: 18px; }
-        .subSectors .subpageContent p {
-          font-size: 16px; } }
-    @media all and (max-width: 675px) {
-      .subSectors .subpageContent ul {
-        margin-left: 17.60px; } }
-    @media all and (max-width: 575px) {
-      .subSectors .subpageContent ul {
-        margin-left: 15.60px; }
-        .subSectors .subpageContent ul li {
-          font-size: 16px; }
-      .subSectors .subpageContent .sectionTitle h1 {
-        font-size: 30px; }
-      .subSectors .subpageContent .sectionTitle h2 {
-        font-size: 22px; }
-      .subSectors .subpageContent .sectionTitle h3 {
-        font-size: 22px; }
-      .subSectors .subpageContent .sectionTitle h4 {
-        font-size: 18px; }
-      .subSectors .subpageContent p {
-        font-size: 16px; } }
     .subSectors .subpageContent .subSectors-Cta {
       margin-top: 40px;
       display: flex;
@@ -6750,6 +6199,148 @@ footer .footerSec .footerSub .quickLinksft {
               height: 9px; } }
         .subSectors .subpageContent .subSectors-Cta a:hover img {
           transform: translateX(10px); }
+
+.subpageContent {
+  width: 70%; }
+  .subpageContent h1 {
+    font-size: 64px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #212121;
+    margin-bottom: 30px; }
+  .subpageContent h2 {
+    font-size: 55px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #212121; }
+  .subpageContent h3 {
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #212121; }
+  .subpageContent h4 {
+    font-size: 36px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #212121; }
+  .subpageContent p {
+    font-size: 22px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    color: #212121; }
+  .subpageContent ul {
+    margin-left: 22px; }
+    .subpageContent ul li {
+      margin-bottom: 20px;
+      line-height: 35px;
+      font-weight: 400;
+      font-family: 'Poppins', sans-serif;
+      color: #212121; }
+  @media all and (max-width: 1800px) {
+    .subpageContent ul {
+      margin-left: 19.5px; }
+    .subpageContent h1 {
+      font-size: 60px; }
+    .subpageContent h2 {
+      font-size: 52px; }
+    .subpageContent h3 {
+      font-size: 42px; }
+    .subpageContent h4 {
+      font-size: 34px; }
+    .subpageContent p {
+      font-size: 22px; } }
+  @media all and (max-width: 1680px) {
+    .subpageContent {
+      width: 66%; } }
+  @media all and (max-width: 1600px) {
+    .subpageContent {
+      width: 70%; }
+      .subpageContent ul {
+        margin-left: 19px; }
+        .subpageContent ul li {
+          font-size: 18px; }
+      .subpageContent h1 {
+        font-size: 50px; }
+      .subpageContent h2 {
+        font-size: 46px; }
+      .subpageContent h3 {
+        font-size: 38px; }
+      .subpageContent h4 {
+        font-size: 32px; }
+      .subpageContent p {
+        font-size: 18px; } }
+  @media all and (max-width: 1400px) {
+    .subpageContent ul {
+      margin-left: 17.5px; }
+      .subpageContent ul li {
+        font-size: 16px;
+        line-height: 26px; }
+    .subpageContent h1 {
+      font-size: 45px;
+      margin-bottom: 20px; }
+    .subpageContent h2 {
+      font-size: 40px; }
+    .subpageContent h3 {
+      font-size: 34px; }
+    .subpageContent h4 {
+      font-size: 26px; }
+    .subpageContent p {
+      font-size: 16px;
+      line-height: 26px; } }
+  @media all and (max-width: 1330px) {
+    .subpageContent {
+      width: 68%; } }
+  @media all and (max-width: 1280px) {
+    .subpageContent {
+      width: 64%; }
+      .subpageContent h4 {
+        font-size: 24px; } }
+  @media all and (max-width: 1024px) {
+    .subpageContent ul {
+      margin-left: 16.5px; }
+    .subpageContent h1 {
+      font-size: 36px; }
+    .subpageContent h3 {
+      font-size: 30px; } }
+  @media all and (max-width: 920px) {
+    .subpageContent {
+      width: 100%; }
+      .subpageContent ul {
+        margin-left: 17px; }
+        .subpageContent ul li {
+          font-size: 16px;
+          line-height: 21px; }
+      .subpageContent h1 {
+        font-size: 32px;
+        margin-bottom: 0px; }
+      .subpageContent h2 {
+        font-size: 30px; }
+      .subpageContent h3 {
+        font-size: 24px; }
+      .subpageContent h4 {
+        font-size: 18px; }
+      .subpageContent p {
+        font-size: 16px; }
+      .subpageContent .subSectionTitle {
+        padding-top: 10px; } }
+  @media all and (max-width: 675px) {
+    .subpageContent ul {
+      margin-left: 17.60px; } }
+  @media all and (max-width: 575px) {
+    .subpageContent ul {
+      margin-left: 15.60px; }
+      .subpageContent ul li {
+        font-size: 16px; }
+    .subpageContent h1 {
+      font-size: 30px; }
+    .subpageContent h2 {
+      font-size: 22px; }
+    .subpageContent h3 {
+      font-size: 22px; }
+    .subpageContent h4 {
+      font-size: 18px; }
+    .subpageContent p {
+      font-size: 16px; } }
 
 footer .footerSec .footerSub .quickLinksft {
   margin-bottom: 13px !important; }
