@@ -5157,26 +5157,21 @@ footer .footerSec .footerSub .quickLinksft {
       font-size: 34px; }
     .legalAdvisory p {
       font-size: 22px; } }
-  @media all and (max-width: 1680px) {
-    .legalAdvisory {
-      width: 66%; } }
   @media all and (max-width: 1600px) {
-    .legalAdvisory {
-      width: 70%; }
-      .legalAdvisory ul {
-        margin-left: 19px; }
-        .legalAdvisory ul li {
-          font-size: 18px; }
-      .legalAdvisory h1 {
-        font-size: 50px; }
-      .legalAdvisory h2 {
-        font-size: 46px; }
-      .legalAdvisory h3 {
-        font-size: 38px; }
-      .legalAdvisory h4 {
-        font-size: 32px; }
-      .legalAdvisory p {
-        font-size: 18px; } }
+    .legalAdvisory ul {
+      margin-left: 19px; }
+      .legalAdvisory ul li {
+        font-size: 18px; }
+    .legalAdvisory h1 {
+      font-size: 50px; }
+    .legalAdvisory h2 {
+      font-size: 46px; }
+    .legalAdvisory h3 {
+      font-size: 38px; }
+    .legalAdvisory h4 {
+      font-size: 32px; }
+    .legalAdvisory p {
+      font-size: 18px; } }
   @media all and (max-width: 1400px) {
     .legalAdvisory ul {
       margin-left: 17.5px; }
@@ -5195,14 +5190,9 @@ footer .footerSec .footerSub .quickLinksft {
     .legalAdvisory p {
       font-size: 16px;
       line-height: 26px; } }
-  @media all and (max-width: 1330px) {
-    .legalAdvisory {
-      width: 68%; } }
   @media all and (max-width: 1280px) {
-    .legalAdvisory {
-      width: 64%; }
-      .legalAdvisory h4 {
-        font-size: 24px; } }
+    .legalAdvisory h4 {
+      font-size: 24px; } }
   @media all and (max-width: 1024px) {
     .legalAdvisory ul {
       margin-left: 16.5px; }
@@ -5211,26 +5201,24 @@ footer .footerSec .footerSub .quickLinksft {
     .legalAdvisory h3 {
       font-size: 30px; } }
   @media all and (max-width: 920px) {
-    .legalAdvisory {
-      width: 100%; }
-      .legalAdvisory ul {
-        margin-left: 17px; }
-        .legalAdvisory ul li {
-          font-size: 16px;
-          line-height: 21px; }
-      .legalAdvisory h1 {
-        font-size: 32px;
-        margin-bottom: 0px; }
-      .legalAdvisory h2 {
-        font-size: 30px; }
-      .legalAdvisory h3 {
-        font-size: 24px; }
-      .legalAdvisory h4 {
-        font-size: 18px; }
-      .legalAdvisory p {
-        font-size: 16px; }
-      .legalAdvisory .subSectionTitle {
-        padding-top: 10px; } }
+    .legalAdvisory ul {
+      margin-left: 17px; }
+      .legalAdvisory ul li {
+        font-size: 16px;
+        line-height: 21px; }
+    .legalAdvisory h1 {
+      font-size: 32px;
+      margin-bottom: 0px; }
+    .legalAdvisory h2 {
+      font-size: 30px; }
+    .legalAdvisory h3 {
+      font-size: 24px; }
+    .legalAdvisory h4 {
+      font-size: 18px; }
+    .legalAdvisory p {
+      font-size: 16px; }
+    .legalAdvisory .subSectionTitle {
+      padding-top: 10px; } }
   @media all and (max-width: 675px) {
     .legalAdvisory ul {
       margin-left: 17.60px; } }
@@ -5548,26 +5536,21 @@ footer .footerSec .footerSub .quickLinksft {
       font-size: 34px; }
     .digitalTransformation p {
       font-size: 22px; } }
-  @media all and (max-width: 1680px) {
-    .digitalTransformation {
-      width: 66%; } }
   @media all and (max-width: 1600px) {
-    .digitalTransformation {
-      width: 70%; }
-      .digitalTransformation ul {
-        margin-left: 19px; }
-        .digitalTransformation ul li {
-          font-size: 18px; }
-      .digitalTransformation h1 {
-        font-size: 50px; }
-      .digitalTransformation h2 {
-        font-size: 46px; }
-      .digitalTransformation h3 {
-        font-size: 38px; }
-      .digitalTransformation h4 {
-        font-size: 32px; }
-      .digitalTransformation p {
-        font-size: 18px; } }
+    .digitalTransformation ul {
+      margin-left: 19px; }
+      .digitalTransformation ul li {
+        font-size: 18px; }
+    .digitalTransformation h1 {
+      font-size: 50px; }
+    .digitalTransformation h2 {
+      font-size: 46px; }
+    .digitalTransformation h3 {
+      font-size: 38px; }
+    .digitalTransformation h4 {
+      font-size: 32px; }
+    .digitalTransformation p {
+      font-size: 18px; } }
   @media all and (max-width: 1400px) {
     .digitalTransformation ul {
       margin-left: 17.5px; }
@@ -5586,14 +5569,9 @@ footer .footerSec .footerSub .quickLinksft {
     .digitalTransformation p {
       font-size: 16px;
       line-height: 26px; } }
-  @media all and (max-width: 1330px) {
-    .digitalTransformation {
-      width: 68%; } }
   @media all and (max-width: 1280px) {
-    .digitalTransformation {
-      width: 64%; }
-      .digitalTransformation h4 {
-        font-size: 24px; } }
+    .digitalTransformation h4 {
+      font-size: 24px; } }
   @media all and (max-width: 1024px) {
     .digitalTransformation ul {
       margin-left: 16.5px; }
@@ -5602,26 +5580,24 @@ footer .footerSec .footerSub .quickLinksft {
     .digitalTransformation h3 {
       font-size: 30px; } }
   @media all and (max-width: 920px) {
-    .digitalTransformation {
-      width: 100%; }
-      .digitalTransformation ul {
-        margin-left: 17px; }
-        .digitalTransformation ul li {
-          font-size: 16px;
-          line-height: 21px; }
-      .digitalTransformation h1 {
-        font-size: 32px;
-        margin-bottom: 0px; }
-      .digitalTransformation h2 {
-        font-size: 30px; }
-      .digitalTransformation h3 {
-        font-size: 24px; }
-      .digitalTransformation h4 {
-        font-size: 18px; }
-      .digitalTransformation p {
-        font-size: 16px; }
-      .digitalTransformation .subSectionTitle {
-        padding-top: 10px; } }
+    .digitalTransformation ul {
+      margin-left: 17px; }
+      .digitalTransformation ul li {
+        font-size: 16px;
+        line-height: 21px; }
+    .digitalTransformation h1 {
+      font-size: 32px;
+      margin-bottom: 0px; }
+    .digitalTransformation h2 {
+      font-size: 30px; }
+    .digitalTransformation h3 {
+      font-size: 24px; }
+    .digitalTransformation h4 {
+      font-size: 18px; }
+    .digitalTransformation p {
+      font-size: 16px; }
+    .digitalTransformation .subSectionTitle {
+      padding-top: 10px; } }
   @media all and (max-width: 675px) {
     .digitalTransformation ul {
       margin-left: 17.60px; } }
