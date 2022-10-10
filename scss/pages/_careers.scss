@@ -1,17 +1,17 @@
 .careers {
     color: #212121;
-    margin:110px 0px 150px 0px;
-	@media all and (max-width: 1650px){margin: 90px 0px 110px 0px;}
-	@media all and (max-width: 1450px){margin:100px 0px 70px 0px;}
-	@media all and (max-width: 1170px){margin:70px 0px 70px 0px;}
-	@media all and (max-width: 920px){margin:120px 0px 180px 0px;}
-	@media all and (max-width: 550px){margin:100px 0px 180px 0px;}
+    margin:200px 0px 150px 0px;
+	@media all and (max-width: 1650px){margin: 180px 0px 110px 0px;}
+	@media all and (max-width: 1450px){margin:160px 0px 70px 0px;}
+	@media all and (max-width: 1170px){margin:140px 0px 70px 0px;}
+	@media all and (max-width: 920px){margin:100px 0px 180px 0px;}
+	@media all and (max-width: 550px){margin:80px 0px 180px 0px;}
     .subpageContent{
         .sectionTitle{
-            @media all and (max-width: 920px){display: flex;align-items: flex-start;padding-bottom: 20px;margin-bottom: 15px; border-bottom: 0.75px solid rgba(33, 33, 33, 0.6);}
+            @media all and (max-width: 920px){display: flex;align-items: center;padding-bottom: 20px;margin-bottom: 15px; border-bottom: 0.75px solid rgba(33, 33, 33, 0.6);}
             .backArrow{display:none;
-                @media all and (max-width: 920px){display:block;margin-top: 10px;}
-                @media all and (max-width: 575px){display:block;margin-top: 9px;}
+                @media all and (max-width: 920px){display:block;}
+                @media all and (max-width: 575px){display:block;}
                 img{margin-right:30px;
                     @media all and (max-width: 920px){margin-right:20px; width: 23px;height: 12px;}
                     }
