@@ -1,3 +1,29 @@
+body{
+    overflow-y: scroll;
+
+            scrollbar-width: auto;
+            scrollbar-color: #fff;
+
+
+            /* Chrome, Edge, and Safari */
+            &::-webkit-scrollbar {
+                width: 3px;
+            }
+
+
+
+            &::-webkit-scrollbar-track {
+                background: #fff;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background-color: #000;
+                border-radius: 15px;
+
+            }
+
+}
+
 .headerLegal {
     position: fixed;
     top: 0;
@@ -7,7 +33,7 @@
     display: block;
     background-color: #fff;
 
-    @media (max-width: 760px) {
+    @media (max-width: 920px) {
         border-bottom: 2px solid rgba(106, 106, 106, 0.5);
     }
 
@@ -237,18 +263,13 @@
             z-index: 99;
             height: 100%;
             width: 100%;
-            top: 41px;
+            top: 50%;
+            transform: translateY(-50%);
             right: 0px;
             height: 24px;
             width: 24px;
 
-            @media (max-width:770px) {
-                top: 29px;
-            }
-
-            @media (max-width:390px) {
-                top: 25px;
-            }
+            
 
             .spinner {
                 transition: all 0.3s;
@@ -557,22 +578,10 @@
         @media (max-width: 920px) {
             display: block;
             position: relative;
-            padding-top: 100px;
+           padding: 15px 0px;
         }
 
-        @media (max-width: 770px) {
-            padding-top: 45px;
-            padding-bottom: 33px;
-        }
-
-        @media (max-width: 575px) {
-            padding-bottom: 26px;
-        }
-
-        @media (max-width: 390px) {
-            padding-top: 34px;
-            padding-bottom: 33px;
-        }
+        
 
         input[type="checkbox"],
         .hamburger-lines {
@@ -661,11 +670,7 @@
         }
 
         .logo {
-            @media (max-width: 920px) {
-                position: absolute;
-                top: 15px;
-                left: 0px;
-            }
+           
 
             img {
 
@@ -789,6 +794,7 @@
 
 .progressbarLegaldesk {
     .progress-container {
+        display: block;
         position: fixed;
         right: 30px;
         top: 50%;
@@ -800,8 +806,8 @@
         border: 1px solid rgba(33, 33, 33, 0.5);
         z-index: 999;
 
-        @media (max-width:770px) {
-            display: none !important;
+        @media (max-width:920px) {
+            display: none;
         }
 
         .progress-bar {
@@ -3357,6 +3363,7 @@
 
 .mblprogressLegal {
     .progress-container-mobile .progress-bar-mobile {
+        display: none;
         position: fixed;
         height: 0px;
         background: #000;
@@ -3367,8 +3374,8 @@
         margin-top: -1px;
 
 
-        @media all and (min-width: 770px) {
-            display: none !important;
+        @media all and (max-width: 920px) {
+            display: block;
         }
     }
 }

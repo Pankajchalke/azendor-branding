@@ -423,6 +423,19 @@ body {
           margin-right: 0px;
           margin-bottom: 15px; } }
 
+body {
+  overflow-y: scroll;
+  scrollbar-width: auto;
+  scrollbar-color: #fff;
+  /* Chrome, Edge, and Safari */ }
+  body::-webkit-scrollbar {
+    width: 3px; }
+  body::-webkit-scrollbar-track {
+    background: #fff; }
+  body::-webkit-scrollbar-thumb {
+    background-color: #000;
+    border-radius: 15px; }
+
 .headerLegal {
   position: fixed;
   top: 0;
@@ -430,7 +443,7 @@ body {
   z-index: 100;
   display: block;
   background-color: #fff; }
-  @media (max-width: 760px) {
+  @media (max-width: 920px) {
     .headerLegal {
       border-bottom: 2px solid rgba(106, 106, 106, 0.5); } }
   .headerLegal #sidebarContainer {
@@ -625,16 +638,11 @@ body {
       z-index: 99;
       height: 100%;
       width: 100%;
-      top: 41px;
+      top: 50%;
+      transform: translateY(-50%);
       right: 0px;
       height: 24px;
       width: 24px; }
-      @media (max-width: 770px) {
-        .headerLegal #sidebarContainer .sideIconToggle {
-          top: 29px; } }
-      @media (max-width: 390px) {
-        .headerLegal #sidebarContainer .sideIconToggle {
-          top: 25px; } }
       .headerLegal #sidebarContainer .sideIconToggle .spinner {
         transition: all 0.3s;
         box-sizing: border-box;
@@ -876,18 +884,7 @@ body {
       .headerLegal .header-container {
         display: block;
         position: relative;
-        padding-top: 100px; } }
-    @media (max-width: 770px) {
-      .headerLegal .header-container {
-        padding-top: 45px;
-        padding-bottom: 33px; } }
-    @media (max-width: 575px) {
-      .headerLegal .header-container {
-        padding-bottom: 26px; } }
-    @media (max-width: 390px) {
-      .headerLegal .header-container {
-        padding-top: 34px;
-        padding-bottom: 33px; } }
+        padding: 15px 0px; } }
     .headerLegal .header-container input[type="checkbox"],
     .headerLegal .header-container .hamburger-lines {
       display: none; }
@@ -947,11 +944,6 @@ body {
       .headerLegal .header-container .hamburger-lines .line3 {
         transform-origin: 0% 100%;
         transition: transform 0.3s ease-in-out; } }
-    @media (max-width: 920px) {
-      .headerLegal .header-container .logo {
-        position: absolute;
-        top: 15px;
-        left: 0px; } }
     .headerLegal .header-container .logo img {
       width: 300px; }
       @media (max-width: 1920px) {
@@ -1033,6 +1025,7 @@ body {
             padding: 8px 15px; } }
 
 .progressbarLegaldesk .progress-container {
+  display: block;
   position: fixed;
   right: 30px;
   top: 50%;
@@ -1042,9 +1035,9 @@ body {
   margin: auto;
   border: 1px solid rgba(33, 33, 33, 0.5);
   z-index: 999; }
-  @media (max-width: 770px) {
+  @media (max-width: 920px) {
     .progressbarLegaldesk .progress-container {
-      display: none !important; } }
+      display: none; } }
   .progressbarLegaldesk .progress-container .progress-bar {
     position: relative;
     width: 1px;
@@ -2646,6 +2639,7 @@ body {
       display: none !important; } }
 
 .mblprogressLegal .progress-container-mobile .progress-bar-mobile {
+  display: none;
   position: fixed;
   height: 0px;
   background: #000;
@@ -2654,9 +2648,9 @@ body {
   border: 2px solid #212121;
   border-radius: 0px 10px 10px 0px;
   margin-top: -1px; }
-  @media all and (min-width: 770px) {
+  @media all and (max-width: 920px) {
     .mblprogressLegal .progress-container-mobile .progress-bar-mobile {
-      display: none !important; } }
+      display: block; } }
 
 progress {
   position: fixed;
@@ -2774,7 +2768,8 @@ h2 {
       z-index: 9999;
       height: 100%;
       width: 100%;
-      top: 22px;
+      top: 50%;
+      transform: translateY(-50%);
       right: 0px;
       height: 24px;
       width: 24px; }
@@ -2883,11 +2878,8 @@ h2 {
     @media (max-width: 920px) {
       .headerBranding .header-container {
         display: block;
-        position: relative; } }
-    @media (max-width: 770px) {
-      .headerBranding .header-container {
-        padding-top: 45px;
-        padding-bottom: 25px; } }
+        position: relative;
+        padding: 15px 0px; } }
     .headerBranding .header-container input[type="checkbox"],
     .headerBranding .header-container .hamburger-lines {
       display: none; }
@@ -2947,11 +2939,6 @@ h2 {
       .headerBranding .header-container .hamburger-lines .line3 {
         transform-origin: 0% 100%;
         transition: transform 0.3s ease-in-out; } }
-    @media (max-width: 920px) {
-      .headerBranding .header-container .logo {
-        position: absolute;
-        top: 15px;
-        left: 0px; } }
     .headerBranding .header-container .logo img {
       width: 430px; }
       @media (max-width: 1400px) {
@@ -3028,6 +3015,7 @@ h2 {
           color: #fff; }
 
 .progress-container {
+  display: block;
   position: fixed;
   right: 30px;
   top: 50%;
@@ -3036,9 +3024,9 @@ h2 {
   border-radius: 2px;
   margin: auto;
   border: 1px solid #6a6a6a; }
-  @media (max-width: 770px) {
+  @media (max-width: 920px) {
     .progress-container {
-      display: none !important; } }
+      display: none; } }
   .progress-container .progress-bar {
     position: relative;
     width: 1px;
@@ -3409,7 +3397,7 @@ h2 {
       padding-right: 25px;
       border-top: 1px solid #6A6A6A;
       height: 280px;
-      overflow-x: auto;
+      overflow-y: auto;
       scrollbar-width: auto;
       scrollbar-color: #000;
       /* Chrome, Edge, and Safari */ }
@@ -3778,7 +3766,7 @@ h2 {
       right: 5px;
       width: 100%;
       z-index: 11;
-      background: linear-gradient(180deg, rgba(13, 13, 13, 0) 8.82%, rgba(33, 33, 33, 0.88) 45.31%, #212121 91.77%); }
+      background: linear-gradient(180deg, rgba(13, 13, 13, 0) 8.82%, rgba(33, 33, 33, 0.7) 45.31%, #212121 91.77%); }
       .teamSection .teamSec .teamMembers a img {
         transition: 0.6s all; }
         @media all and (max-width: 1400px) {
@@ -3804,8 +3792,10 @@ h2 {
           padding: 50px 0px;
           bottom: -40px; } }
   @media all and (max-width: 1280px) {
-    .teamSection .teamSec .teamMembers a {
-      padding: 40px 0px; } }
+    .teamSection .teamSec .teamMembers {
+      margin-bottom: 25px; }
+      .teamSection .teamSec .teamMembers a {
+        padding: 40px 0px; } }
   @media all and (max-width: 900px) {
     .teamSection .teamSec {
       height: unset;
@@ -3836,18 +3826,18 @@ h2 {
     margin-top: 150px; } }
 .clientsBox ul {
   list-style: none; }
-  @media all and (max-width: 920px) {
-    .clientsBox ul {
-      padding: 15px; } }
 .clientsBox .clientSec {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px; }
+  .clientsBox .clientSec h2 {
+    margin-bottom: 0px !important; }
   .clientsBox .clientSec .tabs {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 30px;
     width: 230px;
     border: 1px solid rgba(242, 242, 242, 0.2);
     border-radius: 60px; }
@@ -3881,25 +3871,24 @@ h2 {
       border: 1px solid rgba(242, 242, 242, 0.2);
       border-radius: 60px;
       transition: .3s; }
-  @media all and (max-width: 768px) {
+  @media all and (max-width: 1600px) {
     .clientsBox .clientSec {
-      padding-bottom: 30px; }
-      .clientsBox .clientSec .tabs {
-        width: 150px;
-        margin-bottom: 0px; }
-        .clientsBox .clientSec .tabs a {
-          padding: 7px 0px; }
-        .clientsBox .clientSec .tabs .bg {
-          width: 74px; } }
+      margin-bottom: 30px; } }
+  @media all and (max-width: 920px) {
+    .clientsBox .clientSec {
+      margin-bottom: 60px; } }
+  @media all and (max-width: 768px) {
+    .clientsBox .clientSec .tabs {
+      width: 150px; }
+      .clientsBox .clientSec .tabs a {
+        padding: 7px 0px; }
+      .clientsBox .clientSec .tabs .bg {
+        width: 74px; } }
   @media all and (max-width: 450px) {
     .clientsBox .clientSec .tabs {
       width: 120px; }
       .clientsBox .clientSec .tabs .bg {
         width: 60px; } }
-.clientsBox .clientSlider .boxClients .box {
-  background-position: 0 0, 0 0, 100% 0, 0 100%;
-  background-size: 3px 100%, 100% 3px, 3px 100%, 100% 3px;
-  background-repeat: no-repeat; }
 .clientsBox .clientSlider .boxClients img {
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
@@ -3912,40 +3901,29 @@ h2 {
     filter: grayscale(0%);
     -webkit-filter: grayscale(0%); }
 .clientsBox .clientSlider .boxClients .content {
-  margin-top: 0px; }
-  .clientsBox .clientSlider .boxClients .content .imgBorder {
-    margin: 15px 0px;
-    border-right: 1px solid #373737; }
-  .clientsBox .clientSlider .boxClients .content::before {
-    content: '';
-    display: block;
-    border-top: 1px solid #373737;
-    width: 90%;
-    margin: 0 auto; }
-  .clientsBox .clientSlider .boxClients .content::after {
-    content: '';
-    display: block;
-    border-bottom: 1px solid #373737;
-    width: 90%;
-    margin: 0 auto; }
-  .clientsBox .clientSlider .boxClients .content:nth-child(4n+4) .imgBorder {
-    border-right: none; }
+  margin-top: 0px;
+  border: 1px solid #373737;
+  margin: 0px 60px 0px 0px;
+  padding: 10px 0px; }
+  .clientsBox .clientSlider .boxClients .content:nth-child(2) {
+    margin-top: 30px; }
+@media all and (max-width: 1600px) {
+  .clientsBox .clientSlider .boxClients .content {
+    margin: 0px 30px 0px 0px; }
+    .clientsBox .clientSlider .boxClients .content:nth-child(2) {
+      margin-top: 30px; } }
 @media all and (max-width: 1200px) {
   .clientsBox .clientSlider .boxClients img {
     width: 170px; } }
 @media all and (max-width: 920px) {
   .clientsBox .clientSlider .boxClients img {
     filter: grayscale(0%);
-    -webkit-filter: grayscale(0%);
-    width: 100px; }
-  .clientsBox .clientSlider .boxClients .imgBorder {
-    border-left: 1px solid #373737;
-    margin-left: -1px !important; } }
+    -webkit-filter: grayscale(0%); } }
 @media all and (max-width: 780px) {
-  .clientsBox .clientSlider .boxClients {
-    padding: 5px 0px; }
-    .clientsBox .clientSlider .boxClients .content {
-      margin: -1px 0px 0px 0px; } }
+  .clientsBox .clientSlider .boxClients .content {
+    margin: 0px 10px 0px 0px; }
+    .clientsBox .clientSlider .boxClients .content:nth-child(2) {
+      margin-top: 20px; } }
 .clientsBox .sliderArrow {
   position: absolute;
   right: 0;
@@ -3982,7 +3960,7 @@ h2 {
     margin-top: 150px; } }
 .testimonialsSec .testimonialsSlider {
   margin: 0 -70px; }
-  @media all and (max-width: 920px) {
+  @media all and (max-width: 575px) {
     .testimonialsSec .testimonialsSlider {
       margin: 0px; } }
   .testimonialsSec .testimonialsSlider .slick-slide {
@@ -4366,14 +4344,15 @@ h2 {
       display: none !important; } }
 
 .progress-container-mobile .progress-bar-mobile {
+  display: none;
   position: fixed;
   height: 2px;
   background: #fff;
   z-index: 999;
   left: 0; }
-  @media all and (min-width: 770px) {
+  @media all and (max-width: 920px) {
     .progress-container-mobile .progress-bar-mobile {
-      display: none !important; } }
+      display: block; } }
 
 .founder {
   margin: 110px 0px 150px 0px; }

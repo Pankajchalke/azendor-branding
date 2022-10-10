@@ -26,7 +26,7 @@ progress {
         margin-top: 60px !important;
     }
 
-    
+
 
 
 }
@@ -158,7 +158,8 @@ h2 {
             z-index: 9999;
             height: 100%;
             width: 100%;
-            top: 22px;
+            top: 50%;
+            transform: translateY(-50%);
             right: 0px;
             height: 24px;
             width: 24px;
@@ -311,12 +312,10 @@ h2 {
         @media (max-width: 920px) {
             display: block;
             position: relative;
+            padding: 15px 0px;
         }
 
-        @media (max-width: 770px) {
-            padding-top: 45px;
-            padding-bottom: 25px;
-        }
+        
 
         input[type="checkbox"],
         .hamburger-lines {
@@ -405,12 +404,6 @@ h2 {
         }
 
         .logo {
-            @media (max-width: 920px) {
-                position: absolute;
-                top: 15px;
-                left: 0px;
-
-            }
 
             img {
                 width: 430px;
@@ -529,6 +522,7 @@ h2 {
 }
 
 .progress-container {
+    display: block;
     position: fixed;
     right: 30px;
     top: 50%;
@@ -539,8 +533,8 @@ h2 {
     margin: auto;
     border: 1px solid rgba(106, 106, 106, 50%);
 
-    @media (max-width:770px) {
-        display: none !important;
+    @media (max-width:920px) {
+        display: none;
     }
 
     .progress-bar {
@@ -583,8 +577,9 @@ h2 {
 
 .section {
     margin-bottom: 30px;
+
     @media all and (max-width: 1050px) {
-       margin: 80px 0px;
+        margin: 80px 0px;
     }
 
     h2 {
@@ -602,7 +597,7 @@ h2 {
     a:focus {
         color: #fff;
     }
-    
+
 }
 
 
@@ -1242,7 +1237,7 @@ h2 {
             padding-right: 25px;
             border-top: 1px solid #6A6A6A;
             height: 280px;
-            overflow-x: auto;
+            overflow-y: auto;
 
             scrollbar-width: auto;
             scrollbar-color: #000;
@@ -1592,14 +1587,14 @@ h2 {
 
 
 .bannerSec {
-    @media all and (max-width:920px){
+    @media all and (max-width:920px) {
         margin-top: 150px;
     }
-   
+
 }
 
 .bannerSec1 {
-    @media all and (max-width:920px){
+    @media all and (max-width:920px) {
         margin-top: 150px;
     }
 
@@ -1621,7 +1616,7 @@ h2 {
 }
 
 .bannerSec2 {
-    @media all and (max-width:920px){
+    @media all and (max-width:920px) {
         margin-top: 150px;
     }
 
@@ -1633,7 +1628,7 @@ h2 {
 }
 
 .serviceSec {
-    @media all and (max-width:920px){
+    @media all and (max-width:920px) {
         margin-top: 150px;
     }
 
@@ -1880,9 +1875,10 @@ h2 {
 }
 
 .teamSection {
-    @media all and (max-width:920px){
+    @media all and (max-width:920px) {
         margin-top: 150px;
     }
+
     @media all and(max-width:920px) {
         margin-top: 150px;
     }
@@ -1910,7 +1906,7 @@ h2 {
                 right: 5px;
                 width: 100%;
                 z-index: 11;
-                background: linear-gradient(180deg, rgba(13, 13, 13, 0) 8.82%, rgba(33, 33, 33, 0.88) 45.31%, #212121 91.77%);
+                background: linear-gradient(180deg, rgba(13, 13, 13, 0) 8.82%, rgba(33, 33, 33, 0.7) 45.31%, #212121 91.77%);
 
                 img {
                     transition: 0.6s all;
@@ -1956,6 +1952,8 @@ h2 {
 
         @media all and (max-width: 1280px) {
             .teamMembers {
+                margin-bottom: 25px;
+
                 a {
                     padding: 40px 0px;
                 }
@@ -2007,26 +2005,29 @@ h2 {
 }
 
 .clientsBox {
-    @media all and (max-width:920px){
+    @media all and (max-width:920px) {
         margin-top: 150px;
     }
+
     ul {
         list-style: none;
-        @media all and (max-width:920px){
-            padding: 15px;
-        }
     }
 
     .clientSec {
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        margin-bottom: 60px;
+
+        h2 {
+            margin-bottom: 0px !important;
+        }
 
         .tabs {
             position: relative;
             display: flex;
             align-items: center;
             justify-content: space-between;
-            margin-bottom: 30px;
             width: 230px;
             border: 1px solid rgba(242, 242, 242, 0.2);
             border-radius: 60px;
@@ -2076,12 +2077,19 @@ h2 {
             }
         }
 
+        @media all and (max-width: 1600px) {
+            margin-bottom: 30px;
+        }
+
+        @media all and (max-width: 920px) {
+            margin-bottom: 60px;
+        }
+
         @media all and (max-width: 768px) {
-            padding-bottom: 30px;
+
 
             .tabs {
                 width: 150px;
-                margin-bottom: 0px;
 
                 a {
                     padding: 7px 0px;
@@ -2113,11 +2121,6 @@ h2 {
     .clientSlider {
 
         .boxClients {
-            .box {
-                background-position: 0 0, 0 0, 100% 0, 0 100%;
-                background-size: 3px 100%, 100% 3px, 3px 100%, 100% 3px;
-                background-repeat: no-repeat;
-            }
 
             img {
                 filter: grayscale(100%);
@@ -2137,35 +2140,73 @@ h2 {
 
             .content {
                 margin-top: 0px;
+                border: 1px solid #373737;
+                margin: 0px 60px 0px 0px;
+                padding: 10px 0px;
 
-                .imgBorder {
-                    margin: 15px 0px;
-                    border-right: 1px solid #373737;
+                &:nth-child(2) {
+                    margin-top: 30px;
                 }
 
-                &::before {
-                    content: '';
-                    display: block;
+                // .imgBorder {
+                //     margin: 15px 0px;
+                //     position: relative;
+                //     border-right: 1px solid #373737;
+                //     &::before{
+                //         content: '';
+                //         width: 1px;
+                //         height: 90%;
+                //         right: 0px;
+                //         top: 0;
+                //         margin: 1px;
+                //         background-color: #373737;
+                //         position: absolute;
+                //     }
+                //     &::after{
+                //         content: '';
+                //         width: 1px;
+                //         height: 90%;
+                //         left: 0px;
+                //         top: 0;
+                //         margin: -1px;
+                //         background-color: #373737;
+                //         position: absolute;
+                //     }
+                // }
 
-                    border-top: 1px solid #373737;
-                    width: 90%;
-                    margin: 0 auto;
-                }
+                // &::before {
+                //     content: '';
+                //     display: block;
 
-                &::after {
-                    content: '';
-                    display: block;
+                //     border-top: 1px solid #373737;
+                //     width: 90%;
+                //     margin: 0 auto;
+                // }
 
-                    border-bottom: 1px solid #373737;
-                    width: 90%;
-                    margin: 0 auto;
-                }
+                // &::after {
+                //     content: '';
+                //     display: block;
 
-                &:nth-child(4n+4) {
-                    .imgBorder {
-                        border-right: none;
-                    }
-                }
+                //     border-bottom: 1px solid #373737;
+                //     width: 90%;
+                //     margin: 0 auto;
+                // }
+
+                // &:nth-child(4n+4) {
+                //     .imgBorder {
+                //         border-right: none;
+                //     }
+                // }
+            }
+
+            @media all and (max-width:1600px) {
+                .content{
+                margin: 0px 30px 0px 0px;
+
+                &:nth-child(2) {
+                    margin-top: 30px;
+                }}
+
             }
 
             @media all and (max-width:1200px) {
@@ -2173,24 +2214,23 @@ h2 {
                     width: 170px;
                 }
             }
+
             @media all and (max-width:920px) {
                 img {
                     filter: grayscale(0%);
                     -webkit-filter: grayscale(0%);
-                    width: 100px;
-                }
-                .imgBorder{
-                    border-left: 1px solid #373737;
-                    margin-left: -1px !important;
                 }
             }
 
             @media all and (max-width:780px) {
-                padding: 5px 0px;
+                .content{
+                margin: 0px 10px 0px 0px;
 
-                .content {
-                    margin: -1px 0px 0px 0px;
+                &:nth-child(2) {
+                    margin-top: 20px;
                 }
+            }
+
             }
         }
     }
@@ -2246,13 +2286,14 @@ h2 {
 }
 
 .testimonialsSec {
-    @media all and (max-width:920px){
+    @media all and (max-width:920px) {
         margin-top: 150px;
     }
 
     .testimonialsSlider {
         margin: 0 -70px;
-        @media all and (max-width:920px){
+
+        @media all and (max-width:575px) {
             margin: 0px;
         }
 
@@ -2412,9 +2453,10 @@ h2 {
 }
 
 .caseStudies {
-    @media all and (max-width:920px){
+    @media all and (max-width:920px) {
         margin-top: 150px;
     }
+
     .boxcaseStudy {
 
         .contentThree {
@@ -2472,12 +2514,13 @@ h2 {
         }
     }
 
-    @media all and (max-width: 920px){
-        .boxcaseStudy .contentThree img{
+    @media all and (max-width: 920px) {
+        .boxcaseStudy .contentThree img {
             filter: grayscale(0%);
             -webkit-filter: grayscale(0%);
         }
     }
+
     @media all and (max-width: 780px) {
         .boxcaseStudy .contentThree {
             margin: 0px 10px 0px 0px;
@@ -2540,9 +2583,10 @@ h2 {
 
 .contactSec {
 
-    @media all and (max-width:920px){
+    @media all and (max-width:920px) {
         margin-top: 150px;
     }
+
     .contactBox {
         display: flex;
         justify-content: space-between;
@@ -2880,13 +2924,14 @@ h2 {
 
 
 .progress-container-mobile .progress-bar-mobile {
+    display: none;
     position: fixed;
     height: 2px;
     background: #fff;
     z-index: 999;
     left: 0;
 
-    @media all and (min-width: 770px) {
-        display: none !important;
+    @media all and (max-width: 920px) {
+        display: block;
     }
 }
