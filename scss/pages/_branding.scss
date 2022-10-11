@@ -1587,16 +1587,12 @@ h2 {
 .bannerSec {
     
     h1{
-        line-height: 126px;
+        line-height: 115px;
     }
-    @media all and (max-width: 1800px) {
-        h1 {
-            line-height: 116px;
-        }
-    }
+    
     @media all and (max-width: 1650px) {
         h1 {
-            line-height: 100px;
+            line-height: 95px;
         }
     }
     @media all and (max-width: 1450px) {
