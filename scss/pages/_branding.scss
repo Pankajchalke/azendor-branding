@@ -1585,8 +1585,50 @@ h2 {
 
 
 .bannerSec {
+    
+    h1{
+        line-height: 126px;
+    }
+    @media all and (max-width: 1800px) {
+        h1 {
+            line-height: 116px;
+        }
+    }
+    @media all and (max-width: 1650px) {
+        h1 {
+            line-height: 100px;
+        }
+    }
+    @media all and (max-width: 1450px) {
+       h1 {
+            line-height: 90px;
+        }
+    }
+    @media all and (max-width: 1367px) {
+        h1 {
+           line-height: 90px;
+        }
+    }
+    @media all and (max-width: 1250px) {
+        h1 {
+            line-height: 85px;
+        }
+    }
+    @media all and (max-width: 1090px) {
+        h1 {
+            line-height: 80px;
+        }
+    }
     @media all and (max-width:920px) {
         margin-top: 150px;
+        h1{
+            line-height: 70px;
+        }
+    }
+    @media all and (max-width: 650px) {
+        h1 {
+            line-height: 48px;
+        }
     }
 
 }

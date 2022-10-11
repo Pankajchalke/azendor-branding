@@ -471,6 +471,7 @@ body{
             text-decoration: none;
             transition: color 0.3s ease-in-out;
             cursor: pointer;
+            padding: 15px 0px;
 
 
             @media (max-width: 920px) {
@@ -1049,7 +1050,6 @@ body{
         h1 {
             width: 71%;
             line-height: 100px;
-            font-size: 90px;
         }
 
         h5 {
@@ -1059,10 +1059,9 @@ body{
     }
 
     @media all and (max-width: 1450px) {
-        margin: 160px 0px 70px 0px;
+        margin: 150px 0px 70px 0px;
 
         h1 {
-            font-size: 81px;
             line-height: 90px;
         }
 
@@ -1096,7 +1095,6 @@ body{
     @media all and (max-width: 1250px) {
         h1 {
             width: 73%;
-            font-size: 72px;
             line-height: 85px;
         }
 
@@ -1119,13 +1117,12 @@ body{
         }
     }
 
-    @media all and (max-width: 1090px) {
-        h1 {
-            width: 74%;
-            font-size: 62px;
-            line-height: 80px;
+        @media all and (max-width: 1090px) {
+            h1 {
+                width: 74%;
+                line-height: 80px;
+            }
         }
-    }
 
     @media all and (max-width: 1024px) {
         h1 {
@@ -1144,7 +1141,6 @@ body{
 
         h1 {
             width: 100%;
-            font-size: 52px;
             line-height: 70px;
         }
 
@@ -1155,8 +1151,6 @@ body{
 
     @media all and (max-width: 650px) {
         h1 {
-            line-height: 46px;
-            font-size: 39px;
             line-height: 48px;
         }
 
@@ -2238,27 +2232,12 @@ body{
 
 
 .contact {
-    margin: 110px 0px 150px 0px;
-
-    @media all and (max-width: 1650px) {
-        margin: 90px 0px 110px 0px;
-    }
-
-    @media all and (max-width: 1450px) {
-        margin: 100px 0px 70px 0px;
-    }
-
-    @media all and (max-width: 1170px) {
-        margin: 70px 0px 70px 0px;
-    }
-
-    @media all and (max-width: 920px) {
-        margin: 120px 0px 180px 0px;
-    }
-
-    @media all and (max-width: 550px) {
-        margin: 100px 0px 180px 0px;
-    }
+    margin:200px 0px 150px 0px;
+	@media all and (max-width: 1650px){margin: 180px 0px 110px 0px;}
+	@media all and (max-width: 1450px){margin:150px 0px 70px 0px;}
+	@media all and (max-width: 1170px){margin:140px 0px 70px 0px;}
+	@media all and (max-width: 920px){margin:100px 0px 180px 0px;}
+	@media all and (max-width: 550px){margin:80px 0px 180px 0px;}
 
     .contactBox {
         display: flex;

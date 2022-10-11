@@ -27,7 +27,7 @@
 		}
 
 		@media all and (max-width: 480px) {
-			align-items: self-start;
+			align-items: center;
 		}
 
 		.backArrow {
@@ -271,8 +271,7 @@
 		h3{font-size: 24px;}
 		h4 {font-size: 18px;}
 		p{font-size: 16px;}
-		
-		.subSectionTitle{padding-top: 10px;}
+	
 	}
 
 	@media all and (max-width: 675px){

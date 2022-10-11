@@ -16,13 +16,13 @@ body {
         width: 270px;
     }
 
-    @media (max-width:1920px){
+    @media (max-width:1600px){
         padding-top: 40px;
     }
 
 
     @media (max-width:1400px) {
-        padding-top: 30px;
+        padding-top: 33px;
         img{
             width: 200px;
         }
@@ -49,13 +49,14 @@ body {
 .landingPage {
     margin: 200px 0px 150px 0px;
     .pageHeading {
+
+        width: 94%;
         h1 {
-            width: 95%;
+            line-height: 126px;
         }
 
         p {
             margin-top: 30px;
-            width: 80%;
         }
     }
 
@@ -66,25 +67,34 @@ body {
 
         a {
             text-decoration: none;
-            color: #212121;
+            color: #fff;
             border: 2.5px solid #212121;
             padding: 12px 30px;
             display: flex;
             align-items: center;
             transition: 0.2s all ease-in-out;
+            background-color: #212121;
 
             img {
                 height: 10px;
                 width: 35px;
                 opacity: 1;
-                margin-left: 0px;
+                transition: 0.6s all;
+                margin-left: 10px;
+            }
+
+
+            &:hover {
+                img {
+                    transform: translateX(10px);
+                }
             }
 
             &:visited,
             &:active,
             &:focus {
                 text-decoration: none;
-                color: #212121;
+                color: #fff;
             }
 
 
@@ -96,70 +106,54 @@ body {
 
     @media all and (max-width: 1800px) {
         .pageHeading {
-            h1 {
-                width: 86%;
-            }
-
-            p {
-                width: 80%;
-            }
+           width: 90%;
         }
     }
 
-    @media all and (max-width: 1650px) {
+    @media all and (max-width: 1600px) {
         margin: 180px 0px 110px 0px;
         .homepageCta {
             margin-top: 40px;
         }
 
         .pageHeading {
+            width: 80%;
             h1 {
-                width: 91%;
-            }
-
-            p {
-                width: 84%;
+                line-height: 100px;
             }
         }
     }
 
-    @media all and (max-width: 1600px) {
-        .pageHeading {
-            h1 {
-                width: 80%;
-            }
-
-            p {
-                width: 80%;
-            }
-        }
-    }
+   
 
     @media all and (max-width: 1450px) {
-        margin: 160px 0px 70px 0px;
+        margin: 150px 0px 70px 0px;
         p {
             margin-top: 15px;
         }
 
         .pageHeading {
+            width: 76%;
             h1 {
-                width: 88%;
-            }
-
-            p {
-                width: 90%;
+                line-height: 90px;
             }
         }
     }
 
-    @media all and (max-width: 1280px) {
+    @media all and (max-width: 1367px) {
         .pageHeading {
+            width: 81%;
             h1 {
-                width: 100%;
+                line-height: 90px;
             }
+        }
+    }
 
-            p {
-                width: 95%;
+    @media all and (max-width: 1290px) {
+        .pageHeading {
+            width: 88%;
+            h1 {
+                line-height: 85px;
             }
         }
     }
@@ -167,34 +161,37 @@ body {
     @media all and (max-width:1170px) {
         margin: 140px 0px 70px 0px;
     }
-    @media all and (max-width: 1050px) {
+    @media all and (max-width: 1090px) {
        .homepageCta {
             margin-top: 25px;
         }
 
         .pageHeading {
+            width: 92%;
             h1 {
-                width: 90%;
+                line-height: 80px;
             }
         }
     }
-    
-    @media all and (max-width:1170px) {
+    @media all and (max-width: 920px) {
         margin: 100px 0px 180px 0px;
+
+        .pageHeading {
+            width: 100%;
+            h1 {
+                line-height: 70px;
+            }
+        }
     }
+
+   
 
     @media all and (max-width:680px) {
         .pageHeading {
             h1 {
-                width: 100%;
-            }
-
-            p {
-                width: 100%;
+                line-height: 48px;
             }
         }
-
-        ;
 
         .homepageCta {
             display: flex;
@@ -212,7 +209,8 @@ body {
         }
     }
 
-    @media all and (max-width:1170px) {
+    @media all and (max-width: 550px) {
         margin: 80px 0px 180px 0px;
     }
+    
 }
