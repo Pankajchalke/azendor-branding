@@ -4575,7 +4575,7 @@ h2 {
     @media all and (max-width: 920px) {
       .contact .contactDesc .contactDescTitle {
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         border-bottom: 0.75px solid rgba(33, 33, 33, 0.6); } }
     .contact .contactDesc .contactDescTitle .backArrow {
       display: none; }
@@ -5714,7 +5714,7 @@ footer .footerSec .footerSub .quickLinksft {
       border-bottom: 0.75px solid rgba(33, 33, 33, 0.6); } }
   @media all and (max-width: 480px) {
     .generalCounsel .subpageContent .sectionTitle {
-      align-items: self-start; } }
+      align-items: center; } }
   .generalCounsel .subpageContent .sectionTitle .backArrow {
     display: none; }
     @media all and (max-width: 920px) {
@@ -5803,7 +5803,7 @@ footer .footerSec .footerSub .quickLinksft {
       border-bottom: 0.75px solid rgba(33, 33, 33, 0.6); } }
   @media all and (max-width: 480px) {
     .legalAudit .subpageContent .sectionTitle {
-      align-items: self-start; } }
+      align-items: center; } }
   .legalAudit .subpageContent .sectionTitle .backArrow {
     display: none; }
     @media all and (max-width: 920px) {
@@ -6034,7 +6034,7 @@ footer .footerSec .footerSub .quickLinksft {
       border-bottom: 0.75px solid rgba(33, 33, 33, 0.6); } }
   @media all and (max-width: 480px) {
     .subSectors .subpageContent .sectionTitle {
-      align-items: self-start; } }
+      align-items: center; } }
   .subSectors .subpageContent .sectionTitle .backArrow {
     display: none; }
     @media all and (max-width: 920px) {
