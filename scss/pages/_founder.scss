@@ -15,28 +15,25 @@
 				@media all and (max-width: 920px){margin-right:20px; width: 23px;height: 12px;}
 				}
 		}
-		h1{margin-bottom:60px;
-			@media all and (max-width: 1400px){margin-bottom:40px;}
-			@media all and (max-width: 920px){margin-bottom:0px;}
-			}
+		h1{margin-bottom:10px;
+			@media all and (max-width: 920px){margin-bottom: 0px;}}
 	}
 	.founderBox{
 		display:flex;
+		justify-content: space-between;
 			@media all and (max-width: 920px){display:block;}
 		.profile{
-			width:40%;
+			width:35%;
 				@media all and (max-width: 1400px){width:35%;}
 				@media all and (max-width: 920px){width:100%; margin: 20px 0px 30px;}
 			img{width:100%; }
 		}
 		.founderDesc{
 			width:60%;
-			margin-left: 80px;
-				@media all and (max-width: 1400px){width:55%;margin-left: 55px;}
-				@media all and (max-width: 920px){width:100%; margin-left: 0px;}
-			.founderDescName{display: flex; align-items: baseline;
-				@media all and (max-width: 1400px){align-items: baseline;}
-				@media all and (max-width: 920px){align-items: end;}
+			
+				@media all and (max-width: 1400px){width:60%;}
+				@media all and (max-width: 920px){width:100%;}
+			.founderDescName{display: flex; align-items: center;
 				h3{
 					@media all and (max-width: 920px){font-size:24px;}
 				}
@@ -54,7 +51,7 @@
 				@media all and (max-width: 1400px){font-size:16px;}
 				@media all and (max-width: 920px){font-size:14px;}
 				}
-			.details{display:flex; padding: 25px 0px 40px;
+			.details{display:flex; padding: 25px 0px 40px;align-items: center;justify-content: start;
 				@media all and (max-width: 1400px){padding: 20px 0px 30px;}
 				@media all and (max-width: 1080px){padding: 5px 0px 25px;}
 				@media all and (max-width: 920px){flex-wrap: wrap; padding: 20px 0px 30px;}
@@ -62,8 +59,12 @@
 					img{margin-right:15px;}
 				}
 				a{text-decoration: none;
-					img{position: relative; top: 12px;margin-right: 15px;
+					display: flex;
+					align-items: center;
+					img{margin-right: 15px;
 						@media all and (max-width: 1400px){margin-right: 10px;}
+						@media all and (max-width: 1024px){margin-right: 4px;}
+						@media all and (max-width: 920px){margin-right: 15px;}
 					}
 					&:first-child {width:40%;
 						@media all and (max-width: 1400px){width:35%;}
