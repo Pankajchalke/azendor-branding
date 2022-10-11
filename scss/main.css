@@ -450,7 +450,7 @@ body {
   scrollbar-color: #fff;
   /* Chrome, Edge, and Safari */ }
   body::-webkit-scrollbar {
-    width: 3px; }
+    width: 7px; }
   body::-webkit-scrollbar-track {
     background: #fff; }
   body::-webkit-scrollbar-thumb {
