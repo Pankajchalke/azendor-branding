@@ -940,12 +940,12 @@ body {
         .headerLegal .header-container input[type="checkbox"]:checked ~ .overlay {
           transform: translateX(0); }
         .headerLegal .header-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
-          transform: rotate(50deg);
-          margin-top: 2px; }
+          transform: rotate(45deg);
+          margin-top: -2px; }
         .headerLegal .header-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
           transform: scaleY(0); }
         .headerLegal .header-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
-          transform: rotate(-50deg); } }
+          transform: rotate(-45deg); } }
     @media (max-width: 770px) {
       .headerLegal .header-container input[type="checkbox"] {
         height: 24px;
@@ -956,10 +956,10 @@ body {
     @media (max-width: 920px) {
       .headerLegal .header-container .hamburger-lines {
         display: block;
-        height: 24px;
-        width: 25px;
+        height: 17px;
+        width: 24px;
         position: absolute;
-        top: 20px;
+        top: 19px;
         right: 0px;
         z-index: 2;
         display: flex;
@@ -968,7 +968,7 @@ body {
     @media (max-width: 920px) {
       .headerLegal .header-container .hamburger-lines .line {
         display: block;
-        height: 4px;
+        height: 3px;
         width: 100%;
         border-radius: 4px;
         background: #212121; } }
@@ -1080,15 +1080,20 @@ body {
         margin-left: auto;
         background-color: #fff;
         height: 100%;
-        overflow: scroll; }
+        overflow: scroll;
+        border-radius: 0px; }
         .headerLegal .overlay .menu-items p {
-          font-size: 20px; }
-        .headerLegal .overlay .menu-items li .contact {
           font-size: 20px;
-          color: #212121 !important;
-          background: transparent;
-          padding: 0;
-          border: none; }
+          padding: 0px; }
+        .headerLegal .overlay .menu-items li {
+          margin: 0px !important;
+          padding: 20px 0px; }
+          .headerLegal .overlay .menu-items li .contact {
+            font-size: 20px;
+            color: #212121 !important;
+            background: transparent;
+            padding: 0;
+            border: none; }
         .headerLegal .overlay .menu-items .dropdownSolution .drop, .headerLegal .overlay .menu-items .dropdownSector .drop, .headerLegal .overlay .menu-items .dropdownAbout .drop {
           position: relative;
           top: 0;
