@@ -333,7 +333,7 @@ body {
   display: block;
   background-color: #fff; }
   .mainHeader img {
-    width: 270px; }
+    width: 109px; }
   @media (max-width: 1600px) {
     .mainHeader {
       padding-top: 40px; } }
@@ -341,17 +341,17 @@ body {
     .mainHeader {
       padding-top: 33px; }
       .mainHeader img {
-        width: 200px; } }
+        width: 81px; } }
   @media (max-width: 920px) {
     .mainHeader {
       padding-top: 15px;
       padding-bottom: 15px; } }
   @media (max-width: 770px) {
     .mainHeader img {
-      width: 160px; } }
+      width: 65px; } }
   @media (max-width: 360px) {
     .mainHeader img {
-      width: 130px; } }
+      width: 53px; } }
 
 .landingPage {
   margin: 200px 0px 150px 0px; }
@@ -2057,8 +2057,8 @@ body {
     .footerLegal .footerLinks .mobileCopy {
       display: flex;
       align-items: center; }
-      .footerLegal .footerLinks .copyRight img,
-      .footerLegal .footerLinks .mobileCopy img {
+      .footerLegal .footerLinks .copyRight span,
+      .footerLegal .footerLinks .mobileCopy span {
         margin-right: 10px; }
     @media all and (max-width: 1024px) {
       .footerLegal .footerLinks {
