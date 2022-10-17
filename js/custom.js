@@ -24,7 +24,7 @@ if ($("#fullpage").length) {
     scrollOverflow: true,
     licenseKey: "OPEN-SOURCE-GPLV3-LICENSE",
     scrollBar: true,
-    responsiveWidth: 920, 
+    responsiveWidth: 920,
     afterResponsive: function (isResponsive) { },
     afterLoad: function (anchorLink, index) {
       console.log(index);
@@ -672,7 +672,7 @@ if(window.location.hash){
   let hash = window.location.hash;
   if($(hash).length){
     $('html,body').animate({
-      scrollTop:$(hash).offset().top - 125
+      scrollTop:$(hash).offset().top - 120
     },200,'');
   }
 }

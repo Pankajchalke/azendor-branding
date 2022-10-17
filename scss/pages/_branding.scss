@@ -2654,10 +2654,7 @@ h2 {
 
             a {
                 text-decoration: none;
-                margin-top: 15px;
-                display: block;
             }
-
 
             .icon-1 {
                 border: 1px solid #fff;
@@ -2697,7 +2694,9 @@ h2 {
                         font-weight: normal !important;
                     }
 
-                    
+                    p {
+                        margin-top: 15px;
+                    }
                 }
             }
 
@@ -2718,7 +2717,7 @@ h2 {
 
             .contDec {
                 padding: 0px 50px;
-                a{margin-top: 10px;}
+
                 h4 {
                     padding: 22px 0px 22px 0px;
                 }
@@ -2743,7 +2742,9 @@ h2 {
                         font-size: 14px;
                     }
 
-                    
+                    p {
+                        margin-top: 10px;
+                    }
                 }
 
                 .mailDesc {

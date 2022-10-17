@@ -333,7 +333,7 @@ body {
   display: block;
   background-color: #fff; }
   .mainHeader img {
-    width: 109px; }
+    width: 110px; }
   @media (max-width: 1600px) {
     .mainHeader {
       padding-top: 40px; } }
@@ -879,9 +879,6 @@ body {
     color: #212121;
     text-decoration: none;
     outline: none; }
-    @media (max-width: 920px) {
-      .headerLegal .careerHeader {
-        font-size: 20px; } }
     .headerLegal .careerHeader:hover, .headerLegal .careerHeader:focus, .headerLegal .careerHeader:active {
       color: #212121;
       text-decoration: none;
@@ -936,16 +933,7 @@ body {
         right: 0px;
         z-index: 5;
         opacity: 0;
-        cursor: pointer; }
-        .headerLegal .header-container input[type="checkbox"]:checked ~ .overlay {
-          transform: translateX(0); }
-        .headerLegal .header-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
-          transform: rotate(45deg);
-          margin-top: -2px; }
-        .headerLegal .header-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
-          transform: scaleY(0); }
-        .headerLegal .header-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
-          transform: rotate(-45deg); } }
+        cursor: pointer; } }
     @media (max-width: 770px) {
       .headerLegal .header-container input[type="checkbox"] {
         height: 24px;
@@ -956,22 +944,26 @@ body {
     @media (max-width: 920px) {
       .headerLegal .header-container .hamburger-lines {
         display: block;
-        height: 17px;
-        width: 24px;
+        height: 28px;
+        width: 35px;
         position: absolute;
-        top: 19px;
+        top: 20px;
         right: 0px;
         z-index: 2;
         display: flex;
         flex-direction: column;
         justify-content: space-between; } }
+    @media (max-width: 770px) {
+      .headerLegal .header-container .hamburger-lines {
+        height: 24px;
+        width: 30px; } }
     @media (max-width: 920px) {
       .headerLegal .header-container .hamburger-lines .line {
         display: block;
-        height: 3px;
+        height: 4px;
         width: 100%;
         border-radius: 4px;
-        background: #212121; } }
+        background: #F2F2F2; } }
     @media (max-width: 920px) {
       .headerLegal .header-container .hamburger-lines .line1 {
         transform-origin: 0% 0%;
@@ -1056,60 +1048,6 @@ body {
         @media (max-width: 1600px) {
           .headerLegal .menu-items li .contact {
             padding: 8px 15px; } }
-  @media (max-width: 920px) {
-    .headerLegal .overlay {
-      height: 100%;
-      position: fixed;
-      right: 0;
-      top: 0;
-      width: 100%;
-      border-radius: 5px 0px 0px 5px;
-      transform: translate(150%);
-      transition: transform 0.5s ease-in-out;
-      overflow: scroll;
-      z-index: 1;
-      background-color: rgba(33, 33, 33, 0.7); }
-      .headerLegal .overlay .menu-items {
-        position: unset !important;
-        transform: translate(0%) !important;
-        display: block;
-        margin: 0;
-        padding-top: 100px;
-        padding-left: 20px;
-        width: 80%;
-        margin-left: auto;
-        background-color: #fff;
-        height: 100%;
-        overflow: scroll;
-        border-radius: 0px; }
-        .headerLegal .overlay .menu-items p {
-          font-size: 20px;
-          padding: 0px; }
-        .headerLegal .overlay .menu-items li {
-          margin: 0px !important;
-          padding: 20px 0px; }
-          .headerLegal .overlay .menu-items li .contact {
-            font-size: 20px;
-            color: #212121 !important;
-            background: transparent;
-            padding: 0;
-            border: none; }
-        .headerLegal .overlay .menu-items .dropdownSolution .drop, .headerLegal .overlay .menu-items .dropdownSector .drop, .headerLegal .overlay .menu-items .dropdownAbout .drop {
-          position: relative;
-          top: 0;
-          display: block; }
-        .headerLegal .overlay .menu-items .dropdownSolution .submenuSolution, .headerLegal .overlay .menu-items .dropdownSolution .submenuSector, .headerLegal .overlay .menu-items .dropdownSolution .submenuAbout, .headerLegal .overlay .menu-items .dropdownSector .submenuSolution, .headerLegal .overlay .menu-items .dropdownSector .submenuSector, .headerLegal .overlay .menu-items .dropdownSector .submenuAbout, .headerLegal .overlay .menu-items .dropdownAbout .submenuSolution, .headerLegal .overlay .menu-items .dropdownAbout .submenuSector, .headerLegal .overlay .menu-items .dropdownAbout .submenuAbout {
-          position: unset;
-          overflow: hidden;
-          border: transparent !important;
-          width: 100%;
-          padding: 0px 10px !important; }
-          .headerLegal .overlay .menu-items .dropdownSolution .submenuSolution li, .headerLegal .overlay .menu-items .dropdownSolution .submenuSector li, .headerLegal .overlay .menu-items .dropdownSolution .submenuAbout li, .headerLegal .overlay .menu-items .dropdownSector .submenuSolution li, .headerLegal .overlay .menu-items .dropdownSector .submenuSector li, .headerLegal .overlay .menu-items .dropdownSector .submenuAbout li, .headerLegal .overlay .menu-items .dropdownAbout .submenuSolution li, .headerLegal .overlay .menu-items .dropdownAbout .submenuSector li, .headerLegal .overlay .menu-items .dropdownAbout .submenuAbout li {
-            margin-bottom: 0px;
-            padding: 5px 0px !important; }
-            .headerLegal .overlay .menu-items .dropdownSolution .submenuSolution li a, .headerLegal .overlay .menu-items .dropdownSolution .submenuSector li a, .headerLegal .overlay .menu-items .dropdownSolution .submenuAbout li a, .headerLegal .overlay .menu-items .dropdownSector .submenuSolution li a, .headerLegal .overlay .menu-items .dropdownSector .submenuSector li a, .headerLegal .overlay .menu-items .dropdownSector .submenuAbout li a, .headerLegal .overlay .menu-items .dropdownAbout .submenuSolution li a, .headerLegal .overlay .menu-items .dropdownAbout .submenuSector li a, .headerLegal .overlay .menu-items .dropdownAbout .submenuAbout li a {
-              font-size: 16px !important;
-              color: #212121 !important; } }
 
 .progressbarLegaldesk .progress-container {
   display: block;
@@ -2056,17 +1994,20 @@ body {
         color: #ffffff; }
       .footerLegal .footerLinks .linksFt a:nth-child(1) {
         margin-right: 50px; }
-    .footerLegal .footerLinks .copyRight {
+    .footerLegal .footerLinks .copyrightmbl {
+      display: none; }
+    .footerLegal .footerLinks .copyRight,
+    .footerLegal .footerLinks .mobileCopy {
       display: flex;
       align-items: center; }
-      .footerLegal .footerLinks .copyRight br {
-        display: none; }
-      .footerLegal .footerLinks .copyRight span {
+      .footerLegal .footerLinks .copyRight span,
+      .footerLegal .footerLinks .mobileCopy span {
         margin-right: 10px; }
     @media all and (max-width: 1024px) {
       .footerLegal .footerLinks {
         display: block; }
-        .footerLegal .footerLinks .copyRight {
+        .footerLegal .footerLinks .copyRight,
+        .footerLegal .footerLinks .mobileCopy {
           margin-top: 20px; }
         .footerLegal .footerLinks .linksFt a:nth-child(1) {
           margin-right: 30px; } }
@@ -2123,7 +2064,7 @@ body {
       width: 12%; }
     .footerLegal .footerSec .footerSub .subSector .sectorftSub ul li {
       width: 48%; } }
-  @media all and (max-width: 920px) {
+  @media all and (max-width: 900px) {
     .footerLegal .footerSec {
       display: block;
       padding: 30px 0px 0px 0px; }
@@ -2173,12 +2114,15 @@ body {
               margin-right: 0px; }
             .footerLegal .footerSec .socialmediaIcons-btm ul li img {
               width: 35px;
-              height: 35px; }
-    .footerLegal .footerLinks .copyRight br {
-      display: block; } }
+              height: 35px; } }
   @media all and (max-width: 575px) {
+    .footerLegal .footerLinks .copyRight,
+    .footerLegal .footerLinks .mobileCopy {
+      align-items: flex-start; }
+    .footerLegal .footerLinks .copyrightmbl {
+      display: block; }
     .footerLegal .footerLinks .copyRight {
-      align-items: flex-start; } }
+      display: none; } }
 
 .topbtnLeagl #myBtn {
   box-sizing: border-box;
@@ -3794,9 +3738,7 @@ h2 {
     .contactSec .contactBox .contDec .mailDesc {
       margin-bottom: 80px; }
     .contactSec .contactBox .contDec a {
-      text-decoration: none;
-      margin-top: 15px;
-      display: block; }
+      text-decoration: none; }
     .contactSec .contactBox .contDec .icon-1 {
       border: 1px solid #fff;
       border-radius: 50%;
@@ -3826,6 +3768,8 @@ h2 {
           font-size: 18px;
           padding-top: 5px;
           font-weight: normal !important; }
+        .contactSec .contactBox .contDec ol li p {
+          margin-top: 15px; }
   @media all and (max-width: 1800px) {
     .contactSec .contactBox .contDec {
       padding: 0px 70px; } }
@@ -3834,8 +3778,6 @@ h2 {
       padding: 40px 0px; }
       .contactSec .contactBox .contDec {
         padding: 0px 50px; }
-        .contactSec .contactBox .contDec a {
-          margin-top: 10px; }
         .contactSec .contactBox .contDec h4 {
           padding: 22px 0px 22px 0px; }
         .contactSec .contactBox .contDec .icon-1 {
@@ -3851,6 +3793,8 @@ h2 {
             width: 28px;
             height: 28px;
             font-size: 14px; }
+          .contactSec .contactBox .contDec ol li p {
+            margin-top: 10px; }
         .contactSec .contactBox .contDec .mailDesc {
           margin-bottom: 50px; } }
   @media all and (max-width: 1440px) {
@@ -5747,9 +5691,7 @@ footer .footerSec .footerSub .quickLinksft {
     font-size: 22px;
     font-weight: 400;
     font-family: 'Poppins', sans-serif;
-    color: #212121;
-    margin-bottom: 15px;
-    line-height: 30px; }
+    color: #212121; }
   .subpageContent ul {
     margin-left: 22px; }
     .subpageContent ul li {
