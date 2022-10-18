@@ -37,15 +37,6 @@
 				h3{
 					@media all and (max-width: 920px){font-size:24px;}
 				}
-				a{margin-left: 45px;
-					@media all and (max-width: 1400px){margin-left: 32px;}
-					@media all and (max-width: 920px){margin-left: 15px;}
-					img{margin-top: 15px;
-						@media all and (max-width: 1400px){width:25px;}
-						@media all and (max-width: 920px){width:24px;}
-					}
-				}
-
 			}
 			p{
 				@media all and (max-width: 1400px){font-size:16px;}
@@ -85,6 +76,13 @@
 			#readMore{display:none;
 				@media all and (max-width: 920px){font-size:16px; display: inline-block; transition: 0.6s all;}
 				img{width:18px; height:10px; transition: 0.6s all;}
+			}
+			.linkedinFounder{
+				display: block;
+				margin-top: 20px;
+				img{
+					@media all and (max-width: 1400px){width:25px;}
+				}
 			}
 		}
 	}
