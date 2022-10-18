@@ -4754,7 +4754,7 @@ footer .footerSec .footerSub .quickLinksft {
         .legalAdvisory .legalAdvisorySection .legalAdvisorySectionBox a:hover {
           border: 1px solid #212121;
           transition: 0.6s all;
-          color: #212121 !important; }
+          color: #6A6A6A !important; }
           .legalAdvisory .legalAdvisorySection .legalAdvisorySectionBox a:hover .img2 {
             transform: translateX(10px); }
         @media all and (max-width: 1400px) {
@@ -5128,7 +5128,7 @@ footer .footerSec .footerSub .quickLinksft {
         .digitalTransformation .digitalTransformationSection .digitalTransformationSectionBox a:hover {
           border: 1px solid #212121;
           transition: 0.6s all;
-          color: #212121 !important; }
+          color: #6A6A6A !important; }
           .digitalTransformation .digitalTransformationSection .digitalTransformationSectionBox a:hover .img2 {
             transform: translateX(10px); }
         @media all and (max-width: 1400px) {
