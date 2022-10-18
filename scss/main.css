@@ -1049,6 +1049,94 @@ body {
           .headerLegal .menu-items li .contact {
             padding: 8px 15px; } }
 
+  @media (max-width: 920px) {
+    .headerLegal .overlay {
+      height: 100%;
+      position: fixed;
+      right: 0;
+      top: 0;
+      width: 100%;
+      border-radius: 5px 0px 0px 5px;
+      transform: translate(150%);
+      transition: transform 0.5s ease-in-out;
+      overflow: scroll;
+      z-index: 1;
+      background-color: rgba(33, 33, 33, 0.7); }
+      .headerLegal .overlay .menu-items {
+        position: unset !important;
+        transform: translate(0%) !important;
+        display: block;
+        margin: 0;
+        padding-top: 100px;
+        padding-left: 20px;
+        width: 80%;
+        margin-left: auto;
+        background-color: #fff;
+        height: 100%;
+        overflow: scroll;
+        border-radius: 0px; }
+        .headerLegal .overlay .menu-items p {
+          font-size: 20px;
+          padding: 0px; }
+          .headerLegal .overlay .menu-items p:active {
+            color: #212121 !important;
+            transition: all 0.35s ease;
+            text-decoration: none; }
+            .headerLegal .overlay .menu-items p:active:after {
+              position: absolute;
+              content: "";
+              left: 0;
+              bottom: -4px;
+              width: 100%;
+              height: 2px;
+              border: none;
+              outline: none;
+              background: #fff; }
+        .headerLegal .overlay .menu-items li {
+          margin: 0px !important;
+          padding: 20px 0px; }
+          .headerLegal .overlay .menu-items li .downcaretsolution, .headerLegal .overlay .menu-items li .downcaretsector, .headerLegal .overlay .menu-items li .downcaretabout {
+            width: 12px;
+            height: 8px;
+            background-image: url(../images/down-arrow.svg);
+            background-repeat: no-repeat;
+            display: inline-block;
+            margin-left: 13px;
+            top: 1px;
+            position: relative;
+            transition: all .25s ease;
+            background-size: 9px; }
+          .headerLegal .overlay .menu-items li span {
+            display: block;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.5); }
+          .headerLegal .overlay .menu-items li .open-caret {
+            transform: rotate(180deg); }
+          .headerLegal .overlay .menu-items li .contact {
+            font-size: 20px;
+            color: #212121 !important;
+            background: transparent;
+            padding: 0;
+            border: none; }
+        .headerLegal .overlay .menu-items .dropdownSolution .drop, .headerLegal .overlay .menu-items .dropdownSector .drop, .headerLegal .overlay .menu-items .dropdownAbout .drop {
+          position: relative;
+          top: 0;
+          display: block; }
+        .headerLegal .overlay .menu-items .dropdownSolution .submenuSolution, .headerLegal .overlay .menu-items .dropdownSolution .submenuSector, .headerLegal .overlay .menu-items .dropdownSolution .submenuAbout, .headerLegal .overlay .menu-items .dropdownSector .submenuSolution, .headerLegal .overlay .menu-items .dropdownSector .submenuSector, .headerLegal .overlay .menu-items .dropdownSector .submenuAbout, .headerLegal .overlay .menu-items .dropdownAbout .submenuSolution, .headerLegal .overlay .menu-items .dropdownAbout .submenuSector, .headerLegal .overlay .menu-items .dropdownAbout .submenuAbout {
+          position: unset;
+          overflow: hidden;
+          border: transparent !important;
+          width: 100%;
+          padding: 0px 10px !important;
+          margin-top: 20px; }
+          .headerLegal .overlay .menu-items .dropdownSolution .submenuSolution li, .headerLegal .overlay .menu-items .dropdownSolution .submenuSector li, .headerLegal .overlay .menu-items .dropdownSolution .submenuAbout li, .headerLegal .overlay .menu-items .dropdownSector .submenuSolution li, .headerLegal .overlay .menu-items .dropdownSector .submenuSector li, .headerLegal .overlay .menu-items .dropdownSector .submenuAbout li, .headerLegal .overlay .menu-items .dropdownAbout .submenuSolution li, .headerLegal .overlay .menu-items .dropdownAbout .submenuSector li, .headerLegal .overlay .menu-items .dropdownAbout .submenuAbout li {
+            margin-bottom: 0px;
+            padding: 3px 0px !important; }
+            .headerLegal .overlay .menu-items .dropdownSolution .submenuSolution li a, .headerLegal .overlay .menu-items .dropdownSolution .submenuSector li a, .headerLegal .overlay .menu-items .dropdownSolution .submenuAbout li a, .headerLegal .overlay .menu-items .dropdownSector .submenuSolution li a, .headerLegal .overlay .menu-items .dropdownSector .submenuSector li a, .headerLegal .overlay .menu-items .dropdownSector .submenuAbout li a, .headerLegal .overlay .menu-items .dropdownAbout .submenuSolution li a, .headerLegal .overlay .menu-items .dropdownAbout .submenuSector li a, .headerLegal .overlay .menu-items .dropdownAbout .submenuAbout li a {
+              font-size: 16px !important;
+              color: #212121 !important; } }
+
+
 .progressbarLegaldesk .progress-container {
   display: block;
   position: fixed;

@@ -778,6 +778,101 @@ body {
 
         }
     }
+
+
+    .overlay{
+        @media (max-width: 920px) {
+        height: 100%;
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 100%;
+        border-radius: 5px 0px 0px 5px;
+        transform: translate(150%);
+        transition: transform 0.5s ease-in-out;
+        overflow: scroll;
+        z-index: 1;
+        background-color: rgba(33, 33, 33, 0.7);
+
+        .menu-items{
+            position: unset !important;
+            transform: translate(0%) !important;
+            display: block;
+            margin: 0;
+            padding-top: 100px;
+            padding-left: 20px;
+            width: 80%;
+            margin-left: auto;
+            background-color: #fff;
+            height: 100%;
+            overflow: scroll;
+            border-radius: 0px;
+            p{font-size: 20px; padding:0px;
+                &:active{
+                    color: #212121 !important;
+                    transition: all 0.35s ease;
+                    text-decoration: none;  
+                    &:after{
+                        position: absolute;
+                        content: "";
+                        left: 0;
+                        bottom: -4px;
+                        width: 100%;
+                        height: 2px;
+                        border: none;
+                        outline: none;
+                        background: #fff;
+                        }
+                    }
+                }
+            li{
+                margin:0px !important;padding: 20px 0px;
+                .downcaretsolution, .downcaretsector, .downcaretabout{
+                    width: 12px;
+                    height: 8px;
+                    background-image: url(../images/down-arrow.svg);
+                    background-repeat: no-repeat;
+                    display: inline-block;
+                    margin-left: 13px;
+                    top: 1px;
+                    position: relative;
+                    transition: all .25s ease;
+                    background-size: 9px;
+                }
+                span{
+                    display: block;
+                    font-size: 14px;
+                    color: rgba(255, 255, 255, 0.5);
+                    }
+                .open-caret{transform: rotate(180deg);}
+            .contact{font-size: 20px;
+                color: #212121 !important;
+                background: transparent;
+                padding: 0;
+                border: none;}
+            }
+            
+            .dropdownSolution, .dropdownSector, .dropdownAbout{
+                .drop{position: relative;
+                     top: 0; 
+                    display: block;}
+                    .submenuSolution, .submenuSector, .submenuAbout{
+                        position: unset;
+                        overflow: hidden;
+                        border: transparent !important;
+                        width: 100%; 
+                        padding: 0px 10px !important;
+                        margin-top:20px;
+                        li{
+                            margin-bottom: 0px; padding: 3px 0px !important;
+                            a{font-size: 16px !important;color: #212121 !important;}
+                            }
+                    }
+                }
+            }
+        }
+    }
+
 }
 
 
