@@ -1040,6 +1040,9 @@ body {
         //margin: -8% auto 0;
         .memberImg {
             width: 80px;
+            img{
+                border-radius: 50%;
+            }
         }
 
         .teamDesc {

@@ -1262,6 +1262,8 @@ body {
       width: 100%; }
       .modal.in .modal-dialog-legal .memberImg {
         width: 80px; }
+        .modal.in .modal-dialog-legal .memberImg img {
+          border-radius: 50%; }
       .modal.in .modal-dialog-legal .teamDesc {
         width: 70%;
         padding: 20px 10px !important; } }
