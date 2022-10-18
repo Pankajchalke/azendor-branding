@@ -79,6 +79,7 @@
 }
 .nav-links .mainLink:hover .downcaretsolutionnew{transform: rotate(180deg);}
 .nav-links .mainLink .clicked{transform: rotate(180deg);}
+.nav-links .mainLink .fontWeight{font-weight: 600;}
 .downcaretsolutionnew{
     width: 12px;
     height: 8px;
@@ -150,55 +151,7 @@
 
 }
 .drop-menu li a:hover{font-weight: 600; color: #000;}
-/*
-.mega-box{
-  position: absolute;
-  left: 0;
-  width: 100%;
-  padding: 0 30px;
-  top: 85px;
-  opacity: 0;
-  visibility: hidden;
-}
-.mega-box .content{
-  background: #242526;
-  padding: 25px 20px;
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  box-shadow: 0 6px 10px rgba(0,0,0,0.15);
-}
-.mega-box .content .row{
-  width: calc(25% - 30px);
-  line-height: 45px;
-}*/
-/*.content .row img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.content .row header{
-  color: #f2f2f2;
-  font-size: 20px;
-  font-weight: 500;
-}
-.content .row .mega-links{
-  margin-left: -40px;
-  border-left: 1px solid rgba(255,255,255,0.09);
-}
-.row .mega-links li{
-  padding: 0 20px;
-}
-.row .mega-links li a{
-  padding: 0px;
-  padding: 0 20px;
-  color: #d9d9d9;
-  font-size: 17px;
-  display: block;
-}
-.row .mega-links li a:hover{
-  color: #f2f2f2;
-}*/
+
 .headerContainer .btn{
   color: #212121;
   font-size: 25px;
@@ -214,15 +167,20 @@
   padding: 0;
   line-height: 0;
 }
+.legalHeaderNew input{
+  display: none;
+}
 
 @media screen and (max-width: 1600px) {
   .legalHeaderNew .headerContainer{padding-top: 40px;}
+  .nav-links .mainLink .aboutDropMenu{width: 180px !important;}
   .nav-links .mainLink .contact{padding: 8px 15px;margin: 5px auto;}
 }
 @media screen and (max-width: 1400px) {
   .legalHeaderNew .headerContainer{padding-top: 30px;}
   .headerContainer .logo img{width: 200px;}
   .nav-links .drop-menu{width: 180px;}
+  .nav-links .mainLink .aboutDropMenu{width: 152px !important;}
   .drop-menu li a{
     padding: 7px 0px 7px 12px;
     font-size: 13px;
@@ -258,12 +216,11 @@
     right: 0;
     background: #fff;
     display: block;
-    line-height: 50px;
     padding-top: 100px;
     padding-left: 20px;
     transition: all 0.3s ease;
   }
-  .nav-links .mainLink{margin-left: 0px;padding: 10px 0px;}
+  .nav-links .mainLink{margin-left: 0px;padding: 20px 0px;}
 
   /* custom scroll bar */
   ::-webkit-scrollbar {
@@ -306,11 +263,12 @@
     box-shadow: none;
     transition: all 0.3s ease;
     border: 0;
-    padding: 0px 10px;
+    padding-left:15px;
+    
   }
-  #showDrop:checked ~ .drop-menu, #showDropnew:checked ~ .drop-menu, #showDropnew1:checked ~ .drop-menu,
-  #showMega:checked ~ .mega-box{
+  #showDrop:checked ~ .drop-menu, #showDropnew:checked ~ .drop-menu, #showDropnew1:checked ~ .drop-menu,#showMega:checked ~ .mega-box{
     max-height: 100%;
+    margin-top: 20px;
   }
   .legalOverlay .nav-links .desktop-item{
     display: none;
@@ -321,6 +279,7 @@
     padding: 0px;
     cursor: pointer;
     transition: all 0.3s ease;
+    margin-bottom: 0px;
 
   }
   .legalOverlay .nav-links .mobile-item:hover{
@@ -328,6 +287,7 @@
   }
   .drop-menu li{
     margin: 0;
+    padding: 10px 0px !important;
   }
   .drop-menu li a{
     padding: 0px;
@@ -348,44 +308,9 @@
     margin: 0 !important;
     border: none;
   }
-  /*.mega-box{
-    position: static;
-    top: 65px;
-    opacity: 1;
-    visibility: visible;
-    padding: 0 20px;
-    max-height: 0px;
-    overflow: hidden;
-    transition: all 0.3s ease;
-  }
-  .mega-box .content{
-    box-shadow: none;
-    flex-direction: column;
-    padding: 20px 20px 0 20px;
-  }
-  .mega-box .content .row{
-    width: 100%;
-    margin-bottom: 15px;
-    border-top: 1px solid rgba(255,255,255,0.08);
-  }
-  .mega-box .content .row:nth-child(1),
-  .mega-box .content .row:nth-child(2){
-    border-top: 0px;
-  }
-  .content .row .mega-links{
-    border-left: 0px;
-    padding-left: 15px;
-  }
-  .row .mega-links li{
-    margin: 0;
-  }*/
-  /*.content .row header{
-    font-size: 19px;
-  }*/
+  
 }
-.legalHeaderNew input{
-  display: none;
-}
+
 
     </style>
 
@@ -420,7 +345,7 @@
       <li class="mainLink">
         <a href="#" class="desktop-item desktopLink fontPoppins font18 colorBlack fontW400">Solutions<span class="downcaretsolutionnew"></span></a>
         <input type="checkbox" id="showDrop">
-        <label for="showDrop" class="mobile-item fontPoppins font18 colorBlack fontW400">Solutions <span class="downcaretsolutionnewmbl"></span></label>
+        <label for="showDrop" class="mobile-item solutionDrop is-active fontPoppins font18 colorBlack fontW400">Solutions <span class="downcaretsolutionnewmbl"></span></label>
         <ul class="drop-menu">
           <li><a href="https://ixdtm.com/projects/azendor_branding/general-counsel.html"
               class="fontPoppins fontW400 font18">General Counsel</a>
@@ -434,9 +359,9 @@
         </ul>
       </li>
       <li class="mainLink">
-        <a href="#" class="desktop-item desktopLink fontPoppins font18 colorBlack fontW400">Sector<span class="downcaretsolutionnew"></span><span class="downcaretsolution"></span></a>
+        <a href="#" class="desktop-item desktopLink fontPoppins font18 colorBlack fontW400">Sectors<span class="downcaretsolutionnew"></span><span class="downcaretsolution"></span></a>
         <input type="checkbox" id="showDropnew">
-        <label for="showDropnew" class="mobile-item fontPoppins font18 colorBlack fontW400">Sector<span class="downcaretsolutionnewmbl1"></span></label>
+        <label for="showDropnew" class="mobile-item sectorDrop fontPoppins font18 colorBlack fontW400">Sectors<span class="downcaretsolutionnewmbl1"></span></label>
         <ul class="drop-menu">
           <li><a href="https://ixdtm.com/projects/azendor_branding/television.html"
               class="fontPoppins fontW400 font18">Television</a></li>
@@ -489,12 +414,12 @@
             </li>
         </ul>
       </li>
-      <li class="mainLink"><a href="https://ixdtm.com/projects/azendor_branding/careers.html" class="desktopLink fontPoppins font18 colorBlack fontW400">Career</a></li>
+      <li class="mainLink"><a href="https://ixdtm.com/projects/azendor_branding/careers.html" class="desktopLink fontPoppins font18 colorBlack fontW400">Careers</a></li>
       <li class="mainLink">
         <a href="#" class="desktop-item desktopLink fontPoppins font18 colorBlack fontW400">About<span class="downcaretsolutionnew"></span></a>
         <input type="checkbox" id="showDropnew1">
-        <label for="showDropnew1" class="mobile-item fontPoppins font18 colorBlack fontW400">About<span class="downcaretsolutionnewmbl2"></span></label>
-        <ul class="drop-menu">
+        <label for="showDropnew1" class="mobile-item aboutDrop fontPoppins font18 colorBlack fontW400">About<span class="downcaretsolutionnewmbl2"></span></label>
+        <ul class="drop-menu aboutDropMenu">
           <li><a href="https://ixdtm.com/projects/azendor_branding/about-us.html"
                 class="fontPoppins fontW400 font18">Who we are</a>
             </li>
@@ -2622,21 +2547,22 @@ document.addEventListener("click", function (event) {
 
 
 
-
 $(function () {
-  $('.mainLink .downcaretsolutionnewmbl').on('click',function () {
-        $('.mainLink .downcaretsolutionnewmbl').toggleClass('clicked');
+    $('.solutionDrop').on('click',function () {
+        $(this).toggleClass('fontWeight');
+        $('.downcaretsolutionnewmbl').toggleClass('clicked');
     });
-  $('.mainLink .downcaretsolutionnewmbl1').on('click',function () {
-        $('.mainLink .downcaretsolutionnewmbl1').toggleClass('clicked');
+    $('.sectorDrop').on('click',function () {
+        $(this).toggleClass('fontWeight');
+        $('.downcaretsolutionnewmbl1').toggleClass('clicked');
     });
-  $('.mainLink .downcaretsolutionnewmbl2').on('click',function () {
-        $('.mainLink .downcaretsolutionnewmbl2').toggleClass('clicked');
+    $('.aboutDrop').on('click',function () {
+        $(this).toggleClass('fontWeight');
+        $('.downcaretsolutionnewmbl2').toggleClass('clicked');
     });
 });
 
- 
-    </script>
+</script>
 
     <div
       class="modal"
