@@ -4412,6 +4412,8 @@ h2 {
             color: #6a6a6a; } }
       .contact .contactForm form .submit a {
         text-decoration: none; }
+        .contact .contactForm form .submit a:hover {
+          color: #6a6a6a !important; }
     .contact .contactForm .formDivider {
       width: 45%; }
       @media all and (max-width: 1400px) {

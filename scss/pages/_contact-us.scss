@@ -96,7 +96,8 @@
 					@media all and (max-width: 1400px){margin-bottom:28px; font-size: 10px;}
 					@media all and (max-width: 920px){line-height: 160%;color: #6a6a6a;}
 				}
-				a{text-decoration:none;}
+				a{text-decoration:none;
+					&:hover{color: #6a6a6a !important}}
 			}
 			
 		}
