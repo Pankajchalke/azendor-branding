@@ -1,126 +1,133 @@
-if ($("#fullpage").length) {
-  $("#fullpage").fullpage({
-    css3: true,
-    anchors: [
-      "bannerSec",
-      "bannerSec1",
-      "bannerSec2",
-      "serviceSec",
-      "teamSection",
-      "clientsBox",
-      "testimonialsSec",
-      "caseStudies",
-      "contactSec",
-      "footer",
-    ],
-    menu: "#menu",
-    navigation: false,
-    fadingEffect: true,
-    keyboardScrolling: true,
-    scrollingSpeed: 1500,
-    slidesNavigation: false,
-    scrollHorizontally: true,
-    controlArrows: true,
-    scrollOverflow: true,
-    licenseKey: "OPEN-SOURCE-GPLV3-LICENSE",
-    scrollBar: true,
-    responsiveWidth: 920,
-    afterResponsive: function (isResponsive) { },
-    afterLoad: function (anchorLink, index) {
-      console.log(index);
 
-      if (index == 1) {
-        $("#myBtn").css("display", "none");
-        $(".scroll-text").css("display", "block");
-        $(".scroll-symbol").css("display", "block");
-        $("a[class = 'scroll-icon']").prop("href", "#bannerSec1");
-        $(".secOne").addClass("is-active");
-        $(".secTwo").removeClass("is-active");
-
-
-      }
-      if (index == 2) {
-        $("#myBtn").css("display", "block");
-        $(".scroll-text").css("display", "block");
-        $(".scroll-symbol").css("display", "block");
-        $("a[class = 'scroll-icon']").prop("href", "#bannerSec2");
-        $(".secOne").addClass("is-active");
-        $(".secTwo").removeClass("is-active");
-
-
-      }
-      if (index == 3) {
-        $(".scroll-text").css("display", "block");
-        $(".scroll-symbol").css("display", "block");
-        $("a[class = 'scroll-icon']").prop("href", "#serviceSec");
-        $(".secOne").addClass("is-active");
-        $(".secTwo").removeClass("is-active");
-
-
-      }
-      if (index == 4) {
-        $(".scroll-text").css("display", "none");
-        $(".scroll-symbol").css("display", "none");
-        $(".secOne").removeClass("is-active");
-        $(".secTwo").addClass("is-active");
-        $(".secThree").removeClass("is-active");
-
-
-      }
-      if (index == 5) {
-        $(".scroll-text").css("display", "none");
-        $(".scroll-symbol").css("display", "none");
-        $(".secTwo").removeClass("is-active");
-        $(".secThree").addClass("is-active");
-        $(".secFour").removeClass("is-active");
-
-
-      }
-      if (index == 6) {
-        $(".scroll-text").css("display", "none");
-        $(".scroll-symbol").css("display", "none");
-        $(".secThree").removeClass("is-active");
-        $(".secFour").addClass("is-active");
-        $(".secFive").removeClass("is-active");
-
-      }
-      if (index == 7) {
-        $(".scroll-text").css("display", "none");
-        $(".scroll-symbol").css("display", "none");
-        $(".secFour").removeClass("is-active");
-        $(".secFive").addClass("is-active");
-        $(".secSix").removeClass("is-active");
-
-
-      }
-      if (index == 8) {
-        $(".scroll-text").css("display", "none");
-        $(".scroll-symbol").css("display", "none");
-        $(".secFive").removeClass("is-active");
-        $(".secSix").addClass("is-active");
-        $(".secSeven").removeClass("is-active");
-
-      }
-      if (index == 9) {
-        $(".scroll-text").css("display", "none");
-        $(".scroll-symbol").css("display", "none");
-        $(".secSix").removeClass("is-active");
-        $(".secSeven").addClass("is-active");
-
-      }
-    },
-
-    onLeave: function (index, nextIndex, direction) {
-      console.log(index, nextIndex, direction);
-      if (index == 1) {
-      }
-      if (index == 2) {
-      }
-      if (index == 8 && nextIndex == 7) {
-      }
-    },
-  });
+const mediaQuery = window.matchMedia('(min-width: 920px)')
+// Check if the media query is true
+if (mediaQuery.matches) {
+  if ($("#fullpage").length) {
+    $("#fullpage").fullpage({
+      css3: true,
+      anchors: [
+        "bannerSec",
+        "bannerSec1",
+        "bannerSec2",
+        "serviceSec",
+        "teamSection",
+        "clientsBox",
+        "testimonialsSec",
+        "caseStudies",
+        "contactSec",
+        "footer",
+      ],
+      menu: "#menu",
+      navigation: false,
+      fadingEffect: true,
+      keyboardScrolling: true,
+      scrollingSpeed: 1500,
+      slidesNavigation: false,
+      scrollHorizontally: true,
+      controlArrows: true,
+      scrollOverflow: true,
+      licenseKey: "OPEN-SOURCE-GPLV3-LICENSE",
+      scrollBar: true,
+      responsiveWidth: 920,
+      afterResponsive: function (isResponsive) { },
+      afterLoad: function (anchorLink, index) {
+        console.log(index);
+  
+        if (index == 1) {
+          $("#myBtn").css("display", "none");
+          $(".scroll-text").css("display", "block");
+          $(".scroll-symbol").css("display", "block");
+          $("a[class = 'scroll-icon']").prop("href", "#bannerSec1");
+          $(".secOne").addClass("is-active");
+          $(".secTwo").removeClass("is-active");
+  
+  
+        }
+        if (index == 2) {
+          $("#myBtn").css("display", "block");
+          $(".scroll-text").css("display", "block");
+          $(".scroll-symbol").css("display", "block");
+          $("a[class = 'scroll-icon']").prop("href", "#bannerSec2");
+          $(".secOne").addClass("is-active");
+          $(".secTwo").removeClass("is-active");
+  
+  
+        }
+        if (index == 3) {
+          $(".scroll-text").css("display", "block");
+          $(".scroll-symbol").css("display", "block");
+          $("a[class = 'scroll-icon']").prop("href", "#serviceSec");
+          $(".secOne").addClass("is-active");
+          $(".secTwo").removeClass("is-active");
+  
+  
+        }
+        if (index == 4) {
+          $(".scroll-text").css("display", "none");
+          $(".scroll-symbol").css("display", "none");
+          $(".secOne").removeClass("is-active");
+          $(".secTwo").addClass("is-active");
+          $(".secThree").removeClass("is-active");
+  
+  
+        }
+        if (index == 5) {
+          $(".scroll-text").css("display", "none");
+          $(".scroll-symbol").css("display", "none");
+          $(".secTwo").removeClass("is-active");
+          $(".secThree").addClass("is-active");
+          $(".secFour").removeClass("is-active");
+  
+  
+        }
+        if (index == 6) {
+          $(".scroll-text").css("display", "none");
+          $(".scroll-symbol").css("display", "none");
+          $(".secThree").removeClass("is-active");
+          $(".secFour").addClass("is-active");
+          $(".secFive").removeClass("is-active");
+  
+        }
+        if (index == 7) {
+          $(".scroll-text").css("display", "none");
+          $(".scroll-symbol").css("display", "none");
+          $(".secFour").removeClass("is-active");
+          $(".secFive").addClass("is-active");
+          $(".secSix").removeClass("is-active");
+  
+  
+        }
+        if (index == 8) {
+          $(".scroll-text").css("display", "none");
+          $(".scroll-symbol").css("display", "none");
+          $(".secFive").removeClass("is-active");
+          $(".secSix").addClass("is-active");
+          $(".secSeven").removeClass("is-active");
+  
+        }
+        if (index == 9) {
+          $(".scroll-text").css("display", "none");
+          $(".scroll-symbol").css("display", "none");
+          $(".secSix").removeClass("is-active");
+          $(".secSeven").addClass("is-active");
+  
+        }
+      },
+  
+      onLeave: function (index, nextIndex, direction) {
+        console.log(index, nextIndex, direction);
+        if (index == 1) {
+        }
+        if (index == 2) {
+        }
+        if (index == 8 && nextIndex == 7) {
+        }
+      },
+    });
+  }
+  
 }
+
 
 //service Slider
 
@@ -583,7 +590,7 @@ window.addEventListener("scroll", () => {
   sections.forEach((section) => {
     const sectionTop = section.offsetTop;
     const sectionHeight = section.clientHeight;
-    if (scrollY >= sectionTop - sectionHeight / 3) {
+    if (scrollY >= sectionTop - sectionHeight/2.5) {
       current = section.getAttribute("id");
     }
   });
@@ -628,6 +635,7 @@ const botton = document.getElementById("myBtn");
 const scrollSymbol = document.getElementById("scroll-symbol");
 const scrollText = document.getElementById("scroll-text");
 
+
 window.onscroll = function () {
   if (window.pageYOffset >= sectionHeight / 3) {
     botton.style.visibility = "visible";
@@ -657,7 +665,7 @@ function myFunction() {
   }
 }
 
-// Smooth scroll with offset for breadcrumbs
+//Smooth scroll with offset for breadcrumbs
 if(window.location.hash){
   let hash = window.location.hash;
   if($(hash).length){
@@ -669,5 +677,22 @@ if(window.location.hash){
 
 
 
+
+//Scroll topButton
+let mybutton = document.getElementById("myBtn");
+// When the user scrolls down 30px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
 
 

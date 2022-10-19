@@ -2334,6 +2334,10 @@ body {
     .mblprogressLegal .progress-container-mobile .progress-bar-mobile {
       display: block; } }
 
+@media all and (max-width: 920px) {
+  html {
+    scroll-behavior: smooth; } }
+
 progress {
   position: fixed;
   top: 15px; }
@@ -2738,9 +2742,11 @@ h2 {
       margin: 80px 0px; } }
   .section h2 {
     margin-bottom: 20px; }
-    @media all and (max-width: 1050px) {
+    @media all and (max-width: 920px) {
       .section h2 {
-        margin-bottom: 20px; } }
+        margin-bottom: 20px;
+        padding-top: 120px;
+        margin-top: -120px; } }
   .section a:hover,
   .section a:active,
   .section a:visited,
@@ -3278,9 +3284,6 @@ h2 {
   .bannerSec h1 {
     line-height: 48px; } }
 
-@media all and (max-width: 920px) {
-  .bannerSec1 {
-    margin-top: 150px; } }
 .bannerSec1 h4 {
   margin-bottom: 15px; }
   @media all and (max-width: 1400px) {
@@ -3291,17 +3294,11 @@ h2 {
   margin-bottom: 25px;
   line-height: 125%; }
 
-@media all and (max-width: 920px) {
-  .bannerSec2 {
-    margin-top: 150px; } }
 .bannerSec2 p {
   color: rgba(255, 255, 255, 0.9);
   margin-bottom: 25px;
   line-height: 125%; }
 
-@media all and (max-width: 920px) {
-  .serviceSec {
-    margin-top: 150px; } }
 .serviceSec .serviceSlider {
   display: block;
   margin-left: -15px; }
@@ -3443,12 +3440,6 @@ h2 {
       height: 530px;
       margin-bottom: 20px; } }
 
-@media all and (max-width: 920px) {
-  .teamSection {
-    margin-top: 150px; } }
-@media all and (max-width: 920px) {
-  .teamSection {
-    margin-top: 150px; } }
 .teamSection .teamSec {
   display: flex;
   justify-content: space-between; }
@@ -3524,8 +3515,9 @@ h2 {
       padding: 36px 0px; } }
 
 @media all and (max-width: 920px) {
-  .clientsBox {
-    margin-top: 150px; } }
+  .clientsBox .filter {
+    padding-top: 120px;
+    margin-top: -120px; } }
 .clientsBox ul {
   list-style: none; }
 .clientsBox .clientSec {
@@ -3657,9 +3649,6 @@ h2 {
     .clientsBox .sliderArrow .imgclientBackarrow {
       margin-right: 50px; } }
 
-@media all and (max-width: 920px) {
-  .testimonialsSec {
-    margin-top: 150px; } }
 .testimonialsSec .testimonialsSlider {
   margin: 0 -70px; }
   @media all and (max-width: 575px) {
@@ -3759,9 +3748,6 @@ h2 {
     .testimonialsSec .sliderArrow .imgtestBackarrow {
       margin-right: 50px; } }
 
-@media all and (max-width: 920px) {
-  .caseStudies {
-    margin-top: 150px; } }
 .caseStudies .boxcaseStudy .contentThree {
   margin: 0px 60px 0px 0px;
   padding: 10px 0px;
