@@ -41,11 +41,11 @@
 
     <!-- ScrollTop button for mobile view -->
     <div class="topbtnBrand">
-      <a href="#bannerSec">
-        <div id="myBtn">
+     
+        <div id="myBtn" onclick="topFunction()">
           <img src="images/top.svg" alt="Top" />
         </div>
-      </a>
+     
     </div>
 
     <header class="wrapper headerBranding" id="header">
@@ -68,9 +68,9 @@
                 class="fontPoppins font18 coloroffW fontW400"
                 onclick="hideSidebar()"
               >
-                <a
+                <a onclick="topFunction()"
                   class="menu-link active section0 section1 section3"
-                  href="#bannerSec"
+                  
                   data-menuanchor="bannerSec"
                   >Home</a
                 >
@@ -79,19 +79,19 @@
                 class="fontPoppins font18 coloroffW fontW400"
                 onclick="hideSidebar()"
               >
-                <a class="menu-link section4" href="#serviceSec">Services</a>
+                <a class="menu-link section4" href="#section4">Services</a>
               </li>
               <li
                 onclick="hideSidebar()"
                 class="fontPoppins font18 coloroffW fontW400"
               >
-                <a class="menu-link section5" href="#teamSection">Team</a>
+                <a class="menu-link section5" href="#section5">Team</a>
               </li>
               <li
                 onclick="hideSidebar()"
                 class="fontPoppins font18 coloroffW fontW400"
               >
-                <a class="menu-link section6" href="#clientsBox">Clients </a>
+                <a class="menu-link section6" href="#section6">Clients </a>
               </li>
               <li
                 onclick="hideSidebar()"
@@ -99,7 +99,7 @@
               >
                 <a
                   class="menu-link section7"
-                  href="#testimonialsSec"
+                  href="#section7"
                   data-menuanchor="testimonialsSec"
                   >Testimonials</a
                 >
@@ -110,7 +110,7 @@
               >
                 <a
                   class="menu-link section8"
-                  href="#caseStudies"
+                  href="#section8"
                   data-menuanchor="caseStudies"
                   >Case Studies</a
                 >
@@ -121,7 +121,7 @@
               >
                 <a
                   class="menu-link contact section9"
-                  href="#contactSec"
+                  href="#section9"
                   data-menuanchor="contactSec"
                   >Contact</a
                 >
@@ -203,7 +203,7 @@
 
     <div id="fullpage">
       <section
-        class="bannerSec section wrapper fp-auto-height-responsive"
+        class="bannerSec section wrapper"
         id="section0"
       >
         <h1 class="fontRoboto font105 colorW fontW700">
@@ -224,7 +224,7 @@
         </p>
       </section>
       <section
-        class="bannerSec1 section wrapper fp-auto-height-responsive"
+        class="bannerSec1 section wrapper"
         id="section3"
       >
         <h4 class="fontRoboto fontW400 font36 colordarkGray">Azendor</h4>
@@ -236,7 +236,7 @@
       </section>
 
       <section
-        class="serviceSec section fp-auto-height-responsive"
+        class="serviceSec section"
         id="section4"
         data-anchor="serviceSec"
       >
@@ -343,7 +343,7 @@
       </section>
 
       <section
-        class="teamSection section fp-auto-height-responsive"
+        class="teamSection section"
         id="section5"
         data-anchor="teamSection"
       >
@@ -375,7 +375,7 @@
       </section>
 
       <section
-      class="clientsBox section fp-auto-height-responsive"
+      class="clientsBox section"
       id="section6"
       data-anchor="clientsBox"
     >
@@ -647,7 +647,7 @@
 
 
       <section
-        class="testimonialsSec section fp-auto-height-responsive"
+        class="testimonialsSec section"
         id="section7"
       >
         <div class="wrapper">
@@ -855,7 +855,7 @@
       </section>
 
       <section
-        class="caseStudies section fp-auto-height-responsive"
+        class="caseStudies section"
         id="section8"
         data-anchor="caseStudies"
       >
@@ -924,7 +924,7 @@
       </section>
 
       <section
-        class="section contactSec fp-auto-height-responsive"
+        class="section contactSec"
         id="section9"
       >
         <div class="wrapper">
