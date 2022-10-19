@@ -780,93 +780,123 @@ body {
     }
 
 
-    .overlay{
+    .overlay {
         @media (max-width: 920px) {
-        height: 100%;
-        position: fixed;
-        right: 0;
-        top: 0;
-        width: 100%;
-        border-radius: 5px 0px 0px 5px;
-        transform: translate(150%);
-        transition: transform 0.5s ease-in-out;
-        overflow: scroll;
-        z-index: 1;
-        background-color: rgba(33, 33, 33, 0.7);
-
-        .menu-items{
-            position: unset !important;
-            transform: translate(0%) !important;
-            display: block;
-            margin: 0;
-            padding-top: 100px;
-            padding-left: 20px;
-            width: 80%;
-            margin-left: auto;
-            background-color: #fff;
             height: 100%;
+            position: fixed;
+            right: 0;
+            top: 0;
+            width: 100%;
+            border-radius: 5px 0px 0px 5px;
+            transform: translate(150%);
+            transition: transform 0.5s ease-in-out;
             overflow: scroll;
-            border-radius: 0px;
-            p{font-size: 20px; padding:0px;
-                &:active{
-                    color: #212121 !important;
-                    transition: all 0.35s ease;
-                    text-decoration: none;  
-                    &:after{
-                        position: absolute;
-                        content: "";
-                        left: 0;
-                        bottom: -4px;
-                        width: 100%;
-                        height: 2px;
-                        border: none;
-                        outline: none;
-                        background: #fff;
+            z-index: 1;
+            background-color: rgba(33, 33, 33, 0.7);
+
+            .menu-items {
+                position: unset !important;
+                transform: translate(0%) !important;
+                display: block;
+                margin: 0;
+                padding-top: 100px;
+                padding-left: 20px;
+                width: 80%;
+                margin-left: auto;
+                background-color: #fff;
+                height: 100%;
+                overflow: scroll;
+                border-radius: 0px;
+
+                p {
+                    font-size: 20px;
+                    padding: 0px;
+
+                    &:active {
+                        color: #212121 !important;
+                        transition: all 0.35s ease;
+                        text-decoration: none;
+
+                        &:after {
+                            position: absolute;
+                            content: "";
+                            left: 0;
+                            bottom: -4px;
+                            width: 100%;
+                            height: 2px;
+                            border: none;
+                            outline: none;
+                            background: #fff;
                         }
                     }
                 }
-            li{
-                margin:0px !important;padding: 20px 0px;
-                .downcaretsolution, .downcaretsector, .downcaretabout{
-                    width: 12px;
-                    height: 8px;
-                    background-image: url(../images/down-arrow.svg);
-                    background-repeat: no-repeat;
-                    display: inline-block;
-                    margin-left: 13px;
-                    top: 1px;
-                    position: relative;
-                    transition: all .25s ease;
-                    background-size: 9px;
-                }
-                span{
-                    display: block;
-                    font-size: 14px;
-                    color: rgba(255, 255, 255, 0.5);
+
+                li {
+                    margin: 0px !important;
+                    padding: 20px 0px;
+
+                    .downcaretsolution,
+                    .downcaretsector,
+                    .downcaretabout {
+                        width: 12px;
+                        height: 8px;
+                        background-image: url(../images/down-arrow.svg);
+                        background-repeat: no-repeat;
+                        display: inline-block;
+                        margin-left: 13px;
+                        top: 1px;
+                        position: relative;
+                        transition: all .25s ease;
+                        background-size: 9px;
                     }
-                .open-caret{transform: rotate(180deg);}
-            .contact{font-size: 20px;
-                color: #212121 !important;
-                background: transparent;
-                padding: 0;
-                border: none;}
-            }
-            
-            .dropdownSolution, .dropdownSector, .dropdownAbout{
-                .drop{position: relative;
-                     top: 0; 
-                    display: block;}
-                    .submenuSolution, .submenuSector, .submenuAbout{
+
+                    span {
+                        display: block;
+                        font-size: 14px;
+                        color: rgba(255, 255, 255, 0.5);
+                    }
+
+                    .open-caret {
+                        transform: rotate(180deg);
+                    }
+
+                    .contact {
+                        font-size: 20px;
+                        color: #212121 !important;
+                        background: transparent;
+                        padding: 0;
+                        border: none;
+                    }
+                }
+
+                .dropdownSolution,
+                .dropdownSector,
+                .dropdownAbout {
+                    .drop {
+                        position: relative;
+                        top: 0;
+                        display: block;
+                    }
+
+                    .submenuSolution,
+                    .submenuSector,
+                    .submenuAbout {
                         position: unset;
                         overflow: hidden;
                         border: transparent !important;
-                        width: 100%; 
+                        width: 100%;
                         padding: 0px 10px !important;
-                        margin-top:20px;
-                        li{
-                            margin-bottom: 0px; padding: 3px 0px !important;
-                            a{font-size: 16px !important;color: #212121 !important;}
+                        margin-top: 20px;
+
+                        li {
+                            margin-bottom: 0px;
+                            padding: 3px 0px !important;
+
+                            a {
+                                font-size: 16px !important;
+                                color: #212121 !important;
                             }
+                        }
                     }
                 }
             }
@@ -1010,6 +1040,9 @@ body {
         //margin: -8% auto 0;
         .memberImg {
             width: 80px;
+            img{
+                border-radius: 50%;
+            }
         }
 
         .teamDesc {
@@ -1081,22 +1114,24 @@ body {
 
 .bannerSeclegal {
     margin: 200px 0px 150px 0px;
-    .bannerDescLegal{
+
+    .bannerDescLegal {
         width: 70%;
+
         h1 {
             line-height: 115px;
         }
-    
+
         h5 {
             line-height: 54px;
             margin: 30px 0px 40px;
         }
-    
+
         .bannerCta {
             margin-top: 50px;
             display: flex;
             align-items: center;
-    
+
             a {
                 background-color: #212121;
                 color: #fff;
@@ -1107,12 +1142,12 @@ body {
                 outline: none;
                 display: flex;
                 align-items: center;
-    
+
                 img {
                     transition: 0.6s all;
                     margin-left: 10px;
                 }
-    
+
                 &:hover {
                     img {
                         transform: translateX(10px);
@@ -1122,19 +1157,20 @@ body {
         }
     }
 
-    
+
 
     @media all and (max-width: 1650px) {
         margin: 180px 0px 110px 0px;
-        .bannerDescLegal{
+
+        .bannerDescLegal {
             .bannerCta {
                 margin-top: 30px;
             }
-    
+
             h1 {
                 line-height: 95px;
             }
-    
+
             h5 {
                 margin: 20px 0px 30px;
                 line-height: 46px;
@@ -1144,15 +1180,16 @@ body {
 
     @media all and (max-width: 1450px) {
         margin: 150px 0px 70px 0px;
-        .bannerDescLegal{
+
+        .bannerDescLegal {
             h1 {
                 line-height: 90px;
             }
-    
+
             h5 {
                 line-height: 39px;
             }
-    
+
             .bannerCta {
                 margin-top: 25px;
             }
@@ -1160,15 +1197,15 @@ body {
     }
 
     @media all and (max-width: 1367px) {
-        .bannerDescLegal{
+        .bannerDescLegal {
             h1 {
                 line-height: 90px;
             }
-    
+
             h5 {
                 margin: 15px 0px 20px;
             }
-    
+
             .bannerCta a img {
                 width: 18px;
                 height: 10px;
@@ -1177,11 +1214,11 @@ body {
     }
 
     @media all and (max-width: 1250px) {
-        .bannerDescLegal{
+        .bannerDescLegal {
             h1 {
                 line-height: 85px;
             }
-    
+
             h5 {
                 margin: 15px 0px 20px;
             }
@@ -1190,7 +1227,8 @@ body {
 
     @media all and (max-width: 1170px) {
         margin: 140px 0px 70px 0px;
-        .bannerDescLegal{
+
+        .bannerDescLegal {
             h5 {
                 margin: 15px 0px 20px;
             }
@@ -1198,7 +1236,7 @@ body {
     }
 
     @media all and (max-width: 1090px) {
-        .bannerDescLegal{
+        .bannerDescLegal {
             h1 {
                 line-height: 80px;
             }
@@ -1206,34 +1244,36 @@ body {
     }
 
     @media all and (max-width: 1024px) {
-        .bannerDescLegal{
+        .bannerDescLegal {
             h5 {
                 margin: 10px 0px 15px;
             }
-        }   
+        }
     }
 
     @media all and (max-width: 920px) {
         position: relative;
         margin: 100px 0px 180px 0px;
-        .bannerDescLegal{
+
+        .bannerDescLegal {
             width: 100%;
+
             h1 {
                 line-height: 70px;
-             }
-     
-             h5 {
-                 line-height: 27px;
-             }
+            }
+
+            h5 {
+                line-height: 27px;
+            }
         }
     }
 
     @media all and (max-width: 650px) {
-        .bannerDescLegal{
+        .bannerDescLegal {
             h1 {
                 line-height: 48px;
             }
-    
+
             .bannerCta a {
                 font-size: 14px !important;
                 padding: 11px 19px;
@@ -1275,7 +1315,7 @@ body {
 
                     a {
                         text-decoration: none;
-                        color: #212121;
+                        color: #9f9f9f;
                         display: flex;
                         align-items: center;
 
@@ -1492,13 +1532,12 @@ body {
                     background: #FAFAFA;
                 }
 
-                h5 {
-                    padding: 25px 0px 15px 0px;
-                }
+
 
                 a {
                     text-decoration: none;
-                    color: #000;
+                    padding: 25px 0px 15px 0px;
+                    color: #6A6A6A;
                     display: flex;
                     align-items: center;
 
@@ -1533,7 +1572,7 @@ body {
             .sectorContent {
                 margin: 30px 15px 0px;
 
-                h5 {
+                a {
                     padding: 15px 0px 15px 0px;
                 }
 
@@ -1555,7 +1594,7 @@ body {
                 margin: 30px 20px 0px;
                 padding: 25px;
 
-                h5 {
+                a {
                     padding: 12px 0px 10px 0px;
                 }
             }
@@ -1574,7 +1613,7 @@ body {
                 margin: 20px 14px 0px;
                 padding: 25px;
 
-                h5 {
+                a {
                     padding: 12px 0px 10px 0px;
                 }
             }
@@ -1600,9 +1639,12 @@ body {
 
         .sectorsliderDesktop .sectorBox,
         .sectorsliderMobile .sectorBox {
+            
+
             .sectorContent {
                 margin: 10px 5px 0px;
                 padding: 25px;
+                
 
                 a {
                     img {
@@ -1624,12 +1666,12 @@ body {
         .sectorsliderDesktop .sectorBox,
         .sectorsliderMobile .sectorBox {
             .sectorContent {
-                h5 {
-                    font-size: 20px;
-                }
+                
+
+                
 
                 a {
-                    font-size: 16px;
+                    font-size: 20px;
 
                     img {
                         width: 18px;
@@ -1680,6 +1722,8 @@ body {
                 width: 32px;
             }
         }
+
+        
     }
 
     @media all and (max-width: 1024px) {
@@ -1971,6 +2015,13 @@ body {
             border-radius: 10px;
             height: 100%;
             padding: 62px 162px 90px 152px;
+
+            .profile {
+                img {
+                    border: 1px solid transparent;
+                    border-radius: 50%;
+                }
+            }
 
             @media (max-width: 1600px) {
                 padding: 30px 140px 30px 130px;

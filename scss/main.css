@@ -106,6 +106,9 @@ p {
 .colorBlack {
   color: #212121; }
 
+.colorOffgrey {
+  color: #9e9e9e; }
+
 .textCenter {
   text-align: center; }
 
@@ -1048,7 +1051,6 @@ body {
         @media (max-width: 1600px) {
           .headerLegal .menu-items li .contact {
             padding: 8px 15px; } }
-
   @media (max-width: 920px) {
     .headerLegal .overlay {
       height: 100%;
@@ -1095,7 +1097,9 @@ body {
         .headerLegal .overlay .menu-items li {
           margin: 0px !important;
           padding: 20px 0px; }
-          .headerLegal .overlay .menu-items li .downcaretsolution, .headerLegal .overlay .menu-items li .downcaretsector, .headerLegal .overlay .menu-items li .downcaretabout {
+          .headerLegal .overlay .menu-items li .downcaretsolution,
+          .headerLegal .overlay .menu-items li .downcaretsector,
+          .headerLegal .overlay .menu-items li .downcaretabout {
             width: 12px;
             height: 8px;
             background-image: url(../images/down-arrow.svg);
@@ -1118,24 +1122,49 @@ body {
             background: transparent;
             padding: 0;
             border: none; }
-        .headerLegal .overlay .menu-items .dropdownSolution .drop, .headerLegal .overlay .menu-items .dropdownSector .drop, .headerLegal .overlay .menu-items .dropdownAbout .drop {
+        .headerLegal .overlay .menu-items .dropdownSolution .drop,
+        .headerLegal .overlay .menu-items .dropdownSector .drop,
+        .headerLegal .overlay .menu-items .dropdownAbout .drop {
           position: relative;
           top: 0;
           display: block; }
-        .headerLegal .overlay .menu-items .dropdownSolution .submenuSolution, .headerLegal .overlay .menu-items .dropdownSolution .submenuSector, .headerLegal .overlay .menu-items .dropdownSolution .submenuAbout, .headerLegal .overlay .menu-items .dropdownSector .submenuSolution, .headerLegal .overlay .menu-items .dropdownSector .submenuSector, .headerLegal .overlay .menu-items .dropdownSector .submenuAbout, .headerLegal .overlay .menu-items .dropdownAbout .submenuSolution, .headerLegal .overlay .menu-items .dropdownAbout .submenuSector, .headerLegal .overlay .menu-items .dropdownAbout .submenuAbout {
+        .headerLegal .overlay .menu-items .dropdownSolution .submenuSolution,
+        .headerLegal .overlay .menu-items .dropdownSolution .submenuSector,
+        .headerLegal .overlay .menu-items .dropdownSolution .submenuAbout,
+        .headerLegal .overlay .menu-items .dropdownSector .submenuSolution,
+        .headerLegal .overlay .menu-items .dropdownSector .submenuSector,
+        .headerLegal .overlay .menu-items .dropdownSector .submenuAbout,
+        .headerLegal .overlay .menu-items .dropdownAbout .submenuSolution,
+        .headerLegal .overlay .menu-items .dropdownAbout .submenuSector,
+        .headerLegal .overlay .menu-items .dropdownAbout .submenuAbout {
           position: unset;
           overflow: hidden;
           border: transparent !important;
           width: 100%;
           padding: 0px 10px !important;
           margin-top: 20px; }
-          .headerLegal .overlay .menu-items .dropdownSolution .submenuSolution li, .headerLegal .overlay .menu-items .dropdownSolution .submenuSector li, .headerLegal .overlay .menu-items .dropdownSolution .submenuAbout li, .headerLegal .overlay .menu-items .dropdownSector .submenuSolution li, .headerLegal .overlay .menu-items .dropdownSector .submenuSector li, .headerLegal .overlay .menu-items .dropdownSector .submenuAbout li, .headerLegal .overlay .menu-items .dropdownAbout .submenuSolution li, .headerLegal .overlay .menu-items .dropdownAbout .submenuSector li, .headerLegal .overlay .menu-items .dropdownAbout .submenuAbout li {
+          .headerLegal .overlay .menu-items .dropdownSolution .submenuSolution li,
+          .headerLegal .overlay .menu-items .dropdownSolution .submenuSector li,
+          .headerLegal .overlay .menu-items .dropdownSolution .submenuAbout li,
+          .headerLegal .overlay .menu-items .dropdownSector .submenuSolution li,
+          .headerLegal .overlay .menu-items .dropdownSector .submenuSector li,
+          .headerLegal .overlay .menu-items .dropdownSector .submenuAbout li,
+          .headerLegal .overlay .menu-items .dropdownAbout .submenuSolution li,
+          .headerLegal .overlay .menu-items .dropdownAbout .submenuSector li,
+          .headerLegal .overlay .menu-items .dropdownAbout .submenuAbout li {
             margin-bottom: 0px;
             padding: 3px 0px !important; }
-            .headerLegal .overlay .menu-items .dropdownSolution .submenuSolution li a, .headerLegal .overlay .menu-items .dropdownSolution .submenuSector li a, .headerLegal .overlay .menu-items .dropdownSolution .submenuAbout li a, .headerLegal .overlay .menu-items .dropdownSector .submenuSolution li a, .headerLegal .overlay .menu-items .dropdownSector .submenuSector li a, .headerLegal .overlay .menu-items .dropdownSector .submenuAbout li a, .headerLegal .overlay .menu-items .dropdownAbout .submenuSolution li a, .headerLegal .overlay .menu-items .dropdownAbout .submenuSector li a, .headerLegal .overlay .menu-items .dropdownAbout .submenuAbout li a {
+            .headerLegal .overlay .menu-items .dropdownSolution .submenuSolution li a,
+            .headerLegal .overlay .menu-items .dropdownSolution .submenuSector li a,
+            .headerLegal .overlay .menu-items .dropdownSolution .submenuAbout li a,
+            .headerLegal .overlay .menu-items .dropdownSector .submenuSolution li a,
+            .headerLegal .overlay .menu-items .dropdownSector .submenuSector li a,
+            .headerLegal .overlay .menu-items .dropdownSector .submenuAbout li a,
+            .headerLegal .overlay .menu-items .dropdownAbout .submenuSolution li a,
+            .headerLegal .overlay .menu-items .dropdownAbout .submenuSector li a,
+            .headerLegal .overlay .menu-items .dropdownAbout .submenuAbout li a {
               font-size: 16px !important;
               color: #212121 !important; } }
-
 
 .progressbarLegaldesk .progress-container {
   display: block;
@@ -1233,6 +1262,8 @@ body {
       width: 100%; }
       .modal.in .modal-dialog-legal .memberImg {
         width: 80px; }
+        .modal.in .modal-dialog-legal .memberImg img {
+          border-radius: 50%; }
       .modal.in .modal-dialog-legal .teamDesc {
         width: 70%;
         padding: 20px 10px !important; } }
@@ -1383,7 +1414,7 @@ body {
           border-top: 1px solid #000; }
           .solutionSec .solutionSlider .slick-track .solutionBox .solutionContent a {
             text-decoration: none;
-            color: #212121;
+            color: #9f9f9f;
             display: flex;
             align-items: center; }
             .solutionSec .solutionSlider .slick-track .solutionBox .solutionContent a img {
@@ -1500,13 +1531,11 @@ body {
   .sectors .sectorsliderDesktop .sectorBox .sectorContent:hover,
   .sectors .sectorsliderMobile .sectorBox .sectorContent:hover {
     background: #FAFAFA; }
-  .sectors .sectorsliderDesktop .sectorBox .sectorContent h5,
-  .sectors .sectorsliderMobile .sectorBox .sectorContent h5 {
-    padding: 25px 0px 15px 0px; }
   .sectors .sectorsliderDesktop .sectorBox .sectorContent a,
   .sectors .sectorsliderMobile .sectorBox .sectorContent a {
     text-decoration: none;
-    color: #000;
+    padding: 25px 0px 15px 0px;
+    color: #6A6A6A;
     display: flex;
     align-items: center; }
     .sectors .sectorsliderDesktop .sectorBox .sectorContent a img,
@@ -1526,8 +1555,8 @@ body {
   .sectors .sectorsliderDesktop .sectorBox .sectorContent,
   .sectors .sectorsliderMobile .sectorBox .sectorContent {
     margin: 30px 15px 0px; }
-    .sectors .sectorsliderDesktop .sectorBox .sectorContent h5,
-    .sectors .sectorsliderMobile .sectorBox .sectorContent h5 {
+    .sectors .sectorsliderDesktop .sectorBox .sectorContent a,
+    .sectors .sectorsliderMobile .sectorBox .sectorContent a {
       padding: 15px 0px 15px 0px; }
     .sectors .sectorsliderDesktop .sectorBox .sectorContent img,
     .sectors .sectorsliderMobile .sectorBox .sectorContent img {
@@ -1539,8 +1568,8 @@ body {
   .sectors .sectorsliderMobile .sectorBox .sectorContent {
     margin: 30px 20px 0px;
     padding: 25px; }
-    .sectors .sectorsliderDesktop .sectorBox .sectorContent h5,
-    .sectors .sectorsliderMobile .sectorBox .sectorContent h5 {
+    .sectors .sectorsliderDesktop .sectorBox .sectorContent a,
+    .sectors .sectorsliderMobile .sectorBox .sectorContent a {
       padding: 12px 0px 10px 0px; } }
 @media all and (max-width: 1200px) {
   .sectors p {
@@ -1549,8 +1578,8 @@ body {
   .sectors .sectorsliderMobile .sectorBox .sectorContent {
     margin: 20px 14px 0px;
     padding: 25px; }
-    .sectors .sectorsliderDesktop .sectorBox .sectorContent h5,
-    .sectors .sectorsliderMobile .sectorBox .sectorContent h5 {
+    .sectors .sectorsliderDesktop .sectorBox .sectorContent a,
+    .sectors .sectorsliderMobile .sectorBox .sectorContent a {
       padding: 12px 0px 10px 0px; }
   .sectors .sectorsliderDesktop .sectorBox .slick-track,
   .sectors .sectorsliderMobile .sectorBox .slick-track {
@@ -1573,12 +1602,9 @@ body {
   .sectors .sectorsliderMobile .slick-track {
     margin-left: -4px; } }
 @media all and (max-width: 480px) {
-  .sectors .sectorsliderDesktop .sectorBox .sectorContent h5,
-  .sectors .sectorsliderMobile .sectorBox .sectorContent h5 {
-    font-size: 20px; }
   .sectors .sectorsliderDesktop .sectorBox .sectorContent a,
   .sectors .sectorsliderMobile .sectorBox .sectorContent a {
-    font-size: 16px; }
+    font-size: 20px; }
     .sectors .sectorsliderDesktop .sectorBox .sectorContent a img,
     .sectors .sectorsliderMobile .sectorBox .sectorContent a img {
       width: 18px;
@@ -1775,6 +1801,9 @@ body {
     border-radius: 10px;
     height: 100%;
     padding: 62px 162px 90px 152px; }
+    .testlegalSec .testlegalSlider .testimonialsLegal .profile img {
+      border: 1px solid transparent;
+      border-radius: 50%; }
     @media (max-width: 1600px) {
       .testlegalSec .testlegalSlider .testimonialsLegal {
         padding: 30px 140px 30px 130px; } }
@@ -3307,7 +3336,8 @@ h2 {
         .serviceSec .serviceSlider .servicesBox .serviceList ul li {
           margin-top: 20px;
           position: relative;
-          list-style: none; }
+          list-style: none;
+          text-transform: capitalize; }
           .serviceSec .serviceSlider .servicesBox .serviceList ul li::before {
             content: '';
             position: absolute;
@@ -4100,22 +4130,6 @@ h2 {
         @media all and (max-width: 920px) {
           .founder .founderBox .founderDesc .founderDescName h3 {
             font-size: 24px; } }
-        .founder .founderBox .founderDesc .founderDescName a {
-          margin-left: 45px; }
-          @media all and (max-width: 1400px) {
-            .founder .founderBox .founderDesc .founderDescName a {
-              margin-left: 32px; } }
-          @media all and (max-width: 920px) {
-            .founder .founderBox .founderDesc .founderDescName a {
-              margin-left: 15px; } }
-          .founder .founderBox .founderDesc .founderDescName a img {
-            margin-top: 15px; }
-            @media all and (max-width: 1400px) {
-              .founder .founderBox .founderDesc .founderDescName a img {
-                width: 25px; } }
-            @media all and (max-width: 920px) {
-              .founder .founderBox .founderDesc .founderDescName a img {
-                width: 24px; } }
       @media all and (max-width: 1400px) {
         .founder .founderBox .founderDesc p {
           font-size: 16px; } }
@@ -4202,6 +4216,12 @@ h2 {
           width: 18px;
           height: 10px;
           transition: 0.6s all; }
+      .founder .founderBox .founderDesc .linkedinFounder {
+        display: block;
+        margin-top: 20px; }
+        @media all and (max-width: 1400px) {
+          .founder .founderBox .founderDesc .linkedinFounder img {
+            width: 25px; } }
 
 .contact {
   margin: 200px 0px 150px 0px; }
@@ -4394,6 +4414,8 @@ h2 {
             color: #6a6a6a; } }
       .contact .contactForm form .submit a {
         text-decoration: none; }
+        .contact .contactForm form .submit a:hover {
+          color: #6a6a6a !important; }
     .contact .contactForm .formDivider {
       width: 45%; }
       @media all and (max-width: 1400px) {
@@ -4667,7 +4689,7 @@ footer .footerSec .footerSub .quickLinksft {
         display: none; } }
     .legalAdvisory .sectionTitle .breadcrumbs .breadcrumbs-link {
       text-decoration: none;
-      color: #6A6A6A;
+      color: #9e9e9e;
       vertical-align: middle;
       text-transform: uppercase; }
     .legalAdvisory .sectionTitle .breadcrumbs .active {
@@ -4734,7 +4756,7 @@ footer .footerSec .footerSub .quickLinksft {
         .legalAdvisory .legalAdvisorySection .legalAdvisorySectionBox a:hover {
           border: 1px solid #212121;
           transition: 0.6s all;
-          color: #212121 !important; }
+          color: #6A6A6A !important; }
           .legalAdvisory .legalAdvisorySection .legalAdvisorySectionBox a:hover .img2 {
             transform: translateX(10px); }
         @media all and (max-width: 1400px) {
@@ -4775,7 +4797,15 @@ footer .footerSec .footerSub .quickLinksft {
     font-size: 22px;
     font-weight: 400;
     font-family: 'Poppins', sans-serif;
-    color: #212121; }
+    color: #9e9e9e; }
+  .legalAdvisory ul {
+    margin-left: 22px; }
+    .legalAdvisory ul li {
+      margin-bottom: 20px;
+      line-height: 35px;
+      font-weight: 400;
+      font-family: 'Poppins', sans-serif;
+      color: #9e9e9e; }
   @media all and (max-width: 1800px) {
     .legalAdvisory ul {
       margin-left: 19.5px; }
@@ -4914,7 +4944,7 @@ footer .footerSec .footerSub .quickLinksft {
         display: none; } }
     .advisorySubPages .subpageContent .subSectionTitle .breadcrumbs .breadcrumbs-link {
       text-decoration: none;
-      color: #6A6A6A;
+      color: #9e9e9e;
       vertical-align: middle;
       text-transform: uppercase; }
     .advisorySubPages .subpageContent .subSectionTitle .breadcrumbs .active {
@@ -5023,7 +5053,7 @@ footer .footerSec .footerSub .quickLinksft {
         display: none; } }
     .digitalTransformation .sectionTitle .breadcrumbs .breadcrumbs-link {
       text-decoration: none;
-      color: #6A6A6A;
+      color: #9e9e9e;
       vertical-align: middle;
       text-transform: uppercase; }
     .digitalTransformation .sectionTitle .breadcrumbs .active {
@@ -5100,7 +5130,7 @@ footer .footerSec .footerSub .quickLinksft {
         .digitalTransformation .digitalTransformationSection .digitalTransformationSectionBox a:hover {
           border: 1px solid #212121;
           transition: 0.6s all;
-          color: #212121 !important; }
+          color: #6A6A6A !important; }
           .digitalTransformation .digitalTransformationSection .digitalTransformationSectionBox a:hover .img2 {
             transform: translateX(10px); }
         @media all and (max-width: 1400px) {
@@ -5141,7 +5171,15 @@ footer .footerSec .footerSub .quickLinksft {
     font-size: 22px;
     font-weight: 400;
     font-family: 'Poppins', sans-serif;
-    color: #212121; }
+    color: #9e9e9e; }
+  .digitalTransformation ul {
+    margin-left: 22px; }
+    .digitalTransformation ul li {
+      margin-bottom: 20px;
+      line-height: 35px;
+      font-weight: 400;
+      font-family: 'Poppins', sans-serif;
+      color: #9e9e9e; }
   @media all and (max-width: 1800px) {
     .digitalTransformation ul {
       margin-left: 19.5px; }
@@ -5280,7 +5318,7 @@ footer .footerSec .footerSub .quickLinksft {
         display: none; } }
     .digitalTransformationSubPages .subpageContent .subSectionTitle .breadcrumbs .breadcrumbs-link {
       text-decoration: none;
-      color: #6A6A6A;
+      color: #9e9e9e;
       vertical-align: middle;
       text-transform: uppercase; }
     .digitalTransformationSubPages .subpageContent .subSectionTitle .breadcrumbs .active {
@@ -5389,7 +5427,7 @@ footer .footerSec .footerSub .quickLinksft {
         display: none; } }
     .generalCounsel .subpageContent .sectionTitle .breadcrumbs .breadcrumbs-link {
       text-decoration: none;
-      color: #6A6A6A;
+      color: #9e9e9e;
       vertical-align: middle;
       text-transform: uppercase; }
     .generalCounsel .subpageContent .sectionTitle .breadcrumbs .active {
@@ -5478,7 +5516,7 @@ footer .footerSec .footerSub .quickLinksft {
         display: none; } }
     .legalAudit .subpageContent .sectionTitle .breadcrumbs .breadcrumbs-link {
       text-decoration: none;
-      color: #6A6A6A;
+      color: #9e9e9e;
       vertical-align: middle;
       text-transform: uppercase; }
     .legalAudit .subpageContent .sectionTitle .breadcrumbs .active {
@@ -5709,7 +5747,7 @@ footer .footerSec .footerSub .quickLinksft {
         display: none; } }
     .subSectors .subpageContent .sectionTitle .breadcrumbs .breadcrumbs-link {
       text-decoration: none;
-      color: #6A6A6A;
+      color: #9e9e9e;
       vertical-align: middle;
       text-transform: uppercase; }
     .subSectors .subpageContent .sectionTitle .breadcrumbs .active {
@@ -5779,7 +5817,9 @@ footer .footerSec .footerSub .quickLinksft {
     font-size: 22px;
     font-weight: 400;
     font-family: 'Poppins', sans-serif;
-    color: #212121; }
+    color: #9e9e9e;
+    margin-bottom: 15px;
+    line-height: 30px; }
   .subpageContent ul {
     margin-left: 22px; }
     .subpageContent ul li {
@@ -5787,7 +5827,7 @@ footer .footerSec .footerSub .quickLinksft {
       line-height: 35px;
       font-weight: 400;
       font-family: 'Poppins', sans-serif;
-      color: #212121; }
+      color: #9e9e9e; }
   @media all and (max-width: 1800px) {
     .subpageContent ul {
       margin-left: 19.5px; }

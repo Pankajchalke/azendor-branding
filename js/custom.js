@@ -285,18 +285,8 @@ if ($(".sectorsliderDesktop").length) {
     speed: 800,
     autoplay: false,
     autoplaySpeed: 2000,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 1090,
-        settings: {
-          arrows: true,
-          slidesToShow: 3,
-          slidesToScroll: 1,
-        },
-      },
-    ],
   });
 }
 if ($(".sectorsliderMobile").length) {
