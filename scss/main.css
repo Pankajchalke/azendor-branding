@@ -2737,16 +2737,15 @@ h2 {
 
 .section {
   margin-bottom: 30px; }
-  @media all and (max-width: 1050px) {
+  @media all and (max-width: 920px) {
     .section {
-      margin: 80px 0px; } }
+      padding-top: 120px;
+      margin-bottom: 0px; } }
   .section h2 {
     margin-bottom: 20px; }
     @media all and (max-width: 920px) {
       .section h2 {
-        margin-bottom: 20px;
-        padding-top: 120px;
-        margin-top: -120px; } }
+        margin-bottom: 20px; } }
   .section a:hover,
   .section a:active,
   .section a:visited,
@@ -3584,21 +3583,16 @@ h2 {
       .clientsBox .clientSec .tabs .bg {
         width: 60px; } }
 .clientsBox .clientSlider .boxClients img {
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
-  transition: 0.5s;
   width: 225px;
   margin: 0 auto;
   display: flex;
   justify-content: center; }
-  .clientsBox .clientSlider .boxClients img:hover {
-    filter: grayscale(0%);
-    -webkit-filter: grayscale(0%); }
 .clientsBox .clientSlider .boxClients .content {
   margin-top: 0px;
   border: 1px solid #373737;
   margin: 0px 60px 0px 0px;
-  padding: 10px 0px; }
+  padding: 10px 0px;
+  background-color: #d6d6d6; }
   .clientsBox .clientSlider .boxClients .content:nth-child(2) {
     margin-top: 30px; }
 @media all and (max-width: 1600px) {
@@ -3753,7 +3747,8 @@ h2 {
   padding: 10px 0px;
   background-color: #252525;
   border: 1px solid #1C1C1C;
-  border-radius: 10px; }
+  border-radius: 10px;
+  background-color: #d6d6d6; }
   .caseStudies .boxcaseStudy .contentThree:nth-child(2) {
     margin-top: 30px; }
   .caseStudies .boxcaseStudy .contentThree a:focus,
@@ -3761,16 +3756,10 @@ h2 {
   .caseStudies .boxcaseStudy .contentThree a:active {
     outline: none !important; }
   .caseStudies .boxcaseStudy .contentThree img {
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
-    transition: 0.5s;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     width: 225px; }
-    .caseStudies .boxcaseStudy .contentThree img:hover {
-      filter: grayscale(0%);
-      -webkit-filter: grayscale(0%); }
 @media all and (max-width: 1600px) {
   .caseStudies .boxcaseStudy .contentThree {
     margin: 0px 30px 0px 0px; }
@@ -3819,9 +3808,6 @@ h2 {
     .caseStudies .sliderArrow .imgcaseBackarrow {
       margin-right: 50px; } }
 
-@media all and (max-width: 920px) {
-  .contactSec {
-    margin-top: 150px; } }
 .contactSec .contactBox {
   display: flex;
   justify-content: space-between;
