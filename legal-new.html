@@ -20,7 +20,7 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+   
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -60,8 +60,9 @@
 }
 .nav-links .mainLink{
   list-style: none;
-  margin-left: 30px;
+  margin-left: 35px;
 }
+.nav-links .mainLink:hover{font-weight: 600;}
 .nav-links .mainLink .desktopLink{
   border-radius: 6px;
     position: relative;
@@ -180,6 +181,7 @@
 @media screen and (max-width: 1400px) {
   .legalHeaderNew .headerContainer{padding-top: 30px;}
   .headerContainer .logo img{width: 200px;}
+  .nav-links .mainLink{margin-left: 30px;}
   .nav-links .drop-menu{width: 180px;}
   .nav-links .mainLink .aboutDropMenu{width: 152px !important;}
   .drop-menu li a{
@@ -187,6 +189,10 @@
     font-size: 13px;
   }
 }
+@media screen and (max-width: 1020px) {
+  .nav-links .mainLink{margin-left: 20px;}
+}
+
 
 @media screen and (max-width: 920px) {
   .legalHeaderNew{ border-bottom: 2px solid rgba(106, 106, 106, 0.5);}
@@ -259,18 +265,27 @@
     visibility: visible;
     /*padding-left: 20px;
     width: 100%;*/
+    display: none;
     max-height: 0px;
     overflow: hidden;
     box-shadow: none;
     transition: all 0.3s ease;
     border: 0;
-    padding-left:15px;
+    padding: 0px 0px 0px 15px;
     
   }
   #showDrop:checked ~ .drop-menu, #showDropnew:checked ~ .drop-menu, #showDropnew1:checked ~ .drop-menu,#showMega:checked ~ .mega-box{
-    max-height: 100%;
+    max-height: fit-content;
+    padding: 0px 0px 0px 15px;
+    display: block;
+    transition: all ease-in-out;
+    background-color: #fafafa;
+    border: 1px solid #f1f1f1;
+    border-radius: 5px;
+    width: 210px;
     margin-top: 20px;
   }
+  #showDrop:checked ~ .mobile-item, #showDropnew:checked ~.mobile-item, #showDropnew1:checked ~.mobile-item{font-weight: 600;}
   .legalOverlay .nav-links .desktop-item{
     display: none;
   }
@@ -342,7 +357,7 @@
     <div class="legalOverlay">
     <ul class="nav-links">
       
-      <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+      <label for="close-btn" class="btn close-btn"><img src="images/legal/humberger-close.svg"></label>
       <li class="mainLink">
         <a href="#" class="desktop-item desktopLink fontPoppins font18 colorBlack fontW400">Solutions<span class="downcaretsolutionnew"></span></a>
         <input type="checkbox" id="showDrop">
@@ -434,7 +449,7 @@
       <li class="mainLink"><a href="https://ixdtm.com/projects/azendor_branding/contact-us.html" class="desktopLink contact fontPoppins font18 colorBlack fontW400">Contact</a></li>
     </ul>
     </div>
-    <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+    <label for="menu-btn" class="btn menu-btn"><img src="images/legal/humberger-menu.svg"></label>
   </div>
   <div class="mblprogressLegal">
     <div class="progress-container-mobile">
@@ -2550,19 +2565,29 @@ document.addEventListener("click", function (event) {
 
 $(function () {
     $('.solutionDrop').on('click',function () {
-        $(this).toggleClass('fontWeight');
+        /*$(this).toggleClass('fontWeight');*/
         $('.downcaretsolutionnewmbl').toggleClass('clicked');
     });
     $('.sectorDrop').on('click',function () {
-        $(this).toggleClass('fontWeight');
+        /*$(this).toggleClass('fontWeight');*/
         $('.downcaretsolutionnewmbl1').toggleClass('clicked');
     });
     $('.aboutDrop').on('click',function () {
-        $(this).toggleClass('fontWeight');
+        /*$(this).toggleClass('fontWeight');*/
         $('.downcaretsolutionnewmbl2').toggleClass('clicked');
     });
 });
 
+
+
+
+
+/*$(function () {
+  $("#sideMenu a").click(function () {
+    $("#sideMenu a.active").removeClass("active");
+    $(this).addClass("active");
+  });
+});*/
 </script>
 
     <div
