@@ -4416,19 +4416,19 @@ h2 {
         text-decoration: none; }
         .contact .contactForm form .submit a:hover {
           color: #6a6a6a !important; }
+      .contact .contactForm form label {
+        font-size: 16px; }
+        @media all and (max-width: 1400px) {
+          .contact .contactForm form label {
+            font-size: 14px; } }
+        @media all and (max-width: 920px) {
+          .contact .contactForm form label {
+            font-size: 14px; } }
     .contact .contactForm .formDivider {
       width: 45%; }
       @media all and (max-width: 1400px) {
         .contact .contactForm .formDivider {
           width: 47%; } }
-      .contact .contactForm .formDivider label {
-        font-size: 16px; }
-        @media all and (max-width: 1400px) {
-          .contact .contactForm .formDivider label {
-            font-size: 14px; } }
-        @media all and (max-width: 920px) {
-          .contact .contactForm .formDivider label {
-            font-size: 14px; } }
     .contact .contactForm .formDividerOne {
       width: 45%; }
       @media all and (max-width: 1400px) {
@@ -4437,24 +4437,8 @@ h2 {
       @media all and (max-width: 920px) {
         .contact .contactForm .formDividerOne {
           width: 100%; } }
-      .contact .contactForm .formDividerOne label {
-        font-size: 16px; }
-        @media all and (max-width: 1400px) {
-          .contact .contactForm .formDividerOne label {
-            font-size: 12px; } }
-        @media all and (max-width: 920px) {
-          .contact .contactForm .formDividerOne label {
-            font-size: 14px; } }
     .contact .contactForm .aboutQuery {
       width: 100%; }
-      .contact .contactForm .aboutQuery label {
-        font-size: 16px; }
-        @media all and (max-width: 1400px) {
-          .contact .contactForm .aboutQuery label {
-            font-size: 12px; } }
-        @media all and (max-width: 920px) {
-          .contact .contactForm .aboutQuery label {
-            font-size: 14px; } }
 
 .contactDetails {
   background: rgba(194, 194, 194, 0.2);
@@ -4703,32 +4687,42 @@ footer .footerSec .footerSub .quickLinksft {
     justify-content: space-between; }
     .legalAdvisory .legalAdvisorySection .legalAdvisorySectionBox {
       width: 31%;
-      margin-top: 30px; }
+      margin-top: 30px;
+      padding: 35px 48px 35px 45px;
+      border: 1px solid #F1F1F1;
+      border-radius: 10px; }
       @media all and (max-width: 1400px) {
         .legalAdvisory .legalAdvisorySection .legalAdvisorySectionBox {
           width: 31.5%;
-          margin-top: 30px; } }
+          margin-top: 30px;
+          padding: 20px 40px 23px 20px; } }
       @media all and (max-width: 1080px) {
         .legalAdvisory .legalAdvisorySection .legalAdvisorySectionBox {
           width: 31.5%;
-          margin-top: 25px; } }
+          margin-top: 25px;
+          padding: 20px; } }
       @media all and (max-width: 920px) {
         .legalAdvisory .legalAdvisorySection .legalAdvisorySectionBox {
           width: 48%;
-          margin-top: 15px; } }
+          margin-top: 15px;
+          padding: 20px 25px 20px 30px; } }
       @media all and (max-width: 575px) {
         .legalAdvisory .legalAdvisorySection .legalAdvisorySectionBox {
           width: 100%;
           margin-top: 15px; } }
+      .legalAdvisory .legalAdvisorySection .legalAdvisorySectionBox:hover {
+        border: 1px solid #212121;
+        transition: 0.6s all; }
+        .legalAdvisory .legalAdvisorySection .legalAdvisorySectionBox:hover a {
+          transition: 0.6s all;
+          color: #6A6A6A !important; }
+          .legalAdvisory .legalAdvisorySection .legalAdvisorySectionBox:hover a .img2 {
+            transform: translateX(10px); }
       .legalAdvisory .legalAdvisorySection .legalAdvisorySectionBox a {
         display: flex;
         align-items: center;
         line-height: 130%;
-        justify-content: space-between;
-        text-decoration: none;
-        padding: 35px 48px 35px 45px;
-        border: 1px solid #F1F1F1;
-        border-radius: 10px; }
+        text-decoration: none; }
         .legalAdvisory .legalAdvisorySection .legalAdvisorySectionBox a .img1 {
           margin-right: 20px; }
           @media all and (max-width: 1400px) {
@@ -4743,7 +4737,7 @@ footer .footerSec .footerSub .quickLinksft {
               width: 30px;
               height: 35px; } }
         .legalAdvisory .legalAdvisorySection .legalAdvisorySectionBox a .img2 {
-          margin-left: auto;
+          margin-left: 20px;
           transition: 0.6s all; }
           @media all and (max-width: 1400px) {
             .legalAdvisory .legalAdvisorySection .legalAdvisorySectionBox a .img2 {
@@ -4753,23 +4747,14 @@ footer .footerSec .footerSub .quickLinksft {
             .legalAdvisory .legalAdvisorySection .legalAdvisorySectionBox a .img2 {
               width: 18px;
               height: 9px; } }
-        .legalAdvisory .legalAdvisorySection .legalAdvisorySectionBox a:hover {
-          border: 1px solid #212121;
-          transition: 0.6s all;
-          color: #6A6A6A !important; }
-          .legalAdvisory .legalAdvisorySection .legalAdvisorySectionBox a:hover .img2 {
-            transform: translateX(10px); }
         @media all and (max-width: 1400px) {
           .legalAdvisory .legalAdvisorySection .legalAdvisorySectionBox a {
-            padding: 20px 40px 23px 20px;
             font-size: 18px; } }
         @media all and (max-width: 1080px) {
           .legalAdvisory .legalAdvisorySection .legalAdvisorySectionBox a {
-            padding: 20px;
             font-size: 16px; } }
         @media all and (max-width: 920px) {
           .legalAdvisory .legalAdvisorySection .legalAdvisorySectionBox a {
-            padding: 20px 25px 20px 30px;
             font-size: 16px;
             line-height: 160%; } }
   .legalAdvisory h1 {
@@ -5073,19 +5058,34 @@ footer .footerSec .footerSub .quickLinksft {
         margin-top: 0px; } }
     .digitalTransformation .digitalTransformationSection .digitalTransformationSectionBox {
       width: 48.5%;
-      margin-top: 30px; }
+      margin-top: 30px;
+      padding: 32px 50px 32px 45px;
+      border: 1px solid #F1F1F1;
+      border-radius: 10px;
+      background: #FAFAFA; }
+      .digitalTransformation .digitalTransformationSection .digitalTransformationSectionBox:hover {
+        border: 1px solid #212121;
+        transition: 0.6s all; }
+        .digitalTransformation .digitalTransformationSection .digitalTransformationSectionBox:hover a {
+          transition: 0.6s all;
+          color: #6A6A6A !important; }
+          .digitalTransformation .digitalTransformationSection .digitalTransformationSectionBox:hover a .img2 {
+            transform: translateX(10px); }
       @media all and (max-width: 1400px) {
         .digitalTransformation .digitalTransformationSection .digitalTransformationSectionBox {
           width: 48.5%;
-          margin-top: 30px; } }
+          margin-top: 30px;
+          padding: 20px 35px 21px 30px; } }
       @media all and (max-width: 1080px) {
         .digitalTransformation .digitalTransformationSection .digitalTransformationSectionBox {
           width: 31.5%;
-          margin-top: 25px; } }
+          margin-top: 25px;
+          padding: 20px; } }
       @media all and (max-width: 920px) {
         .digitalTransformation .digitalTransformationSection .digitalTransformationSectionBox {
           width: 48%;
-          margin-top: 15px; } }
+          margin-top: 15px;
+          padding: 20px 25px 20px 30px; } }
       @media all and (max-width: 575px) {
         .digitalTransformation .digitalTransformationSection .digitalTransformationSectionBox {
           width: 100%;
@@ -5094,12 +5094,7 @@ footer .footerSec .footerSub .quickLinksft {
         display: flex;
         align-items: center;
         line-height: 130%;
-        justify-content: space-between;
-        text-decoration: none;
-        padding: 32px 50px 32px 45px;
-        border: 1px solid #F1F1F1;
-        border-radius: 10px;
-        background: #FAFAFA; }
+        text-decoration: none; }
         .digitalTransformation .digitalTransformationSection .digitalTransformationSectionBox a .img1 {
           margin-right: 30px; }
           @media all and (max-width: 1400px) {
@@ -5115,7 +5110,7 @@ footer .footerSec .footerSub .quickLinksft {
               width: 30px;
               height: 35px; } }
         .digitalTransformation .digitalTransformationSection .digitalTransformationSectionBox a .img2 {
-          margin-left: auto;
+          margin-left: 20px;
           transition: 0.6s all;
           width: 25px;
           height: 25px; }
@@ -5127,23 +5122,14 @@ footer .footerSec .footerSub .quickLinksft {
             .digitalTransformation .digitalTransformationSection .digitalTransformationSectionBox a .img2 {
               width: 18px;
               height: 9px; } }
-        .digitalTransformation .digitalTransformationSection .digitalTransformationSectionBox a:hover {
-          border: 1px solid #212121;
-          transition: 0.6s all;
-          color: #6A6A6A !important; }
-          .digitalTransformation .digitalTransformationSection .digitalTransformationSectionBox a:hover .img2 {
-            transform: translateX(10px); }
         @media all and (max-width: 1400px) {
           .digitalTransformation .digitalTransformationSection .digitalTransformationSectionBox a {
-            padding: 20px 35px 21px 30px;
             font-size: 18px; } }
         @media all and (max-width: 1080px) {
           .digitalTransformation .digitalTransformationSection .digitalTransformationSectionBox a {
-            padding: 20px;
             font-size: 16px; } }
         @media all and (max-width: 920px) {
           .digitalTransformation .digitalTransformationSection .digitalTransformationSectionBox a {
-            padding: 20px 25px 20px 30px;
             font-size: 16px;
             line-height: 160%; } }
   .digitalTransformation h1 {
