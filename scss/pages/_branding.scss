@@ -580,8 +580,9 @@ h2 {
 .section {
     margin-bottom: 30px;
 
-    @media all and (max-width: 1050px) {
-        margin: 80px 0px;
+    @media all and (max-width: 920px) {
+        padding-top: 120px;
+        margin-bottom: 0px;
     }
 
     h2 {
@@ -589,8 +590,7 @@ h2 {
 
         @media all and (max-width: 920px) {
             margin-bottom: 20px;
-            padding-top: 120px;
-            margin-top: -120px;
+           
         }
 
     }
@@ -883,6 +883,30 @@ h2 {
         .teamPara {
             padding-top: 18px;
             border-top: 1px solid #6A6A6A;
+            padding-right: 25px;
+            height: 280px;
+            overflow-y: auto;
+
+            scrollbar-width: auto;
+            scrollbar-color: #000;
+
+
+            /* Chrome, Edge, and Safari */
+            &::-webkit-scrollbar {
+                width: 3px;
+            }
+
+
+
+            &::-webkit-scrollbar-track {
+                background: #000;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background-color: #fff;
+                border-radius: 15px;
+
+            }
 
             p {
                 margin-bottom: 25px;
@@ -953,7 +977,7 @@ h2 {
 
             .teamPara {
                 height: 250px;
-                overflow: auto;
+                
             }
         }
 
@@ -1092,6 +1116,30 @@ h2 {
         .teamPara {
             padding-top: 18px;
             border-top: 1px solid #6A6A6A;
+            padding-right: 25px;
+            height: 280px;
+            overflow-y: auto;
+
+            scrollbar-width: auto;
+            scrollbar-color: #000;
+
+
+            /* Chrome, Edge, and Safari */
+            &::-webkit-scrollbar {
+                width: 3px;
+            }
+
+
+
+            &::-webkit-scrollbar-track {
+                background: #000;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background-color: #fff;
+                border-radius: 15px;
+
+            }
 
             p {
                 margin-bottom: 30px;
@@ -1165,7 +1213,7 @@ h2 {
 
             .teamPara {
                 height: 250px;
-                overflow: auto;
+                
             }
         }
     }
@@ -1979,7 +2027,7 @@ h2 {
         }
 
         @media all and (max-width: 1600px) {
-            height: 420px;
+            height: 500px;
             overflow: hidden;
 
             .teamMembers {
@@ -1990,6 +2038,10 @@ h2 {
                     bottom: -40px;
                 }
             }
+        }
+        @media all and (max-width: 1400px) {
+            height: 420px;
+            
         }
 
         @media all and (max-width: 1280px) {
@@ -2172,19 +2224,11 @@ h2 {
         .boxClients {
 
             img {
-                filter: grayscale(100%);
-                -webkit-filter: grayscale(100%);
-                transition: 0.5s;
                 width: 225px;
                 margin: 0 auto;
                 display: flex;
                 justify-content: center;
 
-
-                &:hover {
-                    filter: grayscale(0%);
-                    -webkit-filter: grayscale(0%);
-                }
             }
 
             .content {
@@ -2192,6 +2236,7 @@ h2 {
                 border: 1px solid #373737;
                 margin: 0px 60px 0px 0px;
                 padding: 10px 0px;
+                background-color: #d6d6d6;
 
                 &:nth-child(2) {
                     margin-top: 30px;
@@ -2514,6 +2559,7 @@ h2 {
             background-color: #252525;
             border: 1px solid #1C1C1C;
             border-radius: 10px;
+            background-color: #d6d6d6;
 
             &:nth-child(2) {
                 margin-top: 30px;
@@ -2526,19 +2572,10 @@ h2 {
             }
 
             img {
-                filter: grayscale(100%);
-                -webkit-filter: grayscale(100%);
-                transition: 0.5s;
-
                 margin: 0 auto;
                 display: flex;
                 justify-content: center;
                 width: 225px;
-
-                &:hover {
-                    filter: grayscale(0%);
-                    -webkit-filter: grayscale(0%);
-                }
             }
 
 
@@ -2632,9 +2669,7 @@ h2 {
 
 .contactSec {
 
-    @media all and (max-width:920px) {
-        margin-top: 150px;
-    }
+    
 
     .contactBox {
         display: flex;
