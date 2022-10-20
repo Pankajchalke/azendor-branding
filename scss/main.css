@@ -4160,6 +4160,8 @@ h2 {
           text-decoration: none;
           display: flex;
           align-items: center; }
+          .founder .founderBox .founderDesc .details a:hover {
+            color: #6a6a6a !important; }
           .founder .founderBox .founderDesc .details a img {
             margin-right: 15px; }
             @media all and (max-width: 1400px) {
