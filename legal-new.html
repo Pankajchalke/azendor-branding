@@ -226,6 +226,7 @@
     padding-top: 100px;
     padding-left: 20px;
     transition: all 0.3s ease;
+    overflow: auto;
   }
   .nav-links .mainLink{margin-left: 0px;padding: 20px 0px;}
 
@@ -249,7 +250,7 @@
   #close-btn:checked ~ .btn.menu-btn{
     display: block;
   }
-  .legalOverlay .nav-links .{
+  .legalOverlay .nav-links {
     margin: 15px 10px;
   }
   .legalOverlay .nav-links .mainLink .desktop-item{
@@ -285,7 +286,7 @@
     width: 210px;
     margin-top: 20px;
   }
-  #showDrop:checked ~ .mobile-item, #showDropnew:checked ~.mobile-item, #showDropnew1:checked ~.mobile-item{font-weight: 600;}
+  /* #showDrop:checked ~ .mobile-item, #showDropnew:checked ~.mobile-item, #showDropnew1:checked ~.mobile-item{font-weight: 600;} */
   .legalOverlay .nav-links .desktop-item{
     display: none;
   }
@@ -299,7 +300,7 @@
 
   }
   .legalOverlay .nav-links .mobile-item:hover{
-    /*background: #3A3B3C;*/
+      font-weight: 600;
   }
   .drop-menu li{
     margin: 0;
@@ -2579,6 +2580,13 @@ $(function () {
 });
 
 
+$(document).on('click', function(e) {
+  $('.mainLink > ul').hide();
+
+  if ($(e.target).parent().hasClass('mainLink')) {
+    $(e.target).siblings('ul').toggle();
+  }
+});
 
 
 
