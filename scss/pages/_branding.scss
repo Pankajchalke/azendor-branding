@@ -883,6 +883,30 @@ h2 {
         .teamPara {
             padding-top: 18px;
             border-top: 1px solid #6A6A6A;
+            padding-right: 25px;
+            height: 280px;
+            overflow-y: auto;
+
+            scrollbar-width: auto;
+            scrollbar-color: #000;
+
+
+            /* Chrome, Edge, and Safari */
+            &::-webkit-scrollbar {
+                width: 3px;
+            }
+
+
+
+            &::-webkit-scrollbar-track {
+                background: #000;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background-color: #fff;
+                border-radius: 15px;
+
+            }
 
             p {
                 margin-bottom: 25px;
@@ -953,7 +977,7 @@ h2 {
 
             .teamPara {
                 height: 250px;
-                overflow: auto;
+                
             }
         }
 
@@ -1092,6 +1116,30 @@ h2 {
         .teamPara {
             padding-top: 18px;
             border-top: 1px solid #6A6A6A;
+            padding-right: 25px;
+            height: 280px;
+            overflow-y: auto;
+
+            scrollbar-width: auto;
+            scrollbar-color: #000;
+
+
+            /* Chrome, Edge, and Safari */
+            &::-webkit-scrollbar {
+                width: 3px;
+            }
+
+
+
+            &::-webkit-scrollbar-track {
+                background: #000;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background-color: #fff;
+                border-radius: 15px;
+
+            }
 
             p {
                 margin-bottom: 30px;
@@ -1165,7 +1213,7 @@ h2 {
 
             .teamPara {
                 height: 250px;
-                overflow: auto;
+                
             }
         }
     }

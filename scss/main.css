@@ -2889,7 +2889,20 @@ h2 {
         width: 20%; }
     .modal.in .modal-dialog2 .modal-content .teamPara {
       padding-top: 18px;
-      border-top: 1px solid #6A6A6A; }
+      border-top: 1px solid #6A6A6A;
+      padding-right: 25px;
+      height: 280px;
+      overflow-y: auto;
+      scrollbar-width: auto;
+      scrollbar-color: #000;
+      /* Chrome, Edge, and Safari */ }
+      .modal.in .modal-dialog2 .modal-content .teamPara::-webkit-scrollbar {
+        width: 3px; }
+      .modal.in .modal-dialog2 .modal-content .teamPara::-webkit-scrollbar-track {
+        background: #000; }
+      .modal.in .modal-dialog2 .modal-content .teamPara::-webkit-scrollbar-thumb {
+        background-color: #fff;
+        border-radius: 15px; }
       .modal.in .modal-dialog2 .modal-content .teamPara p {
         margin-bottom: 25px; }
     .modal.in .modal-dialog2 .modal-content .modal-footer {
@@ -2922,8 +2935,7 @@ h2 {
     .modal.in .modal-dialog2 .modal-content {
       padding: 60px 44px 30px; }
       .modal.in .modal-dialog2 .modal-content .teamPara {
-        height: 250px;
-        overflow: auto; } }
+        height: 250px; } }
   @media all and (max-width: 780px) {
     .modal.in .modal-dialog2 {
       transform: translate(0px, 100px);
@@ -2996,7 +3008,20 @@ h2 {
         width: 20%; }
     .modal.in .modal-dialog3 .modal-content .teamPara {
       padding-top: 18px;
-      border-top: 1px solid #6A6A6A; }
+      border-top: 1px solid #6A6A6A;
+      padding-right: 25px;
+      height: 280px;
+      overflow-y: auto;
+      scrollbar-width: auto;
+      scrollbar-color: #000;
+      /* Chrome, Edge, and Safari */ }
+      .modal.in .modal-dialog3 .modal-content .teamPara::-webkit-scrollbar {
+        width: 3px; }
+      .modal.in .modal-dialog3 .modal-content .teamPara::-webkit-scrollbar-track {
+        background: #000; }
+      .modal.in .modal-dialog3 .modal-content .teamPara::-webkit-scrollbar-thumb {
+        background-color: #fff;
+        border-radius: 15px; }
       .modal.in .modal-dialog3 .modal-content .teamPara p {
         margin-bottom: 30px;
         font-size: 16px; }
@@ -3036,8 +3061,7 @@ h2 {
           .modal.in .modal-dialog3 .modal-content .teamBox .memberImg {
             width: 15%; }
         .modal.in .modal-dialog3 .modal-content .teamPara {
-          height: 250px;
-          overflow: auto; } }
+          height: 250px; } }
   @media all and (max-width: 575px) {
     .modal.in .modal-dialog3 .memberImg {
       width: 28% !important; }
