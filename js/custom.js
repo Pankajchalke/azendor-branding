@@ -634,8 +634,6 @@ let sectionHeight = topSection.clientHeight;
 const botton = document.getElementById("myBtn");
 const scrollSymbol = document.getElementById("scroll-symbol");
 const scrollText = document.getElementById("scroll-text");
-
-
 window.onscroll = function () {
   if (window.pageYOffset >= sectionHeight / 3) {
     botton.style.visibility = "visible";
@@ -665,6 +663,8 @@ function myFunction() {
   }
 }
 
+
+
 //Smooth scroll with offset for breadcrumbs
 if(window.location.hash){
   let hash = window.location.hash;
@@ -674,6 +674,4 @@ if(window.location.hash){
     },200,'');
   }
 }
-
-
 
