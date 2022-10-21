@@ -4015,7 +4015,8 @@ h2 {
   border: 1px solid rgba(28, 28, 28, 0.7);
   border-radius: 5px;
   z-index: 99;
-  text-align: center; }
+  text-align: center;
+  visibility: hidden; }
   .topbtnBrand #myButton img {
     position: relative;
     top: 25%; }
