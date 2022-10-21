@@ -3684,6 +3684,13 @@ h2 {
     .testimonialsSec .testimonialsSlider .slick-current .testimonials {
       opacity: 1;
       width: 100%; }
+      .testimonialsSec .testimonialsSlider .slick-current .testimonials .profile .testinnerDiv {
+        width: 170px;
+        height: 170px; }
+        @media all and (max-width: 1600px) {
+          .testimonialsSec .testimonialsSlider .slick-current .testimonials .profile .testinnerDiv {
+            width: 120px;
+            height: 120px; } }
   .testimonialsSec .testimonialsSlider .testimonials {
     background: #252525;
     opacity: 0.5;
@@ -3705,15 +3712,21 @@ h2 {
     .testimonialsSec .testimonialsSlider .testimonials:hover {
       cursor: pointer; }
     .testimonialsSec .testimonialsSlider .testimonials .profile img {
-      width: 65%;
       margin: 0 auto;
       vertical-align: middle; }
+    .testimonialsSec .testimonialsSlider .testimonials .profile .testinnerDiv {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 150px;
+      height: 150px;
+      margin: auto;
+      background-color: #d6d6d6;
+      border-radius: 50%; }
       @media all and (max-width: 1600px) {
-        .testimonialsSec .testimonialsSlider .testimonials .profile img {
-          width: 60%; } }
-      @media all and (max-width: 920px) {
-        .testimonialsSec .testimonialsSlider .testimonials .profile img {
-          width: 50%; } }
+        .testimonialsSec .testimonialsSlider .testimonials .profile .testinnerDiv {
+          width: 100px;
+          height: 100px; } }
     .testimonialsSec .testimonialsSlider .testimonials .profile .profileInfo {
       margin-top: 20px; }
       .testimonialsSec .testimonialsSlider .testimonials .profile .profileInfo h4 {
@@ -4043,6 +4056,9 @@ h2 {
   @media all and (min-width: 770px) {
     .brandingScrolltxt .scroll-symbol {
       display: none !important; } }
+@media all and (max-width: 920px) {
+  .brandingScrolltxt {
+    display: none; } }
 
 .progress-container-mobile .progress-bar-mobile {
   display: none;
