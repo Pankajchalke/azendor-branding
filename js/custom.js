@@ -25,7 +25,7 @@ if (mediaQuery.matches) {
       slidesNavigation: false,
       scrollHorizontally: true,
       controlArrows: true,
-      // scrollOverflow: true,
+      scrollOverflow: true,
       licenseKey: "OPEN-SOURCE-GPLV3-LICENSE",
       scrollBar: true,
       responsiveWidth: 920,
@@ -628,23 +628,36 @@ if ( $(window).width() <= 920 ) {
 
 
 
-// // legal top button mobile js
+// legal and branding top button mobile js
+window.addEventListener('scroll',function(e) {
 const topSection = document.getElementById("topSec");
-let sectionHeight = topSection.clientHeight;
+const sectionHeight = topSection.clientHeight;
 const botton = document.getElementById("myBtn");
 const scrollSymbol = document.getElementById("scroll-symbol");
 const scrollText = document.getElementById("scroll-text");
-window.onscroll = function () {
-  if (window.pageYOffset >= sectionHeight / 3) {
-    botton.style.visibility = "visible";
-    scrollSymbol.style.visibility = "hidden";
+  if (window.scrollY >= sectionHeight) {
+    botton.style.visibility ="visible";
+    scrollSymbol.style.visibility ="hidden";
     scrollText.style.visibility = "hidden";
-  } else {
+  } 
+  else {
     botton.style.visibility = "hidden";
     scrollSymbol.style.visibility = "visible";
     scrollText.style.visibility = "visible";
   }
-};
+});
+
+let button = document.getElementById("myButton");
+let nav = document.getElementById("section1");
+function toggle(visibility) {
+  button.style.visibility = visibility;
+}
+window.addEventListener('scroll',function(e) {
+  let navHeight = nav.clientHeight;
+  let scrollHeight = window.scrollY;
+  scrollHeight >= navHeight ? toggle("visible") : toggle("hidden");
+});
+
 
 
 function myFunction() {

@@ -2949,7 +2949,7 @@ h2 {
 }
 
 .topbtnBrand {
-    #myBtn {
+    #myButton {
         box-sizing: border-box;
         position: fixed;
         width: 40px;
@@ -2962,6 +2962,7 @@ h2 {
         border-radius: 5px;
         z-index: 99;
         text-align: center;
+        // visibility: hidden;
 
         img {
             position: relative;
