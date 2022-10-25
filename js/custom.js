@@ -604,8 +604,6 @@ window.addEventListener("scroll", () => {
 
 
 // legal Header Dropdown
-
-
 if ( $(window).width() <= 920 ) {
   // Print a message to the console
   $(document).ready(function () {
@@ -623,10 +621,6 @@ if ( $(window).width() <= 920 ) {
     });
   });
 } 
-
-
-
-
 
 // legal and branding top button mobile js
 window.addEventListener('scroll',function(e) {
@@ -658,8 +652,6 @@ window.addEventListener('scroll',function(e) {
   scrollHeight >= navHeight ? toggle("visible") : toggle("hidden");
 });
 
-
-
 function myFunction() {
   var dots = document.getElementById("dots");
   var moreText = document.getElementById("more");
@@ -676,8 +668,6 @@ function myFunction() {
   }
 }
 
-
-
 //Smooth scroll with offset for breadcrumbs
 if(window.location.hash){
   let hash = window.location.hash;
@@ -688,3 +678,7 @@ if(window.location.hash){
   }
 }
 
+function thanku (e) {
+  e.preventDefault();
+  $(".thanku-message").css("display" ,"block");
+}

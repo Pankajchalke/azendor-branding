@@ -4437,6 +4437,11 @@ h2 {
         text-decoration: none; }
         .contact .contactForm form .submit a:hover {
           color: #6a6a6a !important; }
+      .contact .contactForm form .submit .thanku-message {
+        font-size: 16px;
+        padding-top: 25px;
+        color: #008000;
+        display: none; }
       .contact .contactForm form label {
         font-size: 16px; }
         @media all and (max-width: 1400px) {
