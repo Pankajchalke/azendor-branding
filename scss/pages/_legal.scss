@@ -1315,7 +1315,7 @@ body {
 
                     a {
                         text-decoration: none;
-                        color: #9f9f9f;
+                        color: #6A6A6A;
                         display: flex;
                         align-items: center;
 
@@ -1328,6 +1328,7 @@ body {
                         }
 
                         &:hover {
+                            color: #6A6A6A !important;
                             img {
                                 transform: translateX(10px);
                             }
