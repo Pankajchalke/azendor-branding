@@ -286,7 +286,7 @@
                     in touch with you shortly for an initial consultation. </p>
             </div>
             <div class="contactForm">
-                <form>
+                <form onsubmit="return thanku(event)">
                     <div class="formDivider">
                         <label for="fname" class="fontPoppins fontW400 colordarkGray">First Name*</label>
                         <input class="fontPoppins fontW400" type="text" id="fname" name="firstname" required
@@ -319,6 +319,7 @@
                             / calls from Azendor Legal team member.<br> See our <a href="#"
                                 class=" fontW700 colordarkGray">Privacy Policy.</a></p>
                         <input class="fontPoppins fontW400 colorW" type="submit" value="Submit">
+                        <p class="fontPoppins font24 thanku-message">Thank You, your query has been successfully sent</p>
                     </div>
                 </form>
             </div>
