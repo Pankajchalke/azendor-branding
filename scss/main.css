@@ -1414,7 +1414,7 @@ body {
           border-top: 1px solid #000; }
           .solutionSec .solutionSlider .slick-track .solutionBox .solutionContent a {
             text-decoration: none;
-            color: #9f9f9f;
+            color: #6A6A6A;
             display: flex;
             align-items: center; }
             .solutionSec .solutionSlider .slick-track .solutionBox .solutionContent a img {
@@ -1423,8 +1423,10 @@ body {
               width: 23px;
               height: 11px;
               margin-left: 5px; }
-            .solutionSec .solutionSlider .slick-track .solutionBox .solutionContent a:hover img {
-              transform: translateX(10px); }
+            .solutionSec .solutionSlider .slick-track .solutionBox .solutionContent a:hover {
+              color: #6A6A6A !important; }
+              .solutionSec .solutionSlider .slick-track .solutionBox .solutionContent a:hover img {
+                transform: translateX(10px); }
         .solutionSec .solutionSlider .slick-track .solutionBox:hover {
           border: 1px solid #212121; }
         .solutionSec .solutionSlider .slick-track .solutionBox h3,
