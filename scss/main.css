@@ -2262,7 +2262,7 @@ body {
     position: relative;
     top: 25%;
     right: -34%; }
-  @media all and (min-width: 770px) {
+  @media all and (min-width: 920px) {
     .topbtnLeagl #myBtn {
       display: none !important; } }
 
@@ -4022,7 +4022,7 @@ h2 {
   .topbtnBrand #myButton img {
     position: relative;
     top: 25%; }
-  @media all and (min-width: 770px) {
+  @media all and (min-width: 920px) {
     .topbtnBrand #myButton {
       display: none !important; } }
 
