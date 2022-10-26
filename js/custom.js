@@ -677,8 +677,3 @@ if(window.location.hash){
     },200,'');
   }
 }
-
-function thanku (e) {
-  e.preventDefault();
-  $(".thanku-message").css("display" ,"block");
-}
