@@ -2734,13 +2734,6 @@ h2 {
       transform: rotate(270deg);
       transform-origin: left top 0; }
 
-.brandingterms h1, .brandingterms h2, .brandingterms h3, .brandingterms h4, .brandingterms h5, .brandingterms p, .brandingterms ul li {
-  color: #fff !important; }
-.brandingterms a {
-  color: #6A6A6A !important; }
-  .brandingterms a:hover {
-    color: #fff !important; }
-
 .section {
   margin-bottom: 30px; }
   @media all and (max-width: 920px) {
@@ -5885,6 +5878,12 @@ footer .footerSec .footerSub .quickLinksft {
     text-decoration: none; }
     .subpageContent a:hover {
       color: #6A6A6A; }
+  .subpageContent.brandingterms h1, .subpageContent.brandingterms h2, .subpageContent.brandingterms h3, .subpageContent.brandingterms h4, .subpageContent.brandingterms h5, .subpageContent.brandingterms p, .subpageContent.brandingterms ul li {
+    color: #fff !important; }
+  .subpageContent.brandingterms a {
+    color: #6A6A6A !important; }
+    .subpageContent.brandingterms a:hover {
+      color: #fff !important; }
   @media all and (max-width: 1800px) {
     .subpageContent ul {
       margin-left: 19.5px; }

@@ -121,6 +121,16 @@
                 color:  #6A6A6A;
             }
         }
+
+        &.brandingterms{
+            h1, h2, h3, h4 , h5, p , ul li{color: #fff !important;}
+            a{
+                color: #6A6A6A !important;
+                &:hover{
+                    color:  #fff !important;
+                }
+            }
+        }
         @media all and (max-width: 1800px){
             ul{margin-left: 19.5px;}
             
