@@ -1,543 +1,465 @@
 <!DOCTYPE html>
-<html lang="en" style="overflow-y: scroll !important; scroll-behavior: smooth !important">
+<html
+  lang="en"
+  style="overflow-y: scroll !important; scroll-behavior: smooth !important"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Azendor</title>
+    <link
+      rel="shortcut icon"
+      href="https://azendor.com/wp-content/uploads/2018/12/favicon.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
-  <title>Azendor</title>
-  <link rel="shortcut icon" href="https://azendor.com/wp-content/uploads/2018/12/favicon.png" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Roboto:wght@400;500;700&display=swap"
-    rel="stylesheet" />
-
-  <link href="scss/main.css" rel="stylesheet" />
-  <style type="text/css">
-    .legalHeaderNew {
-      position: fixed;
-      top: 0;
-      z-index: 99;
-      width: 100%;
-      background: #fff;
-    }
-
-    .legalHeaderNew .headerContainer {
-      position: relative;
-      /*padding: 0px 30px;
+    <link href="scss/main.css" rel="stylesheet" />
+    <style type="text/css">
+      .legalHeaderNew{
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+  background: #fff;
+}
+.legalHeaderNew .headerContainer{
+  position: relative;
+  /*padding: 0px 30px;
   height: 70px;
   line-height: 70px;*/
-      margin: auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding-top: 60px;
-    }
-
-    .headerContainer .logo img {
-      width: 270px;
-      /*color: #f2f2f2;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 60px;
+}
+.headerContainer .logo img{
+  width: 270px;
+  /*color: #f2f2f2;
   font-size: 30px;
   font-weight: 600;
   text-decoration: none;*/
-    }
+}
+.headerContainer .nav-links{
+  display: inline-flex;
+}
+.nav-links .mainLink{
+  list-style: none;
+  margin-left: 35px;
+}
+.nav-links .mainLink:hover{font-weight: 600;}
+.nav-links .mainLink .desktopLink{
+  border-radius: 6px;
+    position: relative;
+    display: inline-block;
+  transition: all 0.3s ease;
+  cursor: pointer;
+    padding: 15px 0px;
+    text-decoration: none;
+}
+.nav-links .mainLink .desktopLink:hover{
+  color: #000;
+  text-decoration: none;
+    transition: all 0.35s ease;
+    font-weight: 600;
+}
+.nav-links .mainLink:hover .downcaretsolutionnew{transform: rotate(180deg);}
+.nav-links .mainLink .clicked{transform: rotate(180deg);}
+.nav-links .mainLink .fontWeight{font-weight: 600;}
+.downcaretsolutionnew{
+    width: 12px;
+    height: 8px;
+    background-image: url(images/down-arrow.svg);
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-left: 7px;
+    top: 1px;
+    position: relative;
+    transition: all .25s ease;
+    background-size: 9px;
+}
+.downcaretsolutionnewmbl, .downcaretsolutionnewmbl1, .downcaretsolutionnewmbl2{
+    width: 12px;
+    height: 8px;
+    background-image: url(images/down-arrow.svg);
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-left: 7px;
+    top: 1px;
+    position: relative;
+    transition: all .25s ease;
+    background-size: 9px;
+}
+.nav-links .mainLink .contact{
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 60px;
+    background-color: #212121;
+    color: #fff !important;
+    margin: 5px auto;
+  }
 
-    .headerContainer .nav-links {
-      display: inline-flex;
-    }
+.nav-links .mobile-item{
+  display: none;
+}
+.nav-links .drop-menu{
+  /*opacity: 0;*/
+  width: 195px;
+    list-style: none;
+    position: absolute;
+    float: left;
+    display: none;
+    overflow: hidden;
+    transition: all .35s linear;
+    border: 1px solid #F1F1F1;
+    border-radius: 10px;
+    background: #FAFAFA;
+    padding: 10px 0px;
+    
+}
+.nav-links .mainLink:hover .drop-menu,
+.nav-links .mainLink:hover .mega-box{
+  transition: all 0.3s ease;
+  /*top: 70px;*/
+ /* opacity: 1;*/
+ display: block;
+  visibility: visible;
+}
 
-    .nav-links .mainLink {
-      list-style: none;
-      margin-left: 35px;
-    }
+.drop-menu li a{
+  padding: 7px 0px 7px 18px;
+    display: block;
+    color: #555;
+    text-align: left;
+    transition: all .25s linear;
+    text-decoration: none;
+    font-size: 14px;
 
-    .nav-links .mainLink:hover {
-      font-weight: 600;
-    }
+}
+.drop-menu li a:hover{font-weight: 600; color: #000;}
 
-    .nav-links .mainLink .desktopLink {
-      border-radius: 6px;
-      position: relative;
-      display: inline-block;
-      transition: all 0.3s ease;
-      cursor: pointer;
-      padding: 15px 0px;
-      text-decoration: none;
-    }
+.headerContainer .btn{
+  color: #212121;
+  font-size: 25px;
+  cursor: pointer;
+  display: none;
+  padding: 0;
+  line-height: 0;
+}
+.headerContainer .btn.close-btn{
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  padding: 0;
+  line-height: 0;
+}
+.legalHeaderNew input{
+  display: none;
+}
 
-    .nav-links .mainLink .desktopLink:hover {
-      color: #000;
-      text-decoration: none;
-      transition: all 0.35s ease;
-      font-weight: 600;
-    }
-
-    .nav-links .mainLink:hover .downcaretsolutionnew {
-      transform: rotate(180deg);
-    }
-
-    .nav-links .mainLink .clicked {
-      transform: rotate(180deg);
-    }
-
-    .nav-links .mainLink .fontWeight {
-      font-weight: 600;
-    }
-
-    .downcaretsolutionnew {
-      width: 12px;
-      height: 8px;
-      background-image: url(images/down-arrow.svg);
-      background-repeat: no-repeat;
-      display: inline-block;
-      margin-left: 7px;
-      top: 1px;
-      position: relative;
-      transition: all .25s ease;
-      background-size: 9px;
-    }
-
-    .downcaretsolutionnewmbl,
-    .downcaretsolutionnewmbl1,
-    .downcaretsolutionnewmbl2 {
-      width: 12px;
-      height: 8px;
-      background-image: url(images/down-arrow.svg);
-      background-repeat: no-repeat;
-      display: inline-block;
-      margin-left: 7px;
-      top: 1px;
-      position: relative;
-      transition: all .25s ease;
-      background-size: 9px;
-    }
-
-    .nav-links .mainLink .contact {
-      padding: 10px 20px;
-      text-decoration: none;
-      border: 1px solid rgba(33, 33, 33, 0.2);
-      border-radius: 60px;
-      background-color: #212121;
-      color: #fff !important;
-      margin: 5px auto;
-    }
-
-    .nav-links .mobile-item {
-      display: none;
-    }
-
-    .nav-links .drop-menu {
-      /*opacity: 0;*/
-      width: 195px;
-      list-style: none;
-      position: absolute;
-      float: left;
-      display: none;
-      overflow: hidden;
-      transition: all .35s linear;
-      border: 1px solid #F1F1F1;
-      border-radius: 10px;
-      background: #FAFAFA;
-      padding: 10px 0px;
-
-    }
-
-    .nav-links .mainLink:hover .drop-menu,
-    .nav-links .mainLink:hover .mega-box {
-      transition: all 0.3s ease;
-      /*top: 70px;*/
-      /* opacity: 1;*/
-      display: block;
-      visibility: visible;
-    }
-
-    .drop-menu li a {
-      padding: 7px 0px 7px 18px;
-      display: block;
-      color: #555;
-      text-align: left;
-      transition: all .25s linear;
-      text-decoration: none;
-      font-size: 14px;
-
-    }
-
-    .drop-menu li a:hover {
-      font-weight: 600;
-      color: #000;
-    }
-
-    .headerContainer .btn {
-      color: #212121;
-      font-size: 25px;
-      cursor: pointer;
-      display: none;
-      padding: 0;
-      line-height: 0;
-    }
-
-    .headerContainer .btn.close-btn {
-      position: absolute;
-      right: 30px;
-      top: 20px;
-      padding: 0;
-      line-height: 0;
-    }
-
-    .legalHeaderNew input {
-      display: none;
-    }
-
-    @media screen and (max-width: 1600px) {
-      .legalHeaderNew .headerContainer {
-        padding-top: 40px;
-      }
-
-      .nav-links .mainLink .aboutDropMenu {
-        width: 180px !important;
-      }
-
-      .nav-links .mainLink .contact {
-        padding: 8px 15px;
-        margin: 5px auto;
-      }
-    }
-
-    @media screen and (max-width: 1400px) {
-      .legalHeaderNew .headerContainer {
-        padding-top: 30px;
-      }
-
-      .headerContainer .logo img {
-        width: 200px;
-      }
-
-      .nav-links .mainLink {
-        margin-left: 30px;
-      }
-
-      .nav-links .drop-menu {
-        width: 180px;
-      }
-
-      .nav-links .mainLink .aboutDropMenu {
-        width: 152px !important;
-      }
-
-      .drop-menu li a {
-        padding: 7px 0px 7px 12px;
-        font-size: 13px;
-      }
-    }
-
-    @media screen and (max-width: 1020px) {
-      .nav-links .mainLink {
-        margin-left: 20px;
-      }
-    }
+@media screen and (max-width: 1600px) {
+  .legalHeaderNew .headerContainer{padding-top: 40px;}
+  .nav-links .mainLink .aboutDropMenu{width: 180px !important;}
+  .nav-links .mainLink .contact{padding: 8px 15px;margin: 5px auto;}
+}
+@media screen and (max-width: 1400px) {
+  .legalHeaderNew .headerContainer{padding-top: 30px;}
+  .headerContainer .logo img{width: 200px;}
+  .nav-links .mainLink{margin-left: 30px;}
+  .nav-links .drop-menu{width: 180px;}
+  .nav-links .mainLink .aboutDropMenu{width: 152px !important;}
+  .drop-menu li a{
+    padding: 7px 0px 7px 12px;
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 1020px) {
+  .nav-links .mainLink{margin-left: 20px;}
+}
 
 
-    @media screen and (max-width: 920px) {
-      .legalHeaderNew {
-        border-bottom: 2px solid rgba(106, 106, 106, 0.5);
-      }
+@media screen and (max-width: 920px) {
+  .legalHeaderNew{ border-bottom: 2px solid rgba(106, 106, 106, 0.5);}
+  .legalHeaderNew .headerContainer{padding: 15px 0px;}
+  .headerContainer .btn{
+    display: block;
+  }
+  .headerContainer .logo img{width: 160px;}
+  .headerContainer .legalOverlay{
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    bottom: 0;
+    border-radius: 5px 0px 0px 5px;
+    transform: translate(150%);
+    transition: transform 0.5s ease-in-out;
+    z-index: 1;
+    background-color: rgba(33, 33, 33, 0.7);
+  }
 
-      .legalHeaderNew .headerContainer {
-        padding: 15px 0px;
-      }
+  .headerContainer .legalOverlay .nav-links{
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    top: 0;
+    right: 0;
+    background: #fff;
+    display: block;
+    padding-top: 100px;
+    padding-left: 20px;
+    transition: all 0.3s ease;
+    overflow: auto;
+  }
+  .nav-links .mainLink{margin-left: 0px;padding: 20px 0px;}
 
-      .headerContainer .btn {
-        display: block;
-      }
-
-      .headerContainer .logo img {
-        width: 160px;
-      }
-
-      .headerContainer .legalOverlay {
-        height: 100%;
-        position: fixed;
-        right: 0;
-        top: 0;
-        width: 100%;
-        bottom: 0;
-        border-radius: 5px 0px 0px 5px;
-        transform: translate(150%);
-        transition: transform 0.5s ease-in-out;
-        z-index: 1;
-        background-color: rgba(33, 33, 33, 0.7);
-      }
-
-      .headerContainer .legalOverlay .nav-links {
-        position: absolute;
-        height: 100%;
-        width: 80%;
-        top: 0;
-        right: 0;
-        background: #fff;
-        display: block;
-        padding-top: 100px;
-        padding-left: 20px;
-        transition: all 0.3s ease;
-        overflow: auto;
-      }
-
-      .nav-links .mainLink {
-        margin-left: 0px;
-        padding: 20px 0px;
-      }
-
-      /* custom scroll bar */
-      ::-webkit-scrollbar {
-        width: 10px;
-      }
-
-      ::-webkit-scrollbar-track {
-        background: #242526;
-      }
-
-      ::-webkit-scrollbar-thumb {
-        background: #3A3B3C;
-      }
-
-      #menu-btn:checked~.legalOverlay {
-        /*right: 0%;*/
-        transform: translate(0%);
-      }
-
-      #menu-btn:checked~.btn.menu-btn {
-        display: none;
-      }
-
-      #close-btn:checked~.btn.menu-btn {
-        display: block;
-      }
-
-      .legalOverlay .nav-links {
-        margin: 0px;
-      }
-
-      .legalOverlay .nav-links .mainLink .desktop-item {
-        padding: 0 20px;
-        /* display: block;*/
-        font-size: 20px;
-      }
-
-      .legalOverlay .nav-links .drop-menu {
-        position: static;
-        opacity: 1;
-        width: 210px;
-        float: none;
-        visibility: visible;
-        /*padding-left: 20px;
+  /* custom scroll bar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #242526;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #3A3B3C;
+  }
+  #menu-btn:checked ~ .legalOverlay {
+    /*right: 0%;*/
+    transform: translate(0%);
+  }
+  #menu-btn:checked ~ .btn.menu-btn{
+    display: none;
+  }
+  #close-btn:checked ~ .btn.menu-btn{
+    display: block;
+  }
+  .legalOverlay .nav-links {
+    margin: 0px;
+  }
+  .legalOverlay .nav-links .mainLink .desktop-item{
+    padding: 0 20px;
+   /* display: block;*/
+    font-size: 20px;
+  }
+  .legalOverlay .nav-links .drop-menu{
+    position: static;
+    opacity: 1;
+    width: 210px;
+    float: none;
+    visibility: visible;
+    /*padding-left: 20px;
     width: 100%;*/
-        display: none;
-        max-height: 0px;
-        overflow: hidden;
-        box-shadow: none;
-        transition: all 0.3s ease;
-        border: 0;
-        padding: 0px 0px 0px 15px;
+    display: none;
+    max-height: 0px;
+    overflow: hidden;
+    box-shadow: none;
+    transition: all 0.3s ease;
+    border: 0;
+    padding: 0px 0px 0px 15px;
+    
+  }
+  #showDrop:checked ~ .drop-menu, #showDropnew:checked ~ .drop-menu, #showDropnew1:checked ~ .drop-menu,#showMega:checked ~ .mega-box{
+    max-height: fit-content;
+    padding: 0px 0px 0px 15px;
+    display: block;
+    transition: all ease-in-out;
+    background-color: #fafafa;
+    border: 1px solid #f1f1f1;
+    border-radius: 5px;
+    width: 210px;
+    margin-top: 20px;
+  }
+  /* #showDrop:checked ~ .mobile-item, #showDropnew:checked ~.mobile-item, #showDropnew1:checked ~.mobile-item{font-weight: 600;} */
+  .legalOverlay .nav-links .desktop-item{
+    display: none;
+  }
+  .legalOverlay .nav-links .mobile-item{
+    display: block;
+    font-size: 20px;
+    padding: 0px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 0px;
 
-      }
+  }
+  .legalOverlay .nav-links .mobile-item:hover{
+      font-weight: 600;
+  }
+  .drop-menu li{
+    margin: 0;
+    padding: 10px 0px !important;
+  }
+  .drop-menu li a{
+    padding: 0px;
+    font-size: 16px;
+    color: #212121 !important;
+  }
 
-      #showDrop:checked~.drop-menu,
-      #showDropnew:checked~.drop-menu,
-      #showDropnew1:checked~.drop-menu,
-      #showMega:checked~.mega-box {
-        max-height: fit-content;
-        padding: 0px 0px 0px 15px;
-        display: block;
-        transition: all ease-in-out;
-        background-color: #fafafa;
-        border: 1px solid #f1f1f1;
-        border-radius: 5px;
-        width: 210px;
-        margin-top: 20px;
-      }
+  .nav-links .mainLink .desktopLink{
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .nav-links .mainLink .contact{
+    background-color: transparent;
+    color: #212121!important;
+    padding: 0px 0px !important;
+    margin: 0 !important;
+    border: none;
+  }
+  
+}
 
-      /* #showDrop:checked ~ .mobile-item, #showDropnew:checked ~.mobile-item, #showDropnew1:checked ~.mobile-item{font-weight: 600;} */
-      .legalOverlay .nav-links .desktop-item {
-        display: none;
-      }
 
-      .legalOverlay .nav-links .mobile-item {
-        display: block;
-        font-size: 20px;
-        padding: 0px;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        margin-bottom: 0px;
+    </style>
 
-      }
+  </head>
 
-      .legalOverlay .nav-links .mobile-item:hover {
-        font-weight: 600;
-      }
+  <body style="overflow: visible !important">
+    <!-- scroll text -->
 
-      .drop-menu li {
-        margin: 0;
-        padding: 10px 0px !important;
-      }
-
-      .drop-menu li a {
-        padding: 0px;
-        font-size: 16px;
-        color: #212121 !important;
-      }
-
-      .nav-links .mainLink .desktopLink {
-        padding: 0;
-        font-size: 20px;
-        cursor: pointer;
-        transition: all 0.3s ease;
-      }
-
-      .nav-links .mainLink .contact {
-        background-color: transparent;
-        color: #212121 !important;
-        padding: 0px 0px !important;
-        margin: 0 !important;
-        border: none;
-      }
-
-    }
-  </style>
-
-</head>
-
-<body style="overflow: visible !important">
-  <!-- scroll text -->
-
-  <!-- ScrollTop button for mobile view -->
-  <div class="topbtnLeagl">
-    <a href="#top">
-      <div id="myBtn" class="topSec">
-        <img src="images/legal/legal-top-arrow.svg" alt="Top arrow" title="Top arrow" />
-      </div>
-    </a>
-  </div>
-  <header class="legalHeaderNew wrapper">
-    <div class="headerContainer">
-      <a href="legal.html" class="logo">
-        <img src="images/azendor-legal-logo.png" alt="Legal Header Logo" title="Legal Header Logo" />
+    <!-- ScrollTop button for mobile view -->
+    <div class="topbtnLeagl">
+      <a href="#top">
+        <div id="myBtn" class="topSec">
+          <img
+            src="images/legal/legal-top-arrow.svg"
+            alt="Top arrow"
+            title="Top arrow"
+          />
+        </div>
       </a>
-      <input type="radio" name="slider" id="menu-btn">
-      <input type="radio" name="slider" id="close-btn">
-      <div class="legalOverlay">
-        <ul class="nav-links">
-
-          <label for="close-btn" class="btn close-btn"><img src="images/legal/humberger-close.svg"></label>
-          <li class="mainLink">
-            <a href="#" class="desktop-item desktopLink fontPoppins font18 colorBlack fontW400">Solutions<span
-                class="downcaretsolutionnew"></span></a>
-            <input type="checkbox" id="showDrop">
-            <label for="showDrop"
-              class="mobile-item solutionDrop is-active fontPoppins font18 colorBlack fontW400">Solutions<span
-                class="downcaretsolutionnewmbl"></span></label>
-            <ul class="drop-menu">
-              <li><a href="https://ixdtm.com/projects/azendor_branding/general-counsel.html"
-                  class="fontPoppins fontW400 font18">General Counsel</a>
-              </li>
-              <li><a href="https://ixdtm.com/projects/azendor_branding/legal-advisory.html"
-                  class="fontPoppins fontW400 font18">Legal Advisory</a></li>
-              <li><a href="https://ixdtm.com/projects/azendor_branding/legal-audit.html"
-                  class="fontPoppins fontW400 font18">Legal Audit</a></li>
-              <li><a href="https://ixdtm.com/projects/azendor_branding/digital-transformation.html"
-                  class="fontPoppins fontW400 font18">Digital Transformation</a></li>
-            </ul>
-          </li>
-          <li class="mainLink">
-            <a href="#" class="desktop-item desktopLink fontPoppins font18 colorBlack fontW400">Sectors<span
-                class="downcaretsolutionnew"></span><span class="downcaretsolution"></span></a>
-            <input type="checkbox" id="showDropnew">
-            <label for="showDropnew" class="mobile-item sectorDrop fontPoppins font18 colorBlack fontW400">Sectors<span
-                class="downcaretsolutionnewmbl1"></span></label>
-            <ul class="drop-menu">
-              <li><a href="https://ixdtm.com/projects/azendor_branding/television.html"
-                  class="fontPoppins fontW400 font18">Television</a></li>
-              <li>
-                <a href="https://ixdtm.com/projects/azendor_branding/film.html"
-                  class="fontPoppins fontW400 font18">Film</a>
-              </li>
-              <li>
-                <a href="https://ixdtm.com/projects/azendor_branding/ottPlatform.html"
-                  class="fontPoppins fontW400 font18">OTT Platform</a>
-              </li>
-              <li>
-                <a href="https://ixdtm.com/projects/azendor_branding/onlineGaming.html"
-                  class="fontPoppins fontW400 font18">Online Gaming</a>
-              </li>
-              <li>
-                <a href="https://ixdtm.com/projects/azendor_branding/print.html"
-                  class="fontPoppins fontW400 font18">Print</a>
-              </li>
-              <li>
-                <a href="https://ixdtm.com/projects/azendor_branding/ooh.html"
-                  class="fontPoppins fontW400 font18">OOH</a>
-              </li>
-              <li>
-                <a href="https://ixdtm.com/projects/azendor_branding/liveEvents.html"
-                  class="fontPoppins fontW400 font18">Live Events</a>
-              </li>
-              <li>
-                <a href="https://ixdtm.com/projects/azendor_branding/animationVfx.html"
-                  class="fontPoppins fontW400 font18">Animation/ VFX</a>
-              </li>
-              <li>
-                <a href="https://ixdtm.com/projects/azendor_branding/music.html"
-                  class="fontPoppins fontW400 font18">Music</a>
-              </li>
-              <li>
-                <a href="https://ixdtm.com/projects/azendor_branding/radio.html"
-                  class="fontPoppins fontW400 font18">Radio</a>
-              </li>
-              <li>
-                <a href="https://ixdtm.com/projects/azendor_branding/sports.html"
-                  class="fontPoppins fontW400 font18">Sports</a>
-              </li>
-              <li><a href="https://ixdtm.com/projects/azendor_branding/advertising.html"
-                  class="fontPoppins fontW400 font18">Advertising</a>
-              </li>
-            </ul>
-          </li>
-          <li class="mainLink"><a href="https://ixdtm.com/projects/azendor_branding/careers.html"
-              class="desktopLink fontPoppins font18 colorBlack fontW400">Careers</a></li>
-          <li class="mainLink">
-            <a href="#" class="desktop-item desktopLink fontPoppins font18 colorBlack fontW400">About<span
-                class="downcaretsolutionnew"></span></a>
-            <input type="checkbox" id="showDropnew1">
-            <label for="showDropnew1" class="mobile-item aboutDrop fontPoppins font18 colorBlack fontW400">About<span
-                class="downcaretsolutionnewmbl2"></span></label>
-            <ul class="drop-menu aboutDropMenu">
-              <li><a href="https://ixdtm.com/projects/azendor_branding/about-us.html"
-                  class="fontPoppins fontW400 font18">Who we are</a>
-              </li>
-              <li>
-                <a href="https://ixdtm.com/projects/azendor_branding/founder.html"
-                  class="fontPoppins fontW400 font18">Founder</a>
-              </li>
-            </ul>
-          </li>
-
-          <li class="mainLink"><a href="https://ixdtm.com/projects/azendor_branding/contact-us.html"
-              class="desktopLink contact fontPoppins font18 colorBlack fontW400">Contact</a></li>
+    </div>
+    <header class="legalHeaderNew wrapper">
+  <div class="headerContainer">
+    <a href="legal.html" class="logo">
+      <img src="images/azendor-legal-logo.png" alt="Legal Header Logo" title="Legal Header Logo" />
+    </a>
+    <input type="radio" name="slider" id="menu-btn">
+    <input type="radio" name="slider" id="close-btn">
+    <div class="legalOverlay">
+    <ul class="nav-links">
+      
+      <label for="close-btn" class="btn close-btn"><img src="images/legal/humberger-close.svg"></label>
+      <li class="mainLink">
+        <a href="#" class="desktop-item desktopLink fontPoppins font18 colorBlack fontW400">Solutions<span class="downcaretsolutionnew"></span></a>
+        <input type="checkbox" id="showDrop">
+        <label for="showDrop" class="mobile-item solutionDrop is-active fontPoppins font18 colorBlack fontW400">Solutions<span class="downcaretsolutionnewmbl"></span></label>
+        <ul class="drop-menu">
+          <li><a href="https://ixdtm.com/projects/azendor_branding/general-counsel.html"
+              class="fontPoppins fontW400 font18">General Counsel</a>
+                  </li>
+          <li><a href="https://ixdtm.com/projects/azendor_branding/legal-advisory.html"
+              class="fontPoppins fontW400 font18">Legal Advisory</a></li>
+          <li><a href="https://ixdtm.com/projects/azendor_branding/legal-audit.html"
+              class="fontPoppins fontW400 font18">Legal Audit</a></li>
+          <li><a href="https://ixdtm.com/projects/azendor_branding/digital-transformation.html"
+               class="fontPoppins fontW400 font18">Digital Transformation</a></li>
         </ul>
-      </div>
-      <label for="menu-btn" class="btn menu-btn"><img src="images/legal/humberger-menu.svg"></label>
+      </li>
+      <li class="mainLink">
+        <a href="#" class="desktop-item desktopLink fontPoppins font18 colorBlack fontW400">Sectors<span class="downcaretsolutionnew"></span><span class="downcaretsolution"></span></a>
+        <input type="checkbox" id="showDropnew">
+        <label for="showDropnew" class="mobile-item sectorDrop fontPoppins font18 colorBlack fontW400">Sectors<span class="downcaretsolutionnewmbl1"></span></label>
+        <ul class="drop-menu">
+          <li><a href="https://ixdtm.com/projects/azendor_branding/television.html"
+              class="fontPoppins fontW400 font18">Television</a></li>
+            <li>
+              <a
+                href="https://ixdtm.com/projects/azendor_branding/film.html"
+                class="fontPoppins fontW400 font18">Film</a>
+            </li>
+            <li>
+              <a href="https://ixdtm.com/projects/azendor_branding/ottPlatform.html"
+                class="fontPoppins fontW400 font18">OTT Platform</a>
+            </li>
+            <li>
+              <a href="https://ixdtm.com/projects/azendor_branding/onlineGaming.html"
+                class="fontPoppins fontW400 font18">Online Gaming</a>
+            </li>
+            <li>
+              <a href="https://ixdtm.com/projects/azendor_branding/print.html"
+                class="fontPoppins fontW400 font18">Print</a>
+            </li>
+            <li>
+              <a href="https://ixdtm.com/projects/azendor_branding/ooh.html"
+                class="fontPoppins fontW400 font18">OOH</a>
+            </li>
+            <li>
+              <a href="https://ixdtm.com/projects/azendor_branding/liveEvents.html"
+                class="fontPoppins fontW400 font18">Live Events</a>
+            </li>
+            <li>
+              <a
+                href="https://ixdtm.com/projects/azendor_branding/animationVfx.html"
+                class="fontPoppins fontW400 font18"
+                >Animation/ VFX</a
+              >
+            </li>
+            <li>
+              <a href="https://ixdtm.com/projects/azendor_branding/music.html"
+                class="fontPoppins fontW400 font18">Music</a>
+            </li>
+            <li>
+              <a href="https://ixdtm.com/projects/azendor_branding/radio.html"
+                class="fontPoppins fontW400 font18">Radio</a>
+            </li>
+            <li>
+              <a href="https://ixdtm.com/projects/azendor_branding/sports.html"
+                class="fontPoppins fontW400 font18">Sports</a>
+            </li>
+            <li><a href="https://ixdtm.com/projects/azendor_branding/advertising.html"
+                class="fontPoppins fontW400 font18">Advertising</a>
+            </li>
+        </ul>
+      </li>
+      <li class="mainLink"><a href="https://ixdtm.com/projects/azendor_branding/careers.html" class="desktopLink fontPoppins font18 colorBlack fontW400">Careers</a></li>
+      <li class="mainLink">
+        <a href="#" class="desktop-item desktopLink fontPoppins font18 colorBlack fontW400">About<span class="downcaretsolutionnew"></span></a>
+        <input type="checkbox" id="showDropnew1">
+        <label for="showDropnew1" class="mobile-item aboutDrop fontPoppins font18 colorBlack fontW400">About<span class="downcaretsolutionnewmbl2"></span></label>
+        <ul class="drop-menu aboutDropMenu">
+          <li><a href="https://ixdtm.com/projects/azendor_branding/about-us.html"
+                class="fontPoppins fontW400 font18">Who we are</a>
+            </li>
+            <li>
+              <a href="https://ixdtm.com/projects/azendor_branding/founder.html"
+                class="fontPoppins fontW400 font18">Founder</a>
+          </li>
+        </ul>
+      </li>
+     
+      <li class="mainLink"><a href="https://ixdtm.com/projects/azendor_branding/contact-us.html" class="desktopLink contact fontPoppins font18 colorBlack fontW400">Contact</a></li>
+    </ul>
     </div>
-    <div class="mblprogressLegal">
-      <div class="progress-container-mobile">
-        <div class="progress-bar-mobile"></div>
-      </div>
+    <label for="menu-btn" class="btn menu-btn"><img src="images/legal/humberger-menu.svg"></label>
+  </div>
+  <div class="mblprogressLegal">
+    <div class="progress-container-mobile">
+      <div class="progress-bar-mobile"></div>
     </div>
-  </header>
+  </div>
+</header>
 
-  <!-- <header class="wrapper headerLegal" id="header">
+   <!-- <header class="wrapper headerLegal" id="header">
       <div class="header-container">
         <a href="legal.html" class="logo">
           <img src="images/azendor-legal-logo.png" alt="Legal Header Logo" title="Legal Header Logo" />
@@ -731,7 +653,7 @@
 
    </header> -->
 
-  <!-- <header class="wrapper headerLegal" id="header">
+    <!-- <header class="wrapper headerLegal" id="header">
       <div class="header-container">
         <a href="legal.html" class="logo">
           <img
@@ -1110,13 +1032,13 @@
       </div>
     </header> -->
 
-  <div class="progressbarLegaldesk">
-    <div class="progress-container">
-      <div id="progressbar" class="progress-bar"></div>
+    <div class="progressbarLegaldesk">
+      <div class="progress-container">
+        <div id="progressbar" class="progress-bar"></div>
+      </div>
     </div>
-  </div>
 
-  <section class="bannerSeclegal sectionsLegal" id="topSec">
+    <section class="bannerSeclegal sectionsLegal" id="topSec">
     <div class="scrolltextLegal">
       <div class="scroll-text" id="scroll-text">SCROLL</div>
 
@@ -1124,14 +1046,12 @@
       <div class="scroll-symbol" id="scroll-symbol"></div>
     </div>
     <div class="wrapper">
-      <div class="bannerDescLegal">
-        <!-- New div -->
+      <div class="bannerDescLegal">  <!-- New div -->
         <h1 class="fontRoboto fontW700 font105 colorBlack">
           Effective and efficient way to legally secure the future.
         </h1>
         <h5 class="fontPoppins fontW400 font36 colorBlack">
-          Hundreds of media & entertainment businesses - from startups to large corporates - have used Azendor Legal’s
-          specialists andcustom technology to manage or complement their legal departments since 2009.
+          Hundreds of media & entertainment businesses - from startups to large corporates - have used Azendor Legal’s specialists andcustom technology to manage or complement their legal departments since 2009.
         </h5>
         <div class="bannerCta">
           <a href="https://ixdtm.com/projects/azendor_branding/contact-us.html" class="font20 fontPoppins fontW400">
@@ -1139,1029 +1059,1586 @@
           </a>
         </div>
       </div>
-
+      
     </div>
   </section>
 
-  <section class="solutionSec sectionsLegal" id="solutionslegal">
-    <div class="wrapper">
-      <h2 class="fontRoboto font64 fontW700 colorBlack">Solutions</h2>
-      <div class="solutionSlider">
-        <div class="solutionBox">
-          <img src="images/legal/general.svg" class="iconImg" alt="Solution Icons" title="Solution Icons" />
-          <h3 class="fontRoboto fontW700 font30 colorBlack">
-            General Counsel
-          </h3>
-          <div class="solutionContent">
-            <p class="fontPoppins fontW400 font22">
-              We act as your business’ General Counsel on a part-time and
-              fixed basis. This helps your business obtain comprehensive,
-              practical legal assistance without the budgetary...
-            </p>
-            <a href="https://ixdtm.com/projects/azendor_branding/general-counsel.html"
-              class="fontPoppins fontW500 font20">Read More
-              <img src="images/legal/solution-arrow.svg" alt="Read More Arrow" title="Read More Arrow" /></a>
+    <section class="solutionSec sectionsLegal" id="solutionslegal">
+      <div class="wrapper">
+        <h2 class="fontRoboto font64 fontW700 colorBlack">Solutions</h2>
+        <div class="solutionSlider">
+          <div class="solutionBox">
+            <img
+              src="images/legal/general.svg"
+              class="iconImg"
+              alt="Solution Icons"
+              title="Solution Icons"
+            />
+            <h3 class="fontRoboto fontW700 font30 colorBlack">
+              General Counsel
+            </h3>
+            <div class="solutionContent">
+              <p class="fontPoppins fontW400 font22">
+                We act as your business’ General Counsel on a part-time and
+                fixed basis. This helps your business obtain comprehensive,
+                practical legal assistance without the budgetary...
+              </p>
+              <a
+                href="https://ixdtm.com/projects/azendor_branding/general-counsel.html"
+                class="fontPoppins fontW500 font20"
+                >Read More
+                <img
+                  src="images/legal/solution-arrow.svg"
+                  alt="Read More Arrow"
+                  title="Read More Arrow"
+              /></a>
+            </div>
           </div>
-        </div>
-        <div class="solutionBox">
-          <img src="images/legal/advisory.svg" class="iconImg" alt="Solution Icons" title="Solution Icons" />
-          <h3 class="fontRoboto fontW700 font30 colorBlack">
-            Legal Advisory
-          </h3>
-          <div class="solutionContent">
-            <p class="fontPoppins fontW400 font22">
-              We can provide legal advisory services to your company on
-              various areas of law practice as and when you need. This can
-              provide substantial savings over hiring a...
-            </p>
-            <a href="https://ixdtm.com/projects/azendor_branding/legal-advisory.html"
-              class="fontPoppins fontW500 font20">Read More
-              <img src="images/legal/solution-arrow.svg" alt="Read More Arrow" title="Read More Arrow" /></a>
+          <div class="solutionBox">
+            <img
+              src="images/legal/advisory.svg"
+              class="iconImg"
+              alt="Solution Icons"
+              title="Solution Icons"
+            />
+            <h3 class="fontRoboto fontW700 font30 colorBlack">
+              Legal Advisory
+            </h3>
+            <div class="solutionContent">
+              <p class="fontPoppins fontW400 font22">
+                We can provide legal advisory services to your company on
+                various areas of law practice as and when you need. This can
+                provide substantial savings over hiring a...
+              </p>
+              <a
+                href="https://ixdtm.com/projects/azendor_branding/legal-advisory.html"
+                class="fontPoppins fontW500 font20"
+                >Read More
+                <img
+                  src="images/legal/solution-arrow.svg"
+                  alt="Read More Arrow"
+                  title="Read More Arrow"
+              /></a>
+            </div>
           </div>
-        </div>
-        <div class="solutionBox">
-          <img src="images/legal/audit.svg" class="iconImg" alt="Solution Icons" title="Solution Icons" />
-          <h3 class="fontRoboto fontW700 font30 colorBlack">Legal Audit</h3>
-          <div class="solutionContent">
-            <p class="fontPoppins fontW400 font22">
-              We can undertake legal audit or due diligence of your company to
-              help you identify and address legal issues and risks (before it
-              becomes big legal problems) and...
-            </p>
-            <a href="https://ixdtm.com/projects/azendor_branding/legal-audit.html"
-              class="fontPoppins fontW500 font20">Read More
-              <img src="images/legal/solution-arrow.svg" alt="Read More Arrow" title="Read More Arrow" /></a>
+          <div class="solutionBox">
+            <img
+              src="images/legal/audit.svg"
+              class="iconImg"
+              alt="Solution Icons"
+              title="Solution Icons"
+            />
+            <h3 class="fontRoboto fontW700 font30 colorBlack">Legal Audit</h3>
+            <div class="solutionContent">
+              <p class="fontPoppins fontW400 font22">
+                We can undertake legal audit or due diligence of your company to
+                help you identify and address legal issues and risks (before it
+                becomes big legal problems) and...
+              </p>
+              <a
+                href="https://ixdtm.com/projects/azendor_branding/legal-audit.html"
+                class="fontPoppins fontW500 font20"
+                >Read More
+                <img
+                  src="images/legal/solution-arrow.svg"
+                  alt="Read More Arrow"
+                  title="Read More Arrow"
+              /></a>
+            </div>
           </div>
-        </div>
-        <div class="solutionBox">
-          <img src="images/legal/digital.svg" class="iconImg" alt="Solution Icons" title="Solution Icons" />
-          <h3 class="fontRoboto fontW700 font30 colorBlack">
-            Digital Transformation
-          </h3>
-          <div class="solutionContent">
-            <p class="fontPoppins fontW400 font22">
-              We can help your company adopt new digital technologies for the
-              purposes of improving business processes, limit human error and
-              increasing...
-            </p>
-            <a href="https://ixdtm.com/projects/azendor_branding/digital-transformation.html"
-              class="fontPoppins fontW500 font20">Read More
-              <img src="images/legal/solution-arrow.svg" alt="Read More Arrow" title="Read More Arrow" /></a>
+          <div class="solutionBox">
+            <img
+              src="images/legal/digital.svg"
+              class="iconImg"
+              alt="Solution Icons"
+              title="Solution Icons"
+            />
+            <h3 class="fontRoboto fontW700 font30 colorBlack">
+              Digital Transformation
+            </h3>
+            <div class="solutionContent">
+              <p class="fontPoppins fontW400 font22">
+                We can help your company adopt new digital technologies for the
+                purposes of improving business processes, limit human error and
+                increasing...
+              </p>
+              <a
+                href="https://ixdtm.com/projects/azendor_branding/digital-transformation.html"
+                class="fontPoppins fontW500 font20"
+                >Read More
+                <img
+                  src="images/legal/solution-arrow.svg"
+                  alt="Read More Arrow"
+                  title="Read More Arrow"
+              /></a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="sectors sectionsLegal" id="sectorslegal">
-    <div class="wrapper">
-      <h2 class="fontRoboto font64 fontW700 colorBlack">Sectors</h2>
-      <p class="fontPoppins fontW400 font22">
-        Azendor Legal advises clients across media and entertainment sector.
-      </p>
-      <div class="sectorsDesktop">
-        <div class="sectorsliderDesktop">
-          <div class="sectorBox">
-            <div class="sectorContent">
-              <img src="images/legal/television-icon.svg" alt="Sector Icons" title="Sector Icons" />
-              <h5 class="fontPoppins fontW600 font24 colorBlack">
-                Television
-              </h5>
-              <a href="https://ixdtm.com/projects/azendor_branding/television.html"
-                class="fontPoppins fontW500 font20">Read More
-                <img src="images/legal/solution-arrow.svg" alt="Read More Arrow" title="Read More Arrow" /></a>
-            </div>
-            <div class="sectorContent">
-              <img src="images/legal/gaming-icon.svg" alt="Sector Icons" title="Sector Icons" />
-              <h5 class="fontPoppins fontW600 font24 colorBlack">
-                Online Gaming
-              </h5>
-              <a href="https://ixdtm.com/projects/azendor_branding/onlineGaming.html"
-                class="fontPoppins fontW500 font20">Read More
-                <img src="images/legal/solution-arrow.svg" alt="Read More Arrow" title="Read More Arrow" /></a>
-            </div>
-          </div>
-          <div class="sectorBox">
-            <div class="sectorContent">
-              <img src="images/legal/film-icon.svg" alt="Sector Icons" title="Sector Icons" />
-              <h5 class="fontPoppins fontW600 font24 colorBlack">Film</h5>
-              <a href="https://ixdtm.com/projects/azendor_branding/film.html" class="fontPoppins fontW500 font20">Read
-                More
-                <img src="images/legal/solution-arrow.svg" alt="Read More Arrow" title="Read More Arrow" /></a>
-            </div>
-            <div class="sectorContent">
-              <img src="images/legal/print-icon.svg" alt="Sector Icons" title="Sector Icons" />
-              <h5 class="fontPoppins fontW600 font24 colorBlack">Print</h5>
-              <a href="https://ixdtm.com/projects/azendor_branding/print.html" class="fontPoppins fontW500 font20">Read
-                More
-                <img src="images/legal/solution-arrow.svg" alt="Read More Arrow" title="Read More Arrow" /></a>
-            </div>
-          </div>
-          <div class="sectorBox">
-            <div class="sectorContent">
-              <img src="images/legal/ott-icon.svg" alt="Sector Icons" title="Sector Icons" />
-              <h5 class="fontPoppins fontW600 font24 colorBlack">
-                OTT Platform
-              </h5>
-              <a href="https://ixdtm.com/projects/azendor_branding/ottPlatform.html"
-                class="fontPoppins fontW500 font20">Read More
-                <img src="images/legal/solution-arrow.svg" alt="Read More Arrow" title="Read More Arrow" /></a>
-            </div>
-            <div class="sectorContent">
-              <img src="images/legal/animation-vfx-icon.svg" alt="Sector Icons" title="Sector Icons" />
-              <h5 class="fontPoppins fontW600 font24 colorBlack">
-                Animation/ VFX
-              </h5>
-              <a href="https://ixdtm.com/projects/azendor_branding/animationVfx.html"
-                class="fontPoppins fontW500 font20">Read More
-                <img src="images/legal/solution-arrow.svg" alt="Read More Arrow" title="Read More Arrow" /></a>
-            </div>
-          </div>
-          <div class="sectorBox">
-            <div class="sectorContent">
-              <img src="images/legal/live-events-icon.svg" alt="Sector Icons" title="Sector Icons" />
-              <h5 class="fontPoppins fontW600 font24 colorBlack">
-                Live Events
-              </h5>
-              <a href="https://ixdtm.com/projects/azendor_branding/liveEvents.html"
-                class="fontPoppins fontW500 font20">Read More
-                <img src="images/legal/solution-arrow.svg" alt="Read More Arrow" title="Read More Arrow" /></a>
-            </div>
-            <div class="sectorContent">
-              <img src="images/legal/radio-icon.svg" alt="Sector Icons" title="Sector Icons" />
-              <h5 class="fontPoppins fontW600 font24 colorBlack">Radio</h5>
-              <a href="https://ixdtm.com/projects/azendor_branding/radio.html" class="fontPoppins fontW500 font20">Read
-                More
-                <img src="images/legal/solution-arrow.svg" alt="Read More Arrow" title="Read More Arrow" /></a>
-            </div>
-          </div>
-          <div class="sectorBox">
-            <div class="sectorContent">
-              <img src="images/legal/ooh-icon.svg" alt="Sector Icons" title="Sector Icons" />
-              <h5 class="fontPoppins fontW600 font24 colorBlack">OOH</h5>
-              <a href="https://ixdtm.com/projects/azendor_branding/ooh.html" class="fontPoppins fontW500 font20">Read
-                More
-                <img src="images/legal/solution-arrow.svg" alt="Read More Arrow" title="Read More Arrow" /></a>
-            </div>
-            <div class="sectorContent">
-              <img src="images/legal/sports-icon.svg" alt="Sector Icons" title="Sector Icons" />
-              <h5 class="fontPoppins fontW600 font24 colorBlack">Sports</h5>
-              <a href="https://ixdtm.com/projects/azendor_branding/sports.html" class="fontPoppins fontW500 font20">Read
-                More
-                <img src="images/legal/solution-arrow.svg" alt="Read More Arrow" title="Read More Arrow" /></a>
-            </div>
-          </div>
-          <div class="sectorBox">
-            <div class="sectorContent">
-              <img src="images/legal/music-icon.svg" alt="Sector Icons" title="Sector Icons" />
-              <h5 class="fontPoppins fontW600 font24 colorBlack">music</h5>
-              <a href="https://ixdtm.com/projects/azendor_branding/music.html" class="fontPoppins fontW500 font20">Read
-                More
-                <img src="images/legal/solution-arrow.svg" alt="Read More Arrow" title="Read More Arrow" /></a>
-            </div>
-            <div class="sectorContent">
-              <img src="images/legal/advertising-icon.svg" alt="Sector Icons" title="Sector Icons" />
-              <h5 class="fontPoppins fontW600 font24 colorBlack">
-                Advertisement
-              </h5>
-              <a href="https://ixdtm.com/projects/azendor_branding/advertising.html"
-                class="fontPoppins fontW500 font20">Read More
-                <img src="images/legal/solution-arrow.svg" alt="Read More Arrow" title="Read More Arrow" /></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="sliderArrow">
-        <button class="back imgsecBackarrow">
-          <img src="images/legal/left-sec-arrow.svg" />
-        </button>
-        <button class="forward imgsecForwardarrow">
-          <img src="images/legal/right-sec-arrow.svg" />
-        </button>
-      </div>
-      <div class="sectorsMobile">
-        <div class="sectorsliderMobile">
-          <div class="sectorBox">
-            <div class="sectorContent">
-              <img src="images/legal/television-icon.svg" alt="Sector Icons" title="Sector Icons" />
-              <h5 class="fontPoppins fontW600 font24 colorBlack">
-                Television
-              </h5>
-              <a href="https://ixdtm.com/projects/azendor_branding/television.html"
-                class="fontPoppins fontW500 font20">Read More
-                <img src="images/legal/solution-arrow.svg" alt="Read More Arrow" title="Read More Arrow" /></a>
-            </div>
-          </div>
-          <div class="sectorBox">
-            <div class="sectorContent">
-              <img src="images/legal/gaming-icon.svg" alt="Sector Icons" title="Sector Icons" />
-              <h5 class="fontPoppins fontW600 font24 colorBlack">
-                Online Gaming
-              </h5>
-              <a href="https://ixdtm.com/projects/azendor_branding/onlineGaming.html"
-                class="fontPoppins fontW500 font20">Read More
-                <img src="images/legal/solution-arrow.svg" alt="Read More Arrow" title="Read More Arrow" /></a>
-            </div>
-          </div>
-          <div class="sectorBox">
-            <div class="sectorContent">
-              <img src="images/legal/film-icon.svg" alt="Sector Icons" title="Sector Icons" />
-              <h5 class="fontPoppins fontW600 font24 colorBlack">Film</h5>
-              <a href="https://ixdtm.com/projects/azendor_branding/film.html" class="fontPoppins fontW500 font20">Read
-                More
-                <img src="images/legal/solution-arrow.svg" alt="Read More Arrow" title="Read More Arrow" /></a>
-            </div>
-          </div>
-          <div class="sectorBox">
-            <div class="sectorContent">
-              <img src="images/legal/print-icon.svg" alt="Sector Icons" title="Sector Icons" />
-              <h5 class="fontPoppins fontW600 font24 colorBlack">Print</h5>
-              <a href="https://ixdtm.com/projects/azendor_branding/print.html" class="fontPoppins fontW500 font20">Read
-                More
-                <img src="images/legal/solution-arrow.svg" alt="Read More Arrow" title="Read More Arrow" /></a>
-            </div>
-          </div>
-          <div class="sectorBox">
-            <div class="sectorContent">
-              <img src="images/legal/ott-icon.svg" alt="Sector Icons" title="Sector Icons" />
-              <h5 class="fontPoppins fontW600 font24 colorBlack">
-                OTT Platform
-              </h5>
-              <a href="https://ixdtm.com/projects/azendor_branding/ottPlatform.html"
-                class="fontPoppins fontW500 font20">Read More
-                <img src="images/legal/solution-arrow.svg" alt="Read More Arrow" title="Read More Arrow" /></a>
-            </div>
-          </div>
-          <div class="sectorBox">
-            <div class="sectorContent">
-              <img src="images/legal/animation-vfx-icon.svg" alt="Sector Icons" title="Sector Icons" />
-              <h5 class="fontPoppins fontW600 font24 colorBlack">
-                Animation/ VFX
-              </h5>
-              <a href="https://ixdtm.com/projects/azendor_branding/animationVfx.html"
-                class="fontPoppins fontW500 font20">Read More
-                <img src="images/legal/solution-arrow.svg" alt="Read More Arrow" title="Read More Arrow" /></a>
-            </div>
-          </div>
-          <div class="sectorBox">
-            <div class="sectorContent">
-              <img src="images/legal/live-events-icon.svg" alt="Sector Icons" title="Sector Icons" />
-              <h5 class="fontPoppins fontW600 font24 colorBlack">
-                Live Events
-              </h5>
-              <a href="https://ixdtm.com/projects/azendor_branding/liveEvents.html"
-                class="fontPoppins fontW500 font20">Read More
-                <img src="images/legal/solution-arrow.svg" alt="Read More Arrow" title="Read More Arrow" /></a>
-            </div>
-          </div>
-          <div class="sectorBox">
-            <div class="sectorContent">
-              <img src="images/legal/radio-icon.svg" alt="Sector Icons" title="Sector Icons" />
-              <h5 class="fontPoppins fontW600 font24 colorBlack">Radio</h5>
-              <a href="https://ixdtm.com/projects/azendor_branding/radio.html" class="fontPoppins fontW500 font20">Read
-                More
-                <img src="images/legal/solution-arrow.svg" alt="Read More Arrow" title="Read More Arrow" /></a>
-            </div>
-          </div>
-          <div class="sectorBox">
-            <div class="sectorContent">
-              <img src="images/legal/ooh-icon.svg" alt="Sector Icons" title="Sector Icons" />
-              <h5 class="fontPoppins fontW600 font24 colorBlack">OOH</h5>
-              <a href="https://ixdtm.com/projects/azendor_branding/ooh.html" class="fontPoppins fontW500 font20">Read
-                More
-                <img src="images/legal/solution-arrow.svg" alt="Read More Arrow" title="Read More Arrow" /></a>
-            </div>
-          </div>
-          <div class="sectorBox">
-            <div class="sectorContent">
-              <img src="images/legal/sports-icon.svg" alt="Sector Icons" title="Sector Icons" />
-              <h5 class="fontPoppins fontW600 font24 colorBlack">Sports</h5>
-              <a href="https://ixdtm.com/projects/azendor_branding/sports.html" class="fontPoppins fontW500 font20">Read
-                More
-                <img src="images/legal/solution-arrow.svg" alt="Read More Arrow" title="Read More Arrow" /></a>
-            </div>
-          </div>
-          <div class="sectorBox">
-            <div class="sectorContent">
-              <img src="images/legal/music-icon.svg" alt="Sector Icons" title="Sector Icons" />
-              <h5 class="fontPoppins fontW600 font24 colorBlack">music</h5>
-              <a href="https://ixdtm.com/projects/azendor_branding/music.html" class="fontPoppins fontW500 font20">Read
-                More
-                <img src="images/legal/solution-arrow.svg" alt="Read More Arrow" title="Read More Arrow" /></a>
-            </div>
-          </div>
-          <div class="sectorBox">
-            <div class="sectorContent">
-              <img src="images/legal/advertising-icon.svg" alt="Sector Icons" title="Sector Icons" />
-              <h5 class="fontPoppins fontW600 font24 colorBlack">
-                Advertisement
-              </h5>
-              <a href="https://ixdtm.com/projects/azendor_branding/advertising.html"
-                class="fontPoppins fontW500 font20">Read More
-                <img src="images/legal/solution-arrow.svg" alt="Read More Arrow" title="Read More Arrow" /></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="sliderArrowtwo">
-        <button class="back imgsecmblBackarrow">
-          <img src="images/legal/left-sec-arrow.svg" />
-        </button>
-        <button class="forward imgsecmblForwardarrow">
-          <img src="images/legal/right-sec-arrow.svg" />
-        </button>
-      </div>
-    </div>
-  </section>
-
-  <section class="advantageSec sectionsLegal">
-    <div class="wrapper">
-      <h2 class="fontRoboto font64 fontW700 colorBlack">Advantage Azendor</h2>
-      <div class="advantageSlider">
-        <div class="advantageBox">
-          <img src="images/legal/adv-lawyer-icon.svg" class="iconImg" alt="Advantages Icon" title="Advantages Icon" />
-          <h3 class="fontRoboto fontW700 font30 colorBlack">
-            Specialist Lawyers
-          </h3>
-          <div class="advantageContent">
-            <p class="fontPoppins fontW400 font22">
-              Azendor Legal works across media and entertainment clients and
-              has a much deeper knowledge of business trends, industry
-              challenges, and new technologies and processes.
-            </p>
-          </div>
-        </div>
-        <div class="advantageBox">
-          <img src="images/legal/saving-adv-icon.svg" class="iconImg" alt="Advantages Icon" title="Advantages Icon" />
-          <h3 class="fontRoboto fontW700 font30 colorBlack">Cost Savings</h3>
-          <div class="advantageContent">
-            <p class="fontPoppins fontW400 font22">
-              With Azendor Legal, you pay only for the services that you need
-              and when you need. This can provide substantial savings over
-              hiring a salaried employee, with same level of expertise.
-            </p>
-          </div>
-        </div>
-        <div class="advantageBox">
-          <img src="images/legal/time-saving-icon.svg" class="iconImg" alt="Advantages Icon" title="Advantages Icon" />
-          <h3 class="fontRoboto fontW700 font30 colorBlack">Time Savings</h3>
-          <div class="advantageContent">
-            <p class="fontPoppins fontW400 font22">
-              Azendor Legal knows the best practices. There is no need for
-              clients to reinvent the wheel and lose precious time to do
-              something that can be quickly completed by Azendor Legal.
-            </p>
-          </div>
-        </div>
-        <div class="advantageBox">
-          <img src="images/legal/cust-tech-icon.svg" class="iconImg" alt="Advantages Icon" title="Advantages Icon" />
-          <h3 class="fontRoboto fontW700 font30 colorBlack">
-            Custom Technology
-          </h3>
-          <div class="advantageContent">
-            <p class="fontPoppins fontW400 font22">
-              Dockete™, a document automation software developed by Azendor
-              Legal helps increase efficiency of our lawyers and lower costs.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="testlegalSec sectionsLegal">
-    <div class="wrapper">
-      <h2 class="fontRoboto font64 fontW700 colorBlack">Testimonials</h2>
-      <div class="testlegalSlider">
-        <div class="testlegalSection">
-          <div class="testimonialsLegal">
-            <div class="profile">
-              <img src="images/legal/testimonial-logo.svg" alt="Testimonials Icon" title="Testimonials Icon" />
-              <div class="profileInfo">
-                <h4 class="fontRoboto font30 fontW500 colorBlack">
-                  Sujeet Jain
-                </h4>
-                <p class="font20 fontPoppins fontW400 colordarkGray">
-                  General Counsel
-                </p>
-              </div>
-            </div>
-            <div class="description testlegalDesktop">
-              <p class="font22 fontPoppins fontW400 colorBlack">
-                Sourabh and his team at Azendor worked for us as consultants
-                on a new brand development project at Unilever. We liked their
-                ability to ‘think out of the box’ while also bringing in the
-                discipline of consumer research and market information
-                analysis. They identified an exciting new positioning space
-                and their work was appreciated by our entire team. I would
-                recommend them if you are looking for a brand strategy
-                consultant to define a powerful positioning space for your
-                brand.
-              </p>
-              <img src="images/qoutes.png" alt="qoutes" title="qoutes" />
-            </div>
-            <div class="description testlegalMobile">
-              <p class="font22 fontPoppins fontW400 colorBlack">
-                Sourabh and his team at Azendor worked for us as consultants
-                on a new brand development project at Unilever. We liked their
-                ability to ‘think out of the box’ while also bringing in the
-                discipline of consumer research and market information
-                analysis. They identified an exciting new positioning space
-                and their work was appreciated by our entire team. I would
-                recommend them if you are looking for a brand strategy
-                consultant to define a powerful positioning space for your
-                brand.
-              </p>
-              <p>
-                <a href="#" class="fontPoppins fontW500 font20" data-toggle="modal" data-target="#readMore">Read More
-                  <img src="images/legal/solution-arrow.svg" alt="Read More Arrow" title="Read More Arrow" /></a>
-              </p>
-              <img src="images/legal/qoutes.svg" alt="qoutes" title="qoutes" />
-            </div>
-          </div>
-        </div>
-        <div class="testlegalSection">
-          <div class="testimonialsLegal">
-            <div class="profile">
-              <img src="images/legal/testimonial-logo.svg" alt="Testimonials Icon" title="Testimonials Icon" />
-              <div class="profileInfo">
-                <h4 class="fontRoboto font30 fontW500 colorBlack">
-                  Sujeet Jain
-                </h4>
-                <p class="font20 fontPoppins fontW400 colordarkGray">
-                  General Counsel
-                </p>
-              </div>
-            </div>
-            <div class="description testlegalDesktop">
-              <p class="font22 fontPoppins fontW400 colorBlack">
-                Sourabh and his team at Azendor worked for us as consultants
-                on a new brand development project at Unilever. We liked their
-                ability to ‘think out of the box’ while also bringing in the
-                discipline of consumer research and market information
-                analysis. They identified an exciting new positioning space
-                and their work was appreciated by our entire team. I would
-                recommend them if you are looking for a brand strategy
-                consultant to define a powerful positioning space for your
-                brand.
-              </p>
-              <img src="images/qoutes.png" alt="qoutes" title="qoutes" />
-            </div>
-            <div class="description testlegalMobile">
-              <p class="font22 fontPoppins fontW400 colorBlack">
-                Sourabh and his team at Azendor worked for us as consultants
-                on a new brand development project at Unilever. We liked their
-                ability to ‘think out of the box’ while also bringing in the
-                discipline of consumer research and market information
-                analysis. They identified an exciting new positioning space
-                and their work was appreciated by our entire team. I would
-                recommend them if you are looking for a brand strategy
-                consultant to define a powerful positioning space for your
-                brand.
-              </p>
-              <p>
-                <a href="#" class="fontPoppins fontW500 font20" data-toggle="modal" data-target="#readMore">Read More
-                  <img src="images/legal/solution-arrow.svg" alt="Read More Arrow" title="Read More Arrow" /></a>
-              </p>
-              <img src="images/legal/qoutes.svg" alt="qoutes" title="qoutes" />
-            </div>
-          </div>
-        </div>
-        <div class="testlegalSection">
-          <div class="testimonialsLegal">
-            <div class="profile">
-              <img src="images/legal/testimonial-logo.svg" alt="Testimonials Icon" title="Testimonials Icon" />
-              <div class="profileInfo">
-                <h4 class="fontRoboto font30 fontW500 colorBlack">
-                  Sujeet Jain
-                </h4>
-                <p class="font20 fontPoppins fontW400 colordarkGray">
-                  General Counsel
-                </p>
-              </div>
-            </div>
-            <div class="description testlegalDesktop">
-              <p class="font22 fontPoppins fontW400 colorBlack">
-                Sourabh and his team at Azendor worked for us as consultants
-                on a new brand development project at Unilever. We liked their
-                ability to ‘think out of the box’ while also bringing in the
-                discipline of consumer research and market information
-                analysis. They identified an exciting new positioning space
-                and their work was appreciated by our entire team. I would
-                recommend them if you are looking for a brand strategy
-                consultant to define a powerful positioning space for your
-                brand.
-              </p>
-              <img src="images/qoutes.png" alt="qoutes" title="qoutes" />
-            </div>
-            <div class="description testlegalMobile">
-              <p class="font22 fontPoppins fontW400 colorBlack">
-                Sourabh and his team at Azendor worked for us as consultants
-                on a new brand development project at Unilever. We liked their
-                ability to ‘think out of the box’ while also bringing in the
-                discipline of consumer research and market information
-                analysis. They identified an exciting new positioning space
-                and their work was appreciated by our entire team. I would
-                recommend them if you are looking for a brand strategy
-                consultant to define a powerful positioning space for your
-                brand.
-              </p>
-              <p>
-                <a href="#" class="fontPoppins fontW500 font20" data-toggle="modal" data-target="#readMore">Read More
-                  <img src="images/legal/solution-arrow.svg" alt="Read More Arrow" title="Read More Arrow" /></a>
-              </p>
-              <img src="images/legal/qoutes.svg" alt="qoutes" title="qoutes" />
-            </div>
-          </div>
-        </div>
-        <div class="testlegalSection">
-          <div class="testimonialsLegal">
-            <div class="profile">
-              <img src="images/legal/testimonial-logo.svg" alt="Testimonials Icon" title="Testimonials Icon" />
-              <div class="profileInfo">
-                <h4 class="fontRoboto font30 fontW500 colorBlack">
-                  Sujeet Jain
-                </h4>
-                <p class="font20 fontPoppins fontW400 colordarkGray">
-                  General Counsel
-                </p>
-              </div>
-            </div>
-            <div class="description testlegalDesktop">
-              <p class="font22 fontPoppins fontW400 colorBlack">
-                Sourabh and his team at Azendor worked for us as consultants
-                on a new brand development project at Unilever. We liked their
-                ability to ‘think out of the box’ while also bringing in the
-                discipline of consumer research and market information
-                analysis. They identified an exciting new positioning space
-                and their work was appreciated by our entire team. I would
-                recommend them if you are looking for a brand strategy
-                consultant to define a powerful positioning space for your
-                brand.
-              </p>
-              <img src="images/qoutes.png" alt="qoutes" title="qoutes" />
-            </div>
-            <div class="description testlegalMobile">
-              <p class="font22 fontPoppins fontW400 colorBlack">
-                Sourabh and his team at Azendor worked for us as consultants
-                on a new brand development project at Unilever. We liked their
-                ability to ‘think out of the box’ while also bringing in the
-                discipline of consumer research and market information
-                analysis. They identified an exciting new positioning space
-                and their work was appreciated by our entire team. I would
-                recommend them if you are looking for a brand strategy
-                consultant to define a powerful positioning space for your
-                brand.
-              </p>
-              <p>
-                <a href="#" class="fontPoppins fontW500 font20" data-toggle="modal" data-target="#readMore">Read More
-                  <img src="images/legal/solution-arrow.svg" alt="Read More Arrow" title="Read More Arrow" /></a>
-              </p>
-              <img src="images/legal/qoutes.svg" alt="qoutes" title="qoutes" />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="sliderArrow">
-        <button class="back imgtestlegalBackarrow">
-          <img src="images/legal/left-sec-arrow.svg" />
-        </button>
-        <button class="forward imgtestlegalForwardarrow">
-          <img src="images/legal/right-sec-arrow.svg" />
-        </button>
-      </div>
-    </div>
-  </section>
-
-  <section class="clientlogoSec">
-    <div class="wrapper">
-      <div class="logosSlider">
-        <div class="logosBox">
-          <img src="images/legal/logos/balaji.svg" alt="Logos" title="Logos" />
-        </div>
-        <div class="logosBox">
-          <img src="images/legal/logos/pen.svg" alt="Logos" title="Logos" />
-        </div>
-        <div class="logosBox">
-          <img src="images/legal/logos/gtp.svg" alt="Logos" title="Logos" />
-        </div>
-        <div class="logosBox">
-          <img src="images/legal/logos/zee.svg" alt="Logos" title="Logos" />
-        </div>
-        <div class="logosBox">
-          <img src="images/legal/logos/den.svg" alt="Logos" title="Logos" />
-        </div>
-        <div class="logosBox">
-          <img src="images/legal/logos/sun-tv.svg" alt="Logos" title="Logos" />
-        </div>
-        <div class="logosBox">
-          <img src="images/legal/logos/balaji.svg" alt="Logos" title="Logos" />
-        </div>
-        <div class="logosBox">
-          <img src="images/legal/logos/pen.svg" alt="Logos" title="Logos" />
-        </div>
-        <div class="logosBox">
-          <img src="images/legal/logos/gtp.svg" alt="Logos" title="Logos" />
-        </div>
-        <div class="logosBox">
-          <img src="images/legal/logos/zee.svg" alt="Logos" title="Logos" />
-        </div>
-        <div class="logosBox">
-          <img src="images/legal/logos/den.svg" alt="Logos" title="Logos" />
-        </div>
-        <div class="logosBox">
-          <img src="images/legal/logos/sun-tv.svg" alt="Logos" title="Logos" />
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="contact sectionsLegal">
-    <div class="contactBox wrapper">
-      <div class="contactDesc">
-        <div class="contactDescTitle">
-          <!-- <a class="backArrow" onclick="history.back(-1)"><img src="images/legal/back-arrow.svg"
-                            alt="Back Arrow"></a> -->
-          <h1 class="fontRoboto font64 fontW700 colorBlack">
-            For Initial Consultation
-          </h1>
-        </div>
-        <p class="fontPoppins fontW400 font22 colorBlack">
-          Tell us about your query. A member of our team will be in touch with
-          you shortly for an initial consultation.
+    <section class="sectors sectionsLegal" id="sectorslegal">
+      <div class="wrapper">
+        <h2 class="fontRoboto font64 fontW700 colorBlack">Sectors</h2>
+        <p class="fontPoppins fontW400 font22">
+          Azendor Legal advises clients across media and entertainment sector.
         </p>
+        <div class="sectorsDesktop">
+          <div class="sectorsliderDesktop">
+            <div class="sectorBox">
+              <div class="sectorContent">
+                <img
+                  src="images/legal/television-icon.svg"
+                  alt="Sector Icons"
+                  title="Sector Icons"
+                />
+                <h5 class="fontPoppins fontW600 font24 colorBlack">
+                  Television
+                </h5>
+                <a
+                  href="https://ixdtm.com/projects/azendor_branding/television.html"
+                  class="fontPoppins fontW500 font20"
+                  >Read More
+                  <img
+                    src="images/legal/solution-arrow.svg"
+                    alt="Read More Arrow"
+                    title="Read More Arrow"
+                /></a>
+              </div>
+              <div class="sectorContent">
+                <img
+                  src="images/legal/gaming-icon.svg"
+                  alt="Sector Icons"
+                  title="Sector Icons"
+                />
+                <h5 class="fontPoppins fontW600 font24 colorBlack">
+                  Online Gaming
+                </h5>
+                <a
+                  href="https://ixdtm.com/projects/azendor_branding/onlineGaming.html"
+                  class="fontPoppins fontW500 font20"
+                  >Read More
+                  <img
+                    src="images/legal/solution-arrow.svg"
+                    alt="Read More Arrow"
+                    title="Read More Arrow"
+                /></a>
+              </div>
+            </div>
+            <div class="sectorBox">
+              <div class="sectorContent">
+                <img
+                  src="images/legal/film-icon.svg"
+                  alt="Sector Icons"
+                  title="Sector Icons"
+                />
+                <h5 class="fontPoppins fontW600 font24 colorBlack">Film</h5>
+                <a
+                  href="https://ixdtm.com/projects/azendor_branding/film.html"
+                  class="fontPoppins fontW500 font20"
+                  >Read More
+                  <img
+                    src="images/legal/solution-arrow.svg"
+                    alt="Read More Arrow"
+                    title="Read More Arrow"
+                /></a>
+              </div>
+              <div class="sectorContent">
+                <img
+                  src="images/legal/print-icon.svg"
+                  alt="Sector Icons"
+                  title="Sector Icons"
+                />
+                <h5 class="fontPoppins fontW600 font24 colorBlack">Print</h5>
+                <a
+                  href="https://ixdtm.com/projects/azendor_branding/print.html"
+                  class="fontPoppins fontW500 font20"
+                  >Read More
+                  <img
+                    src="images/legal/solution-arrow.svg"
+                    alt="Read More Arrow"
+                    title="Read More Arrow"
+                /></a>
+              </div>
+            </div>
+            <div class="sectorBox">
+              <div class="sectorContent">
+                <img
+                  src="images/legal/ott-icon.svg"
+                  alt="Sector Icons"
+                  title="Sector Icons"
+                />
+                <h5 class="fontPoppins fontW600 font24 colorBlack">
+                  OTT Platform
+                </h5>
+                <a
+                  href="https://ixdtm.com/projects/azendor_branding/ottPlatform.html"
+                  class="fontPoppins fontW500 font20"
+                  >Read More
+                  <img
+                    src="images/legal/solution-arrow.svg"
+                    alt="Read More Arrow"
+                    title="Read More Arrow"
+                /></a>
+              </div>
+              <div class="sectorContent">
+                <img
+                  src="images/legal/animation-vfx-icon.svg"
+                  alt="Sector Icons"
+                  title="Sector Icons"
+                />
+                <h5 class="fontPoppins fontW600 font24 colorBlack">
+                  Animation/ VFX
+                </h5>
+                <a
+                  href="https://ixdtm.com/projects/azendor_branding/animationVfx.html"
+                  class="fontPoppins fontW500 font20"
+                  >Read More
+                  <img
+                    src="images/legal/solution-arrow.svg"
+                    alt="Read More Arrow"
+                    title="Read More Arrow"
+                /></a>
+              </div>
+            </div>
+            <div class="sectorBox">
+              <div class="sectorContent">
+                <img
+                  src="images/legal/live-events-icon.svg"
+                  alt="Sector Icons"
+                  title="Sector Icons"
+                />
+                <h5 class="fontPoppins fontW600 font24 colorBlack">
+                  Live Events
+                </h5>
+                <a
+                  href="https://ixdtm.com/projects/azendor_branding/liveEvents.html"
+                  class="fontPoppins fontW500 font20"
+                  >Read More
+                  <img
+                    src="images/legal/solution-arrow.svg"
+                    alt="Read More Arrow"
+                    title="Read More Arrow"
+                /></a>
+              </div>
+              <div class="sectorContent">
+                <img
+                  src="images/legal/radio-icon.svg"
+                  alt="Sector Icons"
+                  title="Sector Icons"
+                />
+                <h5 class="fontPoppins fontW600 font24 colorBlack">Radio</h5>
+                <a
+                  href="https://ixdtm.com/projects/azendor_branding/radio.html"
+                  class="fontPoppins fontW500 font20"
+                  >Read More
+                  <img
+                    src="images/legal/solution-arrow.svg"
+                    alt="Read More Arrow"
+                    title="Read More Arrow"
+                /></a>
+              </div>
+            </div>
+            <div class="sectorBox">
+              <div class="sectorContent">
+                <img
+                  src="images/legal/ooh-icon.svg"
+                  alt="Sector Icons"
+                  title="Sector Icons"
+                />
+                <h5 class="fontPoppins fontW600 font24 colorBlack">OOH</h5>
+                <a
+                  href="https://ixdtm.com/projects/azendor_branding/ooh.html"
+                  class="fontPoppins fontW500 font20"
+                  >Read More
+                  <img
+                    src="images/legal/solution-arrow.svg"
+                    alt="Read More Arrow"
+                    title="Read More Arrow"
+                /></a>
+              </div>
+              <div class="sectorContent">
+                <img
+                  src="images/legal/sports-icon.svg"
+                  alt="Sector Icons"
+                  title="Sector Icons"
+                />
+                <h5 class="fontPoppins fontW600 font24 colorBlack">Sports</h5>
+                <a
+                  href="https://ixdtm.com/projects/azendor_branding/sports.html"
+                  class="fontPoppins fontW500 font20"
+                  >Read More
+                  <img
+                    src="images/legal/solution-arrow.svg"
+                    alt="Read More Arrow"
+                    title="Read More Arrow"
+                /></a>
+              </div>
+            </div>
+            <div class="sectorBox">
+              <div class="sectorContent">
+                <img
+                  src="images/legal/music-icon.svg"
+                  alt="Sector Icons"
+                  title="Sector Icons"
+                />
+                <h5 class="fontPoppins fontW600 font24 colorBlack">music</h5>
+                <a
+                  href="https://ixdtm.com/projects/azendor_branding/music.html"
+                  class="fontPoppins fontW500 font20"
+                  >Read More
+                  <img
+                    src="images/legal/solution-arrow.svg"
+                    alt="Read More Arrow"
+                    title="Read More Arrow"
+                /></a>
+              </div>
+              <div class="sectorContent">
+                <img
+                  src="images/legal/advertising-icon.svg"
+                  alt="Sector Icons"
+                  title="Sector Icons"
+                />
+                <h5 class="fontPoppins fontW600 font24 colorBlack">
+                  Advertisement
+                </h5>
+                <a
+                  href="https://ixdtm.com/projects/azendor_branding/advertising.html"
+                  class="fontPoppins fontW500 font20"
+                  >Read More
+                  <img
+                    src="images/legal/solution-arrow.svg"
+                    alt="Read More Arrow"
+                    title="Read More Arrow"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sliderArrow">
+          <button class="back imgsecBackarrow">
+            <img src="images/legal/left-sec-arrow.svg" />
+          </button>
+          <button class="forward imgsecForwardarrow">
+            <img src="images/legal/right-sec-arrow.svg" />
+          </button>
+        </div>
+        <div class="sectorsMobile">
+          <div class="sectorsliderMobile">
+            <div class="sectorBox">
+              <div class="sectorContent">
+                <img
+                  src="images/legal/television-icon.svg"
+                  alt="Sector Icons"
+                  title="Sector Icons"
+                />
+                <h5 class="fontPoppins fontW600 font24 colorBlack">
+                  Television
+                </h5>
+                <a
+                  href="https://ixdtm.com/projects/azendor_branding/television.html"
+                  class="fontPoppins fontW500 font20"
+                  >Read More
+                  <img
+                    src="images/legal/solution-arrow.svg"
+                    alt="Read More Arrow"
+                    title="Read More Arrow"
+                /></a>
+              </div>
+            </div>
+            <div class="sectorBox">
+              <div class="sectorContent">
+                <img
+                  src="images/legal/gaming-icon.svg"
+                  alt="Sector Icons"
+                  title="Sector Icons"
+                />
+                <h5 class="fontPoppins fontW600 font24 colorBlack">
+                  Online Gaming
+                </h5>
+                <a
+                  href="https://ixdtm.com/projects/azendor_branding/onlineGaming.html"
+                  class="fontPoppins fontW500 font20"
+                  >Read More
+                  <img
+                    src="images/legal/solution-arrow.svg"
+                    alt="Read More Arrow"
+                    title="Read More Arrow"
+                /></a>
+              </div>
+            </div>
+            <div class="sectorBox">
+              <div class="sectorContent">
+                <img
+                  src="images/legal/film-icon.svg"
+                  alt="Sector Icons"
+                  title="Sector Icons"
+                />
+                <h5 class="fontPoppins fontW600 font24 colorBlack">Film</h5>
+                <a
+                  href="https://ixdtm.com/projects/azendor_branding/film.html"
+                  class="fontPoppins fontW500 font20"
+                  >Read More
+                  <img
+                    src="images/legal/solution-arrow.svg"
+                    alt="Read More Arrow"
+                    title="Read More Arrow"
+                /></a>
+              </div>
+            </div>
+            <div class="sectorBox">
+              <div class="sectorContent">
+                <img
+                  src="images/legal/print-icon.svg"
+                  alt="Sector Icons"
+                  title="Sector Icons"
+                />
+                <h5 class="fontPoppins fontW600 font24 colorBlack">Print</h5>
+                <a
+                  href="https://ixdtm.com/projects/azendor_branding/print.html"
+                  class="fontPoppins fontW500 font20"
+                  >Read More
+                  <img
+                    src="images/legal/solution-arrow.svg"
+                    alt="Read More Arrow"
+                    title="Read More Arrow"
+                /></a>
+              </div>
+            </div>
+            <div class="sectorBox">
+              <div class="sectorContent">
+                <img
+                  src="images/legal/ott-icon.svg"
+                  alt="Sector Icons"
+                  title="Sector Icons"
+                />
+                <h5 class="fontPoppins fontW600 font24 colorBlack">
+                  OTT Platform
+                </h5>
+                <a
+                  href="https://ixdtm.com/projects/azendor_branding/ottPlatform.html"
+                  class="fontPoppins fontW500 font20"
+                  >Read More
+                  <img
+                    src="images/legal/solution-arrow.svg"
+                    alt="Read More Arrow"
+                    title="Read More Arrow"
+                /></a>
+              </div>
+            </div>
+            <div class="sectorBox">
+              <div class="sectorContent">
+                <img
+                  src="images/legal/animation-vfx-icon.svg"
+                  alt="Sector Icons"
+                  title="Sector Icons"
+                />
+                <h5 class="fontPoppins fontW600 font24 colorBlack">
+                  Animation/ VFX
+                </h5>
+                <a
+                  href="https://ixdtm.com/projects/azendor_branding/animationVfx.html"
+                  class="fontPoppins fontW500 font20"
+                  >Read More
+                  <img
+                    src="images/legal/solution-arrow.svg"
+                    alt="Read More Arrow"
+                    title="Read More Arrow"
+                /></a>
+              </div>
+            </div>
+            <div class="sectorBox">
+              <div class="sectorContent">
+                <img
+                  src="images/legal/live-events-icon.svg"
+                  alt="Sector Icons"
+                  title="Sector Icons"
+                />
+                <h5 class="fontPoppins fontW600 font24 colorBlack">
+                  Live Events
+                </h5>
+                <a
+                  href="https://ixdtm.com/projects/azendor_branding/liveEvents.html"
+                  class="fontPoppins fontW500 font20"
+                  >Read More
+                  <img
+                    src="images/legal/solution-arrow.svg"
+                    alt="Read More Arrow"
+                    title="Read More Arrow"
+                /></a>
+              </div>
+            </div>
+            <div class="sectorBox">
+              <div class="sectorContent">
+                <img
+                  src="images/legal/radio-icon.svg"
+                  alt="Sector Icons"
+                  title="Sector Icons"
+                />
+                <h5 class="fontPoppins fontW600 font24 colorBlack">Radio</h5>
+                <a
+                  href="https://ixdtm.com/projects/azendor_branding/radio.html"
+                  class="fontPoppins fontW500 font20"
+                  >Read More
+                  <img
+                    src="images/legal/solution-arrow.svg"
+                    alt="Read More Arrow"
+                    title="Read More Arrow"
+                /></a>
+              </div>
+            </div>
+            <div class="sectorBox">
+              <div class="sectorContent">
+                <img
+                  src="images/legal/ooh-icon.svg"
+                  alt="Sector Icons"
+                  title="Sector Icons"
+                />
+                <h5 class="fontPoppins fontW600 font24 colorBlack">OOH</h5>
+                <a
+                  href="https://ixdtm.com/projects/azendor_branding/ooh.html"
+                  class="fontPoppins fontW500 font20"
+                  >Read More
+                  <img
+                    src="images/legal/solution-arrow.svg"
+                    alt="Read More Arrow"
+                    title="Read More Arrow"
+                /></a>
+              </div>
+            </div>
+            <div class="sectorBox">
+              <div class="sectorContent">
+                <img
+                  src="images/legal/sports-icon.svg"
+                  alt="Sector Icons"
+                  title="Sector Icons"
+                />
+                <h5 class="fontPoppins fontW600 font24 colorBlack">Sports</h5>
+                <a
+                  href="https://ixdtm.com/projects/azendor_branding/sports.html"
+                  class="fontPoppins fontW500 font20"
+                  >Read More
+                  <img
+                    src="images/legal/solution-arrow.svg"
+                    alt="Read More Arrow"
+                    title="Read More Arrow"
+                /></a>
+              </div>
+            </div>
+            <div class="sectorBox">
+              <div class="sectorContent">
+                <img
+                  src="images/legal/music-icon.svg"
+                  alt="Sector Icons"
+                  title="Sector Icons"
+                />
+                <h5 class="fontPoppins fontW600 font24 colorBlack">music</h5>
+                <a
+                  href="https://ixdtm.com/projects/azendor_branding/music.html"
+                  class="fontPoppins fontW500 font20"
+                  >Read More
+                  <img
+                    src="images/legal/solution-arrow.svg"
+                    alt="Read More Arrow"
+                    title="Read More Arrow"
+                /></a>
+              </div>
+            </div>
+            <div class="sectorBox">
+              <div class="sectorContent">
+                <img
+                  src="images/legal/advertising-icon.svg"
+                  alt="Sector Icons"
+                  title="Sector Icons"
+                />
+                <h5 class="fontPoppins fontW600 font24 colorBlack">
+                  Advertisement
+                </h5>
+                <a
+                  href="https://ixdtm.com/projects/azendor_branding/advertising.html"
+                  class="fontPoppins fontW500 font20"
+                  >Read More
+                  <img
+                    src="images/legal/solution-arrow.svg"
+                    alt="Read More Arrow"
+                    title="Read More Arrow"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sliderArrowtwo">
+          <button class="back imgsecmblBackarrow">
+            <img src="images/legal/left-sec-arrow.svg" />
+          </button>
+          <button class="forward imgsecmblForwardarrow">
+            <img src="images/legal/right-sec-arrow.svg" />
+          </button>
+        </div>
       </div>
-      <div class="contactForm">
-        <form>
-          <div class="formDivider">
-            <label for="fname" class="fontPoppins fontW400 colorBlack">First Name*</label>
-            <input class="fontPoppins fontW400" type="text" id="fname" name="firstname" placeholder="Indranil" />
-          </div>
-          <div class="formDivider">
-            <label for="lname" class="fontPoppins fontW400 colorBlack">Last Name*</label>
-            <input class="fontPoppins fontW400" type="text" id="lname" name="lastname" placeholder="Banerjee" />
-          </div>
-          <div class="formDividerOne">
-            <label for="contact" class="fontPoppins fontW400 colorBlack">Phone Number*</label>
-            <input class="fontPoppins fontW400" type="text" id="contact" name="contactnumber"
-              placeholder="9818622996" />
-          </div>
-          <div class="formDividerOne">
-            <label for="email" class="fontPoppins fontW400 colorBlack">Email*</label>
-            <input class="fontPoppins fontW400" type="email" id="email" name="email"
-              placeholder="indranil.banerjee@azendor.com" />
-          </div>
+    </section>
 
-          <div class="aboutQuery">
-            <label for="subject" class="fontPoppins fontW400 colorBlack">Tell Us About Query*
-            </label>
-            <textarea class="fontPoppins fontW400" id="subject" name="subject"
-              placeholder="I Would Like To Ask"></textarea>
-          </div>
-          <div class="submit">
-            <p class="fontPoppins fontW400 colorBlack">
-              By submitting this form, you agree to receive e-mails / calls
-              from Azendor Legal team member.<br />
-              See our
-              <a href="#" class="fontW700 colorBlack">Privacy Policy.</a>
-            </p>
-            <input class="fontPoppins fontW400 colorW" type="submit" value="Submit" />
-          </div>
-        </form>
-      </div>
-    </div>
-  </section>
-  <section class="contactDetails sectionsLegal">
-    <div class="wrapper">
-      <div class="contactDetailsBox">
-        <div class="address">
-          <div class="addTitle">
-            <img src="images/legal-location.svg" alt="Legal Location" />
-            <p class="fontPoppins fontW400 font22 colordarkGray">Address</p>
-          </div>
-
-          <div class="addressBox">
-            <div class="addressBoxDetails">
-              <h4 class="fontPoppins fontW700 font20 colorBlack">Mumbai</h4>
-              <p class="fontPoppins fontW400 font22 colorBlack">
-                2nd Floor, Duru House <br />
-                Juhu Tara Road, Juhu <br />
-                Mumbai – 400049
+    <section class="advantageSec sectionsLegal">
+      <div class="wrapper">
+        <h2 class="fontRoboto font64 fontW700 colorBlack">Advantage Azendor</h2>
+        <div class="advantageSlider">
+          <div class="advantageBox">
+            <img
+              src="images/legal/adv-lawyer-icon.svg"
+              class="iconImg"
+              alt="Advantages Icon"
+              title="Advantages Icon"
+            />
+            <h3 class="fontRoboto fontW700 font30 colorBlack">
+              Specialist Lawyers
+            </h3>
+            <div class="advantageContent">
+              <p class="fontPoppins fontW400 font22">
+                Azendor Legal works across media and entertainment clients and
+                has a much deeper knowledge of business trends, industry
+                challenges, and new technologies and processes.
               </p>
             </div>
-            <div class="addressBoxDetails">
-              <h4 class="fontPoppins fontW700 font20 colorBlack">Delhi</h4>
-              <p class="fontPoppins fontW400 font22 colorBlack">
-                5th Floor, SB Towers Film <br />
-                City Road, Sector 16A <br />
-                Noida – 201301 (Delhi NCR)
+          </div>
+          <div class="advantageBox">
+            <img
+              src="images/legal/saving-adv-icon.svg"
+              class="iconImg"
+              alt="Advantages Icon"
+              title="Advantages Icon"
+            />
+            <h3 class="fontRoboto fontW700 font30 colorBlack">Cost Savings</h3>
+            <div class="advantageContent">
+              <p class="fontPoppins fontW400 font22">
+                With Azendor Legal, you pay only for the services that you need
+                and when you need. This can provide substantial savings over
+                hiring a salaried employee, with same level of expertise.
               </p>
             </div>
-            <div class="addressBoxDetails">
-              <h4 class="fontPoppins fontW700 font20 colorBlack">
-                Singapore
-              </h4>
-              <p class="fontPoppins fontW400 font22 colorBlack">
-                1 Sophia Road <br />
-                #05-23 Peace Centre <br />
-                Singapore – 228149
+          </div>
+          <div class="advantageBox">
+            <img
+              src="images/legal/time-saving-icon.svg"
+              class="iconImg"
+              alt="Advantages Icon"
+              title="Advantages Icon"
+            />
+            <h3 class="fontRoboto fontW700 font30 colorBlack">Time Savings</h3>
+            <div class="advantageContent">
+              <p class="fontPoppins fontW400 font22">
+                Azendor Legal knows the best practices. There is no need for
+                clients to reinvent the wheel and lose precious time to do
+                something that can be quickly completed by Azendor Legal.
+              </p>
+            </div>
+          </div>
+          <div class="advantageBox">
+            <img
+              src="images/legal/cust-tech-icon.svg"
+              class="iconImg"
+              alt="Advantages Icon"
+              title="Advantages Icon"
+            />
+            <h3 class="fontRoboto fontW700 font30 colorBlack">
+              Custom Technology
+            </h3>
+            <div class="advantageContent">
+              <p class="fontPoppins fontW400 font22">
+                Dockete™, a document automation software developed by Azendor
+                Legal helps increase efficiency of our lawyers and lower costs.
               </p>
             </div>
           </div>
         </div>
-        <div class="contactRight">
-          <div class="addTitle">
-            <img src="images/contact-legal.svg" alt="Contact Legal" />
-            <p class="fontPoppins fontW400 font22 colordarkGray">
-              Contact Us
-            </p>
+      </div>
+    </section>
+
+    <section class="testlegalSec sectionsLegal">
+      <div class="wrapper">
+        <h2 class="fontRoboto font64 fontW700 colorBlack">Testimonials</h2>
+        <div class="testlegalSlider">
+          <div class="testlegalSection">
+            <div class="testimonialsLegal">
+              <div class="profile">
+                <img
+                  src="images/legal/testimonial-logo.svg"
+                  alt="Testimonials Icon"
+                  title="Testimonials Icon"
+                />
+                <div class="profileInfo">
+                  <h4 class="fontRoboto font30 fontW500 colorBlack">
+                    Sujeet Jain
+                  </h4>
+                  <p class="font20 fontPoppins fontW400 colordarkGray">
+                    General Counsel
+                  </p>
+                </div>
+              </div>
+              <div class="description testlegalDesktop">
+                <p class="font22 fontPoppins fontW400 colorBlack">
+                  Sourabh and his team at Azendor worked for us as consultants
+                  on a new brand development project at Unilever. We liked their
+                  ability to ‘think out of the box’ while also bringing in the
+                  discipline of consumer research and market information
+                  analysis. They identified an exciting new positioning space
+                  and their work was appreciated by our entire team. I would
+                  recommend them if you are looking for a brand strategy
+                  consultant to define a powerful positioning space for your
+                  brand.
+                </p>
+                <img src="images/qoutes.png" alt="qoutes" title="qoutes" />
+              </div>
+              <div class="description testlegalMobile">
+                <p class="font22 fontPoppins fontW400 colorBlack">
+                  Sourabh and his team at Azendor worked for us as consultants
+                  on a new brand development project at Unilever. We liked their
+                  ability to ‘think out of the box’ while also bringing in the
+                  discipline of consumer research and market information
+                  analysis. They identified an exciting new positioning space
+                  and their work was appreciated by our entire team. I would
+                  recommend them if you are looking for a brand strategy
+                  consultant to define a powerful positioning space for your
+                  brand.
+                </p>
+                <p>
+                  <a
+                    href="#"
+                    class="fontPoppins fontW500 font20"
+                    data-toggle="modal"
+                    data-target="#readMore"
+                    >Read More
+                    <img
+                      src="images/legal/solution-arrow.svg"
+                      alt="Read More Arrow"
+                      title="Read More Arrow"
+                  /></a>
+                </p>
+                <img
+                  src="images/legal/qoutes.svg"
+                  alt="qoutes"
+                  title="qoutes"
+                />
+              </div>
+            </div>
           </div>
-          <div class="contactRightDetails">
-            <p>
-              <a href="mailto:sourabh.mishra@azendor.com"
-                class="fontPoppins fontW400 font20 colorBlack">legal@azendor.com</a>
-            </p>
-            <p>
-              <a class="fontPoppins fontW400 font22 colorBlack" href="tel:919820607601">+91 98206 07601</a>
-            </p>
+          <div class="testlegalSection">
+            <div class="testimonialsLegal">
+              <div class="profile">
+                <img
+                  src="images/legal/testimonial-logo.svg"
+                  alt="Testimonials Icon"
+                  title="Testimonials Icon"
+                />
+                <div class="profileInfo">
+                  <h4 class="fontRoboto font30 fontW500 colorBlack">
+                    Sujeet Jain
+                  </h4>
+                  <p class="font20 fontPoppins fontW400 colordarkGray">
+                    General Counsel
+                  </p>
+                </div>
+              </div>
+              <div class="description testlegalDesktop">
+                <p class="font22 fontPoppins fontW400 colorBlack">
+                  Sourabh and his team at Azendor worked for us as consultants
+                  on a new brand development project at Unilever. We liked their
+                  ability to ‘think out of the box’ while also bringing in the
+                  discipline of consumer research and market information
+                  analysis. They identified an exciting new positioning space
+                  and their work was appreciated by our entire team. I would
+                  recommend them if you are looking for a brand strategy
+                  consultant to define a powerful positioning space for your
+                  brand.
+                </p>
+                <img src="images/qoutes.png" alt="qoutes" title="qoutes" />
+              </div>
+              <div class="description testlegalMobile">
+                <p class="font22 fontPoppins fontW400 colorBlack">
+                  Sourabh and his team at Azendor worked for us as consultants
+                  on a new brand development project at Unilever. We liked their
+                  ability to ‘think out of the box’ while also bringing in the
+                  discipline of consumer research and market information
+                  analysis. They identified an exciting new positioning space
+                  and their work was appreciated by our entire team. I would
+                  recommend them if you are looking for a brand strategy
+                  consultant to define a powerful positioning space for your
+                  brand.
+                </p>
+                <p>
+                  <a
+                    href="#"
+                    class="fontPoppins fontW500 font20"
+                    data-toggle="modal"
+                    data-target="#readMore"
+                    >Read More
+                    <img
+                      src="images/legal/solution-arrow.svg"
+                      alt="Read More Arrow"
+                      title="Read More Arrow"
+                  /></a>
+                </p>
+                <img
+                  src="images/legal/qoutes.svg"
+                  alt="qoutes"
+                  title="qoutes"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="testlegalSection">
+            <div class="testimonialsLegal">
+              <div class="profile">
+                <img
+                  src="images/legal/testimonial-logo.svg"
+                  alt="Testimonials Icon"
+                  title="Testimonials Icon"
+                />
+                <div class="profileInfo">
+                  <h4 class="fontRoboto font30 fontW500 colorBlack">
+                    Sujeet Jain
+                  </h4>
+                  <p class="font20 fontPoppins fontW400 colordarkGray">
+                    General Counsel
+                  </p>
+                </div>
+              </div>
+              <div class="description testlegalDesktop">
+                <p class="font22 fontPoppins fontW400 colorBlack">
+                  Sourabh and his team at Azendor worked for us as consultants
+                  on a new brand development project at Unilever. We liked their
+                  ability to ‘think out of the box’ while also bringing in the
+                  discipline of consumer research and market information
+                  analysis. They identified an exciting new positioning space
+                  and their work was appreciated by our entire team. I would
+                  recommend them if you are looking for a brand strategy
+                  consultant to define a powerful positioning space for your
+                  brand.
+                </p>
+                <img src="images/qoutes.png" alt="qoutes" title="qoutes" />
+              </div>
+              <div class="description testlegalMobile">
+                <p class="font22 fontPoppins fontW400 colorBlack">
+                  Sourabh and his team at Azendor worked for us as consultants
+                  on a new brand development project at Unilever. We liked their
+                  ability to ‘think out of the box’ while also bringing in the
+                  discipline of consumer research and market information
+                  analysis. They identified an exciting new positioning space
+                  and their work was appreciated by our entire team. I would
+                  recommend them if you are looking for a brand strategy
+                  consultant to define a powerful positioning space for your
+                  brand.
+                </p>
+                <p>
+                  <a
+                    href="#"
+                    class="fontPoppins fontW500 font20"
+                    data-toggle="modal"
+                    data-target="#readMore"
+                    >Read More
+                    <img
+                      src="images/legal/solution-arrow.svg"
+                      alt="Read More Arrow"
+                      title="Read More Arrow"
+                  /></a>
+                </p>
+                <img
+                  src="images/legal/qoutes.svg"
+                  alt="qoutes"
+                  title="qoutes"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="testlegalSection">
+            <div class="testimonialsLegal">
+              <div class="profile">
+                <img
+                  src="images/legal/testimonial-logo.svg"
+                  alt="Testimonials Icon"
+                  title="Testimonials Icon"
+                />
+                <div class="profileInfo">
+                  <h4 class="fontRoboto font30 fontW500 colorBlack">
+                    Sujeet Jain
+                  </h4>
+                  <p class="font20 fontPoppins fontW400 colordarkGray">
+                    General Counsel
+                  </p>
+                </div>
+              </div>
+              <div class="description testlegalDesktop">
+                <p class="font22 fontPoppins fontW400 colorBlack">
+                  Sourabh and his team at Azendor worked for us as consultants
+                  on a new brand development project at Unilever. We liked their
+                  ability to ‘think out of the box’ while also bringing in the
+                  discipline of consumer research and market information
+                  analysis. They identified an exciting new positioning space
+                  and their work was appreciated by our entire team. I would
+                  recommend them if you are looking for a brand strategy
+                  consultant to define a powerful positioning space for your
+                  brand.
+                </p>
+                <img src="images/qoutes.png" alt="qoutes" title="qoutes" />
+              </div>
+              <div class="description testlegalMobile">
+                <p class="font22 fontPoppins fontW400 colorBlack">
+                  Sourabh and his team at Azendor worked for us as consultants
+                  on a new brand development project at Unilever. We liked their
+                  ability to ‘think out of the box’ while also bringing in the
+                  discipline of consumer research and market information
+                  analysis. They identified an exciting new positioning space
+                  and their work was appreciated by our entire team. I would
+                  recommend them if you are looking for a brand strategy
+                  consultant to define a powerful positioning space for your
+                  brand.
+                </p>
+                <p>
+                  <a
+                    href="#"
+                    class="fontPoppins fontW500 font20"
+                    data-toggle="modal"
+                    data-target="#readMore"
+                    >Read More
+                    <img
+                      src="images/legal/solution-arrow.svg"
+                      alt="Read More Arrow"
+                      title="Read More Arrow"
+                  /></a>
+                </p>
+                <img
+                  src="images/legal/qoutes.svg"
+                  alt="qoutes"
+                  title="qoutes"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sliderArrow">
+          <button class="back imgtestlegalBackarrow">
+            <img src="images/legal/left-sec-arrow.svg" />
+          </button>
+          <button class="forward imgtestlegalForwardarrow">
+            <img src="images/legal/right-sec-arrow.svg" />
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="clientlogoSec">
+      <div class="wrapper">
+        <div class="logosSlider">
+          <div class="logosBox">
+            <img
+              src="images/legal/logos/balaji.svg"
+              alt="Logos"
+              title="Logos"
+            />
+          </div>
+          <div class="logosBox">
+            <img src="images/legal/logos/pen.svg" alt="Logos" title="Logos" />
+          </div>
+          <div class="logosBox">
+            <img src="images/legal/logos/gtp.svg" alt="Logos" title="Logos" />
+          </div>
+          <div class="logosBox">
+            <img src="images/legal/logos/zee.svg" alt="Logos" title="Logos" />
+          </div>
+          <div class="logosBox">
+            <img src="images/legal/logos/den.svg" alt="Logos" title="Logos" />
+          </div>
+          <div class="logosBox">
+            <img
+              src="images/legal/logos/sun-tv.svg"
+              alt="Logos"
+              title="Logos"
+            />
+          </div>
+          <div class="logosBox">
+            <img
+              src="images/legal/logos/balaji.svg"
+              alt="Logos"
+              title="Logos"
+            />
+          </div>
+          <div class="logosBox">
+            <img src="images/legal/logos/pen.svg" alt="Logos" title="Logos" />
+          </div>
+          <div class="logosBox">
+            <img src="images/legal/logos/gtp.svg" alt="Logos" title="Logos" />
+          </div>
+          <div class="logosBox">
+            <img src="images/legal/logos/zee.svg" alt="Logos" title="Logos" />
+          </div>
+          <div class="logosBox">
+            <img src="images/legal/logos/den.svg" alt="Logos" title="Logos" />
+          </div>
+          <div class="logosBox">
+            <img
+              src="images/legal/logos/sun-tv.svg"
+              alt="Logos"
+              title="Logos"
+            />
           </div>
         </div>
       </div>
-      <!-- <p class="info fontPoppins fontW400 font16 colorBlack"><img src="images/info.svg" alt="Info">Covid-19
+    </section>
+
+    <section class="contact sectionsLegal">
+      <div class="contactBox wrapper">
+        <div class="contactDesc">
+          <div class="contactDescTitle">
+            <!-- <a class="backArrow" onclick="history.back(-1)"><img src="images/legal/back-arrow.svg"
+                            alt="Back Arrow"></a> -->
+            <h1 class="fontRoboto font64 fontW700 colorBlack">
+              For Initial Consultation
+            </h1>
+          </div>
+          <p class="fontPoppins fontW400 font22 colorBlack">
+            Tell us about your query. A member of our team will be in touch with
+            you shortly for an initial consultation.
+          </p>
+        </div>
+        <div class="contactForm">
+          <form>
+            <div class="formDivider">
+              <label for="fname" class="fontPoppins fontW400 colorBlack"
+                >First Name*</label
+              >
+              <input
+                class="fontPoppins fontW400"
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Indranil"
+              />
+            </div>
+            <div class="formDivider">
+              <label for="lname" class="fontPoppins fontW400 colorBlack"
+                >Last Name*</label
+              >
+              <input
+                class="fontPoppins fontW400"
+                type="text"
+                id="lname"
+                name="lastname"
+                placeholder="Banerjee"
+              />
+            </div>
+            <div class="formDividerOne">
+              <label for="contact" class="fontPoppins fontW400 colorBlack"
+                >Phone Number*</label
+              >
+              <input
+                class="fontPoppins fontW400"
+                type="text"
+                id="contact"
+                name="contactnumber"
+                placeholder="9818622996"
+              />
+            </div>
+            <div class="formDividerOne">
+              <label for="email" class="fontPoppins fontW400 colorBlack"
+                >Email*</label
+              >
+              <input
+                class="fontPoppins fontW400"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="indranil.banerjee@azendor.com"
+              />
+            </div>
+
+            <div class="aboutQuery">
+              <label for="subject" class="fontPoppins fontW400 colorBlack"
+                >Tell Us About Query*
+              </label>
+              <textarea
+                class="fontPoppins fontW400"
+                id="subject"
+                name="subject"
+                placeholder="I Would Like To Ask"
+              ></textarea>
+            </div>
+            <div class="submit">
+              <p class="fontPoppins fontW400 colorBlack">
+                By submitting this form, you agree to receive e-mails / calls
+                from Azendor Legal team member.<br />
+                See our
+                <a href="#" class="fontW700 colorBlack">Privacy Policy.</a>
+              </p>
+              <input
+                class="fontPoppins fontW400 colorW"
+                type="submit"
+                value="Submit"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="contactDetails sectionsLegal">
+      <div class="wrapper">
+        <div class="contactDetailsBox">
+          <div class="address">
+            <div class="addTitle">
+              <img src="images/legal-location.svg" alt="Legal Location" />
+              <p class="fontPoppins fontW400 font22 colordarkGray">Address</p>
+            </div>
+
+            <div class="addressBox">
+              <div class="addressBoxDetails">
+                <h4 class="fontPoppins fontW700 font20 colorBlack">Mumbai</h4>
+                <p class="fontPoppins fontW400 font22 colorBlack">
+                  2nd Floor, Duru House <br />
+                  Juhu Tara Road, Juhu <br />
+                  Mumbai – 400049
+                </p>
+              </div>
+              <div class="addressBoxDetails">
+                <h4 class="fontPoppins fontW700 font20 colorBlack">Delhi</h4>
+                <p class="fontPoppins fontW400 font22 colorBlack">
+                  5th Floor, SB Towers Film <br />
+                  City Road, Sector 16A <br />
+                  Noida – 201301 (Delhi NCR)
+                </p>
+              </div>
+              <div class="addressBoxDetails">
+                <h4 class="fontPoppins fontW700 font20 colorBlack">
+                  Singapore
+                </h4>
+                <p class="fontPoppins fontW400 font22 colorBlack">
+                  1 Sophia Road <br />
+                  #05-23 Peace Centre <br />
+                  Singapore – 228149
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="contactRight">
+            <div class="addTitle">
+              <img src="images/contact-legal.svg" alt="Contact Legal" />
+              <p class="fontPoppins fontW400 font22 colordarkGray">
+                Contact Us
+              </p>
+            </div>
+            <div class="contactRightDetails">
+              <p>
+                <a
+                  href="mailto:sourabh.mishra@azendor.com"
+                  class="fontPoppins fontW400 font20 colorBlack"
+                  >legal@azendor.com</a
+                >
+              </p>
+              <p>
+                <a
+                  class="fontPoppins fontW400 font22 colorBlack"
+                  href="tel:919820607601"
+                  >+91 98206 07601</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- <p class="info fontPoppins fontW400 font16 colorBlack"><img src="images/info.svg" alt="Info">Covid-19
                 pandemic has compelled us to deliver legal services online. If you wish to meet with us in person, you
                 are welcome to visit any of our offices with prior appointment.</p> -->
-    </div>
-  </section>
-  <footer class="footerLegal">
-    <div class="wrapper">
-      <div class="footerSec">
-        <div class="footerSub">
-          <a href="legal.html" class="footerLogo"><img src="images/legal-footer-logo.png" alt="Legal Footer Logo"
-              title="Legal Footer Logo" /></a>
-          <div class="socialmediaIcons">
+      </div>
+    </section>
+    <footer class="footerLegal">
+      <div class="wrapper">
+        <div class="footerSec">
+          <div class="footerSub">
+            <a href="legal.html" class="footerLogo"
+              ><img
+                src="images/legal-footer-logo.png"
+                alt="Legal Footer Logo"
+                title="Legal Footer Logo"
+            /></a>
+            <div class="socialmediaIcons">
+              <ul>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="images/legal/linkdin-footer.svg"
+                      alt="Linkdin"
+                      title="Linkdin"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="images/legal/twitter.svg"
+                      alt="Twitter"
+                      title="Twitter"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="images/legal/facebook.svg"
+                      alt="Facebook"
+                      title="Facebook"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="images/legal/youtube.svg"
+                      alt="Youtube"
+                      title="Youtube"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footerSub">
+            <h4 class="colordarkGray fontW400 font22 fontPoppins">Solutions</h4>
             <ul>
               <li>
-                <a href="#"><img src="images/legal/linkdin-footer.svg" alt="Linkdin" title="Linkdin" /></a>
+                <a
+                  href="https://ixdtm.com/projects/azendor_branding/general-counsel.html"
+                  class="colorW fontW400 font22 fontPoppins"
+                  >General Counsel</a
+                >
               </li>
               <li>
-                <a href="#"><img src="images/legal/twitter.svg" alt="Twitter" title="Twitter" /></a>
+                <a
+                  href="https://ixdtm.com/projects/azendor_branding/legal-advisory.html"
+                  class="colorW fontW400 font22 fontPoppins"
+                  >Legal Advisory</a
+                >
               </li>
               <li>
-                <a href="#"><img src="images/legal/facebook.svg" alt="Facebook" title="Facebook" /></a>
+                <a
+                  href="https://ixdtm.com/projects/azendor_branding/legal-audit.html"
+                  class="colorW fontW400 font22 fontPoppins"
+                  >Legal Audit</a
+                >
               </li>
               <li>
-                <a href="#"><img src="images/legal/youtube.svg" alt="Youtube" title="Youtube" /></a>
+                <a
+                  href="https://ixdtm.com/projects/azendor_branding/digital-transformation.html"
+                  class="colorW fontW400 font22 fontPoppins"
+                  >Digital Transformation</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="footerSub">
+            <h4 class="colordarkGray fontW400 font22 fontPoppins">Sectors</h4>
+            <div class="subSector">
+              <div class="sectorftSub">
+                <ul>
+                  <li>
+                    <a
+                      href="https://ixdtm.com/projects/azendor_branding/television.html"
+                      class="colorW fontW400 font22 fontPoppins"
+                      >Television</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://ixdtm.com/projects/azendor_branding/film.html"
+                      class="colorW fontW400 font22 fontPoppins"
+                      >Film</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://ixdtm.com/projects/azendor_branding/ottPlatform.html"
+                      class="colorW fontW400 font22 fontPoppins"
+                      >OTT Platform</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://ixdtm.com/projects/azendor_branding/onlineGaming.html"
+                      class="colorW fontW400 font22 fontPoppins"
+                      >Online Gaming</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://ixdtm.com/projects/azendor_branding/print.html"
+                      class="colorW fontW400 font22 fontPoppins"
+                      >Print</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://ixdtm.com/projects/azendor_branding/ooh.html"
+                      class="colorW fontW400 font22 fontPoppins"
+                      >OOH</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://ixdtm.com/projects/azendor_branding/liveEvents.html"
+                      class="colorW fontW400 font22 fontPoppins"
+                      >Live Events</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://ixdtm.com/projects/azendor_branding/animationVfx.html"
+                      class="colorW fontW400 font22 fontPoppins"
+                      >Animation/ VFX</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://ixdtm.com/projects/azendor_branding/music.html"
+                      class="colorW fontW400 font22 fontPoppins"
+                      >Music</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://ixdtm.com/projects/azendor_branding/radio.html"
+                      class="colorW fontW400 font22 fontPoppins"
+                      >Radio</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://ixdtm.com/projects/azendor_branding/sports.html"
+                      class="colorW fontW400 font22 fontPoppins"
+                      >Sports</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://ixdtm.com/projects/azendor_branding/advertising.html"
+                      class="colorW fontW400 font22 fontPoppins"
+                    >
+                      Advertising</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="footerSub">
+            <h4 class="colordarkGray fontW400 font22 fontPoppins">
+              Quick Links
+            </h4>
+            <ul>
+              <li class="ftCareer">
+                <a
+                  href="https://ixdtm.com/projects/azendor_branding/careers.html"
+                  class="colorW fontW400 font22 fontPoppins"
+                  >Careers</a
+                >
+              </li>
+              <li class="quickLinksft">
+                <p class="colorW fontW400 font22 fontPoppins">About</p>
+                <ul>
+                  <li>
+                    <a
+                      href="https://ixdtm.com/projects/azendor_branding/about-us.html"
+                      class="colorW fontW300 font16 fontPoppins"
+                      >- Who we are</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://ixdtm.com/projects/azendor_branding/founder.html"
+                      class="colorW fontW300 font16 fontPoppins"
+                      >- Founder</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="contactFt">
+                <a
+                  href="https://ixdtm.com/projects/azendor_branding/contact-us.html"
+                  class="colorW fontW400 font22 fontPoppins"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="socialmediaIcons-btm">
+            <ul>
+              <li>
+                <a href="#"
+                  ><img
+                    src="images/legal/linkdin-footer.svg"
+                    alt="Linkdin"
+                    title="Linkdin"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="images/legal/twitter.svg"
+                    alt="Twitter"
+                    title="Twitter"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="images/legal/facebook.svg"
+                    alt="Facebook"
+                    title="Facebook"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="images/legal/youtube.svg"
+                    alt="Youtube"
+                    title="Youtube"
+                /></a>
               </li>
             </ul>
           </div>
         </div>
-        <div class="footerSub">
-          <h4 class="colordarkGray fontW400 font22 fontPoppins">Solutions</h4>
-          <ul>
-            <li>
-              <a href="https://ixdtm.com/projects/azendor_branding/general-counsel.html"
-                class="colorW fontW400 font22 fontPoppins">General Counsel</a>
-            </li>
-            <li>
-              <a href="https://ixdtm.com/projects/azendor_branding/legal-advisory.html"
-                class="colorW fontW400 font22 fontPoppins">Legal Advisory</a>
-            </li>
-            <li>
-              <a href="https://ixdtm.com/projects/azendor_branding/legal-audit.html"
-                class="colorW fontW400 font22 fontPoppins">Legal Audit</a>
-            </li>
-            <li>
-              <a href="https://ixdtm.com/projects/azendor_branding/digital-transformation.html"
-                class="colorW fontW400 font22 fontPoppins">Digital Transformation</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="footerSub">
-          <h4 class="colordarkGray fontW400 font22 fontPoppins">Sectors</h4>
-          <div class="subSector">
-            <div class="sectorftSub">
-              <ul>
-                <li>
-                  <a href="https://ixdtm.com/projects/azendor_branding/television.html"
-                    class="colorW fontW400 font22 fontPoppins">Television</a>
-                </li>
-                <li>
-                  <a href="https://ixdtm.com/projects/azendor_branding/film.html"
-                    class="colorW fontW400 font22 fontPoppins">Film</a>
-                </li>
-                <li>
-                  <a href="https://ixdtm.com/projects/azendor_branding/ottPlatform.html"
-                    class="colorW fontW400 font22 fontPoppins">OTT Platform</a>
-                </li>
-                <li>
-                  <a href="https://ixdtm.com/projects/azendor_branding/onlineGaming.html"
-                    class="colorW fontW400 font22 fontPoppins">Online Gaming</a>
-                </li>
-                <li>
-                  <a href="https://ixdtm.com/projects/azendor_branding/print.html"
-                    class="colorW fontW400 font22 fontPoppins">Print</a>
-                </li>
-                <li>
-                  <a href="https://ixdtm.com/projects/azendor_branding/ooh.html"
-                    class="colorW fontW400 font22 fontPoppins">OOH</a>
-                </li>
-                <li>
-                  <a href="https://ixdtm.com/projects/azendor_branding/liveEvents.html"
-                    class="colorW fontW400 font22 fontPoppins">Live Events</a>
-                </li>
-                <li>
-                  <a href="https://ixdtm.com/projects/azendor_branding/animationVfx.html"
-                    class="colorW fontW400 font22 fontPoppins">Animation/ VFX</a>
-                </li>
-                <li>
-                  <a href="https://ixdtm.com/projects/azendor_branding/music.html"
-                    class="colorW fontW400 font22 fontPoppins">Music</a>
-                </li>
-                <li>
-                  <a href="https://ixdtm.com/projects/azendor_branding/radio.html"
-                    class="colorW fontW400 font22 fontPoppins">Radio</a>
-                </li>
-                <li>
-                  <a href="https://ixdtm.com/projects/azendor_branding/sports.html"
-                    class="colorW fontW400 font22 fontPoppins">Sports</a>
-                </li>
-                <li>
-                  <a href="https://ixdtm.com/projects/azendor_branding/advertising.html"
-                    class="colorW fontW400 font22 fontPoppins">
-                    Advertising</a>
-                </li>
-              </ul>
-            </div>
+        <div class="footerLinks">
+          <div class="linksFt">
+            <a href="#" class="fontPoppins fontW500 font20 colordarkGray"
+              >Terms Of Use
+            </a>
+            <a href="#" class="fontPoppins fontW500 font20 colordarkGray"
+              >Privacy Policy</a
+            >
           </div>
-        </div>
-
-        <div class="footerSub">
-          <h4 class="colordarkGray fontW400 font22 fontPoppins">
-            Quick Links
-          </h4>
-          <ul>
-            <li class="ftCareer">
-              <a href="https://ixdtm.com/projects/azendor_branding/careers.html"
-                class="colorW fontW400 font22 fontPoppins">Careers</a>
-            </li>
-            <li class="quickLinksft">
-              <p class="colorW fontW400 font22 fontPoppins">About</p>
-              <ul>
-                <li>
-                  <a href="https://ixdtm.com/projects/azendor_branding/about-us.html"
-                    class="colorW fontW300 font16 fontPoppins">- Who we are</a>
-                </li>
-                <li>
-                  <a href="https://ixdtm.com/projects/azendor_branding/founder.html"
-                    class="colorW fontW300 font16 fontPoppins">- Founder</a>
-                </li>
-              </ul>
-            </li>
-
-            <li class="contactFt">
-              <a href="https://ixdtm.com/projects/azendor_branding/contact-us.html"
-                class="colorW fontW400 font22 fontPoppins">Contact</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="socialmediaIcons-btm">
-          <ul>
-            <li>
-              <a href="#"><img src="images/legal/linkdin-footer.svg" alt="Linkdin" title="Linkdin" /></a>
-            </li>
-            <li>
-              <a href="#"><img src="images/legal/twitter.svg" alt="Twitter" title="Twitter" /></a>
-            </li>
-            <li>
-              <a href="#"><img src="images/legal/facebook.svg" alt="Facebook" title="Facebook" /></a>
-            </li>
-            <li>
-              <a href="#"><img src="images/legal/youtube.svg" alt="Youtube" title="Youtube" /></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="footerLinks">
-        <div class="linksFt">
-          <a href="#" class="fontPoppins fontW500 font20 colordarkGray">Terms Of Use
-          </a>
-          <a href="#" class="fontPoppins fontW500 font20 colordarkGray">Privacy Policy</a>
-        </div>
-        <div>
-          <p class="colorW fontW400 font20 fontPoppins copyRight">
-            <img src="images/legal/footer-text-icon.svg" alt="Copyright Symbol" title="Copyright Symbol" />
-            2022 Azendor Consulting Pvt. Ltd, All Rights Reserved.
-          </p>
-        </div>
-        <div class="copyrightmbl">
-          <p class="colorW fontW400 font20 fontPoppins mobileCopy">
-            <img src="images/legal/footer-text-icon.svg" alt="Copyright Symbol" title="Copyright Symbol" />
-            2022 Azendor Consulting Pvt. Ltd,<br />
-            All Rights Reserved.
-          </p>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- <progress id="progressbar" value="0" max="100"></progress> -->
-
-  <!-- <script src="js/custom.js"></script> -->
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/custom.js"></script>
-  <script type="text/javascript">
-    // mobile header active
-    $(function () {
-      $("#sideMenu a").click(function () {
-        $("#sideMenu a.active").removeClass("active");
-        $(this).addClass("active");
-      });
-    });
-
-    //show -hide mobile header
-    function hideSidebar() {
-      document.getElementById("openSideMenu").checked = false;
-    }
-
-    var sideIconToggle = document.getElementById("sidebarContainer");
-
-    document.addEventListener("click", function (event) {
-      if (!sidebarContainer.contains(event.target)) hideSidebar();
-    });
-
-
-
-    $(function () {
-      $('.solutionDrop').on('click', function () {
-        /*$(this).toggleClass('fontWeight');*/
-        $('.downcaretsolutionnewmbl').toggleClass('clicked');
-      });
-      $('.sectorDrop').on('click', function () {
-        /*$(this).toggleClass('fontWeight');*/
-        $('.downcaretsolutionnewmbl1').toggleClass('clicked');
-      });
-      $('.aboutDrop').on('click', function () {
-        /*$(this).toggleClass('fontWeight');*/
-        $('.downcaretsolutionnewmbl2').toggleClass('clicked');
-      });
-    });
-
-
-    $(document).on('click', function (e) {
-      $('.mainLink > ul').hide();
-
-      if ($(e.target).parent().hasClass('mainLink')) {
-        $(e.target).siblings('ul').toggle();
-      }
-    });
-
-
-
-    /*$(function () {
-      $("#sideMenu a").click(function () {
-        $("#sideMenu a.active").removeClass("active");
-        $(this).addClass("active");
-      });
-    });*/
-  </script>
-
-  <div class="modal" id="readMore" role="dialog" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog-legal modal-dialog-centered modal-lg" role="document">
-      <div class="modal-content">
-        <div class="modal-body">
-          <button type="button" class="close" data-dismiss="modal">
-            <img src="images/legal/test-cancel-icon.svg" alt="" />
-          </button>
-          <div class="teamBox">
-            <div class="memberImg">
-              <img src="images/legal/test-icon.svg" alt="" />
-            </div>
-            <div class="teamDesc">
-              <h3 class="fontRoboto fontW500 colorW">Pearl Shah</h3>
-              <p class="fontW400 fontPoppins colorW">Sr Marketing Manager</p>
-            </div>
-
+          <div>
+            <p class="colorW fontW400 font20 fontPoppins copyRight">
+              <img
+                src="images/legal/footer-text-icon.svg"
+                alt="Copyright Symbol"
+                title="Copyright Symbol"
+              />
+              2022 Azendor Consulting Pvt. Ltd, All Rights Reserved.
+            </p>
           </div>
-          <div class="teamPara">
-            <p class="fontW400 fontPoppins colorW">
-              Sourabh and his team at Azendor worked for us as consultants on
-              a new brand development project at Unilever. We liked their
-              ability to ‘think out of the box’ while also bringing in the
-              discipline of consumer research and market information analysis.
-              They identified an exciting new positioning space and their work
-              was appreciated by our entire team. I would recommend them if
-              you are looking for a brand strategy consultant to define a
-              powerful positioning space for your brand.
+          <div class="copyrightmbl">
+            <p class="colorW fontW400 font20 fontPoppins mobileCopy">
+              <img
+                src="images/legal/footer-text-icon.svg"
+                alt="Copyright Symbol"
+                title="Copyright Symbol"
+              />
+              2022 Azendor Consulting Pvt. Ltd,<br />
+              All Rights Reserved.
             </p>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</body>
+    </footer>
 
+    <!-- <progress id="progressbar" value="0" max="100"></progress> -->
+
+    <!-- <script src="js/custom.js"></script> -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/custom.js"></script>
+    <script type="text/javascript">
+      // mobile header active
+$(function () {
+  $("#sideMenu a").click(function () {
+    $("#sideMenu a.active").removeClass("active");
+    $(this).addClass("active");
+  });
+});
+
+//show -hide mobile header
+function hideSidebar() {
+  document.getElementById("openSideMenu").checked = false;
+}
+
+var sideIconToggle = document.getElementById("sidebarContainer");
+
+document.addEventListener("click", function (event) {
+  if (!sidebarContainer.contains(event.target)) hideSidebar();
+});
+
+
+
+$(function () {
+    $('.solutionDrop').on('click',function () {
+        /*$(this).toggleClass('fontWeight');*/
+        $('.downcaretsolutionnewmbl').toggleClass('clicked');
+    });
+    $('.sectorDrop').on('click',function () {
+        /*$(this).toggleClass('fontWeight');*/
+        $('.downcaretsolutionnewmbl1').toggleClass('clicked');
+    });
+    $('.aboutDrop').on('click',function () {
+        /*$(this).toggleClass('fontWeight');*/
+        $('.downcaretsolutionnewmbl2').toggleClass('clicked');
+    });
+});
+
+
+$(document).on('click', function(e) {
+  $('.mainLink > ul').hide();
+
+  if ($(e.target).parent().hasClass('mainLink')) {
+    $(e.target).siblings('ul').toggle();
+  }
+});
+
+
+
+/*$(function () {
+  $("#sideMenu a").click(function () {
+    $("#sideMenu a.active").removeClass("active");
+    $(this).addClass("active");
+  });
+});*/
+</script>
+
+    <div
+      class="modal"
+      id="readMore"
+      role="dialog"
+      tabindex="-1"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog-legal modal-dialog-centered modal-lg"
+        role="document"
+      >
+        <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal">
+              <img src="images/legal/test-cancel-icon.svg" alt="" />
+            </button>
+            <div class="teamBox">
+              <div class="memberImg">
+                <img src="images/legal/test-icon.svg" alt="" />
+              </div>
+              <div class="teamDesc">
+                <h3 class="fontRoboto fontW500 colorW">Pearl Shah</h3>
+                <p class="fontW400 fontPoppins colorW">Sr Marketing Manager</p>
+              </div>
+
+            </div>
+            <div class="teamPara">
+              <p class="fontW400 fontPoppins colorW">
+                Sourabh and his team at Azendor worked for us as consultants on
+                a new brand development project at Unilever. We liked their
+                ability to ‘think out of the box’ while also bringing in the
+                discipline of consumer research and market information analysis.
+                They identified an exciting new positioning space and their work
+                was appreciated by our entire team. I would recommend them if
+                you are looking for a brand strategy consultant to define a
+                powerful positioning space for your brand.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
