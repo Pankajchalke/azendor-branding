@@ -4354,48 +4354,46 @@ h2 {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between; }
-      .contact .contactForm form input[type=text], .contact .contactForm form [type=number], .contact .contactForm form [type=email], .contact .contactForm form textarea {
+      .contact .contactForm form input[type=text], .contact .contactForm form [type=number], .contact .contactForm form [type=email], .contact .contactForm form [type=tel], .contact .contactForm form textarea {
         width: 100%;
         padding: 14px 15px;
         border: 2px solid transparent;
         border-radius: 5px;
         box-sizing: border-box;
         margin-top: 15px;
-        margin-bottom: 50px;
         resize: vertical;
         background: rgba(215, 215, 215, 0.3);
         font-size: 20px; }
         @media all and (max-width: 1600px) {
-          .contact .contactForm form input[type=text], .contact .contactForm form [type=number], .contact .contactForm form [type=email], .contact .contactForm form textarea {
-            margin-bottom: 20px;
+          .contact .contactForm form input[type=text], .contact .contactForm form [type=number], .contact .contactForm form [type=email], .contact .contactForm form [type=tel], .contact .contactForm form textarea {
             margin-top: 10px; } }
         @media all and (max-width: 1400px) {
-          .contact .contactForm form input[type=text], .contact .contactForm form [type=number], .contact .contactForm form [type=email], .contact .contactForm form textarea {
+          .contact .contactForm form input[type=text], .contact .contactForm form [type=number], .contact .contactForm form [type=email], .contact .contactForm form [type=tel], .contact .contactForm form textarea {
             font-size: 14px;
             margin-top: 10px;
-            margin-bottom: 20px;
             padding: 10px;
             border-radius: 3.5px; } }
         @media all and (max-width: 920px) {
-          .contact .contactForm form input[type=text], .contact .contactForm form [type=number], .contact .contactForm form [type=email], .contact .contactForm form textarea {
+          .contact .contactForm form input[type=text], .contact .contactForm form [type=number], .contact .contactForm form [type=email], .contact .contactForm form [type=tel], .contact .contactForm form textarea {
             font-size: 16px;
             padding: 12px 15px; } }
-        .contact .contactForm form input[type=text]:focus, .contact .contactForm form [type=number]:focus, .contact .contactForm form [type=email]:focus, .contact .contactForm form textarea:focus {
+        .contact .contactForm form input[type=text]:focus, .contact .contactForm form [type=number]:focus, .contact .contactForm form [type=email]:focus, .contact .contactForm form [type=tel]:focus, .contact .contactForm form textarea:focus {
           background: rgba(243, 243, 243, 0.7);
           border: 2px solid #212121; }
           @media all and (max-width: 1400px) {
-            .contact .contactForm form input[type=text]:focus, .contact .contactForm form [type=number]:focus, .contact .contactForm form [type=email]:focus, .contact .contactForm form textarea:focus {
+            .contact .contactForm form input[type=text]:focus, .contact .contactForm form [type=number]:focus, .contact .contactForm form [type=email]:focus, .contact .contactForm form [type=tel]:focus, .contact .contactForm form textarea:focus {
               border: 1.4px solid #212121; } }
           @media all and (max-width: 920px) {
-            .contact .contactForm form input[type=text]:focus, .contact .contactForm form [type=number]:focus, .contact .contactForm form [type=email]:focus, .contact .contactForm form textarea:focus {
+            .contact .contactForm form input[type=text]:focus, .contact .contactForm form [type=number]:focus, .contact .contactForm form [type=email]:focus, .contact .contactForm form [type=tel]:focus, .contact .contactForm form textarea:focus {
               border: 1px solid #212121; } }
       .contact .contactForm form textarea {
-        margin-bottom: 20px;
         height: 166px; }
         @media all and (max-width: 1600px) {
           .contact .contactForm form textarea {
-            height: 120px;
-            margin-bottom: 10px; } }
+            height: 120px; } }
+      .contact .contactForm form .wpcf7-not-valid-tip {
+        font-family: 'Poppins', sans-serif;
+        margin-top: 5px; }
       .contact .contactForm form .submit input[type=submit] {
         background: #212121;
         border: 1px solid rgba(255, 255, 255, 0.2);
@@ -4437,11 +4435,6 @@ h2 {
         text-decoration: none; }
         .contact .contactForm form .submit a:hover {
           color: #6a6a6a !important; }
-      .contact .contactForm form .submit .thanku-message {
-        font-size: 16px;
-        padding-top: 25px;
-        color: #008000;
-        display: none; }
       .contact .contactForm form label {
         font-size: 16px; }
         @media all and (max-width: 1400px) {
@@ -4451,20 +4444,39 @@ h2 {
           .contact .contactForm form label {
             font-size: 14px; } }
     .contact .contactForm .formDivider {
-      width: 45%; }
+      width: 45%;
+      margin-bottom: 50px; }
       @media all and (max-width: 1400px) {
         .contact .contactForm .formDivider {
-          width: 47%; } }
+          width: 47%;
+          margin-bottom: 20px; } }
     .contact .contactForm .formDividerOne {
-      width: 45%; }
+      width: 45%;
+      margin-bottom: 50px; }
       @media all and (max-width: 1400px) {
         .contact .contactForm .formDividerOne {
-          width: 47%; } }
+          width: 47%;
+          margin-bottom: 20px; } }
       @media all and (max-width: 920px) {
         .contact .contactForm .formDividerOne {
           width: 100%; } }
     .contact .contactForm .aboutQuery {
-      width: 100%; }
+      width: 100%;
+      margin-bottom: 20px; }
+      @media all and (max-width: 1400px) {
+        .contact .contactForm .aboutQuery {
+          margin-bottom: 10px; } }
+    .contact .contactForm .wpcf7-response-output {
+      font-family: 'Poppins', sans-serif;
+      border: none !important;
+      font-size: 16px;
+      padding: 15px 0px 0px 0px !important;
+      margin: 0 !important;
+      color: #212121; }
+      @media all and (max-width: 1024px) {
+        .contact .contactForm .wpcf7-response-output {
+          font-size: 14px;
+          padding: 10px 0px 0px 0px !important; } }
 
 .contactDetails {
   background: rgba(194, 194, 194, 0.2);
