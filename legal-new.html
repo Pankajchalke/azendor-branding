@@ -138,8 +138,8 @@
   transition: all 0.3s ease;
   /*top: 70px;*/
  /* opacity: 1;*/
- display: block;
-  visibility: visible;
+display: block !important;
+ visibility: visible;
 }
 
 .drop-menu li a{
@@ -2564,20 +2564,33 @@ document.addEventListener("click", function (event) {
 
 
 
-$(function () {
+$(document).ready(function () {
+    $(".solutionDrop").click(function () {
+      $(".downcaretsolutionnewmbl").toggleClass("clicked");
+    });
+    $(".sectorDrop").click(function () {
+      $(".downcaretsolutionnewmbl1").toggleClass("clicked");
+    });
+    $(".aboutDrop").click(function () {
+      $(".downcaretsolutionnewmbl2").toggleClass("clicked");
+    });
+  });
+
+
+/*$(function () {
     $('.solutionDrop').on('click',function () {
-        /*$(this).toggleClass('fontWeight');*/
         $('.downcaretsolutionnewmbl').toggleClass('clicked');
     });
     $('.sectorDrop').on('click',function () {
-        /*$(this).toggleClass('fontWeight');*/
         $('.downcaretsolutionnewmbl1').toggleClass('clicked');
     });
     $('.aboutDrop').on('click',function () {
-        /*$(this).toggleClass('fontWeight');*/
         $('.downcaretsolutionnewmbl2').toggleClass('clicked');
     });
-});
+});*/
+
+
+
 
 
 $(document).on('click', function(e) {
