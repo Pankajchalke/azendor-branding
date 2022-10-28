@@ -325,16 +325,17 @@ if ($(".advantageSlider").length) {
   $(".advantageSlider").slick({
     dots: false,
     infinite: true,
-    arrows: false,
+    arrows:false,
     speed: 300,
     autoplay: false,
     autoplaySpeed: 2000,
     slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToScroll: 1,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
+          arrows:false,
           dots: true,
           slidesToShow: 2,
           slidesToScroll: 2,
