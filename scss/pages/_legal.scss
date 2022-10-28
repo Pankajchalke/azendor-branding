@@ -2522,10 +2522,11 @@ body {
             display: none;
         }
 
-        .copyRight,
-        .mobileCopy {
+        .copyRight{
             display: flex;
             align-items: center;
+
+            br{display: none;}
 
             span {
                 margin-right: 10px;
@@ -2535,9 +2536,9 @@ body {
         @media all and (max-width: 1024px) {
             display: block;
 
-            .copyRight,
-            .mobileCopy {
+            .copyRight {
                 margin-top: 20px;
+                br{display: block;}
             }
 
             .linksFt a {
@@ -2777,17 +2778,8 @@ body {
     @media all and (max-width:575px) {
         .footerLinks {
 
-            .copyRight,
-            .mobileCopy {
+            .copyRight{
                 align-items: flex-start;
-            }
-
-            .copyrightmbl {
-                display: block;
-            }
-
-            .copyRight {
-                display: none;
             }
         }
     }

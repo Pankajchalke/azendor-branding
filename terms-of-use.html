@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Azendor</title>
+    <link rel="shortcut icon" href="https://azendor.com/wp-content/uploads/2018/12/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet" />
+    <link href="scss/main.css" rel="stylesheet">
+
+</head>
+
+<body style="overflow: visible !important;">
+    <header class="wrapper headerLegal" id="header">
+        <div class="header-container">
+            <a href="legal.html" class="logo">
+                <img src="images/azendor-legal-logo.png" alt="Legal Header Logo" title="Legal Header Logo" />
+            </a>
+            <div id="sidebarContainer">
+                <input type="checkbox" class="openSideMenu" id="openSideMenu" />
+
+                <label for="openSideMenu" class="sideIconToggle">
+                    <span class="spinner diagonal part-1"></span>
+                    <span class="spinner horizontal"></span>
+                    <span class="spinner diagonal part-2"></span>
+                </label>
+
+                <div id="sideMenu">
+                    <ul class="sideMenuInner">
+                        <li class="fontPoppins font18 colorBlack fontW400">
+                            <div class="dropdownSolution">
+                                <p class="menu-link active drop">
+                                    Solutions<span class="downcaretsolution"></span>
+                                </p>
+                                <ul class="submenuSolution" onclick="hideSidebar()">
+                                    <li>
+                                        <a href="https://ixdtm.com/projects/azendor_branding/general-counsel.html"
+                                            class="fontPoppins fontW400 font18">General Counsel</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://ixdtm.com/projects/azendor_branding/legal-advisory.html"
+                                            class="fontPoppins fontW400 font18">Legal Advisory</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://ixdtm.com/projects/azendor_branding/legal-audit.html"
+                                            class="fontPoppins fontW400 font18">Legal Audit</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://ixdtm.com/projects/azendor_branding/digital-transformation.html"
+                                            class="fontPoppins fontW400 font18">Digital Transformation</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="fontPoppins font18 colorBlack fontW400">
+                            <div class="dropdownSector">
+                                <p class="menu-link drop">
+                                    Sectors <span class="downcaretsector"></span>
+                                </p>
+                                <ul class="submenuSector sector" onclick="hideSidebar()">
+                                    <li>
+                                        <a href="https://ixdtm.com/projects/azendor_branding/television.html"
+                                            class="fontPoppins fontW400 font18">Television</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://ixdtm.com/projects/azendor_branding/film.html"
+                                            class="fontPoppins fontW400 font18">Film</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://ixdtm.com/projects/azendor_branding/ottPlatform.html"
+                                            class="fontPoppins fontW400 font18">OTT Platform</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://ixdtm.com/projects/azendor_branding/onlineGaming.html"
+                                            class="fontPoppins fontW400 font18">Online Gaming</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://ixdtm.com/projects/azendor_branding/publishing.html"
+                                            class="fontPoppins fontW400 font18">Publishing</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://ixdtm.com/projects/azendor_branding/ooh.html"
+                                            class="fontPoppins fontW400 font18">OOH</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://ixdtm.com/projects/azendor_branding/liveEvents.html"
+                                            class="fontPoppins fontW400 font18">Live Events</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://ixdtm.com/projects/azendor_branding/animationVfx.html"
+                                            class="fontPoppins fontW400 font18">Animation/ VFX</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://ixdtm.com/projects/azendor_branding/music.html"
+                                            class="fontPoppins fontW400 font18">Music</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://ixdtm.com/projects/azendor_branding/radio.html"
+                                            class="fontPoppins fontW400 font18">Radio</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://ixdtm.com/projects/azendor_branding/sports.html"
+                                            class="fontPoppins fontW400 font18">Sports</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://ixdtm.com/projects/azendor_branding/advertising.html"
+                                            class="fontPoppins fontW400 font18">Advertising</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li onclick="hideSidebar()" class="fontPoppins font18 colorBlack fontW400">
+                            <a class="menu-link careerHeader"
+                                href="https://ixdtm.com/projects/azendor_branding/careers.html">Careers</a>
+                        </li>
+                        <li class="fontPoppins font18 colorBlack fontW400">
+                            <div class="dropdownAbout">
+                                <p class="menu-link drop">
+                                    About <span class="downcaretabout"></span>
+                                </p>
+                                <ul class="submenuAbout" onclick="hideSidebar()">
+                                    <li>
+                                        <a href="https://ixdtm.com/projects/azendor_branding/about-us.html"
+                                            class="fontPoppins fontW400 font18">Who we are</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://ixdtm.com/projects/azendor_branding/founder.html"
+                                            class="fontPoppins fontW400 font18">Founder</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li onclick="hideSidebar()" class="fontPoppins font18 colorBlack fontW400">
+                            <a class="menu-link contact"
+                                href="https://ixdtm.com/projects/azendor_branding/contact-us.html">Contact</a>
+                        </li>
+                        <!-- <li onclick="hideSidebar()"><a href="#" data-toggle="tab">Item3</a></li> -->
+                    </ul>
+                    <div id="#sidenav-overlay"></div>
+                </div>
+            </div>
+
+            <ul class="menu-items" id="menu">
+                <li class="fontPoppins font18 colorBlack fontW400">
+                    <div class="dropdownSolution">
+                        <p class="menu-link is-active drop">
+                            Solutions<span class="downcaretsolution"></span>
+                        </p>
+                        <ul class="submenuSolution">
+                            <li>
+                                <a href="https://ixdtm.com/projects/azendor_branding/general-counsel.html"
+                                    class="fontPoppins fontW400 font18">General Counsel</a>
+                            </li>
+                            <li>
+                                <a href="https://ixdtm.com/projects/azendor_branding/legal-advisory.html"
+                                    class="fontPoppins fontW400 font18">Legal Advisory</a>
+                            </li>
+                            <li>
+                                <a href="https://ixdtm.com/projects/azendor_branding/legal-audit.html"
+                                    class="fontPoppins fontW400 font18">Legal Audit</a>
+                            </li>
+                            <li>
+                                <a href="https://ixdtm.com/projects/azendor_branding/digital-transformation.html"
+                                    class="fontPoppins fontW400 font18">Digital Transformation</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="fontPoppins font18 colorBlack fontW400">
+                    <div class="dropdownSector">
+                        <p class="menu-link drop">
+                            Sectors<span class="downcaretsector"></span>
+                        </p>
+                        <ul class="submenuSector sector">
+                            <li>
+                                <a href="https://ixdtm.com/projects/azendor_branding/television.html"
+                                    class="fontPoppins fontW400 font18">Television</a>
+                            </li>
+                            <li>
+                                <a href="https://ixdtm.com/projects/azendor_branding/film.html"
+                                    class="fontPoppins fontW400 font18">Film</a>
+                            </li>
+                            <li>
+                                <a href="https://ixdtm.com/projects/azendor_branding/ottPlatform.html"
+                                    class="fontPoppins fontW400 font18">OTT Platform</a>
+                            </li>
+                            <li>
+                                <a href="https://ixdtm.com/projects/azendor_branding/onlineGaming.html"
+                                    class="fontPoppins fontW400 font18">Online Gaming</a>
+                            </li>
+                            <li>
+                                <a href="https://ixdtm.com/projects/azendor_branding/publishing.html"
+                                    class="fontPoppins fontW400 font18">Publishing</a>
+                            </li>
+                            <li>
+                                <a href="https://ixdtm.com/projects/azendor_branding/ooh.html"
+                                    class="fontPoppins fontW400 font18">OOH</a>
+                            </li>
+                            <li>
+                                <a href="https://ixdtm.com/projects/azendor_branding/liveEvents.html"
+                                    class="fontPoppins fontW400 font18">Live Events</a>
+                            </li>
+                            <li>
+                                <a href="https://ixdtm.com/projects/azendor_branding/animationVfx.html"
+                                    class="fontPoppins fontW400 font18">Animation/ VFX</a>
+                            </li>
+                            <li>
+                                <a href="https://ixdtm.com/projects/azendor_branding/music.html"
+                                    class="fontPoppins fontW400 font18">Music</a>
+                            </li>
+                            <li>
+                                <a href="https://ixdtm.com/projects/azendor_branding/radio.html"
+                                    class="fontPoppins fontW400 font18">Radio</a>
+                            </li>
+                            <li>
+                                <a href="https://ixdtm.com/projects/azendor_branding/sports.html"
+                                    class="fontPoppins fontW400 font18">Sports</a>
+                            </li>
+                            <li>
+                                <a href="https://ixdtm.com/projects/azendor_branding/advertising.html"
+                                    class="fontPoppins fontW400 font18">Advertising</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="fontPoppins font18 colorBlack fontW400">
+                    <a class="menu-link careerHeader"
+                        href="https://ixdtm.com/projects/azendor_branding/careers.html">Careers</a>
+                </li>
+                <li class="fontPoppins font18 colorBlack fontW400">
+                    <div class="dropdownAbout">
+                        <p class="menu-link drop">
+                            About<span class="downcaretabout"></span>
+                        </p>
+                        <ul class="submenuAbout">
+                            <li>
+                                <a href="https://ixdtm.com/projects/azendor_branding/about-us.html"
+                                    class="fontPoppins fontW400 font18">Who we are</a>
+                            </li>
+                            <li>
+                                <a href="https://ixdtm.com/projects/azendor_branding/founder.html"
+                                    class="fontPoppins fontW400 font18">Founder</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="fontPoppins font18 colorW fontW400">
+                    <a class="menu-link contact"
+                        href="https://ixdtm.com/projects/azendor_branding/contact-us.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- progress bar for mobile -->
+        <div class="mblprogressLegal">
+            <div class="progress-container-mobile">
+                <div class="progress-bar-mobile"></div>
+            </div>
+        </div>
+    </header>
+
+    <div class="progresssubpagedesk">
+        <div class="progress-container">
+            <div id="progressbar" class="progress-bar"></div>
+        </div>
+    </div>
+
+    <section class="subSectors">
+        <div class="wrapper">
+            <div class="subpageContent">
+                <div class="sectionTitle">
+                    <h1>
+                        Terms Of Use
+                    </h1>
+                  </div>
+                
+                <p>
+                    This user agreement is an electronic record in terms of Information Technology Act, 2000 (“Act”) and
+                    rules the reunder as applicable and the amended provisions pertaining to electronic records in various
+                    statutes as amended by the Information Technology (Amendment) Act, 2008. This user agreement is
+                    generated by a computer system and does not require any physical or digital signatures.</p>
+                <p>
+                    This user agreement is published in accordance with the provisions of Rule 3 (1) of the Information
+                    Technology (Intermediaries Guidelines) Rules, 2011 that require publishing the rules and regulations,
+                    privacy policy and terms and conditions for access and/or usage of <a href="https://azendor.com/" target="_blank"> www.azendor.com </a>Website” ).</p>
+                <p>
+                    In this user agreement/terms and conditions of use (“Terms of Use”), the following terms shall have the
+                    meaning as ascribed to them below:
+                    “User” refers to you, the person visiting, accessing and/or using the Website by means of any
+                    communication device.</p>
+                <p>
+                    “Azendor” refers to Azendor Consulting Pvt. Ltd., a company incorporated under the Companies Act, 2013,
+                    and having its address at B 203/204, Raheja Sherwood, Western Express Highway, Nirlon Compound, Goregaon
+                    East, Mumbai, Maharashtra – 400063, which is the owner of all rights in this Website. All references to
+                    “You” and “Your” shall mean the User. All references to “Azendor Consulting Pvt. Ltd.”, “Azendor”, “We”,
+                    “Us” and “Our” shall mean Azendor Consulting Pvt. Ltd.</p>
+                <p>
+                    This is a legal and binding agreement between You i.e. the User of the Website and Azendor and states
+                    the terms that govern Your use of the Website. By accessing this Website, You consent, agree and
+                    undertake to abide, be bound by and adhere to the Terms of Use and if You do not agree to these terms of
+                    use, You should not access or use the Website and any use thereafter shall be unauthorized.</p>
+                <p>
+                    By accessing and/or using the Website, You signify Your agreement to accept these binding Terms of Use
+                    herein. This document constitutes a legally binding user agreement between Azendor and You. If You do
+                    not agree with any and/or all of the following terms of use [including the Privacy Policy available on
+                    the Website (“Privacy Policy”)], please do not access and/or use the Website.</p>
+                <p>
+                    We reserve the right, at Our sole discretion, to change, modify or otherwise alter these Terms of Use at
+                    any time without prior notice. Such changes and/or modifications shall become effective immediately upon
+                    being posted/published on the Website herein.</p>
+                <p>
+                    Please review the Terms of Use from time-to-time. Your continued use of the Website following the
+                    posting of changes and/or modifications shall constitute Your acceptance of any revised Terms of Use.
+                    Azendor retains the right at any time to deny or suspend access to entire or part of the Website to
+                    anyone who Azendor believes has violated any of these Terms of Use.</p>
+    
+               <h5> 1. ACCESS TO THE WEBSITE</h5>
+    
+                <p>
+                    1.1. This Website is offered and made available only to Users above the age of 18 years (or above 21
+                    years where a guardian is appointed as per the Majority Act of 1875) (“Age of Majority”).</p>
+                <p>
+                    1.2. If You are under the Age of Majority and continue accessing the Website, Azendor will assume that
+                    You have reviewed these Terms of Use and the Privacy Policy with Your parent/legal guardian and Your
+                    parent/legal guardian understands and agrees to it on Your behalf. If You are under the Age of Majority
+                    at the time of accessing and/or using the Website, Your access and usage of the Website shall be deemed
+                    to be subject to parental/legal guardian consent and under parental/legal guardian’s guidance at all
+                    times.</p>
+                <p>
+                    1.3. Your access to and use of the Website is subject to these Terms of Use, Privacy Policy and all
+                    applicable laws, rules, and regulations in India.</p>
+                <p>
+                    1.4. Azendor grants You a personal, revocable, non-exclusive, non-transferable right to access and use
+                    the Website, for non-commercial use only and private viewing only, in accordance with these Terms of
+                    Use. These Terms of Use, govern Your access of the Website and any data, message, text, image, audio,
+                    sound, voice, codes, computer programs, software, database, micro film, video, information, content,
+                    etc. that You host, publish, share, transact, display and/or upload onto the Website.</p>
+                <p>
+                    1.5. Please note that the availability of the Website in Your jurisdiction, and Your ability to access
+                    the Website is subject to Azendor’s sole discretion. Azendor may at its sole discretion restrict the
+                    Website from being accessed in certain geographical locations. You undertake that Your access of the
+                    Website
+                    shall be in compliance with all applicable laws (as amended from time-to-time). You understand that Your
+                    access of the Website and its contents may vary depending upon Your jurisdiction, device specifications,
+                    internet connection, etc. You acknowledge and agree that We will provide You only access to the Website
+                    and that You will be solely responsible for all equipment as may be necessary for You to access the
+                    internet, mobile and/or other connection, operator and service fees associated with Your access, etc.
+                </p>
+    
+               <h5> 2. OWNERSHIP OF INTELLECTUAL PROPERTY RIGHTS</h5>
+                <p>
+                    The following terms shall have the meaning as ascribed to them below:</p>
+                <p>
+                    2.1. “Intellectual Property Rights” shall mean all patents, trademarks, service marks, copyrights,
+                    database rights, trade names, brand names, trade secrets, design rights, intellectual property rights
+                    and similar proprietary rights, of Azendor whether registered or unregistered, and all applications,
+                    renewals and extensions thereto.</p>
+                <p>
+                    2.2. All rights, title and interest in the Intellectual Property Rights in and to the Website including
+                    without limitation all its constituents, content, text, images, audios, audio-visuals, literary work,
+                    artistic work, musical work, computer program, specifications (including product specification),
+                    drawings, artwork, software, source code, object code, domain names, application names, designs,
+                    database, tools, icons, layout, programs, graphics, animation, illustrations, and all other elements,
+                    data, information and materials (“Materials”) are the property of Azendor and/or its licensors and/or
+                    other respective owners and are protected, without limitation, pursuant to intellectual property rights
+                    laws of India and the world. Azendor retains full, complete, exclusive and absolute title to the Website
+                    and all Intellectual Property Rights therein.</p>
+                <p>
+                    2.3. No license, express or implied, by estoppel or otherwise, to any Intellectual Property Rights, is
+                    granted by this document or by any conduct of Azendor.</p>
+                <p>
+                    2.4. You shall not use, reproduce, redistribute, sell, offer on commercial rental, decompile, reverse
+                    engineer, disassemble, adapt, communicate to the public, make a derivative work, interfere with the
+                    integrity of the Website (including without limitation the software, coding, constituents, elements,
+                    Materials, etc.) in any manner whatsoever.</p>
+                <p>
+                    2.5. You expressly confirm not to, directly or indirectly, copy, reproduce, modify, edit, re-edit,
+                    amend, alter, vary, enhance, improve, upgrade, create derivative works, translate, adapt, abridge,
+                    delete, display, perform, publish, distribute, circulate, communicate to the public, disseminate,
+                    broadcast, transmit, sell, rent, lease, lend, assign, license, sub-license, disassemble, decompile,
+                    reverse engineer, market, promote, circulate, exploit, digitally alter or manipulate the Website
+                    (including any and all Materials therein), in whole or in part, in any manner whatsoever.</p>
+    
+               <h5> 3. USER MATERIAL</h5>
+                <p>
+                    3.1. The Website may allow Users to publish content, data, information, text, images, videos, audios,
+                    audio-visuals, User’s opinion, recommendation, advice, view, etc. (“User Material”). The User Material
+                    does not reflect the views of Azendor. In no event shall Azendor be held responsible for any User
+                    Material, neither does Azendor endorse or recommend any User Material, nor shall Azendor be liable for
+                    any loss or damages resulting from publishing of the User Material on the Website.</p>
+                <p>
+                    3.2. By submitting a User Material, You grant Azendor a perpetual, worldwide, royalty-free, irrevocable,
+                    non-exclusive license to use and authorize others to use the User Material in whole or in part, in any
+                    and all media, now known or hereinafter developed, including rights to use the User Material in
+                    isolation or in combination with any other material. You agree that in such circumstances, You are not
+                    entitled to any intimation or compensation from Azendor.</p>
+                <p>
+                    3.3. Azendor will have the right but no obligation to monitor, remove, suspend, destroy, use and change
+                    any User Material and/or content that is available on or via any chat area on the Website generally, if
+                    any, in any manner that Azendor may its sole discretion determine, at any time. Although Azendor may
+                    endeavour to periodically monitor the User Material posted on the Website, Azendor will not be
+                    responsible for the same.</p>
+                <p>
+                    3.4. In the event Azendor hosts or puts up any reviews of any products, whether third party or own, then
+                    the views shall demonstrate only the author’s views and not the views of Azendor.</p>
+                <p>
+                    3.5. By posting User Material on the Website, You undertake, represent and warrant to Azendor that: (a)
+                    the User Material is original; (b) does not infringe the rights of any third party including without
+                    limitation intellectual property rights; and (c) is not – defamatory, derogatory, seditious,
+                    pornographic, vulgar, in violation of any law. abusive, malicious or hurtful to any person, particular
+                    entity, groups, caste, religion, race or community.</p>
+    
+                <p>
+                    3.6. You agree, covenant and undertake that You shall NOT host, display, upload, modify, publish,
+                    transmit, update or share any data, information, content or message on the Website, that:</p>
+                
+                    <p>
+                        (a) belongs to another person and to which You do not have any right to;
+                    </p>
+                    <p>
+                        (b) is grossly harmful, harassing, blasphemous defamatory, derogatory, obscene, pornographic,
+                        pedophilic, libelous, invasive of another’s privacy, hateful, or racially, ethnically objectionable,
+                        disparaging, relating or encouraging money laundering or gambling, or otherwise unlawful in any
+                        manner
+                        whatever;
+                    </p>
+                    <p>
+                        (c) harms minors in any way;
+                    </p>
+                    <p>
+                        (d) infringes any patent, trademark, copyright or other proprietary rights or intellectual property
+                        rights;
+                    </p>
+                    <p>
+                        (e) violates any applicable national or international laws, regulations, rules and/or guidelines;
+                    </p>
+                    <p>
+                        (f) deceives or misleads the addressee about the origin of such messages or communicates any
+                        information
+                        which is grossly offensive or menacing in nature;
+                    </p>
+                    <p>
+                        (g) impersonates another person;
+                    </p>
+                    <p>
+                        (h) contains software viruses or any other computer code, files or programs designed to interrupt,
+                        destroy or limit the functionality of any computer resource;
+                    </p>
+                    <p>
+                        (i) threatens the unity, national interest ,integrity, defence, security or sovereignty of India,
+                        friendly relations with foreign states, or public order or causes incitement to the commission of
+                        any
+                        cognizable offence or prevents investigation of any offence or is insulting to any other
+                        nation/country;
+                    </p>
+                    <p>
+                        (j) is offensive or has menacing character;
+                    </p>
+                    <p>
+                        (k) causes annoyance, inconvenience, danger, obstruction, insult, injury, criminal intimidation,
+                        enmity,
+                        hatred or ill will;
+                    </p>
+                    <p>
+                        (l) causes annoyance or inconvenience or is intended to deceive or to mislead the addressee or
+                        recipient
+                        about the origin of such messages.
+                    </p>
+               
+    
+                <p>
+                    3.7. You further undertaker that You shall NOT use the Website to:</p>
+                
+    
+                    <p>(a) violate the privacy right or personal right or confidential information of any person;</p>
+                    <p>(b) commit an act which could be construed as an act of cyber terrorism;</p>
+                    <p>(c) collect, store and/or identify private/personal information of any user or person;</p>
+                    <p>(d) facilitate personal attacks on other individuals, entity, groups, caste, religion, race or
+                        community;</p>
+                    <p>(e) stalk or otherwise harass another person or user;</p>
+                    <p>(f) upload, post or e-mail any content that You do not have a right to transmit under any law or
+                        under
+                        contract;</p>
+                    <p>(g) upload, post or e-mail any content that infringes privacy rights, intellectual property rights
+                        or
+                        other third-party rights of any person or entity;</p>
+                    <p>(h) upload, post or e-mail any unsolicited or unauthorized advertising, promotional materials,
+                        junk-mail, spam, chain-letters or any other form of solicitation;</p>
+                    <p>(i) upload, post or e-mail any content that contains computer viruses or any other computer code,
+                        files
+                        or programs designed to interrupt, destroy or limit the functionality of any computer software,
+                        hardware, devices, platforms or telecommunications equipment and/or the Website;</p>
+                    <p>(j) interfere with, damage, disable, disrupt, impair, create an undue burden on, or gain
+                        unauthorized
+                        access to the Website, including Azendor’s servers, networks or accounts;</p>
+                    <p>(k) disrupt the normal flow of dialogue, cause a screen to scroll faster than other users of the
+                        Website
+                        are able to type, or otherwise act in a manner that adversely affects other users’ ability to engage
+                        in
+                        real time exchanges;</p>
+                    <p>(l) cover, remove, disable, manipulate, block or obscure advertisements or other portions of the
+                        Website;</p>
+                    <p>(m) delete or revise any information provided by or pertaining to any other user of the Website;
+                    </p>
+                    <p>(n) promote and/or generate revenue for Yourself and/or any third-party business activity;</p>
+                    <p>(o) carry out any activity that is prohibited under the Act, including under Section 43, etc. and/or
+                        under any other applicable laws, rules or regulations;</p>
+                    <p>(p) post unauthorized commercial communications and including advertisements; and/or</p>
+                    <p>(q) manipulate or morph or alter or exploit any other user’s material.</p>
+               
+    
+                <p>3.8. You hereby confirm that Azendor has the right to
+                    determine whether any content, data or information
+                    published by You on the Website is appropriate and complies with these Terms of Use, and accordingly
+                    remove any and/or all of Your User Material, and terminate Your access without prior notice. This shall
+                    be without prejudice to any other rights and remedies that Azendor has under law and/or in equity and/or
+                    under this agreement.</p>
+    
+                <p>
+                    3.9. If You submit any User Material on the Website, You shall be deemed to have waived any rights,
+                    interest and ownership in the User Material and deemed to have put the contents of the User Material in
+                    the public domain, making it open to re-use, reproduction, distribution, communication to the public,
+                    adaptation, etc. You understand the risks associated with publishing User Material on the Website and
+                    agree that Azendor shall not be responsible or liable for any digital alteration, manipulation,
+                    morphing, illegal exploitation, etc. of any User Material posted by You.</p>
+                <p>
+                    3.10. You further agree that Azendor shall not be responsible or liable to You for any threatening,
+                    defamatory, derogatory, obscene, offensive or illegal conduct by other users or any infringement of Your
+                    intellectual property rights, privacy rights, personal rights, etc. by other users of the Website.</p>
+    
+               <h5> 4. DISCLAIMER AND LIMITATION OF LIABILITY</h5>
+    
+                <p>
+                    4.1. By accessing and/or using the Website, You have read, understood and agreed to be legally bound by
+                    the terms of this disclaimer. You agree that Your access to the Website is at Your sole risk and at Your
+                    free will.</p>
+                <p>
+                    4.2. All information contained in this Website is for general guidance on matters of interest only. The
+                    application and impact of laws can vary widely based on the specific facts involved. Given the changing
+                    nature of laws, rules and regulations, and the inherent hazards of electronic communication, there may
+                    be delays, omissions or inaccuracies in information contained in this Website. You should not use any
+                    information contained herein as a substitute for professional advice. In no event shall Azendor, its
+                    affiliates, associates, subsidiaries and group companies, their respective directors, key managerial
+                    personnel, consultants, employees, officers, shareholders, agents, representatives, etc. be liable to
+                    You or anyone else for any decision made or action taken in reliance on the information in this Website.
+                </p>
+                <p>
+                    4.3. The Website and all material herein contained are distributed and transmitted by Azendor on an “as
+                    is” and “as available” basis. Azendor, its affiliates, associates, subsidiaries and group companies,
+                    their respective directors, key managerial personnel, consultants, employees, officers, shareholders,
+                    agents, representative, etc.:</p>
+                
+                    <p>
+                        (a) disclaim any and all express or implied representations, warranties and/or conditions of any
+                        kind,
+                        including but not limited to warranties of completeness, accuracy, reliability, suitability,
+                        fitness,
+                        merchantability, availability, quality, fitness for any purpose, non-infringement, compatibility
+                        and/or
+                        security;
+                    </p>
+                    <p>
+                        (b) are not responsible or liable for any infection or contamination of Your system or device
+                        arising
+                        out of or in connection with Your use of the Website or any connected website and do not warrant
+                        that
+                        the Website, the server(s) that make the Website available or any connected websites are free from
+                        viruses, trojan horses, worms, software bombs or similar items or processes or other harmful
+                        components;
+                    </p>
+                    <p>
+                        (c) are not responsible or liable for interruptions, delays, inaccuracies, errors, or omissions
+                        arising
+                        out of Your use of the Website or any connected Website or with respect to any material and/or User
+                        Material thereon; and (d) do not warrant that the Website, or any connected website, linked
+                        microsites,
+                        any materials, third-party content or services offered, will be uninterrupted or error free or
+                        accurate
+                        or suit
+                    </p>
+               
+    
+    
+                <p>
+                    Your specific purpose.</p>
+    
+                <p>
+                    4.4. Every effort is made to keep the Website running smoothly. However, Azendor takes no responsibility
+                    for, and will not be liable for, the Website being unavailable due to any reasons.</p>
+                <p>
+                    4.5. The entire risk as to the quality, accuracy, adequacy, completeness, fitness, correctness and
+                    validity of any material and use of and access to the Website or any connected website(s) rests solely
+                    with You.</p>
+                <p>
+                    4.6. The Website may contain links to other Third-Party Websites (as defined later) which are not under
+                    the control of Azendor and Azendor disclaims any and all liabilities, claims, damages, losses, etc.
+                    arising from Your access and/or use of the same. Azendor shall not be responsible for: (a) the accuracy,
+                    relevance, legality, decency, and/or contents of such Third-Party Websites; and/or (b) the entities
+                    publishing such Third-Party Websites including their acts or omissions; and/or (c) any transaction
+                    (including monetary transaction) done by You therein; and/or (d) any fraud, loss, etc. that You may
+                    incur as a result of Your access and/or use thereof; and/or (e) breach of your privacy rights, personal
+                    rights or intellectual property rights.</p>
+                <p>
+                    4.7. Azendor, its affiliates, associates, subsidiaries and group companies, and their respective
+                    directors, key managerial personnel, consultants, employees, officers, shareholders, agents,
+                    representative, sub- contractors, third party providers, etc. shall not be liable for any loss and/or
+                    damage and/or liabilities and/or claims of any kind (whether in contract, tort or breach of statutory
+                    duty or otherwise) arising out of or in connection with: (i) the Website; and/or (ii) any materials
+                    and/or User Material; and/or (iii) any connected third party website; including without limitation:</p>
+                
+                    <p>
+                        (a) indirect or consequential loss;
+                    </p>
+                    <p>
+                        (b) loss of profits or revenue or savings or other economic loss;
+                    </p>
+                    <p>
+                        (c) incidental, direct, or special loss or similar damages;
+                    </p>
+                    <p>
+                        (d) loss of or damage to data;
+                    </p>
+                    <p>
+                        (e) loss of business, reputation or goodwill; and/or
+                    </p>
+                    <p>
+                        (f) wasted or lost management time;
+                    </p>
+                    <p>
+                        (g) breach of privacy and/or personal rights and/or intellectual property rights; even if advised of
+                        the possibility of such loss or damage or if such loss or damage was foreseeable.
+                    </p>
+                <p>4.8. You completely understand how the internet works and agree that Your Personal Information may be
+                stored in servers outside India as well. Azendor disclaims any and all liability in this regard.</p>
+    
+               <p> 4.9. Notwithstanding the foregoing, in no event shall Azendor and its group entities’ liability
+                (individual and/or collective), to You for any and all losses, damages or claims (whether in contract,
+                tort, breach of statutory duty or otherwise) exceed the amount paid by You, if any, for use and access
+                of the
+                Website.</p>
+    
+               <p> 4.10. If you are dissatisfied with the Website or with these Terms of Use, Your sole and exclusive
+                remedy is to discontinue accessing or using the Website.</p>
+    
+               <h5> 5. INDEMNITY</h5>
+    
+               <p> 5.1. You agree to fully indemnify, defend and hold harmless Azendor, its group companies, affiliates,
+                associates, subsidiaries and group companies, and their respective directors, key managerial personnel,
+                consultants, employees, officer, shareholders, agents, representative, sub-contractors, third party
+                providers etc. from and against all losses, claims and damages including legal fees, resulting from: (a)
+                Your violation of any condition of these Terms of Use; (b) Your violation of any third-party right,
+                including without limitation any personal, privacy, or intellectual property right; (c) Your breach of
+                any applicable laws; (d) any unauthorized, improper, illegal or wrongful use of Your account by any
+                person, including a third-party, whether or not authorized or permitted by You; and (e) Your breach of
+                any representation, warranty, covenant or undertaking under these Terms of Use or under applicable laws.
+                This indemnification obligation will survive the expiry or termination of these Terms of Use and your
+                use of the website.</p>
+    
+               <h5> 6. THIRD-PARTY WEBSITES</h5>
+                <p>
+                6.1. This Website may contain links to other third-party websites owned and operated by third-parties
+                who are not related to Azendor (“Third-Party Website(s)”). You agree that Third-Party Websites are not
+                under the control of Azendor. Any transactions that You enter into with a third-party listed in this
+                Website or linked from this Website are solely between You and that third-party. Azendor shall not be
+                responsible for: (a) the accuracy, relevance, legality, decency, and/or contents of such Third-Party
+                Websites; and/or (b) the entities publishing such Third-Party Websites including their acts or missions;
+                and/or (c) any transaction (including monetary transaction) done by You therein; and/or (d) any fraud,
+                loss, etc. that You may incur as a result of Your access and/or use thereof; and/or (e) breach of your
+                privacy rights, personal rights or intellectual property rights.</p>
+    
+                <p>6.2. The inclusion of any links, hyperlinks, etc. within the Website, does not constitute or imply an
+                endorsement or recommendation by Azendor of any third-party, of the quality of any product, service,
+                advice, information or other materials displayed, purchased, or obtained by You.</p>
+    
+                <p>6.3. Your access and usage of any Third-Party Websites is entirely at Your own risk. Azendor shall not
+                be a party to any transaction between You and a Third-Party Website. Your use of a Third-Party Website
+                is subject to the terms of use of that Third-Party Website. If there is any inconsistency between the
+                terms of use of a Third-Party Website and these Terms of Use, these Terms of Use shall prevail.</p>
+    
+                <p>6.4. The Website may contain third-party advertisements, promotions, etc. (that may or may not contain
+                embedded hyperlinks or referral buttons to Third-Party Websites). The display of such advertising does
+                not in any way imply an endorsement or recommendation by Azendor of the relevant advertiser, its
+                products or services or any such Third-Party Website. You must refer directly to the relevant advertiser
+                for all information regarding the advertiser and its products and/or services. Azendor accepts no
+                responsibility for any interaction between You and the relevant third party and Azendor is released from
+                any and all liability arising out of or in any way connected with such interaction and/or any defects,
+                deficiencies, claims, etc. arising out of an advertiser’s products and/or services.</p>
+    
+               <h5> 7. NOTICE & TAKE DOWN PROCESS</h5>
+    
+                <p>7.1. Azendor does not endorse or promote any data, information, content or material published on the
+                Website including User Material, and expressly disclaims any and all liability in connection with the
+                same.</p>
+    
+                <p>7.2. If You believe that the Website contains any data, information, content or material that could be
+                in violation of Clause 3.6 and/or in violation of Clause 3.7 above, and/or in violation of any
+                applicable provision of the Act or rules thereunder, You will notify Azendor of the same by sending an
+                email notification at <a href="mailto:connect@azendor.com"> connect@azendor.com.</a> By doing so, please remember that You are initiating a legal
+                process. Do not make false claims. Misuse of this process may result in legal consequences. Please note
+                that this provision shall be governed by applicable laws in India including relevant provisions of the
+                Act, Information Technology (Intermediaries Guidelines) Rules, 2011, etc. You may seek independent legal
+                advice with respect to this legal procedure at Your sole cost, expense and consequences.</p>
+    
+                <p>7.3. Azendor shall take-down any data, information, content or material only upon receiving actual
+                knowledge from a court order or on being notified by the appropriate government or its agency that
+                unlawful acts relatable to Article 19(2) would be committed if the said data, information, content or
+                material is not deleted from the Website.</p>
+    
+               <p> 7.4. Azendor further reserves the right (without the obligation of doing so) to take-down any data,
+                information, content or material, without notice to User and without any liability either to Azendor or
+                its directors, key managerial personnel, officers, employees, that Azendor in its sole discretion
+                determines to be in violation of Clause 3.6 and/or in violation of Clause 3.7 above and/or in violation
+                of any applicable provision of the Act or rules thereunder.</p>
+    
+               <h5>8. SUPPORT </h5>
+                <p>
+                8.1. If You have any questions, queries or complaints with respect to the Website, then such
+                correspondence should be directed to the grievance officer at <a href="mailto:connect@azendor.com"> connect@azendor.com </a> or alternatively You
+                can write to:</p>
+               <p> Grievance Officer – Azendor Consulting Pvt. Ltd.</p>
+               <p> Name of Grievance Officer: Indranil Banerjee</p>
+               <p> Address of Grievance Officer: 101-B Abhishek, Off New Link Road, Andheri (West), Mumbai 400053, India</p>
+    
+              <h5>  9. TERMINATION </h5>
+                
+               <p> 9.1. Azendor reserves the right to terminate Your access to all or part of the Website, at its sole
+                discretion, without notice and without liability either to Azendor or its affiliates, associates,
+                subsidiaries, group companies or its respective directors, key managerial personnel, consultants,
+                employees, officers, etc. either for convenience or for any reason, including in the event of suspected
+                or actual breach by You of any of these Terms of Use, the Privacy Policy, violation of any law including
+                the Act and/or rules thereunder or any other regulation, or for any other reason that Azendor deems fit.</p>
+    
+              <h5>  10. MISCELLANEOUS</h5>
+                
+               <p> 10.1. The fastest and easiest way to notify Azendor of any grievance is by sending an email notification
+                to Our grievance officer at <a href="mailto:connect@azendor.com"> connect@azendor.com . </a></p>
+               <p> 10.2. The Privacy Policy (as provided on this Website), and any other documents, instructions, etc.
+                included on the Website shall be read into this and shall be a part of these Terms of Use. The Privacy
+                Policy shall form an integral part of the Terms of Use and both these documents together constitute the
+                user agreement and a legally binding contract between Azendor and You (the User).</p>
+    
+               <p> 10.3. These Terms of Use (including the Privacy Policy) contain the entire understanding between You and
+                Azendor and supersedes all prior understanding between the User and Azendor in respect of the User’s
+                access and/or use of the Website.</p>
+    
+               <p> 10.4. If any provision of these Terms of Use is found to be illegal, invalid or unenforceable, then to
+                the extent to which such provision is illegal, invalid or otherwise unenforceable, it shall be severed
+                and deleted, and the remaining provisions shall survive and remain in full force and effect, and
+                continue to be binding and enforceable.</p>
+    
+               <p> 10.5. You confirm that Your representations, warranties, undertakings and covenants, and the clauses
+                relating to indemnities, limitation of liability, grant of license, governing law, confidentiality, and
+                those provisions that by their nature, are intended to survive termination or expiry of these Terms of
+                Use, shall survive termination or expiry thereof.</p>
+    
+               <p> 10.6. Any express waiver or failure to exercise promptly any right under these Terms of Use will not
+                create a continuing waiver or any expectation of non-enforcement.</p>
+    
+               <p> 10.7. You agree that Azendor shall be under no liability whatsoever to You in the event of
+                non-availability of the Website or any portion thereof occasioned by an act of God, war, disease,
+                revolution, riot, civil commotion, strike, lockout, flood, fire, satellite failure, network failures,
+                server failures, failure of any public utility, terrorist attack, network maintenance, Website
+                maintenance, server maintenance, or any other cause whatsoever beyond the control of Azendor.</p>
+    
+               <p> 10.8. Azendor makes no representation that the Website is appropriate or available for use in locations
+                other than India. Those who choose to access the Website from locations other than in India, do so on
+                their own initiative and risk, and are solely responsible for compliance with local laws, if and to the
+                extent local laws are applicable.</p>
+    
+               <p> 10.9. These Terms of Use shall be governed by and construed in accordance with the laws of the India and
+                be subject to the exclusive jurisdiction of the Courts at Mumbai, without giving effect to any
+                principles of conflicts of law.</p>
+    
+               <p> 10.10. The rule of contractual construction known as the ‘Contra Proferentum’ rule shall not apply to
+                these Terms of Use.</p>
+            </div>          
+        </div>
+    </section>
+
+    <footer class="footerLegal">
+        <div class="wrapper">
+            <div class="footerSec">
+                <div class="footerSub">
+                    <a href="legal.html" class="footerLogo"><img src="images/legal-footer-logo.png"
+                            alt="Legal Footer Logo" title="Legal Footer Logo" /></a>
+                    <div class="socialmediaIcons">
+                        <ul>
+                            <li>
+                                <a href="#"><img src="images/legal/linkdin-footer.svg" alt="Linkdin"
+                                        title="Linkdin" /></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/legal/twitter.svg" alt="Twitter" title="Twitter" /></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/legal/facebook.svg" alt="Facebook" title="Facebook" /></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/legal/youtube.svg" alt="Youtube" title="Youtube" /></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footerSub">
+                    <h4 class="colordarkGray fontW400 font22 fontPoppins">Solutions</h4>
+                    <ul>
+                        <li>
+                            <a href="https://ixdtm.com/projects/azendor_branding/general-counsel.html"
+                                class="colorW fontW400 font22 fontPoppins">General Counsel</a>
+                        </li>
+                        <li>
+                            <a href="https://ixdtm.com/projects/azendor_branding/legal-advisory.html"
+                                class="colorW fontW400 font22 fontPoppins">Legal Advisory</a>
+                        </li>
+                        <li>
+                            <a href="https://ixdtm.com/projects/azendor_branding/legal-audit.html"
+                                class="colorW fontW400 font22 fontPoppins">Legal Audit</a>
+                        </li>
+                        <li>
+                            <a href="https://ixdtm.com/projects/azendor_branding/digital-transformation.html"
+                                class="colorW fontW400 font22 fontPoppins">Digital Transformation</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footerSub">
+                    <h4 class="colordarkGray fontW400 font22 fontPoppins">Sectors</h4>
+                    <div class="subSector">
+                        <div class="sectorftSub">
+                            <ul>
+                                <li>
+                                    <a href="https://ixdtm.com/projects/azendor_branding/television.html"
+                                        class="colorW fontW400 font22 fontPoppins">Television</a>
+                                </li>
+                                <li>
+                                    <a href="https://ixdtm.com/projects/azendor_branding/film.html"
+                                        class="colorW fontW400 font22 fontPoppins">Film</a>
+                                </li>
+                                <li>
+                                    <a href="https://ixdtm.com/projects/azendor_branding/ottPlatform.html"
+                                        class="colorW fontW400 font22 fontPoppins">OTT Platform</a>
+                                </li>
+                                <li>
+                                    <a href="https://ixdtm.com/projects/azendor_branding/onlineGaming.html"
+                                        class="colorW fontW400 font22 fontPoppins">Online Gaming</a>
+                                </li>
+                                <li>
+                                    <a href="https://ixdtm.com/projects/azendor_branding/publishing.html"
+                                        class="colorW fontW400 font22 fontPoppins">Publishing</a>
+                                </li>
+                                <li>
+                                    <a href="https://ixdtm.com/projects/azendor_branding/ooh.html"
+                                        class="colorW fontW400 font22 fontPoppins">OOH</a>
+                                </li>
+                                <li>
+                                    <a href="https://ixdtm.com/projects/azendor_branding/liveEvents.html"
+                                        class="colorW fontW400 font22 fontPoppins">Live Events</a>
+                                </li>
+                                <li>
+                                    <a href="https://ixdtm.com/projects/azendor_branding/animationVfx.html"
+                                        class="colorW fontW400 font22 fontPoppins">Animation/ VFX</a>
+                                </li>
+                                <li>
+                                    <a href="https://ixdtm.com/projects/azendor_branding/music.html"
+                                        class="colorW fontW400 font22 fontPoppins">Music</a>
+                                </li>
+                                <li>
+                                    <a href="https://ixdtm.com/projects/azendor_branding/radio.html"
+                                        class="colorW fontW400 font22 fontPoppins">Radio</a>
+                                </li>
+                                <li>
+                                    <a href="https://ixdtm.com/projects/azendor_branding/sports.html"
+                                        class="colorW fontW400 font22 fontPoppins">Sports</a>
+                                </li>
+                                <li>
+                                    <a href="https://ixdtm.com/projects/azendor_branding/advertising.html"
+                                        class="colorW fontW400 font22 fontPoppins">
+                                        Advertising</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footerSub">
+                    <h4 class="colordarkGray fontW400 font22 fontPoppins">
+                        Quick Links
+                    </h4>
+                    <ul>
+                        <li class="ftCareer">
+                            <a href="https://ixdtm.com/projects/azendor_branding/careers.html"
+                                class="colorW fontW400 font22 fontPoppins">Careers</a>
+                        </li>
+                        <li class="quickLinksft">
+                            <p class="colorW fontW400 font22 fontPoppins">About</p>
+                            <ul>
+                                <li>
+                                    <a href="https://ixdtm.com/projects/azendor_branding/about-us.html"
+                                        class="colorW fontW300 font16 fontPoppins">- Who we are</a>
+                                </li>
+                                <li>
+                                    <a href="https://ixdtm.com/projects/azendor_branding/founder.html"
+                                        class="colorW fontW300 font16 fontPoppins">- Founder</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="contactFt">
+                            <a href="https://ixdtm.com/projects/azendor_branding/contact-us.html"
+                                class="colorW fontW400 font22 fontPoppins">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="socialmediaIcons-btm">
+                    <ul>
+                        <li>
+                            <a href="#"><img src="images/legal/linkdin-footer.svg" alt="Linkdin" title="Linkdin" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/legal/twitter.svg" alt="Twitter" title="Twitter" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/legal/facebook.svg" alt="Facebook" title="Facebook" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/legal/youtube.svg" alt="Youtube" title="Youtube" /></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footerLinks">
+                <div class="linksFt">
+                    <a href="#" class="fontPoppins fontW500 font20 colordarkGray">Terms Of Use
+                    </a>
+                    <a href="#" class="fontPoppins fontW500 font20 colordarkGray">Privacy Policy</a>
+                </div>
+                <div>
+                    <p class="colorW fontW400 font20 fontPoppins copyRight">
+                        <span class="font30 fontW400">&#169;</span>
+                        2022 Azendor Consulting Pvt. Ltd, All Rights Reserved.
+                    </p>
+                </div>
+                <div class="copyrightmbl">
+                    <p class="colorW fontW400 font20 fontPoppins mobileCopy">
+                        <span class="font30 fontW400">&#169;</span>
+                        2022 Azendor Consulting Pvt. Ltd,<br />
+                        All Rights Reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- <script src="js/custom.js"></script> -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/custom.js"></script>
+
+
+</body>
+
+</html>

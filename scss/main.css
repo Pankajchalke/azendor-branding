@@ -407,7 +407,7 @@ body {
           line-height: 46px; } }
   @media all and (max-width: 1450px) {
     .landingPage {
-      margin: 150px 0px 70px 0px; }
+      margin: 150px 0px 100px 0px; }
       .landingPage p {
         line-height: 39px;
         margin-top: 15px; }
@@ -427,7 +427,7 @@ body {
         line-height: 85px; } }
   @media all and (max-width: 1170px) {
     .landingPage {
-      margin: 140px 0px 70px 0px; } }
+      margin: 140px 0px 100px 0px; } }
   @media all and (max-width: 1090px) {
     .landingPage .homepageCta {
       margin-top: 25px; }
@@ -437,7 +437,7 @@ body {
         line-height: 80px; } }
   @media all and (max-width: 920px) {
     .landingPage {
-      margin: 100px 0px 180px 0px; }
+      margin: 100px 0px 80px 0px; }
       .landingPage .pageHeading {
         width: 100%; }
         .landingPage .pageHeading h1 {
@@ -458,7 +458,7 @@ body {
           margin-bottom: 15px; } }
   @media all and (max-width: 550px) {
     .landingPage {
-      margin: 80px 0px 180px 0px; } }
+      margin: 80px 0px 80px 0px; } }
 
 body {
   overflow-y: scroll;
@@ -2115,19 +2115,20 @@ body {
         margin-right: 50px; }
     .footerLegal .footerLinks .copyrightmbl {
       display: none; }
-    .footerLegal .footerLinks .copyRight,
-    .footerLegal .footerLinks .mobileCopy {
+    .footerLegal .footerLinks .copyRight {
       display: flex;
       align-items: center; }
-      .footerLegal .footerLinks .copyRight span,
-      .footerLegal .footerLinks .mobileCopy span {
+      .footerLegal .footerLinks .copyRight br {
+        display: none; }
+      .footerLegal .footerLinks .copyRight span {
         margin-right: 10px; }
     @media all and (max-width: 1024px) {
       .footerLegal .footerLinks {
         display: block; }
-        .footerLegal .footerLinks .copyRight,
-        .footerLegal .footerLinks .mobileCopy {
+        .footerLegal .footerLinks .copyRight {
           margin-top: 20px; }
+          .footerLegal .footerLinks .copyRight br {
+            display: block; }
         .footerLegal .footerLinks .linksFt a:nth-child(1) {
           margin-right: 30px; } }
   @media all and (max-width: 1800px) {
@@ -2235,13 +2236,8 @@ body {
               width: 35px;
               height: 35px; } }
   @media all and (max-width: 575px) {
-    .footerLegal .footerLinks .copyRight,
-    .footerLegal .footerLinks .mobileCopy {
-      align-items: flex-start; }
-    .footerLegal .footerLinks .copyrightmbl {
-      display: block; }
     .footerLegal .footerLinks .copyRight {
-      display: none; } }
+      align-items: flex-start; } }
 
 .topbtnLeagl #myBtn {
   box-sizing: border-box;
@@ -4079,19 +4075,19 @@ h2 {
   margin: 200px 0px 150px 0px; }
   @media all and (max-width: 1650px) {
     .founder {
-      margin: 180px 0px 110px 0px; } }
+      margin: 180px 0px 150px 0px; } }
   @media all and (max-width: 1450px) {
     .founder {
-      margin: 150px 0px 70px 0px; } }
+      margin: 150px 0px 100px 0px; } }
   @media all and (max-width: 1170px) {
     .founder {
-      margin: 140px 0px 70px 0px; } }
+      margin: 140px 0px 100px 0px; } }
   @media all and (max-width: 920px) {
     .founder {
-      margin: 100px 0px 180px 0px; } }
+      margin: 100px 0px 80px 0px; } }
   @media all and (max-width: 550px) {
     .founder {
-      margin: 80px 0px 180px 0px; } }
+      margin: 80px 0px 80px 0px; } }
   @media all and (max-width: 920px) {
     .founder .founderTitle {
       display: flex;
@@ -4248,19 +4244,19 @@ h2 {
   margin: 200px 0px 150px 0px; }
   @media all and (max-width: 1650px) {
     .contact {
-      margin: 180px 0px 110px 0px; } }
+      margin: 180px 0px 150px 0px; } }
   @media all and (max-width: 1450px) {
     .contact {
-      margin: 150px 0px 70px 0px; } }
+      margin: 150px 0px 100px 0px; } }
   @media all and (max-width: 1170px) {
     .contact {
-      margin: 140px 0px 70px 0px; } }
+      margin: 140px 0px 100px 0px; } }
   @media all and (max-width: 920px) {
     .contact {
-      margin: 100px 0px 180px 0px; } }
+      margin: 100px 0px 80px 0px; } }
   @media all and (max-width: 550px) {
     .contact {
-      margin: 80px 0px 180px 0px; } }
+      margin: 80px 0px 80px 0px; } }
   .contact .contactBox {
     display: flex; }
     @media all and (max-width: 920px) {
@@ -4667,16 +4663,19 @@ footer .footerSec .footerSub .quickLinksft {
   margin: 160px 0px 150px 0px; }
   @media all and (max-width: 1650px) {
     .legalAdvisory {
-      margin: 140px 0px 110px 0px; } }
+      margin: 140px 0px 150px 0px; } }
   @media all and (max-width: 1450px) {
     .legalAdvisory {
-      margin: 120px 0px 70px 0px; } }
+      margin: 120px 0px 100px 0px; } }
   @media all and (max-width: 1170px) {
     .legalAdvisory {
-      margin: 100px 0px 70px 0px; } }
+      margin: 100px 0px 100px 0px; } }
+  @media all and (max-width: 920px) {
+    .legalAdvisory {
+      margin: 100px 0px 80px 0px; } }
   @media all and (max-width: 550px) {
     .legalAdvisory {
-      margin: 80px 0px 180px 0px; } }
+      margin: 80px 0px 80px 0px; } }
   @media all and (max-width: 920px) {
     .legalAdvisory .sectionTitle {
       display: flex;
@@ -4925,16 +4924,19 @@ footer .footerSec .footerSub .quickLinksft {
   margin: 160px 0px 150px 0px; }
   @media all and (max-width: 1650px) {
     .advisorySubPages {
-      margin: 140px 0px 110px 0px; } }
+      margin: 140px 0px 150px 0px; } }
   @media all and (max-width: 1450px) {
     .advisorySubPages {
-      margin: 120px 0px 70px 0px; } }
+      margin: 120px 0px 100px 0px; } }
   @media all and (max-width: 1170px) {
     .advisorySubPages {
-      margin: 100px 0px 70px 0px; } }
+      margin: 100px 0px 100px 0px; } }
+  @media all and (max-width: 920px) {
+    .advisorySubPages {
+      margin: 100px 0px 80px 0px; } }
   @media all and (max-width: 550px) {
     .advisorySubPages {
-      margin: 80px 0px 180px 0px; } }
+      margin: 80px 0px 80px 0px; } }
   @media all and (max-width: 920px) {
     .advisorySubPages .subpageContent .subSectionTitle {
       display: flex;
@@ -5034,16 +5036,19 @@ footer .footerSec .footerSub .quickLinksft {
   margin: 160px 0px 150px 0px; }
   @media all and (max-width: 1650px) {
     .digitalTransformation {
-      margin: 140px 0px 110px 0px; } }
+      margin: 140px 0px 120px 0px; } }
   @media all and (max-width: 1450px) {
     .digitalTransformation {
-      margin: 120px 0px 70px 0px; } }
+      margin: 120px 0px 100px 0px; } }
   @media all and (max-width: 1170px) {
     .digitalTransformation {
-      margin: 100px 0px 70px 0px; } }
+      margin: 100px 0px 100px 0px; } }
+  @media all and (max-width: 920px) {
+    .digitalTransformation {
+      margin: 100px 0px 80px 0px; } }
   @media all and (max-width: 550px) {
     .digitalTransformation {
-      margin: 80px 0px 180px 0px; } }
+      margin: 80px 0px 80px 0px; } }
   @media all and (max-width: 920px) {
     .digitalTransformation .sectionTitle {
       display: flex;
@@ -5300,13 +5305,16 @@ footer .footerSec .footerSub .quickLinksft {
   margin: 160px 0px 150px 0px; }
   @media all and (max-width: 1650px) {
     .digitalTransformationSubPages {
-      margin: 140px 0px 110px 0px; } }
+      margin: 140px 0px 120px 0px; } }
   @media all and (max-width: 1450px) {
     .digitalTransformationSubPages {
-      margin: 120px 0px 70px 0px; } }
+      margin: 120px 0px 100px 0px; } }
   @media all and (max-width: 1170px) {
     .digitalTransformationSubPages {
-      margin: 100px 0px 70px 0px; } }
+      margin: 100px 0px 100px 0px; } }
+  @media all and (max-width: 920px) {
+    .digitalTransformationSubPages {
+      margin: 100px 0px 80px 0px; } }
   @media all and (max-width: 550px) {
     .digitalTransformationSubPages {
       margin: 80px 0px 180px 0px; } }
@@ -5409,16 +5417,19 @@ footer .footerSec .footerSub .quickLinksft {
   margin: 160px 0px 150px 0px; }
   @media all and (max-width: 1650px) {
     .generalCounsel {
-      margin: 140px 0px 110px 0px; } }
+      margin: 140px 0px 150px 0px; } }
   @media all and (max-width: 1450px) {
     .generalCounsel {
-      margin: 120px 0px 70px 0px; } }
+      margin: 120px 0px 100px 0px; } }
   @media all and (max-width: 1170px) {
     .generalCounsel {
-      margin: 100px 0px 70px 0px; } }
+      margin: 100px 0px 100px 0px; } }
+  @media all and (max-width: 920px) {
+    .generalCounsel {
+      margin: 100px 0px 80px 0px; } }
   @media all and (max-width: 550px) {
     .generalCounsel {
-      margin: 80px 0px 180px 0px; } }
+      margin: 80px 0px 80px 0px; } }
   @media all and (max-width: 920px) {
     .generalCounsel .subpageContent .sectionTitle {
       display: flex;
@@ -5498,16 +5509,19 @@ footer .footerSec .footerSub .quickLinksft {
   margin: 160px 0px 150px 0px; }
   @media all and (max-width: 1650px) {
     .legalAudit {
-      margin: 140px 0px 110px 0px; } }
+      margin: 140px 0px 120px 0px; } }
   @media all and (max-width: 1450px) {
     .legalAudit {
-      margin: 120px 0px 70px 0px; } }
+      margin: 120px 0px 100px 0px; } }
   @media all and (max-width: 1170px) {
     .legalAudit {
-      margin: 100px 0px 70px 0px; } }
+      margin: 100px 0px 100px 0px; } }
+  @media all and (max-width: 920px) {
+    .legalAudit {
+      margin: 100px 0px 80px 0px; } }
   @media all and (max-width: 550px) {
     .legalAudit {
-      margin: 80px 0px 180px 0px; } }
+      margin: 80px 0px 80px 0px; } }
   @media all and (max-width: 920px) {
     .legalAudit .subpageContent .sectionTitle {
       display: flex;
@@ -5588,19 +5602,19 @@ footer .footerSec .footerSub .quickLinksft {
   margin: 200px 0px 150px 0px; }
   @media all and (max-width: 1650px) {
     .aboutUs {
-      margin: 180px 0px 110px 0px; } }
+      margin: 180px 0px 150px 0px; } }
   @media all and (max-width: 1450px) {
     .aboutUs {
-      margin: 150px 0px 70px 0px; } }
+      margin: 150px 0px 100px 0px; } }
   @media all and (max-width: 1170px) {
     .aboutUs {
-      margin: 140px 0px 70px 0px; } }
+      margin: 140px 0px 100px 0px; } }
   @media all and (max-width: 920px) {
     .aboutUs {
-      margin: 100px 0px 180px 0px; } }
+      margin: 100px 0px 80px 0px; } }
   @media all and (max-width: 550px) {
     .aboutUs {
-      margin: 80px 0px 180px 0px; } }
+      margin: 80px 0px 80px 0px; } }
   .aboutUs p {
     margin-bottom: 30px; }
   @media all and (max-width: 920px) {
@@ -5665,19 +5679,19 @@ footer .footerSec .footerSub .quickLinksft {
   margin: 200px 0px 150px 0px; }
   @media all and (max-width: 1650px) {
     .careers {
-      margin: 180px 0px 110px 0px; } }
+      margin: 180px 0px 150px 0px; } }
   @media all and (max-width: 1450px) {
     .careers {
-      margin: 150px 0px 70px 0px; } }
+      margin: 150px 0px 100px 0px; } }
   @media all and (max-width: 1170px) {
     .careers {
-      margin: 140px 0px 70px 0px; } }
+      margin: 140px 0px 100px 0px; } }
   @media all and (max-width: 920px) {
     .careers {
-      margin: 100px 0px 180px 0px; } }
+      margin: 100px 0px 80px 0px; } }
   @media all and (max-width: 550px) {
     .careers {
-      margin: 80px 0px 180px 0px; } }
+      margin: 80px 0px 80px 0px; } }
   @media all and (max-width: 920px) {
     .careers .subpageContent .sectionTitle {
       display: flex;
@@ -5729,16 +5743,19 @@ footer .footerSec .footerSub .quickLinksft {
   margin: 160px 0px 150px 0px; }
   @media all and (max-width: 1650px) {
     .subSectors {
-      margin: 140px 0px 110px 0px; } }
+      margin: 140px 0px 120px 0px; } }
   @media all and (max-width: 1450px) {
     .subSectors {
-      margin: 120px 0px 70px 0px; } }
+      margin: 120px 0px 100px 0px; } }
   @media all and (max-width: 1170px) {
     .subSectors {
-      margin: 100px 0px 70px 0px; } }
+      margin: 100px 0px 100px 0px; } }
+  @media all and (max-width: 920px) {
+    .subSectors {
+      margin: 100px 0px 80px 0px; } }
   @media all and (max-width: 550px) {
     .subSectors {
-      margin: 80px 0px 180px 0px; } }
+      margin: 80px 0px 80px 0px; } }
   @media all and (max-width: 920px) {
     .subSectors .subpageContent .sectionTitle {
       display: flex;
@@ -5837,13 +5854,16 @@ footer .footerSec .footerSub .quickLinksft {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     color: #212121; }
-  .subpageContent p {
+  .subpageContent p, .subpageContent h5 {
     font-size: 22px;
     font-weight: 400;
     font-family: 'Poppins', sans-serif;
     color: #9e9e9e;
     margin-bottom: 15px;
     line-height: 30px; }
+  .subpageContent h5 {
+    color: #212121 !important;
+    font-weight: 500 !important; }
   .subpageContent ul {
     margin-left: 22px; }
     .subpageContent ul li {
@@ -5852,6 +5872,12 @@ footer .footerSec .footerSub .quickLinksft {
       font-weight: 400;
       font-family: 'Poppins', sans-serif;
       color: #9e9e9e; }
+  .subpageContent a {
+    font-weight: 500;
+    color: #212121;
+    text-decoration: none; }
+    .subpageContent a:hover {
+      color: #6A6A6A; }
   @media all and (max-width: 1800px) {
     .subpageContent ul {
       margin-left: 19.5px; }
@@ -5863,7 +5889,7 @@ footer .footerSec .footerSub .quickLinksft {
       font-size: 42px; }
     .subpageContent h4 {
       font-size: 34px; }
-    .subpageContent p {
+    .subpageContent p, .subpageContent h5 {
       font-size: 22px; } }
   @media all and (max-width: 1680px) {
     .subpageContent {
@@ -5883,7 +5909,7 @@ footer .footerSec .footerSub .quickLinksft {
         font-size: 38px; }
       .subpageContent h4 {
         font-size: 32px; }
-      .subpageContent p {
+      .subpageContent p, .subpageContent h5 {
         font-size: 18px; } }
   @media all and (max-width: 1400px) {
     .subpageContent ul {
@@ -5900,7 +5926,7 @@ footer .footerSec .footerSub .quickLinksft {
       font-size: 34px; }
     .subpageContent h4 {
       font-size: 26px; }
-    .subpageContent p {
+    .subpageContent p, .subpageContent h5 {
       font-size: 16px;
       line-height: 26px; } }
   @media all and (max-width: 1330px) {
@@ -5935,7 +5961,7 @@ footer .footerSec .footerSub .quickLinksft {
         font-size: 24px; }
       .subpageContent h4 {
         font-size: 18px; }
-      .subpageContent p {
+      .subpageContent p, .subpageContent h5 {
         font-size: 16px; } }
   @media all and (max-width: 675px) {
     .subpageContent ul {
@@ -5953,7 +5979,7 @@ footer .footerSec .footerSub .quickLinksft {
       font-size: 22px; }
     .subpageContent h4 {
       font-size: 18px; }
-    .subpageContent p {
+    .subpageContent p, .subpageContent h5 {
       font-size: 16px; } }
 
 footer .footerSec .footerSub .quickLinksft {
