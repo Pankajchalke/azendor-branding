@@ -574,7 +574,15 @@ h2 {
 }
 
 
-
+.brandingterms{
+    h1, h2, h3, h4 , h5, p , ul li{color: #fff !important;}
+    a{
+        color: #6A6A6A !important;
+        &:hover{
+            color:  #fff !important;
+        }
+    }
+}
 
 
 .section {

@@ -2734,6 +2734,13 @@ h2 {
       transform: rotate(270deg);
       transform-origin: left top 0; }
 
+.brandingterms h1, .brandingterms h2, .brandingterms h3, .brandingterms h4, .brandingterms h5, .brandingterms p, .brandingterms ul li {
+  color: #fff !important; }
+.brandingterms a {
+  color: #6A6A6A !important; }
+  .brandingterms a:hover {
+    color: #fff !important; }
+
 .section {
   margin-bottom: 30px; }
   @media all and (max-width: 920px) {
