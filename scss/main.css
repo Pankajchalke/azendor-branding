@@ -2047,6 +2047,8 @@ body {
       .footerLegal .footerSec .footerSub h4 {
         margin-bottom: 50px; }
       .footerLegal .footerSec .footerSub ul li {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
         margin-bottom: 15px; }
         .footerLegal .footerSec .footerSub ul li:nth-last-child(1) {
           margin-bottom: 0px; }
@@ -2100,6 +2102,36 @@ body {
         .footerLegal .footerSec .footerSub .quickLinksft ul li {
           margin-bottom: 0px !important;
           margin-top: 0px; }
+      .footerLegal .footerSec .footerSub .sub-menu li {
+        margin-bottom: 0px !important;
+        margin-top: 0px;
+        font-size: unset !important; }
+        .footerLegal .footerSec .footerSub .sub-menu li a {
+          text-decoration: none;
+          color: #fff !important;
+          font-weight: 300 !important;
+          font-size: 16px; }
+          @media (max-width: 1800px) {
+            .footerLegal .footerSec .footerSub .sub-menu li a {
+              font-size: 14px; } }
+          @media (max-width: 1600px) {
+            .footerLegal .footerSec .footerSub .sub-menu li a {
+              font-size: 12px; } }
+          @media (max-width: 1400px) {
+            .footerLegal .footerSec .footerSub .sub-menu li a {
+              font-size: 11px; } }
+          @media (max-width: 900px) {
+            .footerLegal .footerSec .footerSub .sub-menu li a {
+              font-size: 10px; } }
+        @media (max-width: 900px) {
+          .footerLegal .footerSec .footerSub .sub-menu li {
+            width: 100% !important;
+            margin-bottom: 5px !important; } }
+      @media (max-width: 900px) {
+        .footerLegal .footerSec .footerSub .sub-menu {
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap; } }
     .footerLegal .footerSec .socialmediaIcons-btm {
       display: none !important;
       width: 0; }
@@ -2669,30 +2701,34 @@ h2 {
           margin-bottom: 28px; } }
       .headerBranding .menu-items li:last-child a.is-active:after {
         background: transparent; }
-      .headerBranding .menu-items li .contact {
-        border: 1px solid rgba(242, 242, 242, 0.2);
+      .headerBranding .menu-items li .contactBranding {
         border-radius: 60px;
-        padding: 5px 10px;
         text-decoration: none;
-        position: relative; }
-        .headerBranding .menu-items li .contact.is-active:after {
-          position: absolute;
-          top: -1px;
-          height: 36px;
+        padding: 5px 10px;
+        position: relative;
+        border: 1px solid rgba(242, 242, 242, 0.2);
+        border-radius: 50px; }
+        .headerBranding .menu-items li .contactBranding.is-active {
+          border-radius: 50px;
           border: 1px solid #fff;
-          border-radius: 60px;
           padding: 5px 10px;
-          text-decoration: none; }
-          @media (max-width: 1600px) {
-            .headerBranding .menu-items li .contact.is-active:after {
-              height: 33px; } }
-          @media (max-width: 1400px) {
-            .headerBranding .menu-items li .contact.is-active:after {
-              height: 29px; } }
-        .headerBranding .menu-items li .contact:before {
+          text-decoration: none;
+          position: relative; }
+          .headerBranding .menu-items li .contactBranding.is-active:after {
+            position: absolute;
+            top: -1px;
+            height: 36px;
+            text-decoration: none; }
+            @media (max-width: 1600px) {
+              .headerBranding .menu-items li .contactBranding.is-active:after {
+                height: 33px; } }
+            @media (max-width: 1400px) {
+              .headerBranding .menu-items li .contactBranding.is-active:after {
+                height: 29px; } }
+        .headerBranding .menu-items li .contactBranding:before {
           background: transparent;
           border: none; }
-        .headerBranding .menu-items li .contact:hover {
+        .headerBranding .menu-items li .contactBranding:hover {
           border: 1px solid #fff;
           color: #fff; }
 
