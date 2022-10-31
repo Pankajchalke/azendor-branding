@@ -2312,6 +2312,8 @@ body {
         width: 12%;
         border-right: none;
         padding-right: 0px; }
+        .footerLegal .footerSec .footerSub:nth-child(4) ul {
+          margin-top: 5px; }
       .footerLegal .footerSec .footerSub a {
         text-decoration: none; }
       .footerLegal .footerSec .footerSub .subSector .sectorftSub {
@@ -2335,8 +2337,7 @@ body {
       .footerLegal .footerSec .footerSub .quickLinksft {
         margin-bottom: 10px !important; }
         .footerLegal .footerSec .footerSub .quickLinksft p {
-          cursor: text;
-          margin-bottom: 5px; }
+          cursor: text; }
         .footerLegal .footerSec .footerSub .quickLinksft ul li {
           margin-bottom: 0px !important;
           margin-top: 0px; }
@@ -2481,6 +2482,10 @@ body {
           width: 100%; }
         .footerLegal .footerSec .footerSub:nth-child(4) {
           width: 100%; }
+          .footerLegal .footerSec .footerSub:nth-child(4) #menu-footer-quick-links li:last-child {
+            margin-top: -40px; }
+          .footerLegal .footerSec .footerSub:nth-child(4) .sub-menu li:last-child {
+            margin-top: unset !important; }
           .footerLegal .footerSec .footerSub:nth-child(4) ul {
             display: flex;
             justify-content: space-between;
