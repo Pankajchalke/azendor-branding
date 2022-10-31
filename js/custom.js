@@ -604,24 +604,7 @@ window.addEventListener("scroll", () => {
 });
 
 
-// legal Header Dropdown
-if ( $(window).width() <= 920 ) {
-  // Print a message to the console
-  $(document).ready(function () {
-    $(".dropdownSolution").click(function () {
-      $(".submenuSolution").toggleClass("open");
-      $(".downcaretsolution").toggleClass("open-caret");
-    });
-    $(".dropdownSector").click(function () {
-      $(".submenuSector").toggleClass("open");
-      $(".downcaretsector").toggleClass("open-caret");
-    });
-    $(".dropdownAbout").click(function () {
-      $(".submenuAbout").toggleClass("open");
-      $(".downcaretabout").toggleClass("open-caret");
-    });
-  });
-} 
+
 
 // legal and branding top button mobile js
 window.addEventListener('scroll',function(e) {
@@ -678,3 +661,39 @@ if(window.location.hash){
     },200,'');
   }
 }
+
+// Legal header starts
+// mobile header active
+$(function () {
+  $("#sideMenu a").click(function () {
+    $("#sideMenu a.active").removeClass("active");
+    $(this).addClass("active");
+  });
+});
+//show -hide mobile header
+function hideSidebar() {
+  document.getElementById("openSideMenu").checked = false;
+}
+var sideIconToggle = document.getElementById("sidebarContainer");
+document.addEventListener("click", function (event) {
+  if (!sidebarContainer.contains(event.target)) hideSidebar();
+});
+$(document).ready(function () {
+  $(".solutionDrop").click(function () {
+    $(".downcaretsolutionnewmbl").toggleClass("clicked");
+  });
+  $(".sectorDrop").click(function () {
+    $(".downcaretsolutionnewmbl1").toggleClass("clicked");
+  });
+  $(".aboutDrop").click(function () {
+    $(".downcaretsolutionnewmbl2").toggleClass("clicked");
+  });
+});
+$(document).on('click', function (e) {
+  $('.mainLink > ul').hide();
+
+  if ($(e.target).parent().hasClass('mainLink')) {
+    $(e.target).siblings('ul').toggle();
+  }
+});
+// Legal header ends
