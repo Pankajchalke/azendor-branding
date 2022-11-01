@@ -2268,6 +2268,50 @@ body {
     letter-spacing: 0.05em;
     color: #000; }
 
+.disclaimerSec {
+  -ms-overflow-style: none;
+  /* Edge, Internet Explorer */
+  scrollbar-width: none;
+  /* Firefox */
+  overflow-y: scroll; }
+  .disclaimerSec ::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Opera */ }
+  .disclaimerSec .modal {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 1 !important;
+    overflow-x: hidden;
+    overflow-y: auto; }
+    .disclaimerSec .modal .modal-dialog {
+      max-width: 40% !important;
+      margin-top: 15%; }
+      .disclaimerSec .modal .modal-dialog .modal-content .modal-body {
+        position: relative;
+        padding: 20px; }
+        .disclaimerSec .modal .modal-dialog .modal-content .modal-body p {
+          padding-bottom: 1.5rem; }
+        .disclaimerSec .modal .modal-dialog .modal-content .modal-body .dlinkSec {
+          text-align: center;
+          padding: 1rem; }
+          .disclaimerSec .modal .modal-dialog .modal-content .modal-body .dlinkSec a {
+            color: #000;
+            margin: 10px; }
+            .disclaimerSec .modal .modal-dialog .modal-content .modal-body .dlinkSec a:hover {
+              color: #999;
+              text-decoration: none; }
+      @media all and (max-width: 768px) {
+        .disclaimerSec .modal .modal-dialog {
+          max-width: 80% !important;
+          margin-top: 30%;
+          margin: 5% auto; } }
+      @media all and (max-width: 640px) {
+        .disclaimerSec .modal .modal-dialog {
+          max-width: 90% !important;
+          left: 0;
+          right: 0;
+          margin-top: 45%; } }
+
 .footerLegal {
   position: relative;
   bottom: 0;

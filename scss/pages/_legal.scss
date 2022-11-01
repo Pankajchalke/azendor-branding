@@ -2632,8 +2632,57 @@ body {
     }
 }
 
-
-
+.disclaimerSec{
+    -ms-overflow-style: none; /* Edge, Internet Explorer */
+    scrollbar-width: none; /* Firefox */
+    overflow-y: scroll;
+    ::-webkit-scrollbar {
+     display: none; /* Chrome, Safari, Opera */
+      }
+    .modal{
+    display: block;
+    background-color: rgba(0,0,0,0.6);
+    opacity: 1 !important;
+    overflow-x: hidden;
+    overflow-y: auto;
+    .modal-dialog{
+        max-width: 40% !important;
+        margin-top: 15%;
+        .modal-content{
+            .modal-body{
+                position: relative;
+                 padding: 20px;
+              p{
+                padding-bottom: 1.5rem;
+              }
+              .dlinkSec{
+                  text-align: center;
+                  padding: 1rem;
+                  a{
+                      color:#000;
+                      margin:10px;
+                      &:hover{
+                          color:#999;
+                          text-decoration:none;
+                      }
+                  }
+              }
+            }
+          }
+        @media all and (max-width:768px){
+            max-width: 80% !important;
+            margin-top: 30%;
+            margin: 5% auto;
+        }
+        @media all and (max-width:640px){
+            max-width: 90% !important;
+            left: 0;
+            right: 0;
+            margin-top: 45%;
+        }
+       }
+    }
+}
 
 
 .footerLegal {
