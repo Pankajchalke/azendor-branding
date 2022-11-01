@@ -1586,10 +1586,10 @@ body {
     overflow-y: auto; }
     .disclaimerSec .modal .modal-dialog {
       max-width: 40% !important;
-      margin-top: 15%; }
+      margin: 12% auto 0; }
       .disclaimerSec .modal .modal-dialog .modal-content .modal-body {
         position: relative;
-        padding: 20px; }
+        padding: 15px; }
         .disclaimerSec .modal .modal-dialog .modal-content .modal-body p {
           padding-bottom: 1.5rem; }
         .disclaimerSec .modal .modal-dialog .modal-content .modal-body .dlinkSec {
@@ -1604,14 +1604,13 @@ body {
       @media all and (max-width: 768px) {
         .disclaimerSec .modal .modal-dialog {
           max-width: 80% !important;
-          margin-top: 30%;
-          margin: 5% auto; } }
+          margin: 15% auto 0; } }
       @media all and (max-width: 640px) {
         .disclaimerSec .modal .modal-dialog {
-          max-width: 90% !important;
+          position: absolute;
           left: 0;
           right: 0;
-          margin-top: 45%; } }
+          max-width: 90% !important; } }
 
 .footerLegal {
   position: relative;

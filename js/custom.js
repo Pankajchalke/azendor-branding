@@ -128,6 +128,10 @@ if (mediaQuery.matches) {
   
 }
 
+//Legal pop up
+$('#myModal').modal({
+  backdrop: 'static'
+});
 
 //service Slider
 
@@ -697,3 +701,4 @@ $(document).on('click', function (e) {
   }
 });
 // Legal header ends
+
