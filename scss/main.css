@@ -1542,7 +1542,10 @@ body {
       margin-top: 80px; } }
 
 .bannerSeclegal {
-  margin: 200px 0px 150px 0px; }
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  margin: 0px !important; }
   .bannerSeclegal .bannerDescLegal {
     width: 70%; }
     .bannerSeclegal .bannerDescLegal h1 {
@@ -1570,24 +1573,20 @@ body {
         .bannerSeclegal .bannerDescLegal .bannerCta a:hover img {
           transform: translateX(10px); }
   @media all and (max-width: 1650px) {
-    .bannerSeclegal {
-      margin: 180px 0px 110px 0px; }
-      .bannerSeclegal .bannerDescLegal .bannerCta {
-        margin-top: 30px; }
-      .bannerSeclegal .bannerDescLegal h1 {
-        line-height: 95px; }
-      .bannerSeclegal .bannerDescLegal h5 {
-        margin: 20px 0px 30px;
-        line-height: 46px; } }
+    .bannerSeclegal .bannerDescLegal .bannerCta {
+      margin-top: 30px; }
+    .bannerSeclegal .bannerDescLegal h1 {
+      line-height: 95px; }
+    .bannerSeclegal .bannerDescLegal h5 {
+      margin: 20px 0px 30px;
+      line-height: 46px; } }
   @media all and (max-width: 1450px) {
-    .bannerSeclegal {
-      margin: 150px 0px 70px 0px; }
-      .bannerSeclegal .bannerDescLegal h1 {
-        line-height: 90px; }
-      .bannerSeclegal .bannerDescLegal h5 {
-        line-height: 39px; }
-      .bannerSeclegal .bannerDescLegal .bannerCta {
-        margin-top: 25px; } }
+    .bannerSeclegal .bannerDescLegal h1 {
+      line-height: 90px; }
+    .bannerSeclegal .bannerDescLegal h5 {
+      line-height: 39px; }
+    .bannerSeclegal .bannerDescLegal .bannerCta {
+      margin-top: 25px; } }
   @media all and (max-width: 1367px) {
     .bannerSeclegal .bannerDescLegal h1 {
       line-height: 90px; }
@@ -1602,10 +1601,8 @@ body {
     .bannerSeclegal .bannerDescLegal h5 {
       margin: 15px 0px 20px; } }
   @media all and (max-width: 1170px) {
-    .bannerSeclegal {
-      margin: 140px 0px 70px 0px; }
-      .bannerSeclegal .bannerDescLegal h5 {
-        margin: 15px 0px 20px; } }
+    .bannerSeclegal .bannerDescLegal h5 {
+      margin: 15px 0px 20px; } }
   @media all and (max-width: 1090px) {
     .bannerSeclegal .bannerDescLegal h1 {
       line-height: 80px; } }
@@ -1614,8 +1611,7 @@ body {
       margin: 10px 0px 15px; } }
   @media all and (max-width: 920px) {
     .bannerSeclegal {
-      position: relative;
-      margin: 100px 0px 180px 0px; }
+      position: relative; }
       .bannerSeclegal .bannerDescLegal {
         width: 100%; }
         .bannerSeclegal .bannerDescLegal h1 {
@@ -1628,13 +1624,11 @@ body {
     .bannerSeclegal .bannerDescLegal .bannerCta a {
       font-size: 14px !important;
       padding: 11px 19px; } }
-  @media all and (max-width: 550px) {
-    .bannerSeclegal {
-      margin: 80px 0px 180px 0px; } }
 
 .solutionSec {
   background-color: #FAFAFA;
-  padding: 124px 0px; }
+  padding: 124px 0px;
+  margin-top: 0px !important; }
   .solutionSec h2 {
     margin-bottom: 60px; }
   .solutionSec .solutionSlider {
