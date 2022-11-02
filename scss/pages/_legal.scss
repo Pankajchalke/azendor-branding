@@ -1773,7 +1773,7 @@ body {
                   a{
                       color:#000;
                       margin:10px;
-                      &:hover{
+                      &:hover,:active{
                           color:#999;
                           text-decoration:none;
                       }
