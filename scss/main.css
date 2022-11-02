@@ -1601,6 +1601,9 @@ body {
             .disclaimerSec .modal .modal-dialog .modal-content .modal-body .dlinkSec a:hover, .disclaimerSec .modal .modal-dialog .modal-content .modal-body .dlinkSec a :active {
               color: #999;
               text-decoration: none; }
+      @media all and (min-width: 768px) {
+        .disclaimerSec .modal .modal-dialog {
+          width: auto !important; } }
       @media all and (max-width: 768px) {
         .disclaimerSec .modal .modal-dialog {
           max-width: 80% !important;
