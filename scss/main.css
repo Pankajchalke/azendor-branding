@@ -4064,24 +4064,24 @@ h2 {
             font-size: 14px; } }
     .contact .contactForm .formDivider {
       width: 45%;
-      margin-bottom: 40px; }
+      margin-bottom: 36px; }
       @media all and (max-width: 1400px) {
         .contact .contactForm .formDivider {
           width: 47%;
-          margin-bottom: 15px; } }
+          margin-bottom: 12px; } }
     .contact .contactForm .formDividerOne {
       width: 45%;
-      margin-bottom: 40px; }
+      margin-bottom: 36px; }
       @media all and (max-width: 1400px) {
         .contact .contactForm .formDividerOne {
           width: 47%;
-          margin-bottom: 15px; } }
+          margin-bottom: 12px; } }
       @media all and (max-width: 920px) {
         .contact .contactForm .formDividerOne {
           width: 100%; } }
     .contact .contactForm .aboutQuery {
       width: 100%;
-      margin-bottom: 15px; }
+      margin-bottom: 12px; }
       @media all and (max-width: 1400px) {
         .contact .contactForm .aboutQuery {
           margin-bottom: 10px; } }
