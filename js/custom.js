@@ -133,6 +133,17 @@ $('#myModal').modal({
   backdrop: 'static'
 });
 
+
+$(document).ready(function(){
+  if($.cookie("disclaimer") == null) {
+      $('#myModal').css('visibility','visible');
+        // $('.modal-backdrop.in').css("display","none");
+        $(".agreeDisclaimer").click(function() {   
+          $.cookie("disclaimer", "2");
+        });
+  }
+ });
+
 //service Slider
 
 if ($(".serviceSlider").length) {

@@ -1744,17 +1744,14 @@ body {
     }
 }
 
-.disclaimerSec{
-    -ms-overflow-style: none; /* Edge, Internet Explorer */
-    scrollbar-width: none; /* Firefox */
-    overflow-y: scroll;
-    ::-webkit-scrollbar {
-     display: none; /* Chrome, Safari, Opera */
-      }
-    .modal{
-    display: block;
+.modal-backdrop.in{
+    display: none;
+}
+
+#myModal{
+    visibility: hidden;
     background-color: rgba(0,0,0,0.6);
-    opacity: 1 !important;
+    opacity: 1 ;
     overflow-x: hidden;
     overflow-y: auto;
     .modal-dialog{
@@ -1798,7 +1795,7 @@ body {
        
        }
     }
-}
+
 
 
 .footerLegal {

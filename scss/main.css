@@ -1569,51 +1569,45 @@ body {
     letter-spacing: 0.05em;
     color: #000; }
 
-.disclaimerSec {
-  -ms-overflow-style: none;
-  /* Edge, Internet Explorer */
-  scrollbar-width: none;
-  /* Firefox */
-  overflow-y: scroll; }
-  .disclaimerSec ::-webkit-scrollbar {
-    display: none;
-    /* Chrome, Safari, Opera */ }
-  .disclaimerSec .modal {
-    display: block;
-    background-color: rgba(0, 0, 0, 0.6);
-    opacity: 1 !important;
-    overflow-x: hidden;
-    overflow-y: auto; }
-    .disclaimerSec .modal .modal-dialog {
-      max-width: 40% !important;
-      margin: 12% auto 0; }
-      .disclaimerSec .modal .modal-dialog .modal-content .modal-body {
-        position: relative;
-        padding: 15px; }
-        .disclaimerSec .modal .modal-dialog .modal-content .modal-body p {
-          padding-bottom: 1.5rem; }
-        .disclaimerSec .modal .modal-dialog .modal-content .modal-body .dlinkSec {
-          text-align: center;
-          padding: 1rem; }
-          .disclaimerSec .modal .modal-dialog .modal-content .modal-body .dlinkSec a {
-            color: #000;
-            margin: 10px; }
-            .disclaimerSec .modal .modal-dialog .modal-content .modal-body .dlinkSec a:hover, .disclaimerSec .modal .modal-dialog .modal-content .modal-body .dlinkSec a :active {
-              color: #999;
-              text-decoration: none; }
-      @media all and (min-width: 768px) {
-        .disclaimerSec .modal .modal-dialog {
-          width: auto !important; } }
-      @media all and (max-width: 768px) {
-        .disclaimerSec .modal .modal-dialog {
-          max-width: 80% !important;
-          margin: 15% auto 0; } }
-      @media all and (max-width: 640px) {
-        .disclaimerSec .modal .modal-dialog {
-          position: absolute;
-          left: 0;
-          right: 0;
-          max-width: 90% !important; } }
+.modal-backdrop.in {
+  display: none; }
+
+#myModal {
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 1;
+  overflow-x: hidden;
+  overflow-y: auto; }
+  #myModal .modal-dialog {
+    max-width: 40% !important;
+    margin: 12% auto 0; }
+    #myModal .modal-dialog .modal-content .modal-body {
+      position: relative;
+      padding: 15px; }
+      #myModal .modal-dialog .modal-content .modal-body p {
+        padding-bottom: 1.5rem; }
+      #myModal .modal-dialog .modal-content .modal-body .dlinkSec {
+        text-align: center;
+        padding: 1rem; }
+        #myModal .modal-dialog .modal-content .modal-body .dlinkSec a {
+          color: #000;
+          margin: 10px; }
+          #myModal .modal-dialog .modal-content .modal-body .dlinkSec a:hover, #myModal .modal-dialog .modal-content .modal-body .dlinkSec a :active {
+            color: #999;
+            text-decoration: none; }
+    @media all and (min-width: 768px) {
+      #myModal .modal-dialog {
+        width: auto !important; } }
+    @media all and (max-width: 768px) {
+      #myModal .modal-dialog {
+        max-width: 80% !important;
+        margin: 15% auto 0; } }
+    @media all and (max-width: 640px) {
+      #myModal .modal-dialog {
+        position: absolute;
+        left: 0;
+        right: 0;
+        max-width: 90% !important; } }
 
 .footerLegal {
   position: relative;
