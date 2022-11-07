@@ -408,6 +408,19 @@ menuLinks.forEach((link) => {
   });
 });
 
+const menuLinksNew = document.querySelectorAll(".nav-links .mainLink .menuLink");
+
+menuLinksNew.forEach((link) => {
+  link.addEventListener("click", () => {
+    menuLinksNew.forEach((link) => {
+      link.classList.remove("is-active");
+    });
+    link.classList.add("is-active");
+  });
+});
+
+
+
 // mobile header active
 $(function () {
   $("#sideMenu a").click(function () {
@@ -426,6 +439,10 @@ var sideIconToggle = document.getElementById("sidebarContainer");
 document.addEventListener("click", function (event) {
   if (!sidebarContainer.contains(event.target)) hideSidebar();
 });
+
+
+
+
 
 
 // testimonial JS
@@ -713,3 +730,22 @@ $(document).on('click', function (e) {
 });
 // Legal header ends
 
+
+/*back button and browser back js start*/
+function GoBackWithRefresh(event) {
+    if ('referrer' in document) {
+        window.location = document.referrer;
+        /* OR */
+        //location.replace(document.referrer);
+    } else {
+        window.history.back();
+    }
+}
+
+var perfEntries = performance.getEntriesByType("navigation");
+
+if (perfEntries[0].type === "back_forward") {
+    location.reload(true);
+}
+
+/*back button and browser back js end*/
