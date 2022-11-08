@@ -128,21 +128,7 @@ if (mediaQuery.matches) {
   
 }
 
-//Legal pop up
-$('#myModal').modal({
-  backdrop: 'static'
-});
 
-
-$(document).ready(function(){
-  if($.cookie("disclaimer") == null) {
-      $('#myModal').css('visibility','visible');
-        // $('.modal-backdrop.in').css("display","none");
-        $(".agreeDisclaimer").click(function() {   
-          $.cookie("disclaimer", "2");
-        });
-  }
- });
 
 //service Slider
 
@@ -749,3 +735,24 @@ if (perfEntries[0].type === "back_forward") {
 }
 
 /*back button and browser back js end*/
+
+
+//Legal pop up
+
+if ($("#myModal").length) {
+$('#myModal').modal({
+  backdrop: 'static'
+});
+
+
+$(document).ready(function(){
+  if($.cookie("disclaimer") == null) {
+      $('#myModal').css('visibility','visible');
+        // $('.modal-backdrop.in').css("display","none");
+        $(".agreeDisclaimer").click(function() {   
+          $.cookie("disclaimer", "2");
+        });
+  }
+ });
+
+}
