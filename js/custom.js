@@ -714,6 +714,7 @@ $(document).on('click', function (e) {
     $(e.target).siblings('ul').toggle();
   }
 });
+
 // Legal header ends
 
 
