@@ -405,26 +405,33 @@ body {
           line-height: 95px; }
         .landingPage .pageHeading p {
           line-height: 46px; } }
+  @media all and (max-width: 1400px) {
+    .landingPage {
+      margin: 150px 0px 100px 0px; }
+      .landingPage .homepageCta {
+        margin-top: 36px; }
+      .landingPage .pageHeading {
+        width: 80%; }
+        .landingPage .pageHeading h1 {
+          line-height: 80px; }
+        .landingPage .pageHeading p {
+          line-height: 40px; } }
   @media all and (max-width: 1450px) {
     .landingPage {
       margin: 150px 0px 100px 0px; }
       .landingPage p {
         line-height: 39px;
-        margin-top: 15px; }
-      .landingPage .pageHeading {
-        width: 76%; }
-        .landingPage .pageHeading h1 {
-          line-height: 90px; } }
+        margin-top: 15px; } }
   @media all and (max-width: 1367px) {
     .landingPage .pageHeading {
       width: 81%; }
       .landingPage .pageHeading h1 {
-        line-height: 90px; } }
+        line-height: 80px; } }
   @media all and (max-width: 1290px) {
     .landingPage .pageHeading {
       width: 88%; }
       .landingPage .pageHeading h1 {
-        line-height: 85px; } }
+        line-height: 80px; } }
   @media all and (max-width: 1170px) {
     .landingPage {
       margin: 140px 0px 100px 0px; } }
@@ -489,6 +496,8 @@ body {
     .legalHeaderNew .headerContainer .logo img {
       width: 270px; }
     .legalHeaderNew .headerContainer input {
+      display: none; }
+    .legalHeaderNew .headerContainer .legalOverlay .menu-legal-menu-container {
       display: none; }
     .legalHeaderNew .headerContainer .legalOverlay .nav-links {
       display: inline-flex; }
@@ -2138,6 +2147,82 @@ h2 {
         border: none;
         outline: none;
         background: #fff; }
+    .headerBranding .menu-items a:hover {
+      position: relative;
+      color: #fff;
+      text-decoration: none;
+      transition: all 0.35s ease; }
+      .headerBranding .menu-items a:hover:before {
+        position: absolute;
+        content: "";
+        left: -5px;
+        right: 0;
+        top: -15px;
+        bottom: 0;
+        width: 50px;
+        height: 50px;
+        background: #252525;
+        border: 1px solid #1C1C1C;
+        outline: none;
+        border-radius: 50%;
+        z-index: -1;
+        margin: 0 auto; }
+        @media (max-width: 1400px) {
+          .headerBranding .menu-items a:hover:before {
+            top: -10px;
+            width: 40px;
+            height: 40px; } }
+        @media (max-width: 920px) {
+          .headerBranding .menu-items a:hover:before {
+            background: transparent;
+            border: none; } }
+  .headerBranding .menu-items li {
+    font-size: 18px;
+    color: #F2F2F2;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400; }
+    @media all and (max-width: 1800px) {
+      .headerBranding .menu-items li {
+        font-size: 16px; } }
+    @media all and (max-width: 1600px) {
+      .headerBranding .menu-items li {
+        font-size: 14px; } }
+    @media all and (max-width: 1400px) {
+      .headerBranding .menu-items li {
+        font-size: 12px; } }
+    @media all and (max-width: 1200px) {
+      .headerBranding .menu-items li {
+        font-size: 12px; } }
+    .headerBranding .menu-items li:last-child a {
+      border-radius: 60px;
+      text-decoration: none;
+      padding: 5px 10px;
+      position: relative;
+      border: 1px solid rgba(242, 242, 242, 0.2);
+      border-radius: 50px; }
+      .headerBranding .menu-items li:last-child a.is-active {
+        border-radius: 50px;
+        border: 1px solid #fff;
+        padding: 5px 10px;
+        text-decoration: none;
+        position: relative; }
+        .headerBranding .menu-items li:last-child a.is-active:after {
+          position: absolute;
+          top: -1px;
+          height: 36px;
+          text-decoration: none; }
+          @media (max-width: 1600px) {
+            .headerBranding .menu-items li:last-child a.is-active:after {
+              height: 33px; } }
+          @media (max-width: 1400px) {
+            .headerBranding .menu-items li:last-child a.is-active:after {
+              height: 29px; } }
+      .headerBranding .menu-items li:last-child a:before {
+        background: transparent;
+        border: none; }
+      .headerBranding .menu-items li:last-child a:hover {
+        border: 1px solid #fff;
+        color: #fff; }
   .headerBranding .menu-link:hover {
     position: relative;
     color: #fff;

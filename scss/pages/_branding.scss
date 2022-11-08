@@ -1,8 +1,8 @@
 // Bhavika's CSS
-html{
-@media all and (max-width:920px){
-    scroll-behavior: smooth;
-}
+html {
+    @media all and (max-width:920px) {
+        scroll-behavior: smooth;
+    }
 }
 
 progress {
@@ -143,7 +143,7 @@ h2 {
                 z-index: 1;
             }
 
-            .menu-branding-menu-container{
+            .menu-branding-menu-container {
                 display: none !important;
             }
         }
@@ -259,6 +259,106 @@ h2 {
                     outline: none;
                     background: #fff;
                 }
+             
+            }
+            &:hover{
+                position: relative;
+                color: #fff;
+                text-decoration: none;
+                transition: all 0.35s ease;
+                &:before {
+                    position: absolute;
+                    content: "";
+                    left: -5px;
+                    right: 0;
+                    top: -15px;
+                    bottom: 0;
+                    width: 50px;
+                    height: 50px;
+                    background: #252525;
+                    border: 1px solid #1C1C1C;
+                    outline: none;
+                    border-radius: 50%;
+                    z-index: -1;
+                    margin: 0 auto;
+        
+                    @media (max-width: 1400px) {
+                        top: -10px;
+                        width: 40px;
+                        height: 40px;
+                    }
+        
+                    @media (max-width: 920px) {
+                        background: transparent;
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .menu-items {
+        li {
+            font-size: 18px;
+            color: #F2F2F2;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+
+            @media all and (max-width:1800px) {
+                font-size: 16px;
+            }
+
+            @media all and (max-width:1600px) {
+                font-size: 14px;
+            }
+
+            @media all and (max-width:1400px) {
+                font-size: 12px;
+            }
+
+            @media all and (max-width:1200px) {
+                font-size: 12px;
+            }
+
+            &:last-child a {
+                border-radius: 60px;
+                text-decoration: none;
+                padding: 5px 10px;
+                position: relative;
+                border: 1px solid rgba(242, 242, 242, 0.2);
+                border-radius: 50px;
+                &.is-active {
+                    border-radius: 50px;
+                    border: 1px solid #fff;
+                    padding: 5px 10px;
+                    text-decoration: none;
+                    position: relative;
+                    &:after {
+                    
+                        position: absolute;
+                        top: -1px;
+                        height: 36px;
+
+                        text-decoration: none;
+                        @media (max-width: 1600px) {
+                            height: 33px;
+                        }
+
+                        @media (max-width: 1400px) {
+                            height: 29px;
+                        }
+
+                    }
+                }
+                &:before {
+                    background: transparent;
+                    border: none;
+                }
+
+                &:hover {
+                    border: 1px solid #fff;
+                    color: #fff;
+                }
             }
         }
     }
@@ -323,7 +423,7 @@ h2 {
             padding: 15px 0px;
         }
 
-        
+
 
         input[type="checkbox"],
         .hamburger-lines {
@@ -491,7 +591,7 @@ h2 {
                 position: relative;
                 border: 1px solid rgba(242, 242, 242, 0.2);
                 border-radius: 50px;
-                
+
 
                 &.is-active {
                     border-radius: 50px;
@@ -499,11 +599,12 @@ h2 {
                     padding: 5px 10px;
                     text-decoration: none;
                     position: relative;
+
                     &:after {
                         position: absolute;
                         top: -1px;
                         height: 36px;
-                       
+
                         text-decoration: none;
 
                         @media (max-width: 1600px) {
@@ -599,7 +700,7 @@ h2 {
 
         @media all and (max-width: 920px) {
             margin-bottom: 20px;
-           
+
         }
 
     }
@@ -986,7 +1087,7 @@ h2 {
 
             .teamPara {
                 height: 250px;
-                
+
             }
         }
 
@@ -1222,7 +1323,7 @@ h2 {
 
             .teamPara {
                 height: 250px;
-                
+
             }
         }
     }
@@ -1648,43 +1749,50 @@ h2 {
 
 
 .bannerSec {
-    
-    h1{
+
+    h1 {
         line-height: 115px;
-        
+
     }
-    
+
     @media all and (max-width: 1650px) {
         h1 {
             line-height: 95px;
         }
     }
+
     @media all and (max-width: 1450px) {
-       h1 {
+        h1 {
             line-height: 90px;
         }
     }
+
     @media all and (max-width: 1367px) {
         h1 {
-           line-height: 90px;
+            line-height: 90px;
         }
     }
+
     @media all and (max-width: 1250px) {
         h1 {
             line-height: 85px;
         }
     }
+
     @media all and (max-width: 1090px) {
         h1 {
             line-height: 80px;
         }
     }
+
     @media all and (max-width:920px) {
         margin-top: 50px;
-        h1{
+
+        h1 {
             line-height: 70px;
         }
     }
+
     @media all and (max-width: 650px) {
         h1 {
             line-height: 48px;
@@ -1980,7 +2088,7 @@ h2 {
     //     margin-top: 150px;
     // }
 
-   
+
 
     .teamSec {
         display: flex;
@@ -2048,9 +2156,10 @@ h2 {
                 }
             }
         }
+
         @media all and (max-width: 1400px) {
             height: 420px;
-            
+
         }
 
         @media all and (max-width: 1280px) {
@@ -2112,16 +2221,16 @@ h2 {
     //     margin-top: 150px;
     // }
 
-    .filter{
-        @media all and (max-width:920px){
+    .filter {
+        @media all and (max-width:920px) {
             padding-top: 120px;
             margin-top: -120px;
         }
     }
-    
+
     ul {
         list-style: none;
-       }
+    }
 
     .clientSec {
         display: flex;
@@ -2303,12 +2412,13 @@ h2 {
             }
 
             @media all and (max-width:1600px) {
-                .content{
-                margin: 0px 30px 0px 0px;
+                .content {
+                    margin: 0px 30px 0px 0px;
 
-                &:nth-child(2) {
-                    margin-top: 30px;
-                }}
+                    &:nth-child(2) {
+                        margin-top: 30px;
+                    }
+                }
 
             }
 
@@ -2326,13 +2436,13 @@ h2 {
             }
 
             @media all and (max-width:780px) {
-                .content{
-                margin: 0px 10px 0px 0px;
+                .content {
+                    margin: 0px 10px 0px 0px;
 
-                &:nth-child(2) {
-                    margin-top: 20px;
+                    &:nth-child(2) {
+                        margin-top: 20px;
+                    }
                 }
-            }
 
             }
         }
@@ -2413,17 +2523,18 @@ h2 {
                 opacity: 1;
                 width: 100%;
 
-                .profile  .testinnerDiv{
-                    width:170px;
-                    height:170px;
+                .profile .testinnerDiv {
+                    width: 170px;
+                    height: 170px;
+
                     @media all and (max-width:1600px) {
-                        width:120px;
-                        height:120px;
+                        width: 120px;
+                        height: 120px;
                     }
                 }
             }
 
-           
+
         }
 
 
@@ -2464,25 +2575,26 @@ h2 {
             .profile {
 
                 img {
-                   
+
                     margin: 0 auto;
                     vertical-align: middle;
 
-                   
+
                 }
 
-                .testinnerDiv{
-                    display:flex;
-                    justify-content:center;
-                    align-items:center;
-                    width:150px;
-                    height:150px;
-                    margin:auto;
-                    background-color:#d6d6d6;
-                    border-radius:50%;
+                .testinnerDiv {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 150px;
+                    height: 150px;
+                    margin: auto;
+                    background-color: #d6d6d6;
+                    border-radius: 50%;
+
                     @media all and (max-width:1600px) {
-                        width:100px;
-                        height:100px;
+                        width: 100px;
+                        height: 100px;
                     }
                 }
 
@@ -2697,7 +2809,7 @@ h2 {
 
 .contactSec {
 
-    
+
 
     .contactBox {
         display: flex;
@@ -3035,7 +3147,7 @@ h2 {
     @media all and (max-width: 920px) {
         display: none;
     }
-    
+
 }
 
 

@@ -38,8 +38,8 @@ if (mediaQuery.matches) {
           $(".scroll-text").css("display", "block");
           $(".scroll-symbol").css("display", "block");
           $("a[class = 'scroll-icon']").prop("href", "#bannerSec1");
-          $(".secOne").addClass("is-active");
-          $(".secTwo").removeClass("is-active");
+          $(".secOne a").addClass("is-active");
+          $(".secTwo a").removeClass("is-active");
   
   
         }
@@ -48,8 +48,8 @@ if (mediaQuery.matches) {
           $(".scroll-text").css("display", "block");
           $(".scroll-symbol").css("display", "block");
           $("a[class = 'scroll-icon']").prop("href", "#bannerSec2");
-          $(".secOne").addClass("is-active");
-          $(".secTwo").removeClass("is-active");
+          $(".secOne a").addClass("is-active");
+          $(".secTwo a").removeClass("is-active");
   
   
         }
@@ -57,59 +57,59 @@ if (mediaQuery.matches) {
           $(".scroll-text").css("display", "block");
           $(".scroll-symbol").css("display", "block");
           $("a[class = 'scroll-icon']").prop("href", "#serviceSec");
-          $(".secOne").addClass("is-active");
-          $(".secTwo").removeClass("is-active");
+          $(".secOne a").addClass("is-active");
+          $(".secTwo a").removeClass("is-active");
   
   
         }
         if (index == 4) {
           $(".scroll-text").css("display", "none");
           $(".scroll-symbol").css("display", "none");
-          $(".secOne").removeClass("is-active");
-          $(".secTwo").addClass("is-active");
-          $(".secThree").removeClass("is-active");
+          $(".secOne a").removeClass("is-active");
+          $(".secTwo a").addClass("is-active");
+          $(".secThree a").removeClass("is-active");
   
   
         }
         if (index == 5) {
           $(".scroll-text").css("display", "none");
           $(".scroll-symbol").css("display", "none");
-          $(".secTwo").removeClass("is-active");
-          $(".secThree").addClass("is-active");
-          $(".secFour").removeClass("is-active");
+          $(".secTwo a").removeClass("is-active");
+          $(".secThree a").addClass("is-active");
+          $(".secFour a").removeClass("is-active");
   
   
         }
         if (index == 6) {
           $(".scroll-text").css("display", "none");
           $(".scroll-symbol").css("display", "none");
-          $(".secThree").removeClass("is-active");
-          $(".secFour").addClass("is-active");
-          $(".secFive").removeClass("is-active");
+          $(".secThree a").removeClass("is-active");
+          $(".secFour a").addClass("is-active");
+          $(".secFive a").removeClass("is-active");
   
         }
         if (index == 7) {
           $(".scroll-text").css("display", "none");
           $(".scroll-symbol").css("display", "none");
-          $(".secFour").removeClass("is-active");
-          $(".secFive").addClass("is-active");
-          $(".secSix").removeClass("is-active");
+          $(".secFour a").removeClass("is-active");
+          $(".secFive a").addClass("is-active");
+          $(".secSix a").removeClass("is-active");
   
   
         }
         if (index == 8) {
           $(".scroll-text").css("display", "none");
           $(".scroll-symbol").css("display", "none");
-          $(".secFive").removeClass("is-active");
-          $(".secSix").addClass("is-active");
-          $(".secSeven").removeClass("is-active");
+          $(".secFive a").removeClass("is-active");
+          $(".secSix a").addClass("is-active");
+          $(".secSeven a").removeClass("is-active");
   
         }
         if (index == 9) {
           $(".scroll-text").css("display", "none");
           $(".scroll-symbol").css("display", "none");
-          $(".secSix").removeClass("is-active");
-          $(".secSeven").addClass("is-active");
+          $(".secSix a").removeClass("is-active");
+          $(".secSeven a").addClass("is-active");
   
         }
       },
@@ -397,7 +397,7 @@ $(".tabs .tabsToggle").click(function () {
 
 // Header JS
 
-const menuLinks = document.querySelectorAll(".menu-items .menu-link");
+const menuLinks = document.querySelectorAll(".menu-items li a");
 
 menuLinks.forEach((link) => {
   link.addEventListener("click", () => {

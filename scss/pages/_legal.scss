@@ -41,6 +41,9 @@ body {
           .logo img{width: 270px;}
           input{display: none;}
           .legalOverlay{
+            .menu-legal-menu-container{
+                display: none;
+            }
             .nav-links{display: inline-flex;
                 .mainLink{
                   list-style: none;
