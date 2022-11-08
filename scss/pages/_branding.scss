@@ -142,6 +142,10 @@ h2 {
                 cursor: pointer;
                 z-index: 1;
             }
+
+            .menu-branding-menu-container{
+                display: none !important;
+            }
         }
 
         input[type=checkbox] {

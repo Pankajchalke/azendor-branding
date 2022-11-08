@@ -2055,6 +2055,8 @@ h2 {
         background: rgba(0, 0, 0, 0.1);
         cursor: pointer;
         z-index: 1; }
+      .headerBranding #sidebarContainer #sideMenu .menu-branding-menu-container {
+        display: none !important; }
     .headerBranding #sidebarContainer input[type=checkbox] {
       transition: all 0.3s;
       box-sizing: border-box;
