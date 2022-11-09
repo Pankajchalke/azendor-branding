@@ -512,7 +512,7 @@ body {
       font-family: 'Poppins', sans-serif; }
       .legalHeaderNew .headerContainer .legalOverlay .nav-links .mainlinkArrow {
         position: relative; }
-        .legalHeaderNew .headerContainer .legalOverlay .nav-links .mainlinkArrow .clicked {
+        .legalHeaderNew .headerContainer .legalOverlay .nav-links .mainlinkArrow .clicked::before {
           transform: rotate(180deg); }
         .legalHeaderNew .headerContainer .legalOverlay .nav-links .mainlinkArrow .sub-menu {
           width: 195px;
@@ -1087,7 +1087,7 @@ body {
         width: 14px; }
     .solutionSec .solutionSlider .slick-dots li.slick-active button:before {
       color: rgba(33, 33, 33, 0.6);
-      font-size: 10px;
+      font-size: 9px;
       padding: 1px; }
     .solutionSec .solutionSlider .slick-slide img {
       display: inline-block; }
@@ -1341,7 +1341,7 @@ body {
         width: 14px; }
     .advantageSec .advantageSlider .slick-dots li.slick-active button:before {
       color: rgba(33, 33, 33, 0.6);
-      font-size: 10px;
+      font-size: 9px;
       padding: 1px; }
     .advantageSec .advantageSlider .slick-slide img {
       display: inline-block; }
@@ -1765,10 +1765,9 @@ body {
         width: 100%; }
         .footerLegal .footerSec .footerSub .subSector .sectorftSub ul {
           display: flex;
-          flex-wrap: wrap;
-          justify-content: space-between; }
+          flex-wrap: wrap; }
           .footerLegal .footerSec .footerSub .subSector .sectorftSub ul li {
-            width: 30%; }
+            width: 33.33%; }
       .footerLegal .footerSec .footerSub .socialmediaIcons ul {
         display: flex;
         justify-content: space-between; }
@@ -1899,7 +1898,7 @@ body {
     .footerLegal .footerSec .footerSub:nth-child(4) {
       width: 12%; }
     .footerLegal .footerSec .footerSub .subSector .sectorftSub ul li {
-      width: 48%; } }
+      width: 50%; } }
   @media all and (max-width: 900px) {
     .footerLegal .footerSec {
       display: block;
@@ -3221,7 +3220,7 @@ h2 {
     line-height: 20px; }
   .serviceSec .serviceSlider .slick-dots li.slick-active button:before {
     color: rgba(242, 242, 242, 0.6);
-    font-size: 14px;
+    font-size: 12px;
     padding-right: 1px; }
   .serviceSec .serviceSlider .slick-slide img {
     display: inline-block; }
@@ -3283,6 +3282,7 @@ h2 {
       right: 5px;
       width: 100%;
       z-index: 11;
+      outline: none !important;
       background: linear-gradient(180deg, rgba(13, 13, 13, 0) 8.82%, rgba(33, 33, 33, 0.7) 45.31%, #212121 91.77%); }
       .teamSection .teamSec .teamMembers a img {
         transition: 0.6s all; }
@@ -3294,8 +3294,12 @@ h2 {
           .teamSection .teamSec .teamMembers a img {
             width: 12px;
             height: 7px; } }
-      .teamSection .teamSec .teamMembers a:hover img {
-        transform: translateX(15px); }
+      .teamSection .teamSec .teamMembers a:hover {
+        outline: none !important; }
+        .teamSection .teamSec .teamMembers a:hover img {
+          transform: translateX(15px); }
+      .teamSection .teamSec .teamMembers a:active {
+        outline: none !important; }
     .teamSection .teamSec .teamMembers .memberImg {
       max-width: 100%;
       width: 99%; }

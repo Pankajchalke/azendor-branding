@@ -74,7 +74,8 @@ body {
                     position: relative;
 
                     .clicked {
-                        transform: rotate(180deg);
+                        &::before{
+                        transform: rotate(180deg);}
                     }
 
                     .sub-menu {
@@ -978,7 +979,7 @@ body {
 
         .slick-dots li.slick-active button:before {
             color: rgba(33, 33, 33, 0.6);
-            font-size: 10px;
+            font-size: 9px;
             padding: 1px;
         }
 
@@ -1436,7 +1437,7 @@ body {
 
         .slick-dots li.slick-active button:before {
             color: rgba(33, 33, 33, 0.6);
-            font-size: 10px;
+            font-size: 9px;
             padding: 1px;
         }
 
@@ -2128,10 +2129,9 @@ body {
                     ul {
                         display: flex;
                         flex-wrap: wrap;
-                        justify-content: space-between;
 
                         li {
-                            width: 30%;
+                            width: 33.33%;
                         }
                     }
                 }
@@ -2402,7 +2402,7 @@ body {
                     .sectorftSub {
                         ul {
                             li {
-                                width: 48%;
+                                width: 50%;
                             }
                         }
                     }

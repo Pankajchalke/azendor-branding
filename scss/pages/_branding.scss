@@ -1986,7 +1986,7 @@ h2 {
 
         .slick-dots li.slick-active button:before {
             color: rgba(242, 242, 242, 0.6);
-            font-size: 14px;
+            font-size: 12px;
             padding-right: 1px;
         }
 
@@ -2113,6 +2113,7 @@ h2 {
                 right: 5px;
                 width: 100%;
                 z-index: 11;
+                outline: none !important;
                 background: linear-gradient(180deg, rgba(13, 13, 13, 0) 8.82%, rgba(33, 33, 33, 0.7) 45.31%, #212121 91.77%);
 
                 img {
@@ -2130,10 +2131,12 @@ h2 {
                 }
 
                 &:hover {
+                    outline: none !important;
                     img {
                         transform: translateX(15px);
                     }
                 }
+                &:active{outline: none !important;}
             }
 
 
