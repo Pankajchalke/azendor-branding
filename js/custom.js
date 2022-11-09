@@ -696,6 +696,7 @@ var sideIconToggle = document.getElementById("sidebarContainer");
 document.addEventListener("click", function (event) {
   if (!sidebarContainer.contains(event.target)) hideSidebar();
 });
+
 $(document).ready(function () {
   $(".solutionDrop").click(function () {
     $(".downcaretsolutionnewmbl").toggleClass("clicked");
@@ -707,9 +708,9 @@ $(document).ready(function () {
     $(".downcaretsolutionnewmbl2").toggleClass("clicked");
   });
 });
+
 $(document).on('click', function (e) {
   $('.mainLink > ul').hide();
-
   if ($(e.target).parent().hasClass('mainLink')) {
     $(e.target).siblings('ul').toggle();
   }

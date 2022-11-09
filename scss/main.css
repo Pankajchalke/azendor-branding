@@ -512,6 +512,8 @@ body {
       font-family: 'Poppins', sans-serif; }
       .legalHeaderNew .headerContainer .legalOverlay .nav-links .mainlinkArrow {
         position: relative; }
+        .legalHeaderNew .headerContainer .legalOverlay .nav-links .mainlinkArrow .clicked {
+          transform: rotate(180deg); }
         .legalHeaderNew .headerContainer .legalOverlay .nav-links .mainlinkArrow .sub-menu {
           width: 195px;
           list-style: none;
@@ -549,14 +551,14 @@ body {
           display: inline-block;
           top: 50%;
           transform: translateY(-50%);
-          right: -20px;
+          right: -37%;
           transition: all .25s ease;
           background-size: 9px; }
         .legalHeaderNew .headerContainer .legalOverlay .nav-links .mainlinkArrow:hover::before {
           transform: rotate(180deg) translateY(50%); }
         .legalHeaderNew .headerContainer .legalOverlay .nav-links .mainlinkArrow:hover .sub-menu {
           transition: all 0.3s ease;
-          display: block !important;
+          display: block;
           visibility: visible; }
       .legalHeaderNew .headerContainer .legalOverlay .nav-links .mainLink {
         list-style: none;
@@ -654,7 +656,8 @@ body {
       right: 30px;
       top: 20px;
       padding: 0;
-      line-height: 0; }
+      line-height: 0;
+      z-index: 1; }
   @media screen and (max-width: 1600px) {
     .legalHeaderNew .headerContainer {
       padding-top: 40px; }
@@ -808,7 +811,8 @@ body {
           width: 210px;
           margin-top: 20px; }
         .legalHeaderNew .headerContainer .legalOverlay .nav-links .mainlinkArrow::before {
-          left: 100px; } }
+          top: 35px;
+          right: 50%; } }
 
 .progressbarLegaldesk .progress-container {
   display: block;
@@ -3776,7 +3780,8 @@ h2 {
       margin-top: -50px; } }
   @media all and (max-width: 920px) {
     .footerBranding {
-      margin-top: 20px; } }
+      margin-top: 20px;
+      padding-top: 20px; } }
   .footerBranding .fp-auto-height.fp-section {
     height: 100px !important; }
   .footerBranding .footerSec {
