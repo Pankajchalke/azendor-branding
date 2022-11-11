@@ -480,339 +480,319 @@ body {
     background-color: #000;
     border-radius: 15px; }
 
-.legalHeaderNew {
+.legalheader_new {
   position: fixed;
   top: 0;
   z-index: 99;
   width: 100%;
   background: #fff; }
-  .legalHeaderNew .headerContainer {
+  .legalheader_new .headerContainer_new {
     position: relative;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-top: 60px; }
-    .legalHeaderNew .headerContainer .logo img {
-      width: 270px; }
-    .legalHeaderNew .headerContainer input {
-      display: none; }
-    .legalHeaderNew .headerContainer .legalOverlay .menu-legal-menu-container .contactWp a {
-      padding: 10px 20px !important;
-      text-decoration: none;
-      border: 1px solid rgba(33, 33, 33, 0.2);
-      border-radius: 60px;
-      background-color: #212121;
-      color: #fff !important;
-      margin: 5px auto; }
-    .legalHeaderNew .headerContainer .legalOverlay .menu-legal-menu-container .mainLink a {
-      font-size: 18px; }
-    .legalHeaderNew .headerContainer .legalOverlay .nav-links {
-      display: inline-flex;
-      font-family: 'Poppins', sans-serif; }
-      .legalHeaderNew .headerContainer .legalOverlay .nav-links .mainlinkArrow {
-        position: relative; }
-        .legalHeaderNew .headerContainer .legalOverlay .nav-links .mainlinkArrow .clicked::before {
-          transform: rotate(180deg); }
-        .legalHeaderNew .headerContainer .legalOverlay .nav-links .mainlinkArrow .sub-menu {
-          width: 195px;
-          list-style: none;
-          position: absolute;
-          float: left;
-          display: none;
-          overflow: hidden;
-          transition: all .35s linear;
-          border: 1px solid #F1F1F1;
-          border-radius: 10px;
-          background: #FAFAFA;
-          padding: 10px 0px; }
-          .legalHeaderNew .headerContainer .legalOverlay .nav-links .mainlinkArrow .sub-menu li a {
-            padding: 7px 0px 7px 18px;
-            display: block;
-            color: #555;
-            text-align: left;
-            transition: all .25s linear;
-            text-decoration: none;
-            font-size: 14px; }
-            .legalHeaderNew .headerContainer .legalOverlay .nav-links .mainlinkArrow .sub-menu li a:hover {
-              font-weight: 600;
-              color: #000; }
-          .legalHeaderNew .headerContainer .legalOverlay .nav-links .mainlinkArrow .sub-menu:hover {
-            transition: all 0.3s ease;
-            display: block !important;
-            visibility: visible; }
-        .legalHeaderNew .headerContainer .legalOverlay .nav-links .mainlinkArrow::before {
-          content: "";
-          position: absolute;
-          width: 12px;
-          height: 8px;
-          background-image: url(../images/down-arrow.svg);
-          background-repeat: no-repeat;
+    .legalheader_new .headerContainer_new nav {
+      width: 100%; }
+      .legalheader_new .headerContainer_new nav .menu__brand {
+        float: left; }
+        .legalheader_new .headerContainer_new nav .menu__brand img {
+          width: 270px; }
+      .legalheader_new .headerContainer_new nav .menu__list {
+        float: right;
+        position: relative;
+        padding: 0;
+        margin: 0; }
+        .legalheader_new .headerContainer_new nav .menu__list li {
           display: inline-block;
-          top: 50%;
-          transform: translateY(-50%);
-          right: -37%;
-          transition: all .25s ease;
-          background-size: 9px; }
-        .legalHeaderNew .headerContainer .legalOverlay .nav-links .mainlinkArrow:hover::before {
-          transform: rotate(180deg) translateY(50%); }
-        .legalHeaderNew .headerContainer .legalOverlay .nav-links .mainlinkArrow:hover .sub-menu {
-          transition: all 0.3s ease;
-          display: block;
-          visibility: visible; }
-      .legalHeaderNew .headerContainer .legalOverlay .nav-links .mainLink {
-        list-style: none;
-        margin-left: 50px; }
-        .legalHeaderNew .headerContainer .legalOverlay .nav-links .mainLink a {
           position: relative;
-          display: inline-block;
-          transition: all 0.3s ease;
           cursor: pointer;
-          padding: 15px 0px;
-          text-decoration: none;
-          color: #212121; }
-          .legalHeaderNew .headerContainer .legalOverlay .nav-links .mainLink a:hover {
-            color: #000;
+          margin-left: 50px; }
+          .legalheader_new .headerContainer_new nav .menu__list li a {
+            position: relative;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            text-transform: capitalize;
+            display: inline-block;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            padding: 15px 0px;
             text-decoration: none;
-            transition: all 0.35s ease;
-            font-weight: 600; }
-          .legalHeaderNew .headerContainer .legalOverlay .nav-links .mainLink a .downcaretsolutionnew {
+            color: #212121;
+            font-size: 18px; }
+            .legalheader_new .headerContainer_new nav .menu__list li a:hover, .legalheader_new .headerContainer_new nav .menu__list li a:focus {
+              font-weight: 600 !important;
+              text-decoration: none;
+              color: #212121;
+              transition: all 0.35s ease; }
+          .legalheader_new .headerContainer_new nav .menu__list li.aboutDropMenu ul {
+            width: 152px !important; }
+          .legalheader_new .headerContainer_new nav .menu__list li .menu__sublist,
+          .legalheader_new .headerContainer_new nav .menu__list li .sub-menu {
+            left: 0;
+            z-index: 9999;
+            background-color: #fff;
+            visibility: hidden;
+            opacity: 0;
+            width: 195px;
+            list-style: none;
+            position: absolute;
+            overflow: hidden;
+            transition: all .20s linear;
+            border: 1px solid #F1F1F1;
+            border-radius: 10px;
+            background: #FAFAFA;
+            padding: 10px 0px; }
+            .legalheader_new .headerContainer_new nav .menu__list li .menu__sublist::before,
+            .legalheader_new .headerContainer_new nav .menu__list li .sub-menu::before {
+              content: "";
+              width: 100%;
+              display: block;
+              position: absolute;
+              height: 48px;
+              background-color: transparent;
+              /* margin-top: -51px; */
+              /* margin-right: -20px; */
+              /* margin-left: -20px; */
+              left: 0;
+              top: -42px; }
+            .legalheader_new .headerContainer_new nav .menu__list li .menu__sublist::after,
+            .legalheader_new .headerContainer_new nav .menu__list li .sub-menu::after {
+              content: "";
+              position: absolute;
+              display: block;
+              height: 10px;
+              width: 10px;
+              background: #fff;
+              border: 2px solid #fff;
+              transform: rotate(45deg);
+              top: -7px; }
+            .legalheader_new .headerContainer_new nav .menu__list li .menu__sublist li,
+            .legalheader_new .headerContainer_new nav .menu__list li .sub-menu li {
+              margin-left: 0px !important; }
+              .legalheader_new .headerContainer_new nav .menu__list li .menu__sublist li a,
+              .legalheader_new .headerContainer_new nav .menu__list li .sub-menu li a {
+                font-family: 'Poppins', sans-serif;
+                display: block;
+                font-weight: 400;
+                width: 100%;
+                padding: 7px 0px 7px 18px;
+                color: #212121;
+                text-align: left;
+                transition: all .25s linear;
+                text-decoration: none;
+                font-size: 14px; }
+                .legalheader_new .headerContainer_new nav .menu__list li .menu__sublist li a:hover, .legalheader_new .headerContainer_new nav .menu__list li .menu__sublist li a:focus,
+                .legalheader_new .headerContainer_new nav .menu__list li .sub-menu li a:hover,
+                .legalheader_new .headerContainer_new nav .menu__list li .sub-menu li a:focus {
+                  color: #212121 !important;
+                  text-decoration: none;
+                  transition: all 0.35s ease;
+                  font-weight: 600; }
+            .legalheader_new .headerContainer_new nav .menu__list li .menu__sublist li,
+            .legalheader_new .headerContainer_new nav .menu__list li .sub-menu li {
+              display: block !important;
+              position: unset !important; }
+          .legalheader_new .headerContainer_new nav .menu__list li:hover .menu__sublist,
+          .legalheader_new .headerContainer_new nav .menu__list li .menu__sublist:hover {
+            visibility: visible;
+            opacity: 1; }
+          .legalheader_new .headerContainer_new nav .menu__list li:hover .sub-menu,
+          .legalheader_new .headerContainer_new nav .menu__list li .sub-menu:hover {
+            visibility: visible;
+            opacity: 1; }
+          .legalheader_new .headerContainer_new nav .menu__list li.menu_sub::before {
+            content: "";
+            position: absolute;
             width: 12px;
             height: 8px;
             background-image: url(../images/down-arrow.svg);
             background-repeat: no-repeat;
             display: inline-block;
-            margin-left: 7px;
-            top: 1px;
-            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            right: -37%;
             transition: all .25s ease;
             background-size: 9px; }
-        .legalHeaderNew .headerContainer .legalOverlay .nav-links .mainLink .downcaretsolutionnewmbl,
-        .legalHeaderNew .headerContainer .legalOverlay .nav-links .mainLink .downcaretsolutionnewmbl1,
-        .legalHeaderNew .headerContainer .legalOverlay .nav-links .mainLink .downcaretsolutionnewmbl2 {
-          width: 12px;
-          height: 8px;
-          background-image: url(../images/down-arrow.svg);
-          background-repeat: no-repeat;
-          display: inline-block;
-          margin-left: 7px;
-          top: 1px;
-          position: relative;
-          transition: all .25s ease;
-          background-size: 9px; }
-        .legalHeaderNew .headerContainer .legalOverlay .nav-links .mainLink .clicked {
-          transform: rotate(180deg); }
-        .legalHeaderNew .headerContainer .legalOverlay .nav-links .mainLink .fontWeight {
-          font-weight: 600; }
-        .legalHeaderNew .headerContainer .legalOverlay .nav-links .mainLink .contact {
-          padding: 10px 20px;
+          .legalheader_new .headerContainer_new nav .menu__list li.menu_sub:hover::before {
+            transform: rotate(180deg) translateY(50%); }
+          .legalheader_new .headerContainer_new nav .menu__list li.menu_sub.open-caret::before {
+            transform: rotate(180deg) translateY(50%) !important; }
+        .legalheader_new .headerContainer_new nav .menu__list .contactMenu a {
+          padding: 10px 20px !important;
           text-decoration: none;
           border: 1px solid rgba(33, 33, 33, 0.2);
           border-radius: 60px;
           background-color: #212121;
           color: #fff !important;
           margin: 5px auto; }
-        .legalHeaderNew .headerContainer .legalOverlay .nav-links .mainLink .mobile-item {
-          display: none; }
-        .legalHeaderNew .headerContainer .legalOverlay .nav-links .mainLink .drop-menu {
-          width: 195px;
-          list-style: none;
-          position: absolute;
-          float: left;
-          display: none;
-          overflow: hidden;
-          transition: all .35s linear;
-          border: 1px solid #F1F1F1;
-          border-radius: 10px;
-          background: #FAFAFA;
-          padding: 10px 0px; }
-          .legalHeaderNew .headerContainer .legalOverlay .nav-links .mainLink .drop-menu li a {
-            padding: 7px 0px 7px 18px;
-            display: block;
-            color: #555;
-            text-align: left;
-            transition: all .25s linear;
-            text-decoration: none;
-            font-size: 14px; }
-            .legalHeaderNew .headerContainer .legalOverlay .nav-links .mainLink .drop-menu li a:hover {
-              font-weight: 600;
-              color: #000; }
-        .legalHeaderNew .headerContainer .legalOverlay .nav-links .mainLink:hover .drop-menu {
-          transition: all 0.3s ease;
-          display: block !important;
-          visibility: visible; }
-    .legalHeaderNew .headerContainer .btn {
-      color: #212121;
-      font-size: 25px;
-      cursor: pointer;
-      display: none;
-      padding: 0;
-      line-height: 0; }
-      @media screen and (max-width: 920px) {
-        .legalHeaderNew .headerContainer .btn {
-          display: block; } }
-    .legalHeaderNew .headerContainer .btn.close-btn {
-      position: absolute;
-      right: 30px;
-      top: 20px;
-      padding: 0;
-      line-height: 0;
-      z-index: 1; }
+      .legalheader_new .headerContainer_new nav .menu__button .top,
+      .legalheader_new .headerContainer_new nav .menu__button .middle,
+      .legalheader_new .headerContainer_new nav .menu__button .bottom {
+        border: transparent;
+        border-radius: 20px;
+        height: 3px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all .35s ease;
+        background-color: #000; }
+      .legalheader_new .headerContainer_new nav .menu__button {
+        height: 20px;
+        width: 20px;
+        transform: translateY(30%);
+        position: relative;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        text-align: center;
+        float: right;
+        display: none;
+        outline: none; }
+        .legalheader_new .headerContainer_new nav .menu__button .middle {
+          top: 8px; }
+        .legalheader_new .headerContainer_new nav .menu__button .bottom {
+          top: 16px; }
+        .legalheader_new .headerContainer_new nav .menu__button--active .bottom {
+          transform: translateY(-8px) translateX(0) rotate(-45deg); }
+        .legalheader_new .headerContainer_new nav .menu__button--active .middle {
+          opacity: 0; }
+        .legalheader_new .headerContainer_new nav .menu__button--active .top {
+          transform: translateY(8px) translateX(0) rotate(45deg); }
+  @media screen and (max-width: 1800px) {
+    .legalheader_new .headerContainer_new nav .menu__list li a {
+      font-size: 16px; } }
   @media screen and (max-width: 1600px) {
-    .legalHeaderNew .headerContainer {
+    .legalheader_new .headerContainer_new {
       padding-top: 40px; }
-      .legalHeaderNew .headerContainer .legalOverlay .menu-legal-menu-container .mainLink a {
+      .legalheader_new .headerContainer_new nav .menu__list li a {
         font-size: 14px; }
-      .legalHeaderNew .headerContainer .nav-links .mainLink .aboutDropMenu {
-        width: 180px !important; }
-      .legalHeaderNew .headerContainer .nav-links .mainLink .contact {
-        padding: 8px 15px;
-        margin: 5px auto; } }
+      .legalheader_new .headerContainer_new nav .menu__list li.aboutDropMenu ul {
+        width: 180px !important; } }
   @media screen and (max-width: 1400px) {
-    .legalHeaderNew .headerContainer {
+    .legalheader_new .headerContainer_new {
       padding-top: 30px; }
-      .legalHeaderNew .headerContainer .legalOverlay .menu-legal-menu-container .mainLink a {
-        font-size: 12px; }
-      .legalHeaderNew .headerContainer .logo img {
+      .legalheader_new .headerContainer_new nav .menu__brand img {
         width: 200px; }
-      .legalHeaderNew .headerContainer .nav-links .mainLink {
-        margin-left: 30px; }
-        .legalHeaderNew .headerContainer .nav-links .mainLink .aboutDropMenu {
-          width: 152px !important; }
-        .legalHeaderNew .headerContainer .nav-links .mainLink .drop-menu {
-          width: 180px; }
-          .legalHeaderNew .headerContainer .nav-links .mainLink .drop-menu li a {
-            padding: 7px 0px 7px 12px !important;
-            font-size: 13px !important; } }
-  @media screen and (max-width: 1020px) {
-    .legalHeaderNew .headerContainer .nav-links .mainLink {
-      margin-left: 20px; } }
+      .legalheader_new .headerContainer_new nav .menu__list li a {
+        font-size: 12px; }
+        .legalheader_new .headerContainer_new nav .menu__list li a .menu__sublist li a {
+          padding: 7px 0px 7px 12px !important;
+          font-size: 13px !important; }
+        .legalheader_new .headerContainer_new nav .menu__list li a .sub-menu li a {
+          padding: 7px 0px 7px 12px !important;
+          font-size: 13px !important; } }
   @media screen and (max-width: 920px) {
-    .legalHeaderNew {
+    .legalheader_new {
       border-bottom: 2px solid rgba(106, 106, 106, 0.5); }
-      .legalHeaderNew .headerContainer {
+      .legalheader_new .headerContainer_new {
         padding: 15px 0px; }
-        .legalHeaderNew .headerContainer .logo img {
+        .legalheader_new .headerContainer_new nav .menu__brand img {
           width: 160px; }
-        .legalHeaderNew .headerContainer .legalOverlay {
+        .legalheader_new .headerContainer_new nav .menu__button {
+          display: inline-block;
+          z-index: 9; }
+        .legalheader_new .headerContainer_new nav .legalOverlay {
           height: 100%;
           position: fixed;
           right: 0;
           top: 0;
           width: 100%;
           bottom: 0;
-          border-radius: 5px 0px 0px 5px;
           transform: translate(150%);
           transition: transform 0.5s ease-in-out;
           z-index: 1;
           background-color: rgba(33, 33, 33, 0.7); }
-          .legalHeaderNew .headerContainer .legalOverlay .menu-legal-menu-container .mainLink a {
-            font-size: 20px; }
-          .legalHeaderNew .headerContainer .legalOverlay .menu-legal-menu-container .contactWp a {
-            font-size: 20px;
-            cursor: pointer;
-            background-color: transparent;
-            color: #212121 !important;
-            padding: 0px 0px !important;
-            margin: 0 !important;
-            border: none;
-            text-decoration: none;
-            transition: all 0.35s ease; }
-          .legalHeaderNew .headerContainer .legalOverlay .nav-links {
-            position: absolute;
-            height: 100%;
-            width: 80%;
-            top: 0;
-            right: 0;
-            background: #fff;
-            display: block;
-            padding-top: 100px;
+          .legalheader_new .headerContainer_new nav .legalOverlay.openTwo {
+            width: 100%;
+            transform: translateX(0%) !important;
+            transition: all 0.5s ease-in-out; }
+          .legalheader_new .headerContainer_new nav .legalOverlay .menu__list {
+            background-color: #fff;
+            clear: both;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            transform: translateX(150%);
+            transition: all 0.5s ease-in-out;
             padding-left: 20px;
-            transition: all 0.3s ease;
-            overflow: auto;
-            margin: 0px; }
-            .legalHeaderNew .headerContainer .legalOverlay .nav-links .mainLink {
+            padding-top: 100px; }
+            .legalheader_new .headerContainer_new nav .legalOverlay .menu__list.open {
+              height: 100vh;
+              overflow-y: scroll;
+              width: 80%;
+              transform: translateX(0%) !important;
+              transition: all 0.5s ease-in-out; }
+            .legalheader_new .headerContainer_new nav .legalOverlay .menu__list li {
+              display: block;
+              width: 100%;
               margin-left: 0px;
               padding: 20px 0px; }
-              .legalHeaderNew .headerContainer .legalOverlay .nav-links .mainLink a {
-                padding: 0px; }
-              .legalHeaderNew .headerContainer .legalOverlay .nav-links .mainLink .desktop-item {
+              .legalheader_new .headerContainer_new nav .legalOverlay .menu__list li.menu_sub::before {
+                top: 35px;
+                right: 30px; }
+              .legalheader_new .headerContainer_new nav .legalOverlay .menu__list li.menu_sub:hover::before {
+                transform: none; }
+            .legalheader_new .headerContainer_new nav .legalOverlay .menu__list a {
+              padding: 0;
+              font-size: 20px;
+              cursor: pointer;
+              transition: all 0.3s ease; }
+            .legalheader_new .headerContainer_new nav .legalOverlay .menu__list .contactMenu a {
+              background-color: transparent;
+              color: #212121 !important;
+              padding: 0px 0px !important;
+              margin: 0 !important;
+              border: none; }
+            .legalheader_new .headerContainer_new nav .legalOverlay .menu__list .menu__sublist,
+            .legalheader_new .headerContainer_new nav .legalOverlay .menu__list .sub-menu {
+              position: relative;
+              width: 100%;
+              top: 0px;
+              box-shadow: none;
+              visibility: visible;
+              opacity: 1;
+              height: 0px;
+              display: none;
+              width: 210px;
+              transition: all 0.3s ease;
+              border: 0;
+              padding: 0px 0px 0px 15px; }
+              .legalheader_new .headerContainer_new nav .legalOverlay .menu__list .menu__sublist::after, .legalheader_new .headerContainer_new nav .legalOverlay .menu__list .menu__sublist::before,
+              .legalheader_new .headerContainer_new nav .legalOverlay .menu__list .sub-menu::after,
+              .legalheader_new .headerContainer_new nav .legalOverlay .menu__list .sub-menu::before {
                 display: none; }
-              .legalHeaderNew .headerContainer .legalOverlay .nav-links .mainLink .mobile-item {
-                display: block;
-                font-size: 20px;
-                padding: 0px;
-                cursor: pointer;
-                transition: all 0.3s ease;
-                margin-bottom: 0px; }
-                .legalHeaderNew .headerContainer .legalOverlay .nav-links .mainLink .mobile-item:hover {
-                  font-weight: 600; }
-              .legalHeaderNew .headerContainer .legalOverlay .nav-links .mainLink .drop-menu,
-              .legalHeaderNew .headerContainer .legalOverlay .nav-links .mainLink .sub-menu {
-                position: static;
+              .legalheader_new .headerContainer_new nav .legalOverlay .menu__list .menu__sublist.activated,
+              .legalheader_new .headerContainer_new nav .legalOverlay .menu__list .sub-menu.activated {
+                height: inherit;
                 opacity: 1;
+                display: block;
+                padding: 0px 0px 0px 15px;
+                transition: all ease-in-out;
+                background-color: #fafafa;
+                border: 1px solid #f1f1f1;
+                border-radius: 5px;
                 width: 210px;
-                float: none;
-                visibility: visible;
-                display: none;
-                max-height: 0px;
-                overflow: hidden;
-                box-shadow: none;
-                transition: all 0.3s ease;
-                border: 0;
-                padding: 0px 0px 0px 15px; }
-                .legalHeaderNew .headerContainer .legalOverlay .nav-links .mainLink .drop-menu li,
-                .legalHeaderNew .headerContainer .legalOverlay .nav-links .mainLink .sub-menu li {
-                  margin: 0;
-                  padding: 10px 0px !important; }
-                  .legalHeaderNew .headerContainer .legalOverlay .nav-links .mainLink .drop-menu li a,
-                  .legalHeaderNew .headerContainer .legalOverlay .nav-links .mainLink .sub-menu li a {
-                    padding: 0px !important;
-                    font-size: 16px !important;
-                    color: #212121 !important; }
-              .legalHeaderNew .headerContainer .legalOverlay .nav-links .mainLink .desktopLink {
-                padding: 0;
-                font-size: 20px;
-                cursor: pointer;
-                transition: all 0.3s ease; }
-              .legalHeaderNew .headerContainer .legalOverlay .nav-links .mainLink .contact {
-                background-color: transparent;
-                color: #212121 !important;
-                padding: 0px 0px !important;
-                margin: 0 !important;
-                border: none; }
-        .legalHeaderNew .headerContainer #menu-btn:checked ~ .legalOverlay {
-          transform: translate(0%); }
-        .legalHeaderNew .headerContainer #menu-btn:checked ~ .btn.menu-btn {
-          display: none; }
-        .legalHeaderNew .headerContainer #close-btn:checked ~ .btn.menu-btn {
-          display: block; }
-        .legalHeaderNew .headerContainer #showDrop:checked ~ .drop-menu,
-        .legalHeaderNew .headerContainer #showDropnew:checked ~ .drop-menu,
-        .legalHeaderNew .headerContainer #showDropnew1:checked ~ .drop-menu,
-        .legalHeaderNew .headerContainer #showMega:checked ~ .mega-box {
-          max-height: fit-content;
-          padding: 0px 0px 0px 15px;
-          display: block;
-          transition: all ease-in-out;
-          background-color: #fafafa;
-          border: 1px solid #f1f1f1;
-          border-radius: 5px;
-          width: 210px;
-          margin-top: 20px; }
-        .legalHeaderNew .headerContainer .legalOverlay .nav-links .mainlinkArrow:hover .sub-menu {
-          max-height: fit-content;
-          padding: 0px 0px 0px 15px;
-          display: block;
-          transition: all ease-in-out;
-          background-color: #fafafa;
-          border: 1px solid #f1f1f1;
-          border-radius: 5px;
-          width: 210px;
-          margin-top: 20px; }
-        .legalHeaderNew .headerContainer .legalOverlay .nav-links .mainlinkArrow::before {
-          top: 35px;
-          right: 50%; } }
+                margin-top: 20px; }
+              .legalheader_new .headerContainer_new nav .legalOverlay .menu__list .menu__sublist li,
+              .legalheader_new .headerContainer_new nav .legalOverlay .menu__list .sub-menu li {
+                margin: 0;
+                padding: 10px 0px !important;
+                width: 100%;
+                margin-left: 0;
+                padding-left: 20px; }
+                .legalheader_new .headerContainer_new nav .legalOverlay .menu__list .menu__sublist li a,
+                .legalheader_new .headerContainer_new nav .legalOverlay .menu__list .sub-menu li a {
+                  padding: 0px !important;
+                  font-size: 16px !important;
+                  color: #212121 !important; }
+                .legalheader_new .headerContainer_new nav .legalOverlay .menu__list .menu__sublist li:hover, .legalheader_new .headerContainer_new nav .legalOverlay .menu__list .menu__sublist li:focus,
+                .legalheader_new .headerContainer_new nav .legalOverlay .menu__list .sub-menu li:hover,
+                .legalheader_new .headerContainer_new nav .legalOverlay .menu__list .sub-menu li:focus {
+                  color: #fff;
+                  background-color: #fff; } }
 
 .progressbarLegaldesk .progress-container {
   display: block;
