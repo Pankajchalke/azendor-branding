@@ -1203,11 +1203,7 @@ body {
         }
     }
 
-    @media all and (max-width: 780px) {
-        p {
-            font-size: 16px !important;
-        }
-
+    @media all and (max-width:1024px){
         .sectorsDesktop {
             display: none;
         }
@@ -1215,6 +1211,14 @@ body {
         .sectorsMobile {
             display: block;
         }
+    }
+
+    @media all and (max-width: 780px) {
+        p {
+            font-size: 16px !important;
+        }
+
+        
 
         .sectorsliderDesktop .sectorBox,
         .sectorsliderMobile .sectorBox {

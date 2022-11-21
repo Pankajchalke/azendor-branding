@@ -1209,13 +1209,14 @@ body {
   .sectors .sectorsliderDesktop .sectorBox .slick-track,
   .sectors .sectorsliderMobile .sectorBox .slick-track {
     margin-left: -7px; } }
-@media all and (max-width: 780px) {
-  .sectors p {
-    font-size: 16px !important; }
+@media all and (max-width: 1024px) {
   .sectors .sectorsDesktop {
     display: none; }
   .sectors .sectorsMobile {
-    display: block; }
+    display: block; } }
+@media all and (max-width: 780px) {
+  .sectors p {
+    font-size: 16px !important; }
   .sectors .sectorsliderDesktop .sectorBox .sectorContent,
   .sectors .sectorsliderMobile .sectorBox .sectorContent {
     margin: 10px 5px 0px;
