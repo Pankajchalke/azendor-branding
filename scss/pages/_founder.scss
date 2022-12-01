@@ -52,7 +52,7 @@
 				a{text-decoration: none;
 					display: flex;
 					align-items: center;
-					&:hover{
+					&:hover, &:visited, &:focus{
                       color: #6a6a6a !important;
 					}
 					img{margin-right: 15px;

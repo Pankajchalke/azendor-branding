@@ -3965,7 +3965,7 @@ h2 {
           text-decoration: none;
           display: flex;
           align-items: center; }
-          .founder .founderBox .founderDesc .details a:hover {
+          .founder .founderBox .founderDesc .details a:hover, .founder .founderBox .founderDesc .details a:visited, .founder .founderBox .founderDesc .details a:focus {
             color: #6a6a6a !important; }
           .founder .founderBox .founderDesc .details a img {
             margin-right: 15px; }
