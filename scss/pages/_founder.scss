@@ -21,7 +21,9 @@
 	.founderBox{
 		display:flex;
 		justify-content: space-between;
-			@media all and (max-width: 920px){display:block;}
+		margin-bottom: 100px;
+		&:nth-last-child(1){margin-bottom: 0px !important;}
+			@media all and (max-width: 920px){display:block;margin-bottom: 50px;}
 		.profile{
 			width:35%;
 				@media all and (max-width: 1400px){width:35%;}
@@ -66,25 +68,45 @@
 					}
 				}
 			}
-			.founderDescInfo{width:75%; line-height: 160%;
-				@media all and (max-width: 1515px){width:80%;}
-				//@media all and (max-width: 1400px){width:75%;}
-				@media all and (max-width: 1080px){width:100%;}
-				@media all and (max-width: 920px){width:100%; display:none;}
-			}
-			.founderDescInfoMobile{width:100%; display:none;
-				@media all and (max-width: 920px){display:block;margin-bottom: 10px; line-height: 150%; font-size: 16px;}
-				#more{display:none;}
-				}
-			#readMore{display:none;
-				@media all and (max-width: 920px){font-size:16px; display: inline-block; transition: 0.6s all;}
-				img{width:18px; height:10px; transition: 0.6s all;}
-			}
 			.linkedinFounder{
 				display: block;
 				margin-top: 20px;
 				img{
 					@media all and (max-width: 1400px){width:25px;}
+				}
+			}
+
+			.founderDescription{
+				width: 75%;
+				line-height: 160%;
+				.morecontent span {display: inline;}
+				.morecontent .morelink {display: none;}
+				.moreellipses .mobileDots{display: none;}
+				@media all and (max-width: 1480px){width: 80%;}
+				@media all and (max-width: 1080px){width: 100%;}
+				@media all and (max-width:920px){
+					.more{
+						line-height: 150%;
+						font-size: 16px !important;
+					  }
+					  .morecontent span {display: none;}
+					  .morecontent .morelink {
+						text-decoration: none;
+						display: block;
+						font-size: 16px;
+						transition: 0.6s all;
+						color: #6a6a6a;
+						font-weight: 500;
+						font-family: 'Poppins', sans-serif;
+						margin-top: 10px;
+					  }
+					  .morelink:focus, .morelink:hover {color: #6a6a6a; text-decoration: none;}
+					  .morelink img {
+						width: 18px;
+						height: 10px;
+						transition: 0.6s all;
+					  }
+					 .moreellipses .mobileDots{display: inline;}
 				}
 			}
 		}

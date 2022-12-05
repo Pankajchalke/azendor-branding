@@ -1889,7 +1889,7 @@ body {
         padding: 0px 0px 30px 0px;
         border-right: none; }
         .footerLegal .footerSec .footerSub ul li {
-          width: 48%; }
+          width: 50%; }
         .footerLegal .footerSec .footerSub:nth-child(1) {
           width: 100%; }
           .footerLegal .footerSec .footerSub:nth-child(1) .footerLogo {
@@ -1901,8 +1901,7 @@ body {
           width: 100%; }
           .footerLegal .footerSec .footerSub:nth-child(2) ul {
             display: flex;
-            flex-flow: wrap;
-            justify-content: space-between; }
+            flex-flow: wrap; }
         .footerLegal .footerSec .footerSub:nth-child(3) {
           padding: 0px 0px 10px 0px;
           width: 100%; }
@@ -2033,6 +2032,9 @@ body {
   @media all and (max-width: 920px) {
     .mblprogressLegal .progress-container-mobile .progress-bar-mobile {
       display: block; } }
+
+.page-template {
+  padding-right: 0px !important; }
 
 @media all and (max-width: 920px) {
   html {
@@ -3905,10 +3907,14 @@ h2 {
         margin-bottom: 0px; } }
   .founder .founderBox {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    margin-bottom: 100px; }
+    .founder .founderBox:nth-last-child(1) {
+      margin-bottom: 0px !important; }
     @media all and (max-width: 920px) {
       .founder .founderBox {
-        display: block; } }
+        display: block;
+        margin-bottom: 50px; } }
     .founder .founderBox .profile {
       width: 35%; }
       @media all and (max-width: 1400px) {
@@ -3987,47 +3993,51 @@ h2 {
               .founder .founderBox .founderDesc .details a:first-child {
                 width: 100%;
                 margin-bottom: 10px; } }
-      .founder .founderBox .founderDesc .founderDescInfo {
-        width: 75%;
-        line-height: 160%; }
-        @media all and (max-width: 1515px) {
-          .founder .founderBox .founderDesc .founderDescInfo {
-            width: 80%; } }
-        @media all and (max-width: 1080px) {
-          .founder .founderBox .founderDesc .founderDescInfo {
-            width: 100%; } }
-        @media all and (max-width: 920px) {
-          .founder .founderBox .founderDesc .founderDescInfo {
-            width: 100%;
-            display: none; } }
-      .founder .founderBox .founderDesc .founderDescInfoMobile {
-        width: 100%;
-        display: none; }
-        @media all and (max-width: 920px) {
-          .founder .founderBox .founderDesc .founderDescInfoMobile {
-            display: block;
-            margin-bottom: 10px;
-            line-height: 150%;
-            font-size: 16px; } }
-        .founder .founderBox .founderDesc .founderDescInfoMobile #more {
-          display: none; }
-      .founder .founderBox .founderDesc #readMore {
-        display: none; }
-        @media all and (max-width: 920px) {
-          .founder .founderBox .founderDesc #readMore {
-            font-size: 16px;
-            display: inline-block;
-            transition: 0.6s all; } }
-        .founder .founderBox .founderDesc #readMore img {
-          width: 18px;
-          height: 10px;
-          transition: 0.6s all; }
       .founder .founderBox .founderDesc .linkedinFounder {
         display: block;
         margin-top: 20px; }
         @media all and (max-width: 1400px) {
           .founder .founderBox .founderDesc .linkedinFounder img {
             width: 25px; } }
+      .founder .founderBox .founderDesc .founderDescription {
+        width: 75%;
+        line-height: 160%; }
+        .founder .founderBox .founderDesc .founderDescription .morecontent span {
+          display: inline; }
+        .founder .founderBox .founderDesc .founderDescription .morecontent .morelink {
+          display: none; }
+        .founder .founderBox .founderDesc .founderDescription .moreellipses .mobileDots {
+          display: none; }
+        @media all and (max-width: 1480px) {
+          .founder .founderBox .founderDesc .founderDescription {
+            width: 80%; } }
+        @media all and (max-width: 1080px) {
+          .founder .founderBox .founderDesc .founderDescription {
+            width: 100%; } }
+        @media all and (max-width: 920px) {
+          .founder .founderBox .founderDesc .founderDescription .more {
+            line-height: 150%;
+            font-size: 16px !important; }
+          .founder .founderBox .founderDesc .founderDescription .morecontent span {
+            display: none; }
+          .founder .founderBox .founderDesc .founderDescription .morecontent .morelink {
+            text-decoration: none;
+            display: block;
+            font-size: 16px;
+            transition: 0.6s all;
+            color: #6a6a6a;
+            font-weight: 500;
+            font-family: 'Poppins', sans-serif;
+            margin-top: 10px; }
+          .founder .founderBox .founderDesc .founderDescription .morelink:focus, .founder .founderBox .founderDesc .founderDescription .morelink:hover {
+            color: #6a6a6a;
+            text-decoration: none; }
+          .founder .founderBox .founderDesc .founderDescription .morelink img {
+            width: 18px;
+            height: 10px;
+            transition: 0.6s all; }
+          .founder .founderBox .founderDesc .founderDescription .moreellipses .mobileDots {
+            display: inline; } }
 
 .contact {
   margin: 200px 0px 150px 0px; }

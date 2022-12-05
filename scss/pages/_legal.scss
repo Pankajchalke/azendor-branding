@@ -2390,7 +2390,7 @@ body {
                 border-right: none;
 
                 ul li {
-                    width: 48%;
+                    width: 50%;
                 }
 
                 &:nth-child(1) {
@@ -2412,8 +2412,6 @@ body {
                     ul {
                         display: flex;
                         flex-flow: wrap;
-                        justify-content: space-between;
-
                     }
                 }
 
@@ -2605,3 +2603,5 @@ body {
         }
     }
 }
+
+.page-template{padding-right: 0px !important;}

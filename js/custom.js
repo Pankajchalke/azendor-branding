@@ -654,21 +654,45 @@ window.addEventListener('scroll', function (e) {
   scrollHeight >= navHeight ? toggle("visible") : toggle("hidden");
 });
 
-function myFunction() {
-  var dots = document.getElementById("dots");
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("readMore");
+// partner page and read more js starts
 
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Read more <img src=images/legal/solution-arrow.svg>";
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Read less <img src=images/legal/solution-arrow.svg>";
-    moreText.style.display = "inline";
-  }
-}
+$(document).ready(function() {
+  // Configure/customize these variables.
+  var showChar = 220;  // How many characters are shown by default
+  var ellipsestext = "";
+  var moretext = "Read More <img src='https://azendor.com/wp-content/themes/azendor/images/legal/solution-arrow.svg'>";
+  var lesstext = "Read Less <img src='https://azendor.com/wp-content/themes/azendor/images/legal/solution-arrow.svg'>";
+  
+
+  $('.more').each(function() {
+      var content = $(this).html();
+
+      if(content.length > showChar) {
+
+          var c = content.substr(0, showChar);
+          var h = content.substr(showChar, content.length - showChar);
+
+          var html = c + '<span class="moreellipses">' + ellipsestext+ '<span class="mobileDots">...</span></span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
+
+          $(this).html(html);
+      }
+
+  });
+
+  $(".morelink").click(function(){
+      if($(this).hasClass("less")) {
+          $(this).removeClass("less");
+          $(this).html(moretext);
+      } else {
+          $(this).addClass("less");
+          $(this).html(lesstext);
+      }
+      $(this).parent().prev().toggle();
+      $(this).prev().toggle();
+      return false;
+  });
+});
+// partner page and read more js ends
 
 //Smooth scroll with offset for breadcrumbs
 if (window.location.hash) {
